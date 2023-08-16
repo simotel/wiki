@@ -2,7 +2,7 @@
 module.exports = {
   title: 'SimoTel Docs',
   tagline: 'به بخش مستندات مرکز تماس SimoTel خوش‌آمدید 👋️',
-  url: 'https://doc.mysup.ir/',
+  url: 'https://docs-simotel.hsy.ir/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
