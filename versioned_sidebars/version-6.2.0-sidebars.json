@@ -48,12 +48,9 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "SimotelEvent API",
+      "label": "SimoTelClient",
       "items": [
-        {
-          "type": "doc",
-          "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/setting"
-        },
+     
         {
           "collapsed": true,
           "type": "category",
@@ -61,55 +58,83 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/new_state"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/setting"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/transfer"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/new_state"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/incoming_call"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/transfer"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/outgoing_call"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/incoming_call"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/exten_added"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/outgoing_call"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/exten_remove"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/exten_added"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/incoming_fax"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/exten_remove"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/outgoing_fax"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/incoming_fax"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/cdr_queue"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/outgoing_fax"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/voicemail"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/cdr_queue"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/voicemail_email"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/voicemail"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/survey"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/voicemail_email"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelEventAPI/events/cdr"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/survey"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/EventsApi/cdr"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "کامپوننت ها",
+          "items": [
+            
+            {
+              "type": "doc",
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/ComponentsApi/exten_api"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/ComponentsApi/trunk_api"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/ComponentsApi/ivr_api"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.2.0/api/callcenter_api/SimoTelClient/ComponentsApi/smart_api"
             }
           ]
         }
@@ -732,33 +757,7 @@
         }
       ]
     },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "کامپوننت‌های API",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-6.2.0/api/callcenter_api/APIComponents/setting"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.2.0/api/callcenter_api/APIComponents/exten_api"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.2.0/api/callcenter_api/APIComponents/trunk_api"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.2.0/api/callcenter_api/APIComponents/ivr_api"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.2.0/api/callcenter_api/APIComponents/smart_api"
-        }
-      ]
-    },
+  
     {
       "collapsed": true,
       "type": "category",

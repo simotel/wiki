@@ -415,10 +415,6 @@ plugins: [
             'path':'api_versioned_docs/version-4.0.0',
             'label':'API v4'
           },
-          '3.0.0':{
-            'path':'api_versioned_docs/version-3.0.0',
-            'label':'API v3'
-          },
         },
         sidebarPath:require.resolve('./sidebars_api.js'),
       }
