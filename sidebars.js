@@ -68,11 +68,12 @@ Autodialer: [
 	'api/introapi',
 	{
 		type: 'category',
-		 label: 'SimotelEvent API',
+		 label: 'Simotel Client',
 		 items: [
-				 'api/callcenter_api/SimoTelEventAPI/setting',
+				 'api/callcenter_api/SimoTelClient/setting',
 				 {
-				 'رویدادها': ['api/callcenter_api/SimoTelEventAPI/events/new_state','api/callcenter_api/SimoTelEventAPI/events/transfer','api/callcenter_api/SimoTelEventAPI/events/incoming_call','api/callcenter_api/SimoTelEventAPI/events/outgoing_call','api/callcenter_api/SimoTelEventAPI/events/exten_added','api/callcenter_api/SimoTelEventAPI/events/exten_remove','api/callcenter_api/SimoTelEventAPI/events/incoming_fax','api/callcenter_api/SimoTelEventAPI/events/outgoing_fax','api/callcenter_api/SimoTelEventAPI/events/cdr_queue','api/callcenter_api/SimoTelEventAPI/events/voicemail','api/callcenter_api/SimoTelEventAPI/events/voicemail_email','api/callcenter_api/SimoTelEventAPI/events/survey','api/callcenter_api/SimoTelEventAPI/events/cdr','api/callcenter_api/SimoTelEventAPI/events/TrunkNewState','api/callcenter_api/SimoTelEventAPI/events/TrunkAdded','api/callcenter_api/SimoTelEventAPI/events/TrunkRemoved','api/callcenter_api/SimoTelEventAPI/events/AutoDialerReport',],
+				 'Events Api': ['api/callcenter_api/SimoTelClient/EventsApi/new_state','api/callcenter_api/SimoTelClient/EventsApi/transfer','api/callcenter_api/SimoTelClient/EventsApi/incoming_call','api/callcenter_api/SimoTelClient/EventsApi/outgoing_call','api/callcenter_api/SimoTelClient/EventsApi/exten_added','api/callcenter_api/SimoTelClient/EventsApi/exten_remove','api/callcenter_api/SimoTelClient/EventsApi/incoming_fax','api/callcenter_api/SimoTelClient/EventsApi/outgoing_fax','api/callcenter_api/SimoTelClient/EventsApi/cdr_queue','api/callcenter_api/SimoTelClient/EventsApi/voicemail','api/callcenter_api/SimoTelClient/EventsApi/voicemail_email','api/callcenter_api/SimoTelClient/EventsApi/survey','api/callcenter_api/SimoTelClient/EventsApi/cdr','api/callcenter_api/SimoTelClient/EventsApi/TrunkNewState','api/callcenter_api/SimoTelClient/EventsApi/TrunkAdded','api/callcenter_api/SimoTelClient/EventsApi/TrunkRemoved','api/callcenter_api/SimoTelClient/EventsApi/AutoDialerReport',],
+				 'Components Api':['api/callcenter_api/SimoTelClient/ComponentsApi/setting','api/callcenter_api/SimoTelClient/ComponentsApi/exten_api','api/callcenter_api/SimoTelClient/ComponentsApi/trunk_api','api/callcenter_api/SimoTelClient/ComponentsApi/ivr_api','api/callcenter_api/SimoTelClient/ComponentsApi/smart_api'],
 				 }
 		 ],
    },
@@ -230,11 +231,11 @@ Autodialer: [
 		// }	
 	]
 },
-   {
-		type: 'category',
-		 label: 'کامپوننت‌های API',
-		 items: ['api/callcenter_api/APIComponents/setting','api/callcenter_api/APIComponents/exten_api','api/callcenter_api/APIComponents/trunk_api','api/callcenter_api/APIComponents/ivr_api','api/callcenter_api/APIComponents/smart_api',],
-   },
+//    {
+// 		type: 'category',
+// 		 label: 'کامپوننت‌های API',
+// 		 items: ['api/callcenter_api/APIComponents/setting','api/callcenter_api/APIComponents/exten_api','api/callcenter_api/APIComponents/trunk_api','api/callcenter_api/APIComponents/ivr_api','api/callcenter_api/APIComponents/smart_api',],
+//    },
    {
 		type: 'category',
 		 label: 'مثال‌های کاربردی',
