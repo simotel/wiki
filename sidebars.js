@@ -72,6 +72,7 @@ Autodialer: [
 			type: 'category',
 			label: 'v4',
 			items: [
+				'api/v4/callcenter_api/SimoTelAPI/whatis',
 				'api/v4/callcenter_api/SimoTelAPI/settings',
 				'api/v4/callcenter_api/SimoTelAPI/call-originate',
 		  {
@@ -227,7 +228,7 @@ Autodialer: [
 			'api/callcenter_api/SimoTelClient/whatis',
 			 {
 			 'Events Api': ['api/callcenter_api/SimoTelClient/EventsApi/whatis','api/callcenter_api/SimoTelClient/EventsApi/setting','api/callcenter_api/SimoTelClient/EventsApi/transfer','api/callcenter_api/SimoTelClient/EventsApi/incoming_call','api/callcenter_api/SimoTelClient/EventsApi/outgoing_call','api/callcenter_api/SimoTelClient/EventsApi/exten_added','api/callcenter_api/SimoTelClient/EventsApi/exten_remove','api/callcenter_api/SimoTelClient/EventsApi/incoming_fax','api/callcenter_api/SimoTelClient/EventsApi/outgoing_fax','api/callcenter_api/SimoTelClient/EventsApi/cdr_queue','api/callcenter_api/SimoTelClient/EventsApi/voicemail','api/callcenter_api/SimoTelClient/EventsApi/voicemail_email','api/callcenter_api/SimoTelClient/EventsApi/survey','api/callcenter_api/SimoTelClient/EventsApi/cdr','api/callcenter_api/SimoTelClient/EventsApi/TrunkNewState','api/callcenter_api/SimoTelClient/EventsApi/TrunkAdded','api/callcenter_api/SimoTelClient/EventsApi/TrunkRemoved','api/callcenter_api/SimoTelClient/EventsApi/AutoDialerReport','api/callcenter_api/SimoTelClient/EventsApi/new_state',],
-			 'Components Api':['api/callcenter_api/SimoTelClient/ComponentsApi/setting','api/callcenter_api/SimoTelClient/ComponentsApi/exten_api','api/callcenter_api/SimoTelClient/ComponentsApi/trunk_api','api/callcenter_api/SimoTelClient/ComponentsApi/ivr_api','api/callcenter_api/SimoTelClient/ComponentsApi/smart_api'],
+			 'Components Api':['api/callcenter_api/SimoTelClient/ComponentsApi/whatis',,'api/callcenter_api/SimoTelClient/ComponentsApi/setting','api/callcenter_api/SimoTelClient/ComponentsApi/exten_api','api/callcenter_api/SimoTelClient/ComponentsApi/trunk_api','api/callcenter_api/SimoTelClient/ComponentsApi/ivr_api','api/callcenter_api/SimoTelClient/ComponentsApi/smart_api'],
 			 }
 	 ],
 },
