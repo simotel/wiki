@@ -66,17 +66,6 @@ Autodialer: [
    docs: [
 	   
 	'api/introapi',
-	{
-		type: 'category',
-		 label: 'Simotel Client',
-		 items: [
-				//  'api/callcenter_api/SimoTelClient/setting',
-				 {
-				 'Events Api': ['api/callcenter_api/SimoTelClient/EventsApi/setting','api/callcenter_api/SimoTelClient/EventsApi/transfer','api/callcenter_api/SimoTelClient/EventsApi/incoming_call','api/callcenter_api/SimoTelClient/EventsApi/outgoing_call','api/callcenter_api/SimoTelClient/EventsApi/exten_added','api/callcenter_api/SimoTelClient/EventsApi/exten_remove','api/callcenter_api/SimoTelClient/EventsApi/incoming_fax','api/callcenter_api/SimoTelClient/EventsApi/outgoing_fax','api/callcenter_api/SimoTelClient/EventsApi/cdr_queue','api/callcenter_api/SimoTelClient/EventsApi/voicemail','api/callcenter_api/SimoTelClient/EventsApi/voicemail_email','api/callcenter_api/SimoTelClient/EventsApi/survey','api/callcenter_api/SimoTelClient/EventsApi/cdr','api/callcenter_api/SimoTelClient/EventsApi/TrunkNewState','api/callcenter_api/SimoTelClient/EventsApi/TrunkAdded','api/callcenter_api/SimoTelClient/EventsApi/TrunkRemoved','api/callcenter_api/SimoTelClient/EventsApi/AutoDialerReport','api/callcenter_api/SimoTelClient/EventsApi/new_state',],
-				 'Components Api':['api/callcenter_api/SimoTelClient/ComponentsApi/setting','api/callcenter_api/SimoTelClient/ComponentsApi/exten_api','api/callcenter_api/SimoTelClient/ComponentsApi/trunk_api','api/callcenter_api/SimoTelClient/ComponentsApi/ivr_api','api/callcenter_api/SimoTelClient/ComponentsApi/smart_api'],
-				 }
-		 ],
-   },
    {
 	'Simotel API': [
 		{
@@ -230,6 +219,17 @@ Autodialer: [
 		// ]
 		// }	
 	]
+},
+{
+	type: 'category',
+	 label: 'Simotel Client',
+	 items: [
+			'api/callcenter_api/SimoTelClient/whatis',
+			 {
+			 'Events Api': ['api/callcenter_api/SimoTelClient/EventsApi/whatis','api/callcenter_api/SimoTelClient/EventsApi/setting','api/callcenter_api/SimoTelClient/EventsApi/transfer','api/callcenter_api/SimoTelClient/EventsApi/incoming_call','api/callcenter_api/SimoTelClient/EventsApi/outgoing_call','api/callcenter_api/SimoTelClient/EventsApi/exten_added','api/callcenter_api/SimoTelClient/EventsApi/exten_remove','api/callcenter_api/SimoTelClient/EventsApi/incoming_fax','api/callcenter_api/SimoTelClient/EventsApi/outgoing_fax','api/callcenter_api/SimoTelClient/EventsApi/cdr_queue','api/callcenter_api/SimoTelClient/EventsApi/voicemail','api/callcenter_api/SimoTelClient/EventsApi/voicemail_email','api/callcenter_api/SimoTelClient/EventsApi/survey','api/callcenter_api/SimoTelClient/EventsApi/cdr','api/callcenter_api/SimoTelClient/EventsApi/TrunkNewState','api/callcenter_api/SimoTelClient/EventsApi/TrunkAdded','api/callcenter_api/SimoTelClient/EventsApi/TrunkRemoved','api/callcenter_api/SimoTelClient/EventsApi/AutoDialerReport','api/callcenter_api/SimoTelClient/EventsApi/new_state',],
+			 'Components Api':['api/callcenter_api/SimoTelClient/ComponentsApi/setting','api/callcenter_api/SimoTelClient/ComponentsApi/exten_api','api/callcenter_api/SimoTelClient/ComponentsApi/trunk_api','api/callcenter_api/SimoTelClient/ComponentsApi/ivr_api','api/callcenter_api/SimoTelClient/ComponentsApi/smart_api'],
+			 }
+	 ],
 },
 //    {
 // 		type: 'category',
