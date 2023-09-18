@@ -74,6 +74,7 @@ Autodialer: [
 			items: [
 				'api/v4/callcenter_api/SimoTelAPI/whatis',
 				'api/v4/callcenter_api/SimoTelAPI/settings',
+				'api/v4/callcenter_api/SimoTelAPI/ping',
 				'api/v4/callcenter_api/SimoTelAPI/call-originate',
 		  {
 			'کاربر': ['api/v4/callcenter_api/SimoTelAPI/users/users_add',
