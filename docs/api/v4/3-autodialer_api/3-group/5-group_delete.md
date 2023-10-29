@@ -1,24 +1,15 @@
 ---
 
 ---
-# Group POST
+# Group Remove
 
 از این سرویس برای حذف کردن گروه‌ها استفاده می‌شود.
 
 ## پارامتر‌ها
 |                توضیحات                | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:-------------------------------------:|:------------------:|:------------------------:|:----------------------:|:---------:|
-| شناسه‌یکتا گروه که از [جستجو](/docs/api/autodialer_api/group/group_search) بدست می‌آید |          -         | 6033876dc92de036d1390923 |           **           |    id_    |
+| شناسه‌یکتا گروه که از [جستجو](/docs/api/v4/autodialer_api/group/group_search) بدست می‌آید |          -         | 6033876dc92de036d1390923 |           **           |    id_    |
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": ""
-}
-```
 
 
 ## نمونه فراخوانی
@@ -41,7 +32,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.21//api/v4/autodialer/groups/remove',
+	  CURLOPT_URL => 'http://192.168.51.21/api/v4/autodialer/groups/remove',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -80,7 +71,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/groups/remove",
+				  "url": "http://192.168.51.21/api/v4/autodialer/groups/remove",
 					  "method": "POST",
 					  "timeout": 0,
 					  "headers": {
@@ -106,7 +97,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/groups/remove' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/groups/remove' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -115,3 +106,12 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": ""
+}
+```

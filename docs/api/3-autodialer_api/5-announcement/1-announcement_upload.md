@@ -44,7 +44,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v3/autodialer/announcements/upload',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/autodialer/announcements/upload',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,

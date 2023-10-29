@@ -1,29 +1,19 @@
 ---
 
 ---
-# Trunk Edit
+# Trunk Update
 
 از این سرویس برای ویرایش ترانک استفاده می‌شود.
 
 ## پارامتر‌ها
 |                            توضیحات                            | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |     پارامترها     |
 |:-------------------------------------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------------:|
-|     شناسه یکتای مدیریت کننده ترانک که از [جستجو](/docs/api/autodialer_api/trunk_manager/trunk_manager_search) بدست می‌آید     |          -         | 5ec65107ce4f6d12c43e250f |           **           |        _id        |
+|     شناسه یکتای مدیریت کننده ترانک که از [جستجو](/docs/api/v4/autodialer_api/trunk_manager/trunk_manager_search) بدست می‌آید     |          -         | 5ec65107ce4f6d12c43e250f |           **           |        _id        |
 |                     نام مدیریت‌کننده ترانک                     |          -         |        autodialer        |            *           |       title       |
 |                     وضعیت مدیرت‌کننده ترانک                    |   active/inactive  |          active          |            *           |       status      |
 | تعداد داده‌ای که با هر بار فراخوانی از پایگاه داده بازیابی شود |                    |            100           |            *           | wait_cache_length |
 |                 حداکثر ظرفیت مدیرت‌کننده ترانک                 |                    |            50            |            *           |      capacity     |
 |               بازه زمانی بین تماس‌ها(برحسب ثانیه)              |                    |             1            |            *           |   dial_interval   |
-
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": ""
-}
-```
 
 
 ## نمونه فراخوانی
@@ -46,7 +36,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/autodialer/trunks/update',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/autodialer/trunks/update',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -116,7 +106,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.20//api/autodialer/trunks/update' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/autodialer/trunks/update' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -132,3 +122,12 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": ""
+}
+```

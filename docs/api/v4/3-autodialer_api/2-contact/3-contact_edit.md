@@ -1,41 +1,17 @@
 ---
 
 ---
-# Contact Edit
+# Contact Update
 
 از این سرویس برای ویرایش مخاطبین استفاده می‌شود.
 
 ## پارامتر‌ها
 |              توضیحات             | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |  پارامترها  |
 |:--------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------:|
-| شناسه‌یکتا که از [جستجو](/docs/api/autodialer_api/contact/contact_search) بدست می‌آید |          -         | 60461561095d840c2e477098 |           **           |     id_     |
+| شناسه‌یکتا که از [جستجو](/docs/api/v4/autodialer_api/contact/contact_search) بدست می‌آید |          -         | 60461561095d840c2e477098 |           **           |     id_     |
 |             نام مخاطب            |          -         |     test_contact_new     |                        |     name    |
 |            شماره مخاطب           |          -         |           11223          |                        |    number   |
 |              توضیحات             |          -         |       Just for test      |                        | description |
-
-
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": "",
-    "old": {
-        "_id": {
-            "$oid": "60461561095d840c2e477098"
-        },
-        "name": "test_contact_new",
-        "number": "1122339999",
-        "description": "Just for test",
-        "date": {
-            "$date": {
-                "$numberLong": "1615207809406"
-            }
-        }
-    }
-}
-```
 
 
 ## نمونه فراخوانی
@@ -58,7 +34,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/contacts/update",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/contacts/update",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -95,7 +71,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/contacts/update",
+				  "url": "http://192.168.51.21/api/v4/autodialer/contacts/update",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -123,7 +99,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/contacts/update' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/contacts/update' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -137,3 +113,14 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    {
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": ""
+}
+}
+```

@@ -5,6 +5,9 @@
 
 از این سرویس برای افزودن گروهی شماره‌ها استفاده می‌شود.
 
+# روش دوم برای مثال php
+در روش دوم در مثال php شما می توانید بعد از بارگزاری فایل filename , .csv را به عنوان فیلد ورودی اضافه کنید .
+
 ## پارامتر‌ها
 |  توضیحات | داده های تعریف شده |     داده های نمونه     | پارامترهای ضروری[**]/منطقی[*] |  پارامترها  |
 |:--------:|:------------------:|:----------------------:|:----------------------:|:-----------:|
@@ -12,26 +15,6 @@
 |  شماره‌ها |          -         | "1111", "2222", "3333" |            *           |   numbers   |
 |  توضیحات |          -         |      just for test     |                        | description |
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "name": "test_group",
-        "numbers": [
-            "1111",
-            "2222",
-            "3333"
-        ],
-        "description": "just for test",
-        "count": 3,
-        "date": "1399-12-18 16:58:50",
-        "_id": "60462692095d840c2e47709f"
-    }
-}
-```
 
 
 ## نمونه فراخوانی
@@ -43,6 +26,7 @@ import TabItem from '@theme/TabItem';
     defaultValue="PHP"
     values={[
         {label: 'PHP', value: 'PHP'},
+        {label: 'PHP-example2', value: 'PHP-example2'},
         {label: 'JS', value: 'JS'},
 		{label: 'Linux', value: 'Linux'},
     ]}>
@@ -54,7 +38,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/groups/add",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/groups/add",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -63,6 +47,42 @@ import TabItem from '@theme/TabItem';
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	  CURLOPT_CUSTOMREQUEST => "POST",
 	  CURLOPT_POSTFIELDS =>"{\r\n    \"name\":\"test_group\",\r\n    \"numbers\":[\"1111\", \"2222\", \"3333\"],\r\n    \"description\":\"just for test\"\r\n}",
+	  CURLOPT_HTTPHEADER => array(
+		"X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
+		"Authorization: Basic dGVzdDpBYTEyMzQ1Ng==",
+		"Content-Type: application/json"
+	  ),
+	));
+
+	$response = curl_exec($curl);
+
+		if (!curl_errno($curl)) {
+		$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+		echo 'response code:'.$httpcode, '<br/>';
+	}
+
+	curl_close($curl);
+	echo $response;
+
+
+</TabItem>
+<TabItem value="PHP-example2">
+
+
+	<?php
+
+	$curl = curl_init();
+
+	curl_setopt_array($curl, array(
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/groups/add",
+	  CURLOPT_RETURNTRANSFER => true,
+	  CURLOPT_ENCODING => "",
+	  CURLOPT_MAXREDIRS => 10,
+	  CURLOPT_TIMEOUT => 0,
+	  CURLOPT_FOLLOWLOCATION => true,
+	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+	  CURLOPT_CUSTOMREQUEST => "POST",
+	  CURLOPT_POSTFIELDS =>"{\r\n    \"name\":\"test_group\",\r\n    \"filename\":"file-20231029073840-53485-book1csv.csv",\r\n    \"description\":\"just for test\"\r\n}",
 	  CURLOPT_HTTPHEADER => array(
 		"X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
 		"Authorization: Basic dGVzdDpBYTEyMzQ1Ng==",
@@ -123,7 +143,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/groups/add' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/groups/add' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -136,3 +156,14 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": {
+        "_id": "653e0c4f95e63077f8379be7"
+    }
+}
+```

@@ -11,38 +11,6 @@
 | جستجو موارد مشابه |     true/false     |      true      |           **           |       alike      |
 |      نام آوا      |          -         |        -       |                        | conditions->name |
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "",
-    "data": [
-        {
-            "_id": "6045d7bd095d846433440144",
-            "filename": "file-20210308075228-82244-file-201906271006-40_.wav",
-            "name": "welcome-to-simotel",
-            "description": "",
-            "date": "1399-12-18 11:22:29"
-        },
-        {
-            "_id": "6045e187095d84661f6d1c30",
-            "name": "test_sound",
-            "filename": "file-20200825065434-58826-bbc-farsi-pargarmp3_.wav",
-            "description": "Just for test",
-            "date": "1399-12-18 12:04:15"
-        },
-        {
-            "_id": "6045e6bb095d840c2e47707f",
-            "name": "test_sound1",
-            "filename": "file-20200825065434-58826-bbc-farsi-pargarmp3_.wav",
-            "description": "Just for test",
-            "date": "1399-12-18 12:26:27"
-        }
-    ]
-}
-```
-
 
 ## نمونه فراخوانی
 
@@ -64,7 +32,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.21//api/v4/autodialer/announcements/search',
+	  CURLOPT_URL => 'http://192.168.51.21/api/v4/autodialer/announcements/search',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -107,7 +75,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/announcements/search",
+				  "url": "http://192.168.51.21/api/v4/autodialer/announcements/search",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -135,7 +103,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/announcements/search' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/announcements/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -147,3 +115,21 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "",
+    "data": [
+        {
+            "_id": "653e02b6959ca20a2f1b7293",
+            "name": "test_sound",
+            "filename": "file-20200825065434-58826-bbc-farsi-pargarmp3_.wav",
+            "description": "Just for test",
+            "fileData": "",
+            "date": "1402-08-07 10:29:02"
+        }
+    ]
+}
+```

@@ -10,17 +10,6 @@
 |:--------------:|:------------------:|:------------------------------:|:----------------------:|:---------:|
 | مسیر فایل اکسل |          -         | c:users\users\Desktop\test.csv |           **           |    file   |
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "",
-    "data": {
-        "filename": "file-20210615050239-11195-testcsv.csv"
-    }
-}
-```
 
 
 ## نمونه فراخوانی
@@ -43,7 +32,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v4/autodialer/groups/upload',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/autodialer/groups/upload',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -79,7 +68,7 @@ import TabItem from '@theme/TabItem';
 				form.append("file", fileInput.files[0], "/C:/Users/Vsadrnia/Desktop/test.csv");
 
 				var settings = {
-				  "url": "http://192.168.51.20//api/v4/autodialer/groups/upload",
+				  "url": "http://192.168.51.20/api/v4/autodialer/groups/upload",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -103,7 +92,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.20//api/v4/autodialer/groups/upload' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/autodialer/groups/upload' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--form 'file=@"/C:/Users/Vsadrnia/Desktop/test.csv"'
@@ -111,3 +100,14 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "",
+    "data": {
+        "filename": "file-20231029073636-66787-book1csv.csv"
+    }
+}
+```

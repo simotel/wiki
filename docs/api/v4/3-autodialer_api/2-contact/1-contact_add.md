@@ -12,16 +12,6 @@
 |   توضیحات  |          -         |  Just for test |                        | description |
 
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": ""
-}
-```
-
 
 ## نمونه فراخوانی
 
@@ -43,7 +33,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/contacts/add",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/contacts/add",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -118,3 +108,14 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": {
+        "_id": null
+    }
+}
+```

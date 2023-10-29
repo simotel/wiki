@@ -1,13 +1,13 @@
 ---
 ---
-# Campaign Edit
+# Campaign Update
 
 از این سرویس برای ویرایش کمپین استفاده می‌شود.
 
 ## پارامتر‌ها
 |              توضیحات             | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |     پارامترها     |
 |:--------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------------:|
-| شناسه‌یکتا که از [جستجو](/docs/api/autodialer_api/trunk_manager/trunk_manager_search) بدست می‌آید |          -         | 6048aa14095d8438aa64e7c9 |           **           |        id_        |
+| شناسه‌یکتا که از [جستجو](/docs/api/v4/autodialer_api/trunk_manager/trunk_manager_search) بدست می‌آید |          -         | 6048aa14095d8438aa64e7c9 |           **           |        id_        |
 |             نام کمپین            |          -         |        imrorteza04       |            *           |        name       |
 |           شناسه‌یکتا ترانک که از [جستجو](/docs/api/autodialer_api/trunk_manager/trunk_manager_search) بدست می‌آید          |          -         | 60508b4e095d840c3019e1bd |            *           |  trunk_manager_id |
 |                 -                |          -         |           auto           |                        | interface_context |

@@ -17,34 +17,6 @@
 |         -         |          -         |       {}       |                        |   pagination->sorting   |
 
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "",
-    "data": {
-        "pagination": {
-            "start": 0,
-            "count": 20,
-            "sorting": {
-                "name": 1
-            },
-            "total": 1
-        },
-        "data": [
-            {
-                "_id": "60461561095d840c2e477098",
-                "name": "test_contact",
-                "number": "112233",
-                "description": "Just for test",
-                "date": "1399-12-18 15:45:29"
-            }
-        ]
-    }
-}
-```
-
 
 ## نمونه فراخوانی
 
@@ -66,7 +38,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/contacts/search",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/contacts/search",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -104,7 +76,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/contacts/search",
+				  "url": "http://192.168.51.21/api/v4/autodialer/contacts/search",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -139,7 +111,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/contacts/search' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/contacts/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -152,3 +124,30 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "",
+    "data": {
+        "pagination": {
+            "start": 0,
+            "count": 20,
+            "sorting": {
+                "name": 1
+            },
+            "total": 1
+        },
+        "data": [
+            {
+                "_id": "60461561095d840c2e477098",
+                "name": "test_contact",
+                "number": "112233",
+                "description": "Just for test",
+                "date": "1399-12-18 15:45:29"
+            }
+        ]
+    }
+}
+```

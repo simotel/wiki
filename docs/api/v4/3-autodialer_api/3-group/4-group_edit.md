@@ -1,42 +1,17 @@
 ---
 
 ---
-# Group Edit
+# Group Update
 
 از این سرویس برای ویرایش گروه‌ها استفاده می‌شود.
 
 ## پارامتر‌ها
 |              توضیحات             | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |  پارامترها  |
 |:--------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------:|
-| شناسه‌یکتا که از [جستجو](/docs/api/autodialer_api/group/group_search) بدست می‌آید |          -         | 6033876dc92de036d1390923 |           **           |     id_     |
+| شناسه‌یکتا که از [جستجو](/docs/api/v4/autodialer_api/group/group_search) بدست می‌آید |          -         | 6033876dc92de036d1390923 |           **           |     id_     |
 |             نام گروه             |          -         |      test_group_new      |            *           |     name    |
 |           شماره‌های گروه          |          -         |  "1111", "2222", "3333"  |            *           |   numbers   |
 |              توضیحات             |          -         |       just for test      |                        | description |
-
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "name": "test_group_new",
-        "numbers": [
-            "1111",
-            "2222",
-            "3333"
-        ],
-        "description": "just for test",
-        "date": {
-            "$date": {
-                "$numberLong": "1615210742528"
-            }
-        },
-        "count": 3
-    },
-    "old": null
-}
-```
 
 
 ## نمونه فراخوانی
@@ -59,7 +34,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/groups/update",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/groups/update",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -97,7 +72,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/groups/update",
+				  "url": "http://192.168.51.21/api/v4/autodialer/groups/update",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -129,7 +104,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/groups/update' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/groups/update' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \

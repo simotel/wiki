@@ -253,17 +253,17 @@ Autodialer: [
 
 {
 	'ماژول تماس‌انبوه': [
-		'api/autodialer_api/introautodialer',
+		'api/v4/autodialer_api/introautodialer',
 {
-				'مخاطبین': ['api/autodialer_api/contact/contact_add','api/autodialer_api/contact/contact_search','api/autodialer_api/contact/contact_edit','api/autodialer_api/contact/contact_delete',],
-				'گروه‌ها': ['api/autodialer_api/group/group_upload','api/autodialer_api/group/group_add','api/autodialer_api/group/group_search','api/autodialer_api/group/group_edit','api/autodialer_api/group/group_delete',],
-				'کمپین': ['api/autodialer_api/campaign/campaign_add','api/autodialer_api/campaign/campaign_search','api/autodialer_api/campaign/campaign_edit','api/autodialer_api/campaign/campaign_delete',],
-				'آواها': ['api/autodialer_api/announcement/announcement_upload','api/autodialer_api/announcement/announcement_add','api/autodialer_api/announcement/announcement_search','api/autodialer_api/announcement/announcement_edit','api/autodialer_api/announcement/announcement_delete',],
-				'ترانک': ['api/autodialer_api/trunk_manager/trunk_manager_search','api/autodialer_api/trunk_manager/trunk_manager_edit',],
-				'گزارشات': ['api/autodialer_api/report/report_search','api/autodialer_api/report/report_search_ordered','api/autodialer_api/report/report_info',],
+				'مخاطبین': ['api/v4/autodialer_api/contact/contact_add','api/v4/autodialer_api/contact/contact_search','api/v4/autodialer_api/contact/contact_edit','api/v4/autodialer_api/contact/contact_delete',],
+				'گروه‌ها': ['api/v4/autodialer_api/group/group_upload','api/v4/autodialer_api/group/group_add','api/v4/autodialer_api/group/group_search','api/v4/autodialer_api/group/group_edit','api/v4/autodialer_api/group/group_delete',],
+				'کمپین': ['api/v4/autodialer_api/campaign/campaign_add','api/v4/autodialer_api/campaign/campaign_search','api/v4/autodialer_api/campaign/campaign_edit','api/v4/autodialer_api/campaign/campaign_delete',],
+				'آواها': ['api/v4/autodialer_api/announcement/announcement_upload','api/v4/autodialer_api/announcement/announcement_add','api/v4/autodialer_api/announcement/announcement_search','api/v4/autodialer_api/announcement/announcement_edit','api/v4/autodialer_api/announcement/announcement_delete',],
+				'ترانک': ['api/v4/autodialer_api/trunk_manager/trunk_manager_search','api/v4/autodialer_api/trunk_manager/trunk_manager_edit',],
+				'گزارشات': ['api/v4/autodialer_api/report/report_search','api/v4/autodialer_api/report/report_search_ordered','api/v4/autodialer_api/report/report_info',],
 },
-		'api/autodialer_api/example',
-		'api/autodialer_api/call_originate',
+		'api/v4/autodialer_api/example',
+		'api/v4/autodialer_api/call_originate',
 		
 ],
 }

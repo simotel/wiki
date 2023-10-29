@@ -12,25 +12,6 @@
 | نام فایل‌صوتی |          -         | file-20200825065434-58826-bbc-farsi-pargarmp3_.wav |           **           |   filename  |
 |    توضیحات   |          -         |                    Just for test                   |                        | description |
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "name": "test_sound",
-        "filename": "file-20200825065434-58826-bbc-farsi-pargarmp3_.wav",
-        "description": "Just for test",
-        "date": {
-            "$date": {
-                "$numberLong": "1615192455164"
-            }
-        },
-        "_id": "6045e187095d84661f6d1c30"
-    }
-}
-```
 
 
 ## نمونه فراخوانی
@@ -53,7 +34,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/announcements/add",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/announcements/add",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -132,3 +113,17 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    {
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": {
+        "_id": "653e02b6959ca20a2f1b7293"
+	}
+    }
+}
+
+```
