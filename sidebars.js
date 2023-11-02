@@ -243,11 +243,7 @@ Autodialer: [
 		 label: 'مثال‌های کاربردی',
 		 items: ['api/callcenter_api/Scenarios/smart_api','api/callcenter_api/Scenarios/exten_api','api/callcenter_api/Scenarios/call_originate'],
    },
-   {
-	type: 'category',
-	 label: 'two',
-	 items: ['api/two_verify/whatis'],
-},
+ 
 	
 	
 	
@@ -270,7 +266,13 @@ Autodialer: [
 		'api/v4/autodialer_api/call_originate',
 		
 ],
-}
+},
+  {
+	type: 'category',
+	 label: 'احراز هویت دو مرحله ای',
+	 items: ['api/two_verify/whatis','api/two_verify/template_sms','api/two_verify/service_activate'],
+	},
+
 
   
 /////////////////////////////////// API AutoDialer Sidebar//////////////////////////////////
