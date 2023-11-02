@@ -243,7 +243,11 @@ Autodialer: [
 		 label: 'مثال‌های کاربردی',
 		 items: ['api/callcenter_api/Scenarios/smart_api','api/callcenter_api/Scenarios/exten_api','api/callcenter_api/Scenarios/call_originate'],
    },
-
+   {
+	type: 'category',
+	 label: 'two',
+	 items: ['api/two_verify/whatis'],
+},
 	
 	
 	

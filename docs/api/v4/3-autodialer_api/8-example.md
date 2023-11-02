@@ -21,7 +21,7 @@ sidebar_position: 1
 برای بدست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/docs/api/autodialer_api/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
 ```shell
 
-POST //api/v4/autodialer/announcements/search HTTP/1.1
+POST /api/v4/autodialer/announcements/search HTTP/1.1
 Host: 192.168.51.20
 X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG
 Authorization: Basic c2FkcjpTYWRyQDEyMw==
@@ -59,7 +59,7 @@ Content-Length: 66
 
 ```shell
 
-POST //api/v4/autodialer/trunks HTTP/1.1
+POST /api/v4/autodialer/trunks HTTP/1.1
 Host: 192.168.51.20
 X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG
 Authorization: Basic c2FkcjpTYWRyQDEyMw==
@@ -175,7 +175,7 @@ Content-Length: 66
 
 ```shell
 
-POST //api/v4/autodialer/campaigns/add HTTP/1.1
+POST /api/v4/autodialer/campaigns/add HTTP/1.1
 Host: 192.168.51.20
 X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG
 Authorization: Basic c2FkcjpTYWRyQDEyMw==

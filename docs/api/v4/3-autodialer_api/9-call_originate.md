@@ -16,14 +16,14 @@
 برای ارسال تماس باید از سرویس افزودن کمپین استفاده شود (۱) و وضعیت نهایی شماره‌ها در کمپین از طریق وب‌سرویس جستجوی گزارشات کمپین (۲) بدست می‌آید. در ایجاد کمپین مطابق با توضیحات وب‌سرویس افزودن کمپین (۱) با استفاده از مقدار **interface_context** و **inteface_text** می‌توان تماس را به سمت دایل‌پلن هدایت کرد. در دایل‌پلن چنانکه نیاز هست ارتباط مقصد مدیریت شود از کامپوننت های **ExtensionAPI** و یا **TrunkApi** استفاده شود(طبق ۳ و ۴). برای دریافت cdr قسمت دوم تماس می‌توان از سرویس دریافت گزارشات (۵) و یا وب‌سرویس (۶) که مربوط به CDR می‌باشد استفاده کرد. در نهایت در پایان مکالمه وضعیت مکالمه اعلام می‌گردد.
 
 
-**۱:** [وب‌سرویس افزودن کمپین](/docs/api/autodialer_api/campaign/campaign_add)
+**۱:** [وب‌سرویس افزودن کمپین](/docs/api/v4/autodialer_api/campaign/campaign_add)
 
-**۲:** [وب‌سرویس دریافت گزارشات کمپین](/docs/api/autodialer_api/report/report_search)
+**۲:** [وب‌سرویس دریافت گزارشات کمپین](/docs/api/v4/autodialer_api/report/report_search)
 
 **۳:** [وب‌سرویس کامپوننت Exten API](/docs/api/callcenter_api/SimoTelClient/ComponentsApi/exten_api)
 
 **۴:** [وب‌سرویس کامپوننت Trunk API](/docs/api/callcenter_api/SimoTelClient/ComponentsApi/trunk_api)
 
-**۵:** [وب‌سرویس دریافت گزارشات](/docs/api/callcenter_api/SimoTelAPI/report/report_cdr_search)
+**۵:** [وب‌سرویس دریافت گزارشات](/docs/api/v4/callcenter_api/SimoTelAPI/report/report_cdr_search)
 
-**۶:** [وب‌سرویس رویداد CDR](/docs/api/callcenter_api/SimoTelClient/EventsApi/cdr)
+**۶:** [وب‌سرویس رویداد CDR](/docs/api/v4/callcenter_api/SimoTelClient/EventsApi/cdr)

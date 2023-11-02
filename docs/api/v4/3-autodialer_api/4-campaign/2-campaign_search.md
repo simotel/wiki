@@ -14,60 +14,7 @@
 |         -         |          -         |       20       |                        |    pagination->start    |
 |         -         |          -         |        0       |                        |    pagination->count    |
 |         -         |          -         |       {}       |                        |   pagination->sorting   |
-## نمونه خروجی درخواست
 
-```shell
-{
-    "success": 1,
-    "message": "",
-    "data": {
-        "pagination": {
-            "start": 0,
-            "count": 20,
-            "sorting": {
-                "date": -1
-            },
-            "total": 1
-        },
-        "data": [
-            {
-                "_id": "6045fd15095d840c2d29ae80",
-                "name": "test",
-                "trunk_manager_id": "5f6c5b56c92de0068f32e592",
-                "interface_context": "auto",
-                "interface_text": "text1",
-                "numbers": [
-                    "09212396500"
-                ],
-                "groups": [
-                    "5e96c8c2c92de0468920657e",
-                    "5e96d40cc92de025690d0a61"
-                ],
-                "try_interval": "600",
-                "try": "1",
-                "start": "1399-12-01 15:17:00",
-                "end": "1399-12-05 15:17:00",
-                "announcement": "5e5b629ec92de075df7af457",
-                "description": "",
-                "count": 1,
-                "repeat": 1,
-                "date": "1399-12-18 14:01:49",
-                "status": "running",
-                "isoStart": {
-                    "$date": {
-                        "$numberLong": "1613735220000"
-                    }
-                },
-                "isoEnd": {
-                    "$date": {
-                        "$numberLong": "1614080820000"
-                    }
-                }
-            }
-        ]
-    }
-}
-```
 
 
 ## نمونه فراخوانی
@@ -90,7 +37,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/campaigns/search",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/campaigns/search",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -128,7 +75,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/campaigns/search",
+				  "url": "http://192.168.51.21/api/v4/autodialer/campaigns/search",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -162,7 +109,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/campaigns/search' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/campaigns/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -175,3 +122,149 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "",
+    "data": {
+        "pagination": {
+            "start": 0,
+            "count": 20,
+            "sorting": {
+                "date": -1
+            },
+            "total": 2
+        },
+        "data": [
+            {
+                "_id": "654338c7766d71477c6319c3",
+                "name": "test",
+                "trunk_manager_id": "652ea11ed86c8023fb4bfa55",
+                "interface_context": "auto",
+                "interface_text": "text1",
+                "numbers": [
+                    "09212396500",
+                    "09187213593",
+                    "09188898969"
+                ],
+                "groups": [
+                    "5e96c8c2c92de0468920657e",
+                    "5e96d40cc92de025690d0a61"
+                ],
+                "try_interval": "600",
+                "try": "1",
+                "start": "1399-12-01 15:17:00",
+                "end": "1399-12-05 15:17:00",
+                "announcement": "65433892c08a113c497ee373",
+                "description": "",
+                "count": 3,
+                "repeat": 1,
+                "date": "1402-08-11 09:21:03",
+                "status": "waiting",
+                "isoStart": {
+                    "$date": {
+                        "$numberLong": "1613735220000"
+                    }
+                },
+                "isoEnd": {
+                    "$date": {
+                        "$numberLong": "1614080820000"
+                    }
+                }
+            },
+            {
+                "_id": "652ea1b5d86c8023fb4bfa5a",
+                "name": "azan",
+                "trunk_manager_id": "652ea11ed86c8023fb4bfa55",
+                "interface_context": "",
+                "interface_text": "",
+                "numbers": [
+                    "09370331680"
+                ],
+                "groups": [],
+                "try_interval": "600",
+                "try": "3",
+                "start": "1402-07-25 18:32:09",
+                "end": "1402-07-28 18:32:00",
+                "announcement": "652ea0eba9315b2d0c025574",
+                "description": "",
+                "count": 1,
+                "repeat": 2,
+                "date": "1402-07-25 18:31:09",
+                "status": "completed",
+                "isoStart": {
+                    "$date": {
+                        "$numberLong": "1697554929668"
+                    }
+                },
+                "isoEnd": {
+                    "$date": {
+                        "$numberLong": "1697814120000"
+                    }
+                },
+                "hs": 2,
+                "statistics": {
+                    "all": {
+                        "sum": 0,
+                        "avg": 0,
+                        "wait": 0,
+                        "wait_avg": 0,
+                        "try": 3,
+                        "try_avg": 3,
+                        "min_date": {
+                            "$date": {
+                                "$numberLong": "1697545548007"
+                            }
+                        },
+                        "max_date": {
+                            "$date": {
+                                "$numberLong": "1697545548007"
+                            }
+                        },
+                        "count": 1,
+                        "numbers": 1,
+                        "disposition": {
+                            "LOST": {
+                                "count": 1
+                            }
+                        },
+                        "success": 0
+                    },
+                    "sep": [
+                        {
+                            "_id": 2,
+                            "sum": 0,
+                            "avg": 0,
+                            "wait": 0,
+                            "wait_avg": 0,
+                            "try": 3,
+                            "try_avg": 3,
+                            "min_date": {
+                                "$date": {
+                                    "$numberLong": "1697545548007"
+                                }
+                            },
+                            "max_date": {
+                                "$date": {
+                                    "$numberLong": "1697545548007"
+                                }
+                            },
+                            "count": 1,
+                            "numbers": 1,
+                            "disposition": {
+                                "LOST": {
+                                    "count": 1
+                                }
+                            },
+                            "answered": 0,
+                            "success": 0
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+```

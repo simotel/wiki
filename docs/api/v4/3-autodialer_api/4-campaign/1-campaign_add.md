@@ -20,58 +20,6 @@
 |              زمان پایان کمپین              |          -         |                    2021-02-23 15:17                   |               *               |        end        |
 |  شناسه‌یکتا فایل‌صوتی که از جستجو بدست می‌آید |          -         |                5e5b629ec92de075df7af457               |               *               |    announcement   |
 |                   توضیحات                  |          -         |                           -                           |                               |    description    |
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "name": "test",
-        "trunk_manager_id": {
-            "$oid": "5f6c5b56c92de0068f32e592"
-        },
-        "interface_context": "auto",
-        "interface_text": "text1",
-        "numbers": [
-            "09212396500"
-        ],
-        "groups": [
-            "5e96c8c2c92de0468920657e",
-            "5e96d40cc92de025690d0a61"
-        ],
-        "try_interval": "600",
-        "try": "1",
-        "start": {
-            "$date": {
-                "$numberLong": "1613735220000"
-            }
-        },
-        "end": {
-            "$date": {
-                "$numberLong": "1614080820000"
-            }
-        },
-        "announcement": "5e5b629ec92de075df7af457",
-        "description": "",
-        "count": 1,
-        "repeat": 1,
-        "date": "1399-12-18 14:01:49",
-        "status": "waiting",
-        "isoStart": {
-            "$date": {
-                "$numberLong": "1613735220000"
-            }
-        },
-        "isoEnd": {
-            "$date": {
-                "$numberLong": "1614080820000"
-            }
-        }
-    }
-}
-```
-
 
 ## نمونه فراخوانی
 
@@ -93,7 +41,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => "http://192.168.51.21//api/v4/autodialer/campaigns/add",
+	  CURLOPT_URL => "http://192.168.51.21/api/v4/autodialer/campaigns/add",
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
@@ -131,7 +79,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/campaigns/add",
+				  "url": "http://192.168.51.21/api/v4/autodialer/campaigns/add",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -174,7 +122,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/campaigns/add' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/campaigns/add' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -197,3 +145,14 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": {
+        "_id": "654338c7766d71477c6319c3"
+    }
+}
+```

@@ -10,22 +10,6 @@
 |:------------------------------------------:|:------------------:|:-------------------------:|:----------------------:|:---------:|
 | شناسه یکتای cdr_id که از [جستجو](/docs/api/v4/autodialer_api/report/report_search) بدست می‌آید |     true/false     | 602e50ce305bdd377168a8c16 |           **           |    _id    |
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "dcontext": "poll07",
-        "amaflags": "DOCUMENTATION",
-        "channel": "SIP/dahdi-00000be0",
-        "duration": 2,
-        "wait": 0
-    }
-}
-```
-
 
 ## نمونه فراخوانی
 
@@ -47,7 +31,7 @@ import TabItem from '@theme/TabItem';
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v4/autodialer/reports/info',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/autodialer/reports/info',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -84,7 +68,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.20//api/v4/autodialer/reports/info",
+				  "url": "http://192.168.51.20/api/v4/autodialer/reports/info",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -108,7 +92,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.20//api/v4/autodialer/reports/info' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/autodialer/reports/info' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -119,3 +103,18 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": {
+        "dcontext": "poll07",
+        "amaflags": "DOCUMENTATION",
+        "channel": "SIP/dahdi-00000be0",
+        "duration": 2,
+        "wait": 0
+    }
+}
+```

@@ -19,18 +19,6 @@
 |          شناسه‌یکتا فایل‌صوتی که از [جستجو](/docs/api/autodialer_api/announcement/announcement_search) بدست می‌آید         |          -         |   lkjaghdfverfg78345893  |            *           |    announcement   |
 |              توضیحات             |          -         |             -            |                        |    description    |
 
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "count": 0
-    }
-}
-```
-
 
 ## نمونه فراخوانی
 
@@ -162,3 +150,14 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": {
+        "count": 0
+    }
+}
+```

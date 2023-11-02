@@ -42,8 +42,6 @@ sidebar_position: 1
 
 
 
-
-
 ## نمونه فراخوانی
 
 import Tabs from '@theme/Tabs';
