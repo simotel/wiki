@@ -77,7 +77,7 @@ themeConfig: {
         },
         {
           to: 'docs/api/introapi', // file path : /versioned_docs/version-6.2.0/api/1-introapi.md
-          label: 'API'
+          label: 'توسعه دهندگان'
         },
         {
           type: 'doc',
