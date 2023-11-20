@@ -403,22 +403,22 @@ plugins: [
 		
       },
     ],	
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id:'api',
-        path:'docs/api',
-        includeCurrentVersion:false,
-        routeBasePath:'/api',
-          versions:{
-          '4.0.0':{
-            'path':'api_versioned_docs/version-4.0.0',
-            'label':'API v4'
-          },
-        },
-        sidebarPath:require.resolve('./sidebars_api.js'),
-      }
-    ],
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id:'api',
+    //     path:'docs/api',
+    //     includeCurrentVersion:false,
+    //     routeBasePath:'/api',
+    //       versions:{
+    //       '4.0.0':{
+    //         'path':'api_versioned_docs/version-4.0.0',
+    //         'label':'API v4'
+    //       },
+    //     },
+    //     sidebarPath:require.resolve('./sidebars_api.js'),
+    //   }
+    // ],
   ],
 
 /*----------------------------------------PWA---------------------------------------------*/

@@ -48,7 +48,7 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "SimoTelWebHook",
+      "label": "SimoTelWebHooks",
       "items": [
      
         {
@@ -58,59 +58,59 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/setting"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/setting"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/new_state"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/new_state"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/transfer"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/transfer"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/incoming_call"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/incoming_call"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/outgoing_call"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/outgoing_call"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/exten_added"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/exten_added"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/exten_remove"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/exten_remove"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/incoming_fax"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/incoming_fax"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/outgoing_fax"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/outgoing_fax"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/cdr_queue"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/cdr_queue"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/voicemail"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/voicemail"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/voicemail_email"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/voicemail_email"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/survey"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/survey"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/EventsApi/cdr"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/EventsApi/cdr"
             }
           ]
         },
@@ -122,19 +122,19 @@
             
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/ComponentsApi/exten_api"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/ComponentsApi/exten_api"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/ComponentsApi/trunk_api"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/ComponentsApi/trunk_api"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/ComponentsApi/ivr_api"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/ComponentsApi/ivr_api"
             },
             {
               "type": "doc",
-              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHook/ComponentsApi/smart_api"
+              "id": "version-6.2.0/api/callcenter_api/SimoTelWebHooks/ComponentsApi/smart_api"
             }
           ]
         }
@@ -449,312 +449,8 @@
               ]
             }
           ]
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "v3",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/settings"
-            },
-            {
-              "type": "doc",
-              "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/call-originate"
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "کاربر",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/users/users_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/users/users_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/users/users_edit"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/users/users_remove"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "ترانک",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/trunks/trunks_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/trunks/trunks_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/trunks/trunks_edit"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/trunks/trunks_remove"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "صف",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queues_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queues_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queues_edit"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queues_remove"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_addagent"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_pauseagent"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_resumagent"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_removeagent"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_batchaddagent"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_batchpauseagent"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_batchresumagent"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/queues/queue_batchremoveagent"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "موزیک انتظار",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/musiconhold/musiconhold_search"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "آوا",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/announcement/announcements_upload"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/announcement/announcements_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/announcement/announcements_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/announcement/announcements_edit"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/announcement/announcements_remove"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "صندوق‌صوتی",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/voicemail/voicemail_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/voicemail/voicemail_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/voicemail/voicemail_edit"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/voicemail/voicemail_remove"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/voicemail/inbox_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/voicemail/inbox_download"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "لیست‌سیاه",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/blacklist/blacklist_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/blacklist/blacklist_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/blacklist/blacklist_edit"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/blacklist/blacklist_remove"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "لیست‌سفید",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/whitelist/whitelist_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/whitelist/whitelist_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/whitelist/whitelist_edit"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/whitelist/whitelist_remove"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "فکس",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/fax/fax_upload"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/fax/fax_add"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/fax/fax_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/fax/fax_download"
-                }
-              ]
-            },
-            {
-              "collapsed": true,
-              "type": "category",
-              "label": "گزارشات",
-              "items": [
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/quick_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/quick_info"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/audio_download"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/report_cdr_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/report_cdr_ordered_id"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/queue_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/queue_search_ordered_id"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/queue_details_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/queue_details_ordered_id"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/agent_search"
-                },
-                {
-                  "type": "doc",
-                  "id": "version-6.2.0/api/v3/callcenter_api/SimoTelAPI/report/report_poll"
-                }
-              ]
-            }
-          ]
         }
+        
       ]
     },
   

@@ -20,10 +20,10 @@
 
 **۲:** [وب‌سرویس دریافت گزارشات کمپین](/docs/api/autodialer_api/report/report_search)
 
-**۳:** [وب‌سرویس کامپوننت Exten API](/docs/api/callcenter_api/SimoTelWebHook/ComponentsApi/exten_api)
+**۳:** [وب‌سرویس کامپوننت Exten API](/docs/api/callcenter_api/SimoTelWebHooks/ComponentsApi/exten_api)
 
-**۴:** [وب‌سرویس کامپوننت Trunk API](/docs/api/callcenter_api/SimoTelWebHook/ComponentsApi/trunk_api)
+**۴:** [وب‌سرویس کامپوننت Trunk API](/docs/api/callcenter_api/SimoTelWebHooks/ComponentsApi/trunk_api)
 
 **۵:** [وب‌سرویس دریافت گزارشات](/docs/api/callcenter_api/SimoTelAPI/report/report_cdr_search)
 
-**۶:** [وب‌سرویس رویداد CDR](/docs/api/callcenter_api/SimoTelWebHook/EventsApi/cdr)
+**۶:** [وب‌سرویس رویداد CDR](/docs/api/callcenter_api/SimoTelWebHooks/EventsApi/cdr)
