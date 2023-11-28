@@ -200,10 +200,6 @@ presets: [
         lastVersion:'current',
         // includeCurrentVersion: false,
         versions:{
-            "6.2.0":{
-              label:"v6.4.0 مرکز‌تماس",
-              path:"6.2.0"
-            },
             current:{
               label:"v6.4.0 مرکز‌تماس",
               // path:"6.2.0"

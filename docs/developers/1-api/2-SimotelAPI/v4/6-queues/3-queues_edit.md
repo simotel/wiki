@@ -7,7 +7,7 @@
 ## پارامتر‌ها
 |                توضیحات                |                               داده های تعریف شده                               |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |          پارامترها          |
 |:-------------------------------------:|:------------------------------------------------------------------------------:|:------------------------:|:-------------:|:---------------------------:|
-| شناسه یکتای صف که از [جستجو](/docs/api/callcenter_api/SimoTelAPI/queues/queues_search) بدست می‌آید |                                        -                                       | 603c8d9ffc909f2e766d40d3 |       **      |             _id             |
+| شناسه یکتای صف که از [جستجو](/docs/developers/api/SimotelAPI/v4/queues/queues_search) بدست می‌آید |                                        -                                       | 603c8d9ffc909f2e766d40d3 |       **      |             _id             |
 |                 نام صف                |                                        -                                       |          nasimTelecom         |       *       |             name            |
 |                شماره صف               |                                        -                                       |           9008           |       *       |            number           |
 |                استراتژی               | Ring All/Least Recent/Fewest Calls/Random/RR Memory/RR Ordered/Linear/W Random |         Ring All         |       *       |           strategy          |
