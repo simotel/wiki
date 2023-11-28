@@ -8,7 +8,7 @@
 ## پارامتر‌ها
 | توضیحات | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:-:|:-:|:-:|:-:|:-:|
-| شناسه یکتای آوا که از [جستجو](/docs/api/callcenter_api/SimoTelAPI/announcement/announcements_search) بدست می‌آید | - | 6033876dc92de036d1390923 | ** | id_ |
+| شناسه یکتای آوا که از [جستجو](/docs/developers/api/SimotelAPI/v4/announcement/announcements_search) بدست می‌آید | - | 6033876dc92de036d1390923 | ** | id_ |
 
 
 

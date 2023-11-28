@@ -9,7 +9,7 @@
 | توضیحات | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:-:|:-:|:-:|:-:|:-:|
 | نام | - | test_sound | ** | name |
-|  نام فایل‌صوتی که در پاسخ به درخواست [آپلود](/docs/api/callcenter_api/SimoTelAPI/announcement/announcements_upload) برگردانده می‌شود | - | file-20200624051520-61681-announcement-wiresha- | ** | filename |
+|  نام فایل‌صوتی که در پاسخ به درخواست [آپلود](/docs/developers/api/SimotelAPI/v4/announcement/announcements_upload) برگردانده می‌شود | - | file-20200624051520-61681-announcement-wiresha- | ** | filename |
 | توضیحات | - | Just for test |  | comment |
 
 

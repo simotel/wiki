@@ -4,7 +4,7 @@
 # تماس دوطرفه
 
 :::tip توصیه
-پیشنهاد می‌شود قبل از مطالعه این مطلب،ابتدا [اینجا](/docs/api/callcenter_api/SimoTelAPI/call-originate) را بررسی فرمایید.
+پیشنهاد می‌شود قبل از مطالعه این مطلب،ابتدا [اینجا](/docs/developers/api/SimotelAPI/v4/call-originate) را بررسی فرمایید.
 :::
 
 ### ۱: ایجاد تماس دوطرفه بین دو داخلی 570 و 553
@@ -516,7 +516,7 @@ import TabItem from '@theme/TabItem';
 
 ### ۶: ضبط مکالمات تماس دوطرفه
 برای فعال‌سازی ضبط مکالمات،کافیست از کامپوننت `Mix Monitor` در دایل‌پلن استفاده کنید. پس از پایان مکالمه نام فایل‌صوتی به عنوان پارامتر رویداد 
-`CDR` به سمت وب‌سرویس ارسال می‌شود.برای دانلود فایل از API `reports/quick/cdr` استفاده می‌شود.برای کسب اطلاع بیشتر به [اینجا](../SimoTelAPI/report/audio_download) مراجعه فرمایید.
+`CDR` به سمت وب‌سرویس ارسال می‌شود.برای دانلود فایل از API `reports/quick/cdr` استفاده می‌شود.برای کسب اطلاع بیشتر به [اینجا](../SimotelAPI/v4/report/audio_download) مراجعه فرمایید.
 
 <a href='https://dialplan.mysup.ir/live/plan/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu/plan.png' /></a>
 
