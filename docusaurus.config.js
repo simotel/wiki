@@ -76,7 +76,7 @@ themeConfig: {
           label: 'مرکز‌تماس',
         },
         {
-          to: 'docs/api/introapi', // file path : /versioned_docs/version-6.2.0/api/1-introapi.md
+          to: 'docs/developers/api/introapi', // file path : /versioned_docs/version-6.2.0/api/1-introapi.md
           label: 'توسعه دهندگان'
         },
         {
