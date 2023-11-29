@@ -20,10 +20,10 @@
 
 **۲:** [وب‌سرویس دریافت گزارشات کمپین](/docs/developers/api/SimotelAPI/v4/autodialer_api/report/report_search)
 
-**۳:** [وب‌سرویس کامپوننت Exten API](/docs/developers/api/SimotelWebHooks/ComponentsApi/exten_api)
+**۳:** [وب‌سرویس کامپوننت Exten API](/docs/developers/api/SimotelWebhooks/DialplanApiComponents/exten_api)
 
-**۴:** [وب‌سرویس کامپوننت Trunk API](/docs/developers/api/SimotelWebHooks/ComponentsApi/trunk_api)
+**۴:** [وب‌سرویس کامپوننت Trunk API](/docs/developers/api/SimotelWebhooks/DialplanApiComponents/trunk_api)
 
 **۵:** [وب‌سرویس دریافت گزارشات](/docs/developers/api/SimotelAPI/v4/report/report_cdr_search)
 
-**۶:** [وب‌سرویس رویداد CDR](/docs/developers/api/SimotelWebHooks/EventsApi/cdr)
+**۶:** [وب‌سرویس رویداد CDR](/docs/developers/api/SimotelWebhooks/Events/cdr)
