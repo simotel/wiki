@@ -143,12 +143,12 @@ module.exports = {
 		},
 		{
 			type: 'category',
-			label: 'Simotel WebHooks',
+			label: 'Simotel Webhooks',
 			items: [
-				'developers/api/SimotelWebHooks/whatis',
+				'developers/api/SimotelWebhooks/whatis',
 				{
-					'Events Api': ['developers/api/SimotelWebHooks/EventsApi/whatis', 'developers/api/SimotelWebHooks/EventsApi/setting', 'developers/api/SimotelWebHooks/EventsApi/transfer', 'developers/api/SimotelWebHooks/EventsApi/incoming_call', 'developers/api/SimotelWebHooks/EventsApi/outgoing_call', 'developers/api/SimotelWebHooks/EventsApi/exten_added', 'developers/api/SimotelWebHooks/EventsApi/exten_remove', 'developers/api/SimotelWebHooks/EventsApi/incoming_fax', 'developers/api/SimotelWebHooks/EventsApi/outgoing_fax', 'developers/api/SimotelWebHooks/EventsApi/cdr_queue', 'developers/api/SimotelWebHooks/EventsApi/voicemail', 'developers/api/SimotelWebHooks/EventsApi/voicemail_email', 'developers/api/SimotelWebHooks/EventsApi/survey', 'developers/api/SimotelWebHooks/EventsApi/cdr', 'developers/api/SimotelWebHooks/EventsApi/TrunkNewState', 'developers/api/SimotelWebHooks/EventsApi/TrunkAdded', 'developers/api/SimotelWebHooks/EventsApi/TrunkRemoved', 'developers/api/SimotelWebHooks/EventsApi/AutoDialerReport', 'developers/api/SimotelWebHooks/EventsApi/new_state',],
-					'Components Api': ['developers/api/SimotelWebHooks/ComponentsApi/whatis', , 'developers/api/SimotelWebHooks/ComponentsApi/setting', 'developers/api/SimotelWebHooks/ComponentsApi/exten_api', 'developers/api/SimotelWebHooks/ComponentsApi/trunk_api', 'developers/api/SimotelWebHooks/ComponentsApi/ivr_api', 'developers/api/SimotelWebHooks/ComponentsApi/smart_api'],
+					'Events': [ 'developers/api/SimotelWebhooks/Events/setting', 'developers/api/SimotelWebhooks/Events/transfer', 'developers/api/SimotelWebhooks/Events/incoming_call', 'developers/api/SimotelWebhooks/Events/outgoing_call', 'developers/api/SimotelWebhooks/Events/exten_added', 'developers/api/SimotelWebhooks/Events/exten_remove', 'developers/api/SimotelWebhooks/Events/incoming_fax', 'developers/api/SimotelWebhooks/Events/outgoing_fax', 'developers/api/SimotelWebhooks/Events/cdr_queue', 'developers/api/SimotelWebhooks/Events/voicemail', 'developers/api/SimotelWebhooks/Events/voicemail_email', 'developers/api/SimotelWebhooks/Events/survey', 'developers/api/SimotelWebhooks/Events/cdr', 'developers/api/SimotelWebhooks/Events/TrunkNewState', 'developers/api/SimotelWebhooks/Events/TrunkAdded', 'developers/api/SimotelWebhooks/Events/TrunkRemoved', 'developers/api/SimotelWebhooks/Events/AutoDialerReport', 'developers/api/SimotelWebhooks/Events/new_state',],
+					'Component Api': ['developers/api/SimotelWebhooks/DialplanApiComponents/whatis', , 'developers/api/SimotelWebhooks/DialplanApiComponents/setting', 'developers/api/SimotelWebhooks/DialplanApiComponents/exten_api', 'developers/api/SimotelWebhooks/DialplanApiComponents/trunk_api', 'developers/api/SimotelWebhooks/DialplanApiComponents/ivr_api', 'developers/api/SimotelWebhooks/DialplanApiComponents/smart_api'],
 				}
 			],
 		},
