@@ -18,7 +18,7 @@ sidebar_position: 1
 
 
 **۱:**
-برای بدست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/docs/developers/api/SimotelAPI/v4/autodialer_api/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
+برای بدست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/docs/developers/api/Autodialer_API/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
 ```shell
 
 POST /api/v4/autodialer/announcements/search HTTP/1.1
@@ -55,7 +55,7 @@ Content-Length: 66
 
 ```
 
-۲: برای یافتن شناسه‌یکتای ترانک از سرویس [trunk manager search](/docs/developers/api/SimotelAPI/v4/autodialer_api/trunk_manager/trunk_manager_search) استفاده می‌کنیم،نمونه درخواست HTTP آن به شرح زیر می‌باشد
+۲: برای یافتن شناسه‌یکتای ترانک از سرویس [trunk manager search](/docs/developers/api/Autodialer_API/trunk_manager/trunk_manager_search) استفاده می‌کنیم،نمونه درخواست HTTP آن به شرح زیر می‌باشد
 
 ```shell
 
@@ -171,7 +171,7 @@ Content-Length: 66
 ```
 
 
-۳،۴،۵: درنهایت نیز باساخت کمپینی با شرایط ذکر شده ارسال تماس انبوه در زمان مشخص شده انجام می‌شود ([campaign add](/docs/developers/api/SimotelAPI/v4/autodialer_api/campaign/campaign_add))، نمونه درخواست HTTP به‌شرح زیر می‌باشد
+۳،۴،۵: درنهایت نیز باساخت کمپینی با شرایط ذکر شده ارسال تماس انبوه در زمان مشخص شده انجام می‌شود ([campaign add](/docs/developers/api/Autodialer_API/campaign/campaign_add))، نمونه درخواست HTTP به‌شرح زیر می‌باشد
 
 ```shell
 

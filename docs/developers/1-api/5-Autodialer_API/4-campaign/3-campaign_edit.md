@@ -7,16 +7,16 @@
 ## پارامتر‌ها
 |              توضیحات             | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |     پارامترها     |
 |:--------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------------:|
-| شناسه‌یکتا که از [جستجو](/docs/api/v4/autodialer_api/trunk_manager/trunk_manager_search) بدست می‌آید |          -         | 6048aa14095d8438aa64e7c9 |           **           |        id_        |
+| شناسه‌یکتا که از [جستجو](/docs/developers/api/Autodialer_API/trunk_manager/trunk_manager_search) بدست می‌آید |          -         | 6048aa14095d8438aa64e7c9 |           **           |        id_        |
 |             نام کمپین            |          -         |        imrorteza04       |            *           |        name       |
-|           شناسه‌یکتا ترانک که از [جستجو](/docs/developers/api/SimotelAPI/v4/autodialer_api/trunk_manager/trunk_manager_search) بدست می‌آید          |          -         | 60508b4e095d840c3019e1bd |            *           |  trunk_manager_id |
+|           شناسه‌یکتا ترانک که از [جستجو](/docs/developers/api/Autodialer_API/trunk_manager/trunk_manager_search) بدست می‌آید          |          -         | 60508b4e095d840c3019e1bd |            *           |  trunk_manager_id |
 |                 -                |          -         |           auto           |                        | interface_context |
 |                 -                |          -         |           text1          |                        |   interface_text  |
 |      فاصله زمانی بین هر تلاش     |          -         |            600           |            *           |    try_interval   |
 |            تعداد تکرار           |          -         |             1            |            *           |        try        |
 |          زمان شروع کمپین         |          -         |     2021-02-19 15:17     |            *           |       start       |
 |         زمان پایان کمپین         |          -         |     2021-02-23 15:17     |            *           |        end        |
-|          شناسه‌یکتا فایل‌صوتی که از [جستجو](/docs/developers/api/SimotelAPI/v4/autodialer_api/announcement/announcement_search) بدست می‌آید         |          -         |   lkjaghdfverfg78345893  |            *           |    announcement   |
+|          شناسه‌یکتا فایل‌صوتی که از [جستجو](/docs/developers/api/Autodialer_API/announcement/announcement_search) بدست می‌آید         |          -         |   lkjaghdfverfg78345893  |            *           |    announcement   |
 |              توضیحات             |          -         |             -            |                        |    description    |
 
 
