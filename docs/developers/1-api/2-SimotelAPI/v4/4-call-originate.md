@@ -21,13 +21,7 @@ sidebar_position: 2
 |                                557                                |          -         |       557      |            **           |  caller_id |
 |                  مسیر تماس نفر دوم را مشخص می‌کند                  |          -         |                |            *            | trunk_name |
 |                   مدت زمان انتظار برای پاسخگویی                   |          -         |       30       |                         |   timeout  |
-## نمونه خروجی درخواست
 
-```shell
-{
-    "ok": 1
-}
-```
 
 ## نمونه فراخوانی
 
@@ -43,13 +37,13 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v3/call/originate/act',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/call/originate/act',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -81,12 +75,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-	
+```js	
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -94,7 +89,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.20//api/v3/call/originate/act",
+				  "url": "http://192.168.51.20/api/v4/call/originate/act",
 				  "method": "PUT",
 				  "timeout": 0,
 				  "headers": {
@@ -120,12 +115,12 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```
 
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request PUT 'http://192.168.51.20//api/v3/call/originate/act' \
+	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -141,6 +136,18 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+
+## نمونه خروجی درخواست
+
+```shell
+{
+    "success": 1,
+    "message": null,
+    "data": {
+        "originated_call_id": "orig.call.1703145054.787335"
+    }
+}
+```
 
  به جهت آشنایی بیشتر، در بخش مثال‌های کاربردی چند نمونه از [کاربردهای](/docs/developers/api/Scenarios/call_originate) این سرویس مورد بررسی قرار گرفته‌ است.
 

@@ -28,7 +28,7 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
@@ -59,12 +59,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-	
+```js
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -99,7 +100,7 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```
 
 </TabItem>
 <TabItem value="Linux">
@@ -118,3 +119,25 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 </Tabs>
 
+## نمونه خروجی درخواست
+```shell
+{
+    "success": 1,
+    "message": "Requested operation is done successfully",
+    "data": {
+        "name": "test_groups_new",
+        "numbers": [
+            "1111",
+            "2222",
+            "3333"
+        ],
+        "description": "just for test",
+        "date": {
+            "$date": {
+                "$numberLong": "1703169375062"
+            }
+        },
+        "count": 3
+    }
+}
+```

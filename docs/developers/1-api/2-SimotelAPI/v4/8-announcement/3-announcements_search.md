@@ -28,12 +28,13 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
+```php
 	<?php
 
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.21//api/v4/pbx/announcements/search',
+	  CURLOPT_URL => 'http://192.168.51.21/api/v4/pbx/announcements/search',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -61,11 +62,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
+```js
 	<html>
 		<head>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,7 +76,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/pbx/announcements/search",
+				  "url": "http://192.168.51.21/api/v4/pbx/announcements/search",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -97,12 +100,12 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-
+```
 
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/pbx/announcements/search' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/pbx/announcements/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
