@@ -24,13 +24,13 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v3/call/originate/act',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/call/originate/act',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -56,13 +56,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-	
+```js	
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -70,7 +70,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.20//api/v3/call/originate/act",
+				  "url": "http://192.168.51.20/api/v4/call/originate/act",
 				  "method": "PUT",
 				  "timeout": 0,
 				  "headers": {
@@ -93,12 +93,12 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```
 
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request PUT 'http://192.168.51.20//api/v3/call/originate/act' \
+	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -119,7 +119,9 @@ import TabItem from '@theme/TabItem';
 {
     "success": 1,
     "message": null,
-    "data": ""
+    "data": {
+        "originated_call_id": "orig.call.1703145054.787335"
+    }
 }
 ```
 
@@ -140,13 +142,13 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v3/call/originate/act',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/call/originate/act',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -173,14 +175,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
-
-
+	?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-	
+```js
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -188,7 +189,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.20//api/v3/call/originate/act",
+				  "url": "http://192.168.51.20/api/v4/call/originate/act",
 				  "method": "PUT",
 				  "timeout": 0,
 				  "headers": {
@@ -212,12 +213,12 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```
 
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request PUT 'http://192.168.51.20//api/v3/call/originate/act' \
+	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -239,10 +240,11 @@ import TabItem from '@theme/TabItem';
 {
     "success": 1,
     "message": null,
-    "data": ""
+    "data": {
+        "originated_call_id": "orig.call.1703145054.787335"
+    }
 }
 ```
- 
  
 ### ۳: ایجاد تماس بین داخلی 521 و شماره 09376131239
  
@@ -268,13 +270,13 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v3/call/originate/act',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/call/originate/act',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -300,15 +302,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
-
-
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-	
+```js
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -316,7 +316,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.20//api/v3/call/originate/act",
+				  "url": "http://192.168.51.20/api/v4/call/originate/act",
 				  "method": "PUT",
 				  "timeout": 0,
 				  "headers": {
@@ -339,12 +339,12 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```	
 
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request PUT 'http://192.168.51.20//api/v3/call/originate/act' \
+	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -365,7 +365,9 @@ import TabItem from '@theme/TabItem';
 {
     "success": 1,
     "message": null,
-    "data": ""
+    "data": {
+        "originated_call_id": "orig.call.1703145054.787335"
+    }
 }
 ```
 
@@ -382,13 +384,13 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v3/call/originate/act',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/call/originate/act',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -415,16 +417,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
-
-
-
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-	
+```js
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -432,7 +431,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 					var settings = {
-					  "url": "http://192.168.51.20//api/v3/call/originate/act",
+					  "url": "http://192.168.51.20/api/v4/call/originate/act",
 					  "method": "PUT",
 					  "timeout": 0,
 					  "headers": {
@@ -456,12 +455,12 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```
 
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request PUT 'http://192.168.51.20//api/v3/call/originate/act' \
+	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -483,7 +482,9 @@ import TabItem from '@theme/TabItem';
 {
     "success": 1,
     "message": null,
-    "data": ""
+    "data": {
+        "originated_call_id": "orig.call.1703145054.787335"
+    }
 }
 ```
 

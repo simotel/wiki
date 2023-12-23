@@ -26,7 +26,7 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
@@ -48,7 +48,6 @@ import TabItem from '@theme/TabItem';
 	  ),
 	));
 
-
 	$response = curl_exec($curl);
 
 		if (!curl_errno($curl)) {
@@ -58,12 +57,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-		
+```js
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -84,7 +84,6 @@ import TabItem from '@theme/TabItem';
 					  }),
 				};
 
-
 					$.ajax(settings).always(function (jqXHR) {
 						console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
 						console.log("response body: " + jqXHR.responseText);
@@ -92,7 +91,7 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```
 
 </TabItem>
 <TabItem value="Linux">

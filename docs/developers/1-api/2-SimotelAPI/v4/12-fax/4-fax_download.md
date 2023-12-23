@@ -26,6 +26,7 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
+```php
 	<?php
 
 	$curl = curl_init();
@@ -59,7 +60,8 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
 

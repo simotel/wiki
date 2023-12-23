@@ -28,7 +28,7 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
-
+```php
 	<?php
 
 	$curl = curl_init();
@@ -59,12 +59,13 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
 <TabItem value="JS">
 
-	
+```js
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -72,7 +73,7 @@ import TabItem from '@theme/TabItem';
 		<body>
 			<script>
 				var settings = {
-				  "url": "http://192.168.51.21//api/v4/autodialer/announcements/add",
+				  "url": "http://192.168.51.21/api/v4/autodialer/announcements/add",
 				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
@@ -87,7 +88,6 @@ import TabItem from '@theme/TabItem';
 					}),
 				};
 
-
 					$.ajax(settings).always(function (jqXHR) {
 						console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
 						console.log("response body: " + jqXHR.responseText);
@@ -95,12 +95,12 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-	
+```
 
 </TabItem>
 <TabItem value="Linux">
 
-	curl --location --request POST 'http://192.168.51.21//api/v4/autodialer/announcements/add' \
+	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/announcements/add' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \

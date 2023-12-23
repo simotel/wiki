@@ -125,7 +125,7 @@ font-size:1.27em!important;
 /* css code for text-align to view text properly  */
 .markdown > pre, .markdown > ul, .markdown > p {
     margin-bottom: var(--ifm-leading);
-	text-align: justify;
+	  text-align: justify;
 }
 /* css code for text-align to view text properly  */
 
@@ -148,10 +148,7 @@ html[data-theme="dark"] {
 }
 /* custom search bar*/
 
-
-
-
-
-
-
-
+ pre code{
+  background-color:rgba(26, 2, 26, 0.342) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }

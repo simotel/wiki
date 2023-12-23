@@ -24,12 +24,13 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
+```php
 	<?php
 
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.21//api/v4/pbx/faxes/upload',
+	  CURLOPT_URL => 'http://192.168.51.21/api/v4/pbx/faxes/upload',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -53,7 +54,8 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
 

@@ -26,6 +26,10 @@ i18n: {
 
 // plugins: ['@docusaurus/plugin-google-gtag'],
 themeConfig: { 
+  prism: {
+    additionalLanguages: ['php'],
+   
+  },
   docs:{
     sidebar:{
       hideable: true,

@@ -20,16 +20,17 @@ import TabItem from '@theme/TabItem';
     defaultValue="PHP"
     values={[
         {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
+        {label: 'JS', value: 'js'},
 		{label: 'Linux', value: 'Linux'},
     ]}>
-<TabItem value="PHP">
+<TabItem value="PHP"  >
 
-	<?php
+```php
+<?php
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20//api/v4/pbx/users/remove',
+	  CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/users/remove',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
@@ -54,19 +55,20 @@ import TabItem from '@theme/TabItem';
 
 	curl_close($curl);
 	echo $response;
-
+?>
+```
 
 </TabItem>
-<TabItem value="JS">
+<TabItem value="js">
 
-	
+```js
 	<html>
 		<head>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		</head>
 		<body>
 			<script>
-
+			
 			var settings = {
 			  "url": "http://192.168.51.20/api/v4/pbx/users/remove",
 			  "method": "POST",
@@ -80,17 +82,15 @@ import TabItem from '@theme/TabItem';
 			  {"_id":"6033876dc92de036d1390923"}
 			  ),
 			};
-
-
-
 				$.ajax(settings).always(function (jqXHR) {
 					console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
 					console.log("response body: " + jqXHR.responseText);
 				});
+				
 			</script>
 		</body>
 	</html>
-	
+```	
 
 </TabItem>
 <TabItem value="Linux">
