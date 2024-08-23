@@ -1,43 +1,31 @@
-name: Build and Deploy Docusaurus
+name: Deploy to GitHub Pages
 
 on:
   push:
-    paths:
-      - 'docs/**'
-      - 'docusaurus.config.js'
-      - 'sidebars.js'
-  pull_request:
     branches:
       - main
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   build:
+    name: Build Docusaurus
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Install dependencies
+        run: npm ci 
+      - name: Build website
+        run: npm run build
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build Docusaurus
-      run: npm run build
-
-    - name: Deploy to main branch
-      run: |
-        git config --global user.name 'GitHub Action'
-        git config --global user.email 'actions@github.com'
-        git checkout -b build-temp
-        git add -f build
-        git commit -m "Auto-build and deploy Docusaurus site [skip ci]"
-        git fetch origin
-        git checkout main
-        git reset --hard origin/main
-        git merge --no-ff build-temp
-        git push origin main
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
