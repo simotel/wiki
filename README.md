@@ -1,3 +1,4 @@
+[![Build and Deploy Docusaurus Docs (v2)](https://github.com/simotel/docs/actions/workflows/main.yml/badge.svg)](https://github.com/simotel/docs/actions/workflows/main.yml)
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
