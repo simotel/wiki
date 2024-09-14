@@ -6,25 +6,42 @@
 از این سرویس برای دانلود فکس دریافتی استفاده می شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |                توضیحات               | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:------------------------------------:|:------------------:|:------------------------:|:-------------:|:---------:|
 | شناسه یکتا فکس که از [جستجو](/docs/developers/api/SimotelAPI/v4/fax/fax_search) بدست آمده |          -         | 5fe7b083b6e91a5ef2bbf7bb |       **       |    id_    |
-
+</div>
 
 
 ## نمونه فراخوانی
 
+<!--  -->
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -63,20 +80,31 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
+          </details>
+        </TabItem>
 
-<TabItem value="Linux">
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
-```bash
-	curl --location --request POST 'http://192.168.51.21/api/v4/pbx/faxes/download' \
-	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
-	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-		"_id":"5fe7b083b6e91a5ef2bbf7bb"
-	}'
-	```
+		```bash
+			curl --location --request POST 'http://192.168.51.21/api/v4/pbx/faxes/download' \
+			--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
+			--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
+			--header 'Content-Type: application/json' \
+			--data-raw '{
+				"_id":"5fe7b083b6e91a5ef2bbf7bb"
+			}'
+			```
 
-</TabItem>
-</Tabs>
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+
+  </Tabs>
+
 

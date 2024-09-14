@@ -6,6 +6,7 @@ sidebar_position: 1
 از این سرویس برای ویرایش داخلی استفاده می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |                     توضیحات                    |       داده های تعریف شده       |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |          پارامترها          |
 |:----------------------------------------------:|:------------------------------:|:------------------------:|:----------------------:|:---------------------------:|
 | شناسه داخلی که از طریق [سرویس جستجو](/docs/developers/api/SimotelAPI/v4/users/users_search) بدست می آید |                -               | 603b41443e14270c550bf15a |           **           |             id_             |
@@ -41,26 +42,42 @@ sidebar_position: 1
 |                        -                       |                -               |           2121           |                        |     forward_policy->All     |
 |                        -                       |                -               |           2121           |                        |     forward_policy->All     |
 
-
+</div>
 
 
 ## نمونه فراخوانی
 
+<!--  -->
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-    defaultValue="PHP"
-    values={[
+  defaultValue="usageCode"
+  values={[
+    {label: 'نمونه کد استفاده', value: 'usageCode'},
+    {label: 'نمونه خروجی', value: 'outputCode'},
+  ]}>
+
+  <!-- تب نمونه کد استفاده -->
+  <TabItem value="usageCode">
+    <Tabs
+      defaultValue="PHP"
+      values={[
         {label: 'PHP', value: 'PHP'},
         {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
-    ]}>
-<TabItem value="PHP">
+        {label: 'Curl', value: 'Curl'},
+      ]}>
 
-```php
+      <!-- کد PHP -->
+      <TabItem value="PHP">
+	  
+        <details>
+          <summary>نمایش کامل کد PHP</summary>
+          <br/>
 
-	<?php
+          ```php
+
+<?php
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
@@ -121,129 +138,151 @@ import TabItem from '@theme/TabItem';
 	curl_close($curl);
 	echo $response;
 
-```
-</TabItem>
-<TabItem value="JS">
+          ```
 
-```js
+        </details>
+      </TabItem>
 
-	<html>
-		<head>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		</head>
+      <!-- کد JS -->
+      <TabItem value="JS">
+        <details>
+          <summary>نمایش کامل کد JS</summary>
+          <br/>
 
-		<body>
-			<script>
-		var settings = {
-		  "url": "http://192.168.51.20/api/v4/pbx/users/update",
-		  "method": "POST",
-		  "timeout": 0,
-		  "headers": {
-			"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
-			"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
-			"Content-Type": "application/json"
-		  },
-		  "data": JSON.stringify({
-			  "_id": "603b41443e14270c550bf15a",
-			  "user_type": "SIP",
-			  "active": "yes",
-			  "name": "Test User",
-			  "number": "530",
-			  "cid_number": "530",
-			  "secret": "530",
-			  "call_record": "no",
-			  "push_notification": "no",
-			  "deny": "0.0.0.0/0.0.0.0",
-			  "permit": "0.0.0.0/0.0.0.0",
-			  "dtmfmode": "rfc2833",
-			  "canreinvite": "no",
-			  "directmedia": "no",
-			  "context": "main_routing",
-			  "host": "dynamic",
-			  "type": "user",
-			  "nat": "no",
-			  "port": "5060",
-			  "qualify": "no",
-			  "callgroup": "1",
-			  "pickupgroup": "1",
-			  "callcounter": "no",
-			  "faxdetect": "no",
-			  "call_limit": "",
-			  "trunk": "no",
-			  "transfer": "no",
-			  "email": "",
-			  "forward_policy": {
-				"Busy": "571",
-				"No Answer": "09158315762",
-				"UnAvailable": "570",
-				"All": "2121"
-			  },
-			  "more_options": ""
-		}),
-		};
+          ```js
+
+		<html>
+				<head>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				</head>
+
+				<body>
+					<script>
+				var settings = {
+				"url": "http://192.168.51.20/api/v4/pbx/users/update",
+				"method": "POST",
+				"timeout": 0,
+				"headers": {
+					"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
+					"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
+					"Content-Type": "application/json"
+				},
+				"data": JSON.stringify({
+					"_id": "603b41443e14270c550bf15a",
+					"user_type": "SIP",
+					"active": "yes",
+					"name": "Test User",
+					"number": "530",
+					"cid_number": "530",
+					"secret": "530",
+					"call_record": "no",
+					"push_notification": "no",
+					"deny": "0.0.0.0/0.0.0.0",
+					"permit": "0.0.0.0/0.0.0.0",
+					"dtmfmode": "rfc2833",
+					"canreinvite": "no",
+					"directmedia": "no",
+					"context": "main_routing",
+					"host": "dynamic",
+					"type": "user",
+					"nat": "no",
+					"port": "5060",
+					"qualify": "no",
+					"callgroup": "1",
+					"pickupgroup": "1",
+					"callcounter": "no",
+					"faxdetect": "no",
+					"call_limit": "",
+					"trunk": "no",
+					"transfer": "no",
+					"email": "",
+					"forward_policy": {
+						"Busy": "571",
+						"No Answer": "09158315762",
+						"UnAvailable": "570",
+						"All": "2121"
+					},
+					"more_options": ""
+				}),
+				};
 
 
-			$.ajax(settings).always(function (jqXHR) {
-				console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
-				console.log("response body: " + jqXHR.responseText);
-			});
-			</script>
-		</body>
-	</html>
-	
-```
-</TabItem>
-<TabItem value="Linux">
+					$.ajax(settings).always(function (jqXHR) {
+						console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
+						console.log("response body: " + jqXHR.responseText);
+					});
+					</script>
+				</body>
+			</html>
 
-```bash
-	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/users/update' \
-	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
-	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-	"_id":"603f4ea7fcff3269187a3da3",
-	"user_type":"SIP",
-	"active":"yes",
-	"name":"Test User2",
-	"number":"909",
-	"cid_number":"909",
-	"secret":"909",
-	"call_record":"no",
-	"push_notification":"no",
-	"deny":"0.0.0.0/0.0.0.0",
-	"permit":"0.0.0.0/0.0.0.0",
-	"dtmfmode":"rfc2833",
-	"canreinvite":"no",
-	"directmedia":"no",
-	"context":"main_routing",
-	"host":"dynamic",
-	"type":"user",
-	"nat":"no",
-	"port":"5060",
-	"qualify":"no",
-	"callgroup":"1",
-	"pickupgroup":"1",
-	"callcounter":"no",
-	"faxdetect":"no",
-	"call_limit":"",
-	"trunk":"no",
-	"transfer":"no",
-	"email":"",
-	"forward_policy":{"Busy":"571","No Answer":"09158315762","UnAvailable":"570","All":"2121"},
-	"more_options":""
-	}'
-```
+          ```
 
-</TabItem>
+        </details>
+      </TabItem>
+
+      <TabItem value="Curl">
+        <details>
+          <summary>نمایش کامل کد Curl</summary>
+          <br/>
+
+          ```bash
+
+		curl --location --request POST 'http://192.168.51.20/api/v4/pbx/users/update' \
+			--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
+			--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
+			--header 'Content-Type: application/json' \
+			--data-raw '{
+			"_id":"603f4ea7fcff3269187a3da3",
+			"user_type":"SIP",
+			"active":"yes",
+			"name":"Test User2",
+			"number":"909",
+			"cid_number":"909",
+			"secret":"909",
+			"call_record":"no",
+			"push_notification":"no",
+			"deny":"0.0.0.0/0.0.0.0",
+			"permit":"0.0.0.0/0.0.0.0",
+			"dtmfmode":"rfc2833",
+			"canreinvite":"no",
+			"directmedia":"no",
+			"context":"main_routing",
+			"host":"dynamic",
+			"type":"user",
+			"nat":"no",
+			"port":"5060",
+			"qualify":"no",
+			"callgroup":"1",
+			"pickupgroup":"1",
+			"callcounter":"no",
+			"faxdetect":"no",
+			"call_limit":"",
+			"trunk":"no",
+			"transfer":"no",
+			"email":"",
+			"forward_policy":{"Busy":"571","No Answer":"09158315762","UnAvailable":"570","All":"2121"},
+			"more_options":""
+			}'
+
+          ```
+
+        </details>
+      </TabItem>
+
+    </Tabs>
+  </TabItem>
+
+  <TabItem value="outputCode">
+
+      ```shell
+
+		{
+			"success": 1,
+			"message": "Requested operation is done successfully",
+			"data": ""
+		}
+
+      ```
+  </TabItem>
+
 </Tabs>
-
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": ""
-}
-```
-

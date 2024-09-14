@@ -86,7 +86,7 @@ Content-Type: application/json
 ## پیام‌های رایج در پاسخ به درخواست
 
 انواع پاسخ هایی که در سرویس‌های SA دریافت می‌شود به شرح زیر است.
-
+<div class="custom-table">
 |                                              توضیحات                                             | success |                                                                                        message                                                                                       |           header           |
 |:------------------------------------------------------------------------------------------------:|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 |                      سرویس به درستی فراخوانی شد و عملیات به درستی انجام شد.                      |    1    |                                                                                           -                                                                                          |           Ok-200           |
@@ -102,7 +102,7 @@ Content-Type: application/json
 |                             مقدار content-type موجود در هدر مجاز نیست.                            |    0    |                                                                                Unsupported Media Type                                                                                | Unsupported Media Type-415 |
 |                                  سرویس فراخوانی شده وجود ندارد.                                  |    0    |                                                                           Requested service dose not exist                                                                           |     Not Implemented-501    |
 
-
+</div>
 
 ## پارامترهای Pagination
 
@@ -155,7 +155,29 @@ Content-Type: application/json
 	۳. گزارش بازگشتی براساس تاریخ و بصورت صعودی مرتب باشد.
 
 
-**نمونه داده ارسالی وب‌سرویس از متد autodialer/groups/**
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+  <Tabs
+    defaultValue="usageCode"
+    values={[
+      {label: 'نمونه داده ارسالی وب‌سرویس از متد autodialer/groups/', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
+    ]}>
+
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="Curl"
+        values={[
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+
+        <TabItem value="Curl">
+          <details>
+            <summary> نمونه کد با  Curl</summary>
+            <br/>
+
 ```shell
 {
     "alike":"true",
@@ -164,7 +186,14 @@ Content-Type: application/json
 }
 ```
 
-**نمونه پاسخ دریافتی وب‌سرویس**
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
+
 ```shell
 {
     "success": 1,
@@ -198,6 +227,10 @@ Content-Type: application/json
 }
 
 ```
+    </TabItem>
+
+  </Tabs>
+
 
 ## پارامترهای ضروری و منطقی
 

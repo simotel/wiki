@@ -6,6 +6,7 @@ sidebar_position: 1
 از این سرویس برای افزودن ترانک استفاده می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |        توضیحات       |       داده های تعریف شده       |    داده های نمونه    | پارامترهای ضروری[**]/منطقی[*] |    پارامترها    |
 |:--------------------:|:------------------------------:|:--------------------:|:----------------------:|:---------------:|
 |       نوع ترانک      |         SIP/IAX2/DAHDI         |          SIP         |            *           |    trunk_type   |
@@ -27,24 +28,43 @@ sidebar_position: 1
 |           -          |                -               |          all         |            *           |     disallow    |
 |           -          |                -               |       ulaw,alaw      |            *           |      allow      |
 
+</div>
 
 
 ## نمونه فراخوانی
+
+<!--  -->
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-    defaultValue="PHP"
-    values={[
+  defaultValue="usageCode"
+  values={[
+    {label: 'نمونه کد استفاده', value: 'usageCode'},
+    {label: 'نمونه خروجی', value: 'outputCode'},
+  ]}>
+
+  <!-- تب نمونه کد استفاده -->
+  <TabItem value="usageCode">
+    <Tabs
+      defaultValue="PHP"
+      values={[
         {label: 'PHP', value: 'PHP'},
         {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
-    ]}>
-<TabItem value="PHP">
+        {label: 'Curl', value: 'Curl'},
+      ]}>
 
-```php
-	<?php
+      <!-- کد PHP -->
+      <TabItem value="PHP">
+	  
+        <details>
+          <summary>نمایش کامل کد PHP</summary>
+          <br/>
+
+          ```php
+
+		  <?php
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
@@ -97,13 +117,21 @@ import TabItem from '@theme/TabItem';
 	curl_close($curl);
 	echo $response;
 ?>
-```
 
-</TabItem>
-<TabItem value="JS">
+          ```
 
-```js
-	<html>
+        </details>
+      </TabItem>
+
+      <!-- کد JS -->
+      <TabItem value="JS">
+        <details>
+          <summary>نمایش کامل کد JS</summary>
+          <br/>
+
+          ```js
+
+<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 			</head>
@@ -151,51 +179,67 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-```
 
-</TabItem>
-<TabItem value="Linux">
+          ```
 
-```bash
-	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/trunks/add' \
-	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
-	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-		"trunk_type":"SIP",
-		"name":"trunk_name_new",
-		"register_string":"3591011020:as#3591011020@192.168.1.10/3591011020\t",
-		"active":"no",
-		"deny":"0.0.0.0/0.0.0.0",
-		"permit":"0.0.0.0/0.0.0.0",
-		"dtmfmode":"rfc2833",
-		"canreinvite":"no",
-		"directmedia":"no",
-		"context":"from-pstn",
-		"host":"192.168.1.10",
-		"type":"friend",
-		"nat":"force_rport,comedia",
-		"port":"5060",
-		"qualify":"yes",
-		"insecure":"port,invite",
-		"disallow":"all",
-		"allow":"ulaw,alaw",
-		"more_options":"fromuser=3591011020\nusername=3591011020\nsecret=as#3591011020",
-		"description":""
-	}'
+        </details>
+      </TabItem>
 
-```
-</TabItem>
+      <TabItem value="Curl">
+        <details>
+          <summary>نمایش کامل کد Curl</summary>
+          <br/>
+
+          ```bash
+
+			curl --location --request POST 'http://192.168.51.20/api/v4/pbx/trunks/add' \
+			--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
+			--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
+			--header 'Content-Type: application/json' \
+			--data-raw '{
+				"trunk_type":"SIP",
+				"name":"trunk_name_new",
+				"register_string":"3591011020:as#3591011020@192.168.1.10/3591011020\t",
+				"active":"no",
+				"deny":"0.0.0.0/0.0.0.0",
+				"permit":"0.0.0.0/0.0.0.0",
+				"dtmfmode":"rfc2833",
+				"canreinvite":"no",
+				"directmedia":"no",
+				"context":"from-pstn",
+				"host":"192.168.1.10",
+				"type":"friend",
+				"nat":"force_rport,comedia",
+				"port":"5060",
+				"qualify":"yes",
+				"insecure":"port,invite",
+				"disallow":"all",
+				"allow":"ulaw,alaw",
+				"more_options":"fromuser=3591011020\nusername=3591011020\nsecret=as#3591011020",
+				"description":""
+			}'
+
+          ```
+
+        </details>
+      </TabItem>
+
+    </Tabs>
+  </TabItem>
+
+  <TabItem value="outputCode">
+
+      ```shell
+
+		{
+			"success": 1,
+			"message": "Requested operation is done successfully",
+			"data": {
+				"_id": "64b788b111294d248a477205"
+			}
+		}
+
+      ```
+  </TabItem>
+
 </Tabs>
-
-## نمونه خروجی درخواست
-
-```shell
-{
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "_id": "64b788b111294d248a477205"
-    }
-}
-```

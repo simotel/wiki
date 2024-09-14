@@ -6,121 +6,155 @@
 این سرویس برای خروج اپراتور از حالت استراحت در صف استفاده می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |    توضیحات   | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:------------:|:------------------:|:--------------:|:----------------------:|:---------:|
 |    شماره‌صف   |          -         |       999      |           **           |   queue   |
 | شماره‌اپراتور |          -         |       557      |           **           |   agent   |
 
+</div>
 
 
 ## نمونه فراخوانی
 
+<!--  -->
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+ <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
 
-```php
-	<?php
+ <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
 
-	$curl = curl_init();
 
-	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/queues/resumeagent',
-	  CURLOPT_RETURNTRANSFER => true,
-	  CURLOPT_ENCODING => '',
-	  CURLOPT_MAXREDIRS => 10,
-	  CURLOPT_TIMEOUT => 0,
-	  CURLOPT_FOLLOWLOCATION => true,
-	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'POST',
-	  CURLOPT_POSTFIELDS =>'{
-		"queue":"999",
-		"agent":"557"
-	}',
-	  CURLOPT_HTTPHEADER => array(
-		'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
-		'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
-		'Content-Type: application/json'
-	  ),
-	));
+        <!-- کد PHP -->
+       <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
-	$response = curl_exec($curl);
 
-	if (!curl_errno($curl)) {
-		$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-		echo 'response code:'.$httpcode, '<br/>';
-	}
+			```php
+				<?php
 
-	curl_close($curl);
-	echo $response;
-?>
-```
+				$curl = curl_init();
 
-</TabItem>
-<TabItem value="JS">
+				curl_setopt_array($curl, array(
+				CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/queues/resumeagent',
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_ENCODING => '',
+				CURLOPT_MAXREDIRS => 10,
+				CURLOPT_TIMEOUT => 0,
+				CURLOPT_FOLLOWLOCATION => true,
+				CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+				CURLOPT_CUSTOMREQUEST => 'POST',
+				CURLOPT_POSTFIELDS =>'{
+					"queue":"999",
+					"agent":"557"
+				}',
+				CURLOPT_HTTPHEADER => array(
+					'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
+					'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
+					'Content-Type: application/json'
+				),
+				));
 
-```js
-	<html>
-			<head>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			</head>
-		<body>
-				<script>
-					var settings = {
-					  "url": "http://192.168.51.20/api/v4/pbx/queues/resumeagent",
-					  "method": "POST",
-					  "timeout": 0,
-					  "headers": {
-						"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
-						"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
-						"Content-Type": "application/json"
-					  },
-					  "data": JSON.stringify({
-						  "queue": "999",
-						  "agent": "557"
-						}),
-					};
+				$response = curl_exec($curl);
 
-					$.ajax(settings).done(function (response) {
-					  console.log(response);
-					});
-						$.ajax(settings).always(function (jqXHR) {
-							console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
-							console.log("response body: " + jqXHR.responseText);
-						});
-				</script>
-		</body>
-	</html>
-```
+				if (!curl_errno($curl)) {
+					$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+					echo 'response code:'.$httpcode, '<br/>';
+				}
 
-</TabItem>
-<TabItem value="Linux">
+				curl_close($curl);
+				echo $response;
+			?>
+			```
 
-```bash
-	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/queues/resumeagent' \
-	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
-	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-		"queue":"999",
-		"agent":"557"
-	}'
+          </details>
+        </TabItem>
+
+         <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
+
+			```js
+				<html>
+						<head>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+						</head>
+					<body>
+							<script>
+								var settings = {
+								"url": "http://192.168.51.20/api/v4/pbx/queues/resumeagent",
+								"method": "POST",
+								"timeout": 0,
+								"headers": {
+									"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
+									"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
+									"Content-Type": "application/json"
+								},
+								"data": JSON.stringify({
+									"queue": "999",
+									"agent": "557"
+									}),
+								};
+
+								$.ajax(settings).done(function (response) {
+								console.log(response);
+								});
+									$.ajax(settings).always(function (jqXHR) {
+										console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
+										console.log("response body: " + jqXHR.responseText);
+									});
+							</script>
+					</body>
+				</html>
+			```
+
+   </details>
+        </TabItem>
+
+       <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
+
+		```bash
+			curl --location --request POST 'http://192.168.51.20/api/v4/pbx/queues/resumeagent' \
+			--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
+			--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
+			--header 'Content-Type: application/json' \
+			--data-raw '{
+				"queue":"999",
+				"agent":"557"
+			}'
 	```
-</TabItem>
-</Tabs>
 
-## نمونه خروجی درخواست
+    </details>
+        </TabItem>
+
+</Tabs>
+    </TabItem>
+
+  <TabItem value="outputCode">
 
 ```shell
+
 {
     "success": 1,
     "message": "",
@@ -130,3 +164,7 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+
+    </TabItem>
+
+  </Tabs>

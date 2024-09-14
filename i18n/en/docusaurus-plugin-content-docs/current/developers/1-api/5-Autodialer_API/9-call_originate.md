@@ -26,4 +26,4 @@
 
 **۵:** [وب‌سرویس دریافت گزارشات](/docs/developers/1-api/2-SimotelAPI/v4/13-report/4-report_cdr_search.md)
 
-**۶:** [وب‌سرویس رویداد CDR](/docs/developers/1-api/3-SimotelWebhooks/2-Events/14-cdr.md)  -->
+**۶:** [وب‌سرویس رویداد CDR](/docs/developers/1-api/3-SimotelWebhooks/2-Events/14-cdr.md) --> -->

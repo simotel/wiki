@@ -13,17 +13,37 @@ sidebar_position: 2
 ### نمونه فراخوانی
 ## نمونه فراخوانی
 
+
+<!--  -->
+
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -59,8 +79,14 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
-<TabItem value="JS">
+          </details>
+        </TabItem>
+
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
 ```js	
 	<html>
@@ -91,8 +117,13 @@ import TabItem from '@theme/TabItem';
 	</html>
 ```
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/setting/ping/act' \
@@ -101,10 +132,15 @@ import TabItem from '@theme/TabItem';
 	--header 'Content-Type: application/json' \
 	--data-raw ''
 ```
-</TabItem>
-</Tabs>
 
-### نمونه خروجی
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
+
 ```shell
 {
 "success":1,
@@ -112,6 +148,12 @@ import TabItem from '@theme/TabItem';
 "data":null
 }
 ```
+    </TabItem>
+
+  </Tabs>
+
+
+
 
 ## رخداد Ping
 در صورتی که رخداد Ping در تنظیمات سیموتل فعال باشد بعد از فراخوانی ای پی آی پینگ وب هوک Ping فعال می‌شود.

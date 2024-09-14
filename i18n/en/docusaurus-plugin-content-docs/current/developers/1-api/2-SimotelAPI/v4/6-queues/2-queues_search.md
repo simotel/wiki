@@ -6,129 +6,160 @@
 این سرویس برای جستجوی صف‌ها استفاده می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |       توضیحات       | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] |      پارامترها     |
 |:-------------------:|:------------------:|:--------------:|:----------------------:|:------------------:|
 | نمایش داده‌های مشابه |     true/false     |      true      |           **           |        alike       |
 |        نام صف       |          -         |        -       |                        |  conditions->name  |
 |       شماره صف      |          -         |      9009      |                        | conditions->number |
 
-
+</div>
 
 ## نمونه فراخوانی
+
+
+<!--  -->
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
-    values={[
+  defaultValue="usageCode"
+  values={[
+    {label: 'نمونه کد استفاده', value: 'usageCode'},
+    {label: 'نمونه خروجی', value: 'outputCode'},
+  ]}>
+
+  <!-- تب نمونه کد استفاده -->
+  <TabItem value="usageCode">
+    <Tabs
+      defaultValue="PHP"
+      values={[
         {label: 'PHP', value: 'PHP'},
         {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
-    ]}>
-<TabItem value="PHP">
+        {label: 'Curl', value: 'Curl'},
+      ]}>
 
-```php
-	<?php
-	$curl = curl_init();
+      <!-- کد PHP -->
+      <TabItem value="PHP">
+	  
+        <details>
+          <summary>نمایش کامل کد PHP</summary>
+          <br/>
 
-	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/queues/search',
-	  CURLOPT_RETURNTRANSFER => true,
-	  CURLOPT_ENCODING => '',
-	  CURLOPT_MAXREDIRS => 10,
-	  CURLOPT_TIMEOUT => 0,
-	  CURLOPT_FOLLOWLOCATION => true,
-	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'POST',
-	  CURLOPT_POSTFIELDS =>'{
-		"alike":"true",
-		"conditions":{
-			"name":"",
-			"number":"9009"
-		}
-	}',
-	  CURLOPT_HTTPHEADER => array(
-		'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
-		'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
-		'Content-Type: application/json'
-	  ),
-	));
+		```php
+			<?php
+			$curl = curl_init();
 
-	$response = curl_exec($curl);
+			curl_setopt_array($curl, array(
+			CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/queues/search',
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_ENCODING => '',
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 0,
+			CURLOPT_FOLLOWLOCATION => true,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => 'POST',
+			CURLOPT_POSTFIELDS =>'{
+				"alike":"true",
+				"conditions":{
+					"name":"",
+					"number":"9009"
+				}
+			}',
+			CURLOPT_HTTPHEADER => array(
+				'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
+				'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
+				'Content-Type: application/json'
+			),
+			));
 
-	if (!curl_errno($curl)) {
-		$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-		echo 'response code:'.$httpcode, '<br/>';
-	}
+			$response = curl_exec($curl);
 
-	curl_close($curl);
-	echo $response;
-?>
-```
+			if (!curl_errno($curl)) {
+				$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+				echo 'response code:'.$httpcode, '<br/>';
+			}
 
-</TabItem>
-<TabItem value="JS">
+			curl_close($curl);
+			echo $response;
+		?>
+		```
 
-```js
-	<html>
-			<head>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			</head>
-		<body>
-			<script>
-				var settings = {
-				  "url": "http://192.168.51.20/api/v4/pbx/queues/search",
-				  "method": "POST",
-				  "timeout": 0,
-				  "headers": {
-					"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
-					"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
-					"Content-Type": "application/json"
-				  },
-				  "data": JSON.stringify({
-					  "alike": "true",
-					  "conditions": {
-						"name": "",
-						"number": "9009"
-				  }
-				}),
-				};
+        </details>
+      </TabItem>
 
+      <!-- کد JS -->
+      <TabItem value="JS">
+        <details>
+          <summary>نمایش کامل کد JS</summary>
+          <br/>
 
-					$.ajax(settings).always(function (jqXHR) {
-						console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
-						console.log("response body: " + jqXHR.responseText);
-					});
-			</script>
-		</body>
-	</html>
-```
-
-</TabItem>
-<TabItem value="Linux">
-
-```bash
-	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/queues/search' \
-	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
-	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-		"alike":"true",
-		"conditions":{
-			"name":"",
-			"number":"9009"
-		}
-	}'
-```
-</TabItem>
-</Tabs>
+		```js
+			<html>
+					<head>
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+					</head>
+				<body>
+					<script>
+						var settings = {
+						"url": "http://192.168.51.20/api/v4/pbx/queues/search",
+						"method": "POST",
+						"timeout": 0,
+						"headers": {
+							"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
+							"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
+							"Content-Type": "application/json"
+						},
+						"data": JSON.stringify({
+							"alike": "true",
+							"conditions": {
+								"name": "",
+								"number": "9009"
+						}
+						}),
+						};
 
 
-## نمونه خروجی درخواست
+							$.ajax(settings).always(function (jqXHR) {
+								console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
+								console.log("response body: " + jqXHR.responseText);
+							});
+					</script>
+				</body>
+			</html>
+		```
 
-```shell
+        </details>
+      </TabItem>
+
+      <TabItem value="Curl">
+        <details>
+          <summary>نمایش کامل کد Curl</summary>
+          <br/>
+
+		```bash
+			curl --location --request POST 'http://192.168.51.20/api/v4/pbx/queues/search' \
+			--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
+			--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
+			--header 'Content-Type: application/json' \
+			--data-raw '{
+				"alike":"true",
+				"conditions":{
+					"name":"",
+					"number":"9009"
+				}
+			}'
+		```
+        </details>
+      </TabItem>
+
+    </Tabs>
+  </TabItem>
+
+  <TabItem value="outputCode">
+
+      ```shell
 {
     "success": 1,
     "message": "",
@@ -172,4 +203,7 @@ import TabItem from '@theme/TabItem';
         }
     ]
 }
-```
+      ```
+  </TabItem>
+
+</Tabs>

@@ -4,29 +4,45 @@
 از این سرویس برای دانلود فایل صوتی مکالمات ضبط شده استفاده می‌شود.نام فایل صوتی به عنوان پارمتر در رویداد `CDR` به سمت وب‌سرویس ارسال می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |                   توضیحات                  | داده های تعریف شده |        داده های نمونه       | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:------------------------------------------:|:------------------:|:---------------------------:|:----------------------:|:---------:|
 | نام فایل‌صوتی مکالمه که از جستجو بدست می‌آید |          -         | 20200921_1600675211.10033.1 |           **           |    file   |
+</div>
 
 
 ** در جواب فایل صوتی مربوطه برای دانلود به سمت وب‌سرویس ارسال می‌شود. **
 
-
-
 ## نمونه فراخوانی
+
+<!--  -->
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -59,8 +75,14 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
-<TabItem value="JS">
+          </details>
+        </TabItem>
+
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
 ```js
 	<html>
@@ -91,8 +113,13 @@ import TabItem from '@theme/TabItem';
 	</html>
 ```
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/reports/audio/download' \
@@ -103,7 +130,14 @@ import TabItem from '@theme/TabItem';
 		"file":"20200921_1600675211.10033.1.mp3"
 	}'
 	```
-	
-</TabItem>
-</Tabs>
+
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+
+
+  </Tabs>
 
