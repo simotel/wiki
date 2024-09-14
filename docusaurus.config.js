@@ -65,25 +65,28 @@ themeConfig: {
       src: 'img/newSimotelFavIcon.svg',
     },
     items: [
-      // {
-      //   type: 'localeDropdown', // منوی انتخاب زبان
-      //   position: 'left',
-      // },
+      {
+        type: 'localeDropdown', // منوی انتخاب زبان
+        position: 'left',
+      },
       {
         type: 'doc',
         docId: 'simotel/introsimotel',
+        to: 'docs',
         position: 'left',
         label: 'مرکز تماس',
       },
       {
-        to: 'docs/developers/api/introapi', // file path : /versioned_docs/version-6.2.0/api/1-introapi.md
+        to: 'docs/developers/api/introapi', 
         label: 'توسعه دهندگان'
       },
       {
+
         type: 'doc',
         docId: 'autodialer/introad',
+        to: 'docs/autodialer/introad',
         position: 'left',
-        label: ' ماژول تماس‌انبوه',
+        label: 'ماژول تماس انبوه',
       },
       
   /* {to: '/autodialer/introad', label: 'ماژول تماس‌انبوه', position: 'left'}, */
@@ -91,20 +94,22 @@ themeConfig: {
         type: 'docsVersionDropdown',
         docsPluginId: 'autodialer',
       }, */
-  {to: '/intro-softphone', label: 'سافت‌فون', position: 'left'},
-      {to: '/blog', label: 'بلاگ', position: 'left'},
-/*         {
-        type: 'search',
-        position: 'right',
-      }, */
-/*    		{
-        type: 'docsVersionDropdown',
-    docsPluginId: 'default',
-      }, */
+  {
+    to: '/intro-softphone',
+
+   label: 'سافت‌فون', 
+   position: 'left',
+  },
+      {to: '/blog',
+
+       label: 'بلاگ',
+      position: 'left'
+    },
+
    {
         href: 'https://forum.mysup.ir',
         label: 'پایگاه دانش',
-        position: 'right',
+        position: 'right'
       },
 /*
       {

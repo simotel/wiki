@@ -26,6 +26,15 @@
     "آشنایی با سیموتل – فقط پنچ دقیقه ⏱️":{
         "message":" Introduction to Simotel 5 Minutes ⏱️"
     },
+    "پکیج API‍‌ ارائه شده در سیموتل بسیار غنی و قدرتمند است ، شما می‌توانید با استفاده از API‌های ارائه شده سیستمی کاملا پویا بدون نیاز به دخالت انسان را طراحی کنید. برای نمونه می‌توان به سامانه‌های(تماس دوطرفه امن،مشاوره تلفنی،ثبت تیکت خودکار،پرداخت خودکار قبوض و ....) اشاره کرد." : {
+      "message":"Simotel's user interface is designed in such a way that the user can easily implement his scenario without getting involved in the details, the beating heart of the call center, the dial plan gives the user the ability to create any call scenario by just dragging a few components on the page and Connect them together to implement."
+    },
+    "در بخش گزارشات شما می‌توانید به راحتی ساده‌ترین گزارشات کابردی را از سیستم بدون دردسر بگیرید، در مقابل در صورت نیاز به گزارشات پیشرفته وشخصی شده فیلتر‌های بسیاری در اختیار شما قرار می‌گیرد،یکی از قابلیت‌های مهم بخش گزارشات امکان نمایش نموداری وانتزاعی داده‌ها می‌باشد.":{
+      "message":"In the reports section, you can easily get the simplest application reports from the system without any trouble, on the other hand, if you need advanced and personalized reports, you will be provided with many filters, one of the important features of the reports section is the ability to display data graphically and abstractly."
+    },
+    "رابط کاربری سیموتل به نحوی طراحی شده است که کاربر بدون درگیر شدن با جزئیات به راحتی بتواند سناریو خود را پیاده سازی کند،قلب تپنده مرکزتماس، دایل پلن این قابلیت را به کاربر می‌دهد تا هر سناریو تماسی را تنها با کشیدن چند کامپوننت در صفحه و اتصال آن‌ها به یکدیگر پیاده سازی کند.":{
+      "message":"Simotel's user interface is designed in such a way that the user can easily implement his scenario without getting involved in the details, the beating heart of the call center, the dial plan gives the user the ability to create any call scenario by just dragging a few components on the page and Connect them together to implement."
+    },
 
     "siteTitle": {
         "message": "Simotel Docs"
@@ -39,5 +48,28 @@
       "navbar.simotel": {
         "message": "Contact Center"
       }
+      ,
+      "مرکز تماس":{
+        "message":"Call Center"
+          },
+          "توسعه دهندگان":{
+          "message":"Developers"
+          },
+          "ماژول تماس انبوه":{
+            "message":"Autodialer"
+          },
+          "navbar.item.undefined":{
+            "message":"kdfdskf;ldsk"
+          },
+          "سافت‌فون":{
+            "message":"SoftPhone"
+          },
+          "بلاگ":{
+            "message":"Blogs"
+          },
+          "پایگاه دانش":{
+            "message":"Knowledge Base"
+          }
+    
   }
   

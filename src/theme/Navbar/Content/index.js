@@ -19,25 +19,65 @@ function useNavbarItems() {
 }
 
 function NavbarItems({ items }) {
+  console.log(items)
   return (
     <>
-      {items.map((item, i) => (
-        <ErrorCauseBoundary
-          key={i}
-          onError={(error) =>
-            new Error(
-              `A theme navbar item failed to render.
+      {items.map((item, i) => {
+        // بررسی نوع آیتم و انجام پردازش خاص
+        if (item.type === 'localeDropdown') {
+          return (
+            <ErrorCauseBoundary
+              key={i}
+              onError={(error) =>
+                new Error(
+                  `A theme navbar item failed to render.
 Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
 ${JSON.stringify(item, null, 2)}`,
-              { cause: error },
-            )
-          }>
-          <NavbarItem {...item} />
-        </ErrorCauseBoundary>
-      ))}
+                  { cause: error },
+                )
+              }>
+              <NavbarItem
+                // برای آیتم‌های localeDropdown
+                label={item.label || 'Locale Dropdown'}
+                // نمایش منوی خاص اگر مورد نیاز است
+                {...item} 
+              />
+            </ErrorCauseBoundary>
+          );
+        }
+        // برای سایر نوع‌ها
+        if (item.type === 'doc' || !item.hasOwnProperty('type')) {
+          return (
+            <ErrorCauseBoundary
+              key={i}
+              onError={(error) =>
+                new Error(
+                  `A theme navbar item failed to render.
+Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
+${JSON.stringify(item, null, 2)}`,
+                  { cause: error },
+                )
+              }>
+              <NavbarItem
+                label={translate({
+                  id: `${item.label || 'default'}`,
+                  message: item.label || 'Default Label',
+                })}
+                to={item.to || '#'}
+                // سایر ویژگی‌ها
+                // {...item}
+              />
+            </ErrorCauseBoundary>
+          );
+        }
+
+        // آیتم‌های دیگر را نادیده بگیرید
+        return null;
+      })}
     </>
   );
 }
+
 
 function NavbarContentLayout({ left, right }) {
   return (
