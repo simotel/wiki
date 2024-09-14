@@ -1,0 +1,43 @@
+{
+    "رابط کاربری ساده و قدرتمند": {
+      "message": "Simple and Powerful Interface",
+      "description":"very useful"
+    },
+    "رابط کاربری سیموتل به نحوی طراحی شده است...": {
+      "message": "The Simutel interface is designed...",
+      "description":"very useful"
+    },
+    "سیستم گزارش گیری پیشرفته": {
+      "message": "Advanced Reporting System",
+      "description":"very useful"
+    },
+    "در بخش گزارشات شما می‌توانید...": {
+      "message": "In the reports section, you can easily...",
+      "description":"very useful"
+    },
+    "شخصی سازی کامل با استفاده از API": {
+      "message": "Full Customization with API",
+      "description":"very useful"
+    },
+    "پکیج API‍‌ ارائه شده...": {
+      "message": "The API package offered by Simutel is...",
+      "description":"very useful"
+    },
+    "آشنایی با سیموتل – فقط پنچ دقیقه ⏱️":{
+        "message":" Introduction to Simotel 5 Minutes ⏱️"
+    },
+
+    "siteTitle": {
+        "message": "Simotel Docs"
+      },
+      "site.tagline": {
+        "message": "Welcome to the SimoTel Contact Center Documentation 👋️"
+      },
+      "navbar.title": {
+        "message": "Docs Center"
+      },
+      "navbar.simotel": {
+        "message": "Contact Center"
+      }
+  }
+  

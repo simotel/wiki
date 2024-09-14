@@ -1,13 +1,21 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+
+const  getNavbarConfig  = require('./src/navbarConfig');
+const isKorean = process.env.DOCUSAURUS_CURRENT_LOCALE == 'fa' || process.env.DOCUSAURUS_CURRENT_LOCALE == 'en'
+console.log(process.env.DOCUSAURUS_CURRENT_LOCALE)
 module.exports = {
-  title: 'SimoTel Docs',
-  tagline: 'به بخش مستندات مرکز تماس SimoTel خوش‌آمدید 👋️',
+  title: 'Docs',
+  tagline:  'site.tagline' ,
+  // tagline: 'به بخش مستندات مرکز تماس SimoTel خوش‌آمدید 👋️',
   url: 'https://docs-simotel.hsy.ir/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
-  favicon: 'img/LogoSimotel.svg',
+  favicon: 'img/newSimotelFavIcon.svg',
+  //==============js
+
+
+  //===================
 //  organizationName: 'NasimTelecom', // Usually your GitHub org/user name.   	used when you deploy your site with the deploy command.
 ///  projectName: 'Simotel', // Usually your repo name.							used when you deploy your site with the deploy command.
 
@@ -15,112 +23,103 @@ module.exports = {
 
 
 i18n: {
-    defaultLocale: "fa",
-    locales: ["fa"],
-     localeConfigs: {
-      'ar': {
-        direction: "rtl"
-      } 
-    }
+    defaultLocale: 'fa',
+    locales: ['en', 'fa'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      fa: {
+        label: 'فارسی',
+        direction: 'rtl',
+        htmlLang: 'fa-IR',
+        calendar: 'persian',
+        path: 'fa',
+      },
+    },
   },
 
 // plugins: ['@docusaurus/plugin-google-gtag'],
 themeConfig: { 
+ 
   prism: {
     additionalLanguages: ['php'],
-   
   },
   docs:{
     sidebar:{
       hideable: true,
     }
   },
-  /*   gtag: {
-      // You can also use your "G-" Measurement ID here.
-      trackingID: 'G-46R3LL0HG3',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    }, */
-/* algolia: {
-      apiKey: '1dfefe00cfc889d95c56779c783338ce',
-      indexName: 'simotel',
 
-      // Optional: see doc section below
-      contextualSearch: true,
-
-      // Optional: see doc section below
-      appId: 'Z8VMULKPNW',
-
-      // Optional: Algolia search parameters
-      searchParameters: {},
-
-      //... other Algolia params
-    }, */
-  
-	  
-	// hideableSidebar: true,
-    navbar: {
-		hideOnScroll: true,
-      title: 'Docs Center',
-      logo: {
-        alt: 'SimoTel',
-        src: 'img/LogoSimotel.svg',
-      },
-      items: [
-        // {
-        //   type:'docsVersion',
-          
-        //   to:'docs',
-        // },
-        //-------------navbar item to doc simotel------------
-        {
-          type: 'doc',
-          docId: 'simotel/introsimotel',
-          position: 'left',
-          label: 'مرکز‌تماس',
-        },
-        {
-          to: 'docs/developers/api/introapi', // file path : /versioned_docs/version-6.2.0/api/1-introapi.md
-          label: 'توسعه دهندگان'
-        },
-        {
-          type: 'doc',
-          docId: 'autodialer/introad',
-          position: 'left',
-          label: ' ماژول تماس‌انبوه',
-        },
-        
-		/* {to: '/autodialer/introad', label: 'ماژول تماس‌انبوه', position: 'left'}, */
-/*         {
-          type: 'docsVersionDropdown',
-          docsPluginId: 'autodialer',
-        }, */
-		{to: '/intro-softphone', label: 'سافت‌فون', position: 'left'},
-        {to: '/blog', label: 'بلاگ', position: 'left'},
-/*         {
-          type: 'search',
-          position: 'right',
-        }, */
-/*    		{
-          type: 'docsVersionDropdown',
-		  docsPluginId: 'default',
-        }, */
- 		{
-          href: 'https://forum.mysup.ir',
-          label: 'پایگاه دانش',
-          position: 'right',
-        },
-/*
-        {
-          href: 'https://www.nasimtelecom.com/contact/',
-          label: 'تماس با ما',
-          position: 'right',
-        }, */
-/* 		 {
-           type: 'docsVersionDropdown',
-         } */
-      ],
+  // navbar: getNavbarConfig(process.env.DOCUSAURUS_CURRENT_LOCALE != 'undefined' ? 'en':'fa'),
+  navbar: {
+    hideOnScroll: true,
+    title: 'Docs Center',
+    logo: {
+      alt: 'navbar.logoAlt',
+      src: 'img/newSimotelFavIcon.svg',
     },
+    items: [
+      // {
+      //   type: 'localeDropdown', // منوی انتخاب زبان
+      //   position: 'left',
+      // },
+      {
+        type: 'doc',
+        docId: 'simotel/introsimotel',
+        position: 'left',
+        label: 'مرکز تماس',
+      },
+      {
+        to: 'docs/developers/api/introapi', // file path : /versioned_docs/version-6.2.0/api/1-introapi.md
+        label: 'توسعه دهندگان'
+      },
+      {
+        type: 'doc',
+        docId: 'autodialer/introad',
+        position: 'left',
+        label: ' ماژول تماس‌انبوه',
+      },
+      
+  /* {to: '/autodialer/introad', label: 'ماژول تماس‌انبوه', position: 'left'}, */
+/*         {
+        type: 'docsVersionDropdown',
+        docsPluginId: 'autodialer',
+      }, */
+  {to: '/intro-softphone', label: 'سافت‌فون', position: 'left'},
+      {to: '/blog', label: 'بلاگ', position: 'left'},
+/*         {
+        type: 'search',
+        position: 'right',
+      }, */
+/*    		{
+        type: 'docsVersionDropdown',
+    docsPluginId: 'default',
+      }, */
+   {
+        href: 'https://forum.mysup.ir',
+        label: 'پایگاه دانش',
+        position: 'right',
+      },
+/*
+      {
+        href: 'https://www.nasimtelecom.com/contact/',
+        label: 'تماس با ما',
+        position: 'right',
+      }, */
+/* 		 {
+         type: 'docsVersionDropdown',
+       } */
+    ],
+  },
+
+     
+    
     footer: {
       style: 'dark',
       links: [
@@ -129,15 +128,15 @@ themeConfig: {
           items: [
 		  	{
               label: 'SimoTel OS',
-              href: 'http://dl.mysup.ir/debian-simotel-10.5.0.s8.iso',
+              href: 'https://dl.mysup.ir/iso/debian-simotel-10.12.0.s11.ast18.iso',
             },
             {
               label: 'SimoTel PHP connect',
-              href: 'https://github.com/nasimtelecom/simotel-php-connect',
+              href: 'https://github.com/simotel/simotel-php-connect',
             },
             {
               label: 'SimoTel laravel connect',
-              href: 'https://github.com/nasimtelecom/simotel-laravel-connect',
+              href: 'https://github.com/simotel/simotel-laravel-connect',
             },
 			//{to: '/file/Simotel_V3.edition_12.postman_collection.json',target: '_blank', label: 'Postman V3 e12'},
 			{
@@ -198,6 +197,7 @@ presets: [
       '@docusaurus/preset-classic',
       {
         docs: {
+           id: 'default',
         path: 'docs',
 		    routeBasePath: 'docs',
         sidebarPath: require.resolve('./sidebars.js'),
@@ -221,35 +221,6 @@ presets: [
           customCss: require.resolve('./src/css/custom.css'),
         },
 		
-/*----------------------------------------version---------------------------------------------*/	
-/*  		docs: {
-				//showLastUpdateTime: true,
-			    //showLastUpdateAuthor: true,
-				//includeCurrentVersion: true,
-  		
-				//admonitions: {},
-			    //"lastVersion": "current",
-				//"versions": {
-				//"current": {
-				//"label": "6.2",
-				//"path": "6.2"
-				//		   },							   
-				//		} 
-				
-			    path: 'docs',
-				sidebarPath: 'sidebars.js',
-				versions: {
-				  current: {
-					label: '6.3 🚧',
-				  },
-				  6.2: {
-						label: '6.2',
-				  },
-				}, 			   
-		},	  */
-/*----------------------------------------version---------------------------------------------*/
-
-
 /*----------------------------------------SEO---------------------------------------------*/
  sitemap: {
         changefreq: 'weekly',
@@ -258,8 +229,10 @@ presets: [
       },
 /*----------------------------------------SEO---------------------------------------------*/			
       },
+     
 
     ],
+     
 ],
 
 
@@ -332,6 +305,8 @@ plugins: [
 			path: './intro-softphone',
 		  },
 	],
+  
+  
      [
 	 
 		'@docusaurus/plugin-pwa',
@@ -361,7 +336,7 @@ plugins: [
 		  {
             tagName: 'link',
             rel: 'mask-icon',
-            href: '/img/LogoSimotel.svg',
+            href: '/img/newSimotelFavIcon.svg',
             color: 'rgb(37, 194, 160)',
           },
           {
@@ -439,7 +414,12 @@ plugins: [
       },
     ],
   ], */
-
+  // scripts: [
+  //   {
+  //     src: 'img/custom.js',
+  //     async: true,
+  //   },
+  // ],
 
 };
 

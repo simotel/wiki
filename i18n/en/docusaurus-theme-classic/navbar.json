@@ -1,0 +1,13 @@
+{
+
+  "navbar.simotel": {
+    "message": "Contact Center"
+  },
+  "simotel": {
+    "message": "Contact Center"
+  },
+  "call.navbar":{
+    "message":"Contact Center"
+  }
+  
+}

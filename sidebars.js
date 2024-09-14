@@ -47,7 +47,6 @@ module.exports = {
 				'autodialer/campaigns',
 				'autodialer/reports',
 				'autodialer/dialer.ini',
-
 			],
 		},
 	],
@@ -60,6 +59,8 @@ module.exports = {
 	// dirName: 'api'
 	// },
 	// ],
+	//
+
 
 	/////////////////////////////////// API SimoTel Sidebar//////////////////////////////////
 	docs: [
@@ -74,6 +75,7 @@ module.exports = {
 				'developers/api/SimotelAPI/v4/call-originate',
 				{
 					'کاربر': ['developers/api/SimotelAPI/v4/users/users_add',
+					
 						'developers/api/SimotelAPI/v4/users/users_search',
 						'developers/api/SimotelAPI/v4/users/users_edit',
 						'developers/api/SimotelAPI/v4/users/users_remove',
@@ -209,8 +211,6 @@ module.exports = {
 	///////////////////////////////////Simotel Docs Sidebar//////////////////////////////////
 	Docs: [
 		'simotel/introsimotel',
-
-
 		{
 			type: 'category',
 			label: 'آشنایی با سامانه',
