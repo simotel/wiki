@@ -48,199 +48,233 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-    defaultValue="PHP"
-    values={[
+  defaultValue="usageCode"
+  values={[
+    {label: 'نمونه کد استفاده', value: 'usageCode'},
+    {label: 'نمونه خروجی', value: 'outputCode'},
+  ]}>
+
+  <!-- تب نمونه کد استفاده -->
+  <TabItem value="usageCode">
+    <Tabs
+      defaultValue="PHP"
+      values={[
         {label: 'PHP', value: 'PHP'},
         {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
-    ]}>
-<TabItem value="PHP">
+        {label: 'Curl', value: 'Curl'},
+      ]}>
 
-```php
-	<?php
+      <!-- کد PHP -->
+      <TabItem value="PHP">
+	  
+        <details>
+          <summary>نمایش کامل کد PHP</summary>
+          <br/>
 
-	$curl = curl_init();
+          ```php
 
-	curl_setopt_array($curl, array(
-	CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/users/add',
-	CURLOPT_RETURNTRANSFER => true,
-	CURLOPT_ENCODING => '',
-	CURLOPT_MAXREDIRS => 10,
-	CURLOPT_TIMEOUT => 0,
-	CURLOPT_FOLLOWLOCATION => true,
-	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	CURLOPT_CUSTOMREQUEST => 'POST',
-	CURLOPT_POSTFIELDS =>'{
-			"user_type":"SIP",
-			"active":"yes",
-			"name":"User2",
-			"number":"99998",
-			"cid_number":"999",
-			"secret":"999",
-			"call_record":"no",
-			"push_notification":"no",
-			"deny":"0.0.0.0/0.0.0.0",
-			"permit":"0.0.0.0/0.0.0.0",
-			"dtmfmode":"rfc2833",
-			"canreinvite":"no",
-			"directmedia":"no",
-			"context":"main_routing",
-			"host":"dynamic",
-			"type":"user",
-			"nat":"no",
-			"port":"5060",
-			"qualify":"no",
-			"callgroup":"1",
-			"pickupgroup":"1",
-			"callcounter":"no",
-			"faxdetect":"no",
-			"call_limit":"",
-			"trunk":"no",
-			"transfer":"no",
-			"email":"",
-			"forward_policy":{"Busy":"571","No Answer":"09158315762","UnAvailable":"570","All":"2121"},
-			"more_options":""
-		}',
-	CURLOPT_HTTPHEADER => array(
-		'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
-		'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
-		'Content-Type: application/json'
-	),
-	));
+          <?php
+          $curl = curl_init();
 
-	$response = curl_exec($curl);
-	
-	if (!curl_errno($curl)) {
-		$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-		echo 'response code:'.$httpcode, '<br/>';
-	}
-	curl_close($curl);
-	echo $response;
-?>
-```
+          curl_setopt_array($curl, array(
+            CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/users/add',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS =>'{
+                "user_type":"SIP",
+                "active":"yes",
+                "name":"User2",
+                "number":"99998",
+                "cid_number":"999",
+                "secret":"999",
+                "call_record":"no",
+                "push_notification":"no",
+                "deny":"0.0.0.0/0.0.0.0",
+                "permit":"0.0.0.0/0.0.0.0",
+                "dtmfmode":"rfc2833",
+                "canreinvite":"no",
+                "directmedia":"no",
+                "context":"main_routing",
+                "host":"dynamic",
+                "type":"user",
+                "nat":"no",
+                "port":"5060",
+                "qualify":"no",
+                "callgroup":"1",
+                "pickupgroup":"1",
+                "callcounter":"no",
+                "faxdetect":"no",
+                "call_limit":"",
+                "trunk":"no",
+                "transfer":"no",
+                "email":"",
+                "forward_policy":{"Busy":"571","No Answer":"09158315762","UnAvailable":"570","All":"2121"},
+                "more_options":""
+            }',
+            CURLOPT_HTTPHEADER => array(
+              'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
+              'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
+              'Content-Type: application/json'
+            ),
+          ));
 
-</TabItem>
-<TabItem value="JS">
+          $response = curl_exec($curl);
+          if (!curl_errno($curl)) {
+            $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+            echo 'response code:'.$httpcode, '<br/>';
+          }
+          curl_close($curl);
+          echo $response;
+          ?>
 
-```js
+          ```
 
-	<html>
-			<head>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			</head>
-			<body>
-		    <script>
-		var settings = {
-	  "url": "http://192.168.51.20/api/v4/pbx/users/add",
-	  "method": "POST",
-	  "timeout": 0,
-	  "headers": {
-		"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
-		"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
-		"Content-Type": "application/json"
-	  },
-	  "data": JSON.stringify(
-			{
-			"user_type": "SIP",
-			  "active": "yes",
-			  "name": "User2",
-			  "number": "999",
-			  "cid_number": "999",
-			  "secret": "999",
-			  "call_record": "no",
-			  "push_notification": "no",
-			  "deny": "0.0.0.0/0.0.0.0",
-			  "permit": "0.0.0.0/0.0.0.0",
-			  "dtmfmode": "rfc2833",
-			  "canreinvite": "no",
-			  "directmedia": "no",
-			  "context": "main_routing",
-			  "host": "dynamic",
-			  "type": "user",
-			  "nat": "no",
-			  "port": "5060",
-			  "qualify": "no",
-			  "callgroup": "1",
-			  "pickupgroup": "1",
-			  "callcounter": "no",
-			  "faxdetect": "no",
-			  "call_limit": "",
-			  "trunk": "no",
-			  "transfer": "no",
-			  "email": "",
-			  "forward_policy": {
-				"Busy": "571",
-				"No Answer": "09158315762",
-				"UnAvailable": "570",
-				"All": "2121"
-			  },
-			   "more_options": ""
-			}
-	  ),
+        </details>
+      </TabItem>
 
-	};
-	
-	$.ajax(settings).always(function (jqXHR) {
-		console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
-		console.log("response body: " + jqXHR.responseText);
-	});
-    </script>
-		</body>
-	</html>
-```
+      <!-- کد JS -->
+      <TabItem value="JS">
+        <details>
+          <summary>نمایش کامل کد JS</summary>
+          <br/>
 
-</TabItem>
-<TabItem value="Linux">
+          ```js
+		  
+          <html>
+            <head>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            </head>
+            <body>
+              <script>
+                var settings = {
+                  "url": "http://192.168.51.20/api/v4/pbx/users/add",
+                  "method": "POST",
+                  "timeout": 0,
+                  "headers": {
+                    "X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
+                    "Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
+                    "Content-Type": "application/json"
+                  },
+                  "data": JSON.stringify({
+                    "user_type": "SIP",
+                    "active": "yes",
+                    "name": "User2",
+                    "number": "999",
+                    "cid_number": "999",
+                    "secret": "999",
+                    "call_record": "no",
+                    "push_notification": "no",
+                    "deny": "0.0.0.0/0.0.0.0",
+                    "permit": "0.0.0.0/0.0.0.0",
+                    "dtmfmode": "rfc2833",
+                    "canreinvite": "no",
+                    "directmedia": "no",
+                    "context": "main_routing",
+                    "host": "dynamic",
+                    "type": "user",
+                    "nat": "no",
+                    "port": "5060",
+                    "qualify": "no",
+                    "callgroup": "1",
+                    "pickupgroup": "1",
+                    "callcounter": "no",
+                    "faxdetect": "no",
+                    "call_limit": "",
+                    "trunk": "no",
+                    "transfer": "no",
+                    "email": "",
+                    "forward_policy": {
+                      "Busy": "571",
+                      "No Answer": "09158315762",
+                      "UnAvailable": "570",
+                      "All": "2121"
+                    },
+                    "more_options": ""
+                  })
+                };
 
-	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/users/add' \
-	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
-	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-	"user_type":"SIP",
-	"active":"yes",
-	"name":"User2",
-	"number":"999",
-	"cid_number":"999",
-	"secret":"999",
-	"call_record":"no",
-	"push_notification":"no",
-	"deny":"0.0.0.0/0.0.0.0",
-	"permit":"0.0.0.0/0.0.0.0",
-	"dtmfmode":"rfc2833",
-	"canreinvite":"no",
-	"directmedia":"no",
-	"context":"main_routing",
-	"host":"dynamic",
-	"type":"user",
-	"nat":"no",
-	"port":"5060",
-	"qualify":"no",
-	"callgroup":"1",
-	"pickupgroup":"1",
-	"callcounter":"no",
-	"faxdetect":"no",
-	"call_limit":"",
-	"trunk":"no",
-	"transfer":"no",
-	"email":"",
-	"forward_policy":{"Busy":"571","No Answer":"09158315762","UnAvailable":"570","All":"2121"},
-	"more_options":""
-	}'
+                $.ajax(settings).always(function (jqXHR) {
+                  console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
+                  console.log("response body: " + jqXHR.responseText);
+                });
+              </script>
+            </body>
+          </html>
 
-</TabItem>
+          ```
+
+        </details>
+      </TabItem>
+
+      <!-- کد Curl -->
+      <TabItem value="Curl">
+        <details>
+          <summary>نمایش کامل کد Curl</summary>
+          <br/>
+
+          ```bash
+
+          curl --location --request POST 'http://192.168.51.20/api/v4/pbx/users/add' \
+          --header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
+          --header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
+          --header 'Content-Type: application/json' \
+          --data-raw '{
+            "user_type":"SIP",
+            "active":"yes",
+            "name":"User2",
+            "number":"999",
+            "cid_number":"999",
+            "secret":"999",
+            "call_record":"no",
+            "push_notification":"no",
+            "deny":"0.0.0.0/0.0.0.0",
+            "permit":"0.0.0.0/0.0.0.0",
+            "dtmfmode":"rfc2833",
+            "canreinvite":"no",
+            "directmedia":"no",
+            "context":"main_routing",
+            "host":"dynamic",
+            "type":"user",
+            "nat":"no",
+            "port":"5060",
+            "qualify":"no",
+            "callgroup":"1",
+            "pickupgroup":"1",
+            "callcounter":"no",
+            "faxdetect":"no",
+            "call_limit":"",
+            "trunk":"no",
+            "transfer":"no",
+            "email":"",
+            "forward_policy":{"Busy":"571","No Answer":"09158315762","UnAvailable":"570","All":"2121"},
+            "more_options":""
+          }'
+
+          ```
+
+        </details>
+      </TabItem>
+
+    </Tabs>
+  </TabItem>
+
+  <!-- تب نمونه خروجی -->
+  <TabItem value="outputCode">
+
+      ```shell
+
+      {
+        "status": "success",
+        "message": "User created successfully",
+        "user_id": "999"
+      }
+
+      ```
+  </TabItem>
+
 </Tabs>
-
-## نمونه خروجی درخواست
-
-```shell
-{
-   
-    "success": 1,
-    "message": "Requested operation is done successfully",
-    "data": {
-        "_id": "64b783f3dc412c6dd0306ec7"
-    }
-
-}
-```

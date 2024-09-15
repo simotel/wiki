@@ -61,11 +61,12 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.21/api/v4/pbx/faxes/upload' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--form 'file=@"/path/to/file"'
-
+```
 </TabItem>
 </Tabs>
 

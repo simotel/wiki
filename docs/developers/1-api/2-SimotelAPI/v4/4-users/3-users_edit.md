@@ -58,6 +58,8 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="PHP">
 
+```php
+
 	<?php
 	$curl = curl_init();
 
@@ -119,11 +121,12 @@ import TabItem from '@theme/TabItem';
 	curl_close($curl);
 	echo $response;
 
-
+```
 </TabItem>
 <TabItem value="JS">
 
-	
+```js
+
 	<html>
 		<head>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -188,10 +191,11 @@ import TabItem from '@theme/TabItem';
 		</body>
 	</html>
 	
-
+```
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/users/update' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
@@ -228,6 +232,7 @@ import TabItem from '@theme/TabItem';
 	"forward_policy":{"Busy":"571","No Answer":"09158315762","UnAvailable":"570","All":"2121"},
 	"more_options":""
 	}'
+```
 
 </TabItem>
 </Tabs>

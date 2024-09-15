@@ -109,6 +109,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/blacklists/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
@@ -120,6 +121,7 @@ import TabItem from '@theme/TabItem';
 			"number":"557"
 		}
 	}'
+	```
 </TabItem>
 </Tabs>
 

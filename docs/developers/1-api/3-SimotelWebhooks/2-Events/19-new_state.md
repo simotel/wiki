@@ -42,18 +42,19 @@ import TabItem from '@theme/TabItem';
     ]}>
 <TabItem value="Idle">
 
-    
+```bash    
 	{
 	"event_name": "NewState",
 	"exten": "991",
 	"state": "Idle",
 	"unique_id": "1610778618.378"
 	}
+	```
 
 </TabItem>
 <TabItem value="InUse">
 
-
+```bash
 	{
 	"event_name": "NewState",
 	"exten": "991",
@@ -63,7 +64,7 @@ import TabItem from '@theme/TabItem';
 	"queue": "902",
 	"unique_id": "1610778625.386"
 	}
-
+```
 </TabItem>
 </Tabs>
 

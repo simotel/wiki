@@ -128,6 +128,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/campaigns/update' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
@@ -146,7 +147,7 @@ import TabItem from '@theme/TabItem';
 		"description":"",
 		"count":3
 	}'
-	
+	```
 </TabItem>
 </Tabs>
 

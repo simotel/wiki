@@ -94,6 +94,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/reports/audio/download' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
@@ -101,6 +102,7 @@ import TabItem from '@theme/TabItem';
 	--data-raw '{
 		"file":"20200921_1600675211.10033.1.mp3"
 	}'
+	```
 	
 </TabItem>
 </Tabs>

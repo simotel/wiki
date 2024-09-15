@@ -158,6 +158,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/trunks/update' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
@@ -185,7 +186,7 @@ import TabItem from '@theme/TabItem';
 		"more_options":"fromuser=3591011020\nusername=3591011020\nsecret=as#3591011020",
 		"description":""
 	}'
-
+```
 </TabItem>
 </Tabs>
 

@@ -93,12 +93,13 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/announcements/remove' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
 	--data-raw '{"_id":"6033876dc92de036d1390923"}'
-	
+	```
 </TabItem>
 </Tabs>
 

@@ -15,8 +15,7 @@ sidebar_position: 1
 |                شماره اپراتور نگاشت شده               |          -         |        -       |                        |   mapped  |
 
 
-
-
+	
 ## نمونه فراخوانی
 
 import Tabs from '@theme/Tabs';
@@ -114,6 +113,8 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
+
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/users/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
@@ -123,7 +124,7 @@ import TabItem from '@theme/TabItem';
 		"alike":true,
 		"conditions":{"name": "101", "number": "", "mapped": ""}
 	}'
-
+```
 </TabItem>
 </Tabs>
 

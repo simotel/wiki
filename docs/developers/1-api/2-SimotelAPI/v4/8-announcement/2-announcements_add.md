@@ -71,7 +71,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="JS">
 
-```php
+```js
 	<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -107,6 +107,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/announcements/add' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
@@ -116,6 +117,7 @@ import TabItem from '@theme/TabItem';
 		"filename":"file-20200624051520-61681-announcement-wiresha_",
 		"comment":"Just for test"
 	}'
+	```
 </TabItem>
 </Tabs>
 

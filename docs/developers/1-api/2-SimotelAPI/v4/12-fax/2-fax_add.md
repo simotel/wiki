@@ -74,6 +74,7 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/faxes/add' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
@@ -86,7 +87,7 @@ import TabItem from '@theme/TabItem';
 		"file":"file-20200624051520-61681-fax-test",
 		"description":"Just for test"
 	}'
-
+```
 </TabItem>
 </Tabs>
 

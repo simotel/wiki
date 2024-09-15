@@ -110,6 +110,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request POST 'http://192.168.51.21/api/v4/autodialer/campaigns/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
@@ -119,7 +120,7 @@ import TabItem from '@theme/TabItem';
 		"conditions":{"name":"test","description":"","status":""},
 		"pagination":{"start":0,"count":20,"sorting":{}}
 	}'
-	
+	```
 </TabItem>
 </Tabs>
 

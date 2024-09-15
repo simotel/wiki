@@ -98,6 +98,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
@@ -109,7 +110,7 @@ import TabItem from '@theme/TabItem';
 		"caller_id":"masking",
 		"timeout":"30"
 	}'
-
+```
 </TabItem>
 </Tabs>
 
@@ -218,6 +219,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
@@ -230,7 +232,7 @@ import TabItem from '@theme/TabItem';
 		"trunk_name":"Cisco",
 		"timeout":"30"
 	}'
-
+```
 </TabItem>
 </Tabs>
 
@@ -344,6 +346,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
@@ -355,7 +358,7 @@ import TabItem from '@theme/TabItem';
 		"caller_id":"557",
 		"timeout":"30"
 	}'
-
+```
 </TabItem>
 </Tabs>
 
@@ -460,6 +463,7 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="Linux">
 
+```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
@@ -472,7 +476,7 @@ import TabItem from '@theme/TabItem';
 		"trunk_name":"Cisco",
 		"timeout":"30"
 	}'
-
+```
 </TabItem>
 </Tabs>
 
