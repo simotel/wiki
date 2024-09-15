@@ -7,6 +7,7 @@ sidebar_position: 2
 
 
 ## پارامترهای رویداد
+<div class="custom-table">
 
 |                توضیحات               | داده‌های تعریف‌شده |        داده‌های نمونه        |           پارامتر‌ها          |
 |:------------------------------------:|:----------------:|:---------------------------:|:----------------------------:|
@@ -26,6 +27,8 @@ sidebar_position: 2
 |                   -                  |         -        |              0              |     **description->FAXPAGES**    |
 |                   -                  |         -        | Unexpected message received | **description->FAXSTATUSSTRING** |
 |                   -                  |         -        |              "              |      **description->REASON**     |
+
+</div>
 
 ## نمونه خروجی رویداد CDR
 

@@ -10,19 +10,35 @@
 ### ۱: ایجاد تماس دوطرفه بین دو داخلی 570 و 553
 
 
-** نمونه فراخوانی **
+ ## نمونه فراخوانی 
+<!--  -->
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -59,8 +75,14 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
-<TabItem value="JS">
+          </details>
+        </TabItem>
+
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
 ```js	
 	<html>
@@ -95,26 +117,35 @@ import TabItem from '@theme/TabItem';
 	</html>
 ```
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
 
-```bash
-	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
-	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
-	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-		"caller":"570",
-		"callee":"553",
-		"context":"main_routing",
-		"caller_id":"masking",
-		"timeout":"30"
-	}'
-```
-</TabItem>
-</Tabs>
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
-** خروجی درخواست **
+		```bash
+			curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
+			--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
+			--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
+			--header 'Content-Type: application/json' \
+			--data-raw '{
+				"caller":"570",
+				"callee":"553",
+				"context":"main_routing",
+				"caller_id":"masking",
+				"timeout":"30"
+			}'
+		```
+
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -125,6 +156,12 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
+
+  </Tabs>
+
+
+<!--  -->
 
 ### ۲: ایجاد تماس دوطرفه بین شماره 09376131239 و داخلی 521
 
@@ -133,15 +170,33 @@ import TabItem from '@theme/TabItem';
 که در مثال برابر با **Cisco** می‌باشد.
 
 
-** نمونه فراخوانی **
-<Tabs
-    defaultValue="PHP"
+## نمونه فراخوانی 
+
+<!--  -->
+
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -179,8 +234,14 @@ import TabItem from '@theme/TabItem';
 	?>
 ```
 
-</TabItem>
-<TabItem value="JS">
+          </details>
+        </TabItem>
+
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
 ```js
 	<html>
@@ -216,9 +277,13 @@ import TabItem from '@theme/TabItem';
 	</html>
 ```
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
 
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 ```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
@@ -233,10 +298,14 @@ import TabItem from '@theme/TabItem';
 		"timeout":"30"
 	}'
 ```
-</TabItem>
-</Tabs>
 
-** خروجی درخواست **
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -247,6 +316,12 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
+
+  </Tabs>
+
+
+<!--  -->
  
 ### ۳: ایجاد تماس بین داخلی 521 و شماره 09376131239
  
@@ -262,17 +337,34 @@ import TabItem from '@theme/TabItem';
 
 
 
- ** نمونه فراخوانی **
-<Tabs
-    defaultValue="PHP"
-    values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
-    ]}>
-<TabItem value="PHP">
+ ## نمونه فراخوانی 
 
-```php
+<!--  -->
+  <Tabs
+    defaultValue="usageCode"
+    values={[
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
+    ]}>
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
+
+ ```php
 	<?php
 
 	$curl = curl_init();
@@ -307,8 +399,14 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
-<TabItem value="JS">
+          </details>
+        </TabItem>
+
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
 ```js
 	<html>
@@ -343,8 +441,13 @@ import TabItem from '@theme/TabItem';
 	</html>
 ```	
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
@@ -359,10 +462,14 @@ import TabItem from '@theme/TabItem';
 		"timeout":"30"
 	}'
 ```
-</TabItem>
-</Tabs>
 
-** خروجی درخواست **
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -373,19 +480,40 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
 
+  </Tabs>
+
+
+<!--  -->
 ### ۴: ایجاد تماس بین شماره 31041570 و شماره 09376131239
 
 
- ** نمونه فراخوانی **
-<Tabs
-    defaultValue="PHP"
+ ##  نمونه فراخوانی 
+
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -423,8 +551,14 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
-<TabItem value="JS">
+          </details>
+        </TabItem>
+
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
 ```js
 	<html>
@@ -460,8 +594,13 @@ import TabItem from '@theme/TabItem';
 	</html>
 ```
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
@@ -477,10 +616,14 @@ import TabItem from '@theme/TabItem';
 		"timeout":"30"
 	}'
 ```
-</TabItem>
-</Tabs>
 
-** خروجی درخواست **
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -491,6 +634,12 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
+
+  </Tabs>
+
+<!--  -->
+
 
 ### ۵: اعمال محدودیت زمان مکالمه بر روی تماس دوطرفه
 

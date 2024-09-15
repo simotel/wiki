@@ -43,8 +43,7 @@ sidebar_position: 1
 </div>
 
 
-## Sample call
-
+## نمونه فراخوانی
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
