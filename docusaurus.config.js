@@ -1,7 +1,3 @@
-
-const  getNavbarConfig  = require('./src/navbarConfig');
-const isKorean = process.env.DOCUSAURUS_CURRENT_LOCALE == 'fa' || process.env.DOCUSAURUS_CURRENT_LOCALE == 'en'
-console.log(process.env.DOCUSAURUS_CURRENT_LOCALE)
 module.exports = {
   title: 'Docs',
   tagline:  'site.tagline' ,
@@ -12,14 +8,6 @@ module.exports = {
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
-  //==============js
-
-
-  //===================
-//  organizationName: 'NasimTelecom', // Usually your GitHub org/user name.   	used when you deploy your site with the deploy command.
-///  projectName: 'Simotel', // Usually your repo name.							used when you deploy your site with the deploy command.
-
-
 
 
 i18n: {
@@ -419,12 +407,7 @@ plugins: [
       },
     ],
   ], */
-  // scripts: [
-  //   {
-  //     src: 'img/custom.js',
-  //     async: true,
-  //   },
-  // ],
+
 
 };
 
