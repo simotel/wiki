@@ -116,13 +116,13 @@ themeConfig: {
     
     footer: {
       style: 'dark',
-      logo: {
-        alt: 'سیموتل',
-        src: 'img/newSimotelFavIcon.svg',
-        href: 'https://nasimtel.com',
-        width: 51,
-        height: 51,
-        className: 'footer__logo',
+      // logo: {
+        // alt: 'سیموتل',
+        // src: 'img/newSimotelFavIcon.svg',
+        // href: 'https://nasimtel.com',
+        // width: 51,
+	// height: 51,
+	// className: 'footer__logo',
       },
       // links: [
       //   {
@@ -421,4 +421,3 @@ plugins: [
 
 
 };
-
