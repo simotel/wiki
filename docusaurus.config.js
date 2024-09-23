@@ -123,7 +123,7 @@ themeConfig: {
         // width: 51,
 	// height: 51,
 	// className: 'footer__logo',
-      },
+      //},
       // links: [
       //   {
       //     title: 'دسترسی سریع',
