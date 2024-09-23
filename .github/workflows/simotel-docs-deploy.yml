@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'wiki/**'
+      - 'docs/**'
       - 'docusaurus.config.js'
       - 'sidebars.js'
   workflow_dispatch:
