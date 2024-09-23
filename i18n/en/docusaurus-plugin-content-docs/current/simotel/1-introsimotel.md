@@ -2,103 +2,92 @@
 slug: /
 sidebar_position: 1
 ---
-# مقدمه
+# introduction
 
-یکی از راه‌های اصلی ارتباط بین مشترکان و کارکنان یک مجموعه مراکز تماس هستند، در بسیاری از سازمان‌ها مراکز تماس بخش مهمی به‌جهت
- ارتقای کیفیت خدمات به مشترکان به حساب می‌آیند از این رو انتخاب سامانه‌ای هوشمند و پویا می‌تواند نقش موثری در رسیدن به معیارهای
- مطلوب رضایت مشتری بازی کند. سازمان‌هایی وجود دارند  که بصورت میانگین روازنه با چندین هزار تماس سرکار دارند، بنابراین وجود مرکز تماسی
- که بتواند این حجم از تماس را مدیریت کند و در نهایت گزارشاتی‌ به جهت بهبود فرایند‌های سازمان ارائه دهد موضوعی ضروری می‌باشد،مرکز
- تماس **SimoTel** با قابلیت‌های که در اختیار مشترکان خود قرار می‌دهد امکان بررسی فرایند‌ها و ارتقای سطح رضایت مشتری را فراهم می‌کند.
+One of the primary means of communication between customers and staff in an organization is through contact centers. In many organizations, contact centers play a vital role in enhancing the quality of services provided to customers. Therefore, choosing an intelligent and dynamic system can significantly contribute to achieving desired customer satisfaction standards. There are organizations that handle several thousand calls daily on average, making it essential to have a contact center capable of managing this volume of calls while also generating reports to improve organizational processes. **SimoTel** contact center, with its capabilities, allows customers to review processes and enhance customer satisfaction levels.
 
 
-## مانیتورینگ
+## Monitoring
 
-از قابلیت‌های اساسی یک مرکز تماس امکان بررسی کردن وضعیت داخلی‌ها و تماس‌های ورودی،خروجی به سیستم بصورت آنلاین می‌باشد،مرکز تماس **SimoTel** 
-امکان مانیتور آنلاین داخلی‌ها و اپراتور‌های صف را در اختیار کاربران خود قرار می‌دهد.
+One of the essential features of a contact center is the ability to monitor the status of extensions, as well as incoming and outgoing calls, in real-time. The **SimoTel** contact center provides its users with the ability to monitor extensions and queue operators online.
  
 ![Monitoring](/img/monitoring.png)
 
 
-## داشبورد مدیریتی
+## Management Dashboard
 
-به جهت بررسی دقیقتر وضعیت لحظه‌ای سیستم بخش `Dashboard` طراحی شده است، در این قسمت گزارشاتی مختلف مبتنی بر شاخص‌های سنجش مرکز تماس بصورت کامپوننت ارائه شده‌اند و تنها با کشیدن آنها برروی صفحه می‌توانید داشبوردی شخصی‌سازی شده طراحی کنید که داده‌های مربوط به گزارشات را بصورت نموداری به شما نمایش می‌دهد.
-
+To allow for more detailed real-time monitoring of the system, the Dashboard section has been designed. In this section, various reports based on contact center performance indicators are presented as components. By simply dragging them onto the screen, you can create a customized dashboard that displays the report data in chart form.
 ![dashboard](/img/simotel/dashboard.JPG)
 
 
-## انعطاف پذیری بالا
+## High Flexibility
 
-با توجه به اینکه کسب‌کارها و سازمان‌های مختلف مدل‌های‌کسب‌کار‌ و سناریوهای تماس متفاوتی دارند وجود مرکز تماسی که بتواند به راحتی
- نیازمندی‌های تمامی کسب‌کارها را پوشش داده و امکان تغییر در سناریوی تماس را به آسانی در اختیار کاربران خود قرار دهد امری ضروری 
- است،مرکز تماس **SimoTel** با استفاده از ویرایشگر خود اجازه پیاده‌سازی تمامی سناریو‌ها با امکانات متنوع را در اختیار کاربران قرار
- می‌دهد به نحوی که تا به حال سناریوی تماس غیرقابل پیاده سازی در این سامانه دیده نشده است.
+Given that different businesses and organizations have varying business models and call scenarios, having a contact center that can easily meet the needs of all businesses and provide users with the ability to easily modify call scenarios is essential. The **SimoTel** contact center, through its editor, allows users to implement all scenarios with diverse features, such that no call scenario has ever been found to be unimplementable in this system.
 
 
 ![DialPlan](/img/dialplan.png)
 
  
-## گزارشات دسته بندی شده
- 
- در مرکز تماس **SimoTel** امکان گزارشگیری در سه سطح مختلف وجود دارد که به شرح زیر می‌باشند
- 
-### گزارشات سریع
- در این بخش امکان تهیه گزارشاتی کلی از تماس‌های ایجاد شده در بازه زمانی مشخص وجود دارد،فیلترهای متنوعی در این بخش به جهت ایجاد گزارشات شخصی سازی شده وجود دارد.
- 
-###  گزارشات پیشرفته
- 
-در این قسمت گزارشات متنوعی شامل گزارشات
-- مرکز تماس
-- صف‌ها
-- جزئیات صف
-- نظرسنجی‌ها
+## Categorized Reports
 
-وجود دارد،با استفاده از فیلتر‌های موجود در این بخش می‌توان پیچیده ترین گزارشات موجود با فیلتر‌های خاص را از سیستم بازیابی نمود، یکی از مهم‌ترین قابلیت‌های بخش گزارشات 
-پیشرفته امکان نمایش داده‌ بصورت نموداری می‌باشد که در آموزش مربوط به گزارشات پیشرفته بصورت کامل بررسی می‌گردد.
+The **SimoTel** contact center offers reporting capabilities at three different levels, which are as follows:
 
-### گزارشات کاربری
+### Quick Reports
 
-هدف از این بخش ایجاد گزارشات نموداری به جهت تحلیل سناریو‌های چیده شده و اصلاح آنها می‌باشد،در این بخش بالغ ‌بر هجده نوع گزارش کاربری با فیلتر‌های متفاوت وجود دارد که با 
-استفاده از آنها مدیران مجموعه می‌توانند دیدی کلی نسبت به عملکرد فرایند‌های پیاده‌سازی شده در مجموعه پیدا کنند. 
+In this section, users can generate general reports on calls made within a specified time frame. A variety of filters are available here to create customized reports.
+ 
+### Advanced Reports
+
+In this section, a variety of reports are available, including:
+
+- Contact center reports
+- Queue reports
+- Queue details
+- Survey reports
+
+With the filters available in this section, the most complex reports with specific filters can be retrieved from the system. One of the key features of the advanced reports section is the ability to display data in chart form, which will be thoroughly covered in the training related to advanced reports.
+
+### User Reports
+
+The purpose of this section is to create graphical reports for analyzing and modifying configured scenarios. This section includes over eighteen types of user reports with various filters. By using these, managers can gain an overall view of the performance of implemented processes within the organization.
  
 
-## API قدرتمند
+## Powerful API
 
-از مزیت‌های اصلی یک سامانه‌ی نرم‌افزاری قابلیت تجمیع‌پذیری و ایجاد تعامل با دیگر سامانه‌های یک سازمان می‌باشد از این رو تهیه مرکز تماسی که
- بتواند به راحتی با دیگر نرم‌افزارهای مجموعه همگام‌شده  و سامانه‌ای واحد را تشکیل دهد بسیار حائز اهمیت می‌باشد،با استفاده از **API** ارائه
- شده در مرکز تماس **SimoTel** شما به راحتی می‌توانید عملکرد مرکز تماس خود را مدیریت کنید، بسیاری از کسب‌کارها نیاز به تحلیل و بررسی‌داده‌ها 
- خود دارند،شما به راحتی با استفاده از **API** می‌توانید تمامی گزارشات و اطلاعات کاربردی مرکز تماس را بازیابی کنید.
+One of the main advantages of a software system is its ability to integrate and interact with other systems within an organization. Therefore, having a contact center that can easily synchronize with other software in the organization and form a unified system is highly important. With the API provided by the **SimoTel** contact center, you can easily manage the performance of your contact center. Many businesses need to analyze and review their data, and with the **API**, you can easily retrieve all reports and useful information from the contact center.
  
  
-## برخی از قابلیت‌های مرکز تماس SimoTel
- 
-- تلفن گویا(IVR)
-- سیستم بکاپ‌گیری هوشمند
-- ایجاد اتاق کنفرانس
-- انجام نظرسنجی پس از اتمام مکالمه
-- رزرو تماس
-- دریافت گزارشات بصورت فایل Excel
-- پشتیانی از کد های ویژه به جهت انجام خودکار فرایند‌های صف(ورود،خروج،حالت استراحت)
-- پشتیبانی از پیغام‌گیرصوتی و ارسال فایل صوتی به ایمیل
-- ماژول ارسال فکس
-- اپراتور خودکار
-- قابلیت DISA
-- ضبط مکالمات
-- قابلیت شنود مکالمات
-- پاسخ دادن به تماس تلفنی دیگر با استفاده از کد‌های ویژه(pick up)
-- تعیین زمان ساعات کاری در هفته
-- امکان انتقال تماس به شماره همراه(Forward)
-- قابلیت پیج کردن
-- ایجاد لیست سیاه و سفید
-- احراز‌هویت کاربر قبل از اتصال تماس
-- قابلیت افزودن کد استریسک (custom plan)
-- و ...
+## Some Features of the SimoTel Contact Center
+
+- Interactive Voice Response (IVR)
+- Intelligent backup system
+- Conference room creation
+- Post-call surveys
+- Call reservation
+- Reporting in Excel file format
+- Support for special codes for automated queue processes (entry, exit, rest mode)
+- Support for voicemail and sending audio files to email
+- Fax module
+- Automated operator
+- DISA (Direct Inward System Access)
+- Call recording
+- Call monitoring
+- Answering other phone calls using special codes (pick up)
+- Setting business hours for the week
+- Call forwarding to mobile numbers
+- Paging capability
+- Blacklist and whitelist management
+- User authentication before call connection
+- Custom plan integration
+- And more
 
 
-## ترجمه شده به چهار زبان زنده دنیا
- - فارسی
- - انگلیسی
- - عربی
- - ترکی
+## Translated into Four Major Languages
+
+- Persian
+- English
+- Arabic
+- Turkish
  
 
  

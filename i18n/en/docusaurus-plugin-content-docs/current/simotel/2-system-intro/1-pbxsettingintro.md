@@ -1,117 +1,98 @@
 ---
 sidebar_position: 1
 ---
-# مرکزتماس
-مرکز تماس یک شبکه تلفنی است که در یک سازمان یا شرکت استفاده می‌‌شود. استفاده‌کنندگان مرکز تماس (داخلی‌ها) با استفاده از روش‌‌های مختلف ارتباطی 
-(ازجمله VoIP، شبکه ISDN و آنالوگ) به‌صورت داخلی (درون سازمان) و یا خارجی (دنیای خارج)، با یکدیگر در ارتباط هستند. همچنین یک مركز تماس به شما اجازه
- می‌‌دهد خطوط تلفنی بیشتری نسبت به خطوط فیزیكی (PSTN) داشته باشید.
+# Contact Center
+
+A contact center is a telecommunication network used within an organization or company. Users of the contact center (extensions) communicate with each other internally (within the organization) or externally (to the outside world) using various communication methods (including VoIP, ISDN network, and analog). Additionally, a contact center allows you to have more telephone lines than physical lines (PSTN).
 
 ## PBX
-بخش `PBX`  همان قسمت اطلاعات پایه سامانه می‌باشد که پس از تعریف مقادیری مثل کاربران(داخلی‌ها)،صف‌ها و 
-ترانک‌ها از آنها در ویرایشگر `DialPlan` به جهت پیاده‌سازی سناریو‌ی مد‌نظر استفاده می‌شود،در این قسمت به بررسی کلی موارد ضروری برای راه‌اندازی اولیه مرکز تماس می‌پردازیم.
+The `PBX` section is the foundational part of the system where, after defining values such as users (extensions), queues, and trunks, they are used in the `DialPlan` editor to implement the desired scenario. In this section, we will review the essential items needed for the initial setup of the contact center.
 
-## کاربران `Users`
 
-برای استفاده از مرکزتماس در ابتدا نیاز به تعریف کاربران می‌باشد،پس از تعریف کاربران در مرکز تماس امکان رجیستر کردن
- آنها بر‌روی تلفن ویپ و یا سافت‌فون شما فراهم می‌شود، به این کاربران به اصلاح **داخلی** `Extention` گفته می‌شود.
- 
-پس از رجییستر کردن داخلی‌ها برروی تلفن‌ها امکان ایجاد تماس داخلی به داخلی بین کاربران فراهم می‌شود.
+## Users
+To use the contact center, you first need to define users. Once users are defined in the contact center, they can be registered on your VoIP phone or softphone. These users are referred to as **extensions**.
 
-:::caution هشدار
+After registering the extensions on the phones, internal calls between users can be made.
 
-  بخش مرکزتماس تنها شامل اطلاعات پایه می‌باشد وبرای ایجاد تماس داخلی‌به‌داخلی تنضیمات مربوط به بخش ویرایشگر نیز باید انجام شود.
+:::caution Warning
+
+The contact center section only includes basic information. To enable internal-to-internal calls, configurations in the DialPlan editor must also be completed.
 
 :::
 
 
 
-- در بخش `DialPlan` سناریو‌ی معمول پیاده سازی شده است و در صورتی که داخلی‌های خود را بصورت سه‌رقمی `XXX` تعریف کنید امکان تماس داخلی به داخلی 
-بصورت پیش‌فرض وجود دارد.
+- In the `DialPlan` section, a standard scenario is implemented, and if you define your extensions as three-digit numbers `XXX`, internal-to-internal calls will be enabled by default.
 
 
 
 
-برای کسب اطلاعت بیشتر در مورد داخلی‌ها به [این‌قسمت](/docs/simotel/callcenter-docs/pbx/users) مراجعه فرمایید.
+For more information about extensions, please refer to [`this section`](/docs/simotel/callcenter-docs/pbx/users)
 
 
-## ترانک‌ها `Trunks`
+## Trunks
 
-برای ایجاد ارتباط بین سیستم ویپ و دیگر سیستم‌ها از ترانک استفاده می‌شود.
+Trunks are used to establish connections between the VoIP system and other systems.
 
 
 
-### مثال‌های کاربردی استفاده از ترانک
+## Practical Examples of Using Trunks
 
-- **مثال)**: زمانی که شما یک مرکز تماس تهیه می‌کنید این سیستم به شما تمامی قابلیت‌ها را ارائه می‌دهد اما برای ایجاد ارتباط بین شبکه مخابراتی و 
-سیستم ویپ نیاز به ایجاد اتصال بین این سیستم‌ها می‌باشد،در واقع زمانی که شما یک شماره ثابت را از ارائه دهنده خریداری می‌کنید نیاز می‌باشد 
-تا این شماره در سیستم شما تعریف شود و ارتباطی بین شما و ارائه دهنده برقرار شود تا زمانی که تماسی  به شماره مقصد
- شما به دست ارائه دهنده رسید آن تماس را به سمت مرکز تماس شما هدایت کند `Route` ، در نهایت با توجه به سناریوی تماس چیده شده تماس به 
- یکی از کارمندان مجموعه متصل می‌شود.
+- **Example** : When you acquire a contact center, the system provides you with all its features. However, to establish a connection between the telecommunication network and the VoIP system, you need to create a trunk between these systems. Specifically, when you purchase a landline number from a provider, this number needs to be defined in your system. A connection must be established between you and the provider so that when a call is made to the destination number, the provider directs the call to your contact center using a Route. Ultimately, based on the configured call scenario, the call is connected to one of the employees in your organization.
+
+<br/><br/>
  
- <br/> <br/>
+- **Example** : Imagine a company with several branches in different provinces, each having its own independent contact center. Given that these systems are not interconnected, how can a call received by the company's headquarters in Tehran be transferred to the production department supervisor at the Mashhad branch `Transfer`? Or how can internal calls be made between two branches of the company without incurring telecommunication costs? In this case, using trunks allows for logical connections between independent VoIP systems, enabling you to easily take advantage of the services mentioned above.
+
+
+For more information about trunks, please refer to [`this section`](/docs/simotel/callcenter-docs/pbx/trunks)
+
+
+
+
+## Queues
+
+In organizations, there are various departments, each specializing in providing specific services to customers. For example, you can mention technical support and sales departments. In these departments, many individuals are working, so the best way to distribute tasks among the staff is to create a queue of operators. This way, customer calls are connected to the available individuals in the queue based on a fair pattern.
  
-- **مثال)**: تصور کنید یک شرکت چندین شعبه در استان‌های مختلف دارد و هر کدام از این شعبات نیز مرکز تماس مستقل خود را دارند، با توجه به‌اینکه این 
- سیستم‌ها باهم ارتباطی ندارند چطور می‌توان تماسی را که به دفتر مرکزی شرکت در تهران متصل شده‌است را به سرپرست بخش تولید شعبه مشهد انتقال 
- داد `Transfer` یا چطور می‌توان تماس‌ داخلی‌به‌داخلی بین دو شعبه شرکت بدون پرداخت هزینه مخابراتی داشت؟ در اینجا با استفاده از ترانک می‌توان 
- بین سیستم‌های ویپ مستقل ارتباطی منطقی ایجاد کرد و به راحتی از سرویس‌های بالا بهره‌مند شد.
+### Some Queue Features
 
-
-برای کسب اطلاعت بیشتر در مورد ترانک‌ها به [این‌قسمت](/docs/simotel/callcenter-docs/pbx/trunks) مراجعه فرمایید.
-
-
-
-
-## صف‌ها `Queues`
-
-درسازمان‌ها بخش‌های مختلفی وجود دارند که هرکدام بصورت تخصصی وظیفه ارائه سرویس مشخصی را به مشترکان سازمان برعهده دارند برای مثال می‌توان به بخش‌های پشتیبانی
- فنی و فروش اشاره کرد، در این بخش‌ها افراد مختلفی مشغول به کار می‌باشند پس بهترین روش برای توزیع کار بین نیروهای یک بخش ایجاد صفی از اپراتور‌ها  می‌باشد تا تماس مشترکان 
- براساس یک الگوی عادلانه به افراد حاضر در صف متصل شود.
+- Define an unlimited number of queues
+- Define eight different call distribution algorithms for the queue (e.g., ring all when a call enters the queue, sequentially based on priority, etc.)
+- Set priorities for queue Agents (e.g., technical support agents ring first, and if all are busy, the supervisor’s phone rings last)
+- Define hold music (e.g., when all agents are busy and the customer needs to wait, hold music is played)
+- Queue entry and exit using special codes (e.g., an agent can enter the technical support queue by dialing code 91 and exit the queue at the end of the workday by dialing code 92)
+- Record conversations of queue agents
  
-### برخی از قابلیت‌های صف
- 
- - تعریف تعداد نامحدودی از صف‌ها 
-
- - امکان تعریف هشت الگوریتم‌ مختلف توزیع تماس در صف (زمانی که تماس وارد صف شد همه زنگ بخورند، یکی یکی بر اساس الویت یا ...)
- - امکان تعریف اولویت برای اپراتورهای `Agents` صف (در ابتدا اپراتور‌های بخش‌فنی زنگ بخورند و در نهایت در صورت مشغول بودن همه اپراتور‌ها تلفن سرپرست بخش زنگ بخورد) 
- - تعریف موزیک انتظار(زمانی که تمامی اپراتور‌ها مشغول می‌باشند و مشترک باید منتظر بماند و موزیک انتظار پخش شود )
-- ورود خروج صف با استفاده از کد‌های ویژه( اپراتور زمانی که کد 91 را با استفاده از تلفن خود بگیرد وارد صف پشتیبانی فنی می‌شود و در نهایت نیز در پایان زمان کاری با کد 92 از صف خارج می‌شود)
-- ضبط مکالمه اپراتورهای صف
- 
-برای کسب اطلاعت بیشتر در مورد ترانک‌ها به [این‌قسمت](/docs/simotel/callcenter-docs/pbx/queues) مراجعه فرمایید.
- 
+For more information about queues, please refer to [`this section`](/docs/simotel/callcenter-docs/pbx/queues)
 
  
- 
-### موزیک‌انتظار `Music On Hold`
-برای استفاده از قابلیت موزیک انتظار صف در ابتدا نیاز می‌باشد یک کلاس ساخته شود و در آن کلاس فایل‌های موزیک انتظار مربوط به صف خود را بارگذاری کنیم، پس از بارگذاری فایل صوتی با مراجعه 
-به بخش "صف" در قسمت "تنضیمات صف" لیست(کلاس) موزیک انتظار بارگذاری شده خود را انتخاب می‌کنیم.
+### Music On Hold
+To use the Music On Hold feature for a queue, you first need to create a class and upload the Music On Hold files related to your queue into that class. After uploading the audio files, go to the "Queue" section and, under "Queue Settings," select your uploaded Music On Hold class.
 
-برای کسب اطلاعت بیشتر در مورد موزیک‌انتظار به [این‌قسمت](/docs/simotel/callcenter-docs/pbx/music_on_hold) مراجعه فرمایید.
 
-## آواها `Announcements`
+For more information about music on hold, please refer to [`this section`](/docs/simotel/callcenter-docs/pbx/music_on_hold)
 
-در بسیاری از مواقع نیاز می‌باشد قبل از اتصال فرد تماس گیرنده به افراد سازمان ابتدا در یک فایل صوتی معرفی نسبت به بخش‌های سازمان صورت گیرد و در 
-نهایت از کاربر پرسیده شود در صورتی که با بخش خاصی کار دارید لطفا عدد مشخصی را بزنید به این قابلیت مراکز تماس پاسخگوی صوتی `IVR` گفته می‌شود که در آینده
-بصورت کامل به تشریح قابلیت‌های آن می‌پردازیم،اما به هرحال سازمان‌های مختلف فایل صوتی مخصوص به خود را دارند بنابراین نیاز می‌باشد فایل صوتی در ابتدا در بخش
-آواها بارگذاری شده و در نهایت به پاسخگوی صوتی `IVR` مربوطه انتساب داده شود.
+### Announcements
+
+Often, it is necessary to provide an introduction about the organization’s departments in an audio file before connecting the caller to the organization's staff. The caller is then asked to press a specific number if they want to speak with a particular department. This capability is known as Interactive Voice Response (IVR), which will be fully explained in the future. Nevertheless, different organizations have their own specific audio files, so the audio file needs to be uploaded initially in the "Announcements" section and then assigned to the corresponding IVR.
 
  
-### مثال‌های از کاربرد بخش آواها
+### Examples of Announcements Usage
 
-- آوای مربوط به تماس‌های خارج از زمان و روزهای کاری سازمان
+- Announcement for calls outside of business hours and days
 
-- آوای مربوط به ضبط مکالمات
+- Announcement for call recording
 
-- آوای مربوط به نظرسنجی پایانی از مشترک
+- Announcement for end-of-call surveys
  
-:::tip نکته
+:::tip Note
 
-در مرکز تماس سیموتل بصورت پیش‌فرض تعدادی از فایل‌های صوتی پرکاربرد و معمول بارگذاری شده‌اند، برای مشاهده و پخش آن‌ها به بخش آواها مراجعه فرمایید.
+In the SimoTel contact center, a number of commonly used audio files are pre-uploaded by default. To view and play them, please refer to the "Announcements" section.
 
 :::
  
- 
-برای کسب اطلاعت بیشتر در مورد آوا‌ها به [این‌قسمت](/docs/simotel/callcenter-docs/pbx/announcements) مراجعه فرمایید.
+
+For more information about announcements, please refer to [`this section`](/docs/simotel/callcenter-docs/pbx/announcements)
  
  
  

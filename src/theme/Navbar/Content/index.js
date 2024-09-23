@@ -19,7 +19,8 @@ function useNavbarItems() {
 }
 
 function NavbarItems({ items }) {
-  console.log(items)
+ 
+  
   return (
     <>
       {items.map((item, i) => {
@@ -70,6 +71,7 @@ ${JSON.stringify(item, null, 2)}`,
             </ErrorCauseBoundary>
           );
         }
+     
 
         // آیتم‌های دیگر را نادیده بگیرید
         return null;

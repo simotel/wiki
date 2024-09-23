@@ -196,3 +196,13 @@ html[data-theme="dark"] {
   background-color: #4CAF50;
   color: white;
 }
+.localeDropdown .dropdownItem {
+  display: flex;
+  align-items: center;
+}
+
+.localeDropdown .dropdownItem .icon {
+  margin-right: 8px; 
+}
+
+
