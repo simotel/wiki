@@ -1,8 +1,8 @@
 
 module.exports = {
-  title: 'Docs',
+  title: 'مستندات سیموتل',
   tagline:  'site.tagline' ,
-  // tagline: 'به بخش مستندات مرکز تماس SimoTel خوش‌آمدید 👋️',
+  // tagline: 'به مستندات مرکز تلفن سیموتل خوش‌آمدید 👋️',
   url: 'https://wiki.simotel.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
