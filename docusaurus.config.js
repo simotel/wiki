@@ -119,7 +119,7 @@ themeConfig: {
       logo: {
         alt: 'سیموتل',
         src: 'img/newSimotelFavIcon.svg',
-        href: 'nasimtel.com',
+        href: 'https://nasimtel.com',
         width: 51,
         height: 51,
         className: 'footer__logo',
