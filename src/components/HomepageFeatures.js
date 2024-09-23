@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import {translate} from '@docusaurus/Translate';
+import LanguageRedirect from './LanguageRedirect';
 
 
 const FeatureList = [
