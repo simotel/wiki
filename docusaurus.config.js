@@ -12,7 +12,7 @@ module.exports = {
 
 
 i18n: {
-    defaultLocale: 'fa',
+    defaultLocale: 'en',
     locales: ['en', 'fa'],
     path: 'i18n',
     localeConfigs: {
