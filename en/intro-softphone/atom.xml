@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wiki.simotel.com/en/intro-softphone</id>
+    <title>مستندات سیموتل Blog</title>
+    <updated>2021-07-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://wiki.simotel.com/en/intro-softphone"/>
+    <subtitle>مستندات سیموتل Blog</subtitle>
+    <icon>https://wiki.simotel.com/en/img/newSimotelFavIcon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Gs wave]]></title>
+        <id>https://wiki.simotel.com/en/intro-softphone/2021/07/01/Grandstream Wave</id>
+        <link href="https://wiki.simotel.com/en/intro-softphone/2021/07/01/Grandstream Wave"/>
+        <updated>2021-07-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[این نرم افزار را می‌توان برروی سیستم‌عامل‌های اندروید و ios نصب نمود. ابتدا باید نرم افزار را از مارکت‌های مختلف دانلود و نصب نمایید.]]></summary>
+        <content type="html"><![CDATA[<p>این نرم افزار را می‌توان برروی سیستم‌عامل‌های اندروید و ios نصب نمود. ابتدا باید نرم افزار را از مارکت‌های مختلف دانلود و نصب نمایید.</p>
+<p>برای دانلود نسخه اندروید برروی <a href="https://play.google.com/store/apps/details?id=com.grandstream.wave&amp;hl=en&amp;gl=US" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>
+<p>برای سیستم‌عامل ios در App Store متن <strong>Grandstream Wave Lite</strong> را جستجو نمایید.</p>
+<p><strong>مزایا</strong></p>
+<ul>
+<li>پشتیبانی از چند داخلی به‌صورت همزمان و پشتیبانی از کدک های مختلف</li>
+</ul>
+<p><strong>معایب</strong></p>
+<ul>
+<li>پشیبانی نکردن از پروتکل iax2 بصورت رایگان</li>
+</ul>
+<p>برای مشاهده آموزش راه‌اندازی نرم‌افزار بر روی <a href="https://www.aparat.com/v/Glnah" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>]]></content>
+        <author>
+            <name>آموزش سافت‌فون گرنداستریم</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Zoiper]]></title>
+        <id>https://wiki.simotel.com/en/intro-softphone/2021/06/29/Zoiper</id>
+        <link href="https://wiki.simotel.com/en/intro-softphone/2021/06/29/Zoiper"/>
+        <updated>2021-06-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[این نرم افزار را می‌توان برروی سیستم‌عامل‌های Android،IOS،Mac،Windows،Linux نصب نمود.]]></summary>
+        <content type="html"><![CDATA[<p>این نرم افزار را می‌توان برروی سیستم‌عامل‌های Android،IOS،Mac،Windows،Linux نصب نمود.</p>
+<p>برای دانلود برروی <a href="https://www.zoiper.com/en/voip-softphone/download/current" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>
+<p><strong>مزایا</strong></p>
+<ul>
+<li>پشتیبانی از پروتکل iax2</li>
+<li>پشتیبانی از کدک های مختلف</li>
+</ul>
+<p><strong>معایب</strong></p>
+<ul>
+<li>استفاده از ۱ داخلی به صورت رایگان</li>
+<li>عدم پشتیانی از کدک h264,h265,h263 برای تماس تصویری</li>
+<li>برای استفاده از امکانات خاص تر نیاز به خرید نسخه می‌باشد</li>
+</ul>
+<p>برای مشاهده آموزش راه‌اندازی نرم‌افزار بر روی <a href="https://www.aparat.com/v/ZyIJL" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>]]></content>
+        <author>
+            <name>آموزش سافت‌فون زویپر</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsip]]></title>
+        <id>https://wiki.simotel.com/en/intro-softphone/2021/06/28/Microsip</id>
+        <link href="https://wiki.simotel.com/en/intro-softphone/2021/06/28/Microsip"/>
+        <updated>2021-06-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[این نرم‌افزار اپن سورس برای سیستم‌عامل ویندوز طراحی شده است.]]></summary>
+        <content type="html"><![CDATA[<p>این نرم‌افزار اپن سورس برای سیستم‌عامل ویندوز طراحی شده است.</p>
+<p>برای دانلود برروی <a href="https://www.microsip.org/downloads" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>
+<p><strong>مزایا</strong></p>
+<ul>
+<li>پشتیبانی از تعداد نامحدود حساب کاربری</li>
+<li>نرم‌افزاری بسیار سبک و کم حجم می‌باشد</li>
+</ul>
+<p><strong>معایب</strong></p>
+<ul>
+<li>قابل استفاده فقط در سیستم‌عامل ویندوز</li>
+</ul>
+<p>برای مشاهده آموزش راه‌اندازی نرم‌افزار بر روی <a href="https://www.aparat.com/v/u3RjG" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>]]></content>
+        <author>
+            <name>آموزش سافت‌فون میکروسیپ</name>
+        </author>
+    </entry>
+</feed>
