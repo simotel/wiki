@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuimotelndefined=self.webpackChunkuimotelndefined||[]).push([[4306],{4522:e=>{e.exports=JSON.parse('{"blogBasePath":"/en/intro-softphone","blogTitle":"Blog","authorsListPath":"/en/intro-softphone/authors"}')}}]);
