@@ -29,8 +29,12 @@ jobs:
     - name: Build Docusaurus site
       run: npm run build
 
+    - name: Add CNAME file
+      run: echo 'wiki.simotel.com' > ./build/CNAME
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
+        keep_files: true
