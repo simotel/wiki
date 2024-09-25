@@ -8,6 +8,7 @@ on:
       - 'docs/**'
       - 'docusaurus.config.js'
       - 'sidebars.js'
+      - 'i18n/**'
   workflow_dispatch:
 
 jobs:
