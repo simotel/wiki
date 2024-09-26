@@ -25,7 +25,7 @@ const getNavbarConfig = (locale) => {
       title: translations[locale].title,
       logo: {
         alt: 'SimoTel',
-        src: 'img/LogoSimotel.svg',
+        src: 'img/logo.svg',
       },
       items: [
         {
