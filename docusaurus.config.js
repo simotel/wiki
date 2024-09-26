@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'site.title',
+  title: 'siteTitle',
   // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
@@ -417,6 +417,4 @@ plugins: [
       },
     ],
   ], */
-
-
 };
