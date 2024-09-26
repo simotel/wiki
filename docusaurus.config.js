@@ -363,7 +363,7 @@ plugins: [
         hashed: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
-        language: ["en" , "fa"],
+        language: ["en" , "ar"],
         // ```
         // When applying `zh` in language, please install `nodejieba` in your project.
 	/* 	translations:{
