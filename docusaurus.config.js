@@ -1,9 +1,7 @@
-
 module.exports = {
   title: 'site.title',
   // title: 'مستندات سیموتل',
-  tagline:  'site.tagline' ,
-  // tagline: 'به مستندات مرکز تلفن سیموتل خوش‌آمدید 👋️',
+  tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -103,7 +101,7 @@ themeConfig: {
       },
 /*
       {
-        href: 'https://www.nasimtelecom.com/contact/',
+        href: 'https://nasimtel.com/contact/',
         label: 'تماس با ما',
         position: 'right',
       }, */
