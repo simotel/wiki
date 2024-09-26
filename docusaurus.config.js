@@ -7,7 +7,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
-  favicon: 'img/logo.svg',
+  favicon: 'img/favicon.svg',
 
 
 i18n: {
@@ -212,9 +212,9 @@ presets: [
             },
           },
         },
-        gtag: {
-          trackingID: 'G-46R3LL0HG3',
-        },
+        //gtag: {
+        //  trackingID: 'G-46R3LL0HG3',
+        //},
         blog: {
           showReadingTime: true,
         },
@@ -363,7 +363,7 @@ plugins: [
         hashed: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
-        language: ["en" , "ar"],
+        language: ["en" , "fa"],
         // ```
         // When applying `zh` in language, please install `nodejieba` in your project.
 	/* 	translations:{
