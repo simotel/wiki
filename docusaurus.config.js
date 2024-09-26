@@ -1,6 +1,7 @@
 
 module.exports = {
-  title: 'مستندات سیموتل',
+  title: 'siteTitle',
+  // title: 'مستندات سیموتل',
   tagline:  'site.tagline' ,
   // tagline: 'به مستندات مرکز تلفن سیموتل خوش‌آمدید 👋️',
   url: 'https://wiki.simotel.com',
