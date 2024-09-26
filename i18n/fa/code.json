@@ -347,7 +347,7 @@
   "navbar.simotel": {
     "message": "Contact Center"
   },
-  "siteTitle": {
+  "site.title": {
     "message": "ویکی سیموتل"
   },
   "site.tagline": {
@@ -389,7 +389,4 @@
     "Knowledge Base": {
       "message": "پایگاه دانش"
     }
-
-  
- 
 }
