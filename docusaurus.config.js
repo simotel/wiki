@@ -7,7 +7,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/logo.svg',
 
 
 i18n: {
@@ -50,7 +50,7 @@ themeConfig: {
     title: 'Docs Center',
     logo: {
       alt: 'navbar.logoAlt',
-      src: 'img/favicon.svg',
+      src: 'img/logo.svg',
     },
     items: [
       {
