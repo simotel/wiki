@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <Layout
-      title={translate({ message: "siteTitle" })}
+    title={`${translate({ message: "siteTitle" })} | ${translate({ message: "siteTitle2" })}`}
       description="Simotel Docs Center">
       
       <HomepageHeader />
