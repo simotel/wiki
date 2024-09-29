@@ -7,7 +7,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/newSimotelFavIcon.svg',
 
 
 i18n: {
@@ -50,7 +50,7 @@ themeConfig: {
     title: 'Docs Center',
     logo: {
       alt: 'navbar.logoAlt',
-      src: 'img/logo.svg',
+      src: 'img/newSimotelFavIcon.svg',
     },
     items: [
       {
