@@ -35,10 +35,12 @@
     "رابط کاربری سیموتل به نحوی طراحی شده است که کاربر بدون درگیر شدن با جزئیات به راحتی بتواند سناریو خود را پیاده سازی کند،قلب تپنده مرکزتماس، دایل پلن این قابلیت را به کاربر می‌دهد تا هر سناریو تماسی را تنها با کشیدن چند کامپوننت در صفحه و اتصال آن‌ها به یکدیگر پیاده سازی کند.":{
       "message":"Simotel's user interface is designed in such a way that the user can easily implement his scenario without getting involved in the details, the beating heart of the call center, the dial plan gives the user the ability to create any call scenario by just dragging a few components on the page and Connect them together to implement."
     },
-
-    "siteTitle": {
-        "message": "Simotel Docs"
+   "siteTitle": {
+        "message": "Wiki Simotel"
       },
+    "siteTitle2": {
+      "message": "simotel Docs"
+    },
       "site.tagline": {
         "message": "Welcome to the Simotel PBX Documentation 👋️"
       },
