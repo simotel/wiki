@@ -388,5 +388,11 @@
     },
     "Knowledge Base": {
       "message": "پایگاه دانش"
+    },
+  "siteTitle": {
+      "message": "ویکی سیموتل"
+    },
+    "siteTitle2": {
+      "message": "مستندات سیموتل"
     }
 }
