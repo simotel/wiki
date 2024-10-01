@@ -1,5 +1,6 @@
 ---
-
+title: "دانلود فکس"
+sidebar_label: "دانلود فکس"
 ---
 # Fax Download
 

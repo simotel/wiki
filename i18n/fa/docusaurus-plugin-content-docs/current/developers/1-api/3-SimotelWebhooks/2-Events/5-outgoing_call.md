@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "تماس خروجی"
+sidebar_label: "تماس خروجی"
 ---
 # Outgoing Call
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "هنگام حذف کابر"
+sidebar_label: "هنگام حذف کاربر"
 ---
 # Exten Remove
 

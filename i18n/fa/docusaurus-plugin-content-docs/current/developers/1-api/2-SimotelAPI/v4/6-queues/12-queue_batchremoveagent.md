@@ -1,5 +1,6 @@
 ---
-
+title: "خروج دسته ای اپراتور از صف"
+sidebar_label: "خروج دسته ای اپراتور از صف"
 ---
 # Batch Remove Agent
 

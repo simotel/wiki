@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "تست ارتباط"
+sidebar_label: "تست ارتباط"
 ---
 # ping (تست ارتباط)
 

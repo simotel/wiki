@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "گزارش تماس انبوه"
+sidebar_label: "گزارش تماس انبوه"
 ---
 # AutoDialerReport
 

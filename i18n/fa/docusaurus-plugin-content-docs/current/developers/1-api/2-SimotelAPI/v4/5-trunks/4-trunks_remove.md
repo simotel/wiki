@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "حذف تزانک"
+sidebar_label: "حذف ترانک"
 ---
 # Trunk Remove
 

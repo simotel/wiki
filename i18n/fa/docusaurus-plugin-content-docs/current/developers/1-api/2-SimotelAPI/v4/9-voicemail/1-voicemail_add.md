@@ -1,5 +1,6 @@
 ---
-
+title: "افزودن صندوق صوتی"
+sidebar_label: "افزودن صندوق صوتی"
 ---
 # Voicemail Add
 

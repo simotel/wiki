@@ -1,5 +1,6 @@
 ---
-
+title: "حذف آوا"
+sidebar_label: "حذف آوا"
 ---
 # Announce Remove
 

@@ -1,5 +1,6 @@
 ---
-
+title: "بارگزاری فایل صوتی"
+sidebar_label: "بارگزاری فایل صوتی"
 ---
 # Announce Upload
 

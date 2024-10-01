@@ -1,5 +1,6 @@
 ---
-
+title: "افزودن آوا"
+sidebar_label: "افزودن آوا"
 ---
 # Announce Add
 

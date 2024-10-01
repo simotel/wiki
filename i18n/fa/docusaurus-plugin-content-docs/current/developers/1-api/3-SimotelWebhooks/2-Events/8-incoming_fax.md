@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "هنگام دریافت فکس"
+sidebar_label: "هنگام دریافت فکس"
 ---
 # Incoming Fax
 

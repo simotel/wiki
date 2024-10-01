@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "افزودن کاربر "
+sidebar_label: "افزودن کاربر"
 ---
 # User Add
 

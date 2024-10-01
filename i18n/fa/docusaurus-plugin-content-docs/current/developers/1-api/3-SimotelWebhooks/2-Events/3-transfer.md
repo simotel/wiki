@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "انتقال تماس جاری"
+sidebar_label: "انتقال تماس جاری"
 ---
 # Transfer
 

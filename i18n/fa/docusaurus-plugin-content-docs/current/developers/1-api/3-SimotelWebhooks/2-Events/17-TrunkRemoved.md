@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "هنگام حذف ترانک"
+sidebar_label: "هنگام حذف ترانک"
 ---
 # TrunkRemoved
 

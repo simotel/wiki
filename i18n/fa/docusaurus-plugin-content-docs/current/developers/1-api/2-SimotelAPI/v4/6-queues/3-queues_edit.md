@@ -1,5 +1,6 @@
 ---
-
+title: "به روز رسانی صف"
+sidebar_label: "به روز رسانی صف"
 ---
 # Queue Edit
 

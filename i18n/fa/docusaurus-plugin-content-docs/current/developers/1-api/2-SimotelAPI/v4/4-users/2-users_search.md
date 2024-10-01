@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "جستجوی کاربر"
+sidebar_label: "جستجوی کاربر"
 ---
 # User Search
 

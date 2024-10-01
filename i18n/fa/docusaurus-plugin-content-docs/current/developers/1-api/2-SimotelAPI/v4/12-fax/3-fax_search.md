@@ -1,5 +1,6 @@
 ---
-
+title: "جستجو در فکس"
+sidebar_label: "جستجو در فکس"
 ---
 # Fax Search
 

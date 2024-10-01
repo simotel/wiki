@@ -1,5 +1,6 @@
 ---
-
+title: "حذف صندوق صوتی"
+sidebar_label: "حذف صندوق صوتی"
 ---
 # Voicemail Remove
 

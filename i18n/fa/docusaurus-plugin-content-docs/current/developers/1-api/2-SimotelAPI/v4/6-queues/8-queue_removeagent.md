@@ -1,5 +1,6 @@
 ---
-
+title: "خروج اپراتور از صف"
+sidebar_label: "خروج اپراتور از صف"
 ---
 # Remove Agent
 

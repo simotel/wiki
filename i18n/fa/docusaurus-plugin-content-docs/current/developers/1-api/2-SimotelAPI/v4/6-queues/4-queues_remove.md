@@ -1,5 +1,6 @@
 ---
-
+title: "حذف صف"
+sidebar_label: "حذف صف"
 ---
 # Queue Remove
 

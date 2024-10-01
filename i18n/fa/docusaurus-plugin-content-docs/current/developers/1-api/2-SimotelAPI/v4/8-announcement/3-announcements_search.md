@@ -1,5 +1,6 @@
 ---
-
+title: "جستجوی آوا"
+sidebar_label: "جستجوی آوا"
 ---
 # Announce Search
 

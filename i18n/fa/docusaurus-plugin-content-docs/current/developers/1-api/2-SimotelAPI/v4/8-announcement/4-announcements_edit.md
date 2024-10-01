@@ -1,5 +1,6 @@
 ---
-
+title: "به روز رسانی آوا"
+sidebar_label: "به روز رسانی آوا"
 ---
 # Announce Edit
 

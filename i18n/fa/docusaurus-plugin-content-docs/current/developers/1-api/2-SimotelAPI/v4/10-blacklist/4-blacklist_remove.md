@@ -1,5 +1,6 @@
 ---
-
+title: "حذف شماره از لیست سیاه"
+sidebar_label: "حذف شماره از لیست سیاه"
 ---
 # BlackList Remove
 
