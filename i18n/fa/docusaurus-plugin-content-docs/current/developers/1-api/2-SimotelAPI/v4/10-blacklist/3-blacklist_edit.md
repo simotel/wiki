@@ -1,5 +1,6 @@
 ---
-
+title: "به روز رسانی لیست سیاه"
+sidebar_label: "به روز رسانی لیست سیاه"
 ---
 # BlackList Edit
 

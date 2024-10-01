@@ -1,5 +1,6 @@
 ---
-
+title: "جستجو شماره در لیست سیاه"
+sidebar_label: "جستجو شماره در لیست سیاه"
 ---
 # BlackList Search
 

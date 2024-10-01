@@ -1,5 +1,6 @@
 ---
-
+title: "جستجوی سریع"
+sidebar_label: "جستجوی سریع"
 ---
 # Quick Search
 

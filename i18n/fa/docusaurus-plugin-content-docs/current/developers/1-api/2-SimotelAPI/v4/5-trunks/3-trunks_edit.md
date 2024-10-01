@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "به روز رسانی ترانک"
+sidebar_label: "به روز رسانی ترانک"
 ---
 # Trunk Edit
 

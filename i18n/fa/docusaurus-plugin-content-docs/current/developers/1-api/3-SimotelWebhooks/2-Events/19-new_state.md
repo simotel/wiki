@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "تغییر وضعیت کاربر"
+sidebar_label: "تغییر وضعیت کاربر"
 ---
 # New State
 

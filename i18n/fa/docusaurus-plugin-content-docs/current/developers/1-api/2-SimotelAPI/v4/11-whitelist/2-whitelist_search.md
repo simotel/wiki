@@ -1,5 +1,6 @@
 ---
-
+title: "جستجو شماره در لیست سفید"
+sidebar_label: "جستجو شماره در لیست سفید"
 ---
 # WhiteList Search
 

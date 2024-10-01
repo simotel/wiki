@@ -1,5 +1,6 @@
 ---
-
+title: "جستجوی صف"
+sidebar_label: "جستجوی صف"
 ---
 # Queue Search
 

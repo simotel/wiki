@@ -1,5 +1,6 @@
 ---
-
+title: "حذف شماره از لیست سفید"
+sidebar_label: "حذف شماره از لیست سفید"
 ---
 # WhiteList Remove
 

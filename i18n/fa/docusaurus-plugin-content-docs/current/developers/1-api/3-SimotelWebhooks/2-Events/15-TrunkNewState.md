@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "وضعیت ترانک"
+sidebar_label: "وضعیت ترانک"
 ---
 # TrunkNewState
 

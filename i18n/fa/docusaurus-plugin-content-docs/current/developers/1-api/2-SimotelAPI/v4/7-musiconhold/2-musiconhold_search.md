@@ -1,5 +1,6 @@
 ---
-
+title: "جستجوی موزیک انتظار"
+sidebar_label: "جستجوی موزیک انتظار"
 ---
 # Music Search
 

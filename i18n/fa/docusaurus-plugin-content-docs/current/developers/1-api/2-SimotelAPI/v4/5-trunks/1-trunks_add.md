@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "افزودن ترانک"
+sidebar_label: "افزودن ترانک"
 ---
 # Trunk Add
 

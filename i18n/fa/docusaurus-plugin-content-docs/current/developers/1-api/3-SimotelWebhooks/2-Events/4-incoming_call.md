@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "تماس ورودی"
+sidebar_label: "تماس ورودی"
 ---
 # Incoming Call
 

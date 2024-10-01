@@ -29,12 +29,9 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
-  // ری‌دیرکت به /fa
- 
-
   return (
     <Layout
-    title={`${translate({ message: "siteTitle" })} | ${translate({ message: "siteTitle2" })}`}
+    title={`${translate({ message: "siteTitle" })} `}
       description="Simotel Docs Center">
       
       <HomepageHeader />

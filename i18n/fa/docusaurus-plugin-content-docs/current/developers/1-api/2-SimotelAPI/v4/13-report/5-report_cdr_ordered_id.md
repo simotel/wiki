@@ -1,5 +1,6 @@
 ---
-
+title: "جستجوی ترتیبی سریع با cuid"
+sidebar_label: "جستجوی ترتیبی سریع با cuid"
 ---
 # CDR Ordered
 

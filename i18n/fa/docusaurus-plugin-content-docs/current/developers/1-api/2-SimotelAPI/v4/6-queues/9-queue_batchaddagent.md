@@ -1,5 +1,6 @@
 ---
-
+title: "افزودن دسته ای اپراتور به صف"
+sidebar_label: "افزودن دسته ای به صف"
 ---
 # Batch Add Agent
 

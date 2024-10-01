@@ -1,5 +1,6 @@
 ---
-
+title: " جستجوی سریع با cuid"
+sidebar_label: "جستجوی سریع با cuid"
 ---
 # CDR Search
 

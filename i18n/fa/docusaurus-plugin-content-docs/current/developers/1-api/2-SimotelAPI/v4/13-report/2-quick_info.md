@@ -1,5 +1,6 @@
 ---
-
+title: "اطلاعات سریع"
+sidebar_label: "اطلاعات سریع"
 ---
 # Quick Info
 :::caution هشدار

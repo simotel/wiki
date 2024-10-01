@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "هنگام افزوده شدن کاربر"
+sidebar_label: "هنگام افزوده شدن کاربر"
 ---
 # Exten Added
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "حذف کاربر"
+sidebar_label: "حذف کاربر"
 ---
 # User Remove
 

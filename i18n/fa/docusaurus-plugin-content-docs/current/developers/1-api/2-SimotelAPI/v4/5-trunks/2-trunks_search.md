@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "جستجوی ترانک"
+sidebar_label: "جستجوی ترانک"
 ---
 # Trunk Search
 

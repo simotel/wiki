@@ -1,4 +1,6 @@
 ---
+title: "هنگام ارسال فکس"
+sidebar_label: "هنگام ارسال فکس"
 ---
 # Outgoing Fax
 

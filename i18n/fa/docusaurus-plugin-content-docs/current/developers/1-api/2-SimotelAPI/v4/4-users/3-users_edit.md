@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "به روز رسانی کاربر"
+sidebar_label: "به روز رسانی کاربر"
 ---
 # User Edit
 

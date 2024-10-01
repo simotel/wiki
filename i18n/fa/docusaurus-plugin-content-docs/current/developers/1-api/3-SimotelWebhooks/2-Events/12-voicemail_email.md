@@ -1,4 +1,6 @@
 ---
+title: "گزارش ارسال ایمیل"
+sidebar_label: "گزارش ارسال ایمیل"
 ---
 # VoiceMail Email
 

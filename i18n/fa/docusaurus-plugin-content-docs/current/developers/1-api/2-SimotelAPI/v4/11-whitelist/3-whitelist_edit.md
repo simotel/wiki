@@ -1,5 +1,6 @@
 ---
-
+title: "به روز رسانی لیست سفید"
+sidebar_label: "به روز رسانی لیست سفید"
 ---
 # WhiteList Edit
 

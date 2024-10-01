@@ -1,5 +1,6 @@
 ---
-
+title: "افزودن صف"
+sidebar_label: "افزودن صف"
 ---
 # Queue Add
 
