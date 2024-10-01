@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
 import {
   splitNavbarItems,
@@ -11,6 +11,7 @@ import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 import { translate } from '@docusaurus/Translate';
+import { useHistory } from '@docusaurus/router'; // اضافه کردن useHistory
 
 import styles from './styles.module.css';
 
@@ -19,12 +20,23 @@ function useNavbarItems() {
 }
 
 function NavbarItems({ items }) {
- 
-  
+  const history = useHistory(); // استفاده از history
+
+  useEffect(() => {
+    // گوش دادن به تغییر مسیر و رفرش کردن صفحه
+    const unlisten = history.listen((location) => {
+      if (location.pathname.includes('/en') || location.pathname.includes('/fa')) {
+        window.location.reload(); // رفرش کردن صفحه پس از تغییر زبان
+      }
+    });
+    return () => {
+      unlisten(); // پاکسازی گوش دادن به تغییرات
+    };
+  }, [history]);
+
   return (
     <>
       {items.map((item, i) => {
-        // بررسی نوع آیتم و انجام پردازش خاص
         if (item.type === 'localeDropdown') {
           return (
             <ErrorCauseBoundary
@@ -38,15 +50,13 @@ ${JSON.stringify(item, null, 2)}`,
                 )
               }>
               <NavbarItem
-                // برای آیتم‌های localeDropdown
                 label={item.label || 'Locale Dropdown'}
-                // نمایش منوی خاص اگر مورد نیاز است
-                {...item} 
+                {...item}
               />
             </ErrorCauseBoundary>
           );
         }
-        // برای سایر نوع‌ها
+
         if (item.type === 'doc' || !item.hasOwnProperty('type')) {
           return (
             <ErrorCauseBoundary
@@ -65,21 +75,16 @@ ${JSON.stringify(item, null, 2)}`,
                   message: item.label || 'Default Label',
                 })}
                 to={item.to || '#'}
-                // سایر ویژگی‌ها
-                // {...item}
               />
             </ErrorCauseBoundary>
           );
         }
-     
 
-        // آیتم‌های دیگر را نادیده بگیرید
         return null;
       })}
     </>
   );
 }
-
 
 function NavbarContentLayout({ left, right }) {
   return (
@@ -96,7 +101,6 @@ export default function NavbarContent() {
   const [leftItems, rightItems] = splitNavbarItems(items);
   const searchBarItem = items.find((item) => item.type === 'search');
 
-  // ترجمه آیتم‌ها
   const translatedLeftItems = leftItems.map(item => ({
     ...item,
     label: translate({
