@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>مستندات سیموتل Blog</title>
+        <link>https://wiki.simotel.com/en/intro-softphone</link>
+        <description>مستندات سیموتل Blog</description>
+        <lastBuildDate>Thu, 01 Jul 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Gs wave]]></title>
+            <link>https://wiki.simotel.com/en/intro-softphone/2021/07/01/Grandstream Wave</link>
+            <guid>https://wiki.simotel.com/en/intro-softphone/2021/07/01/Grandstream Wave</guid>
+            <pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[این نرم افزار را می‌توان برروی سیستم‌عامل‌های اندروید و ios نصب نمود. ابتدا باید نرم افزار را از مارکت‌های مختلف دانلود و نصب نمایید.]]></description>
+            <content:encoded><![CDATA[<p>این نرم افزار را می‌توان برروی سیستم‌عامل‌های اندروید و ios نصب نمود. ابتدا باید نرم افزار را از مارکت‌های مختلف دانلود و نصب نمایید.</p>
+<p>برای دانلود نسخه اندروید برروی <a href="https://play.google.com/store/apps/details?id=com.grandstream.wave&amp;hl=en&amp;gl=US" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>
+<p>برای سیستم‌عامل ios در App Store متن <strong>Grandstream Wave Lite</strong> را جستجو نمایید.</p>
+<p><strong>مزایا</strong></p>
+<ul>
+<li>پشتیبانی از چند داخلی به‌صورت همزمان و پشتیبانی از کدک های مختلف</li>
+</ul>
+<p><strong>معایب</strong></p>
+<ul>
+<li>پشیبانی نکردن از پروتکل iax2 بصورت رایگان</li>
+</ul>
+<p>برای مشاهده آموزش راه‌اندازی نرم‌افزار بر روی <a href="https://www.aparat.com/v/Glnah" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Zoiper]]></title>
+            <link>https://wiki.simotel.com/en/intro-softphone/2021/06/29/Zoiper</link>
+            <guid>https://wiki.simotel.com/en/intro-softphone/2021/06/29/Zoiper</guid>
+            <pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[این نرم افزار را می‌توان برروی سیستم‌عامل‌های Android،IOS،Mac،Windows،Linux نصب نمود.]]></description>
+            <content:encoded><![CDATA[<p>این نرم افزار را می‌توان برروی سیستم‌عامل‌های Android،IOS،Mac،Windows،Linux نصب نمود.</p>
+<p>برای دانلود برروی <a href="https://www.zoiper.com/en/voip-softphone/download/current" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>
+<p><strong>مزایا</strong></p>
+<ul>
+<li>پشتیبانی از پروتکل iax2</li>
+<li>پشتیبانی از کدک های مختلف</li>
+</ul>
+<p><strong>معایب</strong></p>
+<ul>
+<li>استفاده از ۱ داخلی به صورت رایگان</li>
+<li>عدم پشتیانی از کدک h264,h265,h263 برای تماس تصویری</li>
+<li>برای استفاده از امکانات خاص تر نیاز به خرید نسخه می‌باشد</li>
+</ul>
+<p>برای مشاهده آموزش راه‌اندازی نرم‌افزار بر روی <a href="https://www.aparat.com/v/ZyIJL" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Microsip]]></title>
+            <link>https://wiki.simotel.com/en/intro-softphone/2021/06/28/Microsip</link>
+            <guid>https://wiki.simotel.com/en/intro-softphone/2021/06/28/Microsip</guid>
+            <pubDate>Mon, 28 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[این نرم‌افزار اپن سورس برای سیستم‌عامل ویندوز طراحی شده است.]]></description>
+            <content:encoded><![CDATA[<p>این نرم‌افزار اپن سورس برای سیستم‌عامل ویندوز طراحی شده است.</p>
+<p>برای دانلود برروی <a href="https://www.microsip.org/downloads" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>
+<p><strong>مزایا</strong></p>
+<ul>
+<li>پشتیبانی از تعداد نامحدود حساب کاربری</li>
+<li>نرم‌افزاری بسیار سبک و کم حجم می‌باشد</li>
+</ul>
+<p><strong>معایب</strong></p>
+<ul>
+<li>قابل استفاده فقط در سیستم‌عامل ویندوز</li>
+</ul>
+<p>برای مشاهده آموزش راه‌اندازی نرم‌افزار بر روی <a href="https://www.aparat.com/v/u3RjG" target="_blank" rel="noopener noreferrer">لینک</a> کلیک کنید.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuimotelndefined=self.webpackChunkuimotelndefined||[]).push([[5852],{3137:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/en/intro-softphone","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

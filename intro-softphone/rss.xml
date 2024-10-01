@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>  Blog</title>
+        <title>مستندات سیموتل Blog</title>
         <link>https://wiki.simotel.com/intro-softphone</link>
-        <description>  Blog</description>
+        <description>مستندات سیموتل Blog</description>
         <lastBuildDate>Thu, 01 Jul 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <language>en</language>
+        <language>fa</language>
         <item>
             <title><![CDATA[Gs wave]]></title>
             <link>https://wiki.simotel.com/intro-softphone/2021/07/01/Grandstream Wave</link>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wiki.simotel.com/en/blog</id>
+    <title>مستندات سیموتل Blog</title>
+    <updated>2021-09-04T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://wiki.simotel.com/en/blog"/>
+    <subtitle>مستندات سیموتل Blog</subtitle>
+    <icon>https://wiki.simotel.com/en/img/newSimotelFavIcon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[simotelhelper 26]]></title>
+        <id>https://wiki.simotel.com/en/blog/2021/09/04/update-simotelhelper-26</id>
+        <link href="https://wiki.simotel.com/en/blog/2021/09/04/update-simotelhelper-26"/>
+        <updated>2021-09-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[نسخه 26 ابزار simotelhelper منتشر شد(آپدیت ضروری).]]></summary>
+        <content type="html"><![CDATA[<p>نسخه 26 ابزار simotelhelper منتشر شد(<strong>آپدیت ضروری</strong>).</p>
+<p>در این نسخه ایراد اساسی مربوط به متوقف شدن دیتابیس برطرف شده، لذا اعمال آپدیت ضروری می باشد.</p>
+<p>این آپدیت برای کلیه سرور‌ها باز شده و درصورتی که سرور به اینترنت دسترسی داشته باشد حداکثر  پس از ۴۸ ساعت بصورت خودکار آپدیت می‌گردد.
+درصورتی که سرور اینترنت ندارد پس از برقراری ارتباط اینترنتی یک بار سرویس سیموتل هلپر را استاپ و استارت نمایید تا سرور آپدیت گردد.</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">ubuntu</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">stop simotelhelper</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">start simotelhelper</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">debian</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">service simotelhelper stop</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">service simotelhelper start</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>در منوی <strong>Maintenance &gt; Settings</strong> می‌توانید ورژن جاری simotelhelper را مشاهده فرمایید.</p>
+<p>برای آشنایی بیشتر در مورد ابزار simotelhelper به <a href="https://wiki.simotel.com/en/docs/simotel/advance-settings/simotelhelper_tool">این قسمت</a> مراجعه فرمایید.</p>]]></content>
+        <author>
+            <name>تیم توسعه مستندات مرکزتماس سیموتل</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SimoTel 6.2.27]]></title>
+        <id>https://wiki.simotel.com/en/blog/2021/08/18/SimoTel-6.2.27-publish</id>
+        <link href="https://wiki.simotel.com/en/blog/2021/08/18/SimoTel-6.2.27-publish"/>
+        <updated>2021-08-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[نسخه 6.2.27 سیموتل منتشر شد🔥.]]></summary>
+        <content type="html"><![CDATA[<p>نسخه 6.2.27 سیموتل منتشر شد🔥.</p>
+<p>تغییرات این ورژن شامل</p>
+<ul>
+<li><strong>Some major issue is fixed</strong></li>
+<li><strong>Some major improvement on dialplan</strong></li>
+<li><strong>Webservice v3 is published</strong></li>
+</ul>]]></content>
+        <author>
+            <name>تیم توسعه مستندات مرکزتماس سیموتل</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SimoTel DocsCenter]]></title>
+        <id>https://wiki.simotel.com/en/blog/2021/07/01/SimoTel-DocsCenter-publish</id>
+        <link href="https://wiki.simotel.com/en/blog/2021/07/01/SimoTel-DocsCenter-publish"/>
+        <updated>2021-07-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[مفتخریم نسخه ۶.۲ از مستندات سیموتل را به شما معرفی کنیم🔥.]]></summary>
+        <content type="html"><![CDATA[<p>مفتخریم نسخه ۶.۲ از مستندات سیموتل را به شما معرفی کنیم🔥.</p>
+<p>این داکیومنت با تمرکز برروی نسخه ۶.۲ سیموتل، تلاش بر معرفی و پوشش تمامی قابلیت‌های افزوده شده در این نسخه را دارد. همچنین مستندات ارائه شده در بخش API مبتنی بر جدیدترین نسخه وب‌سرویس سیموتل(API V3) می‌باشند.</p>]]></content>
+        <author>
+            <name>تیم توسعه مستندات مرکزتماس سیموتل</name>
+        </author>
+    </entry>
+</feed>
