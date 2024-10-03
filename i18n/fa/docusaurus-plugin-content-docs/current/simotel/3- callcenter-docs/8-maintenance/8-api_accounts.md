@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "حساب کاربری Api"
+---
+<head>
+  <title>حساب کاربری Api  | مستندات سیموتل</title>
+</head>
 
 # API Accounts
 

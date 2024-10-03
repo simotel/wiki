@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "سابقه فعالیت HA"
+---
+<head>
+  <title>سابقه فعالیت HA  | مستندات سیموتل</title>
+</head>
 
 # HA Logs
 

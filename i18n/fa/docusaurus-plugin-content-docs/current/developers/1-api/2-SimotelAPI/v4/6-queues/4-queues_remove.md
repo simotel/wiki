@@ -1,7 +1,10 @@
 ---
-title: "حذف صف"
 sidebar_label: "حذف صف"
 ---
+<head>
+  <title>حذف صف | مستندات سیموتل </title>
+</head>
+
 # Queue Remove
 
 از این سرویس برای حذف صف استفاده می‌شود.

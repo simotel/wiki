@@ -28,10 +28,14 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-
+  const siteTitle = translate({ message: "siteTitle" });
+  const siteTitle2 = translate({ message: "siteTitle2" });
+ 
+  let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
+  console.log(fullTitle)
   return (
     <Layout
-    title={`${translate({ message: "siteTitle" })} `}
+     title={fullTitle}
       description="Simotel Docs Center">
       
       <HomepageHeader />

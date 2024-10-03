@@ -1,6 +1,11 @@
 ---
 
+sidebar_label: "حذف آوا"
 ---
+<head>
+  <title>حذف آوا | مستندات سیموتل</title>
+</head>
+
 # Announce Remove
 
 از این سرویس برای حذف آوا استفاده می‌شود.

@@ -1,8 +1,12 @@
 ---
 sidebar_position: 2
-title: "وضعیت ترانک"
 sidebar_label: "وضعیت ترانک"
 ---
+<head>
+  <title> وضعیت ترانک | مستندات سیموتل</title>
+</head>
+
+
 # TrunkNewState
 
 در صورت تغییر وضعیت ترانک یک event حاوی وضعیت جدید آن ارسال خواهد شد.

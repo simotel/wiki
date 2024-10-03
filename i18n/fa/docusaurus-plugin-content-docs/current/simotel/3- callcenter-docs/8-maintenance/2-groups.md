@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "گروه کاربری"
+---
+<head>
+  <title>گروه کاربری  | مستندات سیموتل</title>
+</head>
 
 # Groups
 

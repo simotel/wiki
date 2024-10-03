@@ -1,3 +1,9 @@
+---
+sidebar_label: "Smart API"
+---
+<head>
+  <title>معرفی Smart API | مستندات سیموتل</title>
+</head>
 
 
 # Smart API

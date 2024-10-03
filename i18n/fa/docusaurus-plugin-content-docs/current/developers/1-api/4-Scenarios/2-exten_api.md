@@ -1,6 +1,11 @@
 ---
 
+sidebar_label: "سناریو Exten API"
 ---
+<head>
+  <title>سناریو Exten API | مستندات سیموتل</title>
+</head>
+
 # Exten API
 
 :::tip توصیه

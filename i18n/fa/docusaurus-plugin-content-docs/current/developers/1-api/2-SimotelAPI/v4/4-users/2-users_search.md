@@ -1,8 +1,12 @@
 ---
 sidebar_position: 1
-title: "جستجوی کاربر"
 sidebar_label: "جستجوی کاربر"
 ---
+
+<head>
+  <title>جستجوی کاربر | مستندات سیموتل </title>
+</head>
+
 # User Search
 
 از این سرویس برای جستجوی داخلی استفاده می‌شود.

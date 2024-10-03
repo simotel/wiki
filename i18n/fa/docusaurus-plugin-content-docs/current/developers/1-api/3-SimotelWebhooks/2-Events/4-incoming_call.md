@@ -1,8 +1,11 @@
 ---
 sidebar_position: 2
-title: "تماس ورودی"
 sidebar_label: "تماس ورودی"
 ---
+<head>
+  <title>تماس ورودی | مستندات سیموتل</title>
+</head>
+
 # Incoming Call
 
 هنگامی‌ كه تماسی به سیموتل وارد شود (تماس ورودی)، رویداد IncomingCall ایجاد می‌گردد و مشخص می‌نماید كه تماس از چه طریقی‌(entry_point) وارد شده است.

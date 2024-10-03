@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
-title: "حذف کاربر"
 sidebar_label: "حذف کاربر"
 ---
+<head>
+  <title>حذف  کاربر | مستندات سیموتل </title>
+</head>
+
 # User Remove
 
 از این سرویس برای حذف داخلی استفاده می‌شود.

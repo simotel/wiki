@@ -1,8 +1,12 @@
 ---
 sidebar_position: 2
-title: "هنگام حذف کابر"
-sidebar_label: "هنگام حذف کاربر"
+sidebar_label: "حذف کاربر"
 ---
+<head>
+  <title>حذف کاربر | مستندات سیموتل</title>
+</head>
+
+
 # Exten Remove
 
 هنگامی‌ كه کاربری از سیموتل حذف شود، رويداد ExtenRemoved ايجاد می‌گردد.

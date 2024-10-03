@@ -1,3 +1,9 @@
+---
+sidebar_label: "ارسال پست الکترونیک"
+---
+<head>
+  <title>ارسال پست الکترونیک  | مستندات سیموتل</title>
+</head>
 
 
 # Mail Server

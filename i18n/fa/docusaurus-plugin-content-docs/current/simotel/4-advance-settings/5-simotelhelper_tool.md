@@ -1,6 +1,10 @@
 ---
-
+sidebar_label: "ابزار Simotelhelper"
 ---
+<head>
+  <title>ابزار Simotelhelper | مستندات سیموتل</title>
+</head>
+
 
 # ابزار simotelhelper
 

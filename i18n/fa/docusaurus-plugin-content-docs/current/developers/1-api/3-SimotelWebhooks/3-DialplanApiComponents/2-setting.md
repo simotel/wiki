@@ -1,6 +1,12 @@
 ---
 sidebar_position: 1
+sidebar_label: "تنظیمات"
 ---
+
+<head>
+  <title>تنظیمات  | مستندات سیموتل</title>
+</head>
+
 # تنظیمات
 
 

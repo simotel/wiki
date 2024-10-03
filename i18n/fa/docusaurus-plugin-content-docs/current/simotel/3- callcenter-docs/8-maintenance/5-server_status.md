@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "وضعیت سرور"
+---
+<head>
+  <title>وضعیت سرور  | مستندات سیموتل</title>
+</head>
 
 # Server Status
 

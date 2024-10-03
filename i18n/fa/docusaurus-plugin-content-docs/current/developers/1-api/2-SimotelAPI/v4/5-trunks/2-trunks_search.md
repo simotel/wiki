@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
-title: "جستجوی ترانک"
 sidebar_label: "جستجوی ترانک"
 ---
+<head>
+  <title>جستجوی ترانک | مستندات سیموتل </title>
+</head>
+
 # Trunk Search
 
 از این سرویس برای جستجو ترانک استفاده می‌شود.

@@ -1,3 +1,9 @@
+---
+sidebar_label: "تنظیمات Api"
+---
+<head>
+  <title>تنطیمات Api  | مستندات سیموتل</title>
+</head>
 
 
 # API settings

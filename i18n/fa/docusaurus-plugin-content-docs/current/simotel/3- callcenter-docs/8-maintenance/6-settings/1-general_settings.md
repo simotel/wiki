@@ -1,3 +1,9 @@
+---
+sidebar_label: "تنظیمات عمومی"
+---
+<head>
+  <title>تنطیمات عمومی  | مستندات سیموتل</title>
+</head>
 
 
 # General Settings
