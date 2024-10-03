@@ -6,7 +6,7 @@ const translations = {
 
 const currentLang = process.env.DOCUSAURUS_CURRENT_LOCALE == 'en' ? 'en' :'fa';
 module.exports = {
-  title: translations[currentLang].title,
+  title: ' ',
   // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
@@ -15,6 +15,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
+  titleDelimiter: ' ',
 
 
 i18n: {
@@ -54,7 +55,7 @@ themeConfig: {
   // navbar: getNavbarConfig(process.env.DOCUSAURUS_CURRENT_LOCALE != 'undefined' ? 'en':'fa'),
   navbar: {
     hideOnScroll: true,
-    title: 'Docs Center',
+    
     logo: {
       alt: 'navbar.logoAlt',
       src: 'img/newSimotelFavIcon.svg',

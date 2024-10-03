@@ -1,3 +1,9 @@
+---
+sidebar_label: "Custom Plan"
+---
+<head>
+  <title>معرفی Custom Plan | مستندات سیموتل</title>
+</head>
 
 
 # Custom Plan

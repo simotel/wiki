@@ -1,7 +1,11 @@
 ---
-title: "هنگام ارسال فکس"
-sidebar_label: "هنگام ارسال فکس"
+sidebar_label: "ارسال فکس"
 ---
+
+<head>
+  <title>ارسال فکس | مستندات سیموتل</title>
+</head>
+
 # Outgoing Fax
 
 هنگامی که فکس از سیموتل ارسال می‌گردد،رویداد OutgoingFax ایجاد می‌گردد.

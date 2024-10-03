@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
-title: "افزودن ترانک"
 sidebar_label: "افزودن ترانک"
 ---
+<head>
+  <title>افزودن ترانک | مستندات سیموتل </title>
+</head>
+
 # Trunk Add
 
 از این سرویس برای افزودن ترانک استفاده می‌شود.

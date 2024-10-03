@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "Time Condition"
+---
+<head>
+  <title>معرفی Time Condition | مستندات سیموتل</title>
+</head>
 
 # Time Condition
 

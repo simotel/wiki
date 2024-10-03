@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "Jump Out"
+---
+<head>
+  <title>معرفی Jump Out | مستندات سیموتل</title>
+</head>
 
 # Jump Out
 

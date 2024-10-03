@@ -1,8 +1,12 @@
 ---
 sidebar_position: 2
-title: "هنگام دریافت فکس"
-sidebar_label: "هنگام دریافت فکس"
+sidebar_label: " دریافت فکس"
 ---
+
+<head>
+  <title>دریافت فکس | مستندات سیموتل</title>
+</head>
+
 # Incoming Fax
 
 هنگامی که فکسی وارد سیموتل می‌گردد، رویداد incomingfax ایجاد می‌شود.

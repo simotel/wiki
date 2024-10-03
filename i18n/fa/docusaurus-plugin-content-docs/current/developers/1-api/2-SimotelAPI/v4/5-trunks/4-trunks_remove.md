@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
-title: "حذف تزانک"
 sidebar_label: "حذف ترانک"
 ---
+<head>
+  <title>حذف ترانک | مستندات سیموتل </title>
+</head>
+
 # Trunk Remove
 
 از این سرویس برای حذف کردن ترانک استفاده می‌شود.

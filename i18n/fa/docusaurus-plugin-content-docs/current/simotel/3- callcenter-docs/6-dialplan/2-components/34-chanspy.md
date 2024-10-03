@@ -1,3 +1,9 @@
+---
+sidebar_label: "ChanSpy"
+---
+<head>
+  <title>معرفی ChanSpy | مستندات سیموتل</title>
+</head>
 
 
 # ChanSpy

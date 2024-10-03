@@ -1,3 +1,9 @@
+---
+sidebar_label: "BlackList"
+---
+<head>
+  <title>معرفی BlackList | مستندات سیموتل</title>
+</head>
 
 
 # BlackList

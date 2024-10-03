@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "Ring Group"
+---
+<head>
+  <title>معرفی Ring Group | مستندات سیموتل</title>
+</head>
 
 # Ring Group
 

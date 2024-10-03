@@ -6,7 +6,14 @@ author: تیم توسعه مستندات مرکزتماس سیموتل
 //author_url: https://github.com/wgao19
 //author_image_url: 
 //tags: [DocCenter ، نسخه ۶/۲]
+sidebar_label: "Simotelhelper 26"
 ---
+<head>
+  <title>Simotelhelper 26 | مستندات سیموتل</title>
+</head>
+
+
+
 نسخه 26 ابزار simotelhelper منتشر شد(**آپدیت ضروری**). 
 
 در این نسخه ایراد اساسی مربوط به متوقف شدن دیتابیس برطرف شده، لذا اعمال آپدیت ضروری می باشد.

@@ -1,8 +1,12 @@
 ---
 sidebar_position: 2
-title: "هنگام افزوده شدن کاربر"
-sidebar_label: "هنگام افزوده شدن کاربر"
+sidebar_label: "افزوده شدن کاربر"
 ---
+
+<head>
+  <title>افزوده شدن کاربر | مستندات سیموتل</title>
+</head>
+
 # Exten Added
 
 هنگامی‌ كه کاربر جدیدی در سیموتل تعریف ‌شود، رويداد ExtenAdded ايجاد می‌گردد.

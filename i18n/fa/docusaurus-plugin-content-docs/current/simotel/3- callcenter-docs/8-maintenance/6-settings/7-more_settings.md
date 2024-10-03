@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "تنظیمات بیشتر"
+---
+<head>
+  <title>تنظیمات بیشتر  | مستندات سیموتل</title>
+</head>
 
 # More Settings
 

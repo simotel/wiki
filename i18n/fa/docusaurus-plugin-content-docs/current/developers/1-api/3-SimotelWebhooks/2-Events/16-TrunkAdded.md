@@ -1,8 +1,11 @@
 ---
 sidebar_position: 2
-title: " هنگام افزودن ترانک"
-sidebar_label: "هنگام افزودن ترانک"
+sidebar_label: "افزودن ترانک"
 ---
+<head>
+  <title> افزودن ترانک | مستندات سیموتل</title>
+</head>
+
 # TrunkAdded
 در صورت اضافه شدن ترانک یک event حاوی وضعیت جدید آن ارسال خواهد شد.
 

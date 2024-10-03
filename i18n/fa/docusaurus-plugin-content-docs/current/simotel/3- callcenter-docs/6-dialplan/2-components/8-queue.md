@@ -1,3 +1,9 @@
+---
+sidebar_label: "Queue"
+---
+<head>
+  <title>صف | مستندات سیموتل</title>
+</head>
 
 
 # Queue

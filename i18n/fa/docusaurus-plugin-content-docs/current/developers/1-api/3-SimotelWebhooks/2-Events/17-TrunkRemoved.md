@@ -1,8 +1,11 @@
 ---
 sidebar_position: 2
-title: "هنگام حذف ترانک"
-sidebar_label: "هنگام حذف ترانک"
+sidebar_label: " حذف ترانک"
 ---
+<head>
+  <title> حذف ترانک | مستندات سیموتل</title>
+</head>
+
 # TrunkRemoved
 
 در صورت حذف شدن ترانک یک event حاوی وضعیت جدید آن ارسال خواهد شد.

@@ -1,6 +1,11 @@
 ---
-
+sidebar_label: "سناریو Smart API"
 ---
+<head>
+  <title>سناریو Smart API | مستندات سیموتل</title>
+</head>
+
+
 # Smart API
 
 :::tip توصیه

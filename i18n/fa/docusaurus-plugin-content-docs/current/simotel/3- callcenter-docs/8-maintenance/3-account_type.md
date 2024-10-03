@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "نوع حساب کاربری"
+---
+<head>
+  <title>نوع حساب کاربری  | مستندات سیموتل</title>
+</head>
 
 # Account Type
 

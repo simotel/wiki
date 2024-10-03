@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "Outgoing Route"
+---
+<head>
+  <title>مسیر خروجی | مستندات سیموتل</title>
+</head>
 
 # Outgoing Route
 

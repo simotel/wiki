@@ -1,3 +1,9 @@
+---
+sidebar_label: "Poll "
+---
+<head>
+  <title>معرفی Poll | مستندات سیموتل</title>
+</head>
 
 
 # Poll

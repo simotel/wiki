@@ -1,4 +1,9 @@
-
+---
+sidebar_label: "حساب کاربری"
+---
+<head>
+  <title>حساب کاربری  | مستندات سیموتل</title>
+</head>
 
 # Accounts
 

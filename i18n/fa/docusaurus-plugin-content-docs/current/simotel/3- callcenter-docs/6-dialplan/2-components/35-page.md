@@ -1,3 +1,9 @@
+---
+sidebar_label: "Page"
+---
+<head>
+  <title>معرفی Page | مستندات سیموتل</title>
+</head>
 
 
 # Page
