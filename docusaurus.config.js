@@ -10,7 +10,7 @@ module.exports = {
   // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
-  baseUrl: '/fa/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
@@ -19,7 +19,7 @@ module.exports = {
 
 
 i18n: {
-    //defaultLocale: 'fa',
+    defaultLocale: 'fa',
     locales: ['en', 'fa'],
     path: 'i18n',
     localeConfigs: {
