@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuimotelndefined=self.webpackChunkuimotelndefined||[]).push([[9228],{8778:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/fa/en/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
