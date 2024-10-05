@@ -10,7 +10,7 @@ module.exports = {
   // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
-  baseUrl: '/',
+  baseUrl: '/fa/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
