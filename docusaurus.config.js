@@ -19,7 +19,7 @@ module.exports = {
 
 
 i18n: {
-    defaultLocale: 'fa',
+    //defaultLocale: 'fa',
     locales: ['en', 'fa'],
     path: 'i18n',
     localeConfigs: {
