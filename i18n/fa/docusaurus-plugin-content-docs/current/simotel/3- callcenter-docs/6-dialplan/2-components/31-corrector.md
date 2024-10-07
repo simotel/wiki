@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Corrector"
 ---
-<head>
-  <title>معرفی Corrector | مستندات سیموتل</title>
-</head>
+
 
 
 # Corrector

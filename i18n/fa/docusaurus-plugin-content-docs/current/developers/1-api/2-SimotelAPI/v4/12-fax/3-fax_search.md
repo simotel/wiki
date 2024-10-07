@@ -1,10 +1,9 @@
 ---
 sidebar_label: "جستجو در فکس"
+title: "جستجو در فکس"
 ---
 
-<head>
-  <title>جستجو در فکس | مستندات سیموتل </title>
-</head>
+
 
 # Fax Search
 

@@ -1,10 +1,8 @@
 ---
 
 sidebar_label: "حذف گروه"
+title: "حذف گروه"
 ---
-<head>
-  <title>حذف گروه | مستندات سیموتل</title>
-</head>
 
 # Group Remove
 

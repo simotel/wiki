@@ -1,9 +1,8 @@
 ---
 sidebar_label: "جستجو در صندوق های صوتی"
+title: "جستجو در صندوق های صوتی"
 ---
-<head>
-  <title>جستجو صندوق پستی | مستندات سیموتل </title>
-</head>
+
 
 # Voicemail Search
 

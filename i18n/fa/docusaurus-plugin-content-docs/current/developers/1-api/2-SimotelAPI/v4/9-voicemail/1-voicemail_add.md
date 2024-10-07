@@ -1,9 +1,7 @@
 ---
 sidebar_label: "افزودن صندوق صوتی"
+title: "افزودن صندوق صوتی"
 ---
-<head>
-  <title>افزودن صندوق پستی | مستندات سیموتل </title>
-</head>
 
 # Voicemail Add
 

@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "تماس ورودی"
+title: "تماس ورودی"
 ---
-<head>
-  <title>تماس ورودی | مستندات سیموتل</title>
-</head>
+
 
 # Incoming Call
 

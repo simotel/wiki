@@ -1,11 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "تغییر وضعیت کاربر"
+title: "تغییر وضعیت کاربر"
 ---
 
-<head>
-  <title> تغییر وضعیت کاربر | مستندات سیموتل</title>
-</head>
 
 # New State
 

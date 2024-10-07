@@ -1,9 +1,8 @@
 ---
 sidebar_label: "صف ها"
+title: "صف ها"
 ---
-<head>
-  <title>صف ها | مستندات سیموتل</title>
-</head>
+
 
 # صف ها
 

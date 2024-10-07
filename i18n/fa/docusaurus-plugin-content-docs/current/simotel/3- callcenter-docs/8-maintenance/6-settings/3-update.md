@@ -1,9 +1,7 @@
 ---
 sidebar_label: "به روز رسانی"
+title: "به روز رسانی"
 ---
-<head>
-  <title>به روز رسانی  | مستندات سیموتل</title>
-</head>
 
 
 # Update

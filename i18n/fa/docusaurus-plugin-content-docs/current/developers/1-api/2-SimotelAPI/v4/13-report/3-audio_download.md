@@ -1,9 +1,8 @@
 ---
 sidebar_label: "دانلود مکالمه ضبط شده"
+title: "دانلود مکالمه ضبط شده"
 ---
-<head>
-  <title>دانلود مکالمه صبط شده | مستندات سیموتل </title>
-</head>
+
 
 # Audio Download
 

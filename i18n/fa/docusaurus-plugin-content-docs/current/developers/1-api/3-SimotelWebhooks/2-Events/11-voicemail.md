@@ -1,9 +1,8 @@
 ---
 sidebar_label: "ذخیره فایل صوتی"
+title: "ذخیره فایل صوتی"
 ---
-<head>
-  <title> ذخیره فایل صوتی | مستندات سیموتل</title>
-</head>
+
 
 # VoiceMail
 

@@ -1,9 +1,6 @@
 ---
 sidebar_label: "Announcements"
 ---
-<head>
-  <title>معرفی آواها | مستندات سیموتل</title>
-</head>
 
 
 # Announcements

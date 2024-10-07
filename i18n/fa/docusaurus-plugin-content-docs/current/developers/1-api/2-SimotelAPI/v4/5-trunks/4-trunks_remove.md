@@ -1,10 +1,8 @@
 ---
 sidebar_position: 1
 sidebar_label: "حذف ترانک"
+title: "حذف ترانک"
 ---
-<head>
-  <title>حذف ترانک | مستندات سیموتل </title>
-</head>
 
 # Trunk Remove
 

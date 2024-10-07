@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Authentication"
 ---
-<head>
-  <title>معرفی Authentication | مستندات سیموتل</title>
-</head>
+
 
 # Authentication
 

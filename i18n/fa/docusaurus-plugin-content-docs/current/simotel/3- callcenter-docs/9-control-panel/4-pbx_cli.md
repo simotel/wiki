@@ -1,9 +1,7 @@
 ---
 sidebar_label: "خط فرمان PBX"
+title: "خط فرمان PBX"
 ---
-<head>
-  <title>خط فرمان PBX  | مستندات سیموتل</title>
-</head>
 
 # PBX CLI
 

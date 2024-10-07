@@ -1,9 +1,8 @@
 ---
 sidebar_label: "بازیابی گزارشات صف"
+title: "بازیابی گزارشات صف"
 ---
-<head>
-  <title>بازیابی گزارشات صف | مستندات سیموتل</title>
-</head>
+
 
 # Queue Search
 

@@ -1,10 +1,8 @@
 ---
 sidebar_label: "گزارش ارسال ایمیل"
+title: "گزارش ارسال ایمیل"
 ---
 
-<head>
-  <title> گزارش ارسال ایمیل | مستندات سیموتل</title>
-</head>
 
 # VoiceMail Email
 

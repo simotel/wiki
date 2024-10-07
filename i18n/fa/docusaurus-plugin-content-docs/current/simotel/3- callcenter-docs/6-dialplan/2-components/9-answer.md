@@ -1,9 +1,6 @@
 ---
 sidebar_label: "Answer"
 ---
-<head>
-  <title>پاسخ | مستندات سیموتل</title>
-</head>
 
 
 # Answer

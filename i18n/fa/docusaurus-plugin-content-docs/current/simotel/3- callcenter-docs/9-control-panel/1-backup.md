@@ -1,9 +1,7 @@
 ---
 sidebar_label: "پشتیبان"
+title: "پشتیبان"
 ---
-<head>
-  <title>پشتیبان  | مستندات سیموتل</title>
-</head>
 
 # Backup
 

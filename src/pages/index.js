@@ -35,7 +35,7 @@ export default function Home() {
   console.log(fullTitle)
   return (
     <Layout
-     title={fullTitle}
+     title={translate({message:siteTitle})}
       description="Simotel Docs Center">
       
       <HomepageHeader />

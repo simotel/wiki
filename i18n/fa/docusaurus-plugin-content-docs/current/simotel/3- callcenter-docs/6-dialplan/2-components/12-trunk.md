@@ -1,9 +1,6 @@
 ---
 sidebar_label: "Trunk"
 ---
-<head>
-  <title>ترانک ها | مستندات سیموتل</title>
-</head>
 
 
 # Trunk

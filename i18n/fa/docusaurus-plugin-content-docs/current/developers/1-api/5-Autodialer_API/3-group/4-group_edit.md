@@ -1,10 +1,9 @@
 ---
 
 sidebar_label: "به روز رسانی گروه"
+title: "به روز رسانی گروه"
 ---
-<head>
-  <title>به روز رسانی گروه | مستندات سیموتل</title>
-</head>
+
 
 # Group Update
 

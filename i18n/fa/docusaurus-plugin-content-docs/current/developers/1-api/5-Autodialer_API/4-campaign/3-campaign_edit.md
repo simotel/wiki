@@ -1,10 +1,8 @@
 ---
 
 sidebar_label: "به روز رسانی کمپین"
+title: "به روز رسانی کمپین"
 ---
-<head>
-  <title>به روز رسانی کمپین | مستندات سیموتل</title>
-</head>
 
 # Campaign Update
 

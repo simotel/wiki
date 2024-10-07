@@ -1,9 +1,7 @@
 ---
 sidebar_label: "گزارشات"
+title: "گزارشات"
 ---
-<head>
-  <title>گزارشات | مستندات سیموتل</title>
-</head>
 
 
 # معرفی

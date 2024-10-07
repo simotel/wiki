@@ -1,10 +1,8 @@
 ---
 sidebar_label: "جستجوی سریع"
+title: "جستجوی سریع"
 ---
 
-<head>
-  <title>جستجوی سریع | مستندات سیموتل </title>
-</head>
 
 # Quick Search
 

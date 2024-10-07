@@ -1,9 +1,7 @@
 ---
 sidebar_label: "AGI"
 ---
-<head>
-  <title>معرفی AGI | مستندات سیموتل</title>
-</head>
+
 
 
 # AGI

@@ -1,10 +1,8 @@
 ---
 sidebar_label: "Dialer.ini تنظیمات"
+title: "Dialer.ini تنظیمات"
 ---
 
-<head>
-  <title>مستندات سیموتل | Dialer.ini تنظیمات</title>
-</head>
 
 # تنظیمات dialer.ini
 

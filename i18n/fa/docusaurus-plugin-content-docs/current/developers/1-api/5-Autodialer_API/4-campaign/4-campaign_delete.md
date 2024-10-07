@@ -1,9 +1,8 @@
 ---
 sidebar_label: "حذف کمپین"
+title: "حذف کمپین"
 ---
-<head>
-  <title>حذف کمپین | مستندات سیموتل</title>
-</head>
+
 
 # Campaign Remove
 

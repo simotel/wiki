@@ -1,10 +1,9 @@
 ---
 
 sidebar_label: "حذف  مخاطب"
+title: "حذف  مخاطب"
 ---
-<head>
-  <title>حذف مخاطب | مستندات سیموتل</title>
-</head>
+
 
 
 # Contact Remove

@@ -1,10 +1,8 @@
 ---
 
 sidebar_label: "جستجوی آوا"
+title: "جستجوی آوا"
 ---
-<head>
-  <title>جستجوی آوا | مستندات سیموتل</title>
-</head>
 
 
 # Announce Search

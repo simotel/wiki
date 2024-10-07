@@ -1,9 +1,6 @@
 ---
 sidebar_label: "DISA"
 ---
-<head>
-  <title>معرفی DISA | مستندات سیموتل</title>
-</head>
 
 
 # DISA

@@ -1,10 +1,8 @@
 ---
 
 sidebar_label: "بارگزاری گروه"
+title: "بارگزاری گروه"
 ---
-<head>
-  <title>بارگزاری گروه | مستندات سیموتل</title>
-</head>
 
 
 # Group Upload

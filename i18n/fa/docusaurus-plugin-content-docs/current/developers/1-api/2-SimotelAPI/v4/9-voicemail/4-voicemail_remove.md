@@ -1,10 +1,8 @@
 ---
 sidebar_label: "حذف صندوق صوتی"
+title: "حذف صندوق صوتی"
 ---
 
-<head>
-  <title>حذف صندوق پستی | مستندات سیموتل </title>
-</head>
 
 # Voicemail Remove
 

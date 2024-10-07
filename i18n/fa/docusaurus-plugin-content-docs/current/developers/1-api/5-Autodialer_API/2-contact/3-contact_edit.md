@@ -1,10 +1,9 @@
 ---
 
 sidebar_label: "به روز رسانی مخاطب"
+title: "به روز رسانی مخاطب"
 ---
-<head>
-  <title>به روز رسانی مخاطب | مستندات سیموتل</title>
-</head>
+
 
 
 # Contact Update

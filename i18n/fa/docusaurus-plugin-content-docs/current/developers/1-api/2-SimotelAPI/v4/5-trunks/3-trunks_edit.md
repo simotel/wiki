@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "به روز رسانی ترانک"
+title: "به روز رسانی ترانک"
 ---
-<head>
-  <title>به روز رسانی ترانک | مستندات سیموتل </title>
-</head>
+
 
 # Trunk Edit
 

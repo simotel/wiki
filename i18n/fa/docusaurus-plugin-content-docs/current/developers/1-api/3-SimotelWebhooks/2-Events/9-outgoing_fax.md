@@ -1,10 +1,8 @@
 ---
 sidebar_label: "ارسال فکس"
+title: "ارسال فکس"
 ---
 
-<head>
-  <title>ارسال فکس | مستندات سیموتل</title>
-</head>
 
 # Outgoing Fax
 

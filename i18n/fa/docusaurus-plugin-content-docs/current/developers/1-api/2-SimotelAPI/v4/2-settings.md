@@ -1,11 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "معرفی SimotelApi"
+title: "معرفی SimotelApi"
 ---
 
-<head>
-  <title>معرفی SimotelApi | مستندات سیموتل</title>
-</head>
 
 
 # معرفی و تنظیمات

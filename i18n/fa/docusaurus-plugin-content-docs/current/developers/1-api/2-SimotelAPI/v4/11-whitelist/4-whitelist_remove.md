@@ -1,9 +1,8 @@
 ---
 sidebar_label: "حذف شماره از لیست سفید"
+title: "حذف شماره از لیست سفید"
 ---
-<head>
-  <title>حذف شماره از لیست سفید | مستندات سیموتل </title>
-</head>
+
 
 # WhiteList Remove
 

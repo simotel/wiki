@@ -1,10 +1,9 @@
 ---
 
 sidebar_label: "افزودن آوا"
+title: "افزودن آوا"
 ---
-<head>
-  <title>افزودن آوا | مستندات سیموتل</title>
-</head>
+
 
 # Announce Add
 

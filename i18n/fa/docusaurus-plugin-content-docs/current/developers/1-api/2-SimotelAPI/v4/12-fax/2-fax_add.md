@@ -1,9 +1,8 @@
 ---
 sidebar_label: "افزودن فکس"
+title: "افزودن فکس"
 ---
-<head>
-  <title>افزودن فکس | مستندات سیموتل </title>
-</head>
+
 
 # Fax Add
 

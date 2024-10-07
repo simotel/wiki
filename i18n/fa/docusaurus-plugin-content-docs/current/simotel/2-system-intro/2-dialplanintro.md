@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "سناریو تماس"
+title: "سناریو تماس"
 ---
-<head>
-  <title>سناریو تماس | مستندات سیموتل</title>
-</head>
+
 
 # سناریوی‌تماس
 

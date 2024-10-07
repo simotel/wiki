@@ -1,9 +1,8 @@
 ---
 sidebar_label: "افزودن دسته ای به صف"
+title: "افزودن دسته ای به صف"
 ---
-<head>
-  <title>افزودن دسته ای اپراتور به صف | مستندات سیموتل </title>
-</head>
+
 
 # Batch Add Agent
 

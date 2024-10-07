@@ -1,9 +1,7 @@
 ---
 sidebar_label: "ضبط مکالمات در  Storage"
+title: "ضبط مکالمات در  Storage مباحث پیشرفته"
 ---
-<head>
-  <title>ضبط مکالمات در Storage | مستندات سیموتل</title>
-</head>
 
 # ضبط‌مکالمات در Storage
 

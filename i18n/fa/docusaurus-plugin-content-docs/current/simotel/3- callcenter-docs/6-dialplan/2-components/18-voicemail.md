@@ -1,9 +1,6 @@
 ---
 sidebar_label: "VoiceMail "
 ---
-<head>
-  <title>معرفی VoiceMail  | مستندات سیموتل</title>
-</head>
 
 # VoiceMail V2
  

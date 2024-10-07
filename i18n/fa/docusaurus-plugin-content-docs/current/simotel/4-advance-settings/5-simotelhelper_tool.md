@@ -1,9 +1,7 @@
 ---
-sidebar_label: "ابزار Simotelhelper"
+sidebar_label: " Simotelhelper ابزار"
+title: "ابزار simotelhelper مباحث پیشرفته"
 ---
-<head>
-  <title>ابزار Simotelhelper | مستندات سیموتل</title>
-</head>
 
 
 # ابزار simotelhelper

@@ -1,9 +1,8 @@
 ---
 sidebar_label: "جستجو شماره در لیست سفید"
+title: "جستجو شماره در لیست سفید"
 ---
-<head>
-  <title>جستجو شماره در لیست سفید | مستندات سیموتل </title>
-</head>
+
 
 # WhiteList Search
 

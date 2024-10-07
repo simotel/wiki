@@ -1,10 +1,7 @@
 ---
 sidebar_label: "مخاطبان"
+title: "مخاطبان"
 ---
-
-<head>
-  <title>مخاطبان | مستندات سیموتل</title>
-</head>
 
 
 

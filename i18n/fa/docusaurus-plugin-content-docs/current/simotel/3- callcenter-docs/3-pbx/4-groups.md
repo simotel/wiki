@@ -1,9 +1,7 @@
 ---
 sidebar_label: "گروه ها"
+title: "گروه ها"
 ---
-<head>
-  <title>گروه ها | مستندات سیموتل</title>
-</head>
 
 
 # گروه‌ها

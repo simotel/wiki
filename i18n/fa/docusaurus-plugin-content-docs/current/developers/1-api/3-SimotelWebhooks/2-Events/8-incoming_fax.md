@@ -1,11 +1,8 @@
 ---
 sidebar_position: 2
 sidebar_label: " دریافت فکس"
+title: " دریافت فکس"
 ---
-
-<head>
-  <title>دریافت فکس | مستندات سیموتل</title>
-</head>
 
 # Incoming Fax
 

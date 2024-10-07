@@ -1,10 +1,9 @@
 ---
 
 sidebar_label: "بارگزاری فایل صوتی"
+title: "بارگزاری فایل صوتی"
 ---
-<head>
-  <title>بارگزاری فایل صوتی | مستندات سیموتل</title>
-</head>
+
 
 # Announce Upload
 

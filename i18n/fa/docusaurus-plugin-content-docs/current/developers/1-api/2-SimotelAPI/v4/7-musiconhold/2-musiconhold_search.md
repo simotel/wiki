@@ -1,9 +1,8 @@
 ---
 sidebar_label: "جستجوی موزیک انتظار"
+title: "جستجوی موزیک انتظار"
 ---
-<head>
-  <title>جستجوی موزیک انتظار | مستندات سیموتل </title>
-</head>
+
 
 # Music Search
 

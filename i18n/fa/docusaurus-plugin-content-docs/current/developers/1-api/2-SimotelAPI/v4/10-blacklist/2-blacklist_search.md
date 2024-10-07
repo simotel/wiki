@@ -1,9 +1,8 @@
 ---
 sidebar_label: "جستجو شماره در لیست سیاه"
+title: "جستجو شماره در لیست سیاه"
 ---
-<head>
-  <title>جستجو شماره در لیست سیاه | مستندات سیموتل </title>
-</head>
+
 
 # BlackList Search
 

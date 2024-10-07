@@ -1,9 +1,8 @@
 ---
 sidebar_label: "جستجوی سریع با cuid"
+title: "جستجوی سریع با cuid"
 ---
-<head>
-  <title>مستندات سیموتل | cuid جستجوی سریع با </title>
-</head>
+
 
 # CDR Search
 

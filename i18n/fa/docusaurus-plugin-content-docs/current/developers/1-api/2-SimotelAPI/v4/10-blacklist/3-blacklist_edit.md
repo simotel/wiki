@@ -1,10 +1,9 @@
 ---
 sidebar_label: "به روز رسانی لیست سیاه"
+title: "به روز رسانی لیست سیاه"
 ---
 
-<head>
-  <title> به روز رسانی لیست سیاه | مستندات سیموتل </title>
-</head>
+
 
 # BlackList Edit
 

@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "حذف کاربر"
+title: "حذف کاربر"
 ---
-<head>
-  <title>حذف  کاربر | مستندات سیموتل </title>
-</head>
+
 
 # User Remove
 

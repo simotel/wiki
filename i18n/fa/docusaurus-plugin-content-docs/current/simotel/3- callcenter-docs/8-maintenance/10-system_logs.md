@@ -1,9 +1,8 @@
 ---
 sidebar_label: "سابقه فعالیت سیستم"
+title: "سابقه فعالیت سیستم"
 ---
-<head>
-  <title>سابقه فعالیت سیستم  | مستندات سیموتل</title>
-</head>
+
 
 # System Logs
 

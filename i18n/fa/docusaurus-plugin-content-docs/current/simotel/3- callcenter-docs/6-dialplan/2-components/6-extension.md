@@ -1,9 +1,8 @@
 ---
 sidebar_label: "Extensions"
+title: "Extensions"
 ---
-<head>
-  <title>معرفی Extensions | مستندات سیموتل</title>
-</head>
+
 
 # Extension
 

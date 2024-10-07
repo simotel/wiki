@@ -1,9 +1,8 @@
 ---
 sidebar_label: "IVR API"
+title: "IVR API"
 ---
-<head>
-  <title>معرفی Ivr Api | مستندات سیموتل</title>
-</head>
+
 
 # IVR API
 

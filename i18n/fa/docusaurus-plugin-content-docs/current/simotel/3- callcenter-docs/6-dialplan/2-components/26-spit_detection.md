@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Spit Detection"
 ---
-<head>
-  <title>معرفی Spit Detection | مستندات سیموتل</title>
-</head>
+
 
 
 # Spit Detection

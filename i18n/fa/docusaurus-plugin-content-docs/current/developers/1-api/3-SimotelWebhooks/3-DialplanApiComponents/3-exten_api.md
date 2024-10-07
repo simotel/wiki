@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "معرفی Extension API"
+title: "معرفی Extension API"
 ---
-<head>
-  <title>معرفی Extension API | مستندات سیموتل</title>
-</head>
+
 
 # Extention API
 

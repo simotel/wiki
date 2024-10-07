@@ -1,9 +1,8 @@
 ---
 sidebar_label: "سابقه فعالیت Api"
+title: "سابقه فعالیت Api"
 ---
-<head>
-  <title>سابقه فعالیت Api  | مستندات سیموتل</title>
-</head>
+
 
 # API Logs
 
