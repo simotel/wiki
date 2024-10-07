@@ -1,9 +1,8 @@
 ---
 sidebar_label: "جستجوی کمپین"
+title: "جستجوی کمپین"
 ---
-<head>
-  <title>جستجوی کمپین | مستندات سیموتل</title>
-</head>
+
 
 # Campaign Search
 

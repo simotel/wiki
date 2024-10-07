@@ -1,9 +1,8 @@
 ---
 sidebar_label: "به روز رسانی آوا"
+title: "به روز رسانی آوا"
 ---
-<head>
-  <title>به روز رسانی آوا | مستندات سیموتل </title>
-</head>
+
 
 # Announce Edit
 

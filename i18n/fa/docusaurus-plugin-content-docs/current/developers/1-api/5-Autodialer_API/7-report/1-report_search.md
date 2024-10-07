@@ -1,10 +1,8 @@
 ---
 
 sidebar_label: "گزارشات کمپین"
+title: "گزارشات کمپین"
 ---
-<head>
-  <title>گزارشات کمپین | مستندات سیموتل</title>
-</head>
 
 # Report Search
 

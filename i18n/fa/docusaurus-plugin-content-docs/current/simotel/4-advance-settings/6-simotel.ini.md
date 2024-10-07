@@ -1,9 +1,8 @@
 ---
 sidebar_label: "تنظیمات Simotel.ini"
+title: "تنظیمات Simotel.ini مباحث پیشرفته"
 ---
-<head>
-  <title>تنطیمات Simotel.ini | مستندات سیموتل</title>
-</head>
+
 
 # تنظیمات simotel.ini
 

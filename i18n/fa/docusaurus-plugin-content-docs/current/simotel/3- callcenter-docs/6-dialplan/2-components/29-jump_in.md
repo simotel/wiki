@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Jump In"
 ---
-<head>
-  <title>معرفی Jump In | مستندات سیموتل</title>
-</head>
+
 
 # Jump In
 

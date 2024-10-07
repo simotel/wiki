@@ -1,9 +1,7 @@
 ---
 sidebar_label: "IVR"
+title: "IVR"
 ---
-<head>
-  <title>منشی دیجیتال | مستندات سیموتل</title>
-</head>
 
 # IVR
 

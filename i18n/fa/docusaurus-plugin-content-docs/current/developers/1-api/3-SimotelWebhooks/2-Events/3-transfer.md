@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "انتقال تماس جاری"
+title: "انتقال تماس جاری"
 ---
-<head>
-  <title>انتقال تماس جاری | مستندات سیموتل</title>
-</head>
+
 
 # Transfer
 

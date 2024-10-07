@@ -1,9 +1,8 @@
 ---
 sidebar_label: "َAutodialer Route"
+title: "َAutodialer Route"
 ---
-<head>
-  <title>مسیر تماس انبوه | مستندات سیموتل</title>
-</head>
+
 
 # Autodialer Route
 

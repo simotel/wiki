@@ -1,9 +1,8 @@
 ---
 sidebar_label: "دانلود فکس"
+title: "دانلود فکس"
 ---
-<head>
-  <title>دانلود فکس | مستندات سیموتل </title>
-</head>
+
 
 # Fax Download
 

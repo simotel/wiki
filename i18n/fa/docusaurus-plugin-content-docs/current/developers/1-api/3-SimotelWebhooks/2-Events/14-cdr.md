@@ -1,10 +1,6 @@
 ---
-sidebar_label: "جزییات تماس"
+title: "جزییات تماس"
 ---
-
-<head>
-  <title> جزییات تماس | مستندات سیموتل</title>
-</head>
 
 # CDR
 

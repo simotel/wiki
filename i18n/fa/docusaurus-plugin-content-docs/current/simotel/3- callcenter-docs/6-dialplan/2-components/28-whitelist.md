@@ -1,9 +1,6 @@
 ---
 sidebar_label: "WhiteList"
 ---
-<head>
-  <title>معرفی WhiteList | مستندات سیموتل</title>
-</head>
 
 # WhiteList
 

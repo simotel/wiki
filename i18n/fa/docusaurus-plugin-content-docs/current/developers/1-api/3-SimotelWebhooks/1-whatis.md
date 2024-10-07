@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "معرفی SimotelWebHooks"
+title: "معرفی SimotelWebHooks"
 ---
-<head>
-  <title>معرفی SimotelWebhooks | مستندات سیموتل</title>
-</head>
+
 
 
 # Simotel Webhooks چیست 

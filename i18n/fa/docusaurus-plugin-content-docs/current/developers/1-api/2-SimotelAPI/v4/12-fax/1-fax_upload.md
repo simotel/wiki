@@ -1,9 +1,8 @@
 ---
 sidebar_label: "بارگزاری فایل "
+title: "بارگزاری فایل "
 ---
-<head>
-  <title>بارگزاری فایل | مستندات سیموتل </title>
-</head>
+
 
 # Fax Upload
 

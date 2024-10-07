@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Call Completion "
 ---
-<head>
-  <title>معرفی Call Completion  | مستندات سیموتل</title>
-</head>
+
 
 # Call Completion
 

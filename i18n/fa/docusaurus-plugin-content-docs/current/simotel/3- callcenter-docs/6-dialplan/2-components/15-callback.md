@@ -1,9 +1,7 @@
 ---
 sidebar_label: "CallBack"
 ---
-<head>
-  <title>معرفی CallBack | مستندات سیموتل</title>
-</head>
+
 
 
 # Call Back

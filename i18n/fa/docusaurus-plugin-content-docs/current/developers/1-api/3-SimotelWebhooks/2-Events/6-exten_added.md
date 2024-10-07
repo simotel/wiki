@@ -1,11 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "افزوده شدن کاربر"
+title: "افزوده شدن کاربر"
 ---
 
-<head>
-  <title>افزوده شدن کاربر | مستندات سیموتل</title>
-</head>
 
 # Exten Added
 

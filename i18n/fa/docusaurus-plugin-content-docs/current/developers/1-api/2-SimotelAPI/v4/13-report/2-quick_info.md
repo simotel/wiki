@@ -1,10 +1,8 @@
 ---
 sidebar_label: "اطلاعات سریع"
+title: "اطلاعات سریع"
 ---
 
-<head>
-  <title>اطلاعات سریع | مستندات سیموتل </title>
-</head>
 
 # Quick Info
 :::caution هشدار

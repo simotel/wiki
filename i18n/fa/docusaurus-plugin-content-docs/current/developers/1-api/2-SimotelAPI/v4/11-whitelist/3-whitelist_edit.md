@@ -1,10 +1,8 @@
 ---
 sidebar_label: "به روز رسانی لیست سفید"
+title: "به روز رسانی لیست سفید"
 ---
 
-<head>
-  <title>به روز رسانی لیست سفید | مستندات سیموتل </title>
-</head>
 
 # WhiteList Edit
 

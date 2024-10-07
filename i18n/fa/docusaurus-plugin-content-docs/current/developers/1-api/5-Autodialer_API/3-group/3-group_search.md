@@ -1,10 +1,9 @@
 ---
 
 sidebar_label: "جستجوی گروه"
+title: "جستجوی گروه"
 ---
-<head>
-  <title>جستجوی گروه | مستندات سیموتل</title>
-</head>
+
 
 # Group Search
 

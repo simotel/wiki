@@ -1,10 +1,8 @@
 ---
 sidebar_position: 1
-
+title: "مستندات سیموتل"
 ---
-<head>
-  <title>معرفی Simotel Events | مستندات سیموتل</title>
-</head>
+
 
 # Simotel Events چیست 
 

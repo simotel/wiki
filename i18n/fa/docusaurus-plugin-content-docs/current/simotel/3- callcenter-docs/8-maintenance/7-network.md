@@ -1,9 +1,7 @@
 ---
 sidebar_label: "شبکه"
+title: "شبکه"
 ---
-<head>
-  <title>شبکه  | مستندات سیموتل</title>
-</head>
 
 # Network
 

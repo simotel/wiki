@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Followe Me"
 ---
-<head>
-  <title>معرفی Followe Me | مستندات سیموتل</title>
-</head>
+
 
 
 # Followe Me

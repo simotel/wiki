@@ -1,9 +1,8 @@
 ---
 sidebar_label: "افزودن صف"
+title: "افزودن صف"
 ---
-<head>
-  <title>افزودن صف | مستندات سیموتل </title>
-</head>
+
 
 # Queue Add
 

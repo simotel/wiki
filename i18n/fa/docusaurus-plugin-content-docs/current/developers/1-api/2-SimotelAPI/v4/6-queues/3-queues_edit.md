@@ -1,9 +1,8 @@
 ---
 sidebar_label: "به روز رسانی صف"
+title: "به روز رسانی صف"
 ---
-<head>
-  <title>به روز رسانی صف | مستندات سیموتل </title>
-</head>
+
 
 # Queue Edit
 

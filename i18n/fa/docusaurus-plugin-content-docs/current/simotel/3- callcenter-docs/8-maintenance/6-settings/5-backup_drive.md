@@ -1,9 +1,7 @@
 ---
 sidebar_label: "فضای پشتیبان"
+title: "فضای پشتیبان"
 ---
-<head>
-  <title>فضای پشتیبان  | مستندات سیموتل</title>
-</head>
 
 
 # BackUp Drive

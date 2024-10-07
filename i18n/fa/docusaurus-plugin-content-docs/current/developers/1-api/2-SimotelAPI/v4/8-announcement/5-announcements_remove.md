@@ -1,9 +1,7 @@
 ---
 sidebar_label: "حذف آوا"
+title: "حذف آوا"
 ---
-<head>
-  <title>حذف آوا | مستندات سیموتل </title>
-</head>
 
 # Announce Remove
 

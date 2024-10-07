@@ -1,10 +1,8 @@
 ---
 
 sidebar_label: "افزودن گروه"
+title: "افزودن گروه"
 ---
-<head>
-  <title>افزودن گروه | مستندات سیموتل</title>
-</head>
 
 # Group Add
 

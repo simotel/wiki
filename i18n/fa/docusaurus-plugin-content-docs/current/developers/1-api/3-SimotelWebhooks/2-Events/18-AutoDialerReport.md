@@ -1,11 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "گزارش تماس انبوه"
+title: "گزارش تماس انبوه"
 ---
 
-<head>
-  <title> گزارش تماس انبوه | مستندات سیموتل</title>
-</head>
 
 # AutoDialerReport
 

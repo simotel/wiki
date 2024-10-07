@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "معرفی ماژول تماس انبوه"
+title: "معرفی ماژول تماس انبوه"
 ---
-<head>
-  <title>سناریو Smart API | معرفی ماژول تماس انبوه</title>
-</head>
+
 
 # مقدمه
 

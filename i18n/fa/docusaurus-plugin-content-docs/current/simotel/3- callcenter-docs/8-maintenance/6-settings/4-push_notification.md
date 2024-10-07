@@ -1,9 +1,8 @@
 ---
 sidebar_label: "سافت فون سیموتل"
+title: "سافت فون سیموتل"
 ---
-<head>
-  <title>سافت فون سیموتل  | مستندات سیموتل</title>
-</head>
+
 
 # Push Notification
 

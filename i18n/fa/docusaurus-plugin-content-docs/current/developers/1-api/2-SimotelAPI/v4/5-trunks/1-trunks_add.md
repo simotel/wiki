@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "افزودن ترانک"
+title: "افزودن ترانک"
 ---
-<head>
-  <title>افزودن ترانک | مستندات سیموتل </title>
-</head>
+
 
 # Trunk Add
 

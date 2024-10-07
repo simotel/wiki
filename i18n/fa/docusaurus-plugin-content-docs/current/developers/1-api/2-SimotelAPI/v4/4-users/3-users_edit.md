@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "به روز رسانی کاربر"
+title: "به روز رسانی کاربر"
 ---
-<head>
-  <title>به روز رسانی کاربر | مستندات سیموتل </title>
-</head>
+
 
 # User Edit
 

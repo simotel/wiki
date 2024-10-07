@@ -1,9 +1,8 @@
 ---
 sidebar_label: "جستجوی صف"
+title: "جستجوی صف"
 ---
-<head>
-  <title>جستجوی صف | مستندات سیموتل </title>
-</head>
+
 
 # Queue Search
 

@@ -1,10 +1,9 @@
 ---
 
 sidebar_label: "افزودن کمپین"
+title: "افزودن کمپین"
 ---
-<head>
-  <title>افزودن کمپین | مستندات سیموتل</title>
-</head>
+
 
 # Campaign Add
 

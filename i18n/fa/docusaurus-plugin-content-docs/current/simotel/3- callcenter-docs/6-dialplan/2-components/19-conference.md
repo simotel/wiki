@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Conference "
 ---
-<head>
-  <title>معرفی Conference  | مستندات سیموتل</title>
-</head>
+
 
 # Conference
 

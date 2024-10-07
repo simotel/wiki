@@ -1,11 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "تماس خروجی"
+title: "تماس خروجی"
 ---
 
-<head>
-  <title>تماس خروجی | مستندات سیموتل</title>
-</head>
 
 # Outgoing Call
 

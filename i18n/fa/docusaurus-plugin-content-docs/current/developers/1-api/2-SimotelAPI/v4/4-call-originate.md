@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "تماس دو طرفه"
+title: "تماس دو طرفه"
 ---
-<head>
-  <title>تماس دو طرفه | مستندات سیموتل</title>
-</head>
+
 
 
 # تماس دوطرفه

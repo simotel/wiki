@@ -1,10 +1,7 @@
 ---
 sidebar_label: "جستجوی ترتیبی سریع با cuid"
+title: "جستجوی ترتیبی سریع با cuid"
 ---
-
-<head>
-  <title>مستندات سیموتل | cuid جستجوی ترتیبی سریع با </title>
-</head>
 
 # CDR Ordered
 

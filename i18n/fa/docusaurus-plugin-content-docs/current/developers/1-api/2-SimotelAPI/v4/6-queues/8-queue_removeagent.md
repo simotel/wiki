@@ -1,10 +1,7 @@
 ---
 sidebar_label: "خروج اپراتور از صف"
+title: "خروج اپراتور از صف"
 ---
-
-<head>
-  <title>خروج اپراتور از صف | مستندات سیموتل </title>
-</head>
 
 # Remove Agent
 

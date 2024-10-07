@@ -1,9 +1,8 @@
 ---
 sidebar_label: "افزودن مخاطب"
+title: "افزودن مخاطب"
 ---
-<head>
-  <title>افزودن مخاطب | مستندات سیموتل</title>
-</head>
+
 
 # Contact Add
 

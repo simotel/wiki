@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Mix Monitor "
 ---
-<head>
-  <title>معرفی Mix Monitor | مستندات سیموتل</title>
-</head>
+
 
 
 # Mix Monitor

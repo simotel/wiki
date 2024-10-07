@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "وضعیت ترانک"
+title: "وضعیت ترانک"
 ---
-<head>
-  <title> وضعیت ترانک | مستندات سیموتل</title>
-</head>
+
 
 
 # TrunkNewState

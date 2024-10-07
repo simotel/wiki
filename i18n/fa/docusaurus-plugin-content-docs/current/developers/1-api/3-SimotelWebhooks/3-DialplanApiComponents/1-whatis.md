@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "معرفی ComponentApi"
+title: "معرفی ComponentApi"
 ---
-<head>
-  <title>معرفی ComponentApi | مستندات سیموتل</title>
-</head>
+
 
 
 # Component Api چیست 

@@ -1,10 +1,8 @@
 ---
 sidebar_label: "حذف شماره از لیست سیاه"
+title: "حذف شماره از لیست سیاه"
 ---
 
-<head>
-  <title>حذف شماره از لیست سیاه | مستندات سیموتل </title>
-</head>
 
 # BlackList Remove
 

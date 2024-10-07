@@ -1,9 +1,8 @@
 ---
 sidebar_label: "آواها"
+title: "آواها"
 ---
-<head>
-  <title>آواها | مستندات سیموتل</title>
-</head>
+
 
 # آوا‌ها
 

@@ -1,9 +1,7 @@
 ---
 sidebar_label: "PickUp "
 ---
-<head>
-  <title>معرفی PickUp | مستندات سیموتل</title>
-</head>
+
 
 
 # PickUp

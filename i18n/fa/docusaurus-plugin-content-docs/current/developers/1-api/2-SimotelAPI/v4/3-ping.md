@@ -1,10 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: "تست ارتباط"
+title: "تست ارتباط"
 ---
-<head>
-  <title>تست ارتباط | مستندات سیموتل</title>
-</head>
+
 
 
 # ping (تست ارتباط)

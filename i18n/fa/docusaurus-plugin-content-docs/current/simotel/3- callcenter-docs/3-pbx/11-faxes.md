@@ -1,9 +1,8 @@
 ---
 sidebar_label: "فکس ها"
+title: "فکس ها"
 ---
-<head>
-  <title>فکس ها | مستندات سیموتل</title>
-</head>
+
 
 # فکس‌ها
 

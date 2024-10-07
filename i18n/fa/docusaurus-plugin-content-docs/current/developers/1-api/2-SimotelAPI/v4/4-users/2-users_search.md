@@ -1,11 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "جستجوی کاربر"
+title: "جستجوی کاربر"
 ---
 
-<head>
-  <title>جستجوی کاربر | مستندات سیموتل </title>
-</head>
 
 # User Search
 

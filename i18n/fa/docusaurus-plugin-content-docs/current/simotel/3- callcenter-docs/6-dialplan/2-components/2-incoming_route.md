@@ -1,9 +1,7 @@
 ---
 sidebar_label: "Incoming Route"
+title: "Incoming Route"
 ---
-<head>
-  <title>مسیر ورودی | مستندات سیموتل</title>
-</head>
 
 # Incoming Route
 

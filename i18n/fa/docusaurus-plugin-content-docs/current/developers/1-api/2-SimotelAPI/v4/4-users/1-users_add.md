@@ -1,10 +1,8 @@
 ---
 sidebar_position: 1
 sidebar_label: "افزودن کاربر"
+title: "افزودن کاربر"
 ---
-<head>
-  <title>افزودن کاربر | مستندات سیموتل </title>
-</head>
 
 # User Add
 

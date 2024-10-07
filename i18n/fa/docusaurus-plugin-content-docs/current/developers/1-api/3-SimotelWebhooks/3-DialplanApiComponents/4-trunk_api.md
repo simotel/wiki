@@ -1,10 +1,8 @@
 ---
 
 sidebar_label: "معرفی Trunk API"
+title: "معرفی Trunk API"
 ---
-<head>
-  <title>معرفی Trunk API | مستندات سیموتل</title>
-</head>
 
 
 # Trunk API

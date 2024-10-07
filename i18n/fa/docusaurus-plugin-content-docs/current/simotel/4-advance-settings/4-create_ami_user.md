@@ -1,9 +1,8 @@
 ---
 sidebar_label: "ایجاد حساب AMI"
+title: "ایجاد حساب AMI"
 ---
-<head>
-  <title>ایجاد حساب AMI | مستندات سیموتل</title>
-</head>
+
 
 
 # ایجاد حساب AMI

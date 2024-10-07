@@ -1,9 +1,8 @@
 ---
 sidebar_label: "حذف صف"
+title: "حذف صف"
 ---
-<head>
-  <title>حذف صف | مستندات سیموتل </title>
-</head>
+
 
 # Queue Remove
 

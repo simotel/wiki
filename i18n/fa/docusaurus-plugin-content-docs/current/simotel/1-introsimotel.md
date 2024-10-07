@@ -3,9 +3,7 @@ slug: /
 sidebar_position: 1
 sidebar_label: "مقدمه "
 ---
-<head>
-  <title>مقدمه  | مستندات سیموتل</title>
-</head>
+
 
 # مقدمه
 
