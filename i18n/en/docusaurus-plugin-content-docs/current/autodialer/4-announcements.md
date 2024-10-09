@@ -1,4 +1,7 @@
-
+---
+title: "Announcements"
+sidebar_label: "Announcements"
+---
 
 # آواها
 

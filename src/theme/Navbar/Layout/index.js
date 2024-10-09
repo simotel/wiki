@@ -8,6 +8,7 @@ import {
 import {translate} from '@docusaurus/Translate';
 import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar';
 import styles from './styles.module.css';
+import CustomTitle from '@site/src/components/CustomTitle';
 function NavbarBackdrop(props) {
   return (
     <div
@@ -47,6 +48,7 @@ export default function NavbarLayout({children}) {
       {children}
       <NavbarBackdrop onClick={mobileSidebar.toggle} />
       <NavbarMobileSidebar />
+      <CustomTitle />
     </nav>
   );
 }

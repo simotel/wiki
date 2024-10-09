@@ -1,4 +1,7 @@
-
+---
+sidebar_label: "شبکه"
+title: "شبکه"
+---
 
 # Network
 

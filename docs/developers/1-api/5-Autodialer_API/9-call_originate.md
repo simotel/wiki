@@ -1,3 +1,8 @@
+---
+sidebar_label: "تماس دو طرفه با کمپین"
+title: "تماس دو طرفه با کمپین"
+---
+
 
 # تماس دوطرفه با کمپین
 
@@ -16,14 +21,14 @@
 برای ارسال تماس باید از سرویس افزودن کمپین استفاده شود (۱) و وضعیت نهایی شماره‌ها در کمپین از طریق وب‌سرویس جستجوی گزارشات کمپین (۲) بدست می‌آید. در ایجاد کمپین مطابق با توضیحات وب‌سرویس افزودن کمپین (۱) با استفاده از مقدار **interface_context** و **inteface_text** می‌توان تماس را به سمت دایل‌پلن هدایت کرد. در دایل‌پلن چنانکه نیاز هست ارتباط مقصد مدیریت شود از کامپوننت های **ExtensionAPI** و یا **TrunkApi** استفاده شود(طبق ۳ و ۴). برای دریافت cdr قسمت دوم تماس می‌توان از سرویس دریافت گزارشات (۵) و یا وب‌سرویس (۶) که مربوط به CDR می‌باشد استفاده کرد. در نهایت در پایان مکالمه وضعیت مکالمه اعلام می‌گردد.
 
 
-**۱:** [وب‌سرویس افزودن کمپین](/docs/developers/1-api/5-Autodialer_API/4-campaign/1-campaign_add.md)
+ **۱:** [وب‌سرویس افزودن کمپین](/i18n/fa/docusaurus-plugin-content-docs/current/developers/1-api/5-Autodialer_API/4-campaign/1-campaign_add.md)
 
-**۲:** [وب‌سرویس دریافت گزارشات کمپین](/docs/developers/1-api/5-Autodialer_API/7-report/1-report_search.md)
+**۲:** [وب‌سرویس دریافت گزارشات کمپین](/i18n/fa/docusaurus-plugin-content-docs/current/developers/1-api/5-Autodialer_API/7-report/1-report_search.md)
 
-**۳:** [وب‌سرویس کامپوننت Exten API](/docs/developers/1-api/3-SimotelWebhooks/3-DialplanApiComponents/3-exten_api.md)
+**۳:** [وب‌سرویس کامپوننت Exten API](/i18n/fa/docusaurus-plugin-content-docs/current/developers/1-api/3-SimotelWebhooks/3-DialplanApiComponents/3-exten_api.md)
 
-**۴:** [وب‌سرویس کامپوننت Trunk API](/docs/developers/1-api/3-SimotelWebhooks/3-DialplanApiComponents/4-trunk_api.md)
+**۴:** [وب‌سرویس کامپوننت Trunk API](/i18n/fa/docusaurus-plugin-content-docs/current/developers/1-api/3-SimotelWebhooks/3-DialplanApiComponents/4-trunk_api.md)
 
-**۵:** [وب‌سرویس دریافت گزارشات](/docs/developers/1-api/2-SimotelAPI/v4/13-report/4-report_cdr_search.md)
+**۵:** [وب‌سرویس دریافت گزارشات](/i18n/fa/docusaurus-plugin-content-docs/current/developers/1-api/2-SimotelAPI/v4/13-report/4-report_cdr_search.md)
 
-**۶:** [وب‌سرویس رویداد CDR](/docs/developers/1-api/3-SimotelWebhooks/2-Events/14-cdr.md) -->
+**۶:** [وب‌سرویس رویداد CDR](/i18n/fa/docusaurus-plugin-content-docs/current/developers/1-api/3-SimotelWebhooks/2-Events/14-cdr.md) 

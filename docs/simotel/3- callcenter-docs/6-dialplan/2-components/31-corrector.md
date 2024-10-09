@@ -1,3 +1,7 @@
+---
+sidebar_label: "Corrector"
+---
+
 
 
 # Corrector

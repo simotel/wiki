@@ -1,6 +1,10 @@
 ---
 sidebar_position: 1
+sidebar_label: "تنظیمات"
+title: "تنظیمات"
 ---
+
+
 # تنظیمات
 
 

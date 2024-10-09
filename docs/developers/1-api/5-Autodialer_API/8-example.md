@@ -1,6 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_label: "مثال کاربردی"
+title: "مثال کاربردی"
 ---
+
+
+
 # مثال‌کاربردی
 
 **مثال: کمپبنی ایجاد کنید که **
@@ -19,6 +23,31 @@ sidebar_position: 1
 
 **۱:**
 برای بدست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/docs/developers/api/Autodialer_API/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
+
+<!--  -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+  <Tabs
+    defaultValue="usageCode"
+    values={[
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
+    ]}>
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="Curl"
+        values={[
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
+
 ```shell
 
 POST /api/v4/autodialer/announcements/search HTTP/1.1
@@ -35,7 +64,13 @@ Content-Length: 66
 
 ```
 
-نمونه پاسخ به درخواست
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 
@@ -54,8 +89,36 @@ Content-Length: 66
 }
 
 ```
+    </TabItem>
 
+  </Tabs>
+
+
+<!--  -->
 ۲: برای یافتن شناسه‌یکتای ترانک از سرویس [trunk manager search](/docs/developers/api/Autodialer_API/trunk_manager/trunk_manager_search) استفاده می‌کنیم،نمونه درخواست HTTP آن به شرح زیر می‌باشد
+
+<!--  -->
+
+
+  <Tabs
+    defaultValue="usageCode"
+    values={[
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
+    ]}>
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="Curl"
+        values={[
+
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```shell
 
@@ -73,7 +136,13 @@ Content-Length: 66
 
 ```
 
-نمونه پاسخ به درخواست
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 
@@ -169,9 +238,41 @@ Content-Length: 66
 }
 
 ```
+    </TabItem>
+
+  </Tabs>
+
+
+<!--  -->
+
+
 
 
 ۳،۴،۵: درنهایت نیز باساخت کمپینی با شرایط ذکر شده ارسال تماس انبوه در زمان مشخص شده انجام می‌شود ([campaign add](/docs/developers/api/Autodialer_API/campaign/campaign_add))، نمونه درخواست HTTP به‌شرح زیر می‌باشد
+
+
+<!--  -->
+  <Tabs
+    defaultValue="usageCode"
+    values={[
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
+    ]}>
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="Curl"
+        values={[
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```shell
 
@@ -200,7 +301,13 @@ Content-Length: 379
 
 ```
 
-نمونه پاسخ به درخواست
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 
@@ -213,3 +320,6 @@ Content-Length: 379
 }
 
 ```
+    </TabItem>
+
+  </Tabs>

@@ -1,4 +1,7 @@
-
+---
+sidebar_label: "خط فرمان PBX"
+title: "خط فرمان PBX"
+---
 
 # PBX CLI
 

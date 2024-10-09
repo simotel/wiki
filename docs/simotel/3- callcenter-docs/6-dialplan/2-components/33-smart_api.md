@@ -1,3 +1,6 @@
+---
+sidebar_label: "Smart API"
+---
 
 
 # Smart API

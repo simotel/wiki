@@ -1,4 +1,7 @@
-
+---
+sidebar_label: "حساب کاربری"
+title: "حساب کاربری"
+---
 
 # Accounts
 

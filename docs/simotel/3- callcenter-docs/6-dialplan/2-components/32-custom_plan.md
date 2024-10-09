@@ -1,3 +1,7 @@
+---
+sidebar_label: "Custom Plan"
+---
+
 
 
 # Custom Plan

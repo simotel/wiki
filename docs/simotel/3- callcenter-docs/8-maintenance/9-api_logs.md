@@ -1,3 +1,7 @@
+---
+sidebar_label: "سابقه فعالیت Api"
+title: "سابقه فعالیت Api"
+---
 
 
 # API Logs

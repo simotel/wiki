@@ -1,116 +1,148 @@
 ---
-
+sidebar_label: "حذف آوا"
+title: "حذف آوا"
 ---
+
 # Announce Remove
 
 از این سرویس برای حذف کردن آوا استفاده می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 | توضیحات | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:-:|:-:|:-:|:-:|:-:|
 | شناسه یکتای آوا که از [جستجو](/docs/developers/api/SimotelAPI/v4/announcement/announcements_search) بدست می‌آید | - | 6033876dc92de036d1390923 | ** | id_ |
-
+</div>
 
 
 ## نمونه فراخوانی
 
+
+<!--  -->
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
 
-```php
-	<?php
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
 
-	$curl = curl_init();
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
-	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/announcements/remove',
-	  CURLOPT_RETURNTRANSFER => true,
-	  CURLOPT_ENCODING => '',
-	  CURLOPT_MAXREDIRS => 10,
-	  CURLOPT_TIMEOUT => 0,
-	  CURLOPT_FOLLOWLOCATION => true,
-	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'POST',
-	  CURLOPT_POSTFIELDS =>'{"_id":"6033876dc92de036d1390923"}',
-	  CURLOPT_HTTPHEADER => array(
-		'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
-		'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
-		'Content-Type: application/json'
-	  ),
-	));
+		```php
+			<?php
 
-	$response = curl_exec($curl);
+			$curl = curl_init();
 
-		if (!curl_errno($curl)) {
-		$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-		echo 'response code:'.$httpcode, '<br/>';
-	}
+			curl_setopt_array($curl, array(
+			CURLOPT_URL => 'http://192.168.51.20/api/v4/pbx/announcements/remove',
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_ENCODING => '',
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 0,
+			CURLOPT_FOLLOWLOCATION => true,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => 'POST',
+			CURLOPT_POSTFIELDS =>'{"_id":"6033876dc92de036d1390923"}',
+			CURLOPT_HTTPHEADER => array(
+				'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
+				'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==',
+				'Content-Type: application/json'
+			),
+			));
 
-	curl_close($curl);
-	echo $response;
-?>
-```
+			$response = curl_exec($curl);
 
+				if (!curl_errno($curl)) {
+				$httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+				echo 'response code:'.$httpcode, '<br/>';
+			}
 
-</TabItem>
-<TabItem value="JS">
+			curl_close($curl);
+			echo $response;
+		?>
+		```
 
-```js
-	<html>
-		<head>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		</head>
-		<body>
-			<script>
-				var settings = {
-				  "url": "http://192.168.51.20/api/v4/pbx/announcements/remove",
-				  "method": "POST",
-				  "timeout": 0,
-				  "headers": {
-					"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
-					"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
-					"Content-Type": "application/json"
-				  },
-				  "data": JSON.stringify({
-					  "_id":"6033876dc92de036d1390923"
-					  }),
-					};
+          </details>
+        </TabItem>
 
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
-					$.ajax(settings).always(function (jqXHR) {
-						console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
-						console.log("response body: " + jqXHR.responseText);
-					});
-			</script>
-		</body>
-	</html>
-```
-
-</TabItem>
-<TabItem value="Linux">
-
-```bash
-	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/announcements/remove' \
-	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
-	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{"_id":"6033876dc92de036d1390923"}'
-	```
-</TabItem>
-</Tabs>
+			```js
+				<html>
+					<head>
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+					</head>
+					<body>
+						<script>
+							var settings = {
+							"url": "http://192.168.51.20/api/v4/pbx/announcements/remove",
+							"method": "POST",
+							"timeout": 0,
+							"headers": {
+								"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
+								"Authorization": "Basic dGVzdDpBYTEyMzQ1Ng==",
+								"Content-Type": "application/json"
+							},
+							"data": JSON.stringify({
+								"_id":"6033876dc92de036d1390923"
+								}),
+								};
 
 
-## نمونه خروجی درخواست
+								$.ajax(settings).always(function (jqXHR) {
+									console.log("response code: " + jqXHR.status + " " + jqXHR.statusText);
+									console.log("response body: " + jqXHR.responseText);
+								});
+						</script>
+					</body>
+				</html>
+			```
+
+          </details>
+        </TabItem>
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
+
+	```bash
+		curl --location --request POST 'http://192.168.51.20/api/v4/pbx/announcements/remove' \
+		--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
+		--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
+		--header 'Content-Type: application/json' \
+		--data-raw '{"_id":"6033876dc92de036d1390923"}'
+		```
+
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -119,3 +151,6 @@ import TabItem from '@theme/TabItem';
     "data": ""
 }
 ```
+    </TabItem>
+
+  </Tabs>

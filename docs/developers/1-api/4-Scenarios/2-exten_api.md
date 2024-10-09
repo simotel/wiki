@@ -1,6 +1,10 @@
 ---
 
+sidebar_label: "سناریو Exten API"
+title: "سناریو Exten API"
 ---
+
+
 # Exten API
 
 :::tip توصیه

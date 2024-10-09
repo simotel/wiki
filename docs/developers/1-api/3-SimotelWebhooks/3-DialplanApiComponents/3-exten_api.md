@@ -1,6 +1,10 @@
 ---
 sidebar_position: 2
+sidebar_label: "معرفی Extension API"
+title: "معرفی Extension API"
 ---
+
+
 # Extention API
 
 از این کامپوننت برای ارسال تماس به سمت یک داخلی استفاده‌ می‌شود.عملکرد آن مشابه Extension است، با این تفاوت که از طریق وب‌‌سرویس، شماره داخلی 

@@ -1,6 +1,9 @@
 ---
 sidebar_position: 1
+sidebar_label: "معرفی و تنظیمات"
+title: "معرفی و تنظیمات"
 ---
+
 
 # معرفی و تنظیمات  
 

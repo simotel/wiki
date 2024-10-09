@@ -1,3 +1,7 @@
+---
+sidebar_label: "سابقه فعالیت"
+title: "سابقه فعالیت"
+---
 
 
 # Activity Log

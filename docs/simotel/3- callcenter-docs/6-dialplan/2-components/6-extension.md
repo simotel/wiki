@@ -1,3 +1,7 @@
+---
+sidebar_label: "Extensions"
+title: "Extensions"
+---
 
 
 # Extension
