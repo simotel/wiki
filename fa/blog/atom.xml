@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wiki.simotel.com/fa/blog</id>
-    <title>Simotel Docs Blog</title>
+    <title>  Blog</title>
     <updated>2021-09-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wiki.simotel.com/fa/blog"/>
-    <subtitle>Simotel Docs Blog</subtitle>
+    <subtitle>  Blog</subtitle>
     <icon>https://wiki.simotel.com/fa/img/newSimotelFavIcon.svg</icon>
     <entry>
         <title type="html"><![CDATA[simotelhelper 26]]></title>
