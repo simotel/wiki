@@ -1,6 +1,8 @@
 ---
-
+sidebar_label: " Simotelhelper ابزار"
+title: "ابزار simotelhelper مباحث پیشرفته"
 ---
+
 
 # ابزار simotelhelper
 

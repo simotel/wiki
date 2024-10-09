@@ -1,3 +1,7 @@
+---
+sidebar_label: "Mix Monitor "
+---
+
 
 
 # Mix Monitor

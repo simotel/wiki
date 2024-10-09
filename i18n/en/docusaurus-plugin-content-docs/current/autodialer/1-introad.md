@@ -1,9 +1,7 @@
 ---
 title: "AutoDialer"
 ---
-<head>
-  <title>AutoDialer | Simotel Docs</title>
-</head>
+
 
 # مقدمه
 

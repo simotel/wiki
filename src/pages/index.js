@@ -6,10 +6,13 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import { translate } from '@docusaurus/Translate';
+import CustomTitle from '@site/src/components/CustomTitle';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+
   
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -30,12 +33,13 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const siteTitle = translate({ message: "siteTitle" });
   const siteTitle2 = translate({ message: "siteTitle2" });
- 
+ <CustomTitle/>
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
   console.log(fullTitle)
+  
   return (
     <Layout
-     title={translate({message:siteTitle})}
+     title={fullTitle}
       description="Simotel Docs Center">
       
       <HomepageHeader />

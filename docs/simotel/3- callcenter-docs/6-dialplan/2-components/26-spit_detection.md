@@ -1,3 +1,7 @@
+---
+sidebar_label: "Spit Detection"
+---
+
 
 
 # Spit Detection

@@ -1,11 +1,16 @@
 ---
 sidebar_position: 1
+sidebar_label: "جستجوی کاربر"
+title: "جستجوی کاربر"
 ---
+
+
 # User Search
 
 از این سرویس برای جستجوی داخلی استفاده می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |                        توضیحات                       | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:----------------------------------------------------:|:------------------:|:--------------:|:----------------------:|:---------:|
 | جستجو بر روی تمامی داخلی‌ها یا آن‌هایی که نگاشت شده‌اند |     all/mapped     |       all      |            *           |   status  |
@@ -13,7 +18,7 @@ sidebar_position: 1
 |                       نام داخلی                      |          -         |        -       |                        |    name   |
 |                      شماره داخلی                     |          -         |       999      |                        |   number  |
 |                شماره اپراتور نگاشت شده               |          -         |        -       |                        |   mapped  |
-
+</div>
 
 	
 ## نمونه فراخوانی
@@ -22,15 +27,31 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-    defaultValue="PHP"
-    values={[
+  defaultValue="usageCode"
+  values={[
+    {label: 'نمونه کد استفاده', value: 'usageCode'},
+    {label: 'نمونه خروجی', value: 'outputCode'},
+  ]}>
+
+  <!-- تب نمونه کد استفاده -->
+  <TabItem value="usageCode">
+    <Tabs
+      defaultValue="PHP"
+      values={[
         {label: 'PHP', value: 'PHP'},
         {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
-    ]}>
-<TabItem value="PHP">
+        {label: 'Curl', value: 'Curl'},
+      ]}>
 
-```php
+      <!-- کد PHP -->
+      <TabItem value="PHP">
+	  
+        <details>
+          <summary>نمایش کامل کد PHP</summary>
+          <br/>
+
+          ```php
+
 	<?php
 
 	$curl = curl_init();
@@ -66,13 +87,21 @@ import TabItem from '@theme/TabItem';
 	curl_close($curl);
 	echo $response;
 ?>
-```
 
-</TabItem>
-<TabItem value="JS">
+          ```
 
-```js
-	<html>
+        </details>
+      </TabItem>
+
+      <!-- کد JS -->
+      <TabItem value="JS">
+        <details>
+          <summary>نمایش کامل کد JS</summary>
+          <br/>
+
+          ```js
+
+<html>
 			<head>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 			</head>
@@ -108,12 +137,18 @@ import TabItem from '@theme/TabItem';
 			</script>
 		</body>
 	</html>
-```
 
-</TabItem>
-<TabItem value="Linux">
+          ```
 
-```bash
+        </details>
+      </TabItem>
+
+      <TabItem value="Curl">
+        <details>
+          <summary>نمایش کامل کد Curl</summary>
+          <br/>
+
+          ```bash
 
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/users/search' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
@@ -124,15 +159,20 @@ import TabItem from '@theme/TabItem';
 		"alike":true,
 		"conditions":{"name": "101", "number": "", "mapped": ""}
 	}'
-```
-</TabItem>
-</Tabs>
 
+          ```
 
-## نمونه خروجی درخواست
+        </details>
+      </TabItem>
 
-```shell
+    </Tabs>
+  </TabItem>
+
+  <TabItem value="outputCode">
+
+      ```shell
 {
+
     "success": 1,
     "message": "",
     "data": [
@@ -175,5 +215,9 @@ import TabItem from '@theme/TabItem';
             "queues": []
         }
     ]
-}
-```
+	}
+
+      ```
+  </TabItem>
+
+</Tabs>

@@ -1,33 +1,54 @@
 ---
-
+sidebar_label: "بارگزاری فایل صوتی"
+title: "بارگزاری فایل صوتی"
 ---
+
 # Announce Upload
 
 از این سرویس برای بارگذاری فایل صوتی در مرکز‌تماس استفاده می‌شود. پس از بارگذاری مرکزتماس در پاسخ `filename` را سمت وب‌سرویس برمی‌گرداند، از آن در API افزودن فایل‌صوتی استفاده می‌کنید.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |     توضیحات    | داده های تعریف شده |         داده های نمونه         | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:--------------:|:------------------:|:------------------------------:|:----------------------:|:---------:|
 | مسیر فایل صوتی |          -         | c:users\users\Desktop\file.mp3 |           **           |    file   |
 
-
+</div>
 
 ## نمونه فراخوانی
+
+<!--  -->
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
+
 	<?php
 
 	$curl = curl_init();
@@ -55,55 +76,69 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
+          </details>
+        </TabItem>
 
-</TabItem>
-<TabItem value="JS">
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
-```js
-	<html>
-			<head>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			</head>
-		<body>
-			<script>
-				var form = new FormData();
-				form.append("file", fileInput.files[0], "/path/to/file");
+			```js
+				<html>
+						<head>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+						</head>
+					<body>
+						<script>
+							var form = new FormData();
+							form.append("file", fileInput.files[0], "/path/to/file");
 
-				var settings = {
-				  "url": "http://192.168.51.20/api/v4/pbx/announcements/upload",
-				  "method": "POST",
-				  "timeout": 0,
-				  "headers": {
-					"X-APIKEY": "9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG",
-					"Authorization": "Basic c2FkcjpTYWRyQDEyMw=="
-				  },
-				  "processData": false,
-				  "mimeType": "multipart/form-data",
-				  "contentType": false,
-				  "data": form
-				};
+							var settings = {
+							"url": "http://192.168.51.20/api/v4/pbx/announcements/upload",
+							"method": "POST",
+							"timeout": 0,
+							"headers": {
+								"X-APIKEY": "9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG",
+								"Authorization": "Basic c2FkcjpTYWRyQDEyMw=="
+							},
+							"processData": false,
+							"mimeType": "multipart/form-data",
+							"contentType": false,
+							"data": form
+							};
 
-				$.ajax(settings).done(function (response) {
-				  console.log(response);
-				});
-			</script>
-		</body>
-	</html>
-```
+							$.ajax(settings).done(function (response) {
+							console.log(response);
+							});
+						</script>
+					</body>
+				</html>
+			```
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
 
-```bash
-	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/announcements/upload' \
-	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
-	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
-	--form 'file=@"/path/to/file"'
-```
-</TabItem>
-</Tabs>
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
-## نمونه خروجی درخواست
+		```bash
+			curl --location --request POST 'http://192.168.51.20/api/v4/pbx/announcements/upload' \
+			--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
+			--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
+			--form 'file=@"/path/to/file"'
+		```
+
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -114,3 +149,6 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
+
+  </Tabs>

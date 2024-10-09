@@ -1,12 +1,16 @@
 ---
 sidebar_position: 2
+sidebar_label: " دریافت فکس"
+title: " دریافت فکس"
 ---
+
 # Incoming Fax
 
 هنگامی که فکسی وارد سیموتل می‌گردد، رویداد incomingfax ایجاد می‌شود.
 
 
 ## پارامترهای رویداد
+<div class="custom-table">
 
 |                توضیحات               | داده‌های تعریف‌شده |        داده‌های نمونه        |           پارامتر‌ها          |
 |:------------------------------------:|:----------------:|:---------------------------:|:----------------------------:|
@@ -26,6 +30,8 @@ sidebar_position: 2
 |                   -                  |         -        |              0              |     **description->FAXPAGES**    |
 |                   -                  |         -        | Unexpected message received | **description->FAXSTATUSSTRING** |
 |                   -                  |         -        |              "              |      **description->REASON**     |
+
+</div>
 
 ## نمونه خروجی رویداد CDR
 

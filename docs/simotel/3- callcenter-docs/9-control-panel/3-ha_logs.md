@@ -1,3 +1,7 @@
+---
+sidebar_label: "سابقه فعالیت HA"
+title: "سابقه فعالیت HA"
+---
 
 
 # HA Logs

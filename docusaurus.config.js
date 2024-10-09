@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Simotel Docs',
+  title: ' ',
   // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
@@ -8,7 +8,8 @@ module.exports = {
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
-  titleDelimiter: '|',
+  titleDelimiter: ' ',
+ 
 
 
 i18n: {

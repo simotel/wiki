@@ -1,28 +1,51 @@
+---
+sidebar_label: "بارگزاری فایل "
+title: "بارگزاری فایل "
+---
+
 
 # Fax Upload
 
 از این سرویس برای بارگذاری فایل‌ها برای استفاده در ارسال فکس استفاده می‌شود.
 
 ## پارامتر‌ها
+<div class="custom-table">
 |     توضیحات     | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:---------------:|:------------------:|:--------------:|:----------------------:|:---------:|
 | نام فایل |          -         |        -       |           **           |    file   |
-
+</div>
 
 
 ## نمونه فراخوانی
 
+<!--  -->
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -57,9 +80,14 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
+          </details>
+        </TabItem>
 
-<TabItem value="Linux">
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```bash
 	curl --location --request POST 'http://192.168.51.21/api/v4/pbx/faxes/upload' \
@@ -67,10 +95,14 @@ import TabItem from '@theme/TabItem';
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--form 'file=@"/path/to/file"'
 ```
-</TabItem>
-</Tabs>
 
-## نمونه خروجی درخواست
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -81,3 +113,6 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
+
+  </Tabs>

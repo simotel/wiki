@@ -1,3 +1,8 @@
+---
+sidebar_label: "تنظیمات Api"
+title: "تنظیمات Api"
+---
+
 
 
 # API settings

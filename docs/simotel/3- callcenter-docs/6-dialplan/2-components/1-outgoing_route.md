@@ -1,3 +1,7 @@
+---
+sidebar_label: "Outgoing Route"
+title: "Outgoing Route"
+---
 
 
 # Outgoing Route

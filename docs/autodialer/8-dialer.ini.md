@@ -1,3 +1,7 @@
+---
+sidebar_label: "Dialer.ini تنظیمات"
+title: "Dialer.ini تنظیمات"
+---
 
 
 # تنظیمات dialer.ini

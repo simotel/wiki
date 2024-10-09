@@ -1,4 +1,7 @@
-
+---
+sidebar_label: "Trunk manager"
+title: "Trunk manager"
+---
 
 # مدیریت ترانک‌ها
 

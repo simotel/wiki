@@ -1,3 +1,6 @@
+---
+sidebar_label: "Ring Group"
+---
 
 
 # Ring Group

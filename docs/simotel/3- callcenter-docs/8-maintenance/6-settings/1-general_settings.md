@@ -1,3 +1,8 @@
+---
+sidebar_label: "تنظیمات عمومی"
+title: "تنظیمات عمومی"
+---
+
 
 
 # General Settings

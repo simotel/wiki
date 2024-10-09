@@ -13,6 +13,8 @@ import NavbarSearch from '@theme/Navbar/Search';
 import { translate } from '@docusaurus/Translate';
 import { useHistory } from '@docusaurus/router'; // اضافه کردن useHistory
 
+
+
 import styles from './styles.module.css';
 
 function useNavbarItems() {
@@ -26,7 +28,9 @@ function NavbarItems({ items }) {
     // گوش دادن به تغییر مسیر و رفرش کردن صفحه
     const unlisten = history.listen((location) => {
       if (location.pathname.includes('/en') || location.pathname.includes('/fa')) {
+        
         window.location.reload(); // رفرش کردن صفحه پس از تغییر زبان
+
       }
     });
     return () => {

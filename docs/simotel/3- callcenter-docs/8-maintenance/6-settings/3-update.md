@@ -1,3 +1,7 @@
+---
+sidebar_label: "به روز رسانی"
+title: "به روز رسانی"
+---
 
 
 # Update

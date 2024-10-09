@@ -1,4 +1,8 @@
+---
+title: "Reports"
+sidebar_label: "Reports"
 
+---
 
 # گزارشات
 

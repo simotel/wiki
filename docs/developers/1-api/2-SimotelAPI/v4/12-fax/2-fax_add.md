@@ -1,3 +1,8 @@
+---
+sidebar_label: "افزودن فکس"
+title: "افزودن فکس"
+---
+
 
 # Fax Add
 
@@ -7,6 +12,7 @@
 برای ارسال فکس به صورت فایل فیلد "file" باید مقدار داشته باشد و فیلد "text" از JSON ورودی حذف شود. 
 :::
 ## پارامتر‌ها
+<div class="custom-table">
 |                          توضیحات                         | داده های تعریف شده |           داده های نمونه           | پارامترهای ضروری[**]/منطقی[*] |  پارامتر ها |
 |:--------------------------------------------------------:|:------------------:|:----------------------------------:|:----------------------:|:-----------:|
 |                  شناسه یکتای ارسال کننده                 |          -         |              username1              |            *           |  sender_id  |
@@ -16,22 +22,39 @@
 | نام فایل آپلود شده که در جواب [fax upload](/docs/developers/api/SimotelAPI/v4/fax/fax_upload) برگردانده می‌شود(در صورتی که فیلد file مقدار دارد فیلد text حذف شود) |          -         | file-20200624051520-61681-fax-test |            *           |     file    |
 |                   برای ارسال فایل متنی                   |          -         |           this is sample           |                       |     text    |
 |                          توضیحات                         |          -         |            just for test           |                        | description |
-
+</div>
 
 
 ## نمونه فراخوانی
 
+<!--  -->
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
+
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 
 ```php
 	<?php
@@ -69,10 +92,13 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
+          </details>
+        </TabItem>
 
-</TabItem>
-
-<TabItem value="Linux">
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/pbx/faxes/add' \
@@ -88,10 +114,14 @@ import TabItem from '@theme/TabItem';
 		"description":"Just for test"
 	}'
 ```
-</TabItem>
-</Tabs>
 
-## نمونه خروجی درخواست
+          </details>
+        </TabItem>
+
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
 
 ```shell
 {
@@ -102,3 +132,6 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
+
+  </Tabs>

@@ -1,3 +1,7 @@
+---
+sidebar_label: "وضعیت سرور"
+title: "وضعیت سرور"
+---
 
 
 # Server Status

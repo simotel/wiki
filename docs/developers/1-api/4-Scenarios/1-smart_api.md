@@ -1,6 +1,10 @@
 ---
-
+sidebar_label: "سناریو Smart API"
+title: "سناریو Smart API"
 ---
+
+
+
 # Smart API
 
 :::tip توصیه

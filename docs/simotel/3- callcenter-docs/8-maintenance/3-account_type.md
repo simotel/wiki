@@ -1,3 +1,7 @@
+---
+sidebar_label: "نوع حساب کاربری"
+title: "نوع حساب کاربری"
+---
 
 
 # Account Type

@@ -1,3 +1,7 @@
+---
+sidebar_label: "تنظیمات بیشتر"
+title: "تنظیمات بیشتر"
+---
 
 
 # More Settings

@@ -1,3 +1,7 @@
+---
+sidebar_label: "سافت فون سیموتل"
+title: "سافت فون سیموتل"
+---
 
 
 # Push Notification

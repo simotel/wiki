@@ -1,6 +1,9 @@
 ---
-
+sidebar_label: "بازیابی گزارشات ترتیبی صف"
+title: "بازیابی گزارشات ترتیبی صف"
 ---
+
+
 # Queue Ordered
 
 این سرویس برای بازیابی اطلاعات جدول جستجوی صف از ابتدا تا انتها کاربرد دارد، پارامتر ورودی این سرویس id رکوردی است که می‌خواهید اطلاعات بعد از آن بازیابی نمایید، خروجی سرویس رکوردهای جدول بصورت ترتیبی می‌باشد.(در هر فراخوانی 20 رکورد به ترتیب بازگردانده می‌شود).
@@ -15,26 +18,41 @@
 
 
 ## پارامتر‌ها
+<div class="custom-table">
 | توضیحات                                                         | داده های تعریف شده | داده های نمونه           | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |-----------------------------------------------------------------|--------------------|--------------------------|-------------------------------|-----------|
 | شناسه یکتای که می‌خواهیم اطلاعات بعد از آن به ترتیب بازیابی شوند(last_id) |                    | 5ddb9e925171cd0429088bad |                               | id_       |
-
+</div>
 
 ## نمونه فراخوانی
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs
-   className="unique-tabs" 
-    defaultValue="PHP"
+  <Tabs
+    defaultValue="usageCode"
     values={[
-        {label: 'PHP', value: 'PHP'},
-        {label: 'JS', value: 'JS'},
-		{label: 'Linux', value: 'Linux'},
+      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'نمونه خروجی', value: 'outputCode'},
     ]}>
-<TabItem value="PHP">
 
+    <!-- تب نمونه کد استفاده -->
+    <TabItem value="usageCode">
+      <Tabs
+        defaultValue="PHP"
+        values={[
+          {label: 'PHP', value: 'PHP'},
+          {label: 'JS', value: 'JS'},
+          {label: 'Curl', value: 'Curl'},
+        ]}>
+
+        <!-- کد PHP -->
+        <TabItem value="PHP">
+      
+          <details>
+            <summary>نمایش کامل کد PHP</summary>
+            <br/>
 ```php
 	<?php
 
@@ -66,8 +84,14 @@ import TabItem from '@theme/TabItem';
 ?>
 ```
 
-</TabItem>
-<TabItem value="JS">
+          </details>
+        </TabItem>
+
+        <!-- کد JS -->
+        <TabItem value="JS">
+          <details>
+            <summary>نمایش کامل کد JS</summary>
+            <br/>
 
 ```js
 	<html>
@@ -98,8 +122,13 @@ import TabItem from '@theme/TabItem';
 	</html>
 ```
 
-</TabItem>
-<TabItem value="Linux">
+          </details>
+        </TabItem>
+
+        <TabItem value="Curl">
+          <details>
+            <summary>نمایش کامل کد Curl</summary>
+            <br/>
 
 ```bash
 	curl --location --request POST 'http://192.168.51.20/api/v4/reports/queue/ordered/id' \
@@ -110,13 +139,16 @@ import TabItem from '@theme/TabItem';
 		"_id":""
 	}'
     ```
-	
-</TabItem>
-</Tabs>
 
-## نمونه خروجی درخواست
+          </details>
+        </TabItem>
 
-```shell
+      </Tabs>
+    </TabItem>
+
+    <TabItem value="outputCode">
+
+```bash
 {
     "success": 1,
     "message": "Requested operation is done successfully",
@@ -1125,3 +1157,6 @@ import TabItem from '@theme/TabItem';
     }
 }
 ```
+    </TabItem>
+
+  </Tabs>
