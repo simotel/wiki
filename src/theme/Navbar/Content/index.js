@@ -12,6 +12,8 @@ import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 import { translate } from '@docusaurus/Translate';
 import { useHistory } from '@docusaurus/router'; // اضافه کردن useHistory
+import LanguageSwitcherButton from '@site/src/components/LanguageSwitcherButton';
+import useWindowSize from '@site/src/components/useWindowSize';
 
 
 
@@ -53,10 +55,8 @@ ${JSON.stringify(item, null, 2)}`,
                   { cause: error },
                 )
               }>
-              <NavbarItem
-                label={item.label || 'Locale Dropdown'}
-                {...item}
-              />
+             
+              
             </ErrorCauseBoundary>
           );
         }
@@ -80,14 +80,17 @@ ${JSON.stringify(item, null, 2)}`,
                 })}
                 to={item.to || '#'}
               />
+              
             </ErrorCauseBoundary>
           );
         }
-
+  
         return null;
       })}
     </>
+    
   );
+
 }
 
 function NavbarContentLayout({ left, right }) {
@@ -104,6 +107,9 @@ export default function NavbarContent() {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   const searchBarItem = items.find((item) => item.type === 'search');
+  const { width } = useWindowSize(); // Get the window size
+
+  const isMobile = width <= 768; // Adjust this value as per your mobile breakpoint
 
   const translatedLeftItems = leftItems.map(item => ({
     ...item,
@@ -134,6 +140,7 @@ export default function NavbarContent() {
         <>
           <NavbarItems items={translatedRightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
+          {!isMobile && <LanguageSwitcherButton />} {/* Only show on desktop */}
           {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />

@@ -41,6 +41,9 @@
     "siteTitle2": {
       "message": "simotel Docs"
     },
+    "siteDesc":{
+      "message" :"Simotel Documents "
+    },
       "site.tagline": {
         "message": "Welcome to the Simotel PBX Documentation 👋️"
       },
