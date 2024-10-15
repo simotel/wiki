@@ -1,23 +1,42 @@
-// src/components/LanguageSwitcherButton.js
-
 import React from 'react';
 import { useHistory } from '@docusaurus/router';
-import { useDocusaurusContext } from '@docusaurus/core';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import faFlag from '../img/fa-flag.png'; // مسیر عکس پرچم فارسی
+import enFlag from '../img/en-flag.png'; // مسیر عکس پرچم انگلیسی
 
 const LanguageSwitcherButton = () => {
-  const { i18n } = useDocusaurusContext();
-  const history = useHistory();
+  if (ExecutionEnvironment.canUseDOM) {
+    const { i18n } = useDocusaurusContext();
+    const history = useHistory();
+    const currentLocale = document.documentElement.lang;
 
-  const handleLanguageSwitch = () => {
-    const newLocale = i18n.currentLocale === 'fa' ? 'en' : 'fa';
-    history.push(history.location.pathname.replace(`/${i18n.currentLocale}`, `/${newLocale}`));
-  };
+    const handleLanguageSwitch = () => {
+      const newLocale = currentLocale === "fa-IR" ? 'en' : 'fa';
+      const newPath = newLocale === 'fa' 
+        ? `/fa${window.location.pathname}` 
+        : window.location.pathname.replace('/fa', ''); // حذف '/fa' از مسیر
 
-  return (
-    <button onClick={handleLanguageSwitch} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-      {i18n.currentLocale === 'fa' ? 'Switch to English' : 'تغییر به فارسی'}
-    </button>
-  );
+      history.push(newPath);
+      window.location.reload();
+    };
+
+    return (
+      <button 
+        onClick={handleLanguageSwitch} 
+        
+        class={'languageSwitcher'}
+      >
+        <img 
+          src={currentLocale === "fa-IR" ? enFlag : faFlag} 
+          alt={currentLocale === "fa-IR" ? 'English Flag' : 'Persian Flag'} 
+          style={{ width: '16px', height: '16px', marginRight: '12px' }} 
+        />
+        {currentLocale === "fa-IR" ? 'English' : 'فارسی '}
+      </button>
+    );
+  }
+  return null; // اگر در محیط DOM نیست
 };
 
 export default LanguageSwitcherButton;

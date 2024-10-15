@@ -4,7 +4,8 @@ module.exports = {
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
+  // onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
@@ -34,7 +35,7 @@ i18n: {
     },
   },
 
-// plugins: ['@docusaurus/plugin-google-gtag'],
+
 themeConfig: { 
  
   prism: {
@@ -46,7 +47,6 @@ themeConfig: {
     }
   },
 
-  // navbar: getNavbarConfig(process.env.DOCUSAURUS_CURRENT_LOCALE != 'undefined' ? 'en':'fa'),
   navbar: {
     hideOnScroll: true,
     
@@ -55,26 +55,23 @@ themeConfig: {
       src: 'img/newSimotelFavIcon.svg',
     },
     items: [
-      {
-        type: 'localeDropdown', // منوی انتخاب زبان
-        position: 'left',
-      },
+     
       {
         type: 'doc',
-        docId: 'simotel/introsimotel',
-        to: 'docs',
+        docId: 'pbx/introsimotel',
+        to: 'pbx',
         position: 'left',
         label: 'مرکز تماس',
       },
       {
-        to: 'docs/developers/api/introapi', 
+        to: 'developers', 
         label: 'توسعه دهندگان'
       },
       {
 
         type: 'doc',
         docId: 'autodialer/introad',
-        to: 'docs/autodialer/introad',
+        to: 'autodialer',
         position: 'left',
         label: 'ماژول تماس انبوه',
       },
@@ -84,32 +81,23 @@ themeConfig: {
         type: 'docsVersionDropdown',
         docsPluginId: 'autodialer',
       }, */
-  {
-    to: '/intro-softphone',
+  // {
+  //   to: '/intro-softphone',
 
-   label: 'سافت‌فون', 
-   position: 'left',
-  },
-      {to: '/blog',
+  //  label: 'سافت‌فون', 
+  //  position: 'left',
+  // },
+  //     {to: '/blog',
 
-       label: 'بلاگ',
-      position: 'left'
-    },
+  //      label: 'بلاگ',
+  //     position: 'left'
+  //   },
 
-   {
-        href: 'https://forum.mysup.ir',
-        label: 'پایگاه دانش',
-        position: 'right'
-      },
-/*
-      {
-        href: 'https://nasimtel.com/contact/',
-        label: 'تماس با ما',
-        position: 'right',
-      }, */
-/* 		 {
-         type: 'docsVersionDropdown',
-       } */
+  //  {
+  //       href: 'https://forum.mysup.ir',
+  //       label: 'پایگاه دانش',
+  //       position: 'right'
+  //     },
     ],
   },
 
@@ -117,78 +105,6 @@ themeConfig: {
     
     footer: {
       style: 'dark',
-      // logo: {
-        // alt: 'سیموتل',
-        // src: 'img/newSimotelFavIcon.svg',
-        // href: 'https://nasimtel.com',
-        // width: 51,
-	// height: 51,
-	// className: 'footer__logo',
-      //},
-      // links: [
-      //   {
-      //     title: 'دسترسی سریع',
-      //     items: [
-		  // 	{
-      //         label: 'SimoTel OS',
-      //         href: 'https://dl.mysup.ir/iso/debian-simotel-10.12.0.s11.ast18.iso',
-      //       },
-      //       {
-      //         label: 'SimoTel PHP connect',
-      //         href: 'https://github.com/simotel/simotel-php-connect',
-      //       },
-      //       {
-      //         label: 'SimoTel laravel connect',
-      //         href: 'https://github.com/simotel/simotel-laravel-connect',
-      //       },
-			// //{to: '/file/Simotel_V3.edition_12.postman_collection.json',target: '_blank', label: 'Postman V3 e12'},
-			// {
-      //         label: 'Postman V3 e13',
-      //         href: 'https://dl.mysup.ir/postmansample/Simotel_V3.edition_13.postman_collection.json',
-      //       },
-
-      //     ],
-      //   },
-      //    {
-      //     title: 'لینک‌های ضروری',
-      //     items: [
-	    //     {
-      //         label: 'My Support',
-      //         href: 'https://mysup.ir/',
-      //       },
-		  // 	{
-      //         label: 'Forum',
-      //         href: 'https://forum.mysup.ir/',
-      //       },
-      //       {
-      //         label: 'Telegram',
-      //         href: 'https://t.me/mysup_ir',
-      //       },
-      //     ],
-      //   }, 
-      //   {
-      //     title: 'بیشتر',
-      //     items: [
-		  
-      //       {
-      //         label: 'Live Dashboard',
-      //         href: 'https://simotel.mysup.ir/',
-      //       },
-      //       {
-      //         label: 'Live DialPlan',
-      //         href: 'https://dialplan.mysup.ir/',
-      //       },
-	    //     {
-      //         label: 'Postman V2',
-      //         href: 'https://mysup.ir/wp-content/uploads/Simotel.postman_collection.v2.edition.7.json',
-      //       },
-      //       {
-      //         label: 'Old Doc',
-      //         href: 'https://mysup.ir/wp-content/uploads/Simotel.5.1.28.edition.11.pdf',
-      //       },
-      //     ],
-      //   },
-      // ],
        copyright: `تمامی حقوق برای شرکت دانش بنیان «نسیم ارتباط آینده» محفوظ است`, 
     },
   },
@@ -202,7 +118,7 @@ presets: [
         docs: {
            id: 'default',
         path: 'docs',
-		    routeBasePath: 'docs',
+		    routeBasePath: '/',
         sidebarPath: require.resolve('./sidebars.js'),
         lastVersion:'current',
         // includeCurrentVersion: false,

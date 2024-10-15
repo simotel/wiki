@@ -32,4 +32,4 @@ service simotelhelper start
 ```
 در منوی **Maintenance > Settings** می‌توانید ورژن جاری simotelhelper را مشاهده فرمایید.
 
-برای آشنایی بیشتر در مورد ابزار simotelhelper به [این قسمت](/docs/simotel/advance-settings/simotelhelper_tool) مراجعه فرمایید.
+برای آشنایی بیشتر در مورد ابزار simotelhelper به [این قسمت](/pbx/advance-settings/simotelhelper_tool) مراجعه فرمایید.

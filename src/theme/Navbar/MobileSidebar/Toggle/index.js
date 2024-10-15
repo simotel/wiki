@@ -2,8 +2,11 @@ import React from 'react';
 import {useNavbarMobileSidebar} from '@docusaurus/theme-common/internal';
 import {translate} from '@docusaurus/Translate';
 import IconMenu from '@theme/Icon/Menu';
+
+
 export default function MobileSidebarToggle() {
   const {toggle, shown} = useNavbarMobileSidebar();
+
   return (
     <button
       onClick={toggle}
@@ -18,5 +21,6 @@ export default function MobileSidebarToggle() {
       type="button">
       <IconMenu />
     </button>
+    
   );
 }

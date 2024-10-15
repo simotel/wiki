@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <Layout
      title={fullTitle}
-      description="Simotel Docs Center">
+      description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />
       <main>
