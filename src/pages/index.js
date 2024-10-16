@@ -7,6 +7,7 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import { translate } from '@docusaurus/Translate';
 import CustomTitle from '@site/src/components/CustomTitle';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -33,12 +34,18 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const siteTitle = translate({ message: "siteTitle" });
   const siteTitle2 = translate({ message: "siteTitle2" });
- <CustomTitle/>
+  if (ExecutionEnvironment.canUseDOM) {
+    const { siteConfig } = useDocusaurusContext();
+    
+    const currentLocale = document.documentElement.lang;
+    siteConfig.title = " "
+  }
+
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
   
   return (
     <Layout
-     title={siteTitle}
+     title={fullTitle}
       description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />
