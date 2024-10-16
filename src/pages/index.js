@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/">
+            to="/pbx/introsimotel">
               {translate({ message: "آشنایی با سیموتل – فقط پنچ دقیقه ⏱️" })}
           </Link>
         </div>
@@ -33,13 +33,13 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const siteTitle = translate({ message: "siteTitle" });
   const siteTitle2 = translate({ message: "siteTitle2" });
- <CustomTitle/>
+//  <CustomTitle/>
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
   
   
   return (
     <Layout
-     title={siteTitle}
+     title={fullTitle}
       description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />
