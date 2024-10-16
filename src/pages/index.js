@@ -39,7 +39,7 @@ export default function Home() {
   
   return (
     <Layout
-     title={fullTitle}
+     title={siteTitle}
       description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />
