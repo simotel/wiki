@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/">
+            to="/">
               {translate({ message: "آشنایی با سیموتل – فقط پنچ دقیقه ⏱️" })}
           </Link>
         </div>
@@ -35,11 +35,11 @@ export default function Home() {
   const siteTitle2 = translate({ message: "siteTitle2" });
  <CustomTitle/>
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
-  console.log(fullTitle)
+  
   
   return (
     <Layout
-     title={fullTitle}
+     title={siteTitle}
       description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />

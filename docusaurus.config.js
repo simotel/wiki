@@ -55,7 +55,11 @@ themeConfig: {
       src: 'img/newSimotelFavIcon.svg',
     },
     items: [
-     
+      {
+        type: 'localeDropdown',
+        position: 'left',
+        
+      },
       {
         type: 'doc',
         docId: 'pbx/introsimotel',
