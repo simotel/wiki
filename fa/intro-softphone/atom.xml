@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wiki.simotel.com/fa/intro-softphone</id>
-    <title>  Blog</title>
+    <title>مستندات سیموتل Blog</title>
     <updated>2021-07-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wiki.simotel.com/fa/intro-softphone"/>
-    <subtitle>  Blog</subtitle>
+    <subtitle>مستندات سیموتل Blog</subtitle>
     <icon>https://wiki.simotel.com/fa/img/newSimotelFavIcon.svg</icon>
     <entry>
         <title type="html"><![CDATA[Gs wave]]></title>
