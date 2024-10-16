@@ -37,16 +37,15 @@ export default function Home() {
   if (ExecutionEnvironment.canUseDOM) {
     const { siteConfig } = useDocusaurusContext();
     
-    const currentLocale = document.documentElement.lang;
     siteConfig.title = " "
-    siteConfig.titleDelimiter =" "
+    // siteConfig.titleDelimiter =" "
   }
 
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
   
   return (
     <Layout
-     title={fullTitle}
+     title={siteTitle}
       description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />
