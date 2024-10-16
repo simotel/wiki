@@ -27,7 +27,7 @@ export default function NavbarMobileSidebarHeader() {
       <NavbarLogo />
   
       <NavbarColorModeToggle className="margin-right--md" />
-      <LanguageSwitcherButton className="margin-right--md" />
+      {/* <LanguageSwitcherButton className="margin-right--md" /> */}
       <CloseButton />
     
     </div>

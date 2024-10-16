@@ -14,6 +14,8 @@ import { translate } from '@docusaurus/Translate';
 import { useHistory } from '@docusaurus/router'; // اضافه کردن useHistory
 import LanguageSwitcherButton from '@site/src/components/LanguageSwitcherButton';
 import useWindowSize from '@site/src/components/useWindowSize';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 
 
@@ -24,43 +26,34 @@ function useNavbarItems() {
 }
 
 function NavbarItems({ items }) {
-  const history = useHistory(); // استفاده از history
 
-  useEffect(() => {
-    // گوش دادن به تغییر مسیر و رفرش کردن صفحه
-    const unlisten = history.listen((location) => {
-      if (location.pathname.includes('/en') || location.pathname.includes('/fa')) {
-        
-        window.location.reload(); // رفرش کردن صفحه پس از تغییر زبان
-
-      }
-    });
-    return () => {
-      unlisten(); // پاکسازی گوش دادن به تغییرات
-    };
-  }, [history]);
 
   return (
     <>
       {items.map((item, i) => {
         if (item.type === 'localeDropdown') {
+
           return (
             <ErrorCauseBoundary
               key={i}
               onError={(error) =>
                 new Error(
                   `A theme navbar item failed to render.
-Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
-${JSON.stringify(item, null, 2)}`,
+                  Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
+                  ${JSON.stringify(item, null, 2)}`,
                   { cause: error },
                 )
               }>
+              <NavbarItem {...item} />
+
              
+             
+              
               
             </ErrorCauseBoundary>
           );
-        }
-
+        
+      }
         if (item.type === 'doc' || !item.hasOwnProperty('type')) {
           return (
             <ErrorCauseBoundary
@@ -68,8 +61,8 @@ ${JSON.stringify(item, null, 2)}`,
               onError={(error) =>
                 new Error(
                   `A theme navbar item failed to render.
-Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
-${JSON.stringify(item, null, 2)}`,
+                  Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
+                  ${JSON.stringify(item, null, 2)}`,
                   { cause: error },
                 )
               }>
@@ -80,18 +73,16 @@ ${JSON.stringify(item, null, 2)}`,
                 })}
                 to={item.to || '#'}
               />
-              
             </ErrorCauseBoundary>
           );
         }
-  
+
         return null;
       })}
     </>
-    
   );
-
 }
+
 
 function NavbarContentLayout({ left, right }) {
   return (
@@ -140,7 +131,6 @@ export default function NavbarContent() {
         <>
           <NavbarItems items={translatedRightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {!isMobile && <LanguageSwitcherButton />} {/* Only show on desktop */}
           {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />
