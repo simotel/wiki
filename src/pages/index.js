@@ -39,6 +39,7 @@ export default function Home() {
     
     const currentLocale = document.documentElement.lang;
     siteConfig.title = " "
+    siteConfig.titleDelimiter =" "
   }
 
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
