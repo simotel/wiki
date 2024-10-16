@@ -8,7 +8,7 @@ const CustomTitle = () => {
   const { siteConfig } = useDocusaurusContext();
   
   const currentLocale = document.documentElement.lang;
- 
+  siteConfig.title = " "
   if(currentLocale ==="fa-IR"){
     siteConfig.title = "مستندات سیموتل"
   }

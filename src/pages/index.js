@@ -33,13 +33,12 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const siteTitle = translate({ message: "siteTitle" });
   const siteTitle2 = translate({ message: "siteTitle2" });
-//  <CustomTitle/>
+ <CustomTitle/>
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
-  
   
   return (
     <Layout
-     title={fullTitle}
+     title={siteTitle}
       description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />
