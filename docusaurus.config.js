@@ -232,7 +232,12 @@ plugins: [
 			path: './intro-softphone',
 		  },
 	],
- 
+  [
+    "docusaurus2-dotenv",
+    {
+      systemvars: true,
+    },
+  ],
   
      [
 	 
