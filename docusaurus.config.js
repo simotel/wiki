@@ -13,6 +13,9 @@ module.exports = {
   titleDelimiter: ' ',
  
 
+	
+ 
+	
 
 i18n: {
     defaultLocale: 'en',
