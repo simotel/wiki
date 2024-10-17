@@ -13,9 +13,6 @@ module.exports = {
   titleDelimiter: ' ',
  
 
-	
- 
-	
 
 i18n: {
     defaultLocale: 'en',
@@ -232,12 +229,7 @@ plugins: [
 			path: './intro-softphone',
 		  },
 	],
-  [
-    "docusaurus2-dotenv",
-    {
-      systemvars: true,
-    },
-  ],
+ 
   
      [
 	 
