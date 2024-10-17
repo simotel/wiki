@@ -48,7 +48,7 @@ export default function NavbarLayout({children}) {
       {children}
       <NavbarBackdrop onClick={mobileSidebar.toggle} />
       <NavbarMobileSidebar />
-      <CustomTitle />
+      {/* <CustomTitle /> */}
       
     </nav>
   );

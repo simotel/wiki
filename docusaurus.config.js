@@ -1,6 +1,6 @@
 
 module.exports = {
-  title: 'مستندات سیموتل',
+  title: ' ',
   // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
@@ -10,7 +10,8 @@ module.exports = {
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
-  titleDelimiter: '|',
+  titleDelimiter: ' ',
+ 
 
 	
  
@@ -231,7 +232,7 @@ plugins: [
 			path: './intro-softphone',
 		  },
 	],
-  
+ 
   
      [
 	 
