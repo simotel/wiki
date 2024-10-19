@@ -42,6 +42,7 @@ module.exports = {
   favicon: 'img/newSimotelFavIcon.svg',
   titleDelimiter:"|",
   
+
  
 
 
