@@ -1,7 +1,7 @@
 ---
 
 sidebar_label: "معرفی Smart API"
-title: "معرفی Smart API"
+title: "Smart API"
 ---
 
 

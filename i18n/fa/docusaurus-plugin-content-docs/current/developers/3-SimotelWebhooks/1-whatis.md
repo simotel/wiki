@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: "معرفی SimotelWebHooks"
-title: "معرفی SimotelWebHooks"
+title: "SimotelWebHooks"
 ---
 
 

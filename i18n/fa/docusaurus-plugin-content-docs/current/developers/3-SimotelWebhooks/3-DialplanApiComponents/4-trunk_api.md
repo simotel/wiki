@@ -1,7 +1,7 @@
 ---
 
 sidebar_label: "معرفی Trunk API"
-title: "معرفی Trunk API"
+title: "Trunk API"
 ---
 
 

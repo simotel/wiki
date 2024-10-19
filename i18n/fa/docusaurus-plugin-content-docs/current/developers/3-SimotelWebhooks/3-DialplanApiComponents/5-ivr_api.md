@@ -1,7 +1,7 @@
 ---
 
 sidebar_label: "معرفی Ivr API"
-title: "معرفی Ivr API"
+title: "Ivr API"
 ---
 
 
