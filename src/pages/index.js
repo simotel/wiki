@@ -6,9 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import { translate } from '@docusaurus/Translate';
-import CustomTitle from '@site/src/components/CustomTitle';
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-// require('dotenv').config();
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -35,18 +33,13 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const siteTitle = translate({ message: "siteTitle" });
   const siteTitle2 = translate({ message: "siteTitle2" });
-  if (ExecutionEnvironment.canUseDOM) {
-    // const { siteConfig } = useDocusaurusContext();
-    
-    // siteConfig.title = " "
-    // siteConfig.titleDelimiter =" "
-  }
+
 
   let fullTitle = `${siteTitle} | ${siteTitle2}`.replace(/\|?\s*$/, '');
   
   return (
     <Layout
-     title={fullTitle}
+     title={siteTitle}
       description={translate({message: "siteDesc"})}>
       
       <HomepageHeader />
