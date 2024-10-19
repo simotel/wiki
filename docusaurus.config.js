@@ -1,6 +1,36 @@
 
 module.exports = {
-  title: ' ',
+  markdown: {
+    parseFrontMatter: async (params) => {
+      // Reuse the default parser
+      const result = await params.defaultParseFrontMatter(params);
+
+      const replacements = {
+       Eng: 'Simotel Docs',
+        Fa: 'مستندات سیموتل',
+      };
+  
+      // جایگزینی متغیرها
+      for (const [key, value] of Object.entries(replacements)) {
+        result.frontMatter.title = result.frontMatter.title?.replaceAll(`{{${key}}}`, value);
+      }
+
+      // Create your own front matter shortcut
+      if (result.frontMatter.i_do_not_want_docs_pagination) {
+        result.frontMatter.pagination_prev = null;
+        result.frontMatter.pagination_next = null;
+      }
+
+      // Rename an unsupported front matter coming from another system
+      if (result.frontMatter.cms_seo_summary) {
+        result.frontMatter.description = result.frontMatter.cms_seo_summary;
+        delete result.frontMatter.cms_seo_summary;
+      }
+
+      return result;
+    },
+  },
+  title: 'Simotel Docs',
   // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
@@ -10,7 +40,8 @@ module.exports = {
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
-  titleDelimiter: ' ',
+  titleDelimiter:"|",
+  
  
 
 

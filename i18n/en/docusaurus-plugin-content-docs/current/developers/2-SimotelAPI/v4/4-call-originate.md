@@ -22,6 +22,7 @@ sidebar_position: 2
 |                                557                                |          -         |       557      |            **           |  caller_id |
 |                  مسیر تماس نفر دوم را مشخص می‌کند                  |          -         |                |            *            | trunk_name |
 |                   مدت زمان انتظار برای پاسخگویی                   |          -         |       30       |                         |   timeout  |
+|                   مدت زمان تماس تلفنی                   |          -         |       30       |                         |   call_limit  |
 </div>
 
 ## نمونه فراخوانی
@@ -75,7 +76,8 @@ import TabItem from '@theme/TabItem';
 		"context":"main_routing",
 		"caller_id":"557",
 		"trunk_name":"cisco",
-		"timeout":"30"
+		"timeout":"30",
+		"call_limit":"30"
 	}',
 	  CURLOPT_HTTPHEADER => array(
 		'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
@@ -127,7 +129,8 @@ import TabItem from '@theme/TabItem';
 					  "context": "main_routing",
 					  "caller_id": "557",
 					  "trunk_name": "cisco",
-					  "timeout": "30"
+					  "timeout": "30",
+					  "call_limit":"30"
 					}),
 				};
 
@@ -160,7 +163,8 @@ import TabItem from '@theme/TabItem';
 		"context":"main_routing",
 		"caller_id":"557",
 		"trunk_name":"",
-		"timeout":"30"
+		"timeout":"30",
+		"call_limit":"30"
 	}'
 ```
 

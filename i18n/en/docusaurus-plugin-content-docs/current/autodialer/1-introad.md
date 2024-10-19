@@ -1,15 +1,8 @@
 ---
 slug: '/autodialer'
-title: "AutoDialer"
+title: AutoDialer
 ---
-<head>
-  <html className="some-extra-html-class" />
-  <body className="other-extra-body-class" />
-  <title>Autodialer | {process.env.BASE_TITLE}</title>
-  <meta charSet="utf-8" />
-  <meta name="twitter:card" content="summary" />
-  <link rel="canonical" href="https://docusaurus.io/docs/markdown-features/head-metadata" />
-</head>
+
 
 # مقدمه
 

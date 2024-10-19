@@ -1,7 +1,7 @@
 ---
 slug: '/autodialer'
 sidebar_label: "مقدمه"
-title: "مقدمه"
+title: مقدمه
 ---
 
 
