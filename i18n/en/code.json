@@ -77,5 +77,8 @@
           },
           "فارسی":{
             "message":"persian"
+          },
+          "copyright":{
+            "message":"The rights are reserved for the knowledge-based company «نسیم ارتباط آینده»"
           }
   }

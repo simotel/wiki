@@ -31,21 +31,15 @@ module.exports = {
     },
   },
   title: 'Simotel Docs',
-  // title: 'مستندات سیموتل',
   tagline: 'site.tagline' ,
   url: 'https://wiki.simotel.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
-  // onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
   titleDelimiter:"|",
   
-
- 
-
-
 i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fa'],
@@ -112,42 +106,14 @@ themeConfig: {
         position: 'left',
         label: 'ماژول تماس انبوه',
       },
-      
-  /* {to: '/autodialer/introad', label: 'ماژول تماس‌انبوه', position: 'left'}, */
-/*         {
-        type: 'docsVersionDropdown',
-        docsPluginId: 'autodialer',
-      }, */
-  // {
-  //   to: '/intro-softphone',
-
-  //  label: 'سافت‌فون', 
-  //  position: 'left',
-  // },
-  //     {to: '/blog',
-
-  //      label: 'بلاگ',
-  //     position: 'left'
-  //   },
-
-  //  {
-  //       href: 'https://forum.mysup.ir',
-  //       label: 'پایگاه دانش',
-  //       position: 'right'
-  //     },
     ],
   },
-
-     
-    
     footer: {
       style: 'dark',
        copyright: `تمامی حقوق برای شرکت دانش بنیان «نسیم ارتباط آینده» محفوظ است`, 
     },
   },
   
-
-
 presets: [
     [
       '@docusaurus/preset-classic',
@@ -158,18 +124,12 @@ presets: [
 		    routeBasePath: '/',
         sidebarPath: require.resolve('./sidebars.js'),
         lastVersion:'current',
-        // includeCurrentVersion: false,
         versions:{
             current:{
               label:"v6.4.0 مرکز‌تماس",
-              // path:"6.2.0"
-              
             },
           },
         },
-        //gtag: {
-        //  trackingID: 'G-46R3LL0HG3',
-        //},
         blog: {
           showReadingTime: true,
         },
@@ -181,7 +141,6 @@ presets: [
  sitemap: {
         changefreq: 'weekly',
         priority: 0.5,
-        //trailingSlash: true,
       },
 /*----------------------------------------SEO---------------------------------------------*/			
       },
@@ -191,52 +150,6 @@ presets: [
      
 ],
 
-
-
-/*----------------------------------------docs-multi-instance---------------------------------------------*/
-/* plugins: [
-    [
-       '@docusaurus/plugin-content-docs',
-      {
-        id: 'autodialer',
-        path: 'autodialer',
-        routeBasePath: 'autodialer',
-        sidebarPath: require.resolve('./sidebar-autodialer.js'),
-		versions: {
-		  current: {
-			label: '4.2 🚧',
-			},
-			4.1: {
-			label: '4.1',
-			  },
-			},  
-    }, 
-    ],
-  ], */
-/*----------------------------------------docs-multi-instance---------------------------------------------*/
-
-/*----------------------------------------searchBox---------------------------------------------*/
-/* plugins: [
-[require.resolve('@cmfcmf/docusaurus-search-local'),{
-indexDocs: true,
-docsRouteBasePath: '/docs',
-indexDocSidebarParentCategories: 2,
-indexBlog: false,
-blogRouteBasePath: '/blog',
-indexPages: false,
-language: ["en" , "ar"],
-style: undefined,
- lunr: {
-tokenizerSeparator: /[\s\-]+/
-} 
-}]
-], */
-
-
-
-
-
-/*----------------------------------------searchBox---------------------------------------------*/
 
 
 
@@ -313,63 +226,11 @@ plugins: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
         language: ["en" , "ar"],
-        // ```
-        // When applying `zh` in language, please install `nodejieba` in your project.
-	/* 	translations:{
-		  "search_placeholder": "جستجو",
-		  "see_all_results": "دیدن تمامی نتایج",
-		  "no_results": "موردی یافت نشد.",
-		  "search_results_for": "جستجو برای \"{{ keyword }}\"",
-		  "search_the_documentation": "جستوجو مستندات",
-		  "count_documents_found": "{{ count }} صفحه پیدا شد",
-		  "count_documents_found_plural": "{{ count }} صفحه پیدا شد",
-		  "no_documents_were_found": "چیزی یافت نشد"
-		} */
-		
       },
     ],	
-    // [
-    //   '@docusaurus/plugin-content-docs',
-    //   {
-    //     id:'api',
-    //     path:'docs/api',
-    //     includeCurrentVersion:false,
-    //     routeBasePath:'/api',
-    //       versions:{
-    //       '4.0.0':{
-    //         'path':'api_versioned_docs/version-4.0.0',
-    //         'label':'API v4'
-    //       },
-    //     },
-    //     sidebarPath:require.resolve('./sidebars_api.js'),
-    //   }
-    // ],
-  ],
-  // scripts: [
-  //   'img/ss.js', // آدرس فایل جاوااسکریپت
-  // ],
-/*----------------------------------------PWA---------------------------------------------*/
 
-/* plugins:[
-    // ... Your other plugins.
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
-        hashed: true,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-        language: ["en" , "ar"],
-        // ```
-        // When applying `zh` in language, please install `nodejieba` in your project.
-      },
-    ],
-  ], */
+  ],
+/*----------------------------------------PWA---------------------------------------------*/
 };
