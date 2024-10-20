@@ -1,5 +1,6 @@
 
 module.exports = {
+	
   markdown: {
     parseFrontMatter: async (params) => {
       // Reuse the default parser
