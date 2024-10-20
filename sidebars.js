@@ -4,7 +4,7 @@ module.exports = {
 	Autodialer: [
 		{
 			type: 'category',
-			label: 'تماس انبوه',
+			label: 'audialer-module',
 			items: [
 				'autodialer/introad',
 				'autodialer/contacts',
@@ -119,36 +119,84 @@ module.exports = {
 		//    },
 		{
 			type: 'category',
-			label: 'مثال‌های کاربردی',
+			label: 'scenarios',
 			items: ['developers/Scenarios/smart_api', 'developers/Scenarios/exten_api', 'developers/Scenarios/call_originate'],
 		},
-
-
-
-
 
 		/////////////////////////////////// API SimoTel Sidebar//////////////////////////////////
 
 
 		{
-			'ماژول تماس‌انبوه': [
-				'developers/Autodialer_API/introautodialer',
-				{
-					'مخاطبین': ['developers/Autodialer_API/contact/contact_add', 'developers/Autodialer_API/contact/contact_search', 'developers/Autodialer_API/contact/contact_edit', 'developers/Autodialer_API/contact/contact_delete',],
-					'گروه‌ها': ['developers/Autodialer_API/group/group_upload', 'developers/Autodialer_API/group/group_add', 'developers/Autodialer_API/group/group_search', 'developers/Autodialer_API/group/group_edit', 'developers/Autodialer_API/group/group_delete',],
-					'کمپین': ['developers/Autodialer_API/campaign/campaign_add', 'developers/Autodialer_API/campaign/campaign_search', 'developers/Autodialer_API/campaign/campaign_edit', 'developers/Autodialer_API/campaign/campaign_delete',],
-					'آواها': ['developers/Autodialer_API/announcement/announcement_upload', 'developers/Autodialer_API/announcement/announcement_add', 'developers/Autodialer_API/announcement/announcement_search', 'developers/Autodialer_API/announcement/announcement_edit', 'developers/Autodialer_API/announcement/announcement_delete',],
-					'ترانک': ['developers/Autodialer_API/trunk_manager/trunk_manager_search', 'developers/Autodialer_API/trunk_manager/trunk_manager_edit',],
-					'گزارشات': ['developers/Autodialer_API/report/report_search', 'developers/Autodialer_API/report/report_search_ordered', 'developers/Autodialer_API/report/report_info',],
-				},
-				'developers/Autodialer_API/example',
-				'developers/Autodialer_API/call_originate',
-
+			type: 'category',
+			label: 'autodialer',
+			items: [
+			  'developers/Autodialer_API/introautodialer',
+			  {
+				type: 'category',
+				label: 'contacts',
+				items: [
+				  'developers/Autodialer_API/contact/contact_add',
+				  'developers/Autodialer_API/contact/contact_search',
+				  'developers/Autodialer_API/contact/contact_edit',
+				  'developers/Autodialer_API/contact/contact_delete',
+				],
+			  },
+			  {
+				type: 'category',
+				label: 'groups',
+				items: [
+				  'developers/Autodialer_API/group/group_upload',
+				  'developers/Autodialer_API/group/group_add',
+				  'developers/Autodialer_API/group/group_search',
+				  'developers/Autodialer_API/group/group_edit',
+				  'developers/Autodialer_API/group/group_delete',
+				],
+			  },
+			  {
+				type: 'category',
+				label: 'campaign',
+				items: [
+				  'developers/Autodialer_API/campaign/campaign_add',
+				  'developers/Autodialer_API/campaign/campaign_search',
+				  'developers/Autodialer_API/campaign/campaign_edit',
+				  'developers/Autodialer_API/campaign/campaign_delete',
+				],
+			  },
+			  {
+				type: 'category',
+				label: 'annoucements',
+				items: [
+				  'developers/Autodialer_API/announcement/announcement_upload',
+				  'developers/Autodialer_API/announcement/announcement_add',
+				  'developers/Autodialer_API/announcement/announcement_search',
+				  'developers/Autodialer_API/announcement/announcement_edit',
+				  'developers/Autodialer_API/announcement/announcement_delete',
+				],
+			  },
+			  {
+				type: 'category',
+				label: 'trunk',
+				items: [
+				  'developers/Autodialer_API/trunk_manager/trunk_manager_search',
+				  'developers/Autodialer_API/trunk_manager/trunk_manager_edit',
+				],
+			  },
+			  {
+				type: 'category',
+				label: 'reports',
+				items: [
+				  'developers/Autodialer_API/report/report_search',
+				  'developers/Autodialer_API/report/report_search_ordered',
+				  'developers/Autodialer_API/report/report_info',
+				],
+			  },
+			  'developers/Autodialer_API/example',
+			  'developers/Autodialer_API/call_originate',
 			],
-		},
+		  },
 		{
 			type: 'category',
-			label: 'احراز هویت دو مرحله ای',
+			label: 'twoVerify',
 			items: ['developers/two_verify/whatis', 'developers/two_verify/template_sms', 'developers/two_verify/service_activate'],
 		},
 
@@ -170,73 +218,180 @@ module.exports = {
 	Docs: [
 		'pbx/introsimotel',
 		{
-			type: 'category',
-			label: 'pbx',
-			collapsed: false,
-			items: ['pbx/system-intro/pbxsettingintro', 'pbx/system-intro/dialplanintro'],
+		  type: 'category',
+		  label: 'pbx',
+		  collapsed: false,
+		  items: ['pbx/system-intro/pbxsettingintro', 'pbx/system-intro/dialplanintro'],
 		},
-
-
 		{
-			'مستندات مرکز‌تماس': [
+		  type: 'category',
+		  label: 'pbx-menu',
+		  items: [
+			{
+			  type: 'category',
+			  label: 'dashboard',
+			  items: [
+				'pbx/pbx-menu/dashboard/intro',
+				'pbx/pbx-menu/dashboard/realtime_components',
+				'pbx/pbx-menu/dashboard/queue_components',
+				'pbx/pbx-menu/dashboard/general_components',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label:'monitoring',
+			  items: [
+				'pbx/pbx-menu/monitor/operator',
+				'pbx/pbx-menu/monitor/exten',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label:  'pbx-docs',
+			  items: [
+				'pbx/pbx-menu/pbx/users',
+				'pbx/pbx-menu/pbx/trunks',
+				'pbx/pbx-menu/pbx/queues',
+				'pbx/pbx-menu/pbx/groups',
+				'pbx/pbx-menu/pbx/music_on_hold',
+				'pbx/pbx-menu/pbx/announcements',
+				'pbx/pbx-menu/pbx/featur_codes',
+				'pbx/pbx-menu/pbx/speed_dial',
+				'pbx/pbx-menu/pbx/blacklist',
+				'pbx/pbx-menu/pbx/white_list',
+				'pbx/pbx-menu/pbx/faxes',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label:  'voiceMail',
+			  items: [
+				'pbx/pbx-menu/voicemail/voice_mailboxes',
+				'pbx/pbx-menu/voicemail/inbox',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label:  'spitDetect',
+			  items: [
+				'pbx/pbx-menu/spit-detection/intro',
+				'pbx/pbx-menu/spit-detection/spit_detect',
+				'pbx/pbx-menu/spit-detection/auto_spit_detect',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label:  'dialplan',
+			  items: [
+				'pbx/pbx-menu/dialplan/intro',
 				{
-					'داشبورد مدیریتی': ['pbx/pbx-menu/dashboard/intro', 'pbx/pbx-menu/dashboard/realtime_components', 'pbx/pbx-menu/dashboard/queue_components', 'pbx/pbx-menu/dashboard/general_components',],
-
-
-
-					'مرکز مانیتورینگ': ['pbx/pbx-menu/monitor/operator', 'pbx/pbx-menu/monitor/exten'],
-
-
-
-					'مرکزتماس': ['pbx/pbx-menu/pbx/users', 'pbx/pbx-menu/pbx/trunks', 'pbx/pbx-menu/pbx/queues', 'pbx/pbx-menu/pbx/groups', 'pbx/pbx-menu/pbx/music_on_hold', 'pbx/pbx-menu/pbx/announcements', 'pbx/pbx-menu/pbx/featur_codes', 'pbx/pbx-menu/pbx/speed_dial', 'pbx/pbx-menu/pbx/blacklist', 'pbx/pbx-menu/pbx/white_list', 'pbx/pbx-menu/pbx/faxes'],
-
-
-
-					'صندوق‌صوتی': ['pbx/pbx-menu/voicemail/voice_mailboxes', 'pbx/pbx-menu/voicemail/inbox',],
-
-
-
-					'تماس‌بهمنی': ['pbx/pbx-menu/spit-detection/intro', 'pbx/pbx-menu/spit-detection/spit_detect', 'pbx/pbx-menu/spit-detection/auto_spit_detect',],
-
-
-
-					'ویرایشگر': ['pbx/pbx-menu/dialplan/intro',
-						{ 'کامپوننت‌ها': ['pbx/pbx-menu/dialplan/components/outgoing_route', 'pbx/pbx-menu/dialplan/components/incoming_route', 'pbx/pbx-menu/dialplan/components/autodialer_route', 'pbx/pbx-menu/dialplan/components/ivr', 'pbx/pbx-menu/dialplan/components/ivr_api', 'pbx/pbx-menu/dialplan/components/extension', 'pbx/pbx-menu/dialplan/components/extension_api', 'pbx/pbx-menu/dialplan/components/queue', 'pbx/pbx-menu/dialplan/components/answer', 'pbx/pbx-menu/dialplan/components/agi', 'pbx/pbx-menu/dialplan/components/disa', 'pbx/pbx-menu/dialplan/components/trunk', 'pbx/pbx-menu/dialplan/components/trunk_api', 'pbx/pbx-menu/dialplan/components/announcements', 'pbx/pbx-menu/dialplan/components/callback', 'pbx/pbx-menu/dialplan/components/ring_group', 'pbx/pbx-menu/dialplan/components/followe_me', 'pbx/pbx-menu/dialplan/components/voicemail', 'pbx/pbx-menu/dialplan/components/conference', 'pbx/pbx-menu/dialplan/components/call_completion', 'pbx/pbx-menu/dialplan/components/pickup', 'pbx/pbx-menu/dialplan/components/poll', 'pbx/pbx-menu/dialplan/components/mix_monitor', 'pbx/pbx-menu/dialplan/components/authentication', 'pbx/pbx-menu/dialplan/components/time_condition', 'pbx/pbx-menu/dialplan/components/spit_detection', 'pbx/pbx-menu/dialplan/components/blacklist', 'pbx/pbx-menu/dialplan/components/whitelist', 'pbx/pbx-menu/dialplan/components/jump_in', 'pbx/pbx-menu/dialplan/components/jump_out', 'pbx/pbx-menu/dialplan/components/corrector', 'pbx/pbx-menu/dialplan/components/custom_plan', 'pbx/pbx-menu/dialplan/components/smart_api', 'pbx/pbx-menu/dialplan/components/chanspy', 'pbx/pbx-menu/dialplan/components/page',], },
-						'pbx/pbx-menu/dialplan/variables',
-					],
-
-
-
-					'گزارشات': ['pbx/pbx-menu/reports/intro', 'pbx/pbx-menu/reports/filter', 'pbx/pbx-menu/reports/quick_report', 'pbx/pbx-menu/reports/advanced_report', 'pbx/pbx-menu/reports/custom_report',],
-
-
-
-					'‌نگهداری': ['pbx/pbx-menu/maintenance/accounts', 'pbx/pbx-menu/maintenance/groups', 'pbx/pbx-menu/maintenance/account_type', 'pbx/pbx-menu/maintenance/activity_log', 'pbx/pbx-menu/maintenance/server_status',
-						{
-							'Settings': ['pbx/pbx-menu/maintenance/settings/general_settings', 'pbx/pbx-menu/maintenance/settings/api_settings', 'pbx/pbx-menu/maintenance/settings/update', 'pbx/pbx-menu/maintenance/settings/push_notification',
-								'pbx/pbx-menu/maintenance/settings/backup_drive', 'pbx/pbx-menu/maintenance/settings/mail_server', 'pbx/pbx-menu/maintenance/settings/more_settings',],
-						},
-						'pbx/pbx-menu/maintenance/network', 'pbx/pbx-menu/maintenance/api_accounts', 'pbx/pbx-menu/maintenance/api_logs', 'pbx/pbx-menu/maintenance/system_logs',],
-
-
-
-
-					'پنل‌مدیریتی': ['pbx/pbx-menu/control-panel/backup', 'pbx/pbx-menu/control-panel/ha', 'pbx/pbx-menu/control-panel/ha_logs', 'pbx/pbx-menu/control-panel/pbx_cli',],
-				}
-			]
-		},
-
-		{
-			'مباحث پیشرفته': [
-
-				{
-
-					//'سرویس HA': ['pbx/advance-settings/ha-service/intro'],				
+				  type: 'category',
+				  label: 'components',
+				  items: [
+					'pbx/pbx-menu/dialplan/components/outgoing_route',
+					'pbx/pbx-menu/dialplan/components/incoming_route',
+					'pbx/pbx-menu/dialplan/components/autodialer_route',
+					'pbx/pbx-menu/dialplan/components/ivr',
+					'pbx/pbx-menu/dialplan/components/ivr_api',
+					'pbx/pbx-menu/dialplan/components/extension',
+					'pbx/pbx-menu/dialplan/components/extension_api',
+					'pbx/pbx-menu/dialplan/components/queue',
+					'pbx/pbx-menu/dialplan/components/answer',
+					'pbx/pbx-menu/dialplan/components/agi',
+					'pbx/pbx-menu/dialplan/components/disa',
+					'pbx/pbx-menu/dialplan/components/trunk',
+					'pbx/pbx-menu/dialplan/components/trunk_api',
+					'pbx/pbx-menu/dialplan/components/announcements',
+					'pbx/pbx-menu/dialplan/components/callback',
+					'pbx/pbx-menu/dialplan/components/ring_group',
+					'pbx/pbx-menu/dialplan/components/followe_me',
+					'pbx/pbx-menu/dialplan/components/voicemail',
+					'pbx/pbx-menu/dialplan/components/conference',
+					'pbx/pbx-menu/dialplan/components/call_completion',
+					'pbx/pbx-menu/dialplan/components/pickup',
+					'pbx/pbx-menu/dialplan/components/poll',
+					'pbx/pbx-menu/dialplan/components/mix_monitor',
+					'pbx/pbx-menu/dialplan/components/authentication',
+					'pbx/pbx-menu/dialplan/components/time_condition',
+					'pbx/pbx-menu/dialplan/components/spit_detection',
+					'pbx/pbx-menu/dialplan/components/blacklist',
+					'pbx/pbx-menu/dialplan/components/whitelist',
+					'pbx/pbx-menu/dialplan/components/jump_in',
+					'pbx/pbx-menu/dialplan/components/jump_out',
+					'pbx/pbx-menu/dialplan/components/corrector',
+					'pbx/pbx-menu/dialplan/components/custom_plan',
+					'pbx/pbx-menu/dialplan/components/smart_api',
+					'pbx/pbx-menu/dialplan/components/chanspy',
+					'pbx/pbx-menu/dialplan/components/page',
+				  ],
 				},
-				'pbx/advance-settings/simotelupdate', 'pbx/advance-settings/simotelhelper_tool', 'pbx/advance-settings/simotel.ini', 'pbx/advance-settings/create_ami_user', 'pbx/advance-settings/matchpattern', 'pbx/advance-settings/call_record_storage',
-			]
+				'pbx/pbx-menu/dialplan/variables',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label:  'reports',
+			  items: [
+				'pbx/pbx-menu/reports/intro',
+				'pbx/pbx-menu/reports/filter',
+				'pbx/pbx-menu/reports/quick_report',
+				'pbx/pbx-menu/reports/advanced_report',
+				'pbx/pbx-menu/reports/custom_report',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label: 'maintenance',
+			  items: [
+				'pbx/pbx-menu/maintenance/accounts',
+				'pbx/pbx-menu/maintenance/groups',
+				'pbx/pbx-menu/maintenance/account_type',
+				'pbx/pbx-menu/maintenance/activity_log',
+				'pbx/pbx-menu/maintenance/server_status',
+				{
+				  type: 'category',
+				  label: 'settings',
+				  items: [
+					'pbx/pbx-menu/maintenance/settings/general_settings',
+					'pbx/pbx-menu/maintenance/settings/api_settings',
+					'pbx/pbx-menu/maintenance/settings/update',
+					'pbx/pbx-menu/maintenance/settings/push_notification',
+					'pbx/pbx-menu/maintenance/settings/backup_drive',
+					'pbx/pbx-menu/maintenance/settings/mail_server',
+					'pbx/pbx-menu/maintenance/settings/more_settings',
+				  ],
+				},
+				'pbx/pbx-menu/maintenance/network',
+				'pbx/pbx-menu/maintenance/api_accounts',
+				'pbx/pbx-menu/maintenance/api_logs',
+				'pbx/pbx-menu/maintenance/system_logs',
+			  ],
+			},
+			{
+			  type: 'category',
+			  label:  'control-panel',
+			  items: [
+				'pbx/pbx-menu/control-panel/backup',
+				'pbx/pbx-menu/control-panel/ha',
+				'pbx/pbx-menu/control-panel/ha_logs',
+				'pbx/pbx-menu/control-panel/pbx_cli',
+			  ],
+			},
+		  ],
 		},
-	],
+		{
+		  type: 'category',
+		  label:  'advanced-settings',
+		  items: [
+			'pbx/advance-settings/simotelupdate',
+			'pbx/advance-settings/simotelhelper_tool',
+			'pbx/advance-settings/simotel.ini',
+			'pbx/advance-settings/create_ami_user',
+			'pbx/advance-settings/matchpattern',
+			'pbx/advance-settings/call_record_storage',
+		  ],
+		},
+	  ],
 	///////////////////////////////////Simotel Docs Sidebar//////////////////////////////////
 
 

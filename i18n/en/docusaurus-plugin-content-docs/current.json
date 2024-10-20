@@ -147,99 +147,99 @@
     "message": "مباحث پیشرفته",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   } ,"sidebar.Docs.category.pbx-menu": {
-    "message": "آیتم های مرکز تماس",
+    "message": "pbx-menu",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
   ,"sidebar.Docs.category.dashboard": {
-    "message": "داشبورد",
+    "message": "Dashboard",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.monitoring": {
-    "message": "مرکز مانیتورینگ",
+    "message": "Monitoring",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
   ,
   "sidebar.Docs.category.pbx-docs": {
-    "message": "مستندات مرکز تماس",
+    "message": "Pbx-docs",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
   ,
   "sidebar.Docs.category.voiceMail": {
-    "message": "صندوق صوتی",
+    "message": "VoiceMail",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.spitDetect": {
-    "message": "تماس بهمنی",
+    "message": "SpitDetect",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.dialplan": {
-    "message": "ویرایشگر",
+    "message": "Dialplan",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.components": {
-    "message": "کامپوننت‌ها",
+    "message": "Components",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.reports": {
-    "message": "گزارشات",
+    "message": "Reports",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.maintenance": {
-    "message": "‌نگهداری",
+    "message": "Maintenance",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.settings": {
-    "message": "تنظیمات",
+    "message": "Settings",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.control-panel": {
-    "message": "پنل مدیریت",
+    "message": "ControlPanel",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.Docs.category.advanced-settings": {
-    "message": "تنظیمات پیشرفته",
+    "message": "AdvancedSettings",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.docs.category.scenarios": {
-    "message": "مثال های کاربردی",
+    "message": "Scenarios",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
   ,
   "sidebar.docs.category.autodialer": {
-    "message": "تماس انبوه",
+    "message": "Autodialer",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   } ,
   "sidebar.docs.category.contacts": {
-    "message": "مخاطبین",
+    "message": "Contacts",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   } ,
   "sidebar.docs.category.groups": {
-    "message": "گروه‌ها",
+    "message": "Groups",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   } ,
   "sidebar.docs.category.campaign": {
-    "message": "کمپین",
+    "message": "Campaign",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   } ,
   "sidebar.docs.category.annoucements": {
-    "message": "آواها",
+    "message": "Annoucements",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.docs.category.trunk": {
-    "message": "ترانک",
+    "message": "Trunk",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.docs.category.reports": {
-    "message": "گزارشات",
+    "message": "Reports",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.docs.category.twoVerify": {
-    "message": "احراز هویت دو مرحله ای",
+    "message": "TwoVerify",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   
   "sidebar.Autodialer.category.audialer-module": {
-    "message": "ماژول تماس انبوه",
+    "message": "Autodialer Module",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
 
