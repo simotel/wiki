@@ -21,7 +21,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/pbx/introsimotel">
+            to="/pbx">
               {translate({ message: "آشنایی با سیموتل – فقط پنچ دقیقه ⏱️" })}
           </Link>
         </div>
