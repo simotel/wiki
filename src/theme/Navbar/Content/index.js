@@ -27,7 +27,6 @@ function useNavbarItems() {
 
 function NavbarItems({ items }) {
 
-
   return (
     <>
       {items.map((item, i) => {
@@ -45,10 +44,6 @@ function NavbarItems({ items }) {
                 )
               }>
               <NavbarItem {...item} />
-
-             
-             
-              
               
             </ErrorCauseBoundary>
           );
