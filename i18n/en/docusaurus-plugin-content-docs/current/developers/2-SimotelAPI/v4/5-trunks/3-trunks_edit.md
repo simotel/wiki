@@ -3,35 +3,35 @@ sidebar_position: 1
 ---
 # Trunk Edit
 
-از این سرویس برای ویرایش ترانک استفاده می‌شود.
+This service is used to edit a trunk.
 
-## پارامتر‌ها
+## Parameters
+
 <div class="custom-table">
-|                  توضیحات                 |       داده های تعریف شده       |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |    پارامترها    |
-|:----------------------------------------:|:------------------------------:|:------------------------:|:----------------------:|:---------------:|
-| شناسه یکتای ترانک که از [جستجو](/developers/SimotelAPI/v4/trunks/trunks_search) بدست می‌آید |                -               | 6033876dc92de036d1390923 |           **           |       id_       |
-|                 نوع ترانک                |         SIP/IAX2/DAHDI         |            SIP           |            *           |    trunk_type   |
-|                 نام‌ترانک                 |                -               |      trunk_name_new2     |            *           |       name      |
-|                     -                    |                -               |   some-register-string   |            *           | register_string |
-|             فعال/غیرفعال‌بودن             |             yes/no             |            no            |            *           |      active     |
-|                     -                    |                -               |      0.0.0.0/0.0.0.0     |            *           |       deny      |
-|                     -                    |                -               |      0.0.0.0/0.0.0.0     |            *           |      permit     |
-|              استاندارد dtmf              |                -               |          rfc2833         |            *           |     dtmfmode    |
-|                     -                    |             yes/no             |            no            |            *           |   canreinvite   |
-|                     -                    |             yes/no             |            no            |            *           |   directmedia   |
-|                     -                    |                -               |         from-pstn        |            *           |     context     |
-|           ip ارائه دهنده سرویس           |                -               |       192.168.1.10       |            *           |       host      |
-|                     -                    |        User/Peer/Friend        |          friend          |            *           |       type      |
-|                     -                    | yes/no/Force Report & Co-Media |    force_rport,comedia   |            *           |       nat       |
-|                     -                    |                -               |           5060           |            *           |       port      |
-|                     -                    |             yes/no             |            yes           |            *           |     qualify     |
-|                     -                    |    Port/Invite/Port & Invite   |        port,invite       |            *           |     insecure    |
-|                     -                    |                -               |            all           |            *           |     disallow    |
-|                     -                    |                -               |         ulaw,alaw        |            *           |      allow      |
-
+|                  Description                 |         Defined Data         |        Sample Data        | Required[**]/Optional[*] |    Parameters    |
+|:--------------------------------------------:|:----------------------------:|:-------------------------:|:-------------------------:|:-----------------:|
+| Unique identifier of the trunk obtained from [search](/developers/SimotelAPI/v4/trunks/trunks_search) |              -               | 6033876dc92de036d1390923  |           **              |       id_        |
+|                  Trunk Type                  |         SIP/IAX2/DAHDI       |            SIP            |            *               |    trunk_type     |
+|                  Trunk Name                  |              -               |      trunk_name_new2      |            *               |       name        |
+|                     -                        |              -               |   some-register-string    |            *               | register_string    |
+|              Active/Inactive                 |             yes/no           |            no             |            *               |      active       |
+|                     -                        |              -               |      0.0.0.0/0.0.0.0      |            *               |       deny        |
+|                     -                        |              -               |      0.0.0.0/0.0.0.0      |            *               |      permit       |
+|              DTMF Standard                   |              -               |          rfc2833          |            *               |     dtmfmode      |
+|                     -                        |             yes/no           |            no             |            *               |   canreinvite     |
+|                     -                        |             yes/no           |            no             |            *               |   directmedia     |
+|                     -                        |              -               |         from-pstn        |            *               |     context       |
+|           Service Provider IP                |              -               |       192.168.1.10       |            *               |       host        |
+|                     -                        |        User/Peer/Friend      |          friend           |            *               |       type        |
+|                     -                        | yes/no/Force Report & Co-Media |    force_rport,comedia   |            *               |       nat         |
+|                     -                        |              -               |           5060           |            *               |       port        |
+|                     -                        |             yes/no           |            yes            |            *               |     qualify       |
+|                     -                        |    Port/Invite/Port & Invite |        port,invite        |            *               |     insecure      |
+|                     -                        |              -               |            all            |            *               |     disallow      |
+|                     -                        |              -               |         ulaw,alaw        |            *               |      allow        |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -59,7 +59,7 @@ import TabItem from '@theme/TabItem';
       <TabItem value="PHP">
 	  
         <details>
-          <summary>نمایش کامل کد PHP</summary>
+          <summary>Show Full Source Code PHP</summary>
           <br/>
 
 ```php
@@ -125,7 +125,7 @@ import TabItem from '@theme/TabItem';
       <!-- کد JS -->
       <TabItem value="JS">
         <details>
-          <summary>نمایش کامل کد JS</summary>
+          <summary>Show Full Source Code JS</summary>
           <br/>
 
           ```js
@@ -187,7 +187,7 @@ import TabItem from '@theme/TabItem';
 
       <TabItem value="Curl">
         <details>
-          <summary>نمایش کامل کد Curl</summary>
+          <summary>Show Full Source Code Curl</summary>
           <br/>
 
           ```bash

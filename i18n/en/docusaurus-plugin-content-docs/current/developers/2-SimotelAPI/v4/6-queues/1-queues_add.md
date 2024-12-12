@@ -3,51 +3,46 @@
 ---
 # Queue Add
 
-از این سرویس برای افزودن صف استفاده می‌شود.
+This service is used to add a queue.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|     توضیحات     |                               داده های تعریف شده                               |    داده‌های نمونه   | پارامترهای ضروری[**]/منطقی[*] |          پارامترها          |
-|:---------------:|:------------------------------------------------------------------------------:|:------------------:|:----------------------:|:---------------------------:|
-|      نام صف     |                                        -                                       |    NasimTelecom    |           **           |             name            |
-|     شماره صف    |                                        -                                       |        9009        |           **           |            number           |
-|  استراتژی تماس  | Ring All/Least Recent/Fewest Calls/Random/RR Memory/RR Ordered/Linear/W Random |       ringall      |            *           |           strategy          |
-|        -        |                                     yes/no                                     |         no         |            *           |          ringinuse          |
-|  ضبط‌مکالمات صف  |                                     yes/no                                     |         yes        |            *           |         call_record         |
-|        -        |                                     yes/no                                     |         yes        |            *           |       setinterfacevar       |
-|        -        |                                     yes/no                                     |         yes        |            *           |           autofill          |
-|        -        |                                     yes/no                                     |         yes        |            *           |         setqueuevar         |
-|        -        |                                     yes/no                                     |         yes        |            *           |       setqueueentryvar      |
-|        -        |                                     yes/no                                     |         no         |            *           |      persistentmembers      |
-|        -        |                                     yes/no                                     |         no         |            *           |       shared_lastcall       |
-|        -        |                                     yes/no                                     |         no         |            *           |      announce_holdtime      |
-|        -        |                                     yes/no                                     |         yes        |            *           |      announce_position      |
-|        -        |                                  yes/no/Strict                                 |       strict       |            *           |          joinempty          |
-|        -        |                                     yes/no                                     |         yes        |            *           |        leavewhenempty       |
-|        -        |                                     yes/no                                     |         no         |            *           |        reportholdtime       |
-|        -        |                                        -                                       |          0         |            *           |            maxlen           |
-|        -        |                                        -                                       |         120        |            *           |      announce_frequency     |
-|        -        |                                        -                                       |         60         |            *           |    min_announce_frequency   |
-|        -        |                                        -                                       |         120        |            *           | periodic_announce_frequency |
-| موزیک انتظار صف |                                        -                                       |    gole orkideh    |            *           |            music            |
-|        -        |                                        -                                       | queue-callswaiting |            *           |      queue_callswaiting     |
-|        -        |                                        -                                       |   queue-thankyou   |            *           |        queue_thankyou       |
-|        -        |                                        -                                       |   queue-thereare   |            *           |        queue_thereare       |
-|        -        |                                        -                                       |  queue-youarenext  |            *           |       queue_youarenext      |
-|        -        |                                        -                                       |          5         |            *           |            retry            |
-|        -        |                                        -                                       |         60         |            *           |         servicelevel        |
-|        -        |                                        -                                       |         30         |            *           |           timeout           |
-|        -        |                                        -                                       |         10         |            *           |            weight           |
-|        -        |                                        -                                       |          1         |            *           |          wrapuptime         |
-|        -        |                                        -                                       |     MixMonitor     |            *           |         monitor_type        |
-|        -        |                                        -                                       |         wav        |            *           |        monitor_format       |
-|        -        |                                        -                                       |         wav        |            *           |        monitor_format       |
-
+|     Description     |                               Defined Data                               |    Sample Data   | Required Parameters[**]/Logical[*] |          Parameters          |
+|:-------------------:|:-----------------------------------------------------------------------:|:----------------:|:----------------------:|:---------------------------:|
+|      Queue Name     |                                        -                                 |    NasimTelecom  |           **           |             name            |
+|      Queue Number   |                                        -                                 |        9009      |           **           |            number           |
+|     Call Strategy    | Ring All/Least Recent/Fewest Calls/Random/RR Memory/RR Ordered/Linear/W Random |       ringall    |            *           |           strategy          |
+|        -            |                                     yes/no                               |         no       |            *           |          ringinuse          |
+|   Queue Call Recording |                                     yes/no                               |         yes      |            *           |         call_record         |
+|        -            |                                     yes/no                               |         yes      |            *           |       setinterfacevar       |
+|        -            |                                     yes/no                               |         yes      |            *           |           autofill          |
+|        -            |                                     yes/no                               |         yes      |            *           |         setqueuevar         |
+|        -            |                                     yes/no                               |         yes      |            *           |       setqueueentryvar      |
+|        -            |                                     yes/no                               |         no       |            *           |      persistentmembers      |
+|        -            |                                     yes/no                               |         no       |            *           |       shared_lastcall       |
+|        -            |                                     yes/no                               |         no       |            *           |      announce_holdtime      |
+|        -            |                                     yes/no                               |         yes      |            *           |      announce_position      |
+|        -            |                                  yes/no/Strict                           |       strict     |            *           |          joinempty          |
+|        -            |                                     yes/no                               |         yes      |            *           |        leavewhenempty       |
+|        -            |                                     yes/no                               |         no       |            *           |        reportholdtime       |
+|        -            |                                        -                                 |          0       |            *           |            maxlen           |
+|        -            |                                        -                                 |         120      |            *           |      announce_frequency     |
+|        -            |                                        -                                 |         60       |            *           |    min_announce_frequency   |
+|        -            |                                        -                                 |         120      |            *           | periodic_announce_frequency |
+|   Queue Hold Music  |                                        -                                 |    gole orkideh  |            *           |            music            |
+|        -            |                                        -                                 | queue-callswaiting |            *           |      queue_callswaiting     |
+|        -            |                                        -                                 |   queue-thankyou |            *           |        queue_thankyou       |
+|        -            |                                        -                                 |   queue-thereare |            *           |        queue_thereare       |
+|        -            |                                        -                                 |  queue-youarenext|            *           |       queue_youarenext      |
+|        -            |                                        -                                 |          5       |            *           |            retry            |
+|        -            |                                        -                                 |         60       |            *           |         servicelevel        |
+|        -            |                                        -                                 |         30       |            *           |           timeout           |
+|        -            |                                        -                                 |         10       |            *           |            weight           |
+|        -            |                                        -                                 |          1       |            *           |          wrapuptime         |
+|        -            |                                     ...                                   |
 </div>
 
-
-## نمونه فراخوانی
-
+## Sample Invocation
 <!--  -->
 
 import Tabs from '@theme/Tabs';
@@ -56,8 +51,8 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="usageCode"
   values={[
-    {label: 'نمونه کد استفاده', value: 'usageCode'},
-    {label: 'نمونه خروجی', value: 'outputCode'},
+    {label: 'Example Code To Use', value: 'usageCode'},
+    {label: 'Example Output', value: 'outputCode'},
   ]}>
 
   <!-- تب نمونه کد استفاده -->
@@ -74,7 +69,7 @@ import TabItem from '@theme/TabItem';
       <TabItem value="PHP">
 	  
         <details>
-          <summary>نمایش کامل کد PHP</summary>
+          <summary>Show Full Source Code PHP</summary>
           <br/>
 
 		```php
@@ -150,7 +145,7 @@ import TabItem from '@theme/TabItem';
       <!-- کد JS -->
       <TabItem value="JS">
         <details>
-          <summary>نمایش کامل کد JS</summary>
+          <summary>Show Full Source Code JS</summary>
           <br/>
 
 		```js
@@ -221,7 +216,7 @@ import TabItem from '@theme/TabItem';
 
       <TabItem value="Curl">
         <details>
-          <summary>نمایش کامل کد Curl</summary>
+          <summary>Show Full Source Code Curl</summary>
           <br/>
 
 ```bash

@@ -3,49 +3,46 @@ sidebar_position: 1
 ---
 # User Edit
 
-از این سرویس برای ویرایش داخلی استفاده می‌شود.
+This service is used to edit internal users.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|                     توضیحات                    |       داده های تعریف شده       |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |          پارامترها          |
-|:----------------------------------------------:|:------------------------------:|:------------------------:|:----------------------:|:---------------------------:|
-| شناسه داخلی که از طریق [سرویس جستجو](/developers/SimotelAPI/v4/users/users_search) بدست می آید |                -               | 603b41443e14270c550bf15a |           **           |             id_             |
-|             فعال/غیرفعال بودن کاربر            |             yes/no             |            yes           |            *           |            active           |
-|                    نام‌کاربر                    |                -               |         Test User        |            *           |             name            |
-|                   شماره‌داخلی                   |                -               |            530           |            *           |            number           |
-|                        -                       |                -               |            530           |            *           |          cid_number         |
-|                     رمزعبور                    |                -               |            530           |            *           |            secret           |
-|                   ضبط مکالمات                  |             yes/no             |            no            |            *           |         call_record         |
-|                        -                       |             yes/no             |            no            |            *           |      push_notification      |
-|                 IPهای غیر مجاز                 |                -               |      0.0.0.0/0.0.0.0     |            *           |             deny            |
-|                   IPهای مجاز                   |                -               |      0.0.0.0/0.0.0.0     |            *           |            permit           |
-|                   پروتکل dtmf                  |                -               |          rfc2833         |            *           |           dtmfmode          |
-|                        -                       |             yes/no             |            no            |            *           |         canreinvite         |
-|                -               |             yes/no             |            no            |            *           |         directmedia         |
-|                        -                       |                -               |       main_routing       |            *           |           context           |
-|                        -                       |                -               |          dynamic         |            *           |             host            |
-|                        -                       |        User/Peer/Friend        |           user           |            *           |             type            |
-|                        -                       | yes/no/Force Report & Co-Media |            no            |            *           |             nat             |
-|                        -                       |                -               |           5060           |            *           |             port            |
-|                        -                       |             yes/no             |            no            |            *           |           qualify           |
-|                        -                       |                -               |             1            |            *           |          callgroup          |
-|                        -                       |                -               |             1            |            *           |         pickupgroup         |
-|                        -                       |             yes/no             |            no            |            *           |         callcounter         |
-|                  -                  |             yes/no             |            no            |            *           |          faxdetect          |
-|                        -                       |                -               |             -            |            *           |          call_limit         |
-|                        -                       |             yes/no             |            no            |            *           |            trunk            |
-|                        -                       |             yes/no             |            no            |            *           |           transfer          |
-|                        -                       |                -               |             -            |                        |            email            |
-|                        -                       |                -               |            571           |                        |     forward_policy->Busy    |
-|                        -                       |                -               |        09158315762       |                        |  forward_policy->No Answer  |
-|                        -                       |                -               |            570           |                        | forward_policy->UnAvailable |
-|                        -                       |                -               |           2121           |                        |     forward_policy->All     |
-|                        -                       |                -               |           2121           |                        |     forward_policy->All     |
-
+|                     Description                    |       Defined Data       |      Sample Data      | Required[**]/Optional[*] |          Parameters          |
+|:--------------------------------------------------:|:------------------------:|:---------------------:|:----------------------:|:---------------------------:|
+| Extension ID obtained through [search service](/developers/SimotelAPI/v4/users/users_search) |                -         | 603b41443e14270c550bf15a |           **           |             id_             |
+|             User active/inactive status            |             yes/no       |            yes         |            *           |            active           |
+|                    User Name                        |                -         |        Test User       |            *           |             name            |
+|                   Extension Number                  |                -         |            530         |            *           |            number           |
+|                        -                            |                -         |            530         |            *           |          cid_number         |
+|                     Password                         |                -         |            530         |            *           |            secret           |
+|                   Call Recording                    |             yes/no       |            no          |            *           |         call_record         |
+|                        -                            |             yes/no       |            no          |            *           |      push_notification      |
+|                 Denied IPs                          |                -         |      0.0.0.0/0.0.0.0   |            *           |             deny            |
+|                 Allowed IPs                         |                -         |      0.0.0.0/0.0.0.0   |            *           |            permit           |
+|                   DTMF Protocol                     |                -         |          rfc2833       |            *           |           dtmfmode          |
+|                        -                            |             yes/no       |            no          |            *           |         canreinvite         |
+|                        -                            |             yes/no       |            no          |            *           |         directmedia         |
+|                        -                            |                -         |       main_routing     |            *           |           context           |
+|                        -                            |                -         |          dynamic       |            *           |             host            |
+|                        -                            |        User/Peer/Friend  |           user         |            *           |             type            |
+|                        -                            | yes/no/Force Report & Co-Media |            no          |            *           |             nat             |
+|                        -                            |                -         |           5060        |            *           |             port            |
+|                        -                            |             yes/no       |            no          |            *           |           qualify           |
+|                        -                            |                -         |             1          |            *           |          callgroup          |
+|                        -                            |                -         |             1          |            *           |         pickupgroup         |
+|                        -                            |             yes/no       |            no          |            *           |         callcounter         |
+|                        -                            |             yes/no       |            no          |            *           |          faxdetect          |
+|                        -                            |                -         |             -          |            *           |          call_limit         |
+|                        -                            |             yes/no       |            no          |            *           |            trunk            |
+|                        -                            |             yes/no       |            no          |            *           |           transfer          |
+|                        -                            |                -         |             -          |                        |            email            |
+|                        -                            |                -         |            571         |                        |     forward_policy->Busy    |
+|                        -                            |                -         |        09158315762     |                        |  forward_policy->No Answer  |
+|                        -                            |                -         |            570         |                        | forward_policy->UnAvailable |
+|                        -                            |                -         |           2121         |                  ...    |                             |
 </div>
 
-
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 import Tabs from '@theme/Tabs';
@@ -54,8 +51,8 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="usageCode"
   values={[
-    {label: 'نمونه کد استفاده', value: 'usageCode'},
-    {label: 'نمونه خروجی', value: 'outputCode'},
+    {label: 'Example To Use', value: 'usageCode'},
+    {label: 'Example Output', value: 'outputCode'},
   ]}>
 
   <!-- تب نمونه کد استفاده -->
@@ -72,7 +69,7 @@ import TabItem from '@theme/TabItem';
       <TabItem value="PHP">
 	  
         <details>
-          <summary>نمایش کامل کد PHP</summary>
+          <summary>Show Full Source Code PHP</summary>
           <br/>
 
           ```php
@@ -146,7 +143,7 @@ import TabItem from '@theme/TabItem';
       <!-- کد JS -->
       <TabItem value="JS">
         <details>
-          <summary>نمایش کامل کد JS</summary>
+          <summary>Show Full Source Code JS</summary>
           <br/>
 
           ```js
@@ -222,7 +219,7 @@ import TabItem from '@theme/TabItem';
 
       <TabItem value="Curl">
         <details>
-          <summary>نمایش کامل کد Curl</summary>
+          <summary>Show Full Source Code Curl</summary>
           <br/>
 
           ```bash

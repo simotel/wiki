@@ -1,17 +1,15 @@
-# تنظیمات simotel.ini
+# Settings for simotel.ini
 
-simotel.ini فایلی می‌باشد که در آن تنظیمات مربوط به مرکزتماس تعریف شده‌اند، مسیر دسترسی به این فایل etc/simotel/simotel.ini/ می‌باشد.با استفاده از دستور زیر می‌توان این فایل را باز کرد و تغییرات را در آن اعمال کرد.
+**simotel.ini** is a file where the settings related to the call center are defined. The path to access this file is `/etc/simotel/simotel.ini`. You can open this file and make changes using the following command:
 
 ```shell
-
 nano /etc/simotel/simotel.ini
 ```
 
-:::caution هشدار
-پس از اعمال تغییرات در فایل simotel.ini حتما سرویس simotel و simotelagi ریست شوند، در غیر اینصورت تغییرات اعمال نمی‌شوند.
+:::caution Warning
+After making changes to the `simotel.ini` file, the `simotel` and `simotelagi` services must be restarted; otherwise, the changes will not take effect.
 :::
 ```shell
-
 Debian
 service simotel restart
 service simotelagi restart
@@ -24,500 +22,351 @@ start simotelagi
 ```
 :::
 
-
-### تنظیمات پایگاه‌داده MongoDB 
-```shell
-
+### MongoDB Database Settings
+```ini
 [mongodb]
-
 mongodb_connection_string = mongodb://username:password@localhost:27017
-
 ```
-۱. **mongodb_connection_string**: آدرس اتصال به پایگاه‌داده که شامل نام کاربری، پسورد، آدرس اتصال، پورت اتصال به پایگاه‌داده می‌باشد.
+1. **mongodb_connection_string**: The connection string for the database, which includes the username, password, connection address, and database port.
 
-### تنظیمات System Logs
+### System Logs Settings
 
-```shell
-
+```ini
 [logging]
-
 log_level = DEBUG
-
 log_file_rotate_backup_count = 50
-
 log_to_file = True
-
 log_to_console = False
-
 log_to_redis = True
-
 log_directory = /var/log/simotel/
-
 log_file_rotate_when = 'D'
-
 log_file_rotate_interval = 1    
-
 log_file_name_simotel = simotel.log
-
 log_file_name_simotelagi = simotelagi.log
-
 log_file_name_webservice = webservice.log
-
 log_monitor_exten = False
-
 log_monitor_trunk = False
-
 log_monitor_api = False
-
 log_ram_and_cpu_stat = False
-
 log_monitor_channel = False
-
 ```
-۱. **log_level**: سطح لاگ سیستم.
+1. **log_level**: The logging level of the system.
 
-۲.  **log_file_rotate_backup_count**: تعداد فایل های لاگ، که بصورت پیش فرض برابر با 50 می باشد. در صورتی که مقدار این پارامتر برابر با 50 باشد به این معنی است تنها فایل ها را تا 50 رو قبل نگه می‌دارد و فایل‌های لاگی که بیشتر از 50 روز از زمان ساخته شدن آن‌ها می گذرد، اوتوماتیک حذف می‌شوند. مثلا درصورتی که این مقدار 100 باشد شما للاگ‌ها را تا 100 روز قبل دارید.
+2. **log_file_rotate_backup_count**: The number of log files, which is set to 50 by default. If this parameter is set to 50, it means that only files from the last 50 days will be kept, and logs older than 50 days will be automatically deleted. For example, if this value is 100, you will have logs from up to 100 days ago.
 
-۳. **log_to_file**: درصورتی که این پارامتر برابر با True باشد ، لاگ‌ها در فایل ذخیره می‌شود.
+3. **log_to_file**: If this parameter is set to True, logs will be saved to a file.
 
-۴. **log_to_console**: در صورتی که این پارامتر برابر با True باشد، لاگ‌ها در کنسول ترمینال نمایش داده می‌شود.
+4. **log_to_console**: If this parameter is set to True, logs will be displayed in the terminal console.
 
-۵. **log_to_redis**: در صورتی که این پارامتر برابر با True باشد، لاگ‌ها روی چنل Redis ارسال می شود در صورت غیرفعال بودن این پارامتر در منو گزارشات، لاگ تماسها ، ذخیره و نمایش داده نمی‌شود.
+5. **log_to_redis**: If this parameter is set to True, logs will be sent to the Redis channel. If this parameter is disabled, call logs will not be stored or displayed in the reports menu.
 
-۶. **log_directory**: مسیر ذخیره فایل‌های لاگ. باید  فیلد log_to_file برابر با True باشد.
+6. **log_directory**: The path for storing log files. The `log_to_file` field must be set to True.
 
-۷. **log_file_rotate_when**: تولید فایل simotel.log بصورت روزانه.
+7. **log_file_rotate_when**: The `simotel.log` file will be generated daily.
 
-۸. **log_file_rotate_interval**: به ازائی هر روز تنها یک فایل simotel.log تولید شود.
+8. **log_file_rotate_interval**: Only one `simotel.log` file will be generated for each day.
 
-۹. **log_file_name_simotel**: نام فایل لاگ simotel.
+9. **log_file_name_simotel**: The name of the `simotel` log file.
 
-۱۰. **log_file_name_simotelagi**: نام فایل لاگ simoteagi.
+10. **log_file_name_simotelagi**: The name of the `simotelagi` log file.
 
-۱۱. **log_file_name_webservice**: نام فایل لاگ وب‌سرویس simotel.
+11. **log_file_name_webservice**: The name of the simotel web service log file.
 
-۱۲. **log_monitor_exten**: در صورت فعال سازی این پارامتر لاگ‌های exten نمایش داده می‌شود.
+12. **log_monitor_exten**: If this parameter is enabled, exten logs will be displayed.
 
-۱۳. **log_monitor_trunk**: در صورت فعال‌سازی این پارامتر لاگ‌های trunk نمایش داده می‌شود.
+13. **log_monitor_trunk**: If this parameter is enabled, trunk logs will be displayed.
 
-۱۴. **log_monitor_api**: در صورت فعال‌سازی این پارامتر لاگ‌های api نمایش داده می‌شود.
+14. **log_monitor_api**: If this parameter is enabled, API logs will be displayed.
 
-۱۵. **log_ram_and_cpu_stat**: در صورت فعال‌سازی این پارامتر لاگ میزان ram و cpu نمایش داده می‌شود.
+15. **log_ram_and_cpu_stat**: If this parameter is enabled, RAM and CPU usage logs will be displayed.
 
+### General Simotel Settings
 
-### تنظیمات عمومی سیموتل
-
-```shell
-
+```ini
 [general]
-
 agi_directory = /var/www/html/files/agi/
-
 ```
-۱. **agi_directory**: مسیر فایل‌های کامپوننت agi.
+1. **agi_directory**: The path for AGI component files.
 
+### Reports Settings
 
-### تنظیمات گزارشات 
-
-```shell
-
+```ini
 [reports]
-
 report_file_path = /var/www/html/files/report_files/
-
 ```
-۱. **report_file_path**: مسیرذخیره فایل‌های گزارشات تماس‌ها.
+1. **report_file_path**: The path for storing call report files.
 
-
-
-### تنظیمات panel
-```shell
+### Panel Settings
+```ini
 [setting]
 panel_report_days = 7
-exten_complicated_passwords =  1
+exten_complicated_passwords = 1
 account_password_length = 6
 account_session_expiration_days = 30
 account_hash_enabled = 0
 ```
-۱. **panel_report_days**: بازه زمانی گزارش‌گیری در منوهای مرتبط با گزارشات.
+1. **panel_report_days**: The reporting period in the related reports menus.
 
-۲.**exten_complicated_passwords**: با فعال شدن این گزینه کاربران مجبور خواهند بود پسورد را به صورت پیچیده وارد نمایند.
+2. **exten_complicated_passwords**: If this option is enabled, users will be required to enter a complex password.
 
-۳.**account_password_length**:تعداد کاراکتر قابل قبول برای رمز حساب کاربری.
+3. **account_password_length**: The acceptable number of characters for account passwords.
 
-۴.**account_session_expiration_days**: تعداد روز قابل قبول بودن پسورد تنظیم شده.
+4. **account_session_expiration_days**: The number of days an account password remains valid.
 
-۵.**account_hash_enabled**: با فعال شدن این پارامتر ; از تغییرات غیر مجاز داده کاربران جلوگیری میشود و امنیت داده های کاربران حفظ میشود 
-### تنظیمات TimeZone
+5. **account_hash_enabled**: If this parameter is enabled, it prevents unauthorized changes to user data and maintains user data security.
+
+### TimeZone Settings
  
-```shell
-
-[timezone ]
-
+```ini
+[timezone]
 timezone_name = Asia/Tehran
-
 client_api_use_local_timezone = False
-
 ```
-۱. **timezone_name**: مقدار timezone که در تولید فایل csv گزارش استفاده می‌شود.
+1. **timezone_name**: The timezone value used in generating CSV reports.
 
-۲. **client_api_use_local_timezone**: ساعت و تاریخ ارسالی در SEA را مشخص می کند. بصورت پیش‌فرض زمان‌ها با timezone UTC ارسال می گردند. با فعال کردن این قابلیت زمان‌ ارسالی در API با ساعت لوکال سیستم یکسان می گردد.
+2. **client_api_use_local_timezone**: Specifies the time and date sent in SEA. By default, times are sent with UTC timezone. Enabling this feature aligns the time sent in the API with the local system time.
 
-### تنظیمات فایل‌های ضبط شده
+### Recorded Files Settings
 
-```shell
-
+```ini
 [record]
-
 call_record_source_directory = '/var/spool/asterisk/monitor/'
-
 call_record_directory = /var/spool/asterisk/monitor_converted/
-
 call_record_removed_directory = '/var/spool/asterisk/monitor_removed/'
-
 ```
+1. **call_record_source_directory**: Initially, audio files of calls are temporarily stored in this path.
 
-۱. **call_record_source_directory**: درابتدا فایل‌های صوتی مکالمات بصورت کوتاه مدت در این مسیر ذخیره می‌شوند.
+2. **call_record_directory**: The path for storing calls after compression.
 
-۲. **call_record_directory**: مسیر فایل‌های ذخیره شده مکالمات پس‌از فشرده سازی.
+3. **call_record_removed_directory**: The path for audio files of calls that are to be deleted.
 
-۳. **call_record_removed_directory**: فایل‌های صوتی مکالمات که قرار بر حذف‌شان می‌باشد در این مسیر قرار می‌گیرند.
+### Backup Settings
 
-
-### تنظیمات مربوط به BackUp
-
-```shell
-
+```ini
 [backup]
-
 backup_directory = /var/spool/simotel/backup/
-
 ```
+1. **backup_directory**: The types of backups taken in the system are stored in this path, including helper code backups that are taken automatically and stored in daily (for daily backups) and weekly (for weekly backups) folders. Additionally, backups taken through the web are stored in a separate folder in this path.
 
-۱. **backup_directory**: انواع بک‌آپ‌هایی که در سیستم گرفته می‌شود در این مسیر ذخیره می‌شود از جمله بک‌آپ‌های کد helper که بصورت اتوماتیک گرفته می‌شوند و داخل فولدارهای daily (برای بک‌آپ‌های روزانه) و weekly (برای بک‌آپ‌های هفتگی) ذخیره می‌شوند و همچنین بک‌آپ‌هایی که از طریق وب گرفته می‌شود در این مسیر در یک فولدر جدا ذخیره می‌شود.
+### VoiceMail Settings 
 
-
-
-
-### تنظیمات VoiceMail 
-
-```shell
-
+```ini
 [voicemail]
-
 voicemail_directory = /var/spool/asterisk/voicemail/
-
 voicemailv2_directory = /var/spool/asterisk/voicemailv2/
-
 ```
-۱. **voicemail_directory**:  مسیر ذخیره فایل‌های صوتی در  VoiceMail V1 (منسوخ شده از ورژن 6.2.7 ).
+1. **voicemail_directory**: The path for storing audio files in VoiceMail V1 (deprecated since version 6.2.7).
 
-۲. **voicemailv2_directory**: مسیر ذخیره فایل‌های صوتی در VoiceMail V2.
+2. **voicemailv2_directory**: The path for storing audio files in VoiceMail V2.
 
+### Redis Settings
 
-### تنظیمات Redis
-
-```shell
-
+```ini
 [redis]
-
 redis_host = localhost
-
 redis_port = 6379
-
 redis_db = 0
-
 redis_password = None
-
 ```
+1. **redis_host**: The connection address to Redis.
 
-۱. **redis_host**: آدرس اتصال به redis.
+2. **redis_port**: The Redis port.
 
-۲. **redis_port**: پورت redis.
+3. **redis_db**: By default, Redis has 16 databases indexed from 0 to 15. The default is 0, which means selecting the first database.
 
-۳. **redis_db**: بصورت پیش‌فرض redis دارای 16 دیتابیس می‌باشد که از ایندکس 0 تا 15 مشخص می‌شود، بصورت پیش فرض 0 می باشد که معنی انتخاب دیتابیس اول می‌باشد.
+4. **redis_password**: The Redis password, which is None by default. Redis is bound to localhost, so it does not require a password.
 
-۴. **redis_password**: پسورد redis که بصورت پیش‌فرض None می باشد. redis به دلیل اینکه bind به لوکال می باشد، بدون پسورد است.
+### WebSocket Settings
 
-### تنطیمات WebSocket
-
-```shell
-
+```ini
 [websocket]
-
 web_socket_port = 8888
-
 web_socket_bind_address = 127.0.0.1
-
 web_socket_check_origin = False
-
 web_socket_permitted_origin = ['localhost:88']
-
 web_socket_check_authentication = True
-
 web_socket_timeout = 60 * 100
-
 ```
+1. **web_socket_port**: The WebSocket port (this value should not change from version 6.2).
 
-۱. **web_socket_port**: پورت وب‌سوکت (این مقدار از ورژن 6.2 نباید تغییر پیدا کند).
+2. **web_socket_bind_address**: The socket address.
 
-۲. **web_socket_bind_address**: آدرس سوکت.
+3. **web_socket_check_origin**: If this parameter is enabled, connections to the socket from external IPs are not allowed.
 
-۳. **web_socket_check_origin**: درصورت فعال بودن این پارامتر اجازه اتصال به سوکت از ip های بیرون (خارجی) داده نمی‌شود.
+4. **web_socket_permitted_origin**: Origin policies for when enabled, including an array of IP:port pairs that are allowed to connect to the WebSocket.
 
-۴. **web_socket_permitted_origin**: سیاست‌های origin برای زمانی که فعال می‌باشد. که شامل آرایه ای از ip:port هایی می‌باشد که اجازه اتصال به وب‌سوکت را دارند.
+5. **web_socket_check_authentication**: If this parameter is enabled, authentication is checked when connecting to the WebSocket.
 
-۵. **web_socket_check_authentication**: در صورت فعال‌سازی این پارامتر هنگام اتصال به وب سوکت احراز هویت بررسی می شود.
+6. **web_socket_timeout**: The timeout value for the socket.
 
-۶. **web_socket_timeout**: مقدار timeout سوکت.
+### CDR Settings
 
-
-### تنظیمات CDR
-
-```shell
- 
+```ini
 [cdr]
-
 record_file_format = mp3
 save_original_cdr = False
 ```
+1. **record_file_format**: The format for recording audio files, which can be either wav or mp3.
 
-۱. **record_file_format**: فرمت ضبط فایل‌های صوتی که می‌تواند wav یا mp3 باشد.
+2. **save_original_cdr**: If this parameter is enabled, the raw CDR sent from Asterisk will be added to the stored CDRs in the database (in the field `original_cdr`, which is used for debugging).
 
-۲. **save_original_cdr**: در صورت فعال شدن این پارامتر cdr خام ارسال شده از سوی استریک به cdr های ذخیره شده در دیتابیس افزوده میشود (در فیلد orginal_cdr  . این فیلد استفاده دیباگ دارد)
-### تنظیمات رکورد تماس 
-```shell
-
+### Call Recording Settings 
+```ini
 [call]
-
 channel_session_ttl_long = 60 * 60
-
 ```
-۱. **channel_session_ttl_long**: حداکثر زمان ظبط‌مکالمه در مرکزتماس،این تنظیم در جهت کاهش سربار سیستم اضاف شده و در صورت نیاز امکان افزایش زمان آن می‌باشد(برحسب ثانیه).
+1. **channel_session_ttl_long**: The maximum duration for recording a call in the call center. This setting has been added to reduce system overhead, and the duration can be increased if needed (in seconds).
 
-
-### تنظیمات امنیتی تماس 
-```shell
-
+### Call Security Settings 
+```ini
 [security]
-
-barred_call_pre_codes = 00,+
-
+barred_call_pre_codes = 00,+ 
 ```
+1. **barred_call_pre_codes**: Numbers that Simotel does not allow calls to. For example, by default, two zeros are barred in Simotel, and if a number starting with two zeros or + is dialed, it will be dropped by default. If you have a range of numbers or prefixes that should not be called from Simotel, this parameter should be set accordingly.
 
-۱. **barred_call_pre_codes**: شماره‌هایی که توسط سیموتل اجازه تماس با آن‌ها داده نمی شود. مثلا بصورت پیش‌فرض دو صفر در سیموتل بسته است و 
-اگر شماره‌گیری در سیموتل انجام شود که اولش دو صفر و یا + باشد، بصورت پیش فرض drop می‌شود. اگر شما رنج شماره‌ای یا پیش‌شماره‌ای دارید که 
-نباید از سیموتل با آن‌ها تماس گرفته شود این پارامتر را باید مقداردهی کنید.
-
-
-
-:::info اطلاعات
-درصورتی که تماسی  barred call شود، وضعیت آن در گزارشات بصورت barred نمایش داده می‌شود.
+:::info Information
+If a call is barred, its status will be displayed as barred in the reports.
 :::
 
-
-### تنظیمات API 
-```shell
-
+### API Settings 
+```ini
 [client_api_service]
-
 client_api_caller_timeout = 5
-
 ```
+1. **client_api_caller_timeout**: The timeout duration for calling client web services such as SCM and others.
 
-۱. **client_api_caller_timeout**: زمان timeout فراخوانی وب سرویس‌های کلاینت همچون SCM  و ...
-
-
-### تنظیمات Fax
-```shell
-
+### Fax Settings
+```ini
 [fax]
-
 fax_directory = /var/www/html/files/fax/
-
 fax_sender_caller_id = 000
-
 fax_sender_timeout_sec = 60
-
 fax_sender_wait_before_send_sec = 1
-
 fax_sender_wait_before_dtmf_sec = 1
-
 fax_sender_wait_after_dtmf_sec = 3
-
 fax_sender_options = ""
-
 fax_sender_excluded_prefix = ""
-
 fax_sender_dtmf_timeout_ms = 500
-
 fax_abandon_timeout = 5 * 60
-
 fax_entry_file_format = pdf
-
 ```
-۱. **fax_directory**: مسیر ذخیره فایل‌های فکس.
+1. **fax_directory**: The path for storing fax files.
 
-۲. **fax_sender_caller_id**: مقدار caller_id که در ارسال فکس استفاده می‌شود. در بعضی سیستم‌های مخابراتی برای ارسال فکس نیاز به caller_id معتبر می‌باشد لذا درغیر اینصورت تماس از سمت مخابرات Drop می‌شود.
+2. **fax_sender_caller_id**: The caller ID used for sending faxes. In some telecommunication systems, a valid caller ID is required for sending faxes; otherwise, the call will be dropped by the telecommunication provider.
 
-۳. **fax_sender_timeout_sec**: مقدار timeout فکس که براساس ثانیه می‌باشد.
+3. **fax_sender_timeout_sec**: The timeout duration for fax (in seconds).
 
-۴. **fax_sender_wait_before_send_sec**: زمان انتظار قبل از ارسال فکس و براساس ثانیه می‌باشد.
+4. **fax_sender_wait_before_send_sec**: The wait time before sending the fax (in seconds).
 
-۵. **fax_sender_wait_before_dtmf_sec**: زمان انتظار قبل از ارسال exten و براساس ثانیه می‌باشد.
+5. **fax_sender_wait_before_dtmf_sec**: The wait time before sending DTMF (in seconds).
 
-۶. **fax_sender_wait_after_dtmf_sec**: زمان انتظار بعد از ارسال exten و براساس ثانیه می‌باشد.
+6. **fax_sender_wait_after_dtmf_sec**: The wait time after sending DTMF (in seconds).
 
-۷. **fax_sender_options**: آپشن ارسال فکس. پیش فرض خالی می‌باشد.
+7. **fax_sender_options**: Options for sending the fax. Default is empty.
 
-۸. **fax_sender_excluded_prefix**: حذف پیش شماره ، قبل از ارسال فکس. اگر می‌خواهید پیش شماره‌ای حذف شود در این قسمت وارد کنید. پیش فرض خالی می‌باشد.
+8. **fax_sender_excluded_prefix**: Excluded prefixes before sending the fax. If you want to exclude a prefix, enter it here. Default is empty.
 
-۹. **fax_sender_dtmf_timeout_ms**: فاصله زمانی بین وارد کردن اعداد exten که براساس میلی‌ثانیه می‌باشد.
+9. **fax_sender_dtmf_timeout_ms**: The time interval between entering DTMF digits (in milliseconds).
 
-۱۰. **fax_abandon_timeout**: مدت زمان بررسی وضعیت فکس. بصورت پیش‌فرض برابر با 60 * 5  می‌باشد که به معنی 15 دقیقه است و براساس ثانیه می‌باشد.
+10. **fax_abandon_timeout**: The duration for checking the fax status. By default, it is set to 60 * 5, which means 15 minutes (in seconds).
 
-۱۱. **fax_entry_file_format**: فرمت فایل ورودی فکس که بصورت پیش‌فرض با فرمت pdf ذخیره می‌شود و می‌تواند tiff هم باشد.
+11. **fax_entry_file_format**: The format of the incoming fax file, which is saved as pdf by default and can also be tiff.
 
-
-### تنظیمات call_limit 
-```shell
-
+### Call Limit Settings 
+```ini
 [call_limit]
-
 call_limit_warning_beeper_enabled = True
-
 call_limit_warning_beeper_announce = beep
-
 call_limit_warning_beeper_time_to_end_sec = 20
-
 call_limit_warning_beeper_repeat_time_sec = 10
-
 ```
+1. **call_limit_warning_beeper_enabled**: This parameter enables call limits in exten, trunk, etc. If this parameter is used during a call and is enabled, a warning will be played for the caller about the end of the call.
 
-۱. **call_limit_warning_beeper_enabled**: این پارامتر call_limit را در exten، trunk و ... فعال می‌کند. چنانچه از این پارامتر در تماس استفاده شود اگر این گزینه فعال باشد برای تماس گیرنده هشدار پایان تماس پخش می‌شود.
+2. **call_limit_warning_beeper_announce**: The audio file that is played to the caller, which must either be valid characters and words or the complete file path.
 
-۲. **call_limit_warning_beeper_announce**: فایل صوتی که برای تماس گیرنده پخش می‌شود که یا باید کاراکترها و کلمات مجاز باشد یا آدرس کامل فایل.
+3. **call_limit_warning_beeper_time_to_end_sec**: Specifies how many seconds before the end of the call limit the warning should be given. For example, for 4 minutes, you would set this to 240 seconds.
 
-۳. **call_limit_warning_beeper_time_to_end_sec**: مشخص کننده این می‌باشد که چه مقدار زمانی به ثانیه به پایان call_limit باید این هشدار داده شود. مثلا برای ۴ دقیقه باید ۲۴۰ ثانیه قرار دهید و براساس ثانیه می‌باشد.
+4. **call_limit_warning_beeper_repeat_time_sec**: Specifies how often the warning message should repeat if the call limit is reached (in seconds).
 
-۴. **call_limit_warning_beeper_repeat_time_sec**: مشخص کننده این می‌باشد که اگر به call_limit رسید، هر‌چند ثانیه باید پیام را تکرار کند و براساس ثانیه می‌باشد.
-
-### تنظیمات شبکه 
-```shell
-
+### Network Settings 
+```ini
 [network]
-
 panel_iptable = 0
-
 ```
+1. **panel_iptable**: Enables iptables.
 
-۱. **panel_iptable**: فعال‌سازی iptables.
+### Upload Settings
 
-
-### تنظیمات مربوط به Upload
-
-```shell
-
+```ini
 [upload_size]
-
 panel_fax = 1048576
-
 panel_audio = 5242880
-
 panel_csv = 512000
-
 panel_other = 20971520
-
 ```
+1. **panel_fax**: The maximum allowed size for uploading fax files.
 
-۱. **panel_fax**: حداکثر سایز مجاز آپلود فایل‌های فکس.
+2. **panel_audio**: The maximum allowed size for uploading audio files.
 
-۲. **panel_audio**: حداکثر سایز مجاز آپلود فایل های صوتی.
+3. **panel_csv**: The maximum allowed size for uploading CSV files.
 
-۳. **panel_csv**: حداکثر سایز مجاز آپلود فایل‌های csv.
+4. **panel_other**: The maximum allowed size for other panel uploads.
 
-۴. **panel_other**: حداکثر سایز مجاز فایل‌های دیگر پنل.
+### Announcement Settings
 
-
-
-### تنظیمات آواها
-
-```shell
-
+```ini
 [announcement]
-
 announcement_directory = '/var/www/html/files/' 
-
 ```
+1. **announcement_directory**: Specifies the path for storing uploaded announcements.
 
-۱. **announcement_directory**: مسیر ذخیره سازی آواهای بارگذاری شده را مشخص می‌کند.
+### Music on Hold Settings
 
-
-### تنظیمات موزیک‌انتظار
-
-```shell
-
+```ini
 [music_on_hold]
-
 pbx_music_on_hold_path = '/var/www/html/files/music_on_hold/'  
-
 ```
-۱. **pbx_music_on_hold_path**: مسیر ذخیره سازی موزیک‌های انتظار را مشخص می‌کند.
+1. **pbx_music_on_hold_path**: Specifies the path for storing music on hold.
 
+### AMI Settings
 
+These settings pertain to the call center itself, and if you need AMI access, you should refer to the path **etc/asterisk/manager.conf/**.
 
-
-### تنظیمات AMI
-
-این تنظیمات مربوط به خود مر‌کزتماس می‌باشند و درصورت نیاز به دسترسی AMI باید به مسیر **etc/asterisk/manager.conf/** مراجعه فرمایید.
-
-```shell
-
+```ini
 [ami]
-
 ami_host = 'localhost'
-
 ami_port = '5038'
-
 ami_username = 'test'
-
 ami_password = 'test'
-
 ```
+1. **localhost**: The host address for AMI.
 
-۱. **localhost**: آدرس میزبان AMI.
+2. **ami_port**: The port for the AMI service.
 
-۲. **ami_port**: پورت سرویس AMI.
+3. **ami_username**: The account username.
 
-۳. **ami_username**: نام کاربری حساب.
+4. **ami_password**: The account password.
 
-۴. **ami_password**: رمز‌عبور حساب.
-
-:::info اطلاعات
-برای کسب اطلاعات بیشتر در مورد شیوه ساخت حساب AMI به [این قسمت](/pbx/advance-settings/create_ami_user) مراجعه فرمایید.
+:::info Information
+For more information on how to create an AMI account, please refer to [this section](/pbx/advance-settings/create_ami_user).
 :::
 
-### تنظیمات DISA
+### DISA Settings
 
-
-```shell
-
+```ini
 [disa]
-
 disa_simulator_data_len = "11"
-
 ```
+1. **disa_simulator_data_len**: The maximum length of the number entered in DISA.
 
-۱. **disa_simulator_data_len**:حداکثر طول شماره وارد شده در DISA.
+### Service Settings
 
+The variables mentioned here are used to enable or disable internal Simotel services. 
 
-
-### تنظیمات سرویس ها
-متغیر های ذکر شده جهت فعال یا غیر فعال کردن سرویس های داخلی سیموتل قابل استفاده هستند 
-:::caution هشدار
-تغییر در متغیر های زیر امکان غیر فعال کردن بخش هایی از سیستم را خواهد داشت 
+:::caution Warning
+Changing the variables below may disable parts of the system.
 :::
-```shell
+```ini
 service_initializer_enabled = True
 service_api_monitor_enabled = True
 service_exten_monitor_enabled = True
@@ -538,19 +387,14 @@ service_system_log_enabled = True
 service_audio_monitor_enabled = True
 ```
 
-### تنظیمات audio_monitor 
+### Audio Monitor Settings 
 
-از نسخه 6.3 به بعد، روال مدیریت ذخیره سازی در سیموتل تغییر کرده و مدیریت آن به سرویس Audio Monitor  سپرده شد
-این سرویس داری تنظیماتی می باشد که به صورت پیش فرض با مقادیر مناسب مقدار دهی شده است. اما در صورت نیاز میتوان آن ها را تغییر داد
+Since version 6.3, the storage management process in Simotel has changed, and it has been assigned to the Audio Monitor service. This service has settings that are set by default with appropriate values, but they can be changed if necessary.
 
-
-```shell
+```ini
 audio_monitor_time_file_not_changed = 20
 ```
+1. **audio_monitor_time_file_not_changed**: The monitor service continuously observes changes in audio files, and if a file has not changed within the timeframe of this variable, it indicates the end of the conversation, and the file enters the storage phase (active audio files are continuously changing).
 
-۱. **audio_monitor_time_file_not_changed**: سروبیس مانیتور بصورت پیوسته در حال مشاهده تغییرات فایل های صوتی میباشد و در صورتی که فایلی در بازه زمانی این متغییر تغییر نکرده باشد، به معنای پایان مکالمه میباشد، و فایل وارد مرحله ذخیره سازی میشود (فایل ها صوتی فعال ، بصورت مداوم در حال تغییر می باشد)
- در صورت افزایش این مقدار زمان ایجاد نهایی فایل صوتی بلند تر شده  و به همان نسبت زمان دسترسی به مکالمه در منوی گزارشات افزایش می یابد 
-
-
-
+---
 ### تنظیمات queue_maintenance

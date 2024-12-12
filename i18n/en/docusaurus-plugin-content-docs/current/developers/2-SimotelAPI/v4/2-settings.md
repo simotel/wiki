@@ -2,68 +2,61 @@
 sidebar_position: 1
 
 ---
-# معرفی و تنظیمات
+# Introduction and Settings
 
+## Simotel API
 
-## Simotel Api
+SA is a collection of APIs that are initiated by sending a request from the web service to Simotel. This service is created using the standard RestAPI format. For example, by sending a two-way call request from the web service to Simotel, the contact center will begin establishing the two-way call once the request is received.
 
-SA مجموعه از APIها هستند که با ارسال درخواست از سمت وب‌سرویس به سمت سیموتل شروع می‌شوند، این سرویس در قالب استاندارد RestAPI ایجاد گردیده است. برای مثال با ارسال درخواست تماس‌دوطرفه از سمت وب‌سرویس به سمت سیموتل،پس از دریافت درخواست مرکز تماس شروع به ایجاد تماس دوطرفه می‌کند.
+## Simotel API Setup
 
-## تنظیمات راه‌اندازی Simotel Api 
+- **Create an account for the requester.**
+- **Define the IPs allowed to send requests.**
 
-- **ایجاد حساب برای درخواست دهنده.**
-- **تعیین ip‌های مجاز به ارسال درخواست.**
+### Creating an Account
+Go to `Maintenance > API Accounts`. By clicking on ➕, you can create a new user. The parameters in this section are as follows:
 
-### ایجاد حساب
-به بخش `Maintenance > API Accounts` مراجعه فرمایید.با کلیک بر روی ➕ امکان ساخت کاربر جدید فراهم می‌شود،پارامترها این بخش به شرح زیر می‌باشند
+- **Authentication**: Simotel uses various methods for user authentication. The most secure method is to use BasicAuth (username and password) along with an API Key (Token).
+  
+- **Username**: The username for the created user.
 
-- **Authentication**: سیموتل از روش‌های مختلفی برای احراز هویت کاربر درخواست دهنده استفاده می‌کند،امن‌ترین روش استفاده
- از BasicAuth (نام‌کاربری و رمزعبور)  به همراه API Key (Token) می‌باشد.
+- **Password**: The password for the created user.
 
-- **Username**: نام‌کاربری کاربر ساخته شده.
+- **Token**: A string generated for stronger authentication.
 
-- **Password**: رمزعبور کاربر ساخته شده.
+- **Enabled**: Allows you to activate or deactivate the user.
 
-- **Token**: رشته‌ای که در جهت احرازهویت قوی‌تر تولید می‌شود.
+- **Request**: Specifies the level of access the user has to the APIs. For example, if a user needs to add a user via the API, the `/pbx/users/add` permission must be enabled.
 
-- **Enabled**: امکان فعال یا غیر‌فعال‌سازی کاربر را در اختیار شما قرار می‌دهد.
+### Granting Access for IPs
+Go to `Maintenance > Settings`. At the bottom of the page, in the Simotel API section, you will see two options:
 
-- **Request**: میزان سطح دسترسی کاربر به APIها را مشخص می‌کند،برای مثال در صورت نیاز به افزودن کاربر با استفاده
- از API حتما باید تیک /pbx/users/add بخورد.
- 
-### ایجاد دسترسی برای IP
-به بخش `Maintenance > Settings` مراجعه فرمایید. در پایین صفحه بخش Simotel API دو بخش مشاهده می‌شود
+- **Allow All IPs**: Enabling this option allows all IPs to send requests to Simotel.
 
-- **Allow All IPs**: با زدن تیک این بخش دسترسی تمامی IPها برای ارسال درخواست به سمت سیموتل باز می‌شود.
+- **Allowed IPs**: If you want to allow specific IPs, enter them here and then press Enter.
 
-- **Allowed IPs**: در صورتی که IP خاصی مد نظر می‌باشد در این بخش وارد کنید و در نهایت دکمه Enter را بزنید.
+## Authentication
 
-## اعتبارسنجی
+**Authentication can be done using one of the following three methods:**
 
-**اعتبارسنجی به یکی از سه روش زیر انجام می‌گردد:**
+- **HTTP Basic Authentication**: The Basic Authentication standard is a common method for authentication in web services. Retrieving access information with this method is relatively easy due to its lower security, so it is recommended to use it at least over SSL. The username and password are placed in the request header in base64 format as shown below.
 
-- **HTTP Basic authentication**: استاندارد  Basic  authentication روشی عمومی برای اعتبارسنجی در وب‌سرویس‌ها می‌باشد. بازیابی اطلاعات دسترسی در این روش،
- به دلیل امنیت پایین آن بسیار ساده می‌باشد و توصیه می‌گردد که حداقل بصورت SSL استفاده گردد. اطلاعات مربوط به یوزر و پسورد با فرمت base64 در هدر درخواست 
- به صورت زیر قرار میگیرد.
- 
 ```shell
 Authorization: Basic dGVzdDpBYTEyMzQ1Ng
 ```
 
-Basic Auth را می‌توان در آدرس به صورت زیر نیز ارسال کرد
-
+Basic Auth can also be sent in the URL as follows:
 ```shell
 https://username:password@www.example.com
 ```
 
-- **API Key**: در این روش که برای بهبود امنیت روش قبلی ایجاد‌شده و به صورت گسترده در API ها استفاده می‌گردد، کلیدی یکتا ایجاد می‌گردد و در هدر
- درخواست به صورت زیر اضافه می‌شود.
+- **API Key**: In this method, which is designed to enhance the security of the previous method and is widely used in APIs, a unique key is generated and added to the request header as follows:
  
 ```shell
 X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG
 ```
 
-- **HTTP Basic authentication & API Key**: در این روش از ترکیب دو روش بالا استفاده می‌گردد.
+- **HTTP Basic authentication & API Key**: This method uses a combination of the two methods above.
 
 ```shell
 Authorization: Basic dGVzdDpBYTEyMzQ1Ng
@@ -162,8 +155,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه داده ارسالی وب‌سرویس از متد autodialer/groups/', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code Sended from  autodialer/groups/', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <TabItem value="usageCode">
@@ -176,7 +169,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary> نمونه کد با  Curl</summary>
+            <summary> Show Full Source Code  Curl</summary>
             <br/>
 
 ```shell

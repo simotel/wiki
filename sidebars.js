@@ -223,6 +223,7 @@ module.exports = {
 		  collapsed: false,
 		  items: ['pbx/system-intro/pbxsettingintro', 'pbx/system-intro/dialplanintro'],
 		},
+		
 		{
 		  type: 'category',
 		  label: 'pbx-menu',

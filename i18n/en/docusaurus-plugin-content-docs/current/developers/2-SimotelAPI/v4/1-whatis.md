@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
 ---
-# معرفی Simotel Api
+# Introduction to Simotel API
 
-SA مجموعه از APIها هستند که با ارسال درخواست از سمت وب‌سرویس به سمت سیموتل شروع می‌شوند، این سرویس در قالب استاندارد RestAPI ایجاد گردیده است. برای مثال با ارسال درخواست تماس‌دوطرفه از سمت وب‌سرویس به سمت سیموتل،پس از دریافت درخواست مرکز تماس شروع به ایجاد تماس دوطرفه می‌کند.
+SA is a collection of APIs that are initiated by sending a request from the web service to Simotel. This service is created using the standard RestAPI format. For example, by sending a two-way call request from the web service to Simotel, the contact center will begin to establish the two-way call once the request is received.

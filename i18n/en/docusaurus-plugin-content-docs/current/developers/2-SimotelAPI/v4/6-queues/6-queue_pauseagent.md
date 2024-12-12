@@ -3,18 +3,18 @@
 ---
 # Pause Agent
 
-این سرویس برای ورود اپراتور به حالت استراحت در صف می‌باشد.
+This service is for putting an operator into a resting state in the queue.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|    توضیحات   | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:------------:|:------------------:|:--------------:|:----------------------:|:---------:|
-|    شماره‌صف   |          -         |       999      |           **           |   queue   |
-| شماره‌اپراتور |          -         |       557      |           **           |   agent   |
-
+|    Description   | Defined Data | Sample Data | Required Parameters[**]/Optional[*] | Parameters |
+|:----------------:|:------------:|:-----------:|:-----------------------------------:|:----------:|
+|    Queue Number  |      -       |     999     |                **                   |   queue    |
+|   Operator Number |      -       |     557     |                **                   |   agent    |
 </div>
 
-## نمونه فراخوانی
+
+## Sample Invocation
 
 
 <!--  -->
@@ -24,8 +24,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+    {label: 'Example Code To Use', value: 'usageCode'},
+    {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -42,7 +42,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 		```php
@@ -87,7 +87,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 			```js
@@ -126,7 +126,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 			```bash

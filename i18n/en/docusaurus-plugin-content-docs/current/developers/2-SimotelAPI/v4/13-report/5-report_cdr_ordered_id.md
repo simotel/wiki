@@ -3,25 +3,24 @@
 ---
 # CDR Ordered
 
-این سرویس برای بازیابی اطلاعات جدول جستجوی سریع از ابتدا تا انتها کاربرد دارد، پارامتر ورودی این سرویس id رکوردی است که می‌خواهید اطلاعات بعد از آن بازیابی نمایید، خروجی سرویس رکوردهای جدول به صورت ترتیبی می‌باشد.(در هر فراخوانی 20 رکورد به ترتیب بازگردانده می‌شود).
+This service is used to retrieve the full list of Quick Search table data from the beginning to the end. The input parameter for this service is the record ID after which you want to retrieve the data. The service returns the table records sequentially (20 records per request).
 
-:::tip نکته
-درصورتی که می‌خواهید اطلاعات جدول را از ابتدا بازیابی کنید مقدار پارامتر id_ برابر با خالی قرار دهید.
+:::tip Note  
+If you want to retrieve the table data from the beginning, set the `id_` parameter to empty.
 :::
 
-:::tip نکته
-پارامتر last_id در جواب سمت شما برگردانده می‌شود و id آخرین رکورد بازیابی شده را به شما می‌دهد، پس برای بازیابی اطلاعات بعدی(به ترتیب) این شناسه را به عنوان ورودی دوباره به سرویس بدهید.
+:::tip Note  
+The `last_id` parameter will be returned in the response and contains the ID of the last retrieved record. To retrieve the next set of data (sequentially), provide this ID again as the input.
 :::
 
-
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-| توضیحات                                                         | داده های تعریف شده | داده های نمونه           | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|-----------------------------------------------------------------|--------------------|--------------------------|-------------------------------|-----------|
-| شناسه یکتای که می‌خواهیم اطلاعات بعد از آن به ترتیب بازیابی شوند(last_id) |                    | 5ddb9e925171cd0429088bad |                               | id_       |
+| Description | Defined Data | Sample Data | Required[**]/Optional[*] | Parameters |
+|:-----------:|:------------:|:-----------:|:------------------------:|:---------:|
+| Unique ID after which we want to retrieve the data sequentially (last_id) | - | 5ddb9e925171cd0429088bad | | id_ |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -32,8 +31,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -50,7 +49,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -90,7 +89,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -127,7 +126,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash
