@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
 ---
-# Simotel Events چیست 
+# What is Simotel Events
 
-SEA مجموعه‌ای از APIها هستند که اطلاعات مربوط به رویداد‌های رخ داده در مرکز تماس را به سمت وب‌سرویس شما ارسال می‌کنند،با استفاده از SEA شما می‌توانید از تمام رویدادهای که در مرکزتماس رخ می‌دهد به سرعت باخبر شوید. این بخش وظیفه مدیریت تمامی رویداد‌های که از مبداء سیموتل به مقصد وب‌سرویس ارسال می‌شوند را برعهده دارد.
+SEA is a collection of APIs that send information about events occurring in the call center to your web service. Using SEA, you can quickly be informed about all the events that take place in the call center. This section is responsible for managing all the events sent from Simotel to the web service.

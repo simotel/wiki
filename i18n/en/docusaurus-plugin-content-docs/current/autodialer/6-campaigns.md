@@ -1,37 +1,37 @@
----
+```markdown
 title: "Campaigns"
 sidebar_label: "Campaigns"
 ---
 
-# کمپین‌ها
+# Campaigns
 
-در این قسمت اطلاعات وارد شده در مراحل قبل تجمیع شده و کمپینی به جهت ارسال تماس انبوه ایجاد می‌شود.
+In this section, the information entered in previous steps is consolidated to create a campaign for bulk calling.
 
-## پارامترهای Campaigns
+## Campaigns Parameters
 
-- **Name**: در این قسمت نام کمپین را مشخص می‌شود.
+- **Name**: Specify the campaign name.
 
-- **Trunk Manger**: در این قسمت نام Trunk Manager را که در مرحله قبل ساخته شد انتخاب می‌کنیم.
+- **Trunk Manager**: Select the Trunk Manager created in the previous step.
 
-- **Context Interface**: در صورتی که از کامپوننت `AutoDialer Route` برای هدایت تماس‌های کمپین به سمت دایل‌پلن استفاده می‌کنید. این مقدار باید برابر با مقدار **context** وارد شده در کامپوننت `AutoDialer Route` باشد.
+- **Context Interface**: If using the `AutoDialer Route` component to direct campaign calls to the dial plan, this value must match the **context** value entered in the `AutoDialer Route` component.
 
-- **Interface Text**: در صورتی که از کامپوننت `AutoDialer Route` برای هدایت تماس‌های کمپین به سمت دایل‌پلن استفاده می‌کنید. این مقدار باید برابر با مقدار **text** وارد شده در کامپوننت `AutoDialer Route` باشد.
+- **Interface Text**: If using the `AutoDialer Route` component to direct campaign calls to the dial plan, this value must match the **text** value entered in the `AutoDialer Route` component.
 
-- **Contacts**: در این قسمت نام مخاطبان افزوده شده در بخش قبلی مشخص می‌شود.
+- **Contacts**: Specify the names of the contacts added in the previous section.
 
-- **Groups**: در این قسمت لیست گروه‌های افزوده شده در بخش قبلی مشخص می‌شود.
+- **Groups**: Specify the list of groups added in the previous section.
 
-- **Dial Interval (sec)**: در صورتی که در کمپین با شماره‌ای تماس گرفته شد اما جواب نداد چند ثانیه بعد دوباره با آن شماره تماس گرفته شود.در نظر داشته باشید مکمل این پارامتر Tries می‌باشد که مشخص می‌کند بطور کلی چند بار با مخاطب تماس گرفته شود.مقدار این پارمتر بر حسب ثانیه می‌باشد.
+- **Dial Interval (sec)**: If a call in the campaign is unanswered, define the interval (in seconds) before retrying the number. This parameter works alongside **Tries**, which defines the total number of attempts to call a contact.
 
-- **Tries**: تعداد تلاش برای انجام تماس موفق در کمپین را مشخص می‌کند.
+- **Tries**: Specify the number of attempts for a successful call in the campaign.
 
-- **Start**: تاریخ شروع کمپین تماس‌انبوه را مشخص می‌کند،پس از وارد کردن زمان **Enter** بزنید.
+- **Start**: Specify the start date of the bulk calling campaign. Press **Enter** after entering the date.
 
-- **Start**: تاریخ پایان کمپین تماس‌انبوه را مشخص می‌کند،پس از وارد کردن زمان **Enter** بزنید.
+- **End**: Specify the end date of the bulk calling campaign. Press **Enter** after entering the date.
 
-- **Announcement**: نام فایل صوتی که در مرحله قبل وارد شده‌است در اینجا مشخص می‌شود.
+- **Announcement**: Select the name of the audio file added in the previous step.
 
-- **Description**: افرودن توضیحاتی در مورد کمپین.
+- **Description**: Add descriptions about the campaign.
 
-
-پس از ایجاد کمپین در مرحله اول وضعیت کمپین wating نمایش داده می‌شود و به محض شروع تماس انبوه وضعیت به running تغییر پیدا می‌کند،پس از اتمام نیز وضعیت کمپین completed می‌شود.
+After creating the campaign, its initial status will be displayed as **waiting**. Once the bulk calling starts, the status will change to **running**, and upon completion, the status will update to **completed**.
+```

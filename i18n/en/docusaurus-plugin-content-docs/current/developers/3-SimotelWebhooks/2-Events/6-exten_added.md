@@ -3,10 +3,9 @@ sidebar_position: 2
 ---
 # Exten Added
 
-هنگامی‌ كه کاربر جدیدی در سیموتل تعریف ‌شود، رويداد ExtenAdded ايجاد می‌گردد.
+When a new user is defined in Simutel, the ExtenAdded event is created.
 
-
-## پارامترهای رویداد
+##  Event parameter
 <div class="custom-table">
 |                         توضیحات                         | داده‌های تعریف‌شده | داده‌های نمونه |  پارامتر‌ها |
 |:-------------------------------------------------------:|:----------------:|:-------------:|:----------:|

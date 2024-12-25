@@ -1,16 +1,18 @@
 ---
-sidebar_label: "contacts"
-title: "contacts"
+
+sidebar_label: "contacts"  
+title: "contacts"  
+
 ---
 
-# مخاطبان
+# Contacts  
 
-در این بخش مخاطبان خود را با کلیک بر روی دکمه ➕ اضاف کنید،پس از افزودن در زمان ساخت کمپین می‌توانید مخاطبین خود را به تماس انبوه اضاف کنید.
+In this section, add your contacts by clicking the ➕ button. After adding them, you can include your contacts in the mass call during campaign creation.  
 
-## پارامترهای Contact
+## Contact Parameters  
 
-- **Name**: نام مخاطب.
+- **Name**: The contact's name.  
 
-- **Number**: شماره مخاطب.
+- **Number**: The contact's phone number.  
 
-- **description**: توضیحاتی در مورد مخاطب.
+- **Description**: Notes or details about the contact.  

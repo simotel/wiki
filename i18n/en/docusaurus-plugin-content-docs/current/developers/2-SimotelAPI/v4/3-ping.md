@@ -1,15 +1,14 @@
 ---
 sidebar_position: 2
 ---
-# ping (تست ارتباط)
+# ping (connection test)
+## Introduction
+You send a ping request to the Simotel server, and if everything is in order, you will receive a Success response from the server.
 
-## معرفی
-با استفاده از این ای پی آی می‌توانید با یک درخواست ساده و بدون پارامتر ورودی ارتباط نرم افزار خود با سیموتل را تست کنید. 
-به این صورت که بک درخواست پینگ به سرور سیموتل ارسال می‌کنید و در صورتی که همه چیز مرتب باشد از سرور پاسخ Success  دریافت خواهید کرد.
 
-## پیاده سازی
-### پارامترها
-این ای پی آی هیچ پارامتر ورودی ندارد.
+## Implementation  
+### Parameters  
+This API does not have any input parameters.
 ## Sample Invocation
 
 
@@ -154,9 +153,9 @@ import TabItem from '@theme/TabItem';
 
 
 
-## رخداد Ping
-در صورتی که رخداد Ping در تنظیمات سیموتل فعال باشد بعد از فراخوانی ای پی آی پینگ وب هوک Ping فعال می‌شود.
+## Ping Event  
+If the Ping event is enabled in the Simotel settings, the Ping webhook will be activated after calling the ping API.
 
-## نمونه کد تست ارتباط سیموتل
-آدرس گیتهاب ای پی آی تست
+## Simotel Connection Test Code Example  
+GitHub address for the test API.
 

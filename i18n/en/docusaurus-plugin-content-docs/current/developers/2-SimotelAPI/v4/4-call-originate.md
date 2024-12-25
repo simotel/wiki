@@ -1,31 +1,31 @@
 ---
 sidebar_position: 2
 ---
-# تماس دوطرفه
+# Two-way call
+This service creates a two-way call (Number Masking). The caller can be either internal or a telecommunications number. If the caller is a telecommunications number, the trunk name must also be provided. The time_out value is optional, and if not assigned, it is set to 30 seconds by default.
 
-با استفاده از این سرویس تماس دوطرفه (Number Masking) ایجاد می‌شود. تماس گیرنده می‌تواند هم داخلی باشد و هم شماره مخابراتی.چنانکه تماس گیرنده شماره مخابراتی 
-باشد، نام ترانک نیز باید وارد شود. مقدار time_out اختیاری است و در صورت عدم تخصیص بصورت پیش‌فرض 30 ثانیه در نظر گرفته می‌شود.
-
-:::danger نکته مهم
-در تماس دوطرفه در صورتی که نفر اول پاسخ ندهد و تماس را قطع کند اطلاعات مربوط به تماس(CDR) به سمت وب‌سرویس شما ارسال نمی‌شود.اگر این موضوع برای شما اهمیت بالایی دارد می‌توانید از APIهای مربوط به ساخت کمپین به همراه کامپوننت `autodialer route` برای ایجاد تماس دوطرفه استفاده کنید.برای توضیحات بیشتر به **[این قسمت](/developers/Autodialer_API/call_originate)** مراجعه فرمایید.
+:::danger Important note  
+In a two-way call, if the first person does not answer and disconnects the call, the call data (CDR) will not be sent to your web service. If this is important for you, you can use the campaign creation APIs along with the `autodialer route` component to create a two-way call. For more details, please refer to **[this section](/developers/Autodialer_API/call_originate)**.
 :::
 
 
 
-### پارامترها
+### parameters 
+
 <div class="custom-table">
-|                              توضیحات                              | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*]  |  پارامترها |
+|                              Description                              | Defined Data | Sample Data | Required Parameters[**]/Logical[*] | Parameters |
 |:-----------------------------------------------------------------:|:------------------:|:--------------:|:-----------------------:|:----------:|
-|                    (نفر اول در تماس)تماس گیرنده                   |          -         |       557      |            **           |   caller   |
-|                    (نفر دوم در تماس)شماره مخاطب                   |          -         |       552      |            **           |   callee   |
-| مسیر تماس نفر اول را مشخص می‌کند(به همراه کامپوننت Outgoing_Route) |          -         |  main_routing  |            **           |   context  |
+|                    (First person in the call) Caller                   |          -         |       557      |            **           |   caller   |
+|                    (Second person in the call) Contact Number         |          -         |       552      |            **           |   callee   |
+| Specifies the first person's call route (along with the Outgoing_Route component) |          -         |  main_routing  |            **           |   context  |
 |                                557                                |          -         |       557      |            **           |  caller_id |
-|                  مسیر تماس نفر دوم را مشخص می‌کند                  |          -         |                |            *            | trunk_name |
-|                   مدت زمان انتظار برای پاسخگویی                   |          -         |       30       |                         |   timeout  |
-|                   مدت زمان تماس تلفنی                   |          -         |       30       |                         |   call_limit  |
+|                  Specifies the second person's call route             |          -         |                |            *            | trunk_name |
+|                   Waiting time for answering                        |          -         |       30       |                         |   timeout  |
+|                   Call duration time                               |          -         |       30       |                         |   call_limit  |
 </div>
 
-## نمونه فراخوانی
+
+## Sample Invocation
 
 <!--  -->
 
@@ -190,5 +190,4 @@ import TabItem from '@theme/TabItem';
   </Tabs>
 
 
- به جهت آشنایی بیشتر، در بخش مثال‌های کاربردی چند نمونه از [کاربردهای](/developers/Scenarios/call_originate) این سرویس مورد بررسی قرار گرفته‌ است.
-
+For further familiarity, several examples of [use cases](/developers/Scenarios/call_originate) for this service are discussed in the practical examples section.
