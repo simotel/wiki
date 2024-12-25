@@ -2,28 +2,32 @@
 ---
 # VoiceMail
 
-هنگامی که پیام صوتی در سیموتل ذخیره شود(صندوق صوتی)، رویداد  VoiceMail ارسال می‌گردد.
+
+When a voicemail is saved in SimulTel (voicemail box), the **VoiceMail** event is triggered.
 
 
-## پارامترهای رویداد
+## Event Parameters
+
 <div class="custom-table">
-|        توضیحات        | داده های تعریف شده |       داده های نمونه       |  پارامترها |
-|:---------------------:|:------------------:|:--------------------------:|:----------:|
-|       نام رویداد      |          -         |          VoiceMail         | **event_name** |
-|           -           |          -         |  5fedc34a1b05af9835bbcfdc  |     **id**     |
-|    شماره صندوق صوتی   |          -         |            5555            |   **number**   |
-|            -          |          -         |           FAILED           |    **state**   |
-| نام فایل صوتی ظبط شده |          -         |              "             |  **filename**  |
-|            -          |          -         |              "             |   **message**  |
-|            -          |          -         |              "             |  **duration**  |
-|            -          |          -         |         Hangup call        |   **message**  |
-|       شماره مبدا      |          -         |             992            |   **caller**   |
-|            -          |          -         |              "             |    **data**    |
-|      تاریخ رویداد     |          -         | 2020-12-31 12:25:46.417210 |    **date**    |
+
+|        Description        | Defined Data   |       Sample Data         |  Parameters  |
+|:-------------------------:|:--------------:|:--------------------------:|:-----------:|
+|       Event Name          |         -       |          VoiceMail         | **event_name** |
+|            -              |         -       |  5fedc34a1b05af9835bbcfdc  |     **id**     |
+|    Voicemail Number       |         -       |            5555            |   **number**   |
+|            -              |         -       |           FAILED           |    **state**   |
+| Recorded Audio File Name  |         -       |              "             |  **filename**  |
+|            -              |         -       |              "             |   **message**  |
+|            -              |         -       |              "             |  **duration**  |
+|            -              |         -       |         Hangup call        |   **message**  |
+|       Caller Number        |         -       |             992            |   **caller**   |
+|            -              |         -       |              "             |    **data**    |
+|       Event Date           |         -       | 2020-12-31 12:25:46.417210 |    **date**    |
 
 </div>
 
-## نمونه خروجی رویداد VoiceMail
+
+## Sample Output of VoiceMail Event
 
 
 ```shell

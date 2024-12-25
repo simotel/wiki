@@ -2,30 +2,32 @@
 ---
 # Outgoing Fax
 
-هنگامی که فکس از سیموتل ارسال می‌گردد،رویداد OutgoingFax ایجاد می‌گردد.
+When a fax is sent from SimulTel, the **OutgoingFax** event is triggered.
 
+## Event Parameters
 
-## پارامترهای رویداد
 <div class="custom-table">
 
-|             توضیحات             | داده‌های تعریف‌شده |        داده‌های نمونه       |       پارامتر‌ها       |
-|:-------------------------------:|:----------------:|:--------------------------:|:---------------------:|
-|         شناسه‌ی یکتای فکس        |         -        |  5f6f182c8a315630478f6d28  |         **fax_id**        |
-|            نام رویداد           |         -        |         OutgoingFax        |       **event_name**      |
-|         وضعیت ارسال فکس         |         -        |           SENDING          |         **state**         |
-|         شناسه یکتای تماس        |         -        |      1601116173.161150     |       **unique_id**       |
-|         تاریخ ارسال فکس         |         -        | 06:31:23.232477 2020-11-11 |          **date**         |
-|                -                |         -        | error starting fax session | **info->FAXSTATUSSTRING** |
-|                -                |         -        |         INIT_ERROR         |     **info->FAXERROR**    |
-| توضیحاتی درمورد خطای فکس ارسالی |         -        |         INIT_ERROR         |     **info->FAXERROR**    |
-|                -                |         -        |            None            | **info->REMOTESTATIONID** |
-|                -                |         -        |              0             |     **info->FAXPAGES**    |
-|                -                |         -        |            None            |    **info->FAXBITRATE**   |
-|                -                |         -        |            None            |  **info->FAXRESOLUTION**  |
-|                -                |         -        |              "             |      **info->REASON**     |
+|             Description             | Defined Data |        Sample Data         |       Parameter        |
+|:-----------------------------------:|:------------:|:--------------------------:|:----------------------:|
+|         Unique Fax ID               |      -       |  5f6f182c8a315630478f6d28  |         **fax_id**      |
+|            Event Name               |      -       |         OutgoingFax         |       **event_name**    |
+|         Fax Sending Status          |      -       |           SENDING           |         **state**       |
+|         Unique Call ID              |      -       |      1601116173.161150      |       **unique_id**     |
+|         Fax Send Date               |      -       | 06:31:23.232477 2020-11-11 |         **date**        |
+|                -                    |      -       | error starting fax session  | **info->FAXSTATUSSTRING** |
+|                -                    |      -       |         INIT_ERROR          |     **info->FAXERROR**  |
+| Explanation of Fax Sending Error    |      -       |         INIT_ERROR          |     **info->FAXERROR**  |
+|                -                    |      -       |            None             | **info->REMOTESTATIONID** |
+|                -                    |      -       |              0              |     **info->FAXPAGES**   |
+|                -                    |      -       |            None             |    **info->FAXBITRATE**  |
+|                -                    |      -       |            None             |  **info->FAXRESOLUTION** |
+|                -                    |      -       |              "              |      **info->REASON**    |
+
 </div>
 
-## نمونه خروجی رویداد CDR
+## Sample Output of Outgoing Fax Event
+
 
 
 ```shell

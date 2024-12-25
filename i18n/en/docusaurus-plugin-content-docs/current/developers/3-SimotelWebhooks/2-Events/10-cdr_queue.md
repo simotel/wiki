@@ -2,43 +2,47 @@
 ---
 # CDR Queue
 
-پس از اتصال تماس‌گیرنده به یکی از اپراتورهای صف رویداد CDRQueue ایجاد می‌گردد.
+After the caller is connected to one of the queue operators, the **CDRQueue** event is generated.
 
+---
 
-## پارامترهای رویداد
+## Event Parameters
+
 <div class="custom-table">
 
-|        توضیحات        | داده های تعریف شده |        داده های نمونه       |       پارامترها     |
-|:---------------------:|:------------------:|:---------------------------:|:-------------------:|
-|       نام رویداد      |          -         |           CdrQueue          |      **event_name**     |
-|    شناسه یکتای تماس   |          -         |        1610004672.198       |      **cuid**      |
-|                          شناسه تماس دو طرفه                    |                       -                       |            orig.call.1683107010.780601           |  **originated_call_id** |
-|       شماره مبداء     |          -         |             991             |         **src**         |
-|       شماره مقصد      |          -         |             992             |         **dst**         |
-|        شماره صف       |          -         |             901             |        **queue**        |
-|       مدت مکالمه      |          -         |              11             |       **billsec**       |
-|       مدت انتظار      |          -         |              10             |         **wait**        |
-|       کل مدت تماس     |          -         |              21             |       **duration**      |
-|    مدت انتظار در صف   |          -         |              10             |      **agent_wait**     |
-|       وضعیت تماس      |          -         |           ANSWERED          |     **disposition**     |
-|            -          |          -         |              -              |     **queue_status**    |
-|      قطع کنند تماس    |          -         |            caller           |        **hangup**       |
-|           -           |          -         |              -              |       **comment**       |
-|  نام فایل صوتی مکالمه |          -         | 20210107_1610004672.198.mp3 |        **record**       |
-|           -           |          -         |  2021-01-07 07:31:23.860004 |     **answeredtime**    |
-|            -          |          -         |  2021-01-07 07:31:13.289281 |       **ringtime**      |
-|    زمان شروع مکالمه   |          -         |  2021-01-07 07:31:13.247554 |      **starttime**      |
-|    زمان پایان مکالمه  |          -         |  2021-01-07 07:31:35.077859 |       **endtime**       |
-|            -          |          -         |             991             |     **detail->src**     |
-|            -          |          -         |             992             |     **detail->dst**     |
-|            -          |          -         |              11             |   **detail->billsec**   |
-|            -          |          -         |              10             |     **detail->wait**    |
-|            -          |          -         |           ANSWERED          | **detail->disposition** |
-|            -          |          -         |              -              |   **detail->comment**   |
-|            -          |          -         |              1              |    **detail->tries**    |
+|        Description        | Defined Data   |        Sample Data         |       Parameters        |
+|:-------------------------:|:--------------:|:--------------------------:|:-----------------------:|
+|       Event Name          |         -       |         CdrQueue           |      **event_name**     |
+|    Unique Call ID         |         -       |        1610004672.198      |      **cuid**           |
+|    Two-way Call ID        |         -       |        orig.call.1683107010.780601 | **originated_call_id**  |
+|       Source Number       |         -       |             991            |       **src**           |
+|       Destination Number  |         -       |             992            |       **dst**           |
+|       Queue Number        |         -       |             901            |      **queue**          |
+|       Call Duration       |         -       |             11             |      **billsec**        |
+|       Wait Time           |         -       |             10             |       **wait**          |
+|       Total Call Duration |         -       |             21             |      **duration**       |
+|       Agent Wait Time     |         -       |             10             |     **agent_wait**      |
+|       Call Status         |         -       |          ANSWERED          |    **disposition**      |
+|            -              |         -       |             -              |    **queue_status**     |
+|       Call Hang-up By     |         -       |            caller          |      **hangup**         |
+|            -              |         -       |             -              |      **comment**        |
+|       Audio File Name     |         -       | 20210107_1610004672.198.mp3 |     **record**          |
+|            -              |         -       |  2021-01-07 07:31:23.860004 | **answeredtime**       |
+|            -              |         -       |  2021-01-07 07:31:13.289281 |     **ringtime**        |
+|       Call Start Time     |         -       |  2021-01-07 07:31:13.247554 |    **starttime**        |
+|       Call End Time       |         -       |  2021-01-07 07:31:35.077859 |     **endtime**         |
+|            -              |         -       |             991            |    **detail->src**      |
+|            -              |         -       |             992            |    **detail->dst**      |
+|            -              |         -       |             11             | **detail->billsec**     |
+|            -              |         -       |             10             |    **detail->wait**     |
+|            -              |         -       |          ANSWERED          | **detail->disposition** |
+|            -              |         -       |             -              | **detail->comment**     |
+|            -              |         -       |             1              |    **detail->tries**    |
+
 </div>
 
-## نمونه خروجی رویداد CDR Queue
+
+## Sample Output of CDR Queue Event
 
 
 ```shell

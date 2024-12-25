@@ -3,15 +3,16 @@
 ---
 # Exten API
 
-:::tip توصیه
-پیشنهاد می‌شود قبل از مطالعه این مطلب،ابتدا [اینجا](../SimotelWebhooks/DialplanApiComponents/exten_api) را بررسی فرمایید.
+:::tip Recommendation  
+It is recommended to review [this link](../SimotelWebhooks/DialplanApiComponents/exten_api) before studying this content.  
 :::
 
-فرض کنید نیاز می‌باشد زمانی که مشتری با مجموعه شما تماس گرفت اگر آن مشتری طی ۲۴ ساعت گذشته با  مجموعه شما تماس داشته و با یکی از کارمندان 
-مجموعه در ارتباط بوده است حال نیز سیستم تماس جاری مشتری را به همان کارمند متصل بکند و مستقیما تلفن او زنگ بخورد.
 
-برای پیاده سازی این سناریو کافیست از کامپوننت Exten API استفاده کرد،زمانی که تماسی وارد سیستم شد مستقیما به Exten API متصل می‌شود، در اینجا
-اطلاعات تماس گیرنده به سمت وب‌سرویس شما ارسال می‌شوند که شامل
+Assume that when a customer contacts your company, if the customer has had a previous interaction with one of your employees within the last 24 hours, the system should route the current call directly to the same employee's phone.
+
+To implement this scenario, you can use the Exten API component. When a call enters the system, it is directly routed to the Exten API. At this point, the caller's information is sent to your web service, which includes: 
+
+
 
 ```shell
 {
@@ -22,9 +23,9 @@
   "app_name": "Extension API"
 }
 ```
-در این مثال شماره مبداء 09155441  با مجموعه تماس گرفته است،حال نیاز است با استفاده از داده‌های دریافتی از رویداد`New State` به این نتیجه
-برسیم که آیا طی ۲۴ساعت گذشته تماسی از این شماره توسط داخلی پاسخ‌داده شده است یا خیر،برای مثال در این سناریو داخلی 200 در روز گذشته به تماس این
-شماره پاسخ داده است بنابراین نیاز می‌باشد وب‌سرویس در جواب خروجی زیر را به سمت Exten API ارسال کند.
+
+In this example, the source number 09155441 has contacted the company. Now, using the data received from the `New State` event, we need to determine whether this number has been answered by an extension within the last 24 hours. For example, in this scenario, extension 200 answered the call from this number yesterday. Therefore, the web service needs to send the following output to the Exten API in response.
+
 
 ```shell
 {
@@ -33,8 +34,8 @@
 }
 ```
 
-در این مرحله تماس به داخلی 200 متصل شده و تلفن داخلی 200 شروع به زنگ خوردن می‌کند، برای کسب اطلاعات بیشتر درمورد رویداد `New State` [اینجا](../SimotelWebhooks/Events/new_state) مراجعه فرمایید.
+At this stage, the call is connected to extension 200, and the phone of extension 200 starts ringing. For more information about the `New State` event, please refer to [here](../SimotelWebhooks/Events/new_state).
 
-**سناریوی پیاده‌سازی شده در دایل‌پلن**
+**Implemented Scenario in Dialplan**
 
 <a href='https://dialplan.mysup.ir/live/plan/gmcnmdul9rpb79j7ufs8jlybn857qth81y0hi02m5rhfmbma2f' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/gmcnmdul9rpb79j7ufs8jlybn857qth81y0hi02m5rhfmbma2f/plan.png' /></a>
