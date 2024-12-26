@@ -241,6 +241,46 @@
   "sidebar.Autodialer.category.audialer-module": {
     "message": "Autodialer Module",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.User": {
+    "message": "User",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.Trunk": {
+    "message": "Trunk",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.Queue": {
+    "message": "Queue",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.Music_On_Hold": {
+    "message": "Music On Hold",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.Announcement": {
+    "message": "Announcement",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.VoiceMail": {
+    "message": "VoiceMail",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.BlackList": {
+    "message": "BlackList",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.WhiteList": {
+    "message": "WhiteList",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.Fax": {
+    "message": "Fax",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.category.Reports": {
+    "message": "Reports",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
 
   

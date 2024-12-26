@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
 ---
-# Two-way call
-This service creates a two-way call (Number Masking). The caller can be either internal or a telecommunications number. If the caller is a telecommunications number, the trunk name must also be provided. The time_out value is optional, and if not assigned, it is set to 30 seconds by default.
+# Originate call
+This service creates a Originate call (Number Masking). The caller can be either internal or a telecommunications number. If the caller is a telecommunications number, the trunk name must also be provided. The time_out value is optional, and if not assigned, it is set to 30 seconds by default.
 
 :::danger Important note  
-In a two-way call, if the first person does not answer and disconnects the call, the call data (CDR) will not be sent to your web service. If this is important for you, you can use the campaign creation APIs along with the `autodialer route` component to create a two-way call. For more details, please refer to **[this section](/developers/Autodialer_API/call_originate)**.
+In a Originate call, if the first person does not answer and disconnects the call, the call data (CDR) will not be sent to your web service. If this is important for you, you can use the campaign creation APIs along with the `autodialer route` component to create a Originate call. For more details, please refer to **[this section](/developers/Autodialer_API/call_originate)**.
 :::
 
 

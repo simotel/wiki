@@ -2,26 +2,26 @@
 ---
 # Campaign Update
 
-از این سرویس برای ویرایش کمپین استفاده می‌شود.
+This service is used to edit a campaign.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|              توضیحات             | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |     پارامترها     |
-|:--------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------------:|
-| شناسه‌یکتا که از [جستجو](/developers/Autodialer_API/trunk_manager/trunk_manager_search) بدست می‌آید |          -         | 6048aa14095d8438aa64e7c9 |           **           |        id_        |
-|             نام کمپین            |          -         |        imrorteza04       |            *           |        name       |
-|           شناسه‌یکتا ترانک که از [جستجو](/developers/Autodialer_API/trunk_manager/trunk_manager_search) بدست می‌آید          |          -         | 60508b4e095d840c3019e1bd |            *           |  trunk_manager_id |
-|                 -                |          -         |           auto           |                        | interface_context |
-|                 -                |          -         |           text1          |                        |   interface_text  |
-|      فاصله زمانی بین هر تلاش     |          -         |            600           |            *           |    try_interval   |
-|            تعداد تکرار           |          -         |             1            |            *           |        try        |
-|          زمان شروع کمپین         |          -         |     2021-02-19 15:17     |            *           |       start       |
-|         زمان پایان کمپین         |          -         |     2021-02-23 15:17     |            *           |        end        |
-|          شناسه‌یکتا فایل‌صوتی که از [جستجو](/developers/Autodialer_API/announcement/announcement_search) بدست می‌آید         |          -         |   lkjaghdfverfg78345893  |            *           |    announcement   |
-|              توضیحات             |          -         |             -            |                        |    description    |
+| Description                                      | Defined Data   | Example Data             | Required[**]/Optional[*] | Parameters             |
+|:------------------------------------------------:|:--------------:|:------------------------:|:------------------------:|:----------------------:|
+| Unique ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) | -              | 6048aa14095d8438aa64e7c9 | **                       | id_                    |
+| Campaign Name                                    | -              | imrorteza04              | *                        | name                   |
+| Unique Trunk ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) | -              | 60508b4e095d840c3019e1bd | *                        | trunk_manager_id       |
+| Context Value in autodialer component route     | -              | auto                     |                          | interface_context      |
+| Text Value in autodialer component route        | -              | text1                    |                          | interface_text         |
+| Time Interval Between Each Attempt              | -              | 600                      | *                        | try_interval           |
+| Number of Retries                                | -              | 1                        | *                        | try                    |
+| Campaign Start Time                              | -              | 2021-02-19 15:17         | *                        | start                  |
+| Campaign End Time                                | -              | 2021-02-23 15:17         | *                        | end                    |
+| Unique Audio File ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search) | -              | lkjaghdfverfg78345893    | *                        | announcement           |
+| Description                                      | -              | -                        |                          | description            |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -31,8 +31,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -49,7 +49,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -105,7 +105,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -154,7 +154,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

@@ -3,19 +3,19 @@
 ---
 # Announce Update
 
-از این سرویس برای ویرایش آوای بخش تماس انبوه استفاده می‌شود.
+This service is used to edit an audio file for the mass calling section.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|                توضیحات               | داده های تعریف شده |                   داده های نمونه                   | پارامترهای ضروری[**]/منطقی[*] |  پارامترها  |
-|:------------------------------------:|:------------------:|:--------------------------------------------------:|:----------------------:|:-----------:|
-| شناسه‌یکتا آوا که از [جستجو](/developers/Autodialer_API/announcement/announcement_search) بدست می‌آید |          -         |              6033876dc92de036d1390923              |           **           |     id_     |
-|                نام آوا               |          -         |                   test_sound_new                   |            *           |     name    |
-|               نام فایل               |          -         | file-20200825065434-58826-bbc-farsi-pargarmp3_.wav |            *           |   filename  |
-|                توضیحات               |          -         |                    Just for test                   |            -           | description |
+| Description                    | Defined Data   | Example Data                                         | Required[**]/Optional[*] | Parameters             |
+|:--------------------------------:|:--------------:|:----------------------------------------------------:|:------------------------:|:----------------------:|
+| Unique Audio ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search) | -              | 6033876dc92de036d1390923                             | **                       | id_                    |
+| Audio Name                      | -              | test_sound_new                                       | *                        | name                   |
+| Audio File Name                 | -              | file-20200825065434-58826-bbc-farsi-pargarmp3_.wav   | *                        | filename               |
+| Description                     | -              | Just for test                                        | -                        | description            |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 <!--  -->
 
 
@@ -25,8 +25,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -43,7 +43,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -85,7 +85,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -126,7 +126,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

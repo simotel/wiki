@@ -1,21 +1,23 @@
 ---
 sidebar_position: 1
 ---
-# مقدمه
+# Introduction
 
-ماژول تماس‌انبوه در سیموتل این قابلیت را دارد که بدون دخالت انسان و فقط با استفاده از APIهای طراحی شده مدیریت شود،APIهای تماس‌انبوه در سه سطح شامل: 
-بارگذاری اطلا‌عات،ایجاد کمپین و گزارش‌گیری طراحی شده‌اند که در بخش‌های بعدی بصورت دقیق به بررسی هرکدام از این APIها می‌پردازیم.
+The Bulk Calling module in Simotel allows management via API without human intervention. These APIs are designed across three levels: 
+1. **Loading information**,
+2. **Campaign creation**, 
+3. **Reporting**.
 
-:::tip نکته
+In the following sections, we will thoroughly explore each of these APIs.
 
-تا‌زمانی که ماژول تماس‌انبوه به مرکز تماس اضاف نشود امکان استفاده از APIهای آن وجود ندارد. 
+:::tip Note
+Until the Bulk Calling module is added to the call center, it is not possible to use its APIs.
 :::
 
+## Required and Logical Parameters
 
-## پارامترهای ضروری و منطقی
+In future tables, you will encounter a column called `Required[**]/Logical[*]`, which specifies the following:
 
-درآینده در جداول با ستونی به نام `پارمترهای ضروری[**]/منطقی[*]` مواجه می‌شویم که مقادیر آن مشخص کننده
+1. **Required Parameters**: These values must be included in the web service request to Simotel. If not provided, Simotel will return an error in the response.
 
-۱. **پارامترهای ضروری**: حتما باید این مقادیر در درخواست وب‌سرویس به سمت سیموتل ارسال شوند و درغیر اینصورت سیموتل در پاسخ خطا برمی‌گرداند.
-
-۲. **پارامترهای منطقی**: مقادیری که عدم وجودشان در درخواست باعث ایجاد خطا در سیستم نمی‌شود اما منطقی است که باتوجه به درخواست این مقادیر به سمت سیموتل فرستاده شوند.
+2. **Logical Parameters**: These values are not mandatory in the request, but it is logical to include them based on the context of the request. Their absence will not result in a system error.

@@ -16,6 +16,9 @@ This section pertains to the settings for SEA and SA, which we will explain belo
 
 ### Example of Rest Call
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ```shell
 Call <WebService_address>/newstate
 Call <WebService_address>/cdr

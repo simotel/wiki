@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
 ---
-#  قالب سرویس ارسال پیامک
+### SMS Sending Service Template
 
-با توجه به تنوع سرویس های ارسال پیام ، سیموتل با ایجاد زیرساخت قابل توسعه برای ارسال پیام به شما این امکان را می دهد که از سرویس دلخواه خود استفاده کنید. ، در زیر نمونه ای از قابل سرویس ارسال پیامک آورده شده و شما میتوانید با استفاده از کد پایتون فایل زیر را تغییر بدید و سرویس رو در سیموتل آپلود کنید.
+Given the variety of SMS services, Simotel provides a scalable infrastructure for sending messages, allowing you to use your preferred service. Below is an example of an SMS sending service, and you can modify the following Python code to upload the service in Simotel. 
 
-# نمونه 
+# Example 
 ```py
 
 # Define module parameters for the SMS service
@@ -77,13 +77,55 @@ else:
 
 ```
 
-# توضیحات
+### Description
 
-در نمونه قالب بالا تابعی با نام send_message وجود دارد که وظیفه اصلی ارسال پیام رو به عهده دارد و تنها قیمتی نیاز به تغییر دارد همین قسمت می باشد. این تابع دو پارامتر phone_number و message می باشد که حاوی پیام sms و شماره گیرنده است. مابقی کد در این تابع به عهده خودتان می باشد. با استفاده از این مقادیر سرور ارسال پیامک خو را فراخوانی (از مستندات پرووایدر پیامک استفاده کنید) نمایید.
+In the above template, there is a function named `send_message` that is responsible for sending the SMS. The only part that needs to be changed is the configuration for your SMS service provider. This function accepts two parameters: `phone_number` (the recipient's number) and `message` (the content of the SMS). The rest of the code is up to you to implement, where you will call your SMS service provider using these parameters (you can refer to the provider's documentation for this).
 
-# تست
-بهتر است ابتدا کد را در سرور سیموتل قرار دهید و آن را به صورت زیر در shell لینوکس فراخوانی نمایید تا از درستی آن مطمئن شوید
-python3.8 simotel_sms_service_template.py "0915xxxxxxx" "my_message" test
+### Example Code
 
-# لاگ گیری
- هر آنچه مه در این فایل print کنید در آدرس /usr/src/simotel/simotelhelper.log قابل مشاهده می باشد. لذا توصیه میکنیم که خروجی فراخوانی سرویس sms را print کنید
+```python
+import requests
+
+# Define the API endpoint and API key
+api_endpoint = "https://your-sms-service.com/send_sms"
+api_key = "your_api_key"
+
+# Send message function
+def send_message(phone_number, message):
+    # Prepare the payload
+    payload = {
+        'to': phone_number,
+        'message': message,
+        'from': 'your_sender_id',  # This part depends on your SMS provider's configuration
+        'api_key': api_key
+    }
+
+    # Send POST request to the API
+    try:
+        response = requests.post(api_endpoint, data=payload)
+        # Check response status
+        if response.status_code == 200:
+            print("Message sent successfully!")
+        else:
+            print(f"Message sending failed. Error: {response.status_code}, {response.text}")
+    except Exception as e:
+        print(f"Error in sending message: {str(e)}")
+
+# Test the function
+if __name__ == "__main__":
+    phone_number = "0915xxxxxxx"  # Recipient's phone number
+    message = "your_message_content_here"  # Message content
+    send_message(phone_number, message)
+```
+
+### Testing
+
+To test the code, first upload it to the Simotel server and then execute it using the following command in the Linux shell:
+
+
+This will send the message to the specified phone number with the provided message content. If there are any issues with sending the message, the errors will be displayed.
+
+### Logging
+
+Any output you `print()` in this file will be visible in the `/usr/src/simotel/simotelhelper.log` file. It is recommended to print the response of the SMS service call to help track any issues. For example:
+

@@ -28,7 +28,7 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'Example To Use', value: 'usageCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
       {label: 'Example Output', value: 'outputCode'},
     ]}>
 
