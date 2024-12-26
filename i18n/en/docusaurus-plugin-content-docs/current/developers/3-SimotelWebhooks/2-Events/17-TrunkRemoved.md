@@ -3,14 +3,16 @@ sidebar_position: 2
 ---
 # TrunkRemoved
 
-در صورت حذف شدن ترانک یک event حاوی وضعیت جدید آن ارسال خواهد شد.
+
+If a trunk is removed, an event containing its new status will be sent.
+
 
 <div class="custom-table">
 
-|      توضیحات      | داده های تعریف شده |       داده های نمونه       |  پارامترها |
-|:-----------------:|:------------------:|:--------------------------:|:----------:|
-| نام رخداد | TrunkRemoved | - | **event_name** |
-| نام ترانک | - | SimotelTrunk | **trunk_name** |
-| تاریخ رخداد | - | 1675682139.0859237 | **date** |
+|      Description      | Defined Data   |       Sample Data         |  Parameters  |
+|:---------------------:|:--------------:|:--------------------------:|:-----------:|
+| Event Name            | TrunkRemoved   | -                          | **event_name** |
+| Trunk Name            | -              | SimotelTrunk               | **trunk_name** |
+| Event Date            | -              | 1675682139.0859237         | **date**      |
 
 </div>

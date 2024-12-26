@@ -16,7 +16,9 @@ One of the essential features of a contact center is the ability to monitor the 
 
 ## Management Dashboard
 
-To allow for more detailed real-time monitoring of the system, the Dashboard section has been designed. In this section, various reports based on contact center performance indicators are presented as components. By simply dragging them onto the screen, you can create a customized dashboard that displays the report data in chart form.
+To allow for more detailed real-time monitoring of the system, the Dashboard section has been designed. In this section, various reports based on contact center performance indicators are presented as components. By simply dragging them onto the screen,
+you can create a customized dashboard that displays the report data in chart form.
+
 ![dashboard](/img/simotel/dashboard.JPG)
 
 
@@ -86,8 +88,7 @@ One of the main advantages of a software system is its ability to integrate and 
 
 - Persian
 - English
-- Arabic
-- Turkish
+
  
 
  

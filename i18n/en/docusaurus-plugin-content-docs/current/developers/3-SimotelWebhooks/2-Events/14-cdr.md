@@ -3,35 +3,38 @@
 ---
 # CDR
 
-پس از اتمام یک تماس در سیموتل، رویداد CDR(call detail recored) ایجاد و اطلاعات تماس همراه آن ارسال‌ می‌گردد.
+---
+
+After a call ends in SimulTel, the **CDR (Call Detail Record)** event is triggered and call details are sent with it.
 
 
-## پارامترهای رویداد
+## Event Parameters
+
 <div class="custom-table">
 
-|                                توضیحات                               |                داده‌های تعریف‌شده               |                  داده‌های نمونه                  |    پارامتر‌ها    |
-|:--------------------------------------------------------------------:|:---------------------------------------------:|:-----------------------------------------------:|:---------------:|
-|                              نام رویداد                              |                       -                       |                       CDR                       |  **event_name** |
-|                           تاریخ شروع مکالمه                          |                       -                       |            11:55:33.208640 2017-11-12           |  **start_time** |
-|                          تاریخ پایان مکالمه                          |                       -                       |            11:55:51.208640 2017-11-12           |   **end_time**  |
-|                              شماره مبداء                             |                       -                       |                   09991101756                   |     **src**     |
-|                              شماره مقصد                              |                       -                       |                       553                       |     **dst**     |
-|                               نوع تماس                               | incoming- outgoing- local-feature- no defined |                     incoming                    |     **type**    |
-|                              وضعیت تماس                              |          Answered- No Answered- Busy          |                     Answered                    | **disposition** |
-|                              مدت کل تماس                             |                       -                       |                        18                       |   **duration**  |
-|                           مدت زمان انتظار به پاسخ                          |                       -                       |            5           |  **billsec** |
-|                            مدت انتظار تماس                           |                       -                       |                        15                       |     **wait**    |
-|                        نام فایل‌صوتی تماس موفق                        |                       -                       | 0999911_2017111201756.553.151048mp3.7732.164444 |    **record**   |
-| شماره امتیاز داده‌شده در طول تماس(در صورتی که نظر‌سنجی انجام شده باشد) |                       -                       |                        10                       |  **poll_point** |
-|  نام نظرسنجی انجام‌شده در طول تماس (درصورتی که نظرسنجی انجام‌شده باشد) |                       -                       |                      mypoll                     |  **poll_lable** |
-|          نام درگاه‌ورودی به سیموتل          |         -        |       2191305588       | **entry_point** |
-|          نام درگاه‌خروجی به سیموتل          |         -        |       2191305936       | **outgoing_point** |
-|            شناسه یکتای تماس که توسط مرکز تماس تولید می‌گردد           |                       -                       |                  1510564538.919                 |  **cuid**  |
-|                          شناسه تماس دو طرفه  (در صورتی که تماس دو طرفه باشد این فیلد مقدار دارد)                    |                       -                       |            orig.call.1683107010.780601           |  **originated_call_id** |
+|                                Description                               |                Defined Data               |                  Sample Data                  |    Parameters    |
+|:---------------------------------------------------------------------:|:---------------------------------------:|:--------------------------------------------:|:---------------:|
+|                              Event Name                               |                       -                   |                       CDR                      |  **event_name** |
+|                           Call Start Time                             |                       -                   |            11:55:33.208640 2017-11-12         |  **start_time** |
+|                           Call End Time                               |                       -                   |            11:55:51.208640 2017-11-12         |   **end_time**  |
+|                              Source Number                            |                       -                   |                   09991101756                 |     **src**     |
+|                              Destination Number                       |                       -                   |                       553                      |     **dst**     |
+|                               Call Type                                | incoming- outgoing- local-feature- no defined |                     incoming                    |     **type**    |
+|                              Call Status                               |          Answered- No Answered- Busy      |                     Answered                   | **disposition** |
+|                              Total Call Duration                       |                       -                   |                        18                       |   **duration**  |
+|                           Wait Time Before Answer                       |                       -                   |            5                                   |  **billsec**    |
+|                            Call Wait Time                             |                       -                   |                        15                       |     **wait**    |
+|                        Successful Call Audio File Name                  |                       -                   | 0999911_2017111201756.553.151048mp3.7732.164444 |    **record**   |
+| Rating Given During the Call (if a survey was done)                   |                       -                   |                        10                       |  **poll_point** |
+| Survey Name Done During the Call (if a survey was done)              |                       -                   |                      mypoll                    |  **poll_lable** |
+|          SimulTel Incoming Gateway Name                               |         -                               |       2191305588                              | **entry_point** |
+|          SimulTel Outgoing Gateway Name                               |         -                               |       2191305936                              | **outgoing_point** |
+|            Unique Call ID Generated by the Call Center               |                       -                   |                  1510564538.919                |  **cuid**       |
+|                          Bidirectional Call ID                        |                       -                   |            orig.call.1683107010.780601          |  **originated_call_id** |
 </div>
 
 
-## نمونه خروجی رویداد CDR
+## Sample Output of CDR Event
 
 
 ```shell

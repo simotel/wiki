@@ -3,24 +3,24 @@
 ---
 # Inbox Search
 
-از این سرویس برای جستجو اطلاعات صندوق‌های صوتی موجود استفاده می‌شود.
+This service is used to search for existing voicemail box information.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|      توضیحات      | داده های تعریف شده |  داده های نمونه  | پارامترهای ضروری[**]/منطقی[*] |      پارامترها      |
-|:-----------------:|:------------------:|:----------------:|:----------------------:|:-------------------:|
-| جستجو موارد مشابه |     true/false     |       true       |           **           |        alike        |
-|         -         |          -         |         0        |                        |  pagination->start  |
-|         -         |          -         |        20        |                        |  pagination->count  |
-|         -         |          -         |         -        |                        | pagination->sorting |
-|   جستجو از تاریخ  |          -         | 2020-12-25 13:53 |                        |   date_range->from  |
-|   جستجو تا تاریخ  |                    | 2022-12-27 13:53 |                        |    date_range->to   |
-|         -         |          -         |         -        |                        |   conditions->src   |
-|  شماره صندوق‌صوتی  |          -         |        400       |                        |  condition->number  |
+| Description                                  | Defined Data     | Example Data          | Required Parameters[**]/Optional[*] | Parameters              |
+|:--------------------------------------------:|:----------------:|:----------------------:|:-----------------------------------:|:-----------------------:|
+| Search for similar items                     | true/false       | true                   | **                                  | alike                   |
+| -                                            | -                | 0                      |                                     | pagination->start       |
+| -                                            | -                | 20                     |                                     | pagination->count       |
+| -                                            | -                | -                      |                                     | pagination->sorting     |
+| Search from date                             | -                | 2020-12-25 13:53       |                                     | date_range->from        |
+| Search to date                               | -                | 2022-12-27 13:53       |                                     | date_range->to          |
+| -                                            | -                | -                      |                                     | conditions->src         |
+| Voicemail box number                        | -                | 400                    |                                     | condition->number       |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -30,8 +30,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -48,7 +48,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -101,7 +101,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -151,7 +151,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 

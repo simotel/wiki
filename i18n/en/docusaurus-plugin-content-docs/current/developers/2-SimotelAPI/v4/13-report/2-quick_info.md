@@ -2,23 +2,25 @@
 
 ---
 # Quick Info
-:::caution هشدار
-استفاده از این سرویس برای دریافت اطلاعات تماس توصیه نمی شود.لطفا از Quick Search استفاده نمایید.
+
+:::caution
+**Warning**  
+Using this service to retrieve contact information is not recommended. Please use Quick Search instead.
 :::
 
-در‌صورتی که در گزارشی جزئیات اضافی در بخش **Detail** داشته باشد،با استفاده از این API قابل‌ بازیابی می‌باشد.
+This API is used to retrieve additional details in the **Detail** section if available in a report.
 
-**نکته**: این سرویس تنها برای تماس هایی می باشد که وارد صف شده اند لذا استفاده از این سرویس در موارد دیگر از جمله گرفتن اطلاعات تماس کاربردی ندارد.
+**Note**: This service is only applicable for calls that have entered the queue, and should not be used for retrieving contact information in other cases.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|              توضیحات             | داده‌های تعریف شده |   داده‌های نمونه   | پارامترهای ضروری[**]/منطقی[*] | پارامتر‌ها |
-|:--------------------------------:|:-----------------:|:-----------------:|:----------------------:|:---------:|
-| شناسه‌یکتا که از [جستجو](/developers/SimotelAPI/v4/report/quick_search) بدست می‌آید |         -         | 16244299033.75565 |           **           |    cuid   |
+| Description | Defined Data | Sample Data | Required[**]/Logical[*] | Parameters |
+|:-----------:|:------------:|:-----------:|:------------------------:|:----------:|
+| Unique ID obtained from [Quick Search](/developers/SimotelAPI/v4/report/quick_search) | - | 16244299033.75565 | ** | cuid |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -28,8 +30,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -46,7 +48,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -86,7 +88,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -123,7 +125,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 

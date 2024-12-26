@@ -2,28 +2,26 @@
 sidebar_position: 1
 ---
 
-# معرفی و تنظیمات  
+# Introduction and Settings
 
+## Introduction  
+Simotel Event Webhooks are a collection of requests that send information about events occurring in the call center to your web service. Using Event Webhooks, you can quickly be informed about all the events happening in the call center. This section is responsible for managing all the events sent from Simotel to your web service.
 
-## معرفی
-Simotel Event Webhooks مجموعه‌ای ازدرخواست ها هستند که اطلاعات مربوط به رویداد‌های رخ داده در مرکز تماس را به سمت وب‌سرویس شما ارسال می‌کنند، با استفاده از Event Webhooks شما می‌توانید از تمام رویدادهایی که در مرکز تماس رخ می‌دهد به سرعت باخبر شوید. این بخش وظیفه مدیریت تمامی رویداد‌های که از مبداء سیموتل به مقصد وب‌سرویس شما ارسال می‌شوند را برعهده دارد.
+## Settings
 
-## تنظیمات
+To view the settings related to the Simotel Event Webhooks section, go to `Maintenance > Settings > AP Settings`. In the Simotel Event Webhooks section, there are various parts, which we will explain below.
 
-برای مشاهده تنظیمات مربوط به بخش Simotel Event Webhooks به `Maintenance > Settings > AP Settings`  مراجعه فرمایید،در قسمت Simotel Event Webhooks بخش‌های متفاوتی وجود 
-دارد که در پایین به تشریح هرکدام می‌پردازیم
-
-### Event Webhooks Enabled
- مشخص می‌کند سرویس Event Webhooks فعال باشد یا خیر.
+### Event Webhooks Enabled  
+This option determines whether the Event Webhooks service is enabled or not.
  
 ### Event Webhooks Version
-سیموتل توانایی ارسال اطلاعات به سمت وب‌سرویس تحت فرمت‌های مختلف را دارد، بطور کلی دوقالب اصلی وجود دارد
+Simotel has the ability to send information to the web service in various formats. In general, there are two main formats:
 
-- سرویس های G (General): در سرویس های G تمام رویداد ها منحصرا به آدرس وب‌سرویس ارسال می گردند و فراهم کننده، رویدادها را با استفاده از پارامتر event_name تفکیک می کند.
+- **G (General) Services**: In G services, all events are exclusively sent to the web service URL, and the provider separates the events using the `event_name` parameter.
 
-- سرویس های Rest: در سرویس های Rest، نام رویداد به انتهای آدرس اضافه شده و سپس اطلاعات به سمت وب‌سرویس ارسال می‌شوند.
+- **Rest Services**: In Rest services, the event name is appended to the end of the URL, and then the information is sent to the web service.
 
-نمونه‌ فراخوانی rest
+Example of a Rest call:
 
 
 import Tabs from '@theme/Tabs';
@@ -36,13 +34,11 @@ Call <WebService_address>/cdr
 ```
 
 ### Request Method
+- **Get**: Simotel sends the data as parameters to the web service.
 
-- Get: سیموتل داده‌ها را در قالب پارامتر به سمت وب‌سرویس ارسال می‌کند.
+- **Post**: From version 4 (Rest4, G4), data is sent in JSON format in the request body to the web service. In versions 2 and 3, data is sent as parameters, similar to GET.
 
-- Post: از ورژن ۴ (Rest4، G4)، داده‌ها با فرمت json در بدنه درخواست قرار گرفته و به سمت WebService ارسال می گردد. در ورژن های ۲ و ۳ همانند GET به صورت پارامتر ارسال می‌گردد.
-
-
-#### نمونه فراخوانی سرویسG4:
+#### Example of a G4 service call:
 
 <Tabs
     defaultValue="Post"
@@ -74,8 +70,7 @@ Call <WebService_address>/cdr
 </Tabs>
 
 
-#### نمونه فراخوانی سرویسRest4:
-
+#### Example of a Rest4 service call:
 <Tabs
     defaultValue="Post"
     values={[
@@ -106,20 +101,18 @@ Call <WebService_address>/cdr
 </Tabs>
 
 
-### Events
-در این قسمت اطلاعات و رویدادهای سیستم دسته‌بندی شده‌اند و بسته به نیاز، شما مشخص می‌کنید چه اطلاعاتی باید به سمت WebService ارسال شود، رویدادها و اطلاعت 
-آنها بصورت دقیق‌تر در بخش‌های آینده بررسی می‌شوند.
+### Events  
+In this section, the system's events and information are categorized, and depending on your needs, you specify which information should be sent to the WebService. The events and their details will be examined more thoroughly in the upcoming sections.
 
-### API Address
-در اینجا نیز آدرس وب‌سرویس قرار می‌گیرد.
+### API Address  
+Here, the web service URL is provided.
 
-### API Username
-در صورتی که احرازهویتی از سمت وب‌سرویس انجام می‌شود،نام کاربری اینجا وارد می‌شود.
+### API Username  
+If authentication is required by the web service, the username is entered here.
 
-### API Password
-در صورتی که احرازهویتی از سمت وب‌سرویس انجام می‌شود،رمزعبور اینجا وارد می‌شود.
+### API Password  
+If authentication is required by the web service, the password is entered here.
 
-:::tip نکته 
-در برخی از رویداد‌های  SEA پارامتری به نام `unique_id` وجود دارد. به ازای هر تماسی که در سیستم تولید می‌شود یک
-شناسه یکتا تولید می‌شود، بنابراین شما با استفاده از unique_id تماس می‌توانید رویدادهای مختلف مربوط به یک تماس را شناسایی کنید.
+:::tip Note  
+In some SEA events, there is a parameter called `unique_id`. For every call made in the system, a unique identifier is generated. Therefore, using the `unique_id`, you can identify the different events related to a specific call.
 :::

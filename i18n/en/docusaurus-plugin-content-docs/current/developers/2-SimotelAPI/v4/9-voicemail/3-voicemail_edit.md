@@ -3,32 +3,31 @@
 ---
 # Voicemail Edit
 
-از این سرویس برای ویرایش صندوق صوتی استفاده می‌شود.
+This service is used to edit a voicemail box.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|                    توضیحات                    | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |       پارامترها       |
-|:---------------------------------------------:|:------------------:|:------------------------:|:----------------------:|:---------------------:|
-| شناسه یکتای صندوق صوتی که از [جستجو](/developers/SimotelAPI/v4/voicemail/voicemail_search) بدست می‌‌‌آید |          -         | 6033876dc92de036d1390923 |           **           |          id_          |
-|                 نام صندوق‌صوتی                 |          -         |      test voicemail      |            *           |          name         |
-|                شماره‌ صندوق‌صوتی                |          -         |          999999          |            *           |         number        |
-|                    رمزعبور                    |          -         |          999999          |            *           |        password       |
-|                   آدرس‌ایمیل                   |          -         |             -            |                        |         email         |
-|                 درخواست پسورد                 |       yes/no       |            no            |            *           |   required_password   |
-|                       -                       |       yes/no       |            no            |            *           | allow_change_password |
-|                  وضعیت ارسال ایمیل                  |       yes/no       |            no            |            *           |       send_email      |
-|            افزودن فایل‌صوتی به ایمیل           |       yes/no       |            no            |            *           |   attach_file_email   |
-|                       -                       |       yes/no       |            no            |            *           |       play_busy       |
-|                       -                       |       yes/no       |            no            |            *           |    play_unavailable   |
-|                       -                       |       yes/no       |            no            |            *           |      play_welcome     |
-|                       -                       |       yes/no       |            no            |            *           |        Play_CID       |
-|                       -                       |       yes/no       |            no            |            *           |     Play_Envelope     |
-|                       -                       |       yes/no       |            no            |            *           |    Delete_Voicemail   |
-|                       -                       |       yes/no       |            no            |            *           |      more_options     |
-
+| Description                                  | Defined Data     | Example Data          | Required Parameters[**]/Optional[*] | Parameters              |
+|:--------------------------------------------:|:----------------:|:----------------------:|:-----------------------------------:|:-----------------------:|
+| Unique ID of the voicemail box obtained from [search](/developers/SimotelAPI/v4/voicemail/voicemail_search) | -                | 6033876dc92de036d1390923 | **                                  | id_                     |
+| Voicemail box name                           | -                | test voicemail         | *                                   | name                    |
+| Voicemail box number                         | -                | 999999                 | *                                   | number                  |
+| Password                                     | -                | 999999                 | *                                   | password                |
+| Email address                                | -                | -                      |                                     | email                   |
+| Request password                             | yes/no           | no                     | *                                   | required_password       |
+| Allow password change                        | yes/no           | no                     | *                                   | allow_change_password  |
+| Email sending status                         | yes/no           | no                     | *                                   | send_email              |
+| Attach audio file to email                   | yes/no           | no                     | *                                   | attach_file_email       |
+| Play busy greeting                           | yes/no           | no                     | *                                   | play_busy               |
+| Play unavailable greeting                    | yes/no           | no                     | *                                   | play_unavailable        |
+| Play welcome greeting                        | yes/no           | no                     | *                                   | play_welcome            |
+| Play CID (Caller ID) greeting                | yes/no           | no                     | *                                   | Play_CID                |
+| Play envelope greeting                       | yes/no           | no                     | *                                   | Play_Envelope           |
+| Delete voicemail                             | yes/no           | no                     | *                                   | Delete_Voicemail        |
+| More options                                 | yes/no           | no                     | *                                   | more_options            |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -39,8 +38,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -57,7 +56,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 			```php
@@ -118,7 +117,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 			```js
@@ -170,7 +169,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 		```bash

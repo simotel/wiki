@@ -3,22 +3,21 @@
 ---
 # Group Add
 
-از این سرویس برای افزودن گروهی شماره‌ها استفاده می‌شود.
+This service is used to add a group of phone numbers.
 
-# روش دوم برای مثال php
-در روش دوم در مثال php شما می توانید بعد از بارگزاری فایل filename , .csv را به عنوان فیلد ورودی اضافه کنید .
+# Second Method (PHP Example)
+In the second method, in the PHP example, you can add `.csv` as an input field after uploading the file `filename`.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|  توضیحات | داده های تعریف شده |     داده های نمونه     | پارامترهای ضروری[**]/منطقی[*] |  پارامترها  |
-|:--------:|:------------------:|:----------------------:|:----------------------:|:-----------:|
-| نام گروه |          -         |       test_group       |           **           |     name    |
-|  شماره‌ها |          -         | "1111", "2222", "3333" |            *           |   numbers   |
-|  توضیحات |          -         |      just for test     |                        | description |
+|     Description     | Defined Data   | Example Data             | Required[**]/Optional[*] | Parameters  |
+|:-------------------:|:--------------:|:------------------------:|:------------------------:|:-----------:|
+| Group Name          | -              | test_group               | **                       | name        |
+| Phone Numbers       | -              | "1111", "2222", "3333"    | *                        | numbers     |
+| Description         | -              | just for test            |                          | description |
 </div>
 
-
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 import Tabs from '@theme/Tabs';
@@ -27,8 +26,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -37,7 +36,7 @@ import TabItem from '@theme/TabItem';
         defaultValue="PHP"
         values={[
           {label: 'PHP', value: 'PHP'},
-		   {label: 'PHP-example2', value: 'PHP-example2'},
+		  {label: 'PHP-example2', value: 'PHP-example2'},
           {label: 'JS', value: 'JS'},
           {label: 'Curl', value: 'Curl'},
         ]}>
@@ -46,7 +45,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -91,7 +90,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP-example2">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -134,7 +133,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -178,7 +177,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

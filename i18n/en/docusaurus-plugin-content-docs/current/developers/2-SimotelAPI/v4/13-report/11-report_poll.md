@@ -1,27 +1,27 @@
 
 # Poll Search
 
-این سرویس برای بازیابی اطلاعات نظرسنجی می‌باشد.
+This service is used to retrieve survey information.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|          توضیحات          | داده‌های تعریف شده |   داده‌های نمونه  | پارامترهای ضروری[**]/منطقی[*] |      پارامتر‌ها      |
-|:-------------------------:|:-----------------:|:----------------:|:----------------------:|:-------------------:|
-|         شماره مبدا        |         -         |    09121234567    |                        |   conditions->from  |
-|         شماره مقصد        |         -         |        555       |                        |    conditions->to   |
-| برچسب کامپوننت در دایل‌پلن |         -         |       sale       |                        |  conditions->label  |
-|          شماره صف         |         -         |        903       |                        |  conditions->queue  |
-|             -             |         -         |         -        |                        |   conditions->cuid  |
-|       جستجو از تاریخ      |                   | 2019-06-15 15:16 |           **           |   date_range->from  |
-|       جستجو تا تاریخ      |         -         | 2022-06-22 15:16 |           **           |    date_range->to   |
-|             -             |         -         |         0        |                        |  pagination->start  |
-|             -             |         -         |        20        |                        |  pagination->count  |
-|             -             |         -         |         -        |                        | pagination->sorting |
-|     یافتن موارد مشابه     |     true/false    |       true       |           **           |        alike        |
+| Description                     | Defined Data  | Sample Data        | Required[**]/Optional[*] | Parameters            |
+|:--------------------------------:|:-------------:|:------------------:|:------------------------:|:----------------------:|
+| Source Number                   |         -     |    09121234567     |                          |   conditions->from     |
+| Destination Number              |         -     |        555         |                          |   conditions->to       |
+| Component Label in Dialplan     |         -     |       sale         |                          |   conditions->label    |
+| Queue Number                    |         -     |        903         |                          |   conditions->queue    |
+|         -                        |         -     |         -          |                          |   conditions->cuid     |
+| Search From Date                |         -     | 2019-06-15 15:16   |           **             |   date_range->from     |
+| Search To Date                  |         -     | 2022-06-22 15:16   |           **             |   date_range->to       |
+|         -                        |         -     |         0          |                          |   pagination->start    |
+|         -                        |         -     |        20          |                          |   pagination->count    |
+|         -                        |         -     |         -          |                          |   pagination->sorting  |
+| Find Similar Items              |     true/false|       true         |           **             |         alike          |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -32,8 +32,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -50,7 +50,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -93,7 +93,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -146,7 +146,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

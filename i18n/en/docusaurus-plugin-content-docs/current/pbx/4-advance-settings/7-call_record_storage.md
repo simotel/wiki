@@ -1,37 +1,26 @@
-# ضبط‌مکالمات در Storage
+# Call Recording in Storage
 
-برای انتقال فایل‌های صوتی ضبط مکالمات به فضای ذخیره‌سازی مجزا (NAS) نیاز به تنظیم دوبخش می‌باشد
+To transfer recorded audio files of calls to a separate storage space (NAS), two sections need to be configured:
 
-۱- مانت storage و تنظیم سرور درجهت ذخیره‌سازی اطلاعات در مسیر مانت ‌شده
+1. Mounting the storage and configuring the server for data storage in the mounted path.
+2. Configuring the `global.php` file to display recorded calls in the Simotel web interface.
 
-۲- تنظیم فایل global.php برای نمایش مکالمات ضبط شده در محیط وب سیموتل
+### 1. Mounting Storage and Server Configuration
 
-
-
-### ۱- مانت storage  و تنظیم سرور
-
-در مرحله اول با دستور زیر storage تحت‌شبکه را به سرور خود مانت می‌کنیم.
-
+First, use the following command to mount the storage network to your server:
 
 ```shell
-
 mount -t cifs --options user=test,password=test.456 //172.18.XX.XXX/Zabt /mnt/Zabt
-
-user = نام‌کاربری فضای ذخیره‌سازی 
-
-password = رمزعبور فضای ذخیره‌سازی
-
-//172.18.XX.XXX/Zabt =  آدرس و مسیر ضبط مکالمات
-
-/mnt/Zabt = مسیر لوکالی که استوریج مانت می‌شود
-
 ```
 
+- **user**: Username for the storage space.
+- **password**: Password for the storage space.
+- **//172.18.XX.XXX/Zabt**: Address and path for recording calls.
+- **/mnt/Zabt**: The local path where the storage will be mounted.
 
-در مرحله دوم با استفاده از اسکریپت پایتون زیر اقدام به انتقال مکالمات به فضای ذخیره سازی می‌کنیم.
+In the second step, use the following Python script to transfer the calls to the storage space:
 
-```shell
-
+```python
 #author = Morteza Iravani
 #email = irmorteza@hotmail.com
 #create date = 9/17/2017
@@ -46,7 +35,6 @@ import time
 
 src = '/var/spool/asterisk/monitor_converted/'
 dst = '/mnt/Zabt/asterisk_monitor/'
-
 
 def move_files():
     try:
@@ -78,7 +66,6 @@ def move_files():
     except Exception as e:
         logger.exception(e)
 
-
 def worker():
     while True:
         try:
@@ -88,56 +75,40 @@ def worker():
             logger.exception()
         time.sleep(10)
 
-
 if __name__ == '__main__':
     logger.info('file mover version: %s.%s' % (__version__, __edition__))
 
     executor = ThreadPoolExecutor(max_workers=100)
     future = executor.submit(worker)
-
-
-
 ```
 
-درنظر داشته باشید که مقدار متغیر `=dst` در فایل بالا مشخص کننده مسیر ذخیره‌سازی اطلاعات می‌باشد و باتوجه به مسیر mount مربوط به storage باید مقداردهی شود.
+Please note that the value of the variable `dst` in the script above specifies the storage path, and it should be set according to the mount path of the storage.
 
-درنهایت نیز فایل monitor_files_mover.py(اسکریپت پایتون بالا) را در مسیر /usr/src/simotel-file-mover/ ایجاد می‌نماییم  و با دستور زیر اسکریپت پایتون را اجرا می‌کنیم.
+Finally, create the `monitor_files_mover.py` (the above Python script) in the `/usr/src/simotel-file-mover/` directory and run the script using the following command:
 
 ```shell
-
 python3.4 /usr/src/simotel-file-mover/monitor_files_mover.py &
-
 ```
 
-
-:::tip نکته
-برای اجرای اسکریپت بالا از قابلیت screen لینوکس استفاده کنید تا برنامه بصورت خودکار در background فعال شود.
+:::tip Note
+Use the Linux screen feature to run the above script so that the program runs automatically in the background.
 :::
 
-
-:::tip نکته
-پیشنهاد می‌شود دستور بالا در فایل rc.local ثبت گردد تا پس از ریبوت برنامه بصورت خودکار در background فعال شود.
+:::tip Note
+It is recommended to register the above command in the `rc.local` file so that the program runs automatically in the background after rebooting.
 :::
 
+### 2. Configuring the global.php File
 
+Edit the `global.php` file located at `/var/www/html/global.php` to change the value of `"call_record_directory"` so that recorded calls can also be visible in the web interface.
 
-### ۲- تنظیم فایل global.php
-
-
-با مراجعه به فایل ` /var/www/html/global.php` اقدام به تفییر مقدار `<="call_record_directory"` می‌کنیم تا از این به بعد در محیط وب نیز مکالمات قابل مشاهده باشند.
-
-
-```shell
-
+```php
 "pbx"=> array(
-                "call_record_directory"=> "/mnt/Zabt/asterisk_monitor/",    این مقدار باید به مسیر جدید تغییر پیدا کند
+                "call_record_directory"=> "/mnt/Zabt/asterisk_monitor/",  // This value should be changed to the new path
                 "voicemail_directory"=> "/var/spool/asterisk/voicemail/simotel-voicemail/",
                 "voicemailv2_directory"=> "/var/spool/asterisk/voicemailv2/"
-
-
 ```
 
-
-:::caution هشدار
-درنظر داشته باشید که تغییرات اعمال شده با آپدیت سیستم از بین می‌روند،پس حتما قبل از آپدیت، پشتیبانی از تنظیمات بصورت دستی تهیه فرمایید.
+:::caution Warning
+Be aware that changes made may be lost with system updates, so be sure to back up your settings manually before updating.
 :::

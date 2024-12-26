@@ -1,16 +1,15 @@
 ---
 
 ---
-# تماس دوطرفه
+# Originate Call
 
-:::tip توصیه
-پیشنهاد می‌شود قبل از مطالعه این مطلب،ابتدا [اینجا](/developers/SimotelAPI/v4/call-originate) را بررسی فرمایید.
+:::tip Recommendation
+It is recommended to review [this](../SimotelAPI/v4/call-originate) before studying this section.
 :::
 
-### ۱: ایجاد تماس دوطرفه بین دو داخلی 570 و 553
+### 1: **Call Originate** Between Extensions 570 and 553
 
-
- ## نمونه فراخوانی 
+## **Sample Invocation**
 <!--  -->
 
 import Tabs from '@theme/Tabs';
@@ -19,8 +18,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'ٍExample To Use ', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -37,7 +36,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -81,7 +80,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js	
@@ -122,7 +121,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 		```bash
@@ -163,22 +162,19 @@ import TabItem from '@theme/TabItem';
 
 <!--  -->
 
-### ۲: ایجاد تماس دوطرفه بین شماره 09376131239 و داخلی 521
+### 2: **Call Originate** Between Number 09371234567 and Extension 521
+
+Since the exit path for the caller (the first person in the call) is determined by the `trunk_name` parameter, it is essential to specify this value in the scenario. In this example, it is set to **Cisco**.
 
 
-باتوجه به اینکه مسیر خروجی caller(نفر اول تماس) توسط پارامتر `trunk_name` مشخص می‌شود،وجود این مقدار در سناریو ضروری می‌باشد.
-که در مثال برابر با **Cisco** می‌باشد.
-
-
-## نمونه فراخوانی 
-
+## Sample Invocation
 <!--  -->
 
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -195,7 +191,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -213,7 +209,7 @@ import TabItem from '@theme/TabItem';
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	  CURLOPT_CUSTOMREQUEST => 'PUT',
 	  CURLOPT_POSTFIELDS =>'{
-		"caller":"09376131239",
+		"caller":"09371234567",
 		"callee":"521",
 		"context":"main_routing",
 		"caller_id":"557",
@@ -240,7 +236,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -260,7 +256,7 @@ import TabItem from '@theme/TabItem';
 					"Content-Type": "application/json"
 				  },
 				  "data": JSON.stringify({
-					"caller": "09376131239",
+					"caller": "09371234567",
 					"callee": "521",
 					"context": "main_routing",
 					"caller_id": "557",
@@ -282,7 +278,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 ```bash
 	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
@@ -290,7 +286,7 @@ import TabItem from '@theme/TabItem';
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
 	--data-raw '{
-		"caller":"09376131239",
+		"caller":"09371234567",
 		"callee":"521",
 		"context":"main_routing",
 		"caller_id":"557",
@@ -323,28 +319,24 @@ import TabItem from '@theme/TabItem';
 
 <!--  -->
  
-### ۳: ایجاد تماس بین داخلی 521 و شماره 09376131239
- 
+### 3: **Call Originate** Between Extension 521 and Number 09371234567
 
-دقت فرمایید باتوجه به اینکه مسیر خروجی calle(نفر دوم تماس) توسط پارامتر `context` مشخص می‌شود پس در صورتی که نفر دوم تماس بر
-روی شبکه مخابراتی بود نیاز می‌باشد context یا بهتر است بگوییم کامپوننت `Outgoing Route` مربوط به این context به شبکه مخابراتی
-دسترسی داشته باشد،برای انجام این کار کامپوننت `Outgoing Route` را به کامپوننت ترانک متصل می‌کنیم.
+Note that since the exit path for the callee (the second person in the call) is determined by the `context` parameter, if the callee is on the telecommunication network, it is necessary for the corresponding `Outgoing Route` component to have access to the telecommunication network. To achieve this, the `Outgoing Route` component is connected to the trunk component.
 
-در این مثال مقدار context برابر با **main_routing** قرار داده شده است و در کامپوننت Outgoing_Route نیز مقدار context  برابر با
- **main_routing** تنظیم شده‌است.بنابراین تماس نفر دوم از این Outgoing Route خارج شده که به ترانک نیز دسترسی دارد.
+In this example, the value of `context` is set to **main_routing**, and in the `Outgoing_Route` component, the `context` is also configured to **main_routing**. Therefore, the second person's call exits via this `Outgoing Route`, which has access to the trunk.
  
 <a href='https://dialplan.mysup.ir/live/plan/i1ywiloewqlybxrsrz0on5aqdwbu8vw2t2tjurzk1a4k91xqjo' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/i1ywiloewqlybxrsrz0on5aqdwbu8vw2t2tjurzk1a4k91xqjo/plan.png' /></a>
 
 
 
- ## نمونه فراخوانی 
+ ## Sample Invocation
 
 <!--  -->
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -361,7 +353,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
  ```php
@@ -380,7 +372,7 @@ import TabItem from '@theme/TabItem';
 	  CURLOPT_CUSTOMREQUEST => 'PUT',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"521",
-		"callee":"09376131239",
+		"callee":"09371234567",
 		"context":"main_routing",
 		"caller_id":"557",
 		"timeout":"30"
@@ -405,7 +397,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -426,7 +418,7 @@ import TabItem from '@theme/TabItem';
 				  },
 				  "data": JSON.stringify({
 					"caller": "521",
-					"callee": "09376131239",
+					"callee": "09371234567",
 					"context": "main_routing",
 					"caller_id": "557",
 					"timeout": "30"
@@ -446,7 +438,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash
@@ -456,7 +448,7 @@ import TabItem from '@theme/TabItem';
 	--header 'Content-Type: application/json' \
 	--data-raw '{
 		"caller":"521",
-		"callee":"09376131239",
+		"callee":"09371234567",
 		"context":"main_routing",
 		"caller_id":"557",
 		"timeout":"30"
@@ -486,16 +478,16 @@ import TabItem from '@theme/TabItem';
 
 
 <!--  -->
-### ۴: ایجاد تماس بین شماره 31041570 و شماره 09376131239
+### 4: Originate Call between 31041570 and 09371234567
 
 
- ##  نمونه فراخوانی 
+ ##  Sample Invocation 
 
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -512,7 +504,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -531,7 +523,7 @@ import TabItem from '@theme/TabItem';
 	  CURLOPT_CUSTOMREQUEST => 'PUT',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"31041570",
-		"callee":"09376131239",
+		"callee":"09371234567",
 		"context":"main_routing",
 		"caller_id":"557",
 		"trunk_name":"Cisco",
@@ -557,7 +549,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -578,7 +570,7 @@ import TabItem from '@theme/TabItem';
 					  },
 					  "data": JSON.stringify({
 						"caller": "31041570",
-						"callee": "09376131239",
+						"callee": "09371234567",
 						"context": "main_routing",
 						"caller_id": "557",
 						"trunk_name": "Cisco",
@@ -599,7 +591,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash
@@ -609,7 +601,7 @@ import TabItem from '@theme/TabItem';
 	--header 'Content-Type: application/json' \
 	--data-raw '{
 		"caller":"31041570",
-		"callee":"09376131239",
+		"callee":"09371234567",
 		"context":"main_routing",
 		"caller_id":"557",
 		"trunk_name":"Cisco",
@@ -641,51 +633,49 @@ import TabItem from '@theme/TabItem';
 <!--  -->
 
 
-### ۵: اعمال محدودیت زمان مکالمه بر روی تماس دوطرفه
+### 5: Apply call time limit on a Originate call
 
-برای اعمال محدودیت زمانی در مکالمه نیاز می‌باشد از API دیگری  به نام `Trunk API` کمک گرفت که در واقع یک کامپوننت در Dialplan می‌باشد
-که وظیفه ارسال اطلاعات تماس به سمت وب‌سرویس و در پاسخ دریافت شماره نفر دوم تماس و مقدار محدودیت  زمانی `call_limit` از وب‌سرویس را برعهده دارد.
- 
-برای کسب اطلاعات بیشتر در مورد `Trunk API` به [اینجا](../SimotelWebhooks/DialplanApiComponents/trunk_api) مراجعه کنید.
+To apply a time limit on the call, another API called `Trunk API` is required, which is a component in the Dialplan. Its role is to send call information to the web service and receive the second party's number and the `call_limit` from the web service in response.
 
-**بطور کلی پیاده‌سازی سناریو به چهار  بخش تقسیم می‌شود**
+For more information about the `Trunk API`, visit [here](../SimotelWebhooks/DialplanApiComponents/trunk_api).
 
-**۱-**  ارسال درخواست تماس دوطرفه توسط وب‌سرویس، پس از دریافت درخواست تماس دوطرفه از وب‌سرویس، مرکز تماس شروع به تماس گرفتن با شماره اول می‌کند.
+**The implementation of the scenario is divided into four main steps:**
 
-**۲-**  پس از اینکه شماره اول به تماس پاسخ داد کامپوننت `Trunk API` درخواستی با شماره نفر اول  تماس به همراه اطلاعت دیگر تماس را به سمت وب‌سرویس شما ارسال می‌کند، در اینجا وب‌
-سرویس در جواب شماره نفر دوم تماس به همراه محدودیت زمانی را به سمت مرکز تماس برمی‌گرداند و مرکزتماس با نفر دوم نیز تماس می‌گیرد.
+**1-** A Originate call request is sent by the web service. After receiving the Originate call request, the contact center starts calling the first number.
 
-**۳-**  پس از پاسخ دادن نفر دوم، تماس برقرار می‌شود و محدودیت زمانی بر روی تماس اعمال می‌شود و به محض رسیدن به محدودیت زمانی کانال تماس از سمت مرکز
-تماس قطع می‌شود.در اینجا قابلیتی وجود دارد که چند دقیقه قبل از پایان مکالمه مرکز تماس به نفر اول تماس (مشاور یا ...) هشدار بدهد که زمان در حال به پایان رسیدن است.
+**2-** After the first number answers the call, the `Trunk API` component sends a request with the first party's number and other call details to the web service. The web service then returns the second party's number and the time limit to the contact center, which then proceeds to call the second party.
 
-**۴-**  پس از پایان رسیدن تماس، اطلاعات کامل تماس با استفاده از رویداد `CDR` مرکزتماس به سمت وب‌سرویس ارسال می‌شود و با استفاده از `unique id` ارسالی در مرحله دوم می‌توانید گزارشات تماس‌ها را از یک‌دیگر تفکیک کنید.
+**3-** After the second party answers, the call is established, and the time limit is applied. As soon as the time limit is reached, the call channel is disconnected by the contact center. There is a feature where the contact center can warn the first party (consultant, etc.) a few minutes before the conversation ends that time is running out.
 
-برای کسب اطلاعات بیشتر در مورد `CDR` به [اینجا](../SimotelWebhooks/Events/cdr) مراجعه کنید.
+**4-** After the call ends, the full call details are sent to the web service using the `CDR` event. With the `unique id` sent in the second step, you can differentiate the call reports.
+
+For more information about `CDR`, visit [here](../SimotelWebhooks/Events/cdr).
 
 
-در پایین سناریوی پیاده سازی شده در دایل‌پلن که به جای کامپوننت Trunk از کامپوننت **Trunk API** استفاده شده نشان داده شده‌است.
-دقت فرمایید که در تنظیمات مربوط به **Trunk API** آدرس وب‌سرویس خود را قرار دهید.
+The implementation scenario in the Dialplan, where the **Trunk API** component is used instead of the Trunk component, is shown below. 
+
+Please make sure to set your web service address in the **Trunk API** settings.
 
 <a href='https://dialplan.mysup.ir/live/plan/1mdp1s7bw0860pa4tng7unmancjydue62x7zuidd9jayi9if5s' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/1mdp1s7bw0860pa4tng7unmancjydue62x7zuidd9jayi9if5s/plan.png' /></a>
 
-### ۶: ضبط مکالمات تماس دوطرفه
-برای فعال‌سازی ضبط مکالمات،کافیست از کامپوننت `Mix Monitor` در دایل‌پلن استفاده کنید. پس از پایان مکالمه نام فایل‌صوتی به عنوان پارامتر رویداد 
-`CDR` به سمت وب‌سرویس ارسال می‌شود.برای دانلود فایل از API `reports/quick/cdr` استفاده می‌شود.برای کسب اطلاع بیشتر به [اینجا](../SimotelAPI/v4/report/audio_download) مراجعه فرمایید.
+### 6: Record Originate call conversations
+
+To enable call recording, simply use the `Mix Monitor` component in the Dialplan. After the call ends, the audio file name is sent as a parameter in the `CDR` event to the web service. To download the file, the `reports/quick/cdr` API is used. For more information, visit [here](../SimotelAPI/v4/report/audio_download).
 
 <a href='https://dialplan.mysup.ir/live/plan/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu/plan.png' /></a>
 
 
-### ۷: انجام نظرسنجی پس از پایان مکالمه
-با اتصال کامپوننت `poll` به خروجی `S` کامپوننت `Trunk API` می‌توان پس از پایان مکالمه نظرسنجی انجام داد،
-امتیاز نظرسنجی به عنوان پارامتر در رویداد `CDR` به سمت وب‌سرویس ارسال می‌شود.
+### 7: Conduct a survey after the call
+
+By connecting the `poll` component to the output `S` of the `Trunk API` component, a survey can be conducted after the call ends. The survey score is sent as a parameter in the `CDR` event to the web service.
  
 <a href='https://dialplan.mysup.ir/live/plan/hdy7b9nhxaiu6co3o0ijppybho1z14ht2d38ya098w9pz3mmo8' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/hdy7b9nhxaiu6co3o0ijppybho1z14ht2d38ya098w9pz3mmo8/plan.png' /></a>
 
-### ۸: اعلام هشدار قبل از به پایان رسیدن تماس
+### 8: Warning Before Call Ends
 
-در تماس دوطرفه این قابلیت وجود دارد که چند دقیقه قبل از این که تماس قطع شود برای نفر دوم تماس (مشاور یا ...) بوقی مبنی بر اینکه به انتهای تماس رسیده‌اید پخش شود و اطلاع‌رسانی صورت گیرد.
+In a two-way call, this feature allows a beep to be played for the second party (advisor, etc.) a few minutes before the call is disconnected, notifying them that the call is about to end.
 
-برای فعال‌سازی این قابلیت کافیست در بخش API فایل simotel.ini به مسیر /etc/simotel تنظیمات زیر اعمال شود.
+To activate this feature, simply add the following settings in the simotel.ini file under the path /etc/simotel.
 
 ```shell
 
@@ -699,19 +689,19 @@ call_limit_warning_beeper_enabled = True
 	
 ```
 
-۱. **call_limit_warning_beeper_enabled**: این پارامتر call_limit را در exten، trunk و ... فعال می‌کند. چنانچه از این پارامتر در تماس استفاده شود اگر این گزینه فعال باشد برای تماس گیرنده هشدار پایان تماس پخش می‌شود.
+1. **call_limit_warning_beeper_enabled**: This parameter activates the call_limit in exten, trunk, etc. When used in a call, if this option is enabled, a warning beep will be played for the caller before the call ends.
 
-۲. **call_limit_warning_beeper_announce**: فایل صوتی که برای تماس گیرنده پخش می‌شود که یا باید کاراکترها و کلمات مجاز باشد یا آدرس کامل فایل.
+2. **call_limit_warning_beeper_announce**: The audio file to be played for the caller, which must either contain valid characters and words or be the full path to the file.
 
-۳. **call_limit_warning_beeper_time_to_end_sec**: مشخص کننده این می‌باشد که چه مقدار زمانی به ثانیه به پایان call_limit باید این هشدار داده شود. مثلا برای 4 دقیقه باید 240 ثانیه قرار دهید و براساس ثانیه می‌باشد.
+3. **call_limit_warning_beeper_time_to_end_sec**: Specifies the number of seconds before the call limit ends when the warning should be given. For example, for a 4-minute warning, set this to 240 seconds. It is based on seconds.
 
-۴. **call_limit_warning_beeper_repeat_time_sec**: مشخص کننده این می‌باشد که اگر به call_limit رسید، هر‌چند ثانیه باید پیام را تکرار کند و براساس ثانیه می‌باشد.
+4. **call_limit_warning_beeper_repeat_time_sec**: Specifies how often the warning message should be repeated after the call limit is reached, in seconds.
 
 
-### ۹:پخش موزیک انتظار برای نفر اول تماس
+### 9: Play Hold Music for the First Party
 
-پس از پاسخ دادن نفر اول تماس سیستم شروع به تماس گرفتن با نفر دوم می‌کند،در این بازه زمانی برای نفر اول صدای بوق خوردن پخش می‌شود،شاید این موضوع برای کاربر عجیب باشد و حتی قبل از پاسخ دادن نفر دوم تماس را قطع کند.
+After the first party answers the call, the system starts dialing the second party. During this time, a ringing sound is played for the first party, which might confuse the user and even lead to them hanging up before the second party answers.
 
-در تماس‌دوطرفه می‌توان بعد از اینکه نفر اول به تماس پاسخ داد و قبل از تماس گرفتن با نفردوم برای نفر اول موزیک انتظار پخش کرد. قابلیت پیاده سازی موزیک انتظار پویا به ازای کاربر نیز وجود دارد که موضوع اصلی ما در این مطلب نمی‌باشد.برای استفاده از این قابلیت کافیست در سناریوی خود از کامپوننت `Announcement` استفاده کنید.
+In a Originate call, you can play hold music for the first party after they answer and before the second party is called. There is also the option to implement dynamic hold music per user, though this is not the main focus here. To use this feature, simply use the `Announcement` component in your scenario.
 
 <a href='https://dialplan.mysup.ir/live/plan/6bd4pe2ng8gxreqszgj6aryb6vpmd55nfqjb6jszvlj4m0sf4k' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/6bd4pe2ng8gxreqszgj6aryb6vpmd55nfqjb6jszvlj4m0sf4k/plan.png' /></a>

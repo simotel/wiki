@@ -3,25 +3,24 @@
 ---
 # Queue Ordered
 
-این سرویس برای بازیابی اطلاعات جدول جستجوی صف از ابتدا تا انتها کاربرد دارد، پارامتر ورودی این سرویس id رکوردی است که می‌خواهید اطلاعات بعد از آن بازیابی نمایید، خروجی سرویس رکوردهای جدول بصورت ترتیبی می‌باشد.(در هر فراخوانی 20 رکورد به ترتیب بازگردانده می‌شود).
+This service is used to retrieve records from the search table sequentially from the beginning to the end. The input parameter of this service is the record ID after which you want to retrieve the information. The output of the service will be the records from the table in order (20 records are returned sequentially per call).
 
-:::tip نکته
-درصورتی که می‌خواهید اطلاعات جدول را از ابتدا بازیابی کنید مقدار پارامتر id_ برابر با خالی قرار دهید.
+:::tip Note
+If you want to retrieve the table data from the beginning, set the id_ parameter to empty.
 :::
 
-:::tip نکته
-پارامتر last_id در جواب سمت شما برگردانده می‌شود و id آخرین رکورد بازیابی شده را به شما می‌دهد، پس برای بازیابی اطلاعات بعدی(به ترتیب) این شناسه را به عنوان ورودی دوباره به سرویس بدهید.
+:::tip Note
+The last_id parameter will be returned in the response and gives you the ID of the last retrieved record. To retrieve the next set of records (in order), use this ID as input again.
 :::
 
-
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-| توضیحات                                                         | داده های تعریف شده | داده های نمونه           | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|-----------------------------------------------------------------|--------------------|--------------------------|-------------------------------|-----------|
-| شناسه یکتای که می‌خواهیم اطلاعات بعد از آن به ترتیب بازیابی شوند(last_id) |                    | 5ddb9e925171cd0429088bad |                               | id_       |
+| Description                                                    | Defined Data      | Sample Data               | Required[*]/Optional[**] | Parameters |
+|----------------------------------------------------------------|-------------------|---------------------------|--------------------------|------------|
+| Unique ID after which the records should be retrieved sequentially (last_id) |                   | 5ddb9e925171cd0429088bad  |                          | id_        |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 
 import Tabs from '@theme/Tabs';
@@ -30,8 +29,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -48,7 +47,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 ```php
 	<?php
@@ -87,7 +86,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -124,7 +123,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

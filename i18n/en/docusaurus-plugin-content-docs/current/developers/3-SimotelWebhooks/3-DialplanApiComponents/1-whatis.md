@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
 ---
-# Component Api چیست 
+# What is Component Api  
 
-کامپوننت‌های مربوط به API در دایل‌پلن امکان مدیریت تماس‌ها را بصورت پویا به شما می‌دهند، با استفاده از این کامپوننت‌ها شما می‌توانید یک تعامل بین وب‌سرویس و مرکز تماس ایجاد کنید که در نهایت وب‌سرویس شما با توجه به داده‌های دریافتی از کامپوننت (request) وتحلیل شرایط موجود نتیجه‌گیری می‌کند که چه جوابی به درخواست کامپوننت دهد(response).
+When using the API components in DialPlan, they provide dynamic call management capabilities. With these components, you can establish an interaction between the web service and the call center, where your web service, based on the data received from the component (request) and the analysis of the current conditions, determines what response to send back to the component's request (response).

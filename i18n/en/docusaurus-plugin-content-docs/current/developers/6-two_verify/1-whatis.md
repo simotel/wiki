@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 ---
-# احراز هویت دو مرحله ای
+### Two-Factor Authentication
 
-معمولا برای امنیت بیشتر سرویس ها از تایید دو مرحله ای استفاده می شود ،
-این تایید می تواند به صورت پیامکی باشد.
+Two-factor authentication (2FA) is commonly used to enhance the security of services. This verification can be done via SMS.

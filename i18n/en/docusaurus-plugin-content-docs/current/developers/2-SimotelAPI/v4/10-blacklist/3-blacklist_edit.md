@@ -4,18 +4,18 @@
 
 # BlackList Edit
 
-از این سرویس برای ویرایش لیست سیاه استفاده می‌شود.
+This service is used to edit the blacklist.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|              توضیحات              | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:---------------------------------:|:------------------:|:------------------------:|:----------------------:|:---------:|
-| شناسه یکتا که از [جستجو](/developers/SimotelAPI/v4/blacklist/blacklist_search) بدست می‌آید |          -         | 6033876dc92de036d1390923 |           **           |    id_    |
-|            شماره مدنظر            |          -         |            999           |            *           |   number  |
-|              توضیحات              |          -         |             -            |                        |  comment  |
+|              Description              | Defined Data | Sample Data | Required[*]/Logical[*] | Parameters |
+|:-----------------------------------:|:------------:|:-----------:|:----------------------:|:----------:|
+| Unique ID obtained from [Search](/developers/SimotelAPI/v4/blacklist/blacklist_search) |          -         | 6033876dc92de036d1390923 |           **           |    id_    |
+| Target Number                        |          -         |            999           |            *           |   number  |
+| Description                          |          -         |             -            |                        |  comment  |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 
 <!--  -->
@@ -26,8 +26,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -44,7 +44,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -91,7 +91,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -132,7 +132,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

@@ -1,40 +1,40 @@
----
+```markdown
 title: "Reports"
 sidebar_label: "Reports"
 
 ---
 
-# گزارشات
+# Reports
 
-در این بخش گزارشات مربوط به کمپین‌های تماس انبوه قابل مشاهده می‌باشند،درنظر داشته باشید گزارشات مربوط به کمپین‌ها با وضعیت running به محض ارسال تماس نمایش داده نمی‌شود و با کمی فاصله زمانی این گزارشات پردازش می‌شوند.
+In this section, reports related to bulk calling campaigns can be viewed. Note that reports for campaigns with a **running** status are not displayed immediately after calls are made. There may be a short delay while these reports are processed.
 
-## فیلترهای بخش گزارشات
+## Report Filters
 
-- **From**: تاریخ شروع گزارش.
+- **From**: Start date of the report.
 
-- **To**: تاریخ پایان گزارش.
+- **To**: End date of the report.
 
-- **Number**: با این پارامتر می‌توانید وضعیت تماس شماره‌ی خاصی را بدست بیاورید.
+- **Number**: Use this parameter to check the call status for a specific number.
 
-- **Status**: نمایش گزارش بر اساس وضعیت تماس(همه،پاسخ‌ داده ‌شده،پاسخ‌داده‌نشده، مشغول، از‌دست‌رفته).
+- **Status**: Display reports based on call status (All, Answered, Unanswered, Busy, Missed).
 
-- **Campaign**: نمایش گزارش بر اساس نام کمپین.
+- **Campaign**: Display reports based on the campaign name.
 
-- **Separated By**: با استفاده از این قابلیت امکان نمایش اطلاعات بصورت نموداری وجود دارد،دراین قسمت امکان نمایش گزارشات بر اساس پارامترهای(کمپین،تاریخ،ساعت،روزهای هفته ) وجود دارد.
+- **Separated By**: Enables graphical representation of data. Reports can be displayed based on parameters such as Campaign, Date, Time, or Day of the Week.
 
-## فیلدهای گزارشات
+## Report Fields
 
-- **Date**: تاریخ برقراری تماس.
+- **Date**: The date the call was made.
 
-- **Campaign**: نام کمپین.
+- **Campaign**: The campaign name.
 
-- **Number**: شماره‌ای مقصدی که با آن تماس گرفته شده است.
+- **Number**: The destination number that was called.
 
-- **Tries**: تعداد تلاش‌ها انجام شده برای پاسخگویی فرد.
+- **Tries**: The number of attempts made to reach the recipient.
 
-- **Duration**: مدت زمان مکالمه صورت گرفته.
+- **Duration**: The duration of the call.
 
-- **Status**: وضعیت تماس برقرار شده.
+- **Status**: The status of the call.
 
-- **Details**: جزئیات تماس برقرار شده.
-
+- **Details**: Details of the call made.
+```

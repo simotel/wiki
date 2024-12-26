@@ -3,30 +3,33 @@ sidebar_position: 2
 ---
 # AutoDialerReport
 
-پس از پایان هر تماس در ماژول تماس انبوه نتیجه تماس ارسال خواهد شد.
 
+After the end of each call in the bulk calling module, the call result will be sent.
+
+---
 
 <div class="custom-table">
 
-|      توضیحات      | داده های تعریف شده |       داده های نمونه       |  پارامترها |
-|:-----------------:|:------------------:|:--------------------------:|:----------:|
-| نام رویداد | AutoDialerReport | - | **event_name** |
-| تاریخ شروع مکالمه | - | 2023-02-07 19:09:34.201000 | **start** |
-| تاریخ پایان مکالمه | - | 2023-02-10 19:09:00 | **end** |
-| شناسه کمپین | - | 63e24b3e3ba6c708b7612152 | **campaign_id** |
-| نام کمپین | - | Simotel_campaign | **campaign** |
-| به بخش ماژول تماس انبوه مراجعه شود | - | context_sample | **interface_context** |
-| به بخش ماژول تماس انبوه مراجعه شود | - | text_sample | **interface_text** |
-| شماره مقصد | - | 09151111111 | **number** |
-| وضعیت تماس | Answered- No Answered- Busy | Answered | **disposition** |
-| تعداد تلاش ها | - | 1 | **try** |
-| تکرار کمپین | - | 8 | **repeat** |
-| مدت تماس | - | 5 | **billsec** |
-| مدت انتظار تماس | - | 3 | **wait** |
-| جزيیات تلاش ها | - | [JSON...] | **tries** |
+|      Description      | Defined Data   |       Sample Data         |  Parameters  |
+|:---------------------:|:--------------:|:--------------------------:|:-----------:|
+| Event Name            | AutoDialerReport | -                        | **event_name** |
+| Call Start Time       | -              | 2023-02-07 19:09:34.201000 | **start**     |
+| Call End Time         | -              | 2023-02-10 19:09:00      | **end**       |
+| Campaign ID           | -              | 63e24b3e3ba6c708b7612152 | **campaign_id** |
+| Campaign Name         | -              | Simotel_campaign         | **campaign**  |
+| Interface Context     | -              | context_sample           | **interface_context** |
+| Interface Text        | -              | text_sample              | **interface_text** |
+| Destination Number    | -              | 09151111111              | **number**    |
+| Call Status           | Answered- No Answered- Busy | Answered         | **disposition** |
+| Number of Tries       | -              | 1                        | **try**       |
+| Campaign Repeat Count | -              | 8                        | **repeat**    |
+| Call Duration         | -              | 5                        | **billsec**   |
+| Call Wait Duration    | -              | 3                        | **wait**      |
+| Try Details           | -              | [JSON...]                | **tries**     |
+
 </div>
 
-## نمونه خروجی رویداد AutoDialer
+## Sample Output of AutoDialer Event
 
 ```shell
 {

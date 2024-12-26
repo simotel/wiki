@@ -1,17 +1,15 @@
 ---
 sidebar_position: 2
 ---
-# ping (تست ارتباط)
+# ping (connection test)
+## Introduction
+You send a ping request to the Simotel server, and if everything is in order, you will receive a Success response from the server.
 
-## معرفی
-با استفاده از این ای پی آی می‌توانید با یک درخواست ساده و بدون پارامتر ورودی ارتباط نرم افزار خود با سیموتل را تست کنید. 
-به این صورت که بک درخواست پینگ به سرور سیموتل ارسال می‌کنید و در صورتی که همه چیز مرتب باشد از سرور پاسخ Success  دریافت خواهید کرد.
 
-## پیاده سازی
-### پارامترها
-این ای پی آی هیچ پارامتر ورودی ندارد.
-### نمونه فراخوانی
-## نمونه فراخوانی
+## Implementation  
+### Parameters  
+This API does not have any input parameters.
+## Sample Invocation
 
 
 <!--  -->
@@ -24,8 +22,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -42,7 +40,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -85,7 +83,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js	
@@ -122,7 +120,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash
@@ -155,9 +153,9 @@ import TabItem from '@theme/TabItem';
 
 
 
-## رخداد Ping
-در صورتی که رخداد Ping در تنظیمات سیموتل فعال باشد بعد از فراخوانی ای پی آی پینگ وب هوک Ping فعال می‌شود.
+## Ping Event  
+If the Ping event is enabled in the Simotel settings, the Ping webhook will be activated after calling the ping API.
 
-## نمونه کد تست ارتباط سیموتل
-آدرس گیتهاب ای پی آی تست
+## Simotel Connection Test Code Example  
+GitHub address for the test API.
 

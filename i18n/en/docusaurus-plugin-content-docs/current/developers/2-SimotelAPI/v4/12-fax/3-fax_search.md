@@ -3,26 +3,26 @@
 ---
 # Fax Search
 
-از این سرویس برای جستجو در فکس‌های  استفاده می شود.
+This service is used to search for faxes.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|      توضیحات      | داده های تعریف شده |  داده های نمونه  | پارامترهای ضروری[**]/منطقی[*] |       پارامترها      |
-|:-----------------:|:------------------:|:----------------:|:----------------------:|:--------------------:|
-| یافتن موارد مشابه |     true/false     |       true       |           **           |         alike        |
-|         -         |          -         |         0        |                        |  pagination-->start  |
-|         -         |          -         |        20        |                        |  pagination-->count  |
-|         -         |          -         |         -        |                        | pagination-->sorting |
-|         -         |          -         | 2020-12-25 13:47 |                        |   date_range-->from  |
-|         -         |          -         | 2020-12-27 13:47 |                        |    date_range-->to   |
-|         -         |          -         |         -        |                        |   conditions-->src   |
-|         -         |          -         |         -        |                        |   conditions-->dst   |
-|         -         |          -         |         -        |                        |  conditions-->status |
-|         -         |          -         |         -        |                        |   conditions-->type  |
+|      Description      | Defined Data  |   Sample Data  | Required[**]/Logical[*] |      Parameters       |
+|:---------------------:|:-------------:|:--------------:|:-----------------------:|:---------------------:|
+| Find similar items     |  true/false   |      true      |           **            |        alike          |
+|         -              |       -       |       0        |                         | pagination-->start    |
+|         -              |       -       |      20        |                         | pagination-->count    |
+|         -              |       -       |       -        |                         | pagination-->sorting  |
+|         -              |       -       | 2020-12-25 13:47 |                         | date_range-->from     |
+|         -              |       -       | 2020-12-27 13:47 |                         | date_range-->to       |
+|         -              |       -       |       -        |                         | conditions-->src      |
+|         -              |       -       |       -        |                         | conditions-->dst      |
+|         -              |       -       |       -        |                         | conditions-->status   |
+|         -              |       -       |       -        |                         | conditions-->type     |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 
 <!--  -->
@@ -34,8 +34,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -51,7 +51,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -110,7 +110,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

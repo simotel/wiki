@@ -22,28 +22,40 @@ module.exports = {
 
 	/////////////////////////////////// API SimoTel Sidebar//////////////////////////////////
 	docs: [
-
 		'developers/introapi',
 		{
 			type: 'category',
 			label: 'SA',
+			collapsed: false,
 			items: [
 				'developers/SimotelAPI/v4/settings',
 				'developers/SimotelAPI/v4/ping',
 				'developers/SimotelAPI/v4/call-originate',
 				{
-					'کاربر': ['developers/SimotelAPI/v4/users/users_add',
-					
+					type: 'category',
+					label: 'User',
+					items: [
+						'developers/SimotelAPI/v4/users/users_add',
 						'developers/SimotelAPI/v4/users/users_search',
 						'developers/SimotelAPI/v4/users/users_edit',
-						'developers/SimotelAPI/v4/users/users_remove',
-					],
-					'ترانک': ['developers/SimotelAPI/v4/trunks/trunks_add',
+						'developers/SimotelAPI/v4/users/users_remove'
+					]
+				},
+				{
+					type: 'category',
+					label: 'Trunk',
+					items: [
+						'developers/SimotelAPI/v4/trunks/trunks_add',
 						'developers/SimotelAPI/v4/trunks/trunks_search',
 						'developers/SimotelAPI/v4/trunks/trunks_edit',
-						'developers/SimotelAPI/v4/trunks/trunks_remove',
-					],
-					'صف': ['developers/SimotelAPI/v4/queues/queues_add',
+						'developers/SimotelAPI/v4/trunks/trunks_remove'
+					]
+				},
+				{
+					type: 'category',
+					label: 'Queue',
+					items: [
+						'developers/SimotelAPI/v4/queues/queues_add',
 						'developers/SimotelAPI/v4/queues/queues_search',
 						'developers/SimotelAPI/v4/queues/queues_edit',
 						'developers/SimotelAPI/v4/queues/queues_remove',
@@ -54,39 +66,74 @@ module.exports = {
 						'developers/SimotelAPI/v4/queues/queue_batchaddagent',
 						'developers/SimotelAPI/v4/queues/queue_batchpauseagent',
 						'developers/SimotelAPI/v4/queues/queue_batchresumagent',
-						'developers/SimotelAPI/v4/queues/queue_batchremoveagent',
-					],
-					'موزیک انتظار': ['developers/SimotelAPI/v4/musiconhold/musiconhold_search'
-					],
-					'آوا': ['developers/SimotelAPI/v4/announcement/announcements_upload',
+						'developers/SimotelAPI/v4/queues/queue_batchremoveagent'
+					]
+				},
+				{
+					type: 'category',
+					label: 'Music_On_Hold',
+					items: [
+						'developers/SimotelAPI/v4/musiconhold/musiconhold_search'
+					]
+				},
+				{
+					type: 'category',
+					label: 'Announcement',
+					items: [
+						'developers/SimotelAPI/v4/announcement/announcements_upload',
 						'developers/SimotelAPI/v4/announcement/announcements_add',
 						'developers/SimotelAPI/v4/announcement/announcements_search',
 						'developers/SimotelAPI/v4/announcement/announcements_edit',
-						'developers/SimotelAPI/v4/announcement/announcements_remove',
-					],
-					'صندوق‌صوتی': ['developers/SimotelAPI/v4/voicemail/voicemail_add',
+						'developers/SimotelAPI/v4/announcement/announcements_remove'
+					]
+				},
+				{
+					type: 'category',
+					label: 'VoiceMail',
+					items: [
+						'developers/SimotelAPI/v4/voicemail/voicemail_add',
 						'developers/SimotelAPI/v4/voicemail/voicemail_search',
 						'developers/SimotelAPI/v4/voicemail/voicemail_edit',
 						'developers/SimotelAPI/v4/voicemail/voicemail_remove',
 						'developers/SimotelAPI/v4/voicemail/inbox_search',
-						'developers/SimotelAPI/v4/voicemail/inbox_download',
-					],
-					'لیست‌سیاه': ['developers/SimotelAPI/v4/blacklist/blacklist_add',
+						'developers/SimotelAPI/v4/voicemail/inbox_download'
+					]
+				},
+				{
+					type: 'category',
+					label: 'BlackList',
+					items: [
+						'developers/SimotelAPI/v4/blacklist/blacklist_add',
 						'developers/SimotelAPI/v4/blacklist/blacklist_search',
 						'developers/SimotelAPI/v4/blacklist/blacklist_edit',
-						'developers/SimotelAPI/v4/blacklist/blacklist_remove',
-					],
-					'لیست‌سفید': ['developers/SimotelAPI/v4/whitelist/whitelist_add',
+						'developers/SimotelAPI/v4/blacklist/blacklist_remove'
+					]
+				},
+				{
+					type: 'category',
+					label: 'WhiteList',
+					items: [
+						'developers/SimotelAPI/v4/whitelist/whitelist_add',
 						'developers/SimotelAPI/v4/whitelist/whitelist_search',
 						'developers/SimotelAPI/v4/whitelist/whitelist_edit',
-						'developers/SimotelAPI/v4/whitelist/whitelist_remove',
-					],
-					'فکس': ['developers/SimotelAPI/v4/fax/fax_upload',
+						'developers/SimotelAPI/v4/whitelist/whitelist_remove'
+					]
+				},
+				{
+					type: 'category',
+					label: 'Fax',
+					items: [
+						'developers/SimotelAPI/v4/fax/fax_upload',
 						'developers/SimotelAPI/v4/fax/fax_add',
 						'developers/SimotelAPI/v4/fax/fax_search',
-						'developers/SimotelAPI/v4/fax/fax_download',
-					],
-					'گزارشات': ['developers/SimotelAPI/v4/report/quick_search',
+						'developers/SimotelAPI/v4/fax/fax_download'
+					]
+				},
+				{
+					type: 'category',
+					label: 'Reports',
+					items: [
+						'developers/SimotelAPI/v4/report/quick_search',
 						'developers/SimotelAPI/v4/report/quick_info',
 						'developers/SimotelAPI/v4/report/audio_download',
 						'developers/SimotelAPI/v4/report/report_cdr_search',
@@ -96,11 +143,13 @@ module.exports = {
 						'developers/SimotelAPI/v4/report/queue_details_search',
 						'developers/SimotelAPI/v4/report/queue_details_ordered_id',
 						'developers/SimotelAPI/v4/report/agent_search',
-						'developers/SimotelAPI/v4/report/report_poll',
-					],
-				},
+						'developers/SimotelAPI/v4/report/report_poll'
+					]
+				}
 			]
 		},
+	
+
 		{
 			type: 'category',
 			label: 'Simotel WebHooks',
@@ -223,6 +272,7 @@ module.exports = {
 		  collapsed: false,
 		  items: ['pbx/system-intro/pbxsettingintro', 'pbx/system-intro/dialplanintro'],
 		},
+		
 		{
 		  type: 'category',
 		  label: 'pbx-menu',

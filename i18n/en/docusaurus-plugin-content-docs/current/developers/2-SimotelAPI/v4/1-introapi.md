@@ -1,53 +1,40 @@
 ---
 ---
+# Introduction
 
-# مقدمه
-
-## پکیج API مرکز تماس به سه بخش کلی تقسیم می‌شود.
+## The Contact Center API package is divided into three main sections.
 
 ### SEA (Simotel Event API)
 
-SEA مجموعه‌ای از APIها هستند که اطلاعات مربوط به رویداد‌های رخ داده در مرکز تماس را به سمت وب‌سرویس شما ارسال می‌کنند،با استفاده از SEA شما می‌توانید از 
-تمام رویدادهای که در مرکزتماس رخ می‌دهد به سرعت باخبر شوید. این بخش وظیفه مدیریت تمامی رویداد‌های که از مبداء سیموتل به مقصد وب‌سرویس ارسال می‌شوند را 
-برعهده دارد. 
+SEA is a collection of APIs that send information about events that occur in the contact center to your web service. With SEA, you can quickly stay informed about all the events happening in the contact center. This section is responsible for managing all the events that are sent from the Simotel source to the destination web service.
 
+For example, one of the most useful events in this section is the `CDR (Call Detail Record)` method, which, after the call ends, sends all call details (such as the start time, end time, source number, destination number, call duration, wait time, etc.) to the web service. The methods available in SEA are reviewed in more detail.
 
-برای مثال یکی از کاربردی‌ترین رویداد‌های این بخش متد `CDR (Call Detail Record)` می‌باشد که پس از اتمام مکالمه وظیفه ارسال تمامی اطلاعات تماس شامل(تاریخ
-شروع مکالمه،تاریخ پایان مکالمه، شماره مبداء،شماره مقصد،مدت مکالمه،زمان انتظار و....) به سمت وب‌سرویس را بر‌عهده دارد،متدهای موجود در SEA بصورت دقیقتر 
-مورد بررسی قرار می‌گیرند.
+:::tip Note
 
-:::tip نکته
-
-دراستفاده از SEA نیاز به سرکشی از سمت وب‌سرویس نمی‌باشد و خود سیموتل زمانی که رویدادی اتفاق بیافتد اطلاعات را به سمت شما ارسال می‌کند. 
+Using SEA does not require polling from the web service; Simotel sends the data to you when an event occurs.
 :::
 
 ### SA (Simotel API)
 
-SA مجموعه از APIها هستند که با ارسال درخواست از سمت وب‌سرویس به سمت سیموتل شروع می‌شوند، این سرویس  در قالب استاندارد RestAPI ایجاد گردیده است. برای مثال
-با ارسال درخواست تماس‌دوطرفه از سمت وب‌سرویس به سمت سیموتل،پس از دریافت درخواست مرکز تماس شروع به ایجاد تماس دوطرفه می‌کند.
+SA is a collection of APIs that are triggered by a request from the web service to Simotel. This service is created using the standard RestAPI format. For example, by sending a request for a two-way call from the web service to Simotel, the contact center will initiate the two-way call upon receiving the request.
 
+### API Components
 
-### کامپوننت‌های API
+The API components in the dialplan give you dynamic control over calls. Using these components, you can create an interaction between the web service and the contact center, where your web service analyzes the received data (request) and based on the current conditions, determines the response to the component's request.
 
-کامپوننت‌های مربوط به API در دایل‌پلن امکان مدیریت تماس‌ها را بصورت پویا به شما می‌دهند، با استفاده از این کامپوننت‌ها شما می‌توانید یک تعامل بین وب‌سرویس و
-مرکز تماس ایجاد کنید که در نهایت وب‌سرویس شما با توجه به داده‌های دریافتی از کامپوننت (request) وتحلیل شرایط موجود نتیجه‌گیری می‌کند که چه جوابی به درخواست کامپوننت دهد(response).
- 
- برای مثال بعضی از مجموعه‌ها نیاز دارند زمانی که مشتری چندین بار تماس می‌گیرد تا پایان کار فقط با یکی از کارشناسان شرکت در ارتباط باشد و مشتری با هر بار تماس‌گرفتن 
- به یک کارشناس جدید متصل نشود. امکان پیاده سازی این سناریو با استفاده از کامپوننت **ExtenAPI** مقدور می‌باشد.
+For example, some setups require that when a customer calls multiple times, they should always be connected to the same company agent until the interaction is complete. The **ExtenAPI** component can be used to implement this scenario.
 
-### فرمت ارسال و دریافت اطلاعات
+### Data Format for Sending and Receiving Information
 
-فرمت داده‌ها در فراخوانی درخواست و پاسخ آن در قالب json می باشد (به اسثسناء سرویس های دانلود و استریم).
+The data format for sending requests and receiving responses is JSON (except for download and stream services).
 
-### لینک‌های مفید
+### Useful Links
 
-- پکیج PHP اتصال به سیموتل به همراه مثال از **[اینجا](https://github.com/nasimtelecom/simotel-php-connect)** قابل دانلود می‌باشد.
+- The PHP package for connecting to Simotel, along with examples, is available for download from **[here](https://github.com/nasimtelecom/simotel-php-connect)**.
 
-- پکیج Laravel سیموتل به جهت آشنایی بیشتر با شیوه‌ فراخوانی‌ها از **[اینجا](https://github.com/nasimtelecom/simotel-laravel-connect)** قابل دانلود می‌باشد.
+- The Laravel package for Simotel, for more information on how to make requests, is available for download from **[here](https://github.com/nasimtelecom/simotel-laravel-connect)**.
 
-- فایل Postman به جهت آشنایی بیشتر با شیوه‌ عملکرد API از **[اینجا](https://dl.mysup.ir/postmansample/Simotel_V3.edition_14.postman_collection.json)** قابل دانلود می‌باشد(v3_e14).
+- The Postman file for a better understanding of how the API works is available for download from **[here](https://dl.mysup.ir/postmansample/Simotel_V3.edition_14.postman_collection.json)** (v3_e14).
 
-
-
-
-<!-- <a href="pathname://../../file/Simotel_V3.edition_12.postman_collection.json" target="_blank">اینجا</a> -->
+<!-- <a href="pathname://../../file/Simotel_V3.edition_12.postman_collection.json" target="_blank">Click here</a> -->
