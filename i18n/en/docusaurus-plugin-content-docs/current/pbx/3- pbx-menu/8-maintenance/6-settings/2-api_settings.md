@@ -38,10 +38,10 @@ Call <WebService_address>/cdr
     ]}>
 <TabItem value="Get">
 
-```bash
-curl -u username:password --location --request GET \
-'http://192.168.51.193/call/?event_name=NewState&exten=991&state=Unavailable' --data-raw ''
-```
+    ```bash
+	curl -u username:password --location --request GET \
+	'http://192.168.51.193/call/?event_name=NewState&exten=991&state=Unavailable' --data-raw ''
+    ```
 
 </TabItem>
 <TabItem value="Post">
@@ -69,9 +69,8 @@ curl -u username:password --location --request POST 'http://192.168.51.193/call/
     ]}>
 <TabItem value="Get">
 
-```bash
-curl -u username:password --location --request GET 'http://192.168.51.193/call/NewState?event_name=NewState&exten=991&state=Unavailable'
-```
+curl -u username:password --location -- \
+	request GET 'http://192.168.51.193/call/NewState?event_name=NewState&exten=991&state=Unavailable'
 
 </TabItem>
 <TabItem value="Post">

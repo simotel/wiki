@@ -12,7 +12,7 @@ sidebar_position: 1
 5. If the recipient doesn't answer, calls them again, with a 10-minute interval between calls.
 
 **1:**
-To get the unique ID of the audio file, use the [announcement search](developers/Autodialer_API/announcement/announcement_search) service. The sample HTTP request is as follows:
+To get the unique ID of the audio file, use the [announcement search](/announcement/announcement_search) service. The sample HTTP request is as follows:
 
 <!--  -->
 import Tabs from '@theme/Tabs';
