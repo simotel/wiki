@@ -78,7 +78,7 @@ themeConfig: {
     hideOnScroll: true,
     
     logo: {
-      alt: 'navbar.logoAlt',
+      alt: 'نسیم تلکام',
       src: 'img/newSimotelFavIcon.svg',
     },
     items: [
@@ -156,24 +156,7 @@ presets: [
 /*----------------------------------------PWA---------------------------------------------*/
 plugins: [
 
-	//   [
-	// 	  '@docusaurus/plugin-content-blog',
-	// 	  {
-	// 		/**
-	// 		 * Required for any multi-instance plugin
-	// 		 */
-	// 		id: 'softphone',
-	// 		/**
-	// 		 * URL route for the blog section of your site.
-	// 		 * *DO NOT* include a trailing slash.
-	// 		 */
-	// 		routeBasePath: 'intro-softphone',
-	// 		/**
-	// 		 * Path to data on filesystem relative to site dir.
-	// 		 */
-	// 		path: './intro-softphone',
-	// 	  },
-	// ],
+	
  
   
      [
