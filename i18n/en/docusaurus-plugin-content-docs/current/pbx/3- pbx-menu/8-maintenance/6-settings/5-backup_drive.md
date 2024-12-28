@@ -113,4 +113,4 @@ The steps are as follows:
 
    ![10](/img/simotel/backup_ftp_dropbox/10.png)
 
-For further investigation of the Dropbox API capabilities, you can refer to the link **[here](https...)**.
+For further investigation of the Dropbox API capabilities, you can refer to the link **[here](https://www.youtube.com/watch?v=FMOXbmoAG8I)**.
