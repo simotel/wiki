@@ -1,8 +1,8 @@
 # System Logs
 
-This section allows you to view all logs related to call center services online, eliminating the need to connect to the Linux shell. You can also save logs and provide them in a file format. After specifying the parameters, clicking the **Start** button will begin displaying the logs.
+This section allows you to view all logs related to Call Center services online, eliminating the need to connect to the Linux shell. You can also save logs and provide them in a file format. After specifying the parameters, clicking the **Start** button will begin displaying the logs.
 
-## SimoTel Logs Parameters
+## Simotel Logs Parameters
 
 - **Channel**: Select the desired service in this section.
 

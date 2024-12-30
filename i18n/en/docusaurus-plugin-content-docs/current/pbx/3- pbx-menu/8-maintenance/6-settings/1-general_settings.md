@@ -1,6 +1,6 @@
 # General Settings
 
-In this section, general settings related to the call center are applied.
+In this section, general settings related to the Call Center are applied.
 
 ## Parameters of General Settings
 
@@ -8,9 +8,9 @@ In this section, general settings related to the call center are applied.
 
 - **PBX Port**: Indicates the port on which the IPPBX listens. This value is set to 5060 by default.
 
-- **Voice Language**: The default audio files for the call center are available in Persian and English. You can select your preferred language for audio playback here.
+- **Voice Language**: The default audio files for the Call Center are available in Persian and English. You can select your preferred language for audio playback here.
 
-- **Calendar Type**: Determines the type of calendar used in the call center (Shamsi or Gregorian).
+- **Calendar Type**: Determines the type of calendar used in the Call Center (Shamsi or Gregorian).
 
 - **Use Captcha for Login**: If this feature is enabled, a captcha code will be required on the login page after entering the username and password.
 
@@ -18,4 +18,4 @@ In this section, general settings related to the call center are applied.
 
 - **Region Dial Code**: The regional dialing code is specified in this section (used in managing spam calls).
 
-- **CSV File Separator**: Specifies the character used to separate values in the call center's Excel files.
+- **CSV File Separator**: Specifies the character used to separate values in the Call Center's Excel files.

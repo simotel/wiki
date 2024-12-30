@@ -5,7 +5,7 @@ sidebar_position: 1
 # Introduction and Settings
 
 ## Introduction  
-Simotel Event Webhooks are a collection of requests that send information about events occurring in the call center to your web service. Using Event Webhooks, you can quickly be informed about all the events happening in the call center. This section is responsible for managing all the events sent from Simotel to your web service.
+Simotel Event Webhooks are a collection of requests that send information about events occurring in the Call Center to your web service. Using Event Webhooks, you can quickly be informed about all the events happening in the Call Center. This section is responsible for managing all the events sent from Simotel to your web service.
 
 ## Settings
 

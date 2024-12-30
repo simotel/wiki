@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # Exten Remove
 
-When a user is removed from SimoTel, the ExtenRemoved event is triggered.
+When a user is removed from Simotel, the ExtenRemoved event is triggered.
 
 
 ## Event Parameters

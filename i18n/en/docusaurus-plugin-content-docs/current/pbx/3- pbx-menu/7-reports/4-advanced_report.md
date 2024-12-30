@@ -5,7 +5,7 @@ Advanced reports provide the capability to generate various types of reports thr
 ## Types of Reports
 
 ### System Advanced Report
-All calls to the call center (excluding bulk call forwarding) are recorded in this section. The reports include:
+All calls to the Call Center (excluding bulk call forwarding) are recorded in this section. The reports include:
 
 1. Call Date
 2. Caller
@@ -51,7 +51,7 @@ Details related to calls that enter the queue are accessible in this section. Th
 10. Call Details and ability to play recorded audio files
 
 ### Advanced User Activity Report
-A comprehensive report on the status of users in the call center queues, including:
+A comprehensive report on the status of users in the Call Center queues, including:
 
 1. User
 2. Queue
@@ -63,7 +63,7 @@ A comprehensive report on the status of users in the call center queues, includi
 6. End Time
 
 ### Advanced Survey Report
-A complete report of customer surveys in the call center, including:
+A complete report of customer surveys in the Call Center, including:
 
 1. Survey Date
 2. Caller (Respondent)

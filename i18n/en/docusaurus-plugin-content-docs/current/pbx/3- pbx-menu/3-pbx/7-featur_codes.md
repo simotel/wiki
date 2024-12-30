@@ -66,4 +66,4 @@ These are predefined feature codes in the system that cannot be changed, includi
 
 ## Feature Codes in the Editor
 
-To use some call center features like `disa`, `conference`, `page`, and `chanspy`, special feature codes must be defined. These codes should be written as **routes** in the dial plan. For example, to listen to conversations in the `Outgoing Route` component, a pattern should be written to connect to the `chanspy` component, which acts as the feature code.
+To use some Call Center features like `disa`, `conference`, `page`, and `chanspy`, special feature codes must be defined. These codes should be written as **routes** in the dial plan. For example, to listen to conversations in the `Outgoing Route` component, a pattern should be written to connect to the `chanspy` component, which acts as the feature code.

@@ -11,7 +11,7 @@ The Bulk Calling module in Simotel allows management via API without human inter
 In the following sections, we will thoroughly explore each of these APIs.
 
 :::tip Note
-Until the Bulk Calling module is added to the call center, it is not possible to use its APIs.
+Until the Bulk Calling module is added to the Call Center, it is not possible to use its APIs.
 :::
 
 ## Required and Logical Parameters

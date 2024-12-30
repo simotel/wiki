@@ -4,7 +4,7 @@
 
 # Creating an AMI Account
 
-To create AMI access in the Simotel call center, you need shell access to Linux. First, open the following file using the nano text editor:
+To create AMI access in the Simotel Call Center, you need shell access to Linux. First, open the following file using the nano text editor:
 
 ```shell
 root@simotel:~# nano /etc/asterisk/manager.conf
@@ -28,7 +28,7 @@ read = system,call,log,verbose,agent,user,config,dtmf,reporting,cdr,dialplan
 write = system,call,agent,user,config,command,reporting,originate,message
 ```
 
-Finally, restart the Asterisk service with the following command to activate the user account. Note that restarting Asterisk will disconnect current calls in the call center.
+Finally, restart the Asterisk service with the following command to activate the user account. Note that restarting Asterisk will disconnect current calls in the Call Center.
 
 ```shell
 root@simotel:~# service asterisk restart

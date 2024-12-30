@@ -4,14 +4,14 @@
 
 # Simotel Helper Tool
 
-**Simotelhelper** is a command-line tool for managing and maintaining call center services. It plays a crucial role in troubleshooting processes and is often one of the first tools used for system diagnostics.
+**Simotelhelper** is a command-line tool for managing and maintaining Call Center services. It plays a crucial role in troubleshooting processes and is often one of the first tools used for system diagnostics.
 
 :::info Information
 Simotelhelper is a command-line tool, and you need shell access to the Linux server to use it.
 :::
 
 :::caution Warning
-It is recommended not to use this tool until you have a clear understanding of how the call center and its core services operate.
+It is recommended not to use this tool until you have a clear understanding of how the Call Center and its core services operate.
 :::
 
 Below are the commands related to this tool, explained in detail.
@@ -77,7 +77,7 @@ Redis: RUNNING
 PBX: RUNNING
 ```
 
-As shown, the output includes information about the installed Simotel version, the SimotelHelper version, sound file versions, and the status of call center services.
+As shown, the output includes information about the installed Simotel version, the SimotelHelper version, sound file versions, and the status of Call Center services.
 
 ## simotelhelper db
 
@@ -189,7 +189,7 @@ y
 
 ### simotelhelper db restore
 
-This command is responsible for restoring backups of the call center. It requires the backup file path as an input parameter.
+This command is responsible for restoring backups of the Call Center. It requires the backup file path as an input parameter.
 
 **Output of simotelhelper db restore BackupPath:**
 
@@ -277,7 +277,7 @@ Use "simotelhelper iptables [command] --help" for more information about a comma
 
 ### simotelhelper patch
 
-This command manages patches provided for the call center.
+This command manages patches provided for the Call Center.
 
 **Output of simotelhelper patch:**
 
@@ -301,11 +301,11 @@ available categories are:
 Choose category id:
 ```
 
-This command provides a category of patches available for the call center version.
+This command provides a category of patches available for the Call Center version.
 
 ## simotelhelper serial
 
-This command outputs the serial number assigned to the call center.
+This command outputs the serial number assigned to the Call Center.
 
 ```shell
 root@simotel:~# simotelhelper serial

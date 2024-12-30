@@ -2,7 +2,7 @@
 
 In this section, the settings related to the Simotel softphone are configured.
 
-One of the features of this softphone is its ability to synchronize with the server. This means that when a call comes into the call center, even if the softphone is closed on your mobile device, the Simotel call center can activate it with a signal sent to the softphone, allowing you to answer the call. This feature is known as **Push Notification**.
+One of the features of this softphone is its ability to synchronize with the server. This means that when a call comes into the Call Center, even if the softphone is closed on your mobile device, the Simotel Call Center can activate it with a signal sent to the softphone, allowing you to answer the call. This feature is known as **Push Notification**.
 
 :::info
 **Information**: This feature is not enabled by default and requires activation by our team.

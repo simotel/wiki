@@ -1,6 +1,6 @@
 # Settings for simotel.ini
 
-**simotel.ini** is a file where the settings related to the call center are defined. The path to access this file is `/etc/simotel/simotel.ini`. You can open this file and make changes using the following command:
+**simotel.ini** is a file where the settings related to the Call Center are defined. The path to access this file is `/etc/simotel/simotel.ini`. You can open this file and make changes using the following command:
 
 ```shell
 nano /etc/simotel/simotel.ini
@@ -215,7 +215,7 @@ save_original_cdr = False
 [call]
 channel_session_ttl_long = 60 * 60
 ```
-1. **channel_session_ttl_long**: The maximum duration for recording a call in the call center. This setting has been added to reduce system overhead, and the duration can be increased if needed (in seconds).
+1. **channel_session_ttl_long**: The maximum duration for recording a call in the Call Center. This setting has been added to reduce system overhead, and the duration can be increased if needed (in seconds).
 
 ### Call Security Settings 
 ```ini
@@ -330,7 +330,7 @@ pbx_music_on_hold_path = '/var/www/html/files/music_on_hold/'
 
 ### AMI Settings
 
-These settings pertain to the call center itself, and if you need AMI access, you should refer to the path **etc/asterisk/manager.conf/**.
+These settings pertain to the Call Center itself, and if you need AMI access, you should refer to the path **etc/asterisk/manager.conf/**.
 
 ```ini
 [ami]

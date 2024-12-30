@@ -5,7 +5,7 @@ sidebar_label: "Management Dashboard "
 
 # Introduction
 
-In this section, live reports of the performance of different system components are displayed. This section provides monitoring metrics for the call center in the form of components, allowing the system administrator to select desired components and design a personalized dashboard.
+In this section, live reports of the performance of different system components are displayed. This section provides monitoring metrics for the Call Center in the form of components, allowing the system administrator to select desired components and design a personalized dashboard.
 
 ![dashboard](/img/simotel/dashboard.JPG)
 
@@ -55,8 +55,8 @@ These components display outputs in real-time with minimal delay. They include:
 
 - **Trunk Status**: Displays the status of trunks.
 - **Server Stats**: Provides a report on server resource usage (CPU, RAM).
-- **Exten Status**: Displays the status of extensions in the call center.
-- **Agent Status**: Displays the status of call center agents.
+- **Exten Status**: Displays the status of extensions in the Call Center.
+- **Agent Status**: Displays the status of Call Center agents.
 
 ### Queue Components
 
@@ -64,13 +64,13 @@ These components are specifically designed to analyze and report on queue metric
 
 - **Avg. Handling Time**: The average call handling time in the queue (in seconds).
 - **Avg. Speed Answer**: The average response time to calls in the queue (in seconds).
-- **Queue Call Rates**: Provides a report on call status based on queue metrics in the call center (percentage).
+- **Queue Call Rates**: Provides a report on call status based on queue metrics in the Call Center (percentage).
 - **Queue Statistics**: Provides a report on the call status in the queue (count).
 - **Service Level**: A key metric related to queues that will be discussed in more detail later (percentage).
 
 ### General Components
 
-These components can report on both queues and extensions and are not limited to either category. Other components provide general reports about the call center, such as:
+These components can report on both queues and extensions and are not limited to either category. Other components provide general reports about the Call Center, such as:
 
 - **Net Promoter Score**: Provides a report on the Net Promoter Score (percentage).
 - **Customer Satisfaction**: Displays a report on the average customer satisfaction based on surveys (score).
@@ -78,9 +78,9 @@ These components can report on both queues and extensions and are not limited to
 - **HDD (Audio)**: Provides a report on disk usage by audio files.
 - **HDD (All)**: Provides a report on the overall server disk usage.
 - **Call Duration**: Provides a general report on call and wait times (in seconds).
-- **Call Status**: Provides a general report on call statuses (answered, unanswered, busy, blocked) in the call center.
-- **Call Direction**: Provides a report on the types of calls (incoming, outgoing) in the call center.
-- **SPIT**: Displays storm calls in the call center.
+- **Call Status**: Provides a general report on call statuses (answered, unanswered, busy, blocked) in the Call Center.
+- **Call Direction**: Provides a report on the types of calls (incoming, outgoing) in the Call Center.
+- **SPIT**: Displays storm calls in the Call Center.
 
 ## Shared Parameters
 

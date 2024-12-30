@@ -3,7 +3,7 @@
 # VoiceMail
 
 
-When a voicemail is saved in SimulTel (voicemail box), the **VoiceMail** event is triggered.
+When a voicemail is saved in Simotel (voicemail box), the **VoiceMail** event is triggered.
 
 
 ## Event Parameters

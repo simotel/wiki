@@ -1,6 +1,6 @@
 # Server Status
 
-Since the call center is a crucial communication system in any organization, monitoring and troubleshooting it is essential. To ensure the proper functioning of various components of the call center, Simutel displays the status of internal services in this section. This section also includes options for rebooting the server and adjusting the server time.
+Since the Call Center is a crucial communication system in any organization, monitoring and troubleshooting it is essential. To ensure the proper functioning of various components of the Call Center, Simutel displays the status of internal services in this section. This section also includes options for rebooting the server and adjusting the server time.
 
 ## Server Status Parameters
 - **Reset Server**: Clicking this option allows you to reset the server.

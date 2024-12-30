@@ -89,7 +89,7 @@ Often, it is necessary to provide an introduction about the organization’s dep
  
 :::tip Note
 
-In the SimoTel contact center, a number of commonly used audio files are pre-uploaded by default. To view and play them, please refer to the "Announcements" section.
+In the Simotel contact center, a number of commonly used audio files are pre-uploaded by default. To view and play them, please refer to the "Announcements" section.
 
 :::
  

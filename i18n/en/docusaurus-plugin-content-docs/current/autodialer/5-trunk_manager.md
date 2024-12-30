@@ -1,4 +1,4 @@
-```markdown
+---
 sidebar_label: "Trunk Manager"
 title: "Trunk Manager"
 ---
