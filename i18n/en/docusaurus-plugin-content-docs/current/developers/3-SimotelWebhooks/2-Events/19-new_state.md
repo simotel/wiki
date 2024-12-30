@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# New State
+# NewState
 
 
 When the status of a user in Simotel changes, a **NewState** event is generated. For example, when a user is idle (Idle or waiting for a call), and a call is sent to them, the event with **state=Ringing** will be created and sent to the web service when the ringtone is heard. Upon answering, the same event will be created again with **state=InUse** and sent to the web service.

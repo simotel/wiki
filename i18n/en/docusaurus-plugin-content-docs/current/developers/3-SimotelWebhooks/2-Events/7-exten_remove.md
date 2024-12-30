@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Exten Remove
+# ExtenRemoved
 
 When a user is removed from Simotel, the ExtenRemoved event is triggered.
 
@@ -16,7 +16,7 @@ When a user is removed from Simotel, the ExtenRemoved event is triggered.
 |                       Extension State                      |      -       |  Unavailable  |    **state**    |
 </div>
 
-## Sample Output of Exten Removed Event
+## Sample Output of ExtenRemoved Event
 
 
 

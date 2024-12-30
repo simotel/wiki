@@ -4,7 +4,7 @@ sidebar_label: " دریافت فکس"
 title: " دریافت فکس"
 ---
 
-# Incoming Fax
+# IncomingFax
 
 هنگامی که فکسی وارد سیموتل می‌گردد، رویداد incomingfax ایجاد می‌شود.
 

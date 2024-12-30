@@ -4,7 +4,7 @@ title: "ارسال فکس"
 ---
 
 
-# Outgoing Fax
+# OutgoingFax
 
 هنگامی که فکس از سیموتل ارسال می‌گردد،رویداد OutgoingFax ایجاد می‌گردد.
 

@@ -5,7 +5,7 @@ title: "تنظیمات Api"
 
 
 
-# API settings
+# API Settings
 :::caution هشدار
 نسخه 1و2و3 منسوخ شده است
 :::

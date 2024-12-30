@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Incoming Fax
+# IncomingFax
 
 When a fax is received in SimulTel, the **incomingfax** event is triggered.
 
@@ -31,7 +31,7 @@ When a fax is received in SimulTel, the **incomingfax** event is triggered.
 
 </div>
 
-## Sample Output of Incoming Fax Event
+## Sample Output of IncomingFax Event
 
 
 ```shell

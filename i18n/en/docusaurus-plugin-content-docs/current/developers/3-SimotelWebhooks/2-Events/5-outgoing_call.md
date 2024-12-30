@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Outgoing Call
+# OutgoingCall
 
 When a call is made from Simotel (outgoing call), the **OutgoingCall** event is triggered, specifying the exit point through which the call is made.
 
@@ -20,7 +20,7 @@ When a call is made from Simotel (outgoing call), the **OutgoingCall** event is 
 </div>
 
 
-##  output example of the event Outgoing Call
+##  output example of the event OutgoingCall
 
 ```shell
 {

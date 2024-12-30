@@ -1,6 +1,6 @@
 ---
-sidebar_label: "تنظیمات Simotel.ini"
-title: "تنظیمات Simotel.ini مباحث پیشرفته"
+sidebar_label: "تنظیمات simotel.ini"
+title: "تنظیمات simotel.ini مباحث پیشرفته"
 ---
 
 
