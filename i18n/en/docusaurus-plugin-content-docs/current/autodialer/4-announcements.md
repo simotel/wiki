@@ -1,4 +1,4 @@
-```markdown
+---
 title: "Announcements"
 sidebar_label: "Announcements"
 ---

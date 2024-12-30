@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Calls originating within the call center or from its internal components (such as IP phones) are considered outgoing calls and are forwarded to the Outgoing Route component. Calls are routed based on the context of the caller (e.g., the internal context set on the phone). In other words, the caller's context should be specified in the component's settings.
+Calls originating within the Call Center or from its internal components (such as IP phones) are considered outgoing calls and are forwarded to the Outgoing Route component. Calls are routed based on the context of the caller (e.g., the internal context set on the phone). In other words, the caller's context should be specified in the component's settings.
 
 In the Outgoing Route, appropriate routing rules are implemented for internal calls, city calls, and others.
 

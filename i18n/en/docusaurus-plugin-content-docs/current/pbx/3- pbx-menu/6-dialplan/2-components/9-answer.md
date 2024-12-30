@@ -6,6 +6,6 @@ The **Answer** component is used for automatically answering calls. This compone
 ## Parameters
 
 - **Type**: The type of call answer, which can be one of the following:
-    - **Answer**: Audio exchange is allowed, but the call status in the call center reports remains "No Answer".
+    - **Answer**: Audio exchange is allowed, but the call status in the Call Center reports remains "No Answer".
     - **Progress**: Only the dialing tone is heard, and no audio is exchanged.
-    - **Definite Answer**: Audio exchange is allowed, and the call status in the call center reports is marked as "Answer".
+    - **Definite Answer**: Audio exchange is allowed, and the call status in the Call Center reports is marked as "Answer".

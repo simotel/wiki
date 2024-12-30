@@ -4,7 +4,7 @@ sidebar_position: 2
 # Dial Plan Intro
 
 
-Up until now, the main sections of the `PBX` for the initial setup of the call center have been introduced. In this section, we will take a general look at one of the most important parts of the system, the `Dial Plan` editor. We will also review how to work with the dial plan and how to use its components.
+Up until now, the main sections of the `PBX` for the initial setup of the Call Center have been introduced. In this section, we will take a general look at one of the most important parts of the system, the `Dial Plan` editor. We will also review how to work with the dial plan and how to use its components.
 
 ## Call Scenario
 
@@ -13,7 +13,7 @@ Businesses consider different call scenarios for their customers. For example, i
 
 ## Dial Plan
 
-Implementing a call scenario with all its features in traditional VoIP systems is a complex and time-consuming task, and in some cases, it requires dial plan programming. Therefore, the goal of Simotel's call center is to implement a dial plan that is simple and user-friendly. In this dial plan, the user does not need to engage in coding and can easily understand the main elements of this section and implement their desired scenario.
+Implementing a call scenario with all its features in traditional VoIP systems is a complex and time-consuming task, and in some cases, it requires dial plan programming. Therefore, the goal of Simotel's Call Center is to implement a dial plan that is simple and user-friendly. In this dial plan, the user does not need to engage in coding and can easily understand the main elements of this section and implement their desired scenario.
 
 Click on the image to view the implemented call scenario in the dial plan.
 
@@ -21,7 +21,7 @@ Click on the image to view the implemented call scenario in the dial plan.
 
 :::tip Tip
 
-If you do not have access to the call center, visit **[here](https://dialplan.mysup.ir/)** to test the dial plan features.
+If you do not have access to the Call Center, visit **[here](https://dialplan.mysup.ir/)** to test the dial plan features.
 :::
 
 ## Dial Plan Components
@@ -41,7 +41,7 @@ By default, the dial plan includes two pages, and we will examine the purpose of
 
 ###  `components`
 
-Components are elements placed on the page that, through the wiring and connection between them, build the call scenario. Each component has a specific function and covers one of the features of the call center. For example, all incoming calls start with the `Incoming Route` component, and from there, they are distributed within the dial plan.
+Components are elements placed on the page that, through the wiring and connection between them, build the call scenario. Each component has a specific function and covers one of the features of the Call Center. For example, all incoming calls start with the `Incoming Route` component, and from there, they are distributed within the dial plan.
 
 Call routing in the dial plan is defined using wiring. By connecting the output of one component to the input of another, the call path is determined. To do this, simply click on the output of a component, a wire will appear, and then connect the end of the wire to the input of the next component.
 
@@ -79,7 +79,7 @@ If there is no change in the default Context value of the defined trunks, this v
 
 ### Outgoinig Route
 
-The Outgoing Route component is responsible for managing outgoing calls in the call center. Any call originating from the call center enters this component first, and then, based on the designed scenario, it is routed to the specified path. This component is used on the Outgoing page, and since the Outgoing Route is the origin for outgoing calls, it is essential to have an Outgoing Route component in the outgoing page.
+The Outgoing Route component is responsible for managing outgoing calls in the Call Center. Any call originating from the Call Center enters this component first, and then, based on the designed scenario, it is routed to the specified path. This component is used on the Outgoing page, and since the Outgoing Route is the origin for outgoing calls, it is essential to have an Outgoing Route component in the outgoing page.
 
 In the Outgoing Route, you can use the ` Match Pattern` to route calls to different destinations. A professional use of the Outgoing Route requires an understanding of pattern matching, which will be covered in detail later.
 

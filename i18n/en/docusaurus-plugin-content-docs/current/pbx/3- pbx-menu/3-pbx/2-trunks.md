@@ -1,6 +1,6 @@
 # Trunks
 
-A trunk is a communication path between the city gateway lines, E1, SIP trunks, or another server through which calls enter and exit. In this section, you can view the existing trunks in the call center, as well as create, delete, or edit a trunk. Simotel supports three protocols for trunks: SIP, IAX2, and DAHDI.
+A trunk is a communication path between the city gateway lines, E1, SIP trunks, or another server through which calls enter and exit. In this section, you can view the existing trunks in the Call Center, as well as create, delete, or edit a trunk. Simotel supports three protocols for trunks: SIP, IAX2, and DAHDI.
 
 ## SIP Trunk Parameters
 

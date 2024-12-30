@@ -4,7 +4,7 @@ This section provides functionalities for creating backup files and restoring th
 
 ## Backup Section
 
-In this section, you can create backup files. Simutel's call center offers backup capabilities at various levels.
+In this section, you can create backup files. Simutel's Call Center offers backup capabilities at various levels.
 
 ### Backup Parameters
 
@@ -14,7 +14,7 @@ In this section, you can create backup files. Simutel's call center offers backu
 
 ## Restore Section
 
-This section is responsible for restoring backups created from the call center.
+This section is responsible for restoring backups created from the Call Center.
 
 ### Restore Parameters
 
@@ -24,9 +24,9 @@ This section is responsible for restoring backups created from the call center.
 
 ## Scheduled Backup Archive
 
-One of Simutel's features is the ability to create backups automatically. The call center generates daily and weekly backups of the relevant information, allowing for recovery in case the system encounters any issues.
+One of Simutel's features is the ability to create backups automatically. The Call Center generates daily and weekly backups of the relevant information, allowing for recovery in case the system encounters any issues.
 
-The call center provides you with the option to store these automatic backups in a secure location. For more information, please refer to **[here](../maintenance/settings/backup_drive/)**.
+The Call Center provides you with the option to store these automatic backups in a secure location. For more information, please refer to **[here](../maintenance/settings/backup_drive/)**.
 
 ## Regular Backup Archive
 

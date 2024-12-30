@@ -1,11 +1,11 @@
 # Backup Drive
 
-One of the key features of the Simotel call center is the ability to transfer daily and weekly backup files to an FTP server or cloud storage. This is to prevent data loss during times when the system encounters issues and recovery of information is not possible (disaster recovery plan).
+One of the key features of the Simotel Call Center is the ability to transfer daily and weekly backup files to an FTP server or cloud storage. This is to prevent data loss during times when the system encounters issues and recovery of information is not possible (disaster recovery plan).
 
 Please note that after applying the necessary settings in Simotel, backups will be performed automatically and systematically, requiring no further action. This feature is available in version 6.1.9 and later.
 
 :::tip
-**Note**: Automatic backups of the call center do not include recorded call audio files. If you need a backup of the audio files related to calls, this must be done manually (reason: large backup size if recorded call audio files are included).
+**Note**: Automatic backups of the Call Center do not include recorded call audio files. If you need a backup of the audio files related to calls, this must be done manually (reason: large backup size if recorded call audio files are included).
 :::
 
 ## Backup Methods

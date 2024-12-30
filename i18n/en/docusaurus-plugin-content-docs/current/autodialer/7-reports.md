@@ -1,4 +1,4 @@
-```markdown
+---
 title: "Reports"
 sidebar_label: "Reports"
 

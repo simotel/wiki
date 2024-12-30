@@ -11,4 +11,4 @@ The **Trunk API** is used to initiate calls over a trunk, similar to the standar
 
 For further details on how to use the **Trunk API**, please refer to the official documentation: **[here](/developers/SimotelWebhooks/DialplanApiComponents/trunk_api)**. 
 
-This functionality is essential for scenarios where calls need to be dynamically routed based on external inputs or automated systems, such as call centers, integration with CRM systems, or custom dialing applications.
+This functionality is essential for scenarios where calls need to be dynamically routed based on external inputs or automated systems, such as Call Centers, integration with CRM systems, or custom dialing applications.

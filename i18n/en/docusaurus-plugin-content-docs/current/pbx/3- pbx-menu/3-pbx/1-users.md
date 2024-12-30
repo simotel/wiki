@@ -1,6 +1,6 @@
 # Users
 
-In this menu, the extensions of the call center are defined and managed. In addition to creating extensions, they can be edited or deleted. For easier management of a large number of extensions, there is the possibility of adding, editing, and deleting multiple users simultaneously. Simotel supports SIP and IAX2 protocols for extensions.
+In this menu, the extensions of the Call Center are defined and managed. In addition to creating extensions, they can be edited or deleted. For easier management of a large number of extensions, there is the possibility of adding, editing, and deleting multiple users simultaneously. Simotel supports SIP and IAX2 protocols for extensions.
 
 :::tip Note
 To create a group of extensions in Simotel, these extensions must be entered as a range. For example, if you want to create extensions from 100 to 200 simultaneously, enter "200..100" in the Number field. This way, all extensions in the selected range will be created with the same values.

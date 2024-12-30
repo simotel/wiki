@@ -5,7 +5,7 @@
 
 ---
 
-After a call ends in SimulTel, the **CDR (Call Detail Record)** event is triggered and call details are sent with it.
+After a call ends in Simotel, the **CDR (Call Detail Record)** event is triggered and call details are sent with it.
 
 
 ## Event Parameters

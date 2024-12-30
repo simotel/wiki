@@ -1,4 +1,4 @@
-```markdown
+---
 title: "Campaigns"
 sidebar_label: "Campaigns"
 ---
