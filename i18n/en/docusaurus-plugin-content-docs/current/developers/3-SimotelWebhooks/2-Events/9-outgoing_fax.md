@@ -1,6 +1,6 @@
 ---
 ---
-# Outgoing Fax
+# OutgoingFax
 
 When a fax is sent from SimulTel, the **OutgoingFax** event is triggered.
 
@@ -26,7 +26,7 @@ When a fax is sent from SimulTel, the **OutgoingFax** event is triggered.
 
 </div>
 
-## Sample Output of Outgoing Fax Event
+## Sample Output of OutgoingFax Event
 
 
 

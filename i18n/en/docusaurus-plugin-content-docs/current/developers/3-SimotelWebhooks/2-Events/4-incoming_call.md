@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Incoming Call
+# IncomingCall
 
 When a call is received by Simotel (incoming call), the **IncomingCall** event is triggered, specifying the entry point through which the call was received.
 
@@ -17,7 +17,7 @@ When a call is received by Simotel (incoming call), the **IncomingCall** event i
 | Two-way call ID (populated if the call is two-way) |       -      | orig.call.1683107010.780601 | **originated_call_id** |
 </div>
 
-## Sample Output of Incoming Call Event
+## Sample Output of IncomingCall Event
 ```shell
 {
     "event_name": "IncomingCall",

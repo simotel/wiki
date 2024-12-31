@@ -1,6 +1,6 @@
 ---
 ---
-# CDR Queue
+# CDRQueue
 
 After the caller is connected to one of the queue operators, the **CDRQueue** event is generated.
 
@@ -42,7 +42,7 @@ After the caller is connected to one of the queue operators, the **CDRQueue** ev
 </div>
 
 
-## Sample Output of CDR Queue Event
+## Sample Output of CDRQueue Event
 
 
 ```shell

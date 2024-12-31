@@ -1,5 +1,5 @@
 ---
-sidebar_label: " Simotelhelper ابزار"
+sidebar_label: " simotelhelper ابزار"
 title: "ابزار simotelhelper مباحث پیشرفته"
 ---
 
@@ -27,7 +27,7 @@ simotelhelper ابزاری تحت خط‌فرمان می‌باشد و برای 
 
 ```shell
 root@simotel:~# simotelhelper help
-Simotel Helper
+simotel Helper
 
 Usage:
   simotelhelper [flags]
@@ -65,17 +65,17 @@ Use "simotelhelper [command] --help" for more information about a command.
 ```shell
 root@simotel:~# simotelhelper check
 
-Simotel version : 6.2.22
-SimotelHelper version : 23
+simotel version : 6.2.22
+simotelHelper version : 23
 
-Simotel package p38: 1
+simotel package p38: 1
 Sound PR: 8
 PBX configs version: 8
 
 
-Simotel: NOT RUNNING
-Simotelagi: RUNNING
-Simotelhelper: RUNNING
+simotel: NOT RUNNING
+simotelagi: RUNNING
+simotelhelper: RUNNING
 Mongodb: RUNNING
 Redis: RUNNING
 PBX: RUNNING
@@ -121,11 +121,11 @@ subcommand is required
 خروجی این دستور راهنمایی دستورات مربوط به مدیریت پایگاه‌داده می‌باشد.
 
 
-### Simotelhelper db backup
+### simotelhelper db backup
 
-این دستور وظیفه تهیه فایل پشتیبان از پایگاه‌داده را برعهده دارد. برای مشاهده انواع استراتژی‌های بکاپ‌گیری دستور **Simotelhelper db backup show** را وارد کنید.
+این دستور وظیفه تهیه فایل پشتیبان از پایگاه‌داده را برعهده دارد. برای مشاهده انواع استراتژی‌های بکاپ‌گیری دستور **simotelhelper db backup show** را وارد کنید.
 
-**خروجی دستور Simotelhelper db backup show**
+**خروجی دستور simotelhelper db backup show**
 
 ```shell
 root@simotel:~# simotelhelper db backup show
@@ -149,26 +149,26 @@ web-members     backup web accounts and account types
 ```
 در این قسمت انواع روش‌های بکاپ‌گیری نمایش داده می‌شوند که با نوشتن نام استراتژی در جلوی دستور، سیستم شروع به بکاپ‌گیری می‌کند.
 
-**خروجی دستور Simotelhelper db backup pbx**
+**خروجی دستور simotelhelper db backup pbx**
 
 ```shell
 root@simotel:~# simotelhelper db backup pbx
-DEBUG 2021-06-23T12:03:04.454+0430      writing Simotel.dialplan_editor_history to archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz.creating'
-DEBUG 2021-06-23T12:03:04.461+0430      writing Simotel.music_on_hold to archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz.creating'
-DEBUG 2021-06-23T12:03:10.847+0430      done dumping Simotel.dialplan_editor_orders (1 document)
-DEBUG 2021-06-23T12:03:12.365+0430      writing Simotel.featurecode to archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz.creating'
-DEBUG 2021-06-23T12:03:12.374+0430      done dumping Simotel.burstcall (0 documents)
-DEBUG 2021-06-23T12:03:12.375+0430      writing Simotel.queue to archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz.creating'
-DEBUG 2021-06-23T12:03:13.778+0430      done dumping Simotel.pbx_groups (0 documents)
-DEBUG 2021-06-23T12:03:13.779+0430            Simotel.sound  0
-DEBUG 2021-06-23T12:03:13.779+0430      Simotel.featurecode  0
+DEBUG 2021-06-23T12:03:04.454+0430      writing simotel.dialplan_editor_history to archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz.creating'
+DEBUG 2021-06-23T12:03:04.461+0430      writing simotel.music_on_hold to archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz.creating'
+DEBUG 2021-06-23T12:03:10.847+0430      done dumping simotel.dialplan_editor_orders (1 document)
+DEBUG 2021-06-23T12:03:12.365+0430      writing simotel.featurecode to archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz.creating'
+DEBUG 2021-06-23T12:03:12.374+0430      done dumping simotel.burstcall (0 documents)
+DEBUG 2021-06-23T12:03:12.375+0430      writing simotel.queue to archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz.creating'
+DEBUG 2021-06-23T12:03:13.778+0430      done dumping simotel.pbx_groups (0 documents)
+DEBUG 2021-06-23T12:03:13.779+0430            simotel.sound  0
+DEBUG 2021-06-23T12:03:13.779+0430      simotel.featurecode  0
 DEBUG 2021-06-23T12:03:13.779+0430
-DEBUG 2021-06-23T12:03:13.779+0430      Simotel.featurecode  9
-DEBUG 2021-06-23T12:03:13.779+0430      done dumping Simotel.featurecode (9 documents)
-DEBUG 2021-06-23T12:03:13.783+0430      Simotel.sound  10
-DEBUG 2021-06-23T12:03:13.855+0430      done dumping Simotel.queue (2 documents)
-DEBUG 2021-06-23T12:03:13.855+0430      done dumping Simotel.sound (10 documents)
-DEBUG backup completed, successfully. /var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz
+DEBUG 2021-06-23T12:03:13.779+0430      simotel.featurecode  9
+DEBUG 2021-06-23T12:03:13.779+0430      done dumping simotel.featurecode (9 documents)
+DEBUG 2021-06-23T12:03:13.783+0430      simotel.sound  10
+DEBUG 2021-06-23T12:03:13.855+0430      done dumping simotel.queue (2 documents)
+DEBUG 2021-06-23T12:03:13.855+0430      done dumping simotel.sound (10 documents)
+DEBUG backup completed, successfully. /var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz
 
 ```
 با واردکردن این دستور سیستم شروع به بکاپ‌گیری از محتویات بخش **pbx** می‌کند،در نهایت نیز مسیر فایل بکاپ نمایش داده می‌شود(در زمان restore کردن بکاپ کاربرد دارد).
@@ -254,22 +254,22 @@ Finished copy of db to /usr/src/mongodb/dbdata/db-back-repair/
 ** خروجی دستور  simotelhelper db restore BackupPath**
 
 ```shell
-root@simotel:~# simotelhelper db restore /var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz
+root@simotel:~# simotelhelper db restore /var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz
 
 Drop collections of database before restore? [Y/n] ?
 y
 DEBUG 2021-06-23T12:29:44.190+0430      preparing collections to restore from
-DEBUG 2021-06-23T12:29:44.258+0430      reading metadata for Simotel.user from archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz'
-DEBUG 2021-06-23T12:29:44.269+0430      restoring Simotel.user from archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz'
-DEBUG 2021-06-23T12:29:44.276+0430      restoring indexes for collection Simotel.user from metadata
-DEBUG 2021-06-23T12:29:44.301+0430      finished restoring Simotel.user (34 documents, 0 failures)
-DEBUG 2021-06-23T12:29:44.305+0430      reading metadata for Simotel.trunk from archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz'
-DEBUG 2021-06-23T12:29:44.312+0430      restoring Simotel.trunk from archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz'
-DEBUG 2021-06-23T12:29:44.320+0430      restoring indexes for collection Simotel.trunk from metadata
-DEBUG 2021-06-23T12:29:44.335+0430      finished restoring Simotel.trunk (2 documents, 0 failures)
-DEBUG 2021-06-23T12:29:44.342+0430      reading metadata for Simotel.dialplan_editor_history from archive '/var/spool/simotel/backup/cli/Simotel-pbx-20210623-1203.gz'
+DEBUG 2021-06-23T12:29:44.258+0430      reading metadata for simotel.user from archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz'
+DEBUG 2021-06-23T12:29:44.269+0430      restoring simotel.user from archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz'
+DEBUG 2021-06-23T12:29:44.276+0430      restoring indexes for collection simotel.user from metadata
+DEBUG 2021-06-23T12:29:44.301+0430      finished restoring simotel.user (34 documents, 0 failures)
+DEBUG 2021-06-23T12:29:44.305+0430      reading metadata for simotel.trunk from archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz'
+DEBUG 2021-06-23T12:29:44.312+0430      restoring simotel.trunk from archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz'
+DEBUG 2021-06-23T12:29:44.320+0430      restoring indexes for collection simotel.trunk from metadata
+DEBUG 2021-06-23T12:29:44.335+0430      finished restoring simotel.trunk (2 documents, 0 failures)
+DEBUG 2021-06-23T12:29:44.342+0430      reading metadata for simotel.dialplan_editor_history from archive '/var/spool/simotel/backup/cli/simotel-pbx-20210623-1203.gz'
 DEBUG 2021-06-23T12:29:44.682+0430      no indexes to restore
-DEBUG 2021-06-23T12:29:44.684+0430      finished restoring Simotel.sound (10 documents, 0 failures)
+DEBUG 2021-06-23T12:29:44.684+0430      finished restoring simotel.sound (10 documents, 0 failures)
 DEBUG 2021-06-23T12:29:44.685+0430      112 document(s) restored successfully. 0 document(s) failed to restore.
 
 ```
@@ -449,14 +449,14 @@ root@simotel:~# simotelhelper serverstatus
                 ]
         },
         "Version": {
-                "Simotel": "6.2.22",
-                "SimotelEdition": "gold",
+                "simotel": "6.2.22",
+                "simotelEdition": "gold",
                 "Helper": "23"
         },
         "Mongodb": {
                 "FCV": "4.4",
                 "Version": "4.4.0",
-                "dbName": "Simotel",
+                "dbName": "simotel",
                 "dbSize": 4014080
         },
         "Patch": {

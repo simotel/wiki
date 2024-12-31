@@ -2,12 +2,12 @@
 
 ---
 
-# Simotel Helper Tool
+# simotelhelper Tool
 
-**Simotelhelper** is a command-line tool for managing and maintaining Call Center services. It plays a crucial role in troubleshooting processes and is often one of the first tools used for system diagnostics.
+**simotelhelper** is a command-line tool for managing and maintaining Call Center services. It plays a crucial role in troubleshooting processes and is often one of the first tools used for system diagnostics.
 
 :::info Information
-Simotelhelper is a command-line tool, and you need shell access to the Linux server to use it.
+simotelhelper is a command-line tool, and you need shell access to the Linux server to use it.
 :::
 
 :::caution Warning
@@ -63,7 +63,7 @@ This command checks the status of vital server services and provides a report.
 root@simotel:~# simotelhelper check
 
 Simotel version : 6.2.22
-SimotelHelper version : 23
+simotelhelper version : 23
 
 Simotel package p38: 1
 Sound PR: 8
@@ -71,13 +71,13 @@ PBX configs version: 8
 
 Simotel: NOT RUNNING
 Simotelagi: RUNNING
-Simotelhelper: RUNNING
+simotelhelper: RUNNING
 Mongodb: RUNNING
 Redis: RUNNING
 PBX: RUNNING
 ```
 
-As shown, the output includes information about the installed Simotel version, the SimotelHelper version, sound file versions, and the status of Call Center services.
+As shown, the output includes information about the installed Simotel version, the simotelhelper version, sound file versions, and the status of Call Center services.
 
 ## simotelhelper db
 
@@ -114,11 +114,11 @@ subcommand is required
 
 The output provides a guide to the commands related to database management.
 
-### Simotelhelper db backup
+### simotelhelper db backup
 
-This command is responsible for creating backup files of the database. To see the types of backup strategies, use the command **Simotelhelper db backup show**.
+This command is responsible for creating backup files of the database. To see the types of backup strategies, use the command **simotelhelper db backup show**.
 
-**Output of Simotelhelper db backup show:**
+**Output of simotelhelper db backup show:**
 
 ```shell
 root@simotel:~# simotelhelper db backup show
@@ -141,7 +141,7 @@ web-members     backup web accounts and account types
 
 This section displays various backup strategies, and by writing the name of the strategy before the command, the system will start backing up.
 
-**Output of Simotelhelper db backup pbx:**
+**Output of simotelhelper db backup pbx:**
 
 ```shell
 root@simotel:~# simotelhelper db backup pbx
@@ -382,7 +382,7 @@ helper: up to date
 
 ## simotelhelper version
 
-This command shows the version of SimotelHelper installed on the server.
+This command shows the version of simotelhelper installed on the server.
 
 **Output of simotelhelper version:**
 

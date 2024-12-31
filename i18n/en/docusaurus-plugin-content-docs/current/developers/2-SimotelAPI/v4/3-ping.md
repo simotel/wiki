@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# ping (connection test)
+# Ping (connection test)
 ## Introduction
 You send a ping request to the Simotel server, and if everything is in order, you will receive a Success response from the server.
 

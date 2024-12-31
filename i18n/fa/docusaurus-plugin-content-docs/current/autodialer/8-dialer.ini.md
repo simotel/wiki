@@ -10,7 +10,7 @@ dialer.ini فایلی می‌باشد که در آن تنظیمات مربوط �
 
 ```shell
 
-nano /etc/simote/dialer.ini
+nano /etc/simotel/dialer.ini
 ```
 
 :::caution هشدار

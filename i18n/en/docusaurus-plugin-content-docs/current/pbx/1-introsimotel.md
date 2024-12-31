@@ -2,7 +2,7 @@
 slug: '/pbx'
 sidebar_position: 1
 ---
-# introduction
+# Introduction
 
 One of the primary means of communication between customers and staff in an organization is through contact centers. In many organizations, contact centers play a vital role in enhancing the quality of services provided to customers. Therefore, choosing an intelligent and dynamic system can significantly contribute to achieving desired customer satisfaction standards. There are organizations that handle several thousand calls daily on average, making it essential to have a contact center capable of managing this volume of calls while also generating reports to improve organizational processes. **Simotel** contact center, with its capabilities, allows customers to review processes and enhance customer satisfaction levels.
 

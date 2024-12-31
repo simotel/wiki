@@ -1,6 +1,6 @@
 ---
 ---
-# VoiceMail Email
+# VoiceMailEmail
 
 
 When the email sending option for voicemail is enabled, the **VoiceMailEmail** event is triggered after the email is sent successfully or unsuccessfully.

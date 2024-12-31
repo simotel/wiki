@@ -6,7 +6,7 @@ title: "حذف کاربر"
 
 
 
-# Exten Remove
+# ExtenRemoved
 
 هنگامی‌ كه کاربری از سیموتل حذف شود، رويداد ExtenRemoved ايجاد می‌گردد.
 
@@ -21,7 +21,7 @@ title: "حذف کاربر"
 |                       وضعیت داخلی                       |         -        |  Unavailable  |    **state**   |
 </div>
 
-## نمونه خروجی رویداد Exten Removed
+## نمونه خروجی رویداد ExtenRemoved
 
 
 

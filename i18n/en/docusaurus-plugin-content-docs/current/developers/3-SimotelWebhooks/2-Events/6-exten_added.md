@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Exten Added
+# ExtenAdded
 
 When a new user is defined in Simutel, the ExtenAdded event is created.
 
@@ -15,7 +15,7 @@ When a new user is defined in Simutel, the ExtenAdded event is created.
 |                       Extension State                      |      -       |  Unavailable  |    **state**    |
 </div>
 
-## Sample Output of Exten Added Event
+## Sample Output of ExtenAdded Event
 
 ```shell
 {
