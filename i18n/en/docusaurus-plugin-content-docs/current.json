@@ -147,7 +147,7 @@
     "message": "مباحث پیشرفته",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   } ,"sidebar.Docs.category.pbx-menu": {
-    "message": "Pbx Menu",
+    "message": "PBX Menu",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
   ,"sidebar.Docs.category.dashboard": {
@@ -160,7 +160,7 @@
   }
   ,
   "sidebar.Docs.category.pbx-docs": {
-    "message": "Pbx Docs",
+    "message": "PBX Docs",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   }
   ,
