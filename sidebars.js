@@ -268,7 +268,7 @@ module.exports = {
 		'pbx/introsimotel',
 		{
 		  type: 'category',
-		  label: 'pbx',
+		  label: 'PBX',
 		  collapsed: false,
 		  items: ['pbx/system-intro/pbxsettingintro', 'pbx/system-intro/dialplanintro'],
 		},
