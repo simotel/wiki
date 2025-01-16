@@ -40,7 +40,7 @@ module.exports = {
   favicon: 'img/newSimotelFavIcon.svg',
   titleDelimiter:"|",
   trailingSlash: false,
-  noIndex: true,
+  noIndex: false,
   
 i18n: {
     defaultLocale: 'en',
