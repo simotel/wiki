@@ -1,10 +1,10 @@
 ---
-sidebar_label: " simotelhelper ابزار"
+sidebar_label: "ابزار simotelhelper "
 title: "ابزار simotelhelper مباحث پیشرفته"
 ---
 
 
-# ابزار simotelhelper
+#  ابزار simotelhelper 
 
 simotelhelper ابزاری برای مدیریت و نگهداری سرویس‌های مرکز‌تماس می‌باشد.این ابزار نقش حیاتی در انجام فرایند خطایابی دارد به نحوی که از اولین‌ ابزارهای مورد استفاده در خطایابی سیستم می‌باشد.
 

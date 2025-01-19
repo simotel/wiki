@@ -45,7 +45,7 @@
       "message" :" Simotel Wiki is the main documentation hub for learning how to use and manage Simotel's PBX and Call Center systems, as well as a guide to web services for developers and programmers"
     },
       "site.tagline": {
-        "message": "Welcome to the Simotel PBX Documentation 👋️"
+        "message": "Welcome to Simotel PBX Docs 👋️"
       },
       "navbar.title": {
         "message": "Docs Center"

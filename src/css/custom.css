@@ -186,10 +186,12 @@ html[data-theme="dark"] {
 
 .custom-table tr:nth-child(even) {
   background-color: #b4f0e8;
+  color: black;
 }
 
 .custom-table tr:nth-child(odd) {
   background-color: #ffffff;
+  color: #197580;
 }
 
 .custom-table th {

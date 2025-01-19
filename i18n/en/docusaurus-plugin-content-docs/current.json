@@ -234,12 +234,16 @@
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.docs.category.twoVerify": {
-    "message": "TwoVerify",
+    "message": "2fa Auth",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   
   "sidebar.Autodialer.category.audialer-module": {
     "message": "Autodialer Module",
+    "description": "The label for category مباحث پیشرفته in sidebar Docs"
+  },
+  "sidebar.docs.doc.Overview": {
+    "message": "What is",
     "description": "The label for category مباحث پیشرفته in sidebar Docs"
   },
   "sidebar.docs.category.User": {
