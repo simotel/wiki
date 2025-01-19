@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
+title: "Template Sms"
 ---
-### SMS Sending Service Template
+
+# SMS Sending Service Template
 
 Given the variety of SMS services, Simotel provides a scalable infrastructure for sending messages, allowing you to use your preferred service. Below is an example of an SMS sending service, and you can modify the following Python code to upload the service in Simotel. 
 

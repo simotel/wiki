@@ -1,10 +1,10 @@
 ---
-sidebar_label: "Dialer.ini تنظیمات"
+sidebar_label: " تنظیمات Dialer.ini "
 title: "Dialer.ini تنظیمات"
 ---
 
 
-# تنظیمات dialer.ini
+# تنظیمات dialer.ini 
 
 dialer.ini فایلی می‌باشد که در آن تنظیمات مربوط به ماژول‌تماس‌انبوه تعریف شده‌اند، مسیر دسترسی به این فایل etc/simotel/dialer.ini/ می‌باشد.با استفاده از دستور زیر می‌توان این فایل را باز کرد و تغییرات را در آن اعمال کرد.
 

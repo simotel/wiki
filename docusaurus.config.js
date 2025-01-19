@@ -212,6 +212,8 @@ plugins: [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
+        indexBlog:false,
+        indexPages:true,
         language: ["en" , "ar"],
       },
     ],	

@@ -1,3 +1,6 @@
+---
+title: "Originate Call"
+---
 ### Originate Call with Campaign
 
 The Bulk Dialer module can also be used to establish a Originate call. The advantage of this module becomes evident when the first party ends the call. In this case, by using the `autodialer_api/report/report_search` service, you can know when the call was ended by the first party.

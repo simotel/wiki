@@ -154,10 +154,40 @@ module.exports = {
 			type: 'category',
 			label: 'Simotel WebHooks',
 			items: [
-				'developers/SimotelWebhooks/whatis',
 				{
-					'SimotelWebhooks ': ['developers/SimotelWebhooks/Events/setting', 'developers/SimotelWebhooks/Events/transfer', 'developers/SimotelWebhooks/Events/incoming_call', 'developers/SimotelWebhooks/Events/outgoing_call', 'developers/SimotelWebhooks/Events/exten_added', 'developers/SimotelWebhooks/Events/exten_remove', 'developers/SimotelWebhooks/Events/incoming_fax', 'developers/SimotelWebhooks/Events/outgoing_fax', 'developers/SimotelWebhooks/Events/cdr_queue', 'developers/SimotelWebhooks/Events/voicemail', 'developers/SimotelWebhooks/Events/voicemail_email', 'developers/SimotelWebhooks/Events/survey', 'developers/SimotelWebhooks/Events/cdr', 'developers/SimotelWebhooks/Events/TrunkNewState', 'developers/SimotelWebhooks/Events/TrunkAdded', 'developers/SimotelWebhooks/Events/TrunkRemoved', 'developers/SimotelWebhooks/Events/AutoDialerReport', 'developers/SimotelWebhooks/Events/new_state',],
-					'Component Api': ['developers/SimotelWebhooks/DialplanApiComponents/whatis', , 'developers/SimotelWebhooks/DialplanApiComponents/setting', 'developers/SimotelWebhooks/DialplanApiComponents/exten_api', 'developers/SimotelWebhooks/DialplanApiComponents/trunk_api', 'developers/SimotelWebhooks/DialplanApiComponents/ivr_api', 'developers/SimotelWebhooks/DialplanApiComponents/smart_api'],
+					label: 'Overview', // اضافه کردن label
+					type: 'doc', // نوع سند
+					id: 'developers/SimotelWebhooks/whatis', // شناسه سند
+				},
+				{
+					'Simotel Events': [
+						'developers/SimotelWebhooks/Events/setting',
+						'developers/SimotelWebhooks/Events/transfer',
+						'developers/SimotelWebhooks/Events/incoming_call',
+						'developers/SimotelWebhooks/Events/outgoing_call',
+						'developers/SimotelWebhooks/Events/exten_added',
+						'developers/SimotelWebhooks/Events/exten_remove',
+						'developers/SimotelWebhooks/Events/incoming_fax',
+						'developers/SimotelWebhooks/Events/outgoing_fax',
+						'developers/SimotelWebhooks/Events/cdr_queue',
+						'developers/SimotelWebhooks/Events/voicemail',
+						'developers/SimotelWebhooks/Events/voicemail_email',
+						'developers/SimotelWebhooks/Events/survey',
+						'developers/SimotelWebhooks/Events/cdr',
+						'developers/SimotelWebhooks/Events/TrunkNewState',
+						'developers/SimotelWebhooks/Events/TrunkAdded',
+						'developers/SimotelWebhooks/Events/TrunkRemoved',
+						'developers/SimotelWebhooks/Events/AutoDialerReport',
+						'developers/SimotelWebhooks/Events/new_state',
+					],
+					'Component Api': [
+						'developers/SimotelWebhooks/DialplanApiComponents/whatis',
+						'developers/SimotelWebhooks/DialplanApiComponents/setting',
+						'developers/SimotelWebhooks/DialplanApiComponents/exten_api',
+						'developers/SimotelWebhooks/DialplanApiComponents/trunk_api',
+						'developers/SimotelWebhooks/DialplanApiComponents/ivr_api',
+						'developers/SimotelWebhooks/DialplanApiComponents/smart_api',
+					],
 				}
 			],
 		},
@@ -354,7 +384,7 @@ module.exports = {
 					'pbx/pbx-menu/dialplan/components/announcements',
 					'pbx/pbx-menu/dialplan/components/callback',
 					'pbx/pbx-menu/dialplan/components/ring_group',
-					'pbx/pbx-menu/dialplan/components/followe_me',
+					'pbx/pbx-menu/dialplan/components/follow_me',
 					'pbx/pbx-menu/dialplan/components/voicemail',
 					'pbx/pbx-menu/dialplan/components/conference',
 					'pbx/pbx-menu/dialplan/components/call_completion',
