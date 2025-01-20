@@ -65,7 +65,7 @@ X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG
 ```
 
 
-## نمونه‌ Header
+## Sample Header
 
 ```shell
 Authorization: Basic dGVzdDpBYTEyMzQ1Ng==
@@ -73,36 +73,38 @@ X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG
 Content-Type: application/json
 ```
 
-- **Authorization**: اعتبار سنجی Basic Authentication.
-- **X-APIKEY**: اعتبار سنجی API-key.
-- **Content-Type**: فرمت بدنه پیام. در تمام درخواست‌ها به غیر از سرویس‌های دانلود و استریم، فرمت بدنه پیام application/json می‌باشد.
+- **Authorization**: Basic Authentication validation.  
+- **X-APIKEY**: API-key validation.  
+- **Content-Type**: The format of the message body. In all requests except download and streaming services, the message body format is `application/json`.  
 
-## پیام‌های رایج در پاسخ به درخواست
+## Common Response Messages  
 
-انواع پاسخ هایی که در سرویس‌های SA دریافت می‌شود به شرح زیر است.
-<div class="custom-table">
-|                                              توضیحات                                             | success |                                                                                        message                                                                                       |           header           |
-|:------------------------------------------------------------------------------------------------:|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
-|                      سرویس به درستی فراخوانی شد و عملیات به درستی انجام شد.                      |    1    |                                                                                           -                                                                                          |           Ok-200           |
-| سرویس به درستی فراخوانی‌شده اما در انجام عملیات خطایی رخ‌داده.خطای مربوطه در قسمت message ذکر شده. |    0    | "corresponding error" such as: This number already exists \Field 'field_name':value is missing \Requested operation failed \This trunk already exists \this queue already exists     |           Ok-200           |
-|                                  فرمت محتوی درخواستی صحیح نیست.                                  |    0    |                                                                                Unable to parse content                                                                               |       Bad Request-400      |
-|                               هیچ اطلاعات اعتبار‌سنجی وارد نشده‌ است.                               |    0    |                                                                            BasicAuth or ApiKey is missing                                                                            |      Unauthorized-401      |
-|                              اطلاعات اعتبارسنجی ناقص یا نامعتبر است.                               |    0    |                                                                            BasicAuth or ApiKey is invalid                                                                            |      Unauthorized-401      |
-|                             کلایت اجازه دسترسی به این سرویس را ندارد.                             |    0    |                                                                                 "....";Access denied                                                                                 |        Forbidden-403       |
-|                          IP کلاینت اجازه دسترسی به این وب‌سرویس را ندارد.                          |    0    |                                                                                  IP is not permitted                                                                                 |        Forbidden-403       |
-|                   آدرس‌دهی اشتباه وارد شده و خطا 404 از سمت آپاچی ارسال شده است.                  |    -    |                                                                                           -                                                                                          |        Not Found-404       |
-|                           فایل درخواستی وجود ندارد(در زمان دانلود فایل).                          |    -    |                                                                                           -                                                                                          |        Not Found-404       |
-|                     متد درخواستی برای این سرویس مجاز نیست. POST,PUT,DELETE,GET                    |    0    |                                                                                  Method not allowed                                                                                  |   Method Not Allowed-405   |
-|                             مقدار content-type موجود در هدر مجاز نیست.                            |    0    |                                                                                Unsupported Media Type                                                                                | Unsupported Media Type-415 |
-|                                  سرویس فراخوانی شده وجود ندارد.                                  |    0    |                                                                           Requested service dose not exist                                                                           |     Not Implemented-501    |
+The types of responses received in SA services are as follows:  
 
-</div>
+<div class="custom-table">  
+|                                              Description                                             | success |                                                                                        message                                                                                       |           header           |  
+|:------------------------------------------------------------------------------------------------:|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|  
+|                      The service was successfully invoked, and the operation was executed correctly.                      |    1    |                                                                                           -                                                                                          |           Ok-200           |  
+| The service was successfully invoked, but an error occurred during the operation. The corresponding error is mentioned in the message field. |    0    | "corresponding error" such as: This number already exists \Field 'field_name':value is missing \Requested operation failed \This trunk already exists \this queue already exists     |           Ok-200           |  
+|                                  The requested content format is invalid.                                  |    0    |                                                                                Unable to parse content                                                                               |       Bad Request-400      |  
+|                               No authentication information has been provided.                               |    0    |                                                                            BasicAuth or ApiKey is missing                                                                            |      Unauthorized-401      |  
+|                              Authentication information is incomplete or invalid.                               |    0    |                                                                            BasicAuth or ApiKey is invalid                                                                            |      Unauthorized-401      |  
+|                             The client is not authorized to access this service.                             |    0    |                                                                                 "....";Access denied                                                                                 |        Forbidden-403       |  
+|                          The client's IP is not authorized to access this web service.                          |    0    |                                                                                  IP is not permitted                                                                                 |        Forbidden-403       |  
+|                   Incorrect addressing, resulting in a 404 error from Apache.                  |    -    |                                                                                           -                                                                                          |        Not Found-404       |  
+|                           The requested file does not exist (during file download).                          |    -    |                                                                                           -                                                                                          |        Not Found-404       |  
+|                     The requested method is not allowed for this service. POST, PUT, DELETE, GET                    |    0    |                                                                                  Method not allowed                                                                                  |   Method Not Allowed-405   |  
+|                             The `Content-Type` value in the header is not allowed.                            |    0    |                                                                                Unsupported Media Type                                                                                | Unsupported Media Type-415 |  
+|                                  The invoked service does not exist.                                  |    0    |                                                                           Requested service does not exist                                                                           |     Not Implemented-501    |  
 
-## پارامترهای Pagination
+</div>  
 
-این پارمترها نحوه نمایش اطلاعات بازیابی شده از مرکزتماس را مشخص می‌کنند،از آنجایی که این پارمتر‌ها در اکثر APIهای مربوط به جستجو موجود می‌باشند در اینجا یکبار بصورت جزئی مورد بررسی قرار می‌گیرند.
+## Pagination Parameters  
 
-لیست‌ APIهایی که از این پارامتر‌ها پشتیبانی می‌کنند
+These parameters define how the retrieved information from the call center is displayed. Since these parameters are available in most search-related APIs, they are discussed here in detail once.  
+
+### List of APIs Supporting These Parameters  
+
 
 ۱. **pbx/faxes/**
 
@@ -128,25 +130,20 @@ Content-Type: application/json
 
 ۱۲. **autodialer/reports/**
 
-### start
-مشخص می‌کند از کدام یک(مقدار عددی) از داده‌های بازیابی شده توسط مرکز تماس شروع به ارسال اطلاعات به‌سمت وب‌سرویس بکند.
+### **start**  
+Specifies which record (numeric value) from the data retrieved by the call center should begin to be sent to the web service.  
 
-### count
+### **count**  
+Determines how many records from the data retrieved by the call center should be sent to the web service.  
 
-چه تعداد از داده‌های بازیابی شده توسط مرکزتماس به سمت وب‌سرویس ارسال شود.
+### **sorting**  
+Indicates how the data should be sorted based on a specific column and whether the sorting should be ascending or descending (1 for ascending and -1 for descending).  
 
-### sorting
-
-مرتب سازی داده‌ها براساس کدام ستون و به ترتیب صعودی یا نزولی باشد(مقدار ۱ برابر با صعودی و مقدار ۱- برابر با نزولی می‌باشد).
-
-
-- **مثال)** بازیابی اطلاعات بخش گروه‌ها به نوحی که
-
-	۱. از ۴امین رکورد،اطلاعات بازیابی شده توسط مرکزتماس به سمت وب‌سرویس ارسال شوند.
-	
-	۲. بطور کلی ۲ رکورد از داده‌های بازیابی شده بازگردانده شود.
-	
-	۳. گزارش بازگشتی براساس تاریخ و بصورت صعودی مرتب باشد.
+### **Example**  
+Retrieving group information such that:  
+1. Data sent to the web service starts from the 4th record retrieved by the call center.  
+2. Only 2 records from the retrieved data are returned.  
+3. The returned report is sorted by date in ascending order.
 
 
 import Tabs from '@theme/Tabs';
@@ -226,10 +223,10 @@ import TabItem from '@theme/TabItem';
   </Tabs>
 
 
-## پارامترهای ضروری و منطقی
+## **Required and Logical Parameters**  
 
-درآینده در جداول با ستونی به نام `پارمترهای ضروری[**]/منطقی[*]` مواجه می‌شویم که مقادیر آن مشخص کننده
+In the future, you may encounter tables with a column named **Required[**] / Logical[*]**, where the values specify the following:  
 
-۱. **پارامترهای ضروری**: حتما باید این مقادیر در درخواست وب‌سرویس به سمت سیموتل ارسال شوند و درغیر اینصورت سیموتل در پاسخ خطا برمی‌گرداند.
+1. **Required Parameters**: These parameters **must** be included in the web service request sent to Simotel. If they are not provided, Simotel will return an error in the response.  
 
-۲. **پارامترهای منطقی**: مقادیری که عدم وجودشان در درخواست باعث ایجاد خطا در سیستم نمی‌شود اما منطقی است که باتوجه به درخواست این مقادیر به سمت سیموتل فرستاده شوند.
+2. **Logical Parameters**: These are parameters whose absence in the request does not cause a system error. However, it is logical to include them in the request based on its context and purpose.  

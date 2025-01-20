@@ -41,8 +41,8 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="usageCode"
   values={[
-    {label: 'نمونه کد استفاده', value: 'usageCode'},
-    {label: 'نمونه خروجی', value: 'outputCode'},
+    {label: 'Example Code To Use', value: 'usageCode'},
+    {label: 'Example Output', value: 'outputCode'},
   ]}>
 
   <!-- تب نمونه کد استفاده -->
