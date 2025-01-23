@@ -34,4 +34,3 @@ In this section, the information entered in previous steps is consolidated to cr
 - **Description**: Add descriptions about the campaign.
 
 After creating the campaign, its initial status will be displayed as **waiting**. Once the bulk calling starts, the status will change to **running**, and upon completion, the status will update to **completed**.
-```

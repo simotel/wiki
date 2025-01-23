@@ -1,10 +1,10 @@
 ---
-sidebar_label: "Followe Me"
+sidebar_label: "Follow Me"
 ---
 
 
 
-# Followe Me
+# Follow Me
 
 ## کاربرد
 

@@ -22,4 +22,3 @@ The trunk connects the contact center to the telecommunications network. Since t
 - **Dial Interval**: Define the interval between each call sent to the trunk. For example, if set to five, a call will be sent every five seconds. This parameter is measured in seconds.
 
 - **Wait Cache Length**: Specify the number of records retrieved from the database per query. For instance, if set to 100, 100 records will be fetched per query. The default value is the most suitable setting.
-```

@@ -37,4 +37,3 @@ In this section, reports related to bulk calling campaigns can be viewed. Note t
 - **Status**: The status of the call.
 
 - **Details**: Details of the call made.
-```
