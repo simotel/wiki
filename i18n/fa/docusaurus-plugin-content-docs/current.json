@@ -8,7 +8,7 @@
     "description": "The label for category تماس انبوه in sidebar Autodialer"
   },
   "sidebar.docs.category.Simotel Api": {
-    "message": "Simotel Api",
+    "message": "Simotel API",
     "description": "The label for category Simotel Api in sidebar docs"
   },
   "sidebar.docs.category.کاربر": {
@@ -64,7 +64,7 @@
     "description": "The label for category Events in sidebar docs"
   },
   "sidebar.docs.category.Component Api": {
-    "message": "Component Api",
+    "message": "Component API",
     "description": "The label for category Component Api in sidebar docs"
   },
   "sidebar.docs.category.مثال‌های کاربردی": {
