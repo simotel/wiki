@@ -156,6 +156,5 @@ import TabItem from '@theme/TabItem';
 ## Ping Event  
 If the Ping event is enabled in the Simotel settings, the Ping webhook will be activated after calling the ping API.
 
-## Simotel Connection Test Code Example  
-GitHub address for the test API.
+
 

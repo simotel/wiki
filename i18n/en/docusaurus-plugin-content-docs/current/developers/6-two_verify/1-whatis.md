@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "2fa Auth"
+title: "2FA Auth"
 sidebar_label: "What is"
 ---
 
