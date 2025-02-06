@@ -14,10 +14,10 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.5.2",
-    "@docusaurus/plugin-pwa": "^3.5.2",
-    "@docusaurus/preset-classic": "^3.5.2",
-    "@docusaurus/theme-common": "^3.5.2",
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/plugin-pwa": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "@docusaurus/theme-common": "^3.7.0",
     "@easyops-cn/docusaurus-search-local": "^0.44.5",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^1.2.1",
@@ -28,7 +28,7 @@
     "react-i18next": "^15.0.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.5.2"
+    "@docusaurus/module-type-aliases": "^3.7.0"
   },
   "browserslist": {
     "production": [
