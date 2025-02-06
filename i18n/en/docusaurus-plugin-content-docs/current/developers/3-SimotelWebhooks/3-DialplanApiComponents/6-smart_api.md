@@ -25,6 +25,11 @@ Based on the values in the **API Method & API Version** settings, the web servic
 - **data**: Data entered by the caller during the call (e.g., data entered in IVR).
 - **unique_id**: The unique identifier for the call.
 - **app_name**: The name of the current component.
+- **originated_call_id**: The unique identifier for the Originate call
+
+:::info info 
+  The originated_call_id, or the unique identifier for a two-way call, is only sent when a two-way call is initiated.
+:::
 
 The response from the web service will be returned in **JSON** format.
 

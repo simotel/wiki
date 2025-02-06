@@ -84,7 +84,7 @@ One of the main advantages of a software system is its ability to integrate and 
 - And more
 
 
-## Translated into Four Major Languages
+## Translated into Two Major Languages
 
 - Persian
 - English
