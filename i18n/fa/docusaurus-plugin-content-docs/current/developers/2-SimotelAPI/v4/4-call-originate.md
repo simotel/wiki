@@ -76,7 +76,7 @@ import TabItem from '@theme/TabItem';
 	  CURLOPT_TIMEOUT => 0,
 	  CURLOPT_FOLLOWLOCATION => true,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'PUT',
+	  CURLOPT_CUSTOMREQUEST => 'POST',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"557",
 		"callee":"552",
@@ -123,7 +123,7 @@ import TabItem from '@theme/TabItem';
 			<script>
 				var settings = {
 				  "url": "http://192.168.51.20/api/v4/call/originate/act",
-				  "method": "PUT",
+				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
 					"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
@@ -160,7 +160,7 @@ import TabItem from '@theme/TabItem';
             <br/>
 ```bash
 
-	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \

@@ -52,7 +52,7 @@ import TabItem from '@theme/TabItem';
 	  CURLOPT_TIMEOUT => 0,
 	  CURLOPT_FOLLOWLOCATION => true,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'PUT',
+	  CURLOPT_CUSTOMREQUEST => 'POST',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"570",
 		"callee":"553",
@@ -92,7 +92,7 @@ import TabItem from '@theme/TabItem';
 			<script>
 				var settings = {
 				  "url": "http://192.168.51.20/api/v4/call/originate/act",
-				  "method": "PUT",
+				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
 					"X-APIKEY": "9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG",
@@ -125,7 +125,7 @@ import TabItem from '@theme/TabItem';
             <br/>
 
 		```bash
-			curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
+			curl --location --request POST 'http://192.168.51.20/api/v4/call/originate/act' \
 			--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 			--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 			--header 'Content-Type: application/json' \
@@ -207,7 +207,7 @@ Since the exit path for the caller (the first person in the call) is determined 
 	  CURLOPT_TIMEOUT => 0,
 	  CURLOPT_FOLLOWLOCATION => true,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'PUT',
+	  CURLOPT_CUSTOMREQUEST => 'POST',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"09371234567",
 		"callee":"521",
@@ -248,7 +248,7 @@ Since the exit path for the caller (the first person in the call) is determined 
 			<script>
 				var settings = {
 				  "url": "http://192.168.51.20/api/v4/call/originate/act",
-				  "method": "PUT",
+				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
 					"X-APIKEY": "9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG",
@@ -281,7 +281,7 @@ Since the exit path for the caller (the first person in the call) is determined 
             <summary>Show Full Source Code Curl</summary>
             <br/>
 ```bash
-	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -369,7 +369,7 @@ In this example, the value of `context` is set to **main_routing**, and in the `
 	  CURLOPT_TIMEOUT => 0,
 	  CURLOPT_FOLLOWLOCATION => true,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'PUT',
+	  CURLOPT_CUSTOMREQUEST => 'POST',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"521",
 		"callee":"09371234567",
@@ -409,7 +409,7 @@ In this example, the value of `context` is set to **main_routing**, and in the `
 			<script>
 				var settings = {
 				  "url": "http://192.168.51.20/api/v4/call/originate/act",
-				  "method": "PUT",
+				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
 					"X-APIKEY": "9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG",
@@ -442,7 +442,7 @@ In this example, the value of `context` is set to **main_routing**, and in the `
             <br/>
 
 ```bash
-	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
@@ -520,7 +520,7 @@ In this example, the value of `context` is set to **main_routing**, and in the `
 	  CURLOPT_TIMEOUT => 0,
 	  CURLOPT_FOLLOWLOCATION => true,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'PUT',
+	  CURLOPT_CUSTOMREQUEST => 'POST',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"31041570",
 		"callee":"09371234567",
@@ -561,7 +561,7 @@ In this example, the value of `context` is set to **main_routing**, and in the `
 			<script>
 					var settings = {
 					  "url": "http://192.168.51.20/api/v4/call/originate/act",
-					  "method": "PUT",
+					  "method": "POST",
 					  "timeout": 0,
 					  "headers": {
 						"X-APIKEY": "9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG",
@@ -595,7 +595,7 @@ In this example, the value of `context` is set to **main_routing**, and in the `
             <br/>
 
 ```bash
-	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: 9UV0BWKRL83PYIH9Gv1fI85d41lO4S932EeX3wHC47sHjMJOMG' \
 	--header 'Authorization: Basic c2FkcjpTYWRyQDEyMw==' \
 	--header 'Content-Type: application/json' \
