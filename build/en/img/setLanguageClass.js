@@ -1,1 +1,0 @@
-function setLanguageClass(){const n=document.documentElement.lang;document.body.classList.remove("lang-en","lang-fa"),"en"===n?document.body.classList.add("lang-en"):"fa"===n&&document.body.classList.add("lang-fa")}document.addEventListener("DOMContentLoaded",setLanguageClass);
