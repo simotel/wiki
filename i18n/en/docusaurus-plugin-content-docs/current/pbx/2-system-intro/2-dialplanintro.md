@@ -62,7 +62,7 @@ All components share common features that can be accessed by clicking on them:
 
 - **Remove**: This option is used to remove a component from the dial plan.
 
-![Component properties](/img/compontnetprop.png)
+![Component properties](/img/compontnetprop.png/)
 
 
 

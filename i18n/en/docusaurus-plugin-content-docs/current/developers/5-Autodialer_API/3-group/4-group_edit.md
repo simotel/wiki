@@ -9,7 +9,7 @@ This service is used to edit groups.
 <div class="custom-table">
 |             Description              | Defined Data   | Example Data             | Required[**]/Optional[*] | Parameters  |
 |:-----------------------------------:|:--------------:|:------------------------:|:------------------------:|:-----------:|
-| Unique ID obtained from [Search](/developers/Autodialer_API/group/group_search) | -              | 6033876dc92de036d1390923 | **                       | id_         |
+| Unique ID obtained from [Search](/developers/Autodialer_API/group/group_search/) | -              | 6033876dc92de036d1390923 | **                       | id_         |
 | Group Name                          | -              | test_group_new           | *                        | name        |
 | Group Phone Numbers                 | -              | "1111", "2222", "3333"   | *                        | numbers     |
 | Description                         | -              | just for test            |                          | description |

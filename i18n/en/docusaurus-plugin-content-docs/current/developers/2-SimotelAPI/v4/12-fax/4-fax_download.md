@@ -9,7 +9,7 @@ This service is used to download a received fax.
 <div class="custom-table">
 |                Description               | Defined Data |      Sample Data      | Required[**]/Logical[*] | Parameters |
 |:--------------------------------------:|:------------:|:----------------------:|:----------------------:|:----------:|
-| Unique identifier for the fax obtained from [fax search](/developers/SimotelAPI/v4/fax/fax_search) | - | 5fe7b083b6e91a5ef2bbf7bb | ** | id_ |
+| Unique identifier for the fax obtained from [fax search](/developers/SimotelAPI/v4/fax/fax_search/) | - | 5fe7b083b6e91a5ef2bbf7bb | ** | id_ |
 </div>
 
 

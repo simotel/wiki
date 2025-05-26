@@ -22,7 +22,7 @@ title: "مثال کاربردی"
 
 
 **۱:**
-برای به دست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/fa/developers/Autodialer_API/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
+برای به دست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/fa/developers/Autodialer_API/announcement/announcement_search/) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
 
 <!--  -->
 import Tabs from '@theme/Tabs';
@@ -95,7 +95,7 @@ Content-Length: 66
 
 
 <!--  -->
-۲: برای یافتن شناسه‌یکتای ترانک از سرویس [trunk manager search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) استفاده می‌کنیم، نمونه درخواست HTTP آن به شرح زیر می‌باشد
+۲: برای یافتن شناسه‌یکتای ترانک از سرویس [trunk manager search](/developers/Autodialer_API/trunk_manager/trunk_manager_search/) استفاده می‌کنیم، نمونه درخواست HTTP آن به شرح زیر می‌باشد
 
 <!--  -->
 
@@ -248,7 +248,7 @@ Content-Length: 66
 
 
 
-۳،۴،۵: درنهایت نیز با ساخت کمپینی با شرایط ذکر شده ارسال تماس انبوه در زمان مشخص شده انجام می‌شود ([campaign add](/developers/Autodialer_API/campaign/campaign_add))، نمونه درخواست HTTP به‌شرح زیر می‌باشد
+۳،۴،۵: درنهایت نیز با ساخت کمپینی با شرایط ذکر شده ارسال تماس انبوه در زمان مشخص شده انجام می‌شود ([campaign add](/developers/Autodialer_API/campaign/campaign_add/))، نمونه درخواست HTTP به‌شرح زیر می‌باشد
 
 
 <!--  -->

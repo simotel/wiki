@@ -15,7 +15,7 @@ To send a fax as a file, the "file" field must have a value, and the "text" fiel
 |                        Destination number                    |       -      |               112233             |            *           |      to     |
 |                    Destination internal extension           |       -      |                 558              |            *           |     ext     |
 |                        Output trunk                         |       -      |             trunk_name1          |            *           |  trunk_name |
-| Name of the uploaded file returned in the [fax upload](/developers/SimotelAPI/v4/fax/fax_upload) response (if the "file" field has a value, the "text" field should be removed) |       -      | file-20200624051520-61681-fax-test |            *           |     file    |
+| Name of the uploaded file returned in the [fax upload](/developers/SimotelAPI/v4/fax/fax_upload/) response (if the "file" field has a value, the "text" field should be removed) |       -      | file-20200624051520-61681-fax-test |            *           |     file    |
 |                    For sending a text file                  |       -      |           this is sample         |                        |     text    |
 |                          Description                         |       -      |            just for test         |                        | description |
 </div>

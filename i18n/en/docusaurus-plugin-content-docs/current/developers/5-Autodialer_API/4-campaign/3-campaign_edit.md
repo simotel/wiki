@@ -8,16 +8,16 @@ This service is used to edit a campaign.
 <div class="custom-table">
 | Description                                      | Defined Data   | Example Data             | Required[**]/Optional[*] | Parameters             |
 |:------------------------------------------------:|:--------------:|:------------------------:|:------------------------:|:----------------------:|
-| Unique ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) | -              | 6048aa14095d8438aa64e7c9 | **                       | id_                    |
+| Unique ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search/) | -              | 6048aa14095d8438aa64e7c9 | **                       | id_                    |
 | Campaign Name                                    | -              | imrorteza04              | *                        | name                   |
-| Unique Trunk ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) | -              | 60508b4e095d840c3019e1bd | *                        | trunk_manager_id       |
+| Unique Trunk ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search/) | -              | 60508b4e095d840c3019e1bd | *                        | trunk_manager_id       |
 | Context Value in autodialer component route     | -              | auto                     |                          | interface_context      |
 | Text Value in autodialer component route        | -              | text1                    |                          | interface_text         |
 | Time Interval Between Each Attempt              | -              | 600                      | *                        | try_interval           |
 | Number of Retries                                | -              | 1                        | *                        | try                    |
 | Campaign Start Time                              | -              | 2021-02-19 15:17         | *                        | start                  |
 | Campaign End Time                                | -              | 2021-02-23 15:17         | *                        | end                    |
-| Unique Audio File ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search) | -              | lkjaghdfverfg78345893    | *                        | announcement           |
+| Unique Audio File ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search/) | -              | lkjaghdfverfg78345893    | *                        | announcement           |
 | Description                                      | -              | -                        |                          | description            |
 </div>
 

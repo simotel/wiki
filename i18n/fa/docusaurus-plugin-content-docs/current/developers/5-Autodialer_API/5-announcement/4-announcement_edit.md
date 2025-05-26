@@ -13,7 +13,7 @@ title: "به روز رسانی آوا"
 <div class="custom-table">
 |                توضیحات               | داده های تعریف شده |                   داده های نمونه                   | پارامترهای ضروری[**]/منطقی[*] |  پارامترها  |
 |:------------------------------------:|:------------------:|:--------------------------------------------------:|:----------------------:|:-----------:|
-| شناسه‌یکتا آوا که از [جستجو](/developers/Autodialer_API/announcement/announcement_search) بدست می‌آید |          -         |              6033876dc92de036d1390923              |           **           |     id_     |
+| شناسه‌یکتا آوا که از [جستجو](/developers/Autodialer_API/announcement/announcement_search/) بدست می‌آید |          -         |              6033876dc92de036d1390923              |           **           |     id_     |
 |                نام آوا               |          -         |                   test_sound_new                   |            *           |     name    |
 |               نام فایل               |          -         | file-20200825065434-58826-bbc-farsi-pargarmp3_.wav |            *           |   filename  |
 |                توضیحات               |          -         |                    Just for test                   |            -           | description |

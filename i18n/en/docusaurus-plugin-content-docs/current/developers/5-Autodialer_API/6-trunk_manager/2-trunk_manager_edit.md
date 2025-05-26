@@ -9,7 +9,7 @@ This service is used to edit a trunk manager.
 <div class="custom-table">
 | Description                                                       | Defined Data      | Example Data           | Required[**]/Optional[*] | Parameters           |
 |:-----------------------------------------------------------------:|:-----------------:|:----------------------:|:------------------------:|:---------------------:|
-| Unique Trunk Manager ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) | -                 | 5ec65107ce4f6d12c43e250f | **                       | _id                   |
+| Unique Trunk Manager ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search/) | -                 | 5ec65107ce4f6d12c43e250f | **                       | _id                   |
 | Trunk Manager Name                                                | -                 | autodialer             | *                        | title                 |
 | Trunk Manager Status                                              | active/inactive   | active                 | *                        | status                |
 | Number of records to fetch from the database per call            | -                 | 100                    | *                        | wait_cache_length     |

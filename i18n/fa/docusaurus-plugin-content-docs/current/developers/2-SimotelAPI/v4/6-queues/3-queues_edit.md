@@ -11,7 +11,7 @@ title: "به روز رسانی صف"
 <div class="custom-table">
 |                توضیحات                |                               داده های تعریف شده                               |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |          پارامترها          |
 |:-------------------------------------:|:------------------------------------------------------------------------------:|:------------------------:|:-------------:|:---------------------------:|
-| شناسه یکتای صف که از [جستجو](/developers/SimotelAPI/v4/queues/queues_search) بدست می‌آید |                                        -                                       | 603c8d9ffc909f2e766d40d3 |       **      |             _id             |
+| شناسه یکتای صف که از [جستجو](/developers/SimotelAPI/v4/queues/queues_search/) بدست می‌آید |                                        -                                       | 603c8d9ffc909f2e766d40d3 |       **      |             _id             |
 |                 نام صف                |                                        -                                       |          nasimTelecom         |       *       |             name            |
 |                شماره صف               |                                        -                                       |           9008           |       *       |            number           |
 |                استراتژی               | Ring All/Least Recent/Fewest Calls/Random/RR Memory/RR Ordered/Linear/W Random |         Ring All         |       *       |           strategy          |

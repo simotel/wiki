@@ -76,7 +76,7 @@ title: "سناریو تماس"
 
 - **Remove**: این گزینه برای حذف کامپوننت از دایل‌پلن می‌باشد.
 
-![Component properties](/img/compontnetprop.png)
+![Component properties](/img/compontnetprop.png/)
 
 
 

@@ -7,7 +7,7 @@ sidebar_label: "Management Dashboard "
 
 In this section, live reports of the performance of different system components are displayed. This section provides monitoring metrics for the Call Center in the form of components, allowing the system administrator to select desired components and design a personalized dashboard.
 
-![dashboard](/img/simotel/dashboard.JPG)
+![dashboard](/img/simotel/dashboard.JPG/)
 
 ## Monitoring Components
 

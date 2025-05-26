@@ -10,7 +10,7 @@ This service is used to edit queues.
 <div class="custom-table">
 |                Description                |                               Defined Data                               |      Sample Data      | Required Parameters[**]/Logical[*] |          Parameters          |
 |:-----------------------------------------:|:----------------------------------------------------------------------:|:--------------------:|:----------------------:|:---------------------------:|
-| Unique ID of the queue obtained from [search](/developers/SimotelAPI/v4/queues/queues_search) |                                        -                               | 603c8d9ffc909f2e766d40d3 |       **              |             _id             |
+| Unique ID of the queue obtained from [search](/developers/SimotelAPI/v4/queues/queues_search/) |                                        -                               | 603c8d9ffc909f2e766d40d3 |       **              |             _id             |
 |                 Queue Name                |                                        -                               |          nasimTelecom         |       *                |             name            |
 |                Queue Number               |                                        -                               |           9008       |       *                |            number           |
 |                Strategy                   | Ring All/Least Recent/Fewest Calls/Random/RR Memory/RR Ordered/Linear/W Random |         Ring All     |       *                |           strategy          |

@@ -9,7 +9,7 @@ This service is used to edit an audio file for the mass calling section.
 <div class="custom-table">
 | Description                    | Defined Data   | Example Data                                         | Required[**]/Optional[*] | Parameters             |
 |:--------------------------------:|:--------------:|:----------------------------------------------------:|:------------------------:|:----------------------:|
-| Unique Audio ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search) | -              | 6033876dc92de036d1390923                             | **                       | id_                    |
+| Unique Audio ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search/) | -              | 6033876dc92de036d1390923                             | **                       | id_                    |
 | Audio Name                      | -              | test_sound_new                                       | *                        | name                   |
 | Audio File Name                 | -              | file-20200825065434-58826-bbc-farsi-pargarmp3_.wav   | *                        | filename               |
 | Description                     | -              | Just for test                                        | -                        | description            |

@@ -12,9 +12,9 @@ title: "به روز رسانی آوا"
 <div class="custom-table">
 | توضیحات | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:-:|:-:|:-:|:-:|:-:|
-| شناسه یکتای آوا که از [جستجو](/developers/SimotelAPI/v4/announcement/announcements_search) بدست می‌آید | - | 6033876dc92de036d1390923 | ** | id_ |
+| شناسه یکتای آوا که از [جستجو](/developers/SimotelAPI/v4/announcement/announcements_search/) بدست می‌آید | - | 6033876dc92de036d1390923 | ** | id_ |
 | نام آوا | - | test_sound_new | * | name |
-|  نام فایل‌صوتی که در پاسخ به درخواست [آپلود](/developers/SimotelAPI/v4/announcement/announcements_upload) برگردانده می‌شود | - | file-20200624051520-61681-announcement-wiresha_ | * | filename |
+|  نام فایل‌صوتی که در پاسخ به درخواست [آپلود](/developers/SimotelAPI/v4/announcement/announcements_upload/) برگردانده می‌شود | - | file-20200624051520-61681-announcement-wiresha_ | * | filename |
 | توضیحات | - | Just for test |  | comment |
 </div>
 

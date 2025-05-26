@@ -9,7 +9,7 @@ This service is used to delete an audio file.
 <div class="custom-table">
 | Description                    | Defined Data   | Example Data                                         | Required[**]/Optional[*] | Parameters             |
 |:--------------------------------:|:--------------:|:----------------------------------------------------:|:------------------------:|:----------------------:|
-| Unique Audio ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search) | -              | 6033876dc92de036d1390923                             | **                       | id_                    |
+| Unique Audio ID obtained from [search](/developers/Autodialer_API/announcement/announcement_search/) | -              | 6033876dc92de036d1390923                             | **                       | id_                    |
 </div>
 
 ## Sample Invocation

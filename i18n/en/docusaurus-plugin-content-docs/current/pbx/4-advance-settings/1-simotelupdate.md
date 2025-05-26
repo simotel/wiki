@@ -4,13 +4,13 @@
 
 # Simotel Update
 
-To update, you can navigate to `Settings > Maintenance > update`. In the update tab, there are various sections explained in **[this section](/pbx/pbx-menu/maintenance/settings/update)**.
+To update, you can navigate to `Settings > Maintenance > update`. In the update tab, there are various sections explained in **[this section](/pbx/pbx-menu/maintenance/settings/update/)**.
 
 ## Important Considerations Before Updating
 
 Before updating, please keep in mind the following:
 
-- **Backup File**: Make sure to create a PBX backup file from the Call Center and store it in a safe place. For more information, refer to **[this section](/pbx/pbx-menu/control-panel/backup)**.
+- **Backup File**: Make sure to create a PBX backup file from the Call Center and store it in a safe place. For more information, refer to **[this section](/pbx/pbx-menu/control-panel/backup/)**.
 
 - **Internet Access**: The server must have internet access.
 
@@ -20,12 +20,12 @@ Considering that significant changes have been made to the dial plan in version 
 
 ## Creating a Backup
 
-![create_backup](/img/simotel/update/create_backup.JPG)
+![create_backup](/img/simotel/update/create_backup.JPG/)
 
 ## Downloading a Backup
 
-![download_backup](/img/simotel/update/download_backup.JPG)
+![download_backup](/img/simotel/update/download_backup.JPG/)
 
 ## Updating Simotel
 
-![simotel_update](/img/simotel/update/update.JPG)
+![simotel_update](/img/simotel/update/update.JPG/)

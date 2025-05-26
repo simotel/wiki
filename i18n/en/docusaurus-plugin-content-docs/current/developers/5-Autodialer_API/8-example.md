@@ -12,7 +12,7 @@ sidebar_position: 1
 5. If the recipient doesn't answer, calls them again, with a 10-minute interval between calls.
 
 **1:**
-To get the unique ID of the audio file, use the [announcement search](/developers/Autodialer_API/announcement/announcement_search) service. The sample HTTP request is as follows:
+To get the unique ID of the audio file, use the [announcement search](/developers/Autodialer_API/announcement/announcement_search/) service. The sample HTTP request is as follows:
 
 <!--  -->
 import Tabs from '@theme/Tabs';
@@ -85,7 +85,7 @@ Content-Length: 66
 
 
 <!--  -->
-**2:** To find the unique Trunk Manager ID, we use the [trunk manager search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) service. The sample HTTP request is as follows:
+**2:** To find the unique Trunk Manager ID, we use the [trunk manager search](/developers/Autodialer_API/trunk_manager/trunk_manager_search/) service. The sample HTTP request is as follows:
 
 
 <!--  -->
@@ -239,7 +239,7 @@ Content-Length: 66
 
 
 
-**3, 4, 5:** Finally, a campaign is created with the specified conditions to send bulk calls at the defined time ([campaign add](/developers/Autodialer_API/campaign/campaign_add)). The sample HTTP request is as follows:
+**3, 4, 5:** Finally, a campaign is created with the specified conditions to send bulk calls at the defined time ([campaign add](/developers/Autodialer_API/campaign/campaign_add/)). The sample HTTP request is as follows:
 
 <!--  -->
   <Tabs

@@ -12,5 +12,5 @@ The **Context Interface** is essentially the Context, and **Interface Text** ref
 - **Text**: Refers to the rows of the component. One of these rows will be used in the **Interface Text**, with the default being **any**.
 
 :::tip Note
-For more information about the mass dialer module, visit [here](/autodialer).
+For more information about the mass dialer module, visit [here](/autodialer/).
 :::

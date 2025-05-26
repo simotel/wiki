@@ -18,4 +18,4 @@ In the Outgoing Route, appropriate routing rules are implemented for internal ca
 
 - **Pattern**: The outgoing pattern.
 
-**Using patterns in OutgoingRoute is mandatory. If you are unfamiliar with pattern syntax, please refer to the section on **[Pattern Matching Basics](/pbx/advance-settings/matchpattern)**.**
+**Using patterns in OutgoingRoute is mandatory. If you are unfamiliar with pattern syntax, please refer to the section on **[Pattern Matching Basics](/pbx/advance-settings/matchpattern/)**.**

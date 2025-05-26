@@ -50,7 +50,7 @@ nano /etc/vsftpd.conf
 
 در نهایت نیاز می‌باشد که تنظیمات در فایل vsftpd.conf مشابه شکل پایین باشند.
 
-![1](/img/simotel/backup_ftp_dropbox/1.png)
+![1](/img/simotel/backup_ftp_dropbox/1.png/)
 
 
 ```shell
@@ -78,7 +78,7 @@ service vsftpd restart
 
 تنظیمات مطابق شکل زیر انجام شود
 
-![2](/img/simotel/backup_ftp_dropbox/2.png)
+![2](/img/simotel/backup_ftp_dropbox/2.png/)
 
 در صورتی که تنظیمات به درستی انجام شود پس از کلیک بر روی گزینه Test&Save باید خروجی Backup Drive Is OK برگردانده شود.
 
@@ -97,51 +97,51 @@ service vsftpd restart
 
 ۱. پس از باز کردن حساب خود مشابه تصویر وارد بخش App Center شوید(برای مشاهده با کیفیت بهتر Sidebar را ببندید).
 
-![3](/img/simotel/backup_ftp_dropbox/3.png)
+![3](/img/simotel/backup_ftp_dropbox/3.png/)
 
 
 
 
 ۲. در بخش App Center باید گزینه Build an app در گوشه سمت چپ انتخاب شود.
 
-![4](/img/simotel/backup_ftp_dropbox/4.png)
+![4](/img/simotel/backup_ftp_dropbox/4.png/)
 
 
 
 
 ۳. در صفحه بعدی نیز باید گزینه Create apps انتخاب شود.
 
-![5](/img/simotel/backup_ftp_dropbox/5.png)
+![5](/img/simotel/backup_ftp_dropbox/5.png/)
 
 
 
 ۴. در این قسمت سطح دسترسی‌ها مشخص می‌شوند که با توجه به اینکه هدف از راه‌اندازی DropBox بکاپ‌گیری از سیستم بوده است، سطح دسترسی کامل به حساب خود را به اپلیکیشن می‌دهیم. در نهایت نیز نامی برای اپلیکیشن خود انتخاب کرده و دکمه **Create App** را می‌زنیم.
 
-![6](/img/simotel/backup_ftp_dropbox/6.png)
+![6](/img/simotel/backup_ftp_dropbox/6.png/)
 
 
 
 ۵. پس از ساخت اپلیکیشن، در بخش **Permission** می‌توان سطح دسترسی‌ها (read, write) به بخش‌های مختلف را مشخص کرد. با توجه به اینکه قرار است بکاپ بر روی حساب ما بارگذاری شود، باید تیک **files.content.write** زده شود.
 
-![7](/img/simotel/backup_ftp_dropbox/7.png)
+![7](/img/simotel/backup_ftp_dropbox/7.png/)
 
 
 
 ۶. در نهایت، در بخش **Settings** باید تنظیمات مربوط به توکن انجام شود. با کلیک بر روی گزینه **Generate** یک توکن یکتا ایجاد می‌شود که با استفاده از آن می‌توان به حساب خود دسترسی پیدا کرد (از طریق API). Simotel با استفاده از این توکن تولید شده به حساب دسترسی پیدا می‌کند و فایل بکاپ را بارگذاری می‌کند. بخش **Access expiration** باید برابر با **No expiration** باشد. این بخش زمانی کاربرد دارد که هدف ایجاد دسترسی کوتاه‌مدت باشد و پس از آن دسترسی اپلیکیشن با استفاده از توکن باید بسته شود، که هدف ما این نیست.
 
-![8](/img/simotel/backup_ftp_dropbox/8.png)
+![8](/img/simotel/backup_ftp_dropbox/8.png/)
 
 
 ۷. در صورتی که Simotel به اینترنت دسترسی داشته باشد، پس از قرار دادن توکن و کلیک بر روی دکمه **Test & Save** باید خروجی **Backup Drive is OK** را مشاهده فرمایید.
 
-![9](/img/simotel/backup_ftp_dropbox/9.png)
+![9](/img/simotel/backup_ftp_dropbox/9.png/)
 
 
 
 
 ۸. در نهایت، در صورتی که تنظیمات به‌درستی انجام شده باشند، باید در **Inbox** خود فایلی به نام **simotel.test.txt** را مشاهده فرمایید که Simotel در تست اولیه خود برای بررسی وضعیت ارتباطی با DropBox بارگذاری می‌کند. از این به بعد، بکاپ‌ها به‌صورت روزانه و هفتگی در پایان روز در **Drive** شما بارگذاری می‌شوند.
 
-![10](/img/simotel/backup_ftp_dropbox/10.png)
+![10](/img/simotel/backup_ftp_dropbox/10.png/)
 
 
 

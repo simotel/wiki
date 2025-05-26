@@ -100,7 +100,7 @@ ami_password = 'test'
 
 4. **ami_password**: The account password.  
 
-:::For more information on how to create an AMI account, please refer to [this section](/pbx/advance-settings/create_ami_user).
+:::For more information on how to create an AMI account, please refer to [this section](/pbx/advance-settings/create_ami_user/).
 :::
 
 ###  call Settings

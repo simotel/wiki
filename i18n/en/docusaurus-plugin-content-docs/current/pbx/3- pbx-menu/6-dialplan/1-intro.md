@@ -2,7 +2,7 @@
 
 The editor is the main component of the Simotel software. The call flow from the moment of entry to exit in Simotel is planned and implemented using the components available in the editor section. Before familiarizing yourself with the editor components, it is better to first understand the parts and functions of the editor.
 
-![DialPlan](/img/dialplan.png)
+![DialPlan](/img/dialplan.png/)
 
 ## Components of the Editor
 

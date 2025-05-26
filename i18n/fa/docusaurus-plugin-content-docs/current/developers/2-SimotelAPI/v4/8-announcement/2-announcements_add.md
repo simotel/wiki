@@ -13,7 +13,7 @@ title: "افزودن آوا"
 | توضیحات | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:-:|:-:|:-:|:-:|:-:|
 | نام | - | test_sound | ** | name |
-|  نام فایل‌صوتی که در پاسخ به درخواست [آپلود](/developers/SimotelAPI/v4/announcement/announcements_upload) برگردانده می‌شود | - | file-20200624051520-61681-announcement-wiresha- | ** | filename |
+|  نام فایل‌صوتی که در پاسخ به درخواست [آپلود](/developers/SimotelAPI/v4/announcement/announcements_upload/) برگردانده می‌شود | - | file-20200624051520-61681-announcement-wiresha- | ** | filename |
 | توضیحات | - | Just for test |  | comment |
 </div>
 

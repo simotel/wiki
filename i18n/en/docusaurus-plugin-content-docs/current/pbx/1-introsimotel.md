@@ -11,7 +11,7 @@ One of the primary means of communication between customers and staff in an orga
 
 One of the essential features of a contact center is the ability to monitor the status of extensions, as well as incoming and outgoing calls, in real-time. The **Simotel** contact center provides its users with the ability to monitor extensions and queue operators online.
  
-![Monitoring](/img/monitoring.png)
+![Monitoring](/img/monitoring.png/)
 
 
 ## Management Dashboard
@@ -19,7 +19,7 @@ One of the essential features of a contact center is the ability to monitor the 
 To allow for more detailed real-time monitoring of the system, the Dashboard section has been designed. In this section, various reports based on contact center performance indicators are presented as components. By simply dragging them onto the screen,
 you can create a customized dashboard that displays the report data in chart form.
 
-![dashboard](/img/simotel/dashboard.JPG)
+![dashboard](/img/simotel/dashboard.JPG/)
 
 
 ## High Flexibility
@@ -27,7 +27,7 @@ you can create a customized dashboard that displays the report data in chart for
 Given that different businesses and organizations have varying business models and call scenarios, having a contact center that can easily meet the needs of all businesses and provide users with the ability to easily modify call scenarios is essential. The **Simotel** contact center, through its editor, allows users to implement all scenarios with diverse features, such that no call scenario has ever been found to be unimplementable in this system.
 
 
-![DialPlan](/img/dialplan.png)
+![DialPlan](/img/dialplan.png/)
 
  
 ## Categorized Reports

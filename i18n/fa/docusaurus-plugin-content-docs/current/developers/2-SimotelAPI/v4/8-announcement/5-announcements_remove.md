@@ -11,7 +11,7 @@ title: "حذف آوا"
 <div class="custom-table">
 | توضیحات | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
 |:-:|:-:|:-:|:-:|:-:|
-| شناسه یکتای آوا که از [جستجو](/developers/SimotelAPI/v4/announcement/announcements_search) بدست می‌آید | - | 6033876dc92de036d1390923 | ** | id_ |
+| شناسه یکتای آوا که از [جستجو](/developers/SimotelAPI/v4/announcement/announcements_search/) بدست می‌آید | - | 6033876dc92de036d1390923 | ** | id_ |
 </div>
 
 

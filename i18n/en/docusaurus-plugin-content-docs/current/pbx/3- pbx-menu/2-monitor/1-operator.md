@@ -3,7 +3,7 @@
 :::caution Warning
 This menu is deprecated and will be disabled in future versions. Please use the Dashboard menu instead.
 :::
-![operator](/img/simotel/monitor/operator.png)
+![operator](/img/simotel/monitor/operator.png/)
 
 The **Operators** menu displays the real-time status of users in queues. In addition to user status, the number of answered calls, missed calls, talk time, wait time, and rest time are also shown. To change the queue, select a new queue from the **Queue** section (top-right corner).
 

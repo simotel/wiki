@@ -9,7 +9,7 @@ This service is used to delete a contact.
 <div class="custom-table">
 |             Description              | Defined Data   | Example Data              | Required[**]/Optional[*] | Parameters  |
 |:-----------------------------------:|:--------------:|:-------------------------:|:------------------------:|:-----------:|
-| Unique ID obtained from [Search](/developers/Autodialer_API/contact/contact_search) | -              | 6033876dc92de036d1390923  | **                       | id_         |
+| Unique ID obtained from [Search](/developers/Autodialer_API/contact/contact_search/) | -              | 6033876dc92de036d1390923  | **                       | id_         |
 </div>
 
 ## Sample Invocation

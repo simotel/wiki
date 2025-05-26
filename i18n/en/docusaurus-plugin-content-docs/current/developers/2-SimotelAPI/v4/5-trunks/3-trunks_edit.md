@@ -10,7 +10,7 @@ This service is used to edit a trunk.
 <div class="custom-table">
 |                  Description                 |         Defined Data         |        Sample Data        | Required[**]/Optional[*] |    Parameters    |
 |:--------------------------------------------:|:----------------------------:|:-------------------------:|:-------------------------:|:-----------------:|
-| Unique identifier of the trunk obtained from [search](/developers/SimotelAPI/v4/trunks/trunks_search) |              -               | 6033876dc92de036d1390923  |           **              |       id_        |
+| Unique identifier of the trunk obtained from [search](/developers/SimotelAPI/v4/trunks/trunks_search/) |              -               | 6033876dc92de036d1390923  |           **              |       id_        |
 |                  Trunk Type                  |         SIP/IAX2/DAHDI       |            SIP            |            *               |    trunk_type     |
 |                  Trunk Name                  |              -               |      trunk_name_new2      |            *               |       name        |
 |                     -                        |              -               |   some-register-string    |            *               | register_string    |

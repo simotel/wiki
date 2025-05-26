@@ -10,7 +10,7 @@ This service is used to edit the blacklist.
 <div class="custom-table">
 |              Description              | Defined Data | Sample Data | Required[*]/Logical[*] | Parameters |
 |:-----------------------------------:|:------------:|:-----------:|:----------------------:|:----------:|
-| Unique ID obtained from [Search](/developers/SimotelAPI/v4/blacklist/blacklist_search) |          -         | 6033876dc92de036d1390923 |           **           |    id_    |
+| Unique ID obtained from [Search](/developers/SimotelAPI/v4/blacklist/blacklist_search/) |          -         | 6033876dc92de036d1390923 |           **           |    id_    |
 | Target Number                        |          -         |            999           |            *           |   number  |
 | Description                          |          -         |             -            |                        |  comment  |
 </div>

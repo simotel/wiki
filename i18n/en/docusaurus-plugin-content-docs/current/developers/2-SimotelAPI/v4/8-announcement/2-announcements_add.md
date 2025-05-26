@@ -10,7 +10,7 @@ This service is used for adding audio.
 | Description | Defined Data | Example Data | Required Parameters[**]/Optional[*] | Parameters |
 |:-----------:|:------------:|:------------:|:-----------------------------------:|:----------:|
 | Name        |      -       | test_sound   | ** | name     |
-| The audio file name returned in the response to the [upload request](/developers/SimotelAPI/v4/announcement/announcements_upload) |      -       | file-20200624051520-61681-announcement-wiresha- | ** | filename |
+| The audio file name returned in the response to the [upload request](/developers/SimotelAPI/v4/announcement/announcements_upload/) |      -       | file-20200624051520-61681-announcement-wiresha- | ** | filename |
 | Description |      -       | Just for test |   | comment  |
 </div>
 

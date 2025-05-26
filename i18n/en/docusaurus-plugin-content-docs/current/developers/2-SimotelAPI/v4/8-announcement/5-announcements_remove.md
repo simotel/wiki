@@ -9,7 +9,7 @@ This service is used for deleting audio.
 <div class="custom-table">
 | Description                                         | Defined Data     | Example Data                       | Required Parameters[**]/Optional[*] | Parameters     |
 |:--------------------------------------------------:|:----------------:|:----------------------------------:|:-----------------------------------:|:--------------:|
-| Unique audio ID obtained from the [search](/developers/SimotelAPI/v4/announcement/announcements_search) | -                | 6033876dc92de036d1390923            | **                                  | id_            |
+| Unique audio ID obtained from the [search](/developers/SimotelAPI/v4/announcement/announcements_search/) | -                | 6033876dc92de036d1390923            | **                                  | id_            |
 </div>
 
 

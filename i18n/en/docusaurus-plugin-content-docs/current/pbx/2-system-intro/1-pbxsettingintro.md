@@ -29,7 +29,7 @@ The contact center section only includes basic information. To enable internal-t
 
 
 
-For more information about extensions, please refer to [`this section`](/pbx/pbx-menu/pbx/users)
+For more information about extensions, please refer to [`this section`](/pbx/pbx-menu/pbx/users/)
 
 
 ## Trunks
@@ -47,7 +47,7 @@ Trunks are used to establish connections between the VoIP system and other syste
 - **Example** : Imagine a company with several branches in different provinces, each having its own independent contact center. Given that these systems are not interconnected, how can a call received by the company's headquarters in Tehran be transferred to the production department supervisor at the Mashhad branch `Transfer`? Or how can internal calls be made between two branches of the company without incurring telecommunication costs? In this case, using trunks allows for logical connections between independent VoIP systems, enabling you to easily take advantage of the services mentioned above.
 
 
-For more information about trunks, please refer to [`this section`](/pbx/pbx-menu/pbx/trunks)
+For more information about trunks, please refer to [`this section`](/pbx/pbx-menu/pbx/trunks/)
 
 
 
@@ -65,14 +65,14 @@ In organizations, there are various departments, each specializing in providing 
 - Queue entry and exit using special codes (e.g., an agent can enter the technical support queue by dialing code 91 and exit the queue at the end of the workday by dialing code 92)
 - Record conversations of queue agents
  
-For more information about queues, please refer to [`this section`](/pbx/pbx-menu/pbx/queues)
+For more information about queues, please refer to [`this section`](/pbx/pbx-menu/pbx/queues/)
 
  
 ### Music On Hold
 To use the Music On Hold feature for a queue, you first need to create a class and upload the Music On Hold files related to your queue into that class. After uploading the audio files, go to the "Queue" section and, under "Queue Settings," select your uploaded Music On Hold class.
 
 
-For more information about music on hold, please refer to [`this section`](/pbx/pbx-menu/pbx/music_on_hold)
+For more information about music on hold, please refer to [`this section`](/pbx/pbx-menu/pbx/music_on_hold/)
 
 ### Announcements
 
@@ -94,7 +94,7 @@ In the Simotel contact center, a number of commonly used audio files are pre-upl
 :::
  
 
-For more information about announcements, please refer to [`this section`](/pbx/pbx-menu/pbx/announcements)
+For more information about announcements, please refer to [`this section`](/pbx/pbx-menu/pbx/announcements/)
  
  
  

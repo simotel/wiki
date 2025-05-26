@@ -9,9 +9,9 @@ This service is used for editing audio.
 <div class="custom-table">
 | Description                                         | Defined Data     | Example Data                       | Required Parameters[**]/Optional[*] | Parameters     |
 |:--------------------------------------------------:|:----------------:|:----------------------------------:|:-----------------------------------:|:--------------:|
-| Unique audio ID obtained from the [search](/developers/SimotelAPI/v4/announcement/announcements_search) | -                | 6033876dc92de036d1390923            | **                                  | id_            |
+| Unique audio ID obtained from the [search](/developers/SimotelAPI/v4/announcement/announcements_search/) | -                | 6033876dc92de036d1390923            | **                                  | id_            |
 | Audio name                                          | -                | test_sound_new                      | *                                   | name           |
-| Audio file name returned in the response to the [upload request](/developers/SimotelAPI/v4/announcement/announcements_upload) | -                | file-20200624051520-61681-announcement-wiresha_ | *                                   | filename       |
+| Audio file name returned in the response to the [upload request](/developers/SimotelAPI/v4/announcement/announcements_upload/) | -                | file-20200624051520-61681-announcement-wiresha_ | *                                   | filename       |
 | Description                                         | -                | Just for test                       |                                     | comment        |
 </div>
 

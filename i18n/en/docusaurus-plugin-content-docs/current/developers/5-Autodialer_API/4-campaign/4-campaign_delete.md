@@ -8,7 +8,7 @@ This service is used to delete a campaign.
 <div class="custom-table">
 | Description                                   | Defined Data   | Example Data             | Required[**]/Optional[*] | Parameters             |
 |:---------------------------------------------:|:--------------:|:------------------------:|:------------------------:|:----------------------:|
-| Unique Campaign ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) | -              | 6033876dc92de036d1390923 | **                       | id_                    |
+| Unique Campaign ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search/) | -              | 6033876dc92de036d1390923 | **                       | id_                    |
 </div>
 
 ## Sample Invocation

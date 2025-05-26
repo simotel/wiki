@@ -9,7 +9,7 @@ This service is used to edit internal users.
 <div class="custom-table">
 |                     Description                    |       Defined Data       |      Sample Data      | Required[**]/Optional[*] |          Parameters          |
 |:--------------------------------------------------:|:------------------------:|:---------------------:|:----------------------:|:---------------------------:|
-| Extension ID obtained through [search service](/developers/SimotelAPI/v4/users/users_search) |                -         | 603b41443e14270c550bf15a |           **           |             id_             |
+| Extension ID obtained through [search service](/developers/SimotelAPI/v4/users/users_search/) |                -         | 603b41443e14270c550bf15a |           **           |             id_             |
 |             User active/inactive status            |             yes/no       |            yes         |            *           |            active           |
 |                    User Name                        |                -         |        Test User       |            *           |             name            |
 |                   Extension Number                  |                -         |            530         |            *           |            number           |

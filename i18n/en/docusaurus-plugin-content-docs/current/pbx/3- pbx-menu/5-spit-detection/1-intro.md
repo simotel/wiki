@@ -7,4 +7,4 @@ Storm call management in Simotel is handled in two ways, which will be discussed
 
 :::
 
-For more information on the storm call component, please refer to **[here](/pbx/pbx-menu/dialplan/components/spit_detection)**.
+For more information on the storm call component, please refer to **[here](/pbx/pbx-menu/dialplan/components/spit_detection/)**.

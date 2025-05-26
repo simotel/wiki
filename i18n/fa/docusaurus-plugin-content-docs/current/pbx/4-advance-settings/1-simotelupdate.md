@@ -5,12 +5,12 @@ title: "به روز رسانی سیموتل"
 
 # آپدیت simotel
 
-برای آپدیت می‌توان از مسیر **`Settings > Maintenance > update`** اقدام کرد. در تب **update** قسمت‌های مختلفی وجود دارد که توضیحات آن در **[این قسمت](/pbx/pbx-menu/maintenance/settings/update)** داده شده است.
+برای آپدیت می‌توان از مسیر **`Settings > Maintenance > update`** اقدام کرد. در تب **update** قسمت‌های مختلفی وجود دارد که توضیحات آن در **[این قسمت](/pbx/pbx-menu/maintenance/settings/update/)** داده شده است.
 
 ### قبل از آپدیت
 مواردی وجود دارد که حتماً باید در نظر داشته باشید:
 
-- **تهیه فایل پشتیبان**: حتماً یک فایل پشتیبان PBX از مرکز تماس تهیه فرمایید و در مکانی امن ذخیره کنید. برای کسب اطلاعات بیشتر به **[این قسمت](/pbx/pbx-menu/control-panel/backup)** مراجعه فرمایید.
+- **تهیه فایل پشتیبان**: حتماً یک فایل پشتیبان PBX از مرکز تماس تهیه فرمایید و در مکانی امن ذخیره کنید. برای کسب اطلاعات بیشتر به **[این قسمت](/pbx/pbx-menu/control-panel/backup/)** مراجعه فرمایید.
 
 - **دسترسی به اینترنت**: سرور باید دسترسی به اینترنت داشته باشد.
 
@@ -21,18 +21,18 @@ title: "به روز رسانی سیموتل"
  
 ## گرفتن بکاپ
 
-![create_backup](/img/simotel/update/create_backup.JPG)
+![create_backup](/img/simotel/update/create_backup.JPG/)
 
 
 
 
 ## دانلود بکاپ
 
-![download_backup](/img/simotel/update/download_backup.JPG)
+![download_backup](/img/simotel/update/download_backup.JPG/)
 
 
 
 
 ## آپدیت سیموتل
 
-![simotel_update](/img/simotel/update/update.JPG)
+![simotel_update](/img/simotel/update/update.JPG/)

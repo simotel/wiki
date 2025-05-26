@@ -9,7 +9,7 @@ This service is used to delete a voicemail box.
 <div class="custom-table">
 | Description                                  | Defined Data     | Example Data          | Required Parameters[**]/Optional[*] | Parameters              |
 |:--------------------------------------------:|:----------------:|:----------------------:|:-----------------------------------:|:-----------------------:|
-| Unique ID of the voicemail box obtained from [search](/developers/SimotelAPI/v4/voicemail/voicemail_search) | -                | 6033876dc92de036d1390923 | **                                  | id_                     |
+| Unique ID of the voicemail box obtained from [search](/developers/SimotelAPI/v4/voicemail/voicemail_search/) | -                | 6033876dc92de036d1390923 | **                                  | id_                     |
 </div>
 
 

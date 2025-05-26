@@ -7,7 +7,7 @@ title: AutoDialer
 
 # Introduction  
 
-Using the mass calling module, you can automatically contact thousands of people with just a few clicks and play a specific audio file (notifications, telemarketing, etc.). You can configure your calling scenario in such a way that after the audio file ends, the recipients can connect to your agents. For more information about the mass calling module component, visit [here](/pbx/pbx-menu/dialplan/components/autodialer_route).  
+Using the mass calling module, you can automatically contact thousands of people with just a few clicks and play a specific audio file (notifications, telemarketing, etc.). You can configure your calling scenario in such a way that after the audio file ends, the recipients can connect to your agents. For more information about the mass calling module component, visit [here](/pbx/pbx-menu/dialplan/components/autodialer_route/).  
 
 **To use the mass calling module, the following steps must be completed in order:**  
 

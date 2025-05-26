@@ -10,7 +10,7 @@ This service is used to delete a queue.
 <div class="custom-table">
 |                Description                |    Defined Data    |      Sample Data      | Required Parameters[**]/Logical[*] | Parameters |
 |:-----------------------------------------:|:------------------:|:--------------------:|:----------------------:|:---------:|
-| Unique ID of the queue obtained from [search](/developers/SimotelAPI/v4/queues/queues_search) |          -         | 603c8d9ffc909f2e766d40d3 |            **           |    id_    |
+| Unique ID of the queue obtained from [search](/developers/SimotelAPI/v4/queues/queues_search/) |          -         | 603c8d9ffc909f2e766d40d3 |            **           |    id_    |
 </div>
 
 ## Sample Invocation

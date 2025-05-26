@@ -5,7 +5,7 @@ sidebar_position: 2
 This service creates a Originate call (Number Masking). The caller can be either internal or a telecommunications number. If the caller is a telecommunications number, the trunk name must also be provided. The time_out value is optional, and if not assigned, it is set to 30 seconds by default.
 
 :::danger Important note  
-In a Originate call, if the first person does not answer and disconnects the call, the call data (CDR) will not be sent to your web service. If this is important for you, you can use the campaign creation APIs along with the `autodialer route` component to create a Originate call. For more details, please refer to **[this section](/developers/Autodialer_API/call_originate)**.
+In a Originate call, if the first person does not answer and disconnects the call, the call data (CDR) will not be sent to your web service. If this is important for you, you can use the campaign creation APIs along with the `autodialer route` component to create a Originate call. For more details, please refer to **[this section](/developers/Autodialer_API/call_originate/)**.
 :::
 
 
@@ -191,4 +191,4 @@ import TabItem from '@theme/TabItem';
   </Tabs>
 
 
-For further familiarity, several examples of [use cases](/developers/Scenarios/call_originate) for this service are discussed in the practical examples section.
+For further familiarity, several examples of [use cases](/developers/Scenarios/call_originate/) for this service are discussed in the practical examples section.

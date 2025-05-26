@@ -7,7 +7,7 @@
 <div class="custom-table">
 | Description                                                      | Defined Data         | Sample Data             | Required[**]/Optional[*] | Parameters |
 |------------------------------------------------------------------|----------------------|-------------------------|--------------------------|------------|
-| Unique identifier `cdr_id` obtained from [search](/developers/Autodialer_API/report/report_search) | true/false           | 602e50ce305bdd377168a8c16 | **                       | _id        |
+| Unique identifier `cdr_id` obtained from [search](/developers/Autodialer_API/report/report_search/) | true/false           | 602e50ce305bdd377168a8c16 | **                       | _id        |
 </div>
 
 ## Sample Invocation

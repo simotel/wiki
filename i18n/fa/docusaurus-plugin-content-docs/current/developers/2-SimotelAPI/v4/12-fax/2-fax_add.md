@@ -19,7 +19,7 @@ title: "افزودن فکس"
 |                        شماره مقصد                        |          -         |               112233               |            *           |      to     |
 |                        داخلی مقصد                        |          -         |                 558                |            *           |     ext     |
 |                        ترانک خروجی                       |          -         |             trunk_name1            |            *           |  trunk_name |
-| نام فایل آپلود شده که در جواب [fax upload](/developers/SimotelAPI/v4/fax/fax_upload) برگردانده می‌شود(در صورتی که فیلد file مقدار دارد فیلد text حذف شود) |          -         | file-20200624051520-61681-fax-test |            *           |     file    |
+| نام فایل آپلود شده که در جواب [fax upload](/developers/SimotelAPI/v4/fax/fax_upload/) برگردانده می‌شود(در صورتی که فیلد file مقدار دارد فیلد text حذف شود) |          -         | file-20200624051520-61681-fax-test |            *           |     file    |
 |                   برای ارسال فایل متنی                   |          -         |           this is sample           |                       |     text    |
 |                          توضیحات                         |          -         |            just for test           |                        | description |
 </div>

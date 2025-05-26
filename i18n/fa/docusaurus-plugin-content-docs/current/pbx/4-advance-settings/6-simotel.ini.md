@@ -500,7 +500,7 @@ ami_password = 'test'
 ۴. **ami_password**: رمز‌عبور حساب.
 
 :::info اطلاعات
-برای کسب اطلاعات بیشتر در مورد شیوه ساخت حساب AMI به [این قسمت](/pbx/advance-settings/create_ami_user) مراجعه فرمایید.
+برای کسب اطلاعات بیشتر در مورد شیوه ساخت حساب AMI به [این قسمت](/pbx/advance-settings/create_ami_user/) مراجعه فرمایید.
 :::
 
 ### تنظیمات DISA

@@ -18,7 +18,7 @@ This menu displays the list of users in the web panel. From this section, you ca
 
 To enhance system security during the login phase, the following processes are checked in order:
 
-1. **Captcha**: If the [captcha](/pbx/pbx-menu/maintenance/settings/general_settings) feature is enabled, many common attacks on the web panel will fail.
+1. **Captcha**: If the [captcha](/pbx/pbx-menu/maintenance/settings/general_settings/) feature is enabled, many common attacks on the web panel will fail.
   
 2. **Account Status (Active, Inactive)**: The system checks the status of the user account.
 

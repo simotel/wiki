@@ -9,7 +9,7 @@ This service is used to delete internal users.
 <div class="custom-table">
 |                    Description                    | Defined Data       |      Sample Data      | Required[**]/Optional[*] | Parameters  |
 |:-------------------------------------------------:|:------------------:|:---------------------:|:----------------------:|:-----------:|
-| Extension ID obtained through [search service](/developers/SimotelAPI/v4/users/users_search) |          -         | 6033876dc92de036d1390923 |           **           |    id_      |
+| Extension ID obtained through [search service](/developers/SimotelAPI/v4/users/users_search/) |          -         | 6033876dc92de036d1390923 |           **           |    id_      |
 </div>
 
 ## Sample Invocation

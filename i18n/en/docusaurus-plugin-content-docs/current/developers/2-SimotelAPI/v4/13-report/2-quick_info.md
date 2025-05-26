@@ -16,7 +16,7 @@ This API is used to retrieve additional details in the **Detail** section if ava
 <div class="custom-table">
 | Description | Defined Data | Sample Data | Required[**]/Logical[*] | Parameters |
 |:-----------:|:------------:|:-----------:|:------------------------:|:----------:|
-| Unique ID obtained from [Quick Search](/developers/SimotelAPI/v4/report/quick_search) | - | 16244299033.75565 | ** | cuid |
+| Unique ID obtained from [Quick Search](/developers/SimotelAPI/v4/report/quick_search/) | - | 16244299033.75565 | ** | cuid |
 </div>
 
 

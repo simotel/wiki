@@ -9,7 +9,7 @@ This service is used to edit contacts.
 <div class="custom-table">
 |             Description              | Defined Data   | Example Data              | Required[**]/Optional[*] | Parameters  |
 |:-----------------------------------:|:--------------:|:-------------------------:|:------------------------:|:-----------:|
-| Unique ID obtained from [Search](/developers/Autodialer_API/contact/contact_search) | -              | 60461561095d840c2e477098  | **                       | id_         |
+| Unique ID obtained from [Search](/developers/Autodialer_API/contact/contact_search/) | -              | 60461561095d840c2e477098  | **                       | id_         |
 | Contact Name                        | -              | test_contact_new          |                          | name        |
 | Contact Number                      | -              | 11223                     |                          | number      |
 | Description                         | -              | Just for test             |                          | description |
