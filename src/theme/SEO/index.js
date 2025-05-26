@@ -8,20 +8,24 @@ export default function SEO() {
     siteConfig: { url },
   } = useDocusaurusContext();
 
-  // آدرس صفحه فعلی، در مرورگر
   const path = typeof window !== 'undefined' ? window.location.pathname : '/';
 
-  // ساخت لیست تگ‌های hreflang
   const hreflangs = locales.map((locale) => {
     let hrefLangPath = path;
     if (locale !== defaultLocale) {
       hrefLangPath = `/${locale}${path}`;
     } else {
-      // برای زبان پیش‌فرض مسیر بدون کد زبان
+      // حذف کد زبان برای زبان پیش‌فرض
       if (path.startsWith('/fa/') || path.startsWith('/en/')) {
         hrefLangPath = path.replace(/^\/(fa|en)/, '');
       }
     }
+
+    // حذف / انتهایی اگر در config گفتی نباشه
+    if (!hrefLangPath.endsWith('/') && hrefLangPath !== '/') {
+      hrefLangPath = hrefLangPath.replace(/\/$/, '');
+    }
+
     return (
       <link
         key={locale}
@@ -32,7 +36,7 @@ export default function SEO() {
     );
   });
 
-  // اضافه کردن تگ x-default
+  // hreflang x-default
   hreflangs.push(
     <link
       key="x-default"
