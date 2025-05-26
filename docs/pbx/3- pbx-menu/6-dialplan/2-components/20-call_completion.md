@@ -1,19 +1,13 @@
----
-sidebar_label: "Call Completion "
----
-
-
 # Call Completion
 
-## کاربرد
+## Purpose
 
-از این کامپوننت برای رزرو خط استفاده می‌‌شود. کاربرد آن زمانی است که یک کاربر با کاربر دیگری تماس می‌‌گیرد، اما مقصد مشغول است یا پاسخ‌گو نیست. در این حالت با فعال‌‌کردن رزرو تماس، پس از آنکه کاربر مقصد تماس را قطع کند (درصورت مشغول‌‌بودن خط) یا بعد از اولین تماس وی (درصورت پاسخ‌گو نبودن)، ابتدا توسط سیستم با کاربر مبدأ تماس گرفته می‌‌شود و بعد از پاسخ مبدأ، با مقصد تماس گرفته می‌‌شود. به عملیات فوق در اصطلاح رزرو تماس می‌‌گویند.
+This component is used for call reservation. It is applicable when one user tries to call another, but the destination is busy or does not answer. By enabling call reservation, once the destination disconnects (in case of a busy line) or after the first call attempt (if the destination does not answer), the system will first call the originating user. After the originating user answers, the system will then call the destination. This process is called call completion reservation.
 
+## Parameters
 
-## پارامترها کامپوننت
+**This component has two modes:**
 
-**این کامپوننت شامل دو حالت است**
-
-- **Type**: نوع رزرو خط
-	- **Request**: فعال‌‌کردن رزرو تماس (معمولاً بعد از کامپوننت داخلی قرار می‌‌گیرد).
-	- **Cancel**: درصورت فعال‌‌بودن رزرو تماس، آن را غیرفعال می‌‌کند (معمولاً بعد از کامپوننت OutgoingRoute قرار می‌‌گیرد و با یک الگوی خاص قابل‌دسترسی است).
+- **Type**: The type of call reservation.
+  - **Request**: Activates call reservation (usually placed after the internal component).
+  - **Cancel**: Deactivates call reservation if it was previously activated (usually placed after the OutgoingRoute component and can be accessed via a specific pattern).

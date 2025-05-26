@@ -1,24 +1,15 @@
----
-sidebar_label: "شماره گیری سریع"
-title: "شماره گیری سریع"
----
+# Speed Dial
 
+For convenience in dialing, short codes can be defined for desired numbers. By dialing these codes, the system automatically converts them into reference numbers and performs the desired operation (call).
 
-# شماره‌‌گیری سریع
+## Speed Dial Parameters
 
-برای سهولت در شماره‌‌گیری می‌‌توان برای شماره‌‌های دلخواه کد کوتاهی تعریف کرد. با شماره‌‌گیری این کدها، سیستم به‌صورت خودکار آن‌‌ها را به شماره‌‌های مرجع تبدیل می‌کند و عملیات موردنظر (تماس) را انجام می‌دهد.
+- **Name**: Display name.
 
+- **Code**: A unique code defined for the main number.
 
+- **Number**: The main contact number.
 
-## پارامترهای Speed Dial
-
-- **Name**: نام (نمایشی).
-
-- **Code**: کدی یکتا که برای شماره اصلی تعریف می‌‌شود.
-
-- **Number**: شماره تماس اصلی.
-
-:::tipنکته:
-دقت کنید شماره‌‌ای که به‌عنوان code انتخاب می‌‌شود برای داخلی‌‌ها استفاده نشده باشد، زیرا کدهای Speed Dial اولویت بالایی دارند و در کامپوننت OutgoingRoute قبل از هر عملی به شماره Number تبدیل می‌‌گردند. این خطای منطقی توسط سیستم بررسی نمی‌‌گردد و ممکن است موجب اختلال در عملکرد سیستم شود.
-
+:::tip Note:
+Make sure that the number selected as "Code" is not already used for extensions, as Speed Dial codes have high priority and will be converted into the "Number" in the **OutgoingRoute** component before any other action. This logical error is not checked by the system and may cause issues in system operation.
 :::

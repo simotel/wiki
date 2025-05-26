@@ -1,40 +1,33 @@
----
-sidebar_label: "پشتیبان"
-title: "پشتیبان"
----
-
 # Backup
 
-در این بخش امکانات مربوط به تهیه فایل پشتیبان و بازگردانی آن فراهم شده است که به بررسی بخش‌های مختلف آن می‌پردازیم `control panel > backup`.
+This section provides functionalities for creating backup files and restoring them, which can be accessed through `control panel > backup`.
 
+## Backup Section
 
-## بخش Backup
-در این بخش امکان تهیه فایل بکاپ فراهم شده است،مرکز تماس سیموتل قابلیت بکاپ‌گیری در سطوح مختلف فراهم شده است.
+In this section, you can create backup files. Simutel's Call Center offers backup capabilities at various levels.
 
-### پارامتر‌های Backup
+### Backup Parameters
 
-۱. **backup type**: سطح بکاپ را مشخص می‌کند.
+1. **Backup Type**: Specifies the level of the backup.
 
-۲. **backup**: با کلیک بر روی این دکمه مرکز تماس شروع به تهیه بکاپ می‌کند،برای دانلود این بکاپ باید به بخش `Regular Backuup Archive` مراجعه فرمایید.
+2. **Backup**: Clicking this button initiates the backup process. To download this backup, please refer to the `Regular Backup Archive` section.
 
-## بخش Restore
-این بخش وظیفه بازیابی بکاپ‌های تهیه شده از مرکزتماس را بر‌عهده دارد.
+## Restore Section
 
-### پارامتر‌های Restore
+This section is responsible for restoring backups created from the Call Center.
 
-۱. **Restore File**: مسیر فایل بکاپی که می‌خواهید بازگردانی کنید.
+### Restore Parameters
 
-۲. **Restore**: پس از انتخاب فایل با کلیک بر روی این گزینه مرکز تماس شروع به بازیابی اطلاعات بکاپ می‌کند.
+1. **Restore File**: The path to the backup file you wish to restore.
 
-## بخش Scheduled Backup Archive
+2. **Restore**: After selecting the file, clicking this option will begin the restoration of the backup information.
 
-یکی از قابلیت‌های سیموتل تهیه فایل پشتیبان بصورت خودکار می‌باشد،مرکز تماس بصورت روزانه و هفتگی از اطلاعات مربوط به مرکز تماس بکاپ تهیه می‌کند تا در صورتی که سیستم به هر دلیلی با مشکل مواجه شد امکان بازگشت به حالت قبل باشد.
+## Scheduled Backup Archive
 
-مرکز تماس این امکان را در اختیار شما قرار می‌دهد تا این بکاپ‌های خودکار را در جایی امن ذخیره کنید،برای اطلاعات بیشتر به **[اینجا](../maintenance/settings/backup_drive/)** مراجعه فرمایید.
+One of Simutel's features is the ability to create backups automatically. The Call Center generates daily and weekly backups of the relevant information, allowing for recovery in case the system encounters any issues.
 
+The Call Center provides you with the option to store these automatic backups in a secure location. For more information, please refer to **[here](../maintenance/settings/backup_drive/)**.
 
-## بخش Regular Backup Archive
+## Regular Backup Archive
 
-در این قسمت بکاپ‌های که بصورت دستی تهیه شده‌اند قابل مشاهده و دانلود می‌باشند.
-
-
+In this section, you can view and download backups that have been created manually.

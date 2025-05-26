@@ -1,28 +1,21 @@
----
-sidebar_label: "تنظیمات عمومی"
-title: "تنظیمات عمومی"
----
-
-
-
 # General Settings
 
-در این بخش تنظیمات عمومی مربوط به مرکز تماس اعمال می‌شوند.
+In this section, general settings related to the Call Center are applied.
 
-## پارامترهای General Settings
+## Parameters of General Settings
 
-- **PBX IP**: مشخص می‌کند IPPBX روی چه IP برای دریافت درخواست Listen باشد،بصورت پیش‌فرض روی تمامی IPها Listen می‌باشد.
+- **PBX IP**: Specifies the IP on which the IPPBX listens for requests. By default, it listens on all IPs.
 
-- **PBX Port**: پورتی که IPPBX بر روی آن Listen می‌باشد در این قسمت مشخص می‌شود. این مقدار بصورت پیش‌‌فرض 5060 می‌باشد.
+- **PBX Port**: Indicates the port on which the IPPBX listens. This value is set to 5060 by default.
 
-- **Voice Language**: فایل‌های صوتی پیش‌فرض مرکزتماس به دو زبان فارسی و انگلیسی تهیه شده‌اند،در این قسمت می‌توان زبان مدنظر خود را برای پخش فایل صوتی انتخاب کرد.
+- **Voice Language**: The default audio files for the Call Center are available in Persian and English. You can select your preferred language for audio playback here.
 
-- **Calendar Type**: مشخص کننده نوع تقویم مرکزتماس می‌باشد(شمسی،میلادی).
+- **Calendar Type**: Determines the type of calendar used in the Call Center (Shamsi or Gregorian).
 
-- **Use Captcha for Login**: در صورت فعال بودن این قابلیت،در صفحه لاگین پس از وارد کردن نام‌کاربری و پسورد نیاز می‌باشد کد کپچا نیز وارد کنید.
+- **Use Captcha for Login**: If this feature is enabled, a captcha code will be required on the login page after entering the username and password.
 
-- **County Dial Code**: مشخص کننده پیش‌شماره کشور می‌باشد(در اصلاح گزارشات کاربرد دارد،حذف پیش‌شماره).
+- **Country Dial Code**: Specifies the country code (used in report modifications, removes the country code).
 
-- **Region Dial Code**: پیش‌شماره منطقه‌ای در این بخش مشخص می‌شود(در مدیریت تماس‌های بهمنی به‌کار می‌رود).
+- **Region Dial Code**: The regional dialing code is specified in this section (used in managing spam calls).
 
-- **CSV file Separator**: کارکتر جدا کننده فایل‌های اکسل مرکزتماس را مشخص می‌کند.
+- **CSV File Separator**: Specifies the character used to separate values in the Call Center's Excel files.

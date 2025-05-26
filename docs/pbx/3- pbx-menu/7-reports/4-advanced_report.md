@@ -1,117 +1,73 @@
----
-sidebar_label: "گزارشات پیشرفته"
-title: "گزارشات پیشرفته"
----
+# Advanced Reports
 
+Advanced reports provide the capability to generate various types of reports through the use of multiple filters. Below, you will become more familiar with these reports.
 
-# گزارشات پیشرفته
+## Types of Reports
 
-گزارش‌‌های پیشرفته با دارا‌‌بودن انواع فیلتر‌‌ها امكان ایجاد انواع گزارش‌‌ها را فراهم می‌كند. در ادامه با این گزاشات بیشتر آشنا می‌‌شوید.
+### System Advanced Report
+All calls to the Call Center (excluding bulk call forwarding) are recorded in this section. The reports include:
 
-## انواع گزارشات
+1. Call Date
+2. Caller
+3. Responder
+4. Dialed Number
+5. Duration of Conversation
+6. Wait Time
+7. Call Status (Answered or Unanswered)
+8. Call Type (Incoming, Outgoing, Internal, or Special Codes)
+9. Descriptions and Details (Queue Calls)
+10. Details and ability to play recorded audio files
 
-### گزارش پیشرفته سیستم
-كلیه تماس‌‌های مركز تماس (به‌‌جز ارسال تماس انبوه) در این قسمت ثبت می‌گردند. گزارش‌‌ها عبارت‌اند از
+### Queue Report
+Reports related to the queue can be viewed in this section. The reports include:
 
-۱. تاریخ تماس
+1. Call Date
+2. Caller
+3. Responder (Operator)
+4. Queue Number
+5. Duration of Conversation
+6. Wait Time
+7. Call Status includes:
+   - **All**: All calls
+   - **Answered**: Answered calls
+   - **Abandoned**: Calls that entered the queue and the caller hung up before the operator answered
+   - **Missed**: Calls that entered the queue and none of the available operators answered
+8. Call Disconnector
+9. Operator Status in the Queue
+10. Call Details and ability to play recorded conversations
 
-۲. تماس‌گیرنده
+### Advanced Queue Report
+Details related to calls that enter the queue are accessible in this section. These reports include information such as:
 
-۳. پاسخ‌‌دهنده
+1. Date (Call)
+2. Caller
+3. User (Responder)
+4. Queue
+5. Duration of Conversation
+6. Wait Time
+7. Number of Attempts
+8. Call Status (Answered or Unanswered)
+9. Descriptions and Details (Queue Calls)
+10. Call Details and ability to play recorded audio files
 
-۴. شماره گرفته شده.
+### Advanced User Activity Report
+A comprehensive report on the status of users in the Call Center queues, including:
 
-۵. مدت مکالمه
+1. User
+2. Queue
+3. Operator Status:
+   - **In-Out**: Operator entering and exiting the queue. When the operator leaves the queue, their activity log is recorded.
+   - **Paused**: Operator resting in the queue. When the operator (in a resting state) exits the resting status, their activity log is recorded.
+4. Duration (Status)
+5. Start Time
+6. End Time
 
-۶. مدت انتظار
+### Advanced Survey Report
+A complete report of customer surveys in the Call Center, including:
 
-۷. وضعیت تماس (پاسخ‌‌داده‌‌شده یا بدون پاسخ)
-
-۸. نوع تماس (ورودی، خروجی، داخلی یا کدهای ویژه)
-
-۹. توضیحات و جزئیات (تماس‌‌های صف)
-
-۱۰. جزئیات و امكان پخش فایل صوتی ضبط‌ شده
-
-### گزارش صف 
-گزارشات مربوط به صف در این قسمت قابل مشاهد می‌باشند. گزارش‌ها عبارت‌اند از
-
-۱. تاریخ تماس
-
-۲. تماس‌گیرنده
-
-۳. پاسخ‌‌دهنده(اپراتور)
-
-۴. شماره صف
-
-۵. مدت مکالمه 
-
-۶. مدت انتظار
-
-۷. وضعیت تماس  شامل:
-- **All**: همه تماس‌‌ها
-- **Answered**: تماس‌‌های پاسخ‌ داده‌‌شده
-- **Abandoned**: تماس‌هایی که وارد صف شود و تماس‌گیرنده تماس را قبل از پاسخگویی اپراتور قطع کند
-- **Missed**: تماس‌هایی که وارد صف شود و هیچ یک از اپراتورهای موجود در صف، به تماس پاسخ ندهند
-
-۸. طرف قطع کننده تماس
-
-۹. وضعیت اپراتور در صف
-
-۱۰. جزئیات تماس و امکان پخش مکالمه ظبط شده
-
-### گزارش پیشرفته صف
-جزئیات مربوط به تماس‌‌هایی كه وارد صف می‌شوند در این قسمت قابل دسترس است. این گزارشات شامل اطلاعات
-
-۱. تاریخ (تماس)
-
-۲. تماس‌‌گیرنده
-
-۳. کاربر(پاسخگو)
-
-۴. صف
-
-۵. مدت مکالمه
-
-۶. مدت انتظار
-
-۷. تعداد تلاش‌‌ها
-
-۸. وضعیت تماس (پاسخ‌‌داده‌‌شده یا بی‌پاسخ)
-
-۹. توضیحات و جزئیات (تماس‌‌های صف)
-
-۱۰. جزئیات تماس و امكان پخش فایل صوتی ضبط شده
-
-### گزارش پیشرفته فعالیت كاربر 
-گزارشی کامل از وضعیت کاربران صف‌‌های مرکز تماس که شامل
-
-۱. کاربر
-
-۲. صف
-
-۳. وضعیت اپراتور:
-- **In-Out**: ورود و خروج اپراتور به صف. زمانی که اپراتور از صف خارج شود، لاگ فعالیت وی ثبت می‌‌گردد
-- **Paused**: استراحت اپراتور در صف. زمانی که اپراتور (درحال استراحت) از وضعیت استراحت خارج شود، لاگ فعالیت وی ثبت می‌‌گردد
-
-۴. مدت (وضعیت)
-
-۵. زمان شروع
-
-۶. زمان پایان
-
-
-### گزارش پیشرفته نظرسنجی
-گزارشی کامل از نظرسنجی مشتریان در مرکز تماس که شامل
-
-۱. تاریخ نظرسنجی
-
-۲. تماس‌‌گیرنده (نظر دهنده)
-
-۳. کاربر (پاسخگو)
-
-۴. صف (پاسخگو)
-
-۵. دسته (نظرسنجی تعیین شده در کامپوننت صفحه ویرایشگر) 
-
-۵. امتیاز 
+1. Survey Date
+2. Caller (Respondent)
+3. User (Responder)
+4. Queue (Responder)
+5. Category (Survey defined in the editor component)
+6. Score

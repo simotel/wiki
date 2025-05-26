@@ -1,18 +1,11 @@
----
-sidebar_label: "Spit Detection"
----
+# Split Detection
 
+## Usage
 
+This component is used to check the status of a conference call. If you have defined rules for monitoring conference calls (both regular and automated) in the conference call menu, you should use this component in the call path.
 
-# Spit Detection
+## Outputs
 
-## کاربرد
+- **✓**: If a conference call is detected.
 
-از این کامپوننت برای بررسی وضعیت تماس بهمنی استفاده می‌‌شود. اگر در منوی تماس بهمنی قواعدی برای بررسی تماس‌‌های بهمنی (معمولی و خودکار) تعریف کرده باشید، باید از این کامپوننت در مسیر تماس استفاده کنید.
-
-
-## خروجی‌ها
-
-- **✓**: درصورتی‌‌که تماس بهمنی تشخیص داده شود.
-
-- **✗**: درصورتی‌‌که تماس، بهمنی نباشد.
+- **✗**: If the call is not a conference call.

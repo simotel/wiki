@@ -1,23 +1,18 @@
 ---
 
-sidebar_label: "بارگزاری گروه"
-title: "بارگزاری گروه"
 ---
-
-
 # Group Upload
 
-از این سرویس برای افزودن گروهی از شماره‌ها استفاده می‌شود،در این روش تمامی شماره‌ها در یک فایل اکسل با پسوند csv قرار می‌گیرند.
+This service is used to add a group of phone numbers. In this method, all the numbers are placed in an Excel file with a CSV extension.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|     توضیحات    | داده های تعریف شده |         داده های نمونه         | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:--------------:|:------------------:|:------------------------------:|:----------------------:|:---------:|
-| مسیر فایل اکسل |          -         | c:users\users\Desktop\test.csv |           **           |    file   |
+|     Description     | Defined Data   | Example Data                | Required[**]/Optional[*] | Parameters  |
+|:-------------------:|:--------------:|:---------------------------:|:------------------------:|:-----------:|
+| Excel File Path     | -              | c:users\users\Desktop\test.csv | **                       | file        |
 </div>
 
-
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -27,8 +22,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -45,7 +40,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -82,7 +77,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 
@@ -123,7 +118,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

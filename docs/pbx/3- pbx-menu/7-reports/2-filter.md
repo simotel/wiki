@@ -1,137 +1,120 @@
+
+# Reporting Filters
+
+In various reports of Simotel, filters are used to enhance the quality of reporting. Below is a brief explanation of these filters.
+
+- **From (Date)**: Start date of the report.
+
+- **To (Date)**: End date of the report.
+
+- **Find Alike**: By enabling this option, the search is performed based on similarity for the source and destination.
+
+- **Separated Report**: Used to toggle between detailed and statistical reports (enabling this option activates the next field).
+
+- **Separated By**: Specifies the type of statistical report, which includes:
+  - **All**: Statistical report of all calls, without separation.
+  - **Date**: Statistical report of calls separated by day.
+  - **Hours**: Statistical report of calls separated by hours of the day.
+  - **Queue**: Statistical report of calls separated by queues.
+  - **Agent**: Statistical report of queue calls separated by operators.
+  - **Week days**: Statistical report of calls separated by days of the week.
+  - **Label**: Statistical report of calls separated by survey labels (in advanced survey reports).
+
+- **From**: Source of the call.
+
+- **To**: Destination of the call.
+
+- **DID**: The number that was called.
+
+- **Caller**: Source of the call (in queue-related reports).
+
+- **Agent**: Responding operator or destination of the call (in queue-related reports).
+
+- **Call Status**: The status of the call, which includes:
+  - **All**: All calls.
+  - **Answered**: Answered calls.
+  - **No Answer**: Unanswered calls.
+  - **Busy**: Busy calls.
+  - **Failed**: Failed calls.
+  - **Congested**: Congested calls.
+  - **In-Out**: Entry and exit of operators in the queue (in advanced user reports).
+  - **Paused**: Entry and exit of operators in a resting state in the queue (in advanced user reports).
+  - **Abandoned**: When a call enters the queue and the caller hangs up before the operator answers (in queue reports).
+  - **Missed**: When a call enters the queue and none of the available operators answer (in queue reports).
+
+- **Call Type**: Types of calls, which include:
+  - **All**: All calls.
+  - **Incoming Calls**: Incoming calls.
+  - **Outgoing Calls**: Outgoing calls.
+  - **Local Calls**: Internal calls.
+  - **Feature Codes**: Special codes.
+
+- **Blacklist**: Reports on calls that are blacklisted.
+
+- **SPIT Call**: Reports on spam calls.
+
+- **Entry Point**: The name of the trunk from which the call entered.
+
+- **Outgoing Point**: The name of the trunk from which the call exited.
+
+- **Min Talk (sec)**: Minimum duration of the call.
+
+- **Max Talk (sec)**: Maximum duration of the call.
+
+- **Min Wait (sec)**: Minimum waiting time for the call.
+
+- **Max Wait (sec)**: Maximum waiting time for the call.
+
+- **Point**: Score given by the caller in the survey.
+
+- **Label**: Label related to the survey component.
+
+- **Exten**: Extension number.
+
+- **Group**: Name of the internal group.
+
+- **Queue**: Name of the queue.
+
 ---
-sidebar_label: "فیلتر‌های گزارش‌گیری"
-title: "فیلتر‌های گزارش‌گیری"
----
 
-
-# فیلتر‌های گزارش‌گیری
-
-در گزارش‌‌های مختلف سیموتل برای افزایش کیفیت گزارش‌گیری، فیلتر‌‌هایی استفاده می‌‌شوند که در این قسمت به اختصار توضیح داده می‌شوند.
-
-- **From (Date)**: تاریخ شروع گزارش.
-
-- **To (Date)**: تاریخ پایان گزارش.
-
-- **Find Alike**: با فعال‌‌کردن این گزینه، جستجو بر روی مبدأ و مقصد بر اساس شباهت انجام می‌‌شود.
-
-- **Separated Report**: برای تغییر حالت بین گزارش جزئیات و گزارش آماری استفاده می‌‌شود (با فعال‌‌کردن این گزینه فیلد بعدی فعال می‌‌شود).
-
-- **Separated By**: نوع گزارش آماری را مشخص می‌کند که عبارت‌اند از
-	- **All**: گزارش آماری تمام تماس‌‌ها، بدون تفكيک.
-	- **Date**: گزارش آماری تماس‌‌ها به تفكيک روزانه.
-	- **Hours**: گزارش آماری تماس‌‌ها به تفکیک ساعات شبانه‌روز.
-	- **Queue**: گزارش آماری تماس‌‌ها به تفكيک صف‌‌ها.
-	- **Agent**: گزارش آماری تماس‌‌های صف به تفکیک اپراتورها.
-	- **Week days**: گزارش آماری تماس‌‌ها به تفكيک روز‌‌های هفته.
-	- **Label**: گزارش آماری تماس‌‌ها به تفکیک برچسب نظرسنجی (در گزارش پیشرفته نظرسنجی).
-
-- **From**: مبدأ تماس.
-
-- **To**: مقصد تماس.
-
-- **DID**: شماره‌ای که با آن تماس گرفته شده.
-
-- **Caller**: مبدأ تماس (در گزارش‌‌های مربوط به صف).
-
-- **Agent**: اپراتور پاسخگو یا مقصد تماس (در گزارش‌‌های مرتبط با صف).
-
-- **Call Status**: وضعیت تماس كه عبارت‌اند از
-	- **All**: همه تماس‌‌ها.
-	- **Answered**: تماس‌‌های پاسخ‌داده‌‌شده.
-	- **No Answer**: تماس‌‌های بدون‌پاسخ.
-	- **Busy**: تماس‌های مشغول.
-	- **Failed**: تماس‌‌های ناموفق.
-	- **Congested**: تماس‌‌های ناموفق.
-	- **In-Out**: ورود و خروج اپراتور‌‌ها در صف (در گزارش پیشرفته کاربر).
-	- **Paused**: ورود و خروج اپراتورها به حالت استراحت در صف (در گزارش پیشرفته کاربر).
-	- **Abandoned**: زمانی که تماس وارد صف شود و تماس‌گیرنده، تماس را قبل از پاسخگویی اپراتور قطع کند (در گزارش صف).
-	- **Missed**: زمانی که تماس وارد صف شود و هیچ یک از اپراتورهای موجود در صف، به تماس پاسخ ندهند (در گزارش صف).
-	
-- **Call Type**: نوع تماس‌ها كه عبارت‌اند از
-	- **All**: همه تماس‌‌ها.
-	- **Incoming Calls**: تماس‌‌های ورودی.
-	- **Outgoing Calls**: تماس‌‌های خروجی.
-	- **Local Calls**: تماس‌‌های داخلی.
-	- **Feature Codes**: كدهای ويژه.
-	
-- **Blacklist**: گزارش روی تماس‌‌هایی است که در لیست سیاه هستند.
-
-- **SPIT Call**: گزارش روی تماس‌‌هایی است که بهمنی هستند.
-
-- **Entry Point**: نام ترانکی است که تماس از آن واردشده است.
-
-- **Outgoing Point**: نام ترانکی است که تماس از آن خارج شده است.
-
-- **Min Talk (sec)**: حداقل مدت مکالمه تماس.
-
-- **Max Talk (sec)**: حداکثر مدت مکالمه تماس.
-
-- **Min Wait (sec)**: حداقل مدت انتظار تماس.
-
-- **Max Wait (sec)**: حداکثر مدت انتظار تماس.
-
-- **Point**: امتیازی است که درنظرسنجی توسط تماس‌‌گیرنده واردشده است.
-
-- **Label**: برچسب مربوط به کامپوننت نظرسنجی.
-
-- **Exten**: شماره داخلی.
-
-- **Group**: نام گروه داخلی‌ها.
-
-- **Queue**: نام صف.
-
-
-**در این قسمت ستون‌هایی كه در خروجی گزارشات استفاده شده است توضيح داده می‌شوند.**
+## Column Descriptions in Reports
 
 <div class="custom-table">
-|     ستون‌ها    |        ستون‌ها       |                                                                                                    توضیحات                                                                                                   |
+
+|     Columns    |        Columns       |                                                                                                    Description                                                                                                   |
 |:-------------:|:-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|  Active Talk  | مکالمه در حالت فعال |                                                                                    میانگین مکالمه در زمان فعال بودن در صف.                                                                                   |
-|     Agent     |        کاربر        |                                                            این ستون در گزارشات مرتبط با صف‌ها نمایش داده می‌شود که همان شماره مقصد یا پاسخ‌دهنده است.                                                           |
-|    Answered   |      پاسخ داده      |                                                                                          تعداد تماس‌های پاسخ‌داده‌شده.                                                                                          |
-|      Busy     |        مشغول        |                                                                                             تعداد تماس‌های مشغول.                                                                                             |
-| Call Per Hour |     تماس در ساعت    |                                                                                میانگین تعداد تماس‌های پاسخ‌داده شده در یک ساعت.                                                                                |
-|  Call Status  |        وضعیت        |                                                                                وضعیت تماس(FAILED ،BUSY ،NO ANSWER ،ANSWERED).                                                                                |
-|   Call Type   |       نوع‌تماس       |                                                                                 نوع‌تماس(feature ،local ،outgoing ،incoming).                                                                                 |
-|     Caller    |      تماس‌گیرنده     |                                                                  این ستون در گزارشات مرتبط با صف‌ها نمایش داده می‌شود که همان شماره مبداء است.                                                                 |
-|    Comment    |       توضیحات       |                                                                                            توضیحات مربوط به تماس.                                                                                            |
-|      Date     |        تاریخ        |                                                                                                  تاریخ تماس.                                                                                                 |
-|     Detail    |        جزئیات       |                                                                                             جزئیات مربوط به تماس.                                                                                            |
-|   Duration    |         مدت         |                                                                                    مدت زمان از آغاز ورود تماس تا خاتمه آن.                                                                                   |
-|    End Date   |       تاز زمان      |                                                                                                  زمان پایان.                                                                                                 |
-|     Exten     |        داخلی        |                                                                                       شماره داخلی تعریف شده در سیموتل.                                                                                       |
-|  FeatureCode  |        کد‌ویژه       |                                                                                        تعداد تماس‌های مربوط به کد‌ویژه.                                                                                        |
-|  First Login  |      اولین ورود     |                                                   تاریخ اولین ورود اپراتور به صف(Continuous یعنی اپراتور در بازه گزارش در صف بوده و ورود به صف نداشته است).                                                  |
-|      From     |     شماره مبداء     |                                                                                               شماره تماس‌گیرنده.                                                                                              |
-|   Idle Time   |      مدت آماده      |                                                                               مدت زمانی که اپراتور در صف،آماده دریافت تماس است.                                                                              |
-|    Incoming   |        ورودی        |                                                                                             تعداد تماس‌های ورودی.                                                                                             |
-| In-Queue Talk |     مکالمه در صف    |                                                                                       میانگین مکالمه در زمان حضور در صف                                                                                      |
-| In-Queue Time |      حضور در صف     |                                                                                         مدت زمان حضور اپراتور در صف.                                                                                         |
-|     Label     |         دسته        |                                                                                                                                                                                                              |
-|   Last Login  |      آخرین ورود     |                                                   تاریخ آخرین ورود اپراتور به صف(Continuous یعنی اپراتور در بازه گزارش در صف بوده و ورود به صف نداشته است).                                                  |
-|     Local     |        داخلی        |                                                                                             تعداد تماس‌های داخلی.                                                                                             |
-|      Max      |        حداکثر       |                                                                                                                                                                                                              |
-|      Min      |        حداقل        |                                                                                                                                                                                                              |
-|   No Answer   |       بدون‌پاسخ      |                                                                                           تعداد تماس‌های بدون پاسخ.                                                                                           |
-|     Number    |        شماره        |                                                                                                                                                                                                              |
-|    Outgoing   |        خروجی        |                                                                                             تعداد تماس‌های خروجی.                                                                                             |
-|   Pause Time  |     مدت استراحت     |                                                                              مدت زمانی که اپراتور در صف درحالت استراحت بوده است.                                                                             |
-|     Point     |        امتیاز       |                                                                              امتیازی که تماس‌گیرنده در کامپوننت Poll وارد کرده.                                                                              |
-|   Point avg   |    میانگین امتیاز   |                                                                                            میانگین امتیاز نظرسنجی.                                                                                           |
-|   Poll Count  |     تعداد نظرات     |                                                                                                 تعداد نظرات.                                                                                                 |
-|   Poll Point  |    امتیاز نظرسنجی   |                                                                              امتیازی که تماس‌گیرنده در کامپوننت Poll وارد می‌کند.                                                                              |
-|   Pre-Number  |       پیش‌شماره      |                                                                                                                                                                                                              |
-|     Queue     |          صف         |                                                                                                   شماره صف.                                                                                                  |
-|     Repeat    |        تکرار        |                                                                                                                                                                                                              |
-|   Separation  |         دسته        |                                                                                                   دسته‌بندی.                                                                                                  |
-|   Start Date  |       از زمان       |                                                                                                   زمان‌شروع.                                                                                                  |
-|     State     |        وضعیت        |                                                                             در گزارش پیشرفته نظرسنجی، نوع‌فعالیت(pause،inout)است.                                                                             |
-|    Talk avg   |    میانگین مکالمه   |                                                                                     میانگین مدت زمان مکالمه به کل تماس‌ها.                                                                                    |
-|   Talk Time   |      مدت مکالمه     |                                                                                             مدت زمان مکالمه تماس.                                                                                            |
-|       To      |      شماره مقصد     |                                                                   شماره دریافت کننده تماس(اگر تماس ورودی باشد یا داخلی،شماره داخلی می‌شود).                                                                   |
-|  Total Calls  |        تماس‌ها       |                                                                                               تعداد کل تماس‌ها.                                                                                               |
-|     Tries     |        تعداد        |  هر تماسی که از صف برای اپراتور ارسال گردد.یک تلاش درنظر گرفته می‌شود.اگر اپراتور به تماس پاسخ ندهد و همان تماس مجدد به وی وصل گردد،تلاش دوم درنظر گرفته می‌شود و اگر جواب ندهد به همین صورت ادامه پیدا می‌کند. |
-|    wait avg   |    میانگین انتظار   |                                                                                  میانگین مدت زمان مکالمه نسبت به کل تماس‌ها.                                                                                  |
-|   Wait Time   |      مدت انتظار     |                                                                                 مدت زمان قبل از پاسخ‌گویی(مدت زمان زنگ‌خوردن).                                                                                 |
+|  Active Talk  | Active Call         |                                                                                    Average talk time while active in the queue.                                                                                   |
+|     Agent     | User                |                                                            This column appears in queue-related reports, indicating the destination or responder number.                                                           |
+|    Answered   | Answered            |                                                                                          Number of answered calls.                                                                                          |
+|      Busy     | Busy                |                                                                                             Number of busy calls.                                                                                             |
+| Call Per Hour | Calls per Hour      |                                                                                Average number of answered calls per hour.                                                                                |
+|  Call Status  | Status              |                                                                                Call status (FAILED, BUSY, NO ANSWER, ANSWERED).                                                                                |
+|   Call Type   | Call Type           |                                                                                 Type of call (feature, local, outgoing, incoming).                                                                                 |
+|     Caller    | Caller              |                                                                  This column appears in queue-related reports, indicating the source number.                                                                 |
+|    Comment    | Comment             |                                                                                            Comments related to the call.                                                                                            |
+|      Date     | Date                |                                                                                                  Date of the call.                                                                                                 |
+|     Detail    | Details             |                                                                                             Details related to the call.                                                                                            |
+|   Duration    | Duration            |                                                                                    Duration from the start of the call until its end.                                                                                   |
+|    End Date   | End Time            |                                                                                                  End time.                                                                                                 |
+|     Exten     | Extension           |                                                                                       Internal number defined in Simotel.                                                                                       |
+|  FeatureCode  | Feature Code        |                                                                                        Number of calls related to feature codes.                                                                                        |
+|  First Login  | First Login         |                                                   Date of the operator's first login to the queue (Continuous means the operator has been in the queue during the reporting period without leaving).                                                  |
+|      From     | Source Number       |                                                                                               Caller’s phone number.                                                                                              |
+|   Idle Time   | Idle Time           |                                                                               Duration the operator is ready to receive calls in the queue.                                                                              |
+|    Incoming   | Incoming Calls      |                                                                                             Number of incoming calls.                                                                                             |
+| In-Queue Talk | Talk in Queue       |                                                                                       Average talk time while in the queue.                                                                                      |
+| In-Queue Time | Time in Queue       |                                                                                         Duration the operator has been in the queue.                                                                                         |
+|     Label     | Label               |                                                                                                                                                                                                              |
+|   Last Login  | Last Login          |                                                   Date of the operator's last login to the queue (Continuous means the operator has been in the queue during the reporting period without leaving).                                                  |
+|     Local     | Internal Calls      |                                                                                             Number of internal calls.                                                                                             |
+|      Max      | Maximum             |                                                                                                                                                                                                              |
+|      Min      | Minimum             |                                                                                                                                                                                                              |
+|   No Answer   | No Answer           |                                                                                           Number of unanswered calls.                                                                                           |
+|     Number    | Number              |                                                                                                                                                                                                              |
+|    Outgoing   | Outgoing Calls      |                                                                                             Number of outgoing calls.                                                                                             |
+|   Pause Time  | Pause Time          |                                                                              Duration the operator has been in a resting state in the queue.                                                                             |
+|     Point     | Score               |                                                                              Score given by the caller in the survey component.                                                                              |
+|   Point avg   | Average Score       |                                                                                            Average score from the survey.                                                                                           |
+                                                                                        |
 
 </div>

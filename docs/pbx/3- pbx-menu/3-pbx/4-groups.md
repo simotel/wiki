@@ -1,18 +1,11 @@
----
-sidebar_label: "گروه ها"
-title: "گروه ها"
----
+# Groups
 
+In this section, extensions are categorized and placed into different groups (e.g., Sales group, Support group, etc.). These groups are used in sections like user reporting to retrieve reports related to a specific group of individuals.
 
-# گروه‌ها
+## Groups Parameters
 
-در این قسمت، داخلی‌‌ها دسته‌‌بندی می‌‌شوند و در قالب گروه‌‌های مختلف قرار می‌‌گیرند(برای مثال گروه فروش، پشتیبانی و ....). از این گروه‌‌ها در قسمت‌‌هایی از جمله گزارش‌‌گیری‌ کاربری در جهت بازیابی گزارشات مربوط به‌‌گروهی خاص از افراد استفاده می‌‌شود.
+- **Name**: The name of the group.
 
+- **Users**: The list of users in the group.
 
-## پارامترهای Groups
-
-- **Name**: نام گروه.
-
-- **Users**: لیست کاربران گروه.
-
-- **Descriptoin**: توضیحات درمورد گروه.
+- **Description**: Description of the group.

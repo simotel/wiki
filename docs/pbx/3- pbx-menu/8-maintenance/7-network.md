@@ -1,29 +1,24 @@
----
-sidebar_label: "شبکه"
-title: "شبکه"
----
-
 # Network
 
-در این قسمت تنظیمات مربوط به شبكه سرور یا سرورهای سیموتل (در حالت HA) انجام می‌شود. برای اعمال تغییرات باید سرور را دوباره راه‌اندازی کرد.
+This section is for configuring the network settings of the Simutel server or servers (in HA mode). Changes will require a server reboot to take effect.
 
-## پارامتر‌های بخش شبکه
-- **Server Name**: نام سرور (این نام باید با نام سروری كه در server status ذکر شده یكسان باشد).
+## Network Section Parameters
+- **Server Name**: The name of the server (this name must match the name listed in the server status).
 
-- **Interface**: اینترفیس کارت شبکه سرور.
+- **Interface**: The network interface of the server.
 
-- **Address**: آدرس IP سرور.
+- **Address**: The server's IP address.
 
-- **Network Mask**: مشخص کننده Network Mask شبکه سرور می‌باشد.
+- **Network Mask**: Specifies the network mask of the server.
 
-- **Gateway**: گیت‌وی شبکه سرور.
+- **Gateway**: The network gateway of the server.
 
-- **Float**: آیا این IP شناور است؟ (فعال یا غیرفعال‌‌کردن) (در ساختار HA استفاده می‌گردد).
+- **Float**: Is this IP floating? (enable or disable) (used in HA structure).
 
-- **ARPing**: آدرس گیت‌وی‌‌ها برای انجام عملیات ARPing هنگام جابجایی بین سرور‌‌هاست. اگر چند گیت‌وی دردسترس باشد، با علامت ویرگول از هم جدا می‌‌شوند (در ساختار HA استفاده می‌گردد).
+- **ARPing**: The gateway addresses for performing ARPing during server transitions. If multiple gateways are available, they are separated by commas (used in HA structure).
 
-- **More Options**: اگر در تنظیم شبكه پارامترهای دیگری نیاز باشد، می‌‌توان آن‌‌ها را در این قسمت وارد کرد. اطلاعات واردشده در این قسمت به‌صورت كامل در فایل شبكه نوشته می‌‌شود.
+- **More Options**: If additional parameters are needed for network configuration, they can be entered here. The information entered will be fully written to the network file.
 
 - **Details**:
-	- **Remove**:برای حذف شبکه سرور می‌باشد.
-	- **Edit**:ویرایش اطلاعات بخش شبکه سرور.
+    - **Remove**: Used to delete the server's network.
+    - **Edit**: Edit the network information of the server.

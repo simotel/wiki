@@ -1,34 +1,29 @@
 ---
-sidebar_label: "جستجوی سریع"
-title: "جستجوی سریع"
+
 ---
-
-
 # Quick Search
 
-از این سرویس برای بازیابی اطلاعات بخش جستجوی سریع استفاده می‌شود.
+This service is used to retrieve information for the quick search section.
 
-**نکته** : در صورت تمایل استفاده از این سرویس جهت دریافت اطلاعات تماس تنها فیلد  **cuid** را وارد کرده و فیلد مربوط به تاریخ را حذف نمایید.
+**Note**: If you wish to use this service for retrieving contact information, only include the **cuid** field and remove the date fields.
 
-
-
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|          توضیحات         | داده های تعریف شده |  داده های نمونه  | پارامترهای ضروری[**]/منطقی[*] |      پارامترها      |
-|:------------------------:|:------------------:|:----------------:|:----------------------:|:-------------------:|
-|             -            |          -         |         -        |                        |   conditions->from  |
-|             -            |          -         |         -        |                        |    conditions->to   |
-|            شناسه تماس می باشد            |          -         |         -        |                        |   conditions->cuid  |
-| بازیابی گزارشات از تاریخ |          -         | 2020-06-15 15:16 |           **           |   date_range->from  |
-| بازیابی گزارشات تا تاریخ |          -         | 2022-06-22 15:16 |           **           |    date_renge->to   |
-|             -            |          -         |         0        |                        |  pagination->start  |
-|             -            |          -         |        20        |                        |  pagination->count  |
-|             -            |          -         |         -        |                        | pagination->sorting |
-|     یافتن موارد مشابه    |     true/false     |       true       |           **           |        alike        |
+| Description | Defined Data | Sample Data | Required[**]/Logical[*] | Parameters |
+|:-----------:|:------------:|:-----------:|:------------------------:|:----------:|
+| - | - | - | | conditions->from |
+| - | - | - | | conditions->to |
+| Contact ID | - | - | | conditions->cuid |
+| Retrieve reports from date | - | 2020-06-15 15:16 | ** | date_range->from |
+| Retrieve reports until date | - | 2022-06-22 15:16 | ** | date_range->to |
+| - | - | 0 | | pagination->start |
+| - | - | 20 | | pagination->count |
+| - | - | - | | pagination->sorting |
+| Find similar cases | true/false | true | ** | alike |
 </div>
 
-## نمونه فراخوانی
-*** (جستجو بر اساس زمان)***
+## Sample Invocation
+*** (Search by time)***
 
 
 <!--  -->
@@ -40,8 +35,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -59,7 +54,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -102,7 +97,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -150,7 +145,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash
@@ -265,8 +260,8 @@ import TabItem from '@theme/TabItem';
 
 <!--  -->
 
-## نمونه فراخوانی جستجو بر اساس cuid 
-***(در این حالت date_range باید خالی باشد)***
+## Example of search invocation based on cuid  
+***(In this case, date_range must be empty)***
 
 
 <!--  -->
@@ -275,8 +270,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -294,7 +289,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -337,7 +332,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -385,7 +380,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

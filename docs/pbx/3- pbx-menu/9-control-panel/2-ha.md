@@ -1,44 +1,42 @@
----
-sidebar_label: "HA"
----
+# HA 
 
-# HA
-این قسمت در ساختار HA کاربرد دارد و وضعیت سرور‌‌های موجود در HA را نمایش می‌‌دهد.
+This section is related to the HA structure and displays the status of the servers present in HA.
 
 ## HA Status
-در این قسمت اطلاعات مربوط به سرورها به شرح زیر نمایش داده می‌شود.
 
-- **Server Name**: نام سرور.
+In this section, information regarding the servers is displayed as follows:
 
-- **HA State**: وضعیت سرور در ساختار HA (PRIMARY، SECONDARY، STANDBY، UNKNOWN).
+- **Server Name**: The name of the server.
 
-- **PBX State**: وضعیت استریسک سرور (UP، DOWN، UNKNOWN).
+- **HA State**: The state of the server in the HA structure (PRIMARY, SECONDARY, STANDBY, UNKNOWN).
 
-- **Last Heartbeat**: آخرین سیگنال Heartbeat سرور.
+- **PBX State**: The status of the Asterisk server (UP, DOWN, UNKNOWN).
 
-- **Priority**: اولویت سرور برای انتخاب به‌‌عنوان PRIMARY (عدد بالاتر اولویت بالاتر دارد).
+- **Last Heartbeat**: The last heartbeat signal from the server.
 
-- **Last HA Configure**: آخرین تغییر HA.
+- **Priority**: The priority of the server for selection as PRIMARY (a higher number indicates a higher priority).
 
-- **Float IP**: نشان‌دهنده آدرس شناور است (آدرس شناور همیشه باید روی سرور PRIMARY باشد).
+- **Last HA Configure**: The last change made to HA.
 
-- **Use As Primary**: آیا سرور می‌‌تواند PRIMARY شود؟ (yes، no)
+- **Float IP**: Represents the floating IP address (the floating IP should always be on the PRIMARY server).
 
-- **HA Recovery Mode**: نحوه ریکاوری سرور هنگام خرابی است. اگر Auto باشد، پس از رفع عیب به حالت secondary منتقل می‌شود و اگر manual باشد، پس از خرابی به حالت standby می‌رود و باید توسط مدیر سیستم به حالت secondary منتقل شود.
+- **Use As Primary**: Indicates whether the server can become PRIMARY (yes, no).
+
+- **HA Recovery Mode**: The recovery method for the server in case of failure. If set to Auto, it will switch to secondary after the issue is resolved; if set to Manual, it will go to standby after failure and must be manually transitioned to secondary by the system administrator.
 
 - **Details**:
-	- **Edit**: برای ویرایش سرور.
-	- **Delete**: برای حذف سرور (درصورتی‌‌که سرور فعال باشد، دوباره با داده‌‌های پیش‌‌فرض ساخته می‌شود).
-	- **Arping**: برای اعمال arping روی سرور primary.
-	
-	
+  - **Edit**: To edit the server.
+  - **Delete**: To delete the server (if the server is active, it will be recreated with default data).
+  - **Arping**: To apply arping on the primary server.
+
 ## Server Status
-سرور در حالت HA یکی از وضعیت‌‌های زیر را داراست:
 
-- **PRIMARY**: سرور اصلی است.
+A server in HA can have one of the following statuses:
 
-- **SECONDARY**: سرور‌‌هایی که درصورت خرابی primary شرایط جایگزینی آن را دارند.
+- **PRIMARY**: The main server.
 
-- **STANDBY**: سرور باید به‌صورت دستی به حالت secondary تبدیل شود.
+- **SECONDARY**: Servers that can replace the primary in case of failure.
 
-- **UNKNOWN**: وضعیت سرور مشخص نیست.
+- **STANDBY**: The server needs to be manually switched to secondary.
+
+- **UNKNOWN**: The status of the server is unclear.

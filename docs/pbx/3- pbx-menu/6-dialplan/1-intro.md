@@ -1,79 +1,71 @@
----
-sidebar_label: "مقدمه ویرایشگر"
-title: "مقدمه ویرایشگر"
----
+# Introduction
 
-
-# مقدمه
-
-ویرایشگر، اصلی‌ترین قسمت نرم‌‌افزار سیموتل است. مسیر حرکتی تماس از لحظه ورود تا خروج در سیموتل، به وسیله کامپوننت‌‌های موجود در بخش ویرایشگر، 
-برنامه‌‌ریزی و پیاده‌‌سازی می‌‌گردند. قبل از آشنایی با کامپوننت‌‌های ویرایشگر، بهتر است نخست با اجزا و عملکرد‌‌های ویرایشگر آشنا شوید.
+The editor is the main component of the Simotel software. The call flow from the moment of entry to exit in Simotel is planned and implemented using the components available in the editor section. Before familiarizing yourself with the editor components, it is better to first understand the parts and functions of the editor.
 
 ![DialPlan](/img/dialplan.png)
 
-## اجزای ویرایشگر
+## Components of the Editor
 
-- **نوار کامپوننت‌‌ها**: نوار سمت راستی که حاوی تمام کامپوننت‌‌های ویرایشگر است.
+- **Component Bar**: The right sidebar containing all the editor components.
 
-- **کامپوننت**: هر کامپوننت مسئول انجام یک عملیات مشخص در مسیر تماس است.
+- **Component**: Each component is responsible for performing a specific operation in the call path.
 
-- **پلات طراحی**: صفحه سفید زمینه ویرایشگر است.
+- **Design Plot**: The white background page of the editor.
 
-- **کلید جستجو**: در نوار پایین سمت چپ قرار دارد. امکان جستجو بین صفحات را براساس نام فراهم می‌کند(زمانی که تعداد صفحات زیاد باشد بسیار به کار می‌آید).
+- **Search Button**: Located in the lower left bar, it allows searching between pages by name (very useful when there are many pages).
 
-- **صفحه‌‌بندی**: در نوار پایین سمت چپ قرار دارد. به‌‌وسیله صفحه‌‌بندی می‌‌توان صفحه جدیدی ایجاد و برای سهولت در پیاده‌‌سازی، ساختار مسیر تماس را در صفحه‌‌های مختلف تقسیم کرد.
+- **Pagination**: Located in the lower left bar, it allows creating a new page and dividing the call path structure into different pages for ease of implementation.
 
+- **Save Button**: Any changes in the monitoring editor environment are local and are only saved and executed by pressing the save button in the system. This button's behavior is global, and changes on all pages are saved.
 
-- **کلید ذخیره**: هرگونه تغییر در محیط ویرایشگر مانیتورینگ، محلی است و فقط با زدن کلید ذخیره در سیستم، ذخیره و اجرا می‌گردد.رفتار این کلید سراسری می‌باشد و تغییرات موجود در تمامی صفحات ذخیره می‌شوند.
+- **History Button**: Displays the history of changes made to the editor. It is possible to revert to previous changes from this location. To register and execute previous changes, the save button must also be applied.
 
-- **کلید تاریخچه**: تاریخچه تغییرات بر روی ویرایشگر را نمایش می‌‌دهد. امکان بازگشت به تغییرات قبلی از این مکان میسر است. برای ثبت و اجرایی شدن تغییرات قبلی، باید کلید ذخیره نیز اعمال گردد.
+- **Help Button**: A tool for guiding the components of the editor.
 
-- **کلید راهنما**: ابزاری برای راهنمایی اجزای ویرایشگر است.
+- **Map**: While moving the design plot, a small page is displayed at the bottom of the plot that helps with positioning in the plot. To use it in the dial plan page, press the left mouse button and move the mouse.
 
-- **نقشه**: در حین جابجاکردن پلات طراحی، صفحه‌ای کوچک در پایین پلات نمایش داده می‌‌شود که به موقعیت‌یابی در پلات کمک می‌کند،برای استفاده از آن در صفحه دایل‌پلن کلیک چپ ماوس را فشار دهید و ماوس را جابجا کنید.
+## Operations in the Editor
 
-## عملیات‌ها در ویرایشگر
+- **Drag and Drop**: To add a component to the plot, first grab it from the component bar with the mouse and drop it onto the plot.
 
-- **کشیدن و رهاکردن**: برای اضافه‌‌کردن کامپوننت به پلات، نخست آن را از نوار کامپوننت با ماوس بگیرید و به روی پلات منتقل و رها نمایید.
+- **Moving the Plot**: Click on the plot and move it.
 
-- **جابجاکردن پلات**: بر روی پلات کلیک و آن را جابجا کنید.
-	
-- **زوم‌‌کردن**: کلید ctrl را نگه دارید و با scroll ماوس، بزرگنمایی پلات را تغییر دهید.
+- **Zooming**: Hold the ctrl key and use the mouse scroll to change the zoom level of the plot.
 
-- **افزودن کامپوننت به پلات**: با کشیدن و رها‌‌کردن، کامپوننت به روی پلات منتقل می‌‌شود.
+- **Adding a Component to the Plot**: By dragging and dropping, the component is transferred to the plot.
 
-- **کپی‌‌کردن کامپوننت**: روی کامپوننت در صفحه پلات کلیک و سپس روی آیکون copy که در بالای آن دیده می‌‌شود کلیک کنید.
+- **Copying a Component**: Click on the component in the plot page and then click the copy icon above it.
 
-- **حذف کامپوننت**: روی کامپوننت در صفحه پلات کلیک و سپس روی آیکون Recycle Bin که در بالای آن دیده می‌‌شود کلیک کنید.
+- **Deleting a Component**: Click on the component in the plot page and then click the Recycle Bin icon above it.
 
-- **تغییر پارامترهای کامپوننت**: روی کامپوننت در صفحه پلات کلیک و سپس روی آیکون Settings که در بالای آن دیده می‌‌شود کلیک کنید. در پنجره‌‌ای که باز می‌‌شود، می‌‌توانید پارامترهای کامپوننت را تغییر دهید.
+- **Changing Component Parameters**: Click on the component in the plot page and then click the Settings icon above it. In the window that opens, you can change the component parameters.
 
-- **برقرار‌‌کردن اتصال بین کامپوننت‌‌ها**: روی خروجی کامپوننت مبدأ و سپس روی ورودی کامپوننت مقصد کلیک کنید. اتصال برقرار می‌‌شود.
+- **Establishing Connection Between Components**: Click on the output of the source component and then click on the input of the destination component. The connection will be established.
 
-- **حذف اتصال بین کامپوننت‌‌ها**: روی اتصال کلیک کنید تا رنگ آن تغییر ‌کند. کلید delete را از صفحه کلید انتخاب و پیام حذف را تایید کنید.
+- **Deleting Connection Between Components**: Click on the connection to change its color. Press the delete key on the keyboard and confirm the delete message.
 
-- **جابجا‌‌کردن کامپوننت**: کلید ماوس را روی اسم کامپوننت (نوار بالا) فشرده نگه دارید و آن را جابجا کنید.
+- **Moving a Component**: Press and hold the mouse button on the component name (top bar) and move it.
 
-- **تغییر نام کامپوننت**: روی نوار اسم کامپوننت دوبار کلیک کنید و نام را تغییر دهید.
+- **Changing Component Name**: Double-click on the component name bar and change the name.
 
-- **افزودن خروجی به کامپوننت**: در برخی از کامپوننت‌‌ها که امکان افزودن ردیف دارند، روی علامت ➕ که در انتهای آن قرار دارد کلیک کنید. برای حذف ردیف روی علامت – که در کنار ردیف است، کلیک کنید.
+- **Adding Output to a Component**: In some components that allow adding rows, click on the ➕ sign at the end. To delete a row, click on the – sign next to the row.
 
-- **افزودن صفحه جدید**: در نوار پایین ویرایشگر روی علامت ➕ کلیک و نام صفحه جدید را وارد کنید.
+- **Adding a New Page**: Click on the ➕ sign in the lower bar of the editor and enter the name of the new page.
 
-- **گرفتن نسخه پشتیبان**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Export را انتخاب کنید.
+- **Backing Up**: Click on the 🔼 sign in the lower bar of the editor and select Export.
 
-- **بازیابی نسخه پشتیبان**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Import را انتخاب کنید.
+- **Restoring Backup**: Click on the 🔼 sign in the lower bar of the editor and select Import.
 
-- **ذخیره تغییرات صفحه**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Save را انتخاب کنید.
+- **Saving Page Changes**: Click on the 🔼 sign in the lower bar of the editor and select Save.
 
-- **تغییر نام صفحه**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Rename را انتخاب کنید.
+- **Renaming a Page**: Click on the 🔼 sign in the lower bar of the editor and select Rename.
 
-- **پاک کردن اطلاعات**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Clear را انتخاب کنید.
+- **Clearing Data**: Click on the 🔼 sign in the lower bar of the editor and select Clear.
 
-- **حذف صفحه**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Delete را انتخاب کنید.
+- **Deleting a Page**: Click on the 🔼 sign in the lower bar of the editor and select Delete.
 
-- **بارگذاری مجدد**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Reload را انتخاب کنید.
+- **Reloading**: Click on the 🔼 sign in the lower bar of the editor and select Reload.
 
-- **پاک‌کردن محتوای صفحه**: در نوار پایین ویرایشگر روی علامت 🔼 کلیک و گزینه Clear را انتخاب کنید.
+- **Clearing Page Content**: Click on the 🔼 sign in the lower bar of the editor and select Clear.
 
-- **جستجوی کامپوننت در نوار کامپوننت**: در محل کامپوننت‌‌ها در بالای صفحه و در قسمت search نام کامپوننت دلخواه را تایپ کنید.
+- **Searching for a Component in the Component Bar**: In the component area at the top of the page, type the desired component name in the search section.

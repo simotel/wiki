@@ -1,21 +1,21 @@
+```markdown
+title: "Groups"
+sidebar_label: "Groups"
 ---
-sidebar_label: "گروه ها"
-title: "گروه ها"
----
 
+# Groups
 
-# گروه‌ها
+Add a list of numbers in this section by clicking the ➕ button. After adding, you can include your group for bulk contacts when creating a campaign.
 
-لیست گروهی از شماره‌ها را در این بخش با کلیک بر روی دکمه ➕ اضاف کنید،پس از افزودن در زمان ساخت کمپین می‌توانید گروه خود را به تماس انبوه اضاف کنید.
+Ensure Excel files are uploaded in formats (csv, vcf), with all numbers arranged in a single column. The Excel file should contain only one column where the numbers are placed.
 
-در نظر داشته باشید فایل‌های اکسل با فرمت‌های(csv,vcf)بارگذاری گردند و تمامی شماره‌ها به‌ترتیب در یک ستون قرار گیرند. فایل اکسل تنها شامل یک ستون می‌باشد که شماره‌ها در آن قرار می‌گیرند.
+## Groups Parameters
 
-## پارامترهای Groups
+- **Name**: The name of the group.
 
-- **Name**: نام گروه.
+- **Contacts**: If you have added numbers in the contacts section, you can select them here. This is done to consolidate information into one group.
 
-- **Contacts**: در صورتی که شماره‌ای در بخش مخاطبین اضاف کرده‌اید می‌توانید از اینجا انتخاب کنید،این کار به جهت تجمیع اطلاعات در یک گروه صورت می‌گیرد.
+- **Import**: Select your Excel file in this section.
 
-- **Import**: در این قسمت فایل اکسل خود را انتخاب کنید.
-
-- **Description**: افزودن توضیحات در مورد گروه.
+- **Description**: Add a description for the group.
+```

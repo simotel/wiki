@@ -1,19 +1,13 @@
----
-sidebar_label: "Mix Monitor "
----
-
-
-
 # Mix Monitor
 
-## کاربرد
+## Usage
 
-علاوه بر پارامتر ضبط مکالمات در صف یا داخلی، این کامپوننت هم می‌‌تواند ضبط مکالمات را انجام دهد. مثلاً برای سازمانی كه ضبط مكالمات داخلی‌هایش غیرفعال شده باشد، اگر بخواهید در مسیری خاص اقدام به ضبط مكالمات کنید می‌توانید از این كامپوننت استفاده کنید.
+In addition to the call recording parameter in the queue or internal, this component can also perform call recording. For example, for an organization where internal call recording is disabled, if you want to record calls in a specific path, you can use this component.
 
-## پارامترها کامپوننت
+## Component Parameters
 
-- **Type**: نوع عملیات ضبط
-	- **Start Recording**: برای شروع ضبط مكالمه در مسیر تماس است.
-	- **Stop Recording**: برای توقف ضبط مكالمه در مسیر تماس است (درصورت پایان تماس ضبط متوقف می‌شود و نیازی به توقف آن نیست).
+- **Type**: The type of recording operation
+  - **Start Recording**: To start recording a call in the call path.
+  - **Stop Recording**: To stop recording a call in the call path (recording stops automatically at the end of the call, so there is no need to stop it manually).
 
-- **option**: تنظیمات تماس است.
+- **Option**: Call settings.

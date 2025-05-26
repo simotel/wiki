@@ -1,37 +1,32 @@
 ---
 sidebar_position: 2
-sidebar_label: "معرفی Extension API"
-title: "معرفی Extension API"
 ---
-
-
 # Extention API
 
-از این کامپوننت برای ارسال تماس به سمت یک داخلی استفاده‌ می‌شود.عملکرد آن مشابه Extension است، با این تفاوت که از طریق وب‌‌سرویس، شماره داخلی 
-مقصد را دریافت و فقط تماس را برای آن داخلی ارسال می‌نماید.
+This component is used to forward a call to an extension. Its function is similar to the **Extension** component, but instead of statically defining the destination number, it retrieves the destination extension number via a web service and only forwards the call to that extension.
 
-## پارامترها کامپوننت
+## Component Parameters
 
-- **API Address**: آدرس وب‌‌سرویس برای اطلاع از شماره داخلی مقصد.
-- **Timeout (sec)**: مدت زمان زنگ خوردن داخلی (برحسب ثانیه).
-- **Options**: تنظيمات تماس.
- 
-## خروجی‌های کامپوننت
+- **API Address**: The web service address to retrieve the destination extension number.
+- **Timeout (sec)**: The duration the extension will ring (in seconds).
+- **Options**: Call settings.
 
-- **S (Success)**: درصورتی‌‌که تماس موفق باشد، یعنی داخلی به تماس پاسخ داده باشد.
-- **B (Busy)**: در صورتی که داخلی مشغول باشد.
-- **F (Fail)**: درصورتی‌‌که تماس به هر دلیلی ناموفق باشد.
+## Component Outputs
 
-## قالب وب‌‌سرویس
-با‌توجه به مقادیر منوی تنظیمات مربوط به `API Method & API Version`، کامپوننت آدرس وب‌سرویس را فراخوانی کرده و داده‌های زیر را (با نام‌های ذکر شده) همراه با آن ارسال می‌نماید.
+- **S (Success)**: If the call is successful, i.e., the extension answers the call.
+- **B (Busy)**: If the extension is busy.
+- **F (Fail)**: If the call fails for any reason.
 
-- **src**: شماره تماس‌‌گیرنده (Caller یا CID).
-- **dst**: شماره واردشده (Callee یا DID یا Exten).
-- **data**: داده‌‌ای که تماس‌‌گیرنده در مسیر تماس وارد کرده است (مثلاً داده‌‌ای که در IVR وارد کرده است).
-- **unique_id**: شناسه یکتای تماس.
-- **app_name**: نام کامپوننت جاری.
+## Web Service Format
+Based on the `API Method & API Version` settings, the component calls the web service and sends the following data (with the names mentioned) along with it:
 
-و در جواب، خروجی زیر را به‌صورت json دریافت‌ می‌کند.
+- **src**: The caller's number (Caller or CID).
+- **dst**: The entered number (Callee, DID, or Exten).
+- **data**: The data entered by the caller during the call (e.g., data entered in the IVR).
+- **unique_id**: The unique identifier of the call.
+- **app_name**: The name of the current component.
+
+In response, the component receives the following output in JSON format.
 
 ```shell
 {
@@ -40,4 +35,4 @@ title: "معرفی Extension API"
 }
 ```
 
-**و درنهايت تماس را به سمت داخلی واردشده (در اينجا 120) ارسال می‌كند.**
+**And finally, the call is forwarded to the entered extension (here, 120).**

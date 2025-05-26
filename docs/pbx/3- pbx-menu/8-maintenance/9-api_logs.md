@@ -1,36 +1,29 @@
----
-sidebar_label: "سابقه فعالیت Api"
-title: "سابقه فعالیت Api"
----
-
-
 # API Logs
 
-در این قسمت گزارشات مربوط به APIها(SA،SEA) نمایش داده می‌شوند،با استفاده از فیلتر‌های موجود دراین بخش می‌توان گزارشی کاملا شخصی‌سازی شده بدست آورد.
+This section displays reports related to APIs (SA, SEA). You can obtain a fully customized report using the available filters in this section.
 
+## API Logs Filter Parameters
 
-## پارامترهای فیلتر API Logs
+- **From (Date)**: Display reports starting from this date.
 
-- **From (Date)**: نمایش گزارشات از تاریخ.
+- **To (Date)**: Display reports up to this date.
 
-- **To (Date)**: نمایش گزارشات تا تاریخ.
+- **Username**: Display reports based on the username of the account.
 
-- **Username**: نمایش گزارش براساس نام‌کاربری حساب.
+- **Request**: Display reports based on the type of request.
 
-- **Request**: نمایش گزارش براساس نوع درخواست.
+- **Authorized**: Display reports based on the authentication status (whether the username and password sent in the request are correct).
 
-- **Authorized**: نمایش گزارش براساس وضعیت احرازهویت(نام‌کاربری و رمزعبور ارسالی در درخواست درست بوده است یا خیر).
+- **Success**: Display reports based on the request status (whether the request was successfully responded to or encountered an error).
 
-- **Success**: نمایش گزارش براساس وضعیت درخواست(درخواست با موقیت پاسخ داده شده‌است یا با خطا مواجه شده‌IP:است).
+- **IP**: Display reports based on the requesting IP.
 
-- **IP**: نمایش گزارش براساس IP درخواست دهنده.
+- **Status**: Display reports based on the HTTP Status Code of the request.
 
-- **Status**: نمایش گزارش براساس Status Code درخواست HTTP.
+- **Method**: Display reports based on the request method (Post, Get).
 
-- **Method**: نمایش گزارش براساس متد درخواست(Post،Get).
+- **App**: Display reports based on the Simutel API service.
 
-- **App**: نمایش گزارش براساس سرویس‌ API سیموتل.
+- **Version**: Display reports based on the version of the web service used.
 
-- **Version**: نمایش گزارش براساس ورژن وب‌سرویس مورد استفاده.
-
-- **Find Alike**: یافتن موارد مشابه.
+- **Find Alike**: Find similar items.

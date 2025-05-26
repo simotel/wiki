@@ -1,42 +1,35 @@
----
-sidebar_label: "CallBack"
----
-
-
-
 # Call Back
 
-## کاربرد
+## Purpose
 
-فرض کنید در خارج سازمان هستید و می‌‌خواهید از طریق شماره سازمان با شخصی تماس بگیرید. برای پیاده‌‌سازی چنین امکانی، باید از کامپوننت Callback استفاده کنید. با ورود تماس به کامپوننت Callback، تماس قطع و مجددا با تماس‌‌گیرنده تماس گرفته می‌شود، سپس تماس وی به کامپوننت بعد از Callback منتقل می‌گردد. در نهایت با استفاده از قابلیت‌‌های ویرایشگر می‌‌توان مدیریت دلخواه را روی آن انجام داد.
+Suppose you are outside the organization and want to call someone using the organization's number. To implement such a feature, you should use the Callback component. When a call reaches the Callback component, the call is disconnected, and the system calls back the caller. Then, the call is routed to the component after the Callback. Finally, you can manage it as needed using the editor's features.
 
+## Parameters
 
-## پارامترها کامپوننت
+- **Method:** Determines the method of the callback, which includes three options:
+  
+  1. **Call to caller:** In this case, the system monitors the number entered in the Callback service and calls back the exact same number to provide the service.
+  
+  2. **Call to number:** In this case, a predefined phone number is given to the system, and when Callback is requested, the system calls only that number.
+  
+  3. **Call extension:** In this method, the system calls a specified extension.
 
-- **Method:** نحوه تماس برگشتی را تعیین می‌‌کند که شامل سه حالت زیر است
+- **Trunk:** When option 1 or 2 is selected in the Method menu, this option is activated. You must select the trunk you want to use for the connection.
 
-	۱. **Call to caller**: در این حالت سیستم شماره‌‌ای که وارد سرویس Callback شده است را رصد می‌‌کند و دقیقاً با همان شماره جهت ارائه خدمت، تماس می‌‌گیرد.
-	
-	۲. **Call to number**: در این حالت شماره تلفن از قبل به سیستم داده شده است و با درخواست Callback سیستم تنها با همان شماره تماس می‌‌گیرد.
-	
-	۳. **Call extension**: در این روش سیستم با داخلی مشخص‌شده تماس می‌‌گیرد.
-	
-- **Trunk**: هنگامی‌که گزینه ۱ یا ۲ در منوی Method انتخاب گردد، این منو فعال می‌شود و باید در آن ترانکی را انتخاب کنید که می‌‌خواهید از طریق آن ارتباط برقرار شود.
+- **Number:** When option 2 is selected in the Method menu, this option is activated. You must enter the specific number to be dialed for the callback.
 
-- **Number**: هنگامی‌که گزینه ۲ در منوی Method انتخاب می‌گردد، این منو فعال می‌شود و باید در آن شماره خاصی که قرار است با آن تماس برقرار گردد را وارد ‌کنید.
+- **Extension:** When option 3 is selected in the Method menu, this option is activated. You must specify the extension that should be called.
 
-- **Extension**: هنگامی‌که گزینه ۳ در منوی Method انتخاب می‌گردد، این منو فعال می‌شود و باید در آن شماره داخلی‌ای که قرار است با آن تماس برقرار گردد را مشخص کنید.
+- **Caller ID:** The number displayed on the requester's phone during the callback (Caller ID is shown if the trunk provider has granted you the necessary permissions).
 
-- **Caller id**: شماره‌‌ای است که در تماس برگشتی روی گوشی درخواست‌کننده نمایش داده می‌‌شود (caller id درصورتی‌‌که خدمات‌دهنده ترانک به شما مجوز و امکانات لازم را داده باشد اجرا می‌‌شود).
+- **Delay (Sec):** The amount of time, in seconds, that the system will wait before calling you back to provide the service.
 
-- **Delay (Sec)**: مقدار زمانی است برحسب ثانیه که طول می‌‌کشد سیستم با شما جهت ارائه خدمت تماس بگیرد.
+- **Timeout (Sec):** The amount of time, in seconds, given to enter the second digit after the first digit is entered. If this time expires, the call is disconnected.
 
-- **Timeout (Sec)**: مدت زمانی است برحسب ثانیه که به شما مهلت می‌‌دهد پس از گرفتن رقم اول، رقم دوم را وارد کنید، درغیراین‌صورت تماس قطع می‌‌گردد.
-
-:::tip نکته
-"Call to caller" روش استاندارد در مدیریت تماس‌‌های برگشتی است و کاربرد بیشتری نسبت به بقیه دارد.
+:::tip Note
+"Call to caller" is the standard method for managing callback calls and has more usage than the others.
 :::
 
-:::tip نکته
-اگر تماس برگشتی برای یک شماره فعال شده باشد، برای امنیت و جلوگیری از سوء استفاده بهتر است از روش "Call to number" استفاده و همان شماره را در قسمت  Number وارد کنید.
+:::tip Note
+If a callback is activated for a number, for security and to prevent misuse, it is better to use the "Call to number" method and enter the same number in the **Number** field.
 :::

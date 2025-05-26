@@ -1,31 +1,26 @@
----
-sidebar_label: "بازیابی گزارشات صف"
-title: "بازیابی گزارشات صف"
----
-
 
 # Queue Search
 
-از این سرویس برای بازیابی گزارشات‌ صف استفاده می‌شود.
+This service is used to retrieve queue reports.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|      توضیحات      | داده های تعریف شده |  داده های نمونه  | پارامترهای ضروری[**]/منطقی[*] |      پارامترها      |
-|:-----------------:|:------------------:|:----------------:|:----------------------:|:-------------------:|
-|     شماره مبدا    |          -         |         -        |                        |   conditions->from  |
-|     شماره مقصد    |          -         |         -        |                        |    conditions->to   |
-| شناسه یکتای گزارش |          -         | 1623762811.55413 |                        |   conditions->cuid  |
-|      شماره صف     |          -         |        901       |                        |   conditions->qnum  |
-|   جستجو از تاریخ  |          -         | 2020-06-15 15:16 |           **           |   date_range->from  |
-|   جستجو تا تاریخ  |          -         | 2022-06-22 15:16 |           **           |    date_range->to   |
-|         -         |          -         |         0        |                        |  pagination->start  |
-|         -         |          -         |        20        |                        |  pagination->count  |
-|         -         |          -         |         -        |                        | pagination->sorting |
-| یافتن موارد مشابه |     true/false     |       true       |           **           |        alike        |
+| Description         | Defined Data       | Sample Data        | Required[**]/Optional[*] | Parameters           |
+|:-------------------:|:------------------:|:------------------:|:------------------------:|:--------------------:|
+| Source number       | -                  | -                  |                          | conditions->from     |
+| Destination number  | -                  | -                  |                          | conditions->to       |
+| Report unique ID    | -                  | 1623762811.55413   |                          | conditions->cuid     |
+| Queue number        | -                  | 901                |                          | conditions->qnum     |
+| Search from date    | -                  | 2020-06-15 15:16   | **                       | date_range->from     |
+| Search to date      | -                  | 2022-06-22 15:16   | **                       | date_range->to       |
+| Pagination start    | -                  | 0                  |                          | pagination->start    |
+| Pagination count    | -                  | 20                 |                          | pagination->count    |
+| Pagination sorting  | -                  | -                  |                          | pagination->sorting  |
+| Find similar cases  | true/false         | true               | **                       | alike                |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -36,8 +31,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -54,7 +49,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -97,7 +92,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -149,7 +144,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

@@ -1,114 +1,101 @@
 ---
-sidebar_label: "مقدمه داشبورد مدیریتی"
-title: "مقدمه داشبورد مدیریتی"
+title: "Management Dashboard Introduction"
+sidebar_label: "Management Dashboard "
 ---
 
-# مقدمه
+# Introduction
 
-در این قسمت گزارشاتی از عملکرد بخش‌های مختلف سیستم بصورت زنده نمایش داده می‌شود،این بخش شاخص‌های مربوط به مانیتورینگ مرکزتماس را به شکل کامپوننت در اختیار مدیر سیستم قرار می‌دهد و مدیر سیستم می‌تواند کامپوننت‌های دلخواه خود را انتخاب و صفحه‌ای شخصی‌سازی شده را طراحی کند.
-
+In this section, live reports of the performance of different system components are displayed. This section provides monitoring metrics for the Call Center in the form of components, allowing the system administrator to select desired components and design a personalized dashboard.
 
 ![dashboard](/img/simotel/dashboard.JPG)
 
+## Monitoring Components
 
+- **Component Box**: The area where all available components are displayed (click on the ➕ at the top right to display the box).
+  
+- **Component**: Each component is responsible for displaying a specific metric or report.
+  
+- **Design Grid**: The white background of the monitoring screen.
+  
+- **Page Navigation**: Use the ➕ key at the top left to create multiple pages for categorizing and creating different reports.
+  
+- **Save Button**: Any changes made in the monitoring editor are local and only saved and applied when the save button is clicked in the system.
+  
+- **Help Button**: A tool for guiding the monitoring components.
 
-## اجزای مانیتورینگ
+## Actions in the Monitoring Section
 
-- **جعبه کامپوننت‌‌ها**: محلی که تمامی کامپوننت‌های موجود نمایش داده می‌شوند(با کلیک بر روی ➕ در بالا سمت راست جعبه نمایش داده می‌شود).
+- **Drag and Drop**: To add a component to the grid, first, grab it from the component box with the mouse and drop it onto the grid.
+  
+- **Delete Component**: Click on the Action button, represented by three dots in the top bar of the component, and select **Remove** to delete it.
+  
+- **Edit Component Parameters**: Click on the Action button and select **Edit** to modify the component's parameters.
+  
+- **Move Component**: Hold down the mouse button on the component's name (top bar) and move it.
+  
+- **Add New Page**: Use the ➕ button at the top left to create multiple pages.
+  
+- **Delete Page**: Click on the **X** button in the upper left corner of each tab to delete the page.
+  
+- **Resize Component**: Click on the three diagonal lines at the bottom left corner of the component to resize it.
+  
+- **Save Page Changes**: Click the **Save** option at the top left.
 
-- **کامپوننت**: هر کامپوننت مسئول نمایش شاخص و گزارشی خاصی می‌باشد.
-
-- **پلات طراحی**: صفحه سفید زمینه مانیتورینگ است.
-
-- **صفحه‌‌بندی**: با استفاده از کلید ➕ در بالا سمت‌چپ می‌توان صفحات مختلفی به جهت دسته‌بندی و ایجاد گزارشات  مختلف ایجاد کرد.
-
-- **کلید ذخیره**: هرگونه تغییر در محیط ویرایشگر مانیتورینگ، محلی است و فقط با زدن کلید ذخیره در سیستم، ذخیره و اجرا می‌گردد.
-
-- **کلید راهنما**: ابزاری برای راهنمایی اجزای مانیتورینگ است.
-
-
-
-## عملیات‌ها در بخش مانیتورینگ
-
-- **کشیدن و رهاکردن**: برای اضافه‌‌کردن کامپوننت به پلات، نخست آن را از جعبه کامپوننت‌ها با ماوس بگیرید و به روی پلات منتقل و رها نمایید.
- 
-- **حذف کامپوننت**: برروی گزینه Action که در نوار بالایی کامپوننت با سه‌نقطه نمایش داده شده کلیک کرده و با نمایش Remove برروی آن کلیک کنید.
-
-- **تغییر پارامترهای کامپوننت**: برروی گزینه Action که در نوار بالایی کامپوننت با سه‌نقطه نمایش داده شده کلیک کرده و با نمایش Edit برروی آن کلیک کنید.
-
-- **جابجا‌‌کردن کامپوننت**: کلید ماوس را روی اسم کامپوننت (نوار بالا) فشرده نگه دارید و آن را جابجا کنید.
-
-- **افزودن صفحه جدید**: با استفاده از کلید ➕ در بالا سمت‌چپ می‌توان صفحات مختلفی ایجاد کرد.
-
-- **حذف صفحه**: با کلیک برروی دکمه ضربدر در گوشه سمت چپ هر Tab می‌توان صفحه را حذف کرد.
-
-- **تغییر اندازه کامپوننت**: با کلیک برروی سه ‌خط ‌مورب در گوشه پایین سمت چپ کامپوننت می‌توان اندازه کامپوننت را تغییر داد.
-
-- **ذخیره تغییرات صفحه**: در قسمت بالا سمت چپ برروی گزینه Save کلیک نمایید.
-
-
- 
- 
- 
-:::info اطلاعات
- در  داشبورد امکان تحلیل داده‌ها حداکثر تا ۲۴ ساعت گذشته وجود دارد و درصورتی که نیاز به اطلاعات روزهای گذشته می‌باشد باید از بخش گزارش‌های کاربری اقدام کرد.
+:::info
+Data analysis in the dashboard is available for up to 24 hours ago. If you need information from previous days, you must access the user reports section.
 :::
- 
- 
- 
- 
-## دسته‌بندی کامپوننت‌ها
- 
- **بطور کل کامپوننت‌های داشبورد به سه بخش اصلی تقسیم می‌شوند**
- 
-### کامپوننت‌های بلادرنگ
-به دسته‌ای از کامپوننت‌ها که خروجی آنها در لحظه و با تأخیر بسیار کم نمایش داده می‌شود بلادرنگ گفته می‌شود، این کامپوننت‌ها شامل
- 
-- **Trunk Status**: نمایش وضعیت ترانک‌ها را برعهده دارد.
-- **Server Stats**: ارائه گزارشی از مصرف منابع سرور(CPU ، RAM).
-- **Exten Status**: گزارشی از وضعیت داخلی‌های مرکزتماس.
-- **Agent Status**: گزارشی از وضعیت اپراتور‌های مرکزتماس.
-	
-### کامپوننت‌های مربوط به صف
-به دسته‌ای از کامپوننت که بطور خاص به تحلیل و بررسی گزارشات مربوط به صف می‌پردازند گویند، این کامپوننت‌ها شامل
- 
-- **Avg. Handling Time**: میانگین زمان مکالمه در صف(بر‌حسب ثانیه).
-- **Avg. Speed Answer**: میانگین زمان پاسخگویی به تماس در صف(برحسب ثانیه).
-- **Queue Call Rates**: ارائه گزارشی از وضعیت تماس‌ها براساس شاخص‌های صف در مرکزتماس(بر حسب درصد).
-- **Queue Statistics**: ارائه گزارشی از وضعیت تماس‌ها در صف(براساس تعداد).
-- **Service Level**: یکی از شاخض مربوط به صف می‌باشد که در آینده بطور دقیق‌تر بررسی می‌شود(برحسب درصد).
-	
-### کامپوننت‌های عمومی
-برخی از این کامپوننت‌ها امکان ارائه گزارش برروی صف و داخلی را دارند و محدود به یکی نمی‌باشند،دیگر کامپوننت‌ها نیز مربوط به گزارشات کلی از مرکزتماس می‌باشند و در هیجکدام از دو دسته بالا قرار نمی‌گیرند.این کامپوننت‌ها شامل
- 
-- **Net Promoter Score**: ارائه گزارشی از شاخص خالص ترویج کنندگان(برحسب درصد).
-- **Customer Satisfaction**: نمایش گزارشی از میانگین رضایت مشتری در نظرسنجی‌های صورت گرفته(برحسب نمره).
-- **Surveys**: این کامپوننت عملکردی مشابه با Customer Satisfaction دارد.
-- **HDD (Audio)**: گزارشی از حافظه مصرف‌شده توسط فایل‌های صوتی.
-- **HDD (All)**: گزارشی از وضعیت حافظه سرور.
-- **Call Duration**: ارائه گزارشی کلی از مدت زمان مکالمه و انتظار(برحسب ثانیه).
-- **Call Status**: ارائه گزارشی کلی از وضعیت تماس‌ها(پاسخ‌داده‌شده، پاسخ‌داده‌نشده،مشغول،مسدودشده) در مرکزتماس.
-- **Call Direction**: ارائه گزاشی از نوع تماس‌ها(ورودی،خروجی) در مرکزتماس.
-- **SPIT**: نمایش تماس‌های بهمنی در مرکزتماس.
-	
- 
-## پارامترهای مشترک
- 
-در بخش ویرایش تمامی کامپوننت‌های مانیتورینگ پارمتر‌هایی مشترک وجود دارند که به بررسی آنها می‌پردازیم
 
-- **Title**: این پارامتر نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
+## Component Categories
 
-- **View as**: در بخش مانیتورینگ حالات مختلفی برای نمایش اطلاعات کامپوننت‌ها وجود دارد با استفاده از این پارامتر می‌توان بین حالت‌های مختلف نمایش سوییج کرد،این حالات شامل
-	- **Pie Chart**: نمایش نمودار دایره‌ای.
-	- **Bar Chart**: نمایش نمودار میله‌ای.
-	- **Line Chart**: نمایش نمودار خطی.
-	- **Table**: نمایش بصورت جدولی.
-	- **Number**: نمایش بصورت عددی.
-	- **Column**: نمایش ستونی.
-	- **Row**: نمایش ردیفی.
-	- **Grid**: نمایش توری.
-	
- 
-- **Items**: با استفاده از این پارمتر می‌توان مشخص کرد دقیقا کدام شاخص مربوط به گزارش در کامپوننت نمایش داده شود.
- 
- 
+**Overall, the dashboard components are divided into three main categories:**
+
+### Real-Time Components
+
+These components display outputs in real-time with minimal delay. They include:
+
+- **Trunk Status**: Displays the status of trunks.
+- **Server Stats**: Provides a report on server resource usage (CPU, RAM).
+- **Exten Status**: Displays the status of extensions in the Call Center.
+- **Agent Status**: Displays the status of Call Center agents.
+
+### Queue Components
+
+These components are specifically designed to analyze and report on queue metrics. They include:
+
+- **Avg. Handling Time**: The average call handling time in the queue (in seconds).
+- **Avg. Speed Answer**: The average response time to calls in the queue (in seconds).
+- **Queue Call Rates**: Provides a report on call status based on queue metrics in the Call Center (percentage).
+- **Queue Statistics**: Provides a report on the call status in the queue (count).
+- **Service Level**: A key metric related to queues that will be discussed in more detail later (percentage).
+
+### General Components
+
+These components can report on both queues and extensions and are not limited to either category. Other components provide general reports about the Call Center, such as:
+
+- **Net Promoter Score**: Provides a report on the Net Promoter Score (percentage).
+- **Customer Satisfaction**: Displays a report on the average customer satisfaction based on surveys (score).
+- **Surveys**: This component functions similarly to Customer Satisfaction.
+- **HDD (Audio)**: Provides a report on disk usage by audio files.
+- **HDD (All)**: Provides a report on the overall server disk usage.
+- **Call Duration**: Provides a general report on call and wait times (in seconds).
+- **Call Status**: Provides a general report on call statuses (answered, unanswered, busy, blocked) in the Call Center.
+- **Call Direction**: Provides a report on the types of calls (incoming, outgoing) in the Call Center.
+- **SPIT**: Displays storm calls in the Call Center.
+
+## Shared Parameters
+
+In the **Edit** section of all monitoring components, there are common parameters that we will review:
+
+- **Title**: This parameter sets the display name of the component on the page.
+
+- **View as**: The monitoring section offers different modes for displaying component information. This parameter allows you to switch between display modes, including:
+  - **Pie Chart**: Display as a pie chart.
+  - **Bar Chart**: Display as a bar chart.
+  - **Line Chart**: Display as a line chart.
+  - **Table**: Display as a table.
+  - **Number**: Display as a number.
+  - **Column**: Display in column format.
+  - **Row**: Display in row format.
+  - **Grid**: Display in grid format.
+
+- **Items**: This parameter allows you to specify exactly which metric from the report should be displayed in the component.

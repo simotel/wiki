@@ -1,25 +1,20 @@
----
-sidebar_label: "تنظیمات Api"
-title: "تنظیمات Api"
----
+# API Settings
 
-
-
-# API settings
-:::caution هشدار
-نسخه 1و2و3 منسوخ شده است
+:::caution
+**Warning**: Versions 1, 2, and 3 are deprecated.
 :::
-این قسمت مربوط به تنظیمات SEA و SA می‌باشد که به تشریح آن می‌پردازیم.
 
-## پارامترهای Simotel Event API
+This section pertains to the settings for SEA and SA, which we will explain below.
 
-- **API Enabled**: مشخص می‌کند سرویس SEA فعال باشد یا خیر.
- 
-- **API Version**: سیموتل توانایی ارسال اطلاعات به سمت وب‌سرویس تحت فرمت‌های مختلف را دارد، بطور کلی دوقالب اصلی وجود دارد
-	- **سرویس های G (General)**: در سرویس های G تمام رویداد ها منحصرا به آدرس وب‌سرویس ارسال می گردند و فراهم کننده، رویدادها را با استفاده از پارامتر event_name تفکیک می کند.
-	- **سرویس های Rest**:در سرویس های Rest، نام رویداد به انتهای آدرس اضافه شده و سپس اطلاعات به سمت وب‌سرویس ارسال می‌شوند.	
+## Parameters of Simotel Event API
 
-نمونه‌ فراخوانی rest
+- **API Enabled**: Specifies whether the SEA service is active.
+
+- **API Version**: Simotel can send information to the web service in various formats. There are generally two main formats:
+  - **G Services (General)**: In G services, all events are exclusively sent to the web service address, and the provider categorizes the events using the `event_name` parameter.
+  - **Rest Services**: In Rest services, the event name is appended to the address, and then the information is sent to the web service.
+
+### Example of Rest Call
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -27,15 +22,13 @@ import TabItem from '@theme/TabItem';
 ```shell
 Call <WebService_address>/newstate
 Call <WebService_address>/cdr
-
 ```
 
-- **API Method**
-	- **Get**: سیموتل داده ها در قالب پارامتر به وب‌سرویس ارسال می‌کند.
-	- **Post**: از ورژن 4 (Rest4، G4)، داده‌ها با فرمت json در بدنه درخواست قرار گرفته و به سمت WebService ارسال می گردد. در ورژن های 2 و 3 همانند GET به صورت پارامتر ارسال می گردد.
+- **API Method**:
+  - **Get**: Simotel sends data as parameters to the web service.
+  - **Post**: From version 4 (Rest4, G4), data is sent in JSON format in the body of the request. In versions 2 and 3, it is sent as parameters similar to GET.
 
-
-#### نمونه فراخوانی سرویسG4:
+### Example of G4 Service Call:
 
 <Tabs
     defaultValue="Post"
@@ -54,21 +47,19 @@ Call <WebService_address>/cdr
 <TabItem value="Post">
 
 ```bash
-
-	curl -u username:password --location --request POST 'http://192.168.51.193/call/' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
+curl -u username:password --location --request POST 'http://192.168.51.193/call/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
     "event_name": "NewState",
     "exten": "991",
     "state": "Unavailable"
-	}'
+}'
 ```
 
 </TabItem>
 </Tabs>
 
-
-#### نمونه فراخوانی سرویسRest4:
+### Example of Rest4 Service Call:
 
 <Tabs
     defaultValue="Post"
@@ -78,40 +69,35 @@ Call <WebService_address>/cdr
     ]}>
 <TabItem value="Get">
 
-    
-	curl -u username:password --location -- \
+curl -u username:password --location -- \
 	request GET 'http://192.168.51.193/call/NewState?event_name=NewState&exten=991&state=Unavailable'
-    
 
 </TabItem>
 <TabItem value="Post">
 
 ```bash
-	curl -u username:password --location --request POST 'http://192.168.51.193/call/NewState' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
+curl -u username:password --location --request POST 'http://192.168.51.193/call/NewState' \
+--header 'Content-Type: application/json' \
+--data-raw '{
     "event_name": "NewState",
     "exten": "991",
     "state": "Unavailable"
-	}'
+}'
 ```
 
 </TabItem>
 </Tabs>
 
+- **API Events**: This section categorizes the system events and information. Depending on your needs, you can specify which information should be sent to your web service. Events and their details will be examined in further sections.
 
-- **API Events**: در این قسمت اطلاعات و رویدادهای سیستم دسته‌بندی شده اند و بسته به نیاز شما مشخص می‌کنید چه اطلاعاتی باید به سمت وب‌سرویس شما ارسال شود، رویدادها و اطلاعت 
-آنها بصورت دقیق‌تر در بخش‌های آینده بررسی می‌شوند.
+- **API Address**: This is where the web service address is entered.
 
-- **API Address**: در اینجا نیز آدرس وب‌سرویس قرار می‌گیرد.
+- **API Username**: If authentication is required by the web service, the username is entered here.
 
-- **API Username**: در صورتی که احرازهویتی از سمت وب‌سرویس انجام ‌شود،نام کاربری اینجا وارد می‌شود.
+- **API Password**: If authentication is required by the web service, the password is entered here.
 
-- **API Password**: در صورتی که احرازهویتی از سمت وب‌سرویس انجام ‌شود،رمزعبور اینجا وارد می‌شود.
+## Parameters of SA
 
+- **Allow All IPs**: Checking this option allows all IPs to send requests to Simotel.
 
-## پارامترهای SA
-
-- **Allow All IPs**: با زدن تیک این بخش دسترسی تمامی IPها برای ارسال درخواست به سمت سیموتل باز می‌شود.
-
-- **Allowed IPs**: در صورتی که IP خاصی مد نظر می‌باشد در این بخش وارد کنید و در نهایت دکمه Enter را وارد کنید.
+- **Allowed IPs**: If a specific IP is desired, enter it here and press the Enter key.

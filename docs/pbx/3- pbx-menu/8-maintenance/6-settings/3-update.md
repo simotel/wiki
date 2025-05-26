@@ -1,22 +1,15 @@
----
-sidebar_label: "به روز رسانی"
-title: "به روز رسانی"
----
-
-
 # Update
 
-در صورتی که آپدیت جدیدی برای نرم‌افزار ارائه شده باشد از این بخش قابل مشاهد می‌باشد و در صورت نیاز می‌توان از این بخش سیستم را آپدیت کرد.
+If a new update for the software has been released, it can be viewed and applied from this section.
 
-:::tip نکته
-درنظر داشته باشید که برای آپدیت سرور و یا اطلاع از آپدیت‌های جدید حتما نیاز می‌باشد سرور به اینترنت دسترسی داشته باشد.
+:::tip
+**Note**: Please ensure that the server has internet access to check for updates or to perform updates.
 :::
 
+## Parameters of Update
 
-## پارامترهای Update
+- **Check for Update**: Clicking this button initiates a request to the central server. If a new update is available, the information will be sent back to the Call Center.
 
-- **Check for update**: با زدن این دکمه مرکز تماس شروع به ارسال درخواست به سمت سرور مرکزی می‌کند و در صورتی که آپدیت جدیدی موجود باشد اطلاعات آن به سمت مرکزتماس ارسال می‌شود.
+- **Upgrade to X**: If a new update is available for the Call Center, this section allows you to start the update process.
 
-- **Upgrade to X**: در صورتی که آپدیت جدیدی برای مرکزتماس موجود باشد با استفاده از این قسمت می‌توان فرایند آپدیت را شروع کرد.
-
-- **Rollback to X**: به هر دلیلی اگر پس از آپدیت نیاز باشد مرکزتماس به ورژن قبلی برگردد،با استفاده از این کلید می‌توان سیستم را به حالت قبل از آپدیت و ورژن قبلی برگرداند.
+- **Rollback to X**: If you need to revert to the previous version for any reason after an update, this button allows you to restore the system to its state before the update.

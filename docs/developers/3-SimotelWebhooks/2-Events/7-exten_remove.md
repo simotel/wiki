@@ -1,27 +1,22 @@
 ---
 sidebar_position: 2
-sidebar_label: "حذف کاربر"
-title: "حذف کاربر"
 ---
+# ExtenRemoved
+
+When a user is removed from Simotel, the ExtenRemoved event is triggered.
 
 
-
-# Exten Remove
-
-هنگامی‌ كه کاربری از سیموتل حذف شود، رويداد ExtenRemoved ايجاد می‌گردد.
-
-
-## پارامترهای رویداد
+## Event Parameters
 <div class="custom-table">
 
-|                         توضیحات                         | داده‌های تعریف‌شده | داده‌های نمونه |    پارامتر‌ها   |
-|:-------------------------------------------------------:|:----------------:|:-------------:|:--------------:|
-|                        نام رویداد                       |         -        |  ExtenRemoved | **event_name** |
-| شماره داخلی(کاربری است که رویداد برای وی تولید شده است) |         -        |      559      |   **number**   |
-|                       وضعیت داخلی                       |         -        |  Unavailable  |    **state**   |
+|                         Description                         | Defined Data | Sample Data   |    Parameter    |
+|:----------------------------------------------------------:|:------------:|:-------------:|:---------------:|
+|                       Event Name                           |      -       |  ExtenRemoved  | **event_name**  |
+|                     Extension Number (user for whom the event was generated) |      -       |      559      |   **number**    |
+|                       Extension State                      |      -       |  Unavailable  |    **state**    |
 </div>
 
-## نمونه خروجی رویداد Exten Removed
+## Sample Output of ExtenRemoved Event
 
 
 

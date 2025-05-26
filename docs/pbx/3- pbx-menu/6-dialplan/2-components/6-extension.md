@@ -1,52 +1,39 @@
----
-sidebar_label: "Extensions"
-title: "Extensions"
----
-
-
 # Extension
 
-## کاربرد
+## Purpose
 
-برای ارسال تماس به سمت یک داخلی، از کامپوننت Extension استفاده می‌شود.
+The **Extension** component is used to route calls to a specific extension within the system.
 
+## Component Parameters
 
-## پارامترها کامپوننت
+- **Extension**: Select the extension to receive the call. If no extension is selected, the call will be routed to the extension matching the entered number.
 
-- **Extension**: انتخاب داخلی برای دریافت تماس است. درصورتی‌‌که هیچ داخلی‌ای انتخاب نگردد تماس به سمت داخلی منطبق با شماره واردشده ارسال می‌‌گردد.
+- **Say Busy**: If the user is busy, a message is played to notify the caller that the extension is busy (for call waiting purposes).
 
-- **Say Busy**: درصورتی که کاربر مشغول می‌باشد برای تماس‌های پشت خطی فایل صوتی مبنی بر مشغول بودن مشترک پخش شود.
+- **Timeout (sec)**: The time (in seconds) that the extension will ring before being considered unanswered.
 
+- **Skip**: Defines the number of digits to remove from the beginning of the entered number. The remaining number is then used as the destination number.
 
-- **Timeout (sec)**: مدت زمان زنگ خوردن داخلی (برحسب ثانیه) است.
+- **Prefix**: Adds the number entered in this field before the dialed number. The final number is then considered as the destination number.
 
-- **Skip**: تعیین تعداد رقم‌‌هایی است که باید از ابتدای شماره واردشده حذف گردد. سپس شماره جدید به‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
+- **Call Limit (sec)**: Sets a time limit for the call.
 
-- **Prefix**: افزودن عدد درج‌شده در این گزینه قبل از شماره واردشده است. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
+- **Options**: Provides additional configuration settings for the call.
 
-- **Call Limit (sec)**: محدودیت زمانی مكالمه است.
+## Skip and Prefix Parameters
 
-- **Options**: تنظیمات تماس است.
+**Skip** takes priority over **Prefix**. This means that the **Skip** action is applied first, followed by **Prefix** if no extension is selected.
 
+### Example to explain Skip and Prefix:
 
-## پارامترها Skip و Prefix
+Let’s say the user dials the number **955**, with **Skip = 1** and **Prefix = 20**. The steps will be as follows:
 
-Skip بر Prefix اولویت دارد. یعنی ابتدا Skip و سپس Prefix بر نتیجه Skip انجام می‌‌شود،Skip و Prefix در حالتی بررسی می‌‌شوند که داخلی انتخاب نشده باشد.
+1. The first digit (**9**) is removed from **955**, leaving **55**.
+2. The **Prefix** (**20**) is added to **55**, resulting in **2055**.
+3. The call will then be routed to extension **2055**.
 
-مثالی برای توضیح کاربرد Skip و Prefix:
-فرض کنید شماره‌‌ای که کاربر گرفته است 955، Skip یک و Prefix بیست باشد، در این صورت
+## Outputs
 
-۱. ابتدا یک رقم از اول 955 حذف و نتیجه 55 می‌‌شود.
-
-۲. سپس عدد 20 به 55 اضافه و نتیجه 2055 می‌‌شود.
-
-۳. و با داخلی 2055 تماس گرفته می‌‌شود.
-
-
-## خروجی‌ها
-
-- **S (Success)**: درصورتی‌‌که تماس موفق باشد، یعنی داخلی به تماس پاسخ دهد.
-
-- **B (Busy)**: درصورتی که داخلی مشغول باشد.
-
-- **F (Fail)**: درصورتی‌‌که تماس ناموفق باشد(برای مثال داخلی دردسترس نباشد).
+- **S (Success)**: If the call is answered successfully by the extension.
+- **B (Busy)**: If the extension is busy.
+- **F (Fail)**: If the call is unsuccessful (for example, if the extension is unavailable).

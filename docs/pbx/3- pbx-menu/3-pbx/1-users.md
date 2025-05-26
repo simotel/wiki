@@ -1,144 +1,76 @@
----
-sidebar_label: "کاربران"
-title: "کاربران"
----
+# Users
 
+In this menu, the extensions of the Call Center are defined and managed. In addition to creating extensions, they can be edited or deleted. For easier management of a large number of extensions, there is the possibility of adding, editing, and deleting multiple users simultaneously. Simotel supports SIP and IAX2 protocols for extensions.
 
-# کاربران
-
-	
-داخلی‌های مرکز تماس در این منو تعریف و مدیریت می‌شوند. علاوه بر ایجاد داخلی، می‌‌توان آن‌‌ها را ویرایش یا حذف کرد. همچنین برای سهولت در مدیریت حجم بالای داخلی‌ها، امکان اضافه‌کردن، ویرایش و حذف چندین کاربر به‌طور همزمان وجود دارد. سیموتل برای داخلی، از دو پروتکل SIP و IAX2 پشتیبانی می‌کند.
-
- 
-:::tip نکته
-برای ایجاد گروهی از داخلی‌‌ها در سیموتل باید این داخلی‌‌ها را به‌صورت محدوده وارد کنید. برای‌‌مثال اگر قصد دارید، داخلی‌‌های 100 تا 200 را همزمان ایجاد کنید، در قسمت Number عبارت 200..100 را وارد کنید. بدین ترتیب تمام داخلی‌‌های محدوده انتخاب شده، با مقادیری یکسان ایجاد می‌شوند. 
-
-::: 
-
- 
-
- 
-
-## پارامترهای داخلی SIP
-
-- **Active**: فعال یا غیرفعال بود حساب‌کاربری.
-
-- **Name**: نام داخلی.
-
-- **Number**: شماره داخلی که مقداری عددی و یکتاست.
-
-- **CID Number**: این شماره همان Caller ID است که برای داخلی تعریف و درگزارشات نمایش داده می‌‌شود.
-
-- **Password**: پسورد داخلی.
-
-- **Call Record**: ضبط مکالمات (این گزینه به‌‌صورت پیش‌‌فرض No است و درصورت احتیاج به ضبط مکالمات، این گزینه را باید Yes کنید).
-
-- **SPN (Push Notification)**: فعال‌سازی قابلیت PN (Push Notifica) برای داخلی(قابلیت سافت‌فون سیموتل می‌باشد).
-	
-- **Deny**: ایجاد عدم دسترسی از یک محدوده IP.
-
-- **Permit**: ایجاد دسترسی فقط از یک محدوده IP.
-
-- **DTMF Mode**: نوع DTMF ارسالی.
-
-- **Can Re-Invite**: ایجاد ارتباط مستقیم از مبدأ داخلی به هر مقصدی بدون عبور از سرور (درصورت yes بودن).
-
-- **Direct Media**: مبادله Media (صوت و تصویر) بدون عبور از سرور (درصورت yes بودن).
-
-- **Context**: کانتکست داخلی.
-
-- **Host**: این منو به‌‌صورت پیش‌‌فرض dynamic است اما درصورتی‌‌که داخلی فقط باید از یک IP خاص ریجستر شود، در این صورت IP مورد نظر را اینجا وارد می‌‌کنیم.
-
-- **Type**: انتخاب نوع داخلی براساس فقط خروجی (User)، فقط ورودی (Peer)، هم ورودی و هم خروجی (Friend).
-
-- **NAT**: برای آشنایی با NAT به کتاب مرجع آموزش ویپ با سافت سوئیچ استریسک مراجعه کنید.
-
-- **Port**: پورت برقراری ارتباط.
-
-- **Qualify**: بررسی برقراری ارتباط (qualify = yes| no) است. اگر yes باشد، PBX هر۲ ثانیه به‌‌طور منظم دستور SIP OPTIONS را برای بررسی اینکه آیا دستگاه هنوز آنلاین است یا نه، ارسال می‌‌کند. این ویژگی همچنین می‌‌تواند برای نگه‌‌داشتن یک جلسه UDP برای دستگاهی که در پشت یک مترجم آدرس شبکه (NAT) قرار دارد، استفاده شود و اگر nat=yes باشد این ارتباط در پشت nat هم چک و ارتباط نیز حفظ می‌‌شود.
-
-- **Call Group**: تعیین گروه تماس برای داخلی (به منظور شکار تماس توسط داخلی‌‌های دیگر) .
-
-- **Pickup Group**: تعیین گروه تماس برای داخلی (به منظور شکار تماس دیگر داخلی‌ها).
-
-- **Call Counter**: وضعیت داخلی در صف را تشخیص می‌‌دهد، مثلا اگر از طریق داخلی تماسی ایجاد شود یا در حال مکالمه باشد، درصورت yes‌‌ بودن callcounter، سیستم تشخیص می‌دهد و تماسی از صف به این داخلی وصل نمی‌‌شود، و درصورت no بودن، سیستم به‌‌صورت پیش‌‌فرض حالت Not in use را برای داخلی درنظر می‌‌گیرد و تماس به سمت داخلی ارسال می‌‌شود.
-
-- **Fax Detect**: شناسایی فکس (بوق فکس را تشخیص می‌دهد).
-
-- **Call Limit**: اعمال محدودیت بر تعداد تماس‌‌های همزمان داخلی.
-
-- **Busy**: زمانی که داخلی مشغول می‌باشد تماس به چه شماره‌ای فرستاده شود.
-
-- **No Answer**: زمانی که داخلی به تماس پاسخ ندهد، تماس به چه شماره‌ای فرستاده شود.
-
-- **UnAvailable**: زمانی که داخلی دردسترس نباشد، تماس به چه شماره‌ای فرستاده شود.
-
-- **All**: زمانی که داخلی یکی از سه شرایط بالا را داشته باشد، تماس به چه شماره‌ای فرستاده شود.
-
-- **More Option**: اگر در تعریف کاربر بخواهید از پارامتری استفاده کنید که در لیست بالا به آن اشاره نشده باشد، آن پارامتر و همچنین مقدار آن را در این قسمت وارد کنید. اگر چند پارامتر را وارد کنید باید هر کدام در یک خط باشد.
-
-- **Description**: توضیحاتی در مورد داخلی.
-
-
-## پارامترهای داخلی IAX2
-
-:::info اطلاعات
-اکثر پارامترهای IAX2 مشابه SIP است.
-
+:::tip Note
+To create a group of extensions in Simotel, these extensions must be entered as a range. For example, if you want to create extensions from 100 to 200 simultaneously, enter "200..100" in the Number field. This way, all extensions in the selected range will be created with the same values.
 :::
 
-- **Active**: فعال یا غیرفعال بود حساب‌کاربری.
+## SIP Extension Parameters
 
-- **Name**: نام داخلی.
+- **Active**: Whether the account is active or inactive.
+- **Name**: The name of the extension.
+- **Number**: The extension number, which is numeric and unique.
+- **CID Number**: This is the Caller ID that is defined for the extension and appears in reports.
+- **Password**: The password for the extension.
+- **Call Record**: Call recording (by default, this is set to No, but if you need to record calls, this option should be set to Yes).
+- **SPN (Push Notification)**: Enables the Push Notification feature for the extension (this is a feature of Simotel's softphone).
+- **Deny**: Creates a restriction on access from a specific IP range.
+- **Permit**: Allows access only from a specific IP range.
+- **DTMF Mode**: The type of DTMF (Dual-tone multi-frequency) signaling used.
+- **Can Re-Invite**: Allows direct communication from the extension to any destination without passing through the server (if set to Yes).
+- **Direct Media**: Enables media (audio/video) exchange without passing through the server (if set to Yes).
+- **Context**: The context for the extension.
+- **Host**: By default, this is set to dynamic, but if the extension should only register from a specific IP, the IP address is entered here.
+- **Type**: The type of extension, which can be User (outgoing only), Peer (incoming only), or Friend (both incoming and outgoing).
+- **NAT**: For more information on NAT, refer to the VoIP with Asterisk soft switch reference book.
+- **Port**: The port used for communication.
+- **Qualify**: To check the connection (qualify = yes|no). If yes, PBX sends SIP OPTIONS every 2 seconds to check if the device is still online. This feature can also be used to maintain a UDP session for a device behind a NAT.
+- **Call Group**: Defines the call group for the extension (to allow call hunting by other extensions).
+- **Pickup Group**: Defines the pickup group for the extension (to allow call hunting by other extensions).
+- **Call Counter**: Determines the extension's status in the queue. For example, if a call is made or the extension is in a conversation, and the call counter is set to Yes, the system will not route a call to this extension from the queue.
+- **Fax Detect**: Detects fax tones.
+- **Call Limit**: Limits the number of simultaneous calls for the extension.
+- **Busy**: The number to forward calls to when the extension is busy.
+- **No Answer**: The number to forward calls to when the extension doesn't answer.
+- **Unavailable**: The number to forward calls to when the extension is unavailable.
+- **All**: The number to forward calls to when the extension is in any of the above conditions.
+- **More Option**: If a parameter is needed that is not listed above, it can be added here with its value. Each parameter should be entered on a new line.
+- **Description**: A description for the extension.
 
-- **Number**: شماره داخلی که مقداری عددی و یکتاست.
+## IAX2 Extension Parameters
 
-- **CID Number**: این شماره همان Caller ID است که برای داخلی تعریف و درگزارشات نمایش داده می‌‌شود.
+:::info Information
+Most IAX2 parameters are similar to SIP parameters.
+:::
 
-- **Password**: پسورد داخلی.
+- **Active**: Whether the account is active or inactive.
+- **Name**: The name of the extension.
+- **Number**: The extension number, which is numeric and unique.
+- **CID Number**: This is the Caller ID that is defined for the extension and appears in reports.
+- **Password**: The password for the extension.
+- **Call Record**: Call recording (by default, this is set to No, but if you need to record calls, this option should be set to Yes).
+- **SPN (Push Notification)**: Enables the Push Notification feature for the extension (this is a feature of Simotel's softphone).
+- **Deny**: Creates a restriction on access from a specific IP range.
+- **Permit**: Allows access only from a specific IP range.
+- **DTMF Mode**: The type of DTMF signaling used.
+- **Context**: The context for the extension.
+- **Host**: By default, this is set to dynamic, but if the extension should only register from a specific IP, the IP address is entered here.
+- **Type**: The type of extension, which can be User (outgoing only), Peer (incoming only), or Friend (both incoming and outgoing).
+- **Port**: The port used for communication.
+- **Qualify**: To check the connection (qualify = yes|no). If yes, PBX sends SIP OPTIONS every 2 seconds to check if the device is still online. This feature can also be used to maintain a UDP session for a device behind a NAT.
+- **Trunk**: This parameter can be set to Yes or No. Setting it to Yes saves bandwidth by reducing network overhead.
+- **Transfer**: Determines whether media streams can be transferred directly between two users without passing through the server. Possible values:
+  - **Yes**: The server attempts to transfer both signaling and media streams directly between users, but transcoding will not occur.
+  - **No**: The server routes both signaling and media through itself.
+- **Mediaonly**: In this case, only signaling streams pass through the server, and media streams are transferred directly between users.
+- **Busy**: The number to forward calls to when the extension is busy.
+- **No Answer**: The number to forward calls to when the extension doesn't answer.
+- **Unavailable**: The number to forward calls to when the extension is unavailable.
+- **All**: The number to forward calls to when the extension is in any of the above conditions.
+- **More Option**: If a parameter is needed that is not listed above, it can be added here with its value. Each parameter should be entered on a new line.
+- **Description**: A description for the extension.
 
-- **Call Record**: ضبط مکالمات (این گزینه به‌‌صورت پیش‌‌فرض No است و درصورت احتیاج به ضبط مکالمات، این گزینه را باید Yes کنید).
+### Question: What do the Mapped Column and Queue columns in the extension list display?
+For example, when user 210 logs into phone 1001, in the table, 1001 will be displayed in the extension column and 210 will be shown in the Mapped Column. The queue column will show the queue number entered (For more information, refer to the [User Presence Pattern in the Queue and Extension Mapping in the Queue section](/pbx/pbx-menu/pbx/queues#Pattern-of-User-Presence-in-Queue-and-the-Ability-to-Map-Extensions)).
 
-- **SPN (Push Notification)**: فعال‌سازی قابلیت PN (Push Notifica) برای داخلی(قابلیت سافت‌فون سیموتل می‌باشد).
-
-- **Deny**: ایجاد عدم دسترسی از یک محدوده IP.
-
-- **Permit**: ایجاد دسترسی فقط از یک محدوده IP.
-
-- **DTMF Mode**: نوع DTMF ارسالی.
-
-- **Context**: کانتکست داخلی.
-
-- **Host**: این منو به‌‌صورت پیش‌‌فرض dynamic است ولی چنانچه داخلی فقط باید از یک IP خاص ریجستر شود در این صورت IP مورد نظر را اینجا وارد می‌‌کنیم.
-
-- **Type**: انتخاب نوع داخلی براساس فقط خروجی (User)، فقط ورودی (Peer)، هم ورودی و هم خروجی (Friend).
-
-- **Port**: پورت برقراری ارتباط.
-
-- **Qualify**: بررسی برقراری ارتباط (qualify = yes| no) اگر yes باشد، PBX هر2 ثانیه به‌‌طور منظم دستور SIP OPTIONS را برای بررسی اینکه آیا دستگاه هنوز آنلاین است یا نه، ارسال می‌‌کند. این ویژگی همچنین می‌‌تواند برای نگه‌‌داشتن یک جلسه UDP برای دستگاهی که در پشت یک مترجم آدرس شبکه (NAT) قرار دارد، استفاده شود و اگر nat=yes باشد این ارتباط در پشت nat چک و ارتباط نیز حفظ می‌‌شود.
-
-- **Trunk**: این پارامتر دارای دو مقدار Yes و No است که برای صرفه‌‌جویی در استفاده از پهنای باند شبکه، ما مقدار این پارامتر را برابر Yes قرار می‌‌دهیم.
-
-- **Transfer**: این پارامتر شبیه پارامترهای Can Re-Invite و Direct Media و در تعریف کاربر از نوع پروتکل SIP است. با این پارامتر می‌‌توان تعیین کرد که جریان‌‌های ترافیکی مدیا مستقیماً بین دو کاربر منتقل شوند. این پارامتر می‌‌تواند مقادیر زیر را داشته باشد:
-
-	- **Yes**: در این حالت سرور تلاش می‌‌کند جریان‌‌های سیگنالینگ و مدیا، میان دو کاربر به‌طور مستقیم منتقل شوند. پرواضح است که اگر بین دوکاربر نیاز به transcoding وجود داشته باشد، این کار انجام نخواهد شد.
-
-	- **No**: در این حالت سرور جریان‌‌های سیگنالینگ و مدیا را بین دوکاربر از خود عبور می‌‌دهد.
-
-- **Mediaonly**: در این حالت سرور فقط جریان‌‌های سیگنالینگ را از خود عبور می‌‌دهد. جریان‌‌های مدیای بین دو کاربر، مستقیماً منتقل می‌‌شوند.
-
-- **Busy**: زمانی که داخلی مشغول می‌باشد تماس به چه شماره‌ای فرستاده شود.
-
-- **No Answer**: زمانی که داخلی به تماس پاسخ ندهد، تماس به چه شماره‌ای فرستاده شود.
-
-- **UnAvailable**: زمانی که داخلی دردسترس نباشد، تماس به چه شماره‌ای فرستاده شود.
-
-- **All**: زمانی که داخلی یکی از سه شرایط بالا را داشته باشد، تماس به چه شماره‌ای فرستاده شود.
-
-- **More Option**: اگر در تعریف کاربر بخواهید از پارامتری استفاده کنید که در لیست بالا به آن اشاره نشده باشد، آن پارامتر و همچنین مقدار آن را در این قسمت وارد کنید. اگر چند پارامتر را وارد کنید باید هر کدام در یک خط باشد.
-
-- **Description**: توضیحاتی در مورد داخلی.
-
-
-**سوال: ستون مپ‌شده و صف‌‌ها در لیست داخلی‌‌ها چه‌چیزی را نمایش می‌دهند؟**
-برای‌مثال زمانی که کاربر 210 روی گوشی 1001 لاگین انجام می‌دهد، در جدول و در مقابل داخلی، 1001 و در ستون مپ‌شده، 210 نوشته می‌‌شود. در ستون صف نیزشماره صف واردشده ذکر می‌‌شود(براي آشنايی بيشتر، قسمت [الگوی حضور كاربران در صف و قابليت مپ‌شدن داخلی‌‌ها در صف](/pbx/pbx-menu/pbx/queues#الگوی-حضور-کاربران-در-صف-و-قابلیت-مپشدن-داخلیها) را بخوانید).

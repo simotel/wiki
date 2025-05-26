@@ -1,19 +1,13 @@
----
-sidebar_label: "Authentication"
----
-
-
 # Authentication
 
-## کاربرد
+## Usage
 
-در برخی موارد برای ورود به قسمت‌های خاص، احتیاج به احراز هویت است تا از سوء استفاده‌‌های احتمالی پیشگیری شود، ازجمله این موارد خاص می‌توان به ورود به اتاق کنفرانس و استفاده از قابلیت DISA اشاره کرد.
+In some cases, authentication is required to access specific areas to prevent potential misuse. Specific instances include entering a conference room and using the DISA feature.
 
+## Component Parameters
 
-## پارامترها کامپوننت
+- **Type**: The type of authentication
+  - **Use user secret**: This method uses an internal password.
+  - **Use defined secret**: This method uses a password defined in the Defined secret parameter, which is shared among all users who wish to use it.
 
-- **Type**: نوع احراز هويت
-	- **Use user secret**: در این روش از رمز عبور داخلی استفاده می‌‌گردد.
-	- **Use defined secret**: در این روش از رمز عبوری استفاده می‌‌شود که در پارامتر Defined secret تعریف شده است و برای تمام کاربرانی که می‌‌خواهند از آن استفاده نمایند مشترک است.
-
-- **Defined secret**: كلمه عبور ثابت است.
+- **Defined secret**: The fixed password.

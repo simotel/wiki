@@ -1,39 +1,37 @@
 ---
 sidebar_position: 2
-sidebar_label: " دریافت فکس"
-title: " دریافت فکس"
 ---
+# IncomingFax
 
-# Incoming Fax
-
-هنگامی که فکسی وارد سیموتل می‌گردد، رویداد incomingfax ایجاد می‌شود.
+When a fax is received in SimulTel, the **incomingfax** event is triggered.
 
 
-## پارامترهای رویداد
+## Event Parameters
+
 <div class="custom-table">
 
-|                توضیحات               | داده‌های تعریف‌شده |        داده‌های نمونه        |           پارامتر‌ها          |
-|:------------------------------------:|:----------------:|:---------------------------:|:----------------------------:|
-|           شناسه‌ی یکتای فکس           |         -        |   5f6f182c8a315630478f6d28  |            **fax_id**            |
-|              نام رویداد              |         -        |         IncomingFax         |          **event_name**          |
-|            مبداء ورودی فکس           |         -        |           mikrotik          |          **entry_point**         |
-|           شناسه یکتای تماس           |         -        |      1601116173.161150      |           **unique_id**          |
-|           مبداء ارسال کننده          |         -        |         02191015504         |              **src**             |
-|            مقصد ارسال فکس            |         -        |          2191015504         |              **dst**             |
-|               وضعیت فکس              |  Success- Failed |            FAILED           |             **state**            |
-|            زمان دریافت فکس           |         -        |  10:30:04.919984 2020-09-26 |             **date**             |
-|       شناسه‌ی یکتای ارسال کننده       |         -        |           unknown           | **description->REMOTESTATIONID** |
-|          رزولوشن دریافت فکس          |         -        |          8031x7700          |  **description->FAXRESOLUTION**  |
-|                   -                  |         -        |             9600            |    **description->FAXBITRATE**   |
-| توضیحاتی در مورد خطای دریافتی در فکس |         -        | Unexpected message received |     **description->FAXERROR**    |
-|                   -                  |         -        |            FAILED           |    **description->FAXSTATUS**    |
-|                   -                  |         -        |              0              |     **description->FAXPAGES**    |
-|                   -                  |         -        | Unexpected message received | **description->FAXSTATUSSTRING** |
-|                   -                  |         -        |              "              |      **description->REASON**     |
+|                Description                | Defined Data |        Sample Data         |          Parameter           |
+|:----------------------------------------:|:------------:|:--------------------------:|:----------------------------:|
+|           Unique Fax ID                   |      -       |   5f6f182c8a315630478f6d28  |            **fax_id**         |
+|              Event Name                   |      -       |         IncomingFax         |          **event_name**       |
+|            Fax Entry Point                |      -       |           mikrotik          |          **entry_point**      |
+|           Unique Call ID                  |      -       |      1601116173.161150      |           **unique_id**       |
+|           Fax Sender Source               |      -       |         02191015504         |              **src**          |
+|            Fax Destination                |      -       |          2191015504         |              **dst**          |
+|               Fax Status                  | Success/Failed |            FAILED           |             **state**         |
+|            Fax Receive Time               |      -       |  10:30:04.919984 2020-09-26 |             **date**          |
+|       Unique Sender ID                    |      -       |           unknown           | **description->REMOTESTATIONID** |
+|          Fax Resolution                   |      -       |          8031x7700          |  **description->FAXRESOLUTION**  |
+|                   -                       |      -       |             9600            |    **description->FAXBITRATE**   |
+| Fax Error Description                     |      -       | Unexpected message received |     **description->FAXERROR**    |
+|                   -                       |      -       |            FAILED           |    **description->FAXSTATUS**    |
+|                   -                       |      -       |              0              |     **description->FAXPAGES**    |
+| Fax Status String                         |      -       | Unexpected message received | **description->FAXSTATUSSTRING** |
+|                   -                       |      -       |              "              |      **description->REASON**     |
 
 </div>
 
-## نمونه خروجی رویداد CDR
+## Sample Output of IncomingFax Event
 
 
 ```shell

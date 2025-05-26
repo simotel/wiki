@@ -1,21 +1,18 @@
 ---
-sidebar_label: "بارگزاری فایل صوتی"
-title: "بارگزاری فایل صوتی"
----
 
+---
 # Announce Upload
 
-از این سرویس برای بارگذاری فایل صوتی در مرکز‌تماس استفاده می‌شود. پس از بارگذاری مرکزتماس در پاسخ `filename` را سمت وب‌سرویس برمی‌گرداند، از آن در API افزودن فایل‌صوتی استفاده می‌کنید.
+This service is used for uploading audio files to the contact center. After uploading, the contact center returns the `filename` in the response, which is then used in the "Add Audio File" API.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|     توضیحات    | داده های تعریف شده |         داده های نمونه         | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:--------------:|:------------------:|:------------------------------:|:----------------------:|:---------:|
-| مسیر فایل صوتی |          -         | c:users\users\Desktop\file.mp3 |           **           |    file   |
-
+|     Description    | Defined Data | Example Data | Required Parameters[**]/Optional[*] | Parameters |
+|:-----------------:|:------------:|:------------:|:-----------------------------------:|:----------:|
+| Audio file path   |      -       | c:users\users\Desktop\file.mp3 |           **           |    file    |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -26,8 +23,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -44,7 +41,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -82,7 +79,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 			```js
@@ -122,7 +119,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 		```bash

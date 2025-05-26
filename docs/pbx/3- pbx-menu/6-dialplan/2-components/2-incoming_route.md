@@ -1,28 +1,22 @@
----
-sidebar_label: "Incoming Route"
-title: "Incoming Route"
----
-
 # Incoming Route
 
-## کاربرد
-تماس‌‌هایی که از خارج سیموتل وارد می‌‌شوند، تماس‌‌های ورودی نام دارند. نقطه شروع آنها کامپوننت Incoming Route است. برای دریافت تماس ورودی در این کامپوننت، Context ترانک ورودی و Context این کامپوننت باید یکسان باشند، لذا باید دقت شود که در قسمت تنظیمات، پارامتر کانتکست به درستی وارد شده باشد. تماس ورودی دارای دو مشخصۀ CID و DID است. با توجه به این دو پارامتر می‌‌توان مسیرهای مختلفی در کامپوننت تعریف کرد.
+## Purpose
+Calls that come from outside the Simotel system are called incoming calls. Their starting point is the Incoming Route component. To receive incoming calls in this component, the context of the incoming trunk and the context of this component must be the same. Therefore, the context parameter should be correctly configured in the settings. An incoming call has two key parameters: CID (Caller ID) and DID (Dialed Number). Based on these two parameters, different routing paths can be defined in the component.
 
-:::tip نکته
-کامپوننت IncomingRoute الگوی تطابق پیچیده‌‌ای ندارد. معمولاً شماره کامل وارد می‌‌شود چون ممکن است یک شماره، پیشوند‌‌های مختلفی داشته باشد. از عبارت x قبل یا بعد از آن می‌‌توان استفاده کرد. مثال زیر را ببینید.
+:::tip Note
+The IncomingRoute component does not have complex matching patterns. Usually, the full number is entered because a number might have various prefixes. The character `x` can be used before or after the number. See the example below.
 
 ```bash
  x310410 <=  310410, 51310410, +985131410
- ```
+```
 :::
 
+## Component Parameters
 
-## پارامترها کامپوننت
+- **Context**: The context of the incoming trunk.
 
-- **Context**: کانتکست ترانک ورودی.
+## Routing Parameters
 
-## پارمترهای مسیردهی
+- **CID**: The caller's phone number.
 
-- **CID**: شماره تماس‌‌گیرنده.
-
-- **DID**: شماره گرفته‌شده.
+- **DID**: The dialed number.

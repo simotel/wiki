@@ -1,25 +1,16 @@
----
-sidebar_label: "َAutodialer Route"
-title: "َAutodialer Route"
----
-
-
 # Autodialer Route
 
-## کاربرد
-این کامپوننت برای دریافت تماس‌‌های تعاملی ماژول ارسال تماس انبوه سیموتل استفاده می‌‌شود. كمپین‌‌ها دارای دو پارامتر Context Interface و Interface Text هستند كه درصورت مقدار‌‌دهی به كامپوننت  Auto Dialer Route اشاره دارند.
+## Purpose
+This component is used to handle calls from the Simotel's mass dialer module. Campaigns have two parameters: **Context Interface** and **Interface Text**, which refer to the Auto Dialer Route component when set.
 
-Context Interface در واقع همان Context است و Interface Text نیز به ردیف‌‌های كامپوننت اشاره دارد. درصورتی‌‌كه Interface Text مقدار‌‌دهی نشده باشد، تماس به‌صورت پیش فرض از اولین خروجی any خارج می‌‌شود.
+The **Context Interface** is essentially the Context, and **Interface Text** refers to the rows of the component. If the Interface Text is not set, calls by default exit from the first available **any** output.
 
+## Component Parameters
 
+- **Context**: The context used in the **Context Interface** of the campaign.
 
-## پارامترها کامپوننت
+- **Text**: Refers to the rows of the component. One of these rows will be used in the **Interface Text**, with the default being **any**.
 
-- **Context**: كانتكست كامپوننت است كه در Context Interface كمپین استفاده می‌‌شود.
-
-- **Text**: ردیف‌‌های كامپوننت است كه یكی از آنها در Interface Text استفاده می‌‌شود و پیش فرض آن any است.
-
-:::tip نکته
-برای کسب اطلاعات بیشتر درمورد ماژول تماس انبوه به [اینجا](/autodialer/introad) مراجعه فرمایید.
- 
+:::tip Note
+For more information about the mass dialer module, visit [here](/autodialer).
 :::

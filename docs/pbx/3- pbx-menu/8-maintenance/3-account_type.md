@@ -1,44 +1,31 @@
----
-sidebar_label: "نوع حساب کاربری"
-title: "نوع حساب کاربری"
----
-
-
 # Account Type
 
-در این بخش سطح دسترسی به پنل وب مدیریت می‌شود.
+In this section, access levels to the management web panel are managed.
 
-## دسترسی‌های وب سیموتل 
+## Simotel Web Access Levels
 
-**بطور کلی دسترسی‌های وب سیموتل به سه بخش اصلی تقسیم می‌شوند.**
+**Generally, Simotel web access is divided into three main categories:**
 
-1. **دسترسی عملیات**: عبارت است از دسترسی لازم برای انجام یک عملیات در پنل. عملیات‌‌ها عبارت‌اند از
-	- **خواندن(Read)**: برای امکان ورود به منو و مشاهده محتوای آن (نبود این دسترسی همانند نبود دسترسی به منو است).
-	- **تغییر (Update)**: برای انجام عملیات‌‌های افزودن، ویرایش و حذف در منو.
-	- **شنیدن (Play)**: برای شنیدن فایل صوتی (در بخش‌‌هایی که حاوی فایل صوتی هستند).
+1. **Operation Access**: This refers to the necessary access for performing an operation in the panel. Operations include:
+   - **Read**: Allows entry into a menu and viewing its content (lack of this access is akin to not having access to the menu).
+   - **Update**: Allows for adding, editing, and deleting operations within the menu.
+   - **Play**: Allows listening to audio files (in sections containing audio files).
 
-2. **دسترسی به منو**: امکان مشاهده منو (در درخت منوهای وب) و ورود به آن را فراهم می‌کند.
+2. **Menu Access**: Provides the ability to view and enter menus (in the web menu tree).
 
-3. **دسترسی به محتوا**: مدیریت دسترسی به محتوای صفحات است که از طریق گروه‌‌های کاربری انجام می‌شود، برای‌مثال، چنانچه شخصی تنها به گزارشات تیم فروش دسترسی داشته باشد، در گزارش‌‌ها فقط اطلاعات مربوطه را می‌بیند.
+3. **Content Access**: Manages access to page content, which is done through user groups. For example, if a person only has access to the sales team reports, they will only see the relevant information in the reports.
 
-## پارامترهای بخش سطح‌دسترسی
-- **Title**: عنوان سطح دسترسی.
+## Access Level Parameters
 
-- **Description**: توضیحات.
-
-- **Limited to groups**: با انتخاب این گزینه امکان تعیین گروه برای ایجاد محدودیت بر محتوا فعال می‌شود.
-
-	- **Groups**: تعیین گروه برای محدودیت دسترسی به محتوا.
-
-- **Expirable**: امکان تعریف حساب‌کاربری همراه با تاریخ انقضای زمانی مشخص شده را فراهم می‌‌کند.
-
-- **Read**: با کلیک روی گزینه‌‌های این ستون تنها می‌‌توان آنها را مشاهده کرد.
-
-- **Update**: با کلیک روی گزینه‌‌های این ستون می‌‌توان آنها را مشاهده و ویرایش کرد.
-
-- **Play**: با کلیک روی گزینه‌‌های این ستون تنها می‌‌توان آنها را مشاهده و فایل‌‌های صوتی را پخش کرد.
-
+- **Title**: Title of the access level.
+- **Description**: Description of the access level.
+- **Limited to groups**: By selecting this option, the ability to set a group for content limitation is activated.
+  - **Groups**: Specify the group for content access limitation.
+- **Expirable**: Allows defining a user account with a specified expiration date.
+- **Read**: Clicking on the options in this column allows only viewing.
+- **Update**: Clicking on the options in this column allows viewing and editing.
+- **Play**: Clicking on the options in this column allows only viewing and playing audio files.
 - **Details**:
-	- **Remove**: برای حذف نوع‌ حساب‌کاربری می‌باشد.
-	- **Edit**: ویرایش حساب‌کاربری.
-	- **Cut Current Access**: قطع کردن دسترسی‌های لاگین‌شده(زمانی کاربرد دارد که سطح‌دسترسی‌ها را تغییر می‌دهید و می‌خواهید از آن لحظه به بعد تمام دسترسی‌های موجود قطع شده و تمامی افراد با سطح‌دسترسی جدید وارد شوند).
+  - **Remove**: Used to delete the account type.
+  - **Edit**: Edit the user account type.
+  - **Cut Current Access**: Disconnects logged-in access (useful when changing access levels and wanting to cut off all existing access immediately, requiring everyone to log in with the new access level).

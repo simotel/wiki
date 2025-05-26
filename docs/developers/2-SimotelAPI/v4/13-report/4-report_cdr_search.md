@@ -1,30 +1,27 @@
 ---
-sidebar_label: "جستجوی سریع با cuid"
-title: "جستجوی سریع با cuid"
+
 ---
-
-
 # CDR Search
 
-از این سرویس برای بازیابی اطلاعات بخش جستجوی سریع استفاده می‌شود و تفاوت آن با `Quick Search` در امکان جستجو براسای پارمتر **cuid** می‌باشد.
+This service is used to retrieve information from the quick search section, and its main difference with `Quick Search` is the ability to search based on the **cuid** parameter.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|          توضیحات         | داده های تعریف شده |  داده های نمونه  | پارامترهای ضروری[**]/منطقی[*] |      پارامترها      |
-|:------------------------:|:------------------:|:----------------:|:----------------------:|:-------------------:|
-|             -            |          -         |         -        |                        |   conditions->from  |
-|             -            |          -         |         -        |                        |    conditions->to   |
-|             -            |                    |         -        |                        |   conditions->cuid  |
-| بازیابی گزارشات از تاریخ |          -         | 2020-06-15 15:16 |           **           |   date_range->from  |
-| بازیابی گزارشات تا تاریخ |          -         | 2022-06-22 15:16 |           **           |    date_renge->to   |
-|             -            |          -         |         0        |                        |  pagination->start  |
-|             -            |          -         |        20        |                        |  pagination->count  |
-|             -            |          -         |         -        |                        | pagination->sorting |
-|     یافتن موارد مشابه    |     true/false     |       true       |           **           |        alike        |
+| Description | Defined Data | Sample Data | Required[**]/Logical[*] | Parameters |
+|:-----------:|:------------:|:-----------:|:------------------------:|:----------:|
+| - | - | - | | conditions->from |
+| - | - | - | | conditions->to |
+| - | - | - | | conditions->cuid |
+| Retrieve reports from date | - | 2020-06-15 15:16 | ** | date_range->from |
+| Retrieve reports until date | - | 2022-06-22 15:16 | ** | date_range->to |
+| - | - | 0 | | pagination->start |
+| - | - | 20 | | pagination->count |
+| - | - | - | | pagination->sorting |
+| Find similar items | true/false | true | ** | alike |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -34,8 +31,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -52,7 +49,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -95,7 +92,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -146,7 +143,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

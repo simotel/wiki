@@ -1,36 +1,27 @@
----
-sidebar_label: "تماس بهمنی"
-title: "تماس بهمنی"
----
+# Spit Detect Calls
 
+In this method, you manually define area codes as part of a storm call region and assign a specific file to them. By using the storm call component in the editor, you will become familiar with additional features for managing storm calls.
 
+## Spit Detect Parameters
 
+- **Title**: The title of the storm call.
 
+- **Pre-Code**: The area codes included in the storm call.
 
-# تماس‌‌های بهمنی
+- **Enabled**: Enable or disable the storm call.
 
-در این روش به‌‌صورت دستی پیش‌شماره‌‌هایی را در قالب یک ناحیه تماس تعریف می‌‌کنید و برای آن‌‌ها فایل مشخصی را درنظر می‌گیرید. در بخش ویرایشگر با معرفی کامپوننت تماس بهمنی، با قابلیت‌‌های بیشتر مدیریت تماس‌‌های بهمنی آشنا می‌‌شوید.
+- **Announcement**: The audio message for the storm call.
 
-## پارامترهای تماس‌بهمنی
+- **Comment**: Optional description.
 
-- **Title**: عنوان تماس بهمنی.
-
-- **Pre-Code**: پیش‌‌شماره‌‌هایی که در تماس بهمنی قرار می‌‌گیرند.
-
-- **Enabled**: فعال یا غیرفعال‌‌کردن تماس بهمنی.
-
-- **Announcement**: پیام صوتی.
-
-- **Comment**: توضیحات دلخواه.
-
-:::tip نکته
-پیش‌‌شماره‌‌ها باید 4 رقمی و بدون درنظرگرفتن کد استان باشند. مثال: 37602125 ، 3760.
+:::tip Note
+The area codes should be 4 digits long and should not include the province code. For example: 37602125, 3760.
 :::
 
-:::tip نکته
-برای وارد‌‌کردن چند پیش‌شماره از جداکننده ویرگول استفاده کنید. مثال: 3760,3761,3880.
+:::tip Note
+To enter multiple area codes, use a comma separator. For example: 3760,3761,3880.
 :::
 
-:::tip نکته
-برای آنکه پیش‌‌شماره استان درنظر گرفته نشود باید در منوی تنظیمات، کد استان (مثلاً 51) وارد گردد تا شماره با قالب استاندارد نمایش داده شود.
+:::tip Note
+To exclude the province code, make sure to enter the province code (e.g., 51) in the settings menu so that the number is displayed in the standard format.
 :::

@@ -1,19 +1,13 @@
----
-sidebar_label: "Jump In"
----
-
-
 # Jump In
 
+## Usage
 
-## کاربرد
+In the editor page of any organization, depending on the type of strategy, there may be complexities in implementation. This component, along with the Jump Out component (which complements each other), is used to connect two points and acts as an invisible path between components. These two components do not perform any operations on the call; they are merely used to simplify the design of the call path in the editor.
 
-در صفحه ویرایشگر هر سازمانی بسته به نوع استراتژی آن، احتمال بروز پیچیدگی‌‌هایی در پیاده‌‌سازی وجود دارد. این کامپوننت و کامپوننت Jump Out (که مکمل هم هستند)، برای ارتباط بین دو نقطه استفاده می‌شوند و درواقع همچون مسیر بین دو کامپوننت هستند که نامرئی شده‌اند و دیده نمی‌شوند. این دو کامپوننت هیچگونه عملیاتی روی تماس انجام نمی‌دهند و صرفاً برای ساده‌‌سازی در طراحی مسیر تماس در ویرایشگر استفاده می‌شوند.
+It is recommended to use these two components for jumping between different pages instead of long connections between components, repetitive paths, and similar cases.
 
-توصیه می‌‌شود برای پرش بین صفحه‌های مختلف، بجای اتصال‌‌های بلند بین کامپوننت‌ها و مسیر‌‌های تکراری و موارد مشابه، از این دو کامپوننت استفاده کنید.
+To use these components, simply place the JumpIn component at the beginning of the destination path and define a unique name for it in the Name section. Then, place the JumpOut component at the end of the source path and select the destination component's name from the JumpIn Name section.
 
-برای استفاده از این کامپوننت‌‌ها کافیست ابتدا کامپوننت JumpIn را در ابتدای مسیر مقصد قرار دهید و نامی منحصربه‌‌فرد برای آن در قسمت Name تعریف کنید، سپس کامپوننت JumpOut را در انتهای مسیر مبدأ قرار دهید و نام کامپوننت مقصد را از قسمت JumpIn Name انتخاب کنید.
+## Component Parameters
 
-## پارامترها کامپوننت
-
-- **Name**: نام ورودی پرش است. از این نام در Jump Out برای مقصد پرش استفاده می‌شود.
+- **Name**: The name of the jump input. This name is used in Jump Out for the jump destination.

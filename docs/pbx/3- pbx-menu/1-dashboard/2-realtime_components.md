@@ -1,77 +1,64 @@
----
-sidebar_label: "کامپوننت های بلادرنگ"
-title: "کامپوننت های بلادرنگ"
----
+# Real-Time Components
 
-
-# کامپوننت‌های بلادرنگ
-
-در این بخش بصورت جزئی به بررسی هرکدام از کامپوننت‌های که خروجی بصورت بلادرگ ارائه می‌دهند می‌پردازیم.
+This section provides a detailed overview of each of the components that offer real-time output.
 
 ## Trunk Status
-**وضعیت ترانک‌های موجود در مرکزتماس را نمایش می‌دهد.پارامترهای آن شامل**
+This component displays the status of the trunks in the contact center. Its parameters include:
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
+- **Title**: Specifies the display name of the component on the page.
 
-- **View as**: نحوه نمایش اطلاعات شامل
+- **View as**: Defines how the information is displayed, including options like:
 
-	
-- ** Items**: آیتم‌های کامپوننت شامل
-	- **Deactivated**: نمایش ترانک‌های غیرفعال.
-	- **Unavailable**: نمایش ترانک‌هایی که به هر دلیلی دردسترس نیستند(برای مثال زمانی که دسترسی به Host با مشکل مواجه شود).
-	-  **Ok**: نمایش ترانک‌هایی با وضعیت Ok.
-	
-	
+- **Items**: The component items include:
+    - **Deactivated**: Displays inactive trunks.
+    - **Unavailable**: Displays trunks that are unavailable for any reason (e.g., when there are issues accessing the Host).
+    - **Ok**: Displays trunks with an OK status.
+
 ## Server Stats
+This component shows information about CPU and RAM usage. Its parameters include:
 
-**اطلاعاتی درمورد وضعیت مصرف پردازنده و حافظه رم را نشان می‌دهد.پارامترهای آن شامل**
+- **Title**: Specifies the display name of the component on the page.
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
+- **View as**: Defines how the information is displayed, including options like:
 
-- **View as**: نحوه نمایش اطلاعات شامل
-	
-- ** Items**: آیتم‌های کامپوننت شامل
-	- **CPU**
-	- **RAM**
+- **Items**: The component items include:
+    - **CPU**
+    - **RAM**
 
 ## Exten Status
+This component provides a real-time status of the extensions in the contact center. Its parameters include:
 
-**این کامپوننت نمایش وضعیت داخلی‌ها را بصورت بلادرنگ برعهده دارد.پارامترهای آن شامل**
+- **Title**: Specifies the display name of the component on the page.
 
+- **View as**: Defines how the information is displayed, including options like:
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
+- **Items**: The component items include:
+    - **Idle**: The extension is idle (ready to use).
+    - **Ringing**: The extension is ringing.
+    - **In-Use**: The extension is in use.
+    - **Paused**: The extension is paused.
+    - **Unavailable**: The extension is unavailable.
+    - **Hold**: Calls on hold.
+    - **Invalid**: The extension status is invalid.
 
-- **View as**: نحوه نمایش اطلاعات شامل
+- **Extensions**: Allows specifying the extensions to include in the report.
 
-- **Items**: آیتم‌های کامپوننت شامل
-	- **Idle**: در وضعیت آماده‌به‌کار.
-	- **Ringing**: در حال زنگ خوردن.
-	- **In-Use**: در حال استفاده.
-	- **Paused** : در حالت استرحت.
-	- **Unavailable**: داخلی دردسترس نمی‌باشد.
-	- **Hold**: تماس‌های که در حالت انتظار می‌باشند.
-	- **Invalid**: وضعیت داخلی نامعتبر می‌باشد.
-
-- **Extensions**: مشخص کردن داخلی‌های مدنظر در گزارش.
-
-- **Groups**: درصورتی که گروهی از کاربران در بخش مرکزتماس تعریف شده باشد در اینجا انتخاب می‌شود.
-
+- **Groups**: If user groups are defined in the contact center, they can be selected here.
 
 ## Agent Status
+This component provides a real-time status of the agents in the contact center. Its parameters include:
 
-**این کامپوننت نمایش وضعیت اپراتور را بصورت بلادرنگ برعهده دارد.پارامترهای آن شامل**
+- **Title**: Specifies the display name of the component on the page.
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
+- **View as**: Defines how the information is displayed, including options like:
 
-- **View as**: نحوه نمایش اطلاعات شامل
+- **Items**: The component items include:
+    - **Idle**: The agent is idle (ready to take calls).
+    - **Ringing**: The agent's phone is ringing.
+    - **In-Use**: The agent is currently using their phone.
+    - **Paused**: The agent is paused.
+    - **Unavailable**: The agent is unavailable.
+    - **Hold**: Calls on hold for the agent.
+    - **Invalid**: The agent's status is invalid.
 
-- ** Items**: آیتم‌های کامپوننت شامل
-	- **Idle**: در وضعیت آماده‌به‌کار.
-	- **Ringing**: در حال زنگ خوردن.
-	- **In-Use**: در حال استفاده.
-	- **Paused** : در حالت استرحت.
-	- **Unavailable**: داخلی دردسترس نمی‌باشد.
-	- **Hold**: تماس‌های که در حالت انتظار می‌باشند.
-	- **Invalid**: وضعیت داخلی نامعتبر می‌باشد.
-	
-- **Queue**: مشخص کردن صف‌های مدنظر برای گزارش‌گیری.
+- **Queue**: Specifies the queues to be included in the report.

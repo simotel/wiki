@@ -1,176 +1,140 @@
 ---
 sidebar_position: 2
-sidebar_label: "سناریو تماس"
-title: "سناریو تماس"
 ---
+# Dial Plan Intro
 
 
-# سناریوی‌تماس
+Up until now, the main sections of the `PBX` for the initial setup of the Call Center have been introduced. In this section, we will take a general look at one of the most important parts of the system, the `Dial Plan` editor. We will also review how to work with the dial plan and how to use its components.
 
-تا اینجا بخش‌های اصلی قسمت `PBX` به جهت راه‌اندازی اولیه مرکزتماس خدمت شما معرفی شد، در این بخش به بررسی کلی یکی از مهمترین قسمت‌های سامانه ویرایشگر
- `Dial Plan` می‌پردازیم، در ادامه نیز روش کار با دایل‌پلن و نحوه استفاده از کامپوننت‌های آن را بررسی می‌کنیم.
+## Call Scenario
 
-## سناریو‌تماس
-
-کسب‌کارها سناریوی تماس مختلفی را برای مشتریان خود درنظر می‌گیرند،برای مثال در بسیاری از کسب‌کارها بازخورد مشتری بسیار مهم می‌باشد و در نهایت انتظار
- می‌رود قبل از اینکه تماس قطع شود سیستم بصورت خودکار نظرسنجی `Poll` از نحوه عملکرد اپراتور انجام دهد، در برخی از کسب‌کارها موضوع پاسخگویی بسیار مهم 
- می‌باشد و کاربر انتظار دارد در صورتی که شخصی با داخلی او تماس گرفت و شخص قادر به پاسخگویی نبود تماس به شماره همراهش انتقال پیدا کند `Follow Me`، در برخی 
- از سازمان‌ها محدود کردن سطح دسترسی تماس‌های خروجی `Outgoing Route` کاربران امری ضروری می‌باشد (سطح دسترسی تماس‌های داخلی به داخلی ،شهری،کشوری،بین‌المللی) و 
- بسیاری دیگر از سناریو‌ها که ممکن مجموعه شما برای خود در نظر بگیرد برای پیاده سازی این سناریوها از `Dial Plan` استفاده می‌کنیم.
+Businesses consider different call scenarios for their customers. For example, in many businesses, customer feedback is very important, and it is expected that before the call ends, the system will automatically conduct a `Poll` to assess the operator's performance. In some businesses, answering calls is crucial, and the user expects that if someone calls their extension and they are unable to answer, the call will be forwarded to their mobile number (`Follow Me`). In certain organizations, restricting the access level for outgoing calls (`Outgoing Route`) is essential for users (such as internal-to-internal, local, national, or international calls). There are many other scenarios that your organization may consider. To implement these scenarios, we use the `Dial Plan`.
 
 
+## Dial Plan
 
-## دایل پلن `Dial Plan`
+Implementing a call scenario with all its features in traditional VoIP systems is a complex and time-consuming task, and in some cases, it requires dial plan programming. Therefore, the goal of Simotel's Call Center is to implement a dial plan that is simple and user-friendly. In this dial plan, the user does not need to engage in coding and can easily understand the main elements of this section and implement their desired scenario.
 
-پیاده سازی یک سناریو تماس با تمام قابلیت‌ها در سیستم‌های ویپ معمولی کاری پیچیده و زمانبر می‌باشد و در برخی از موارد نیاز به برنامه نویسی دایل‌پلن می‌باشد از 
-این رو در مرکز تماس سیموتل هدف بر پیاده سازی دایل‌پلنی است که بسیار ساده و کاربری باشد،  در دایل پلن کاربر با کدنویسی درگیر نمی‌شود و می‌تواند به راحتی المان‌های 
-اصلی این بخش را درک کند و سناریوی مدنظر خود را پیاده سازی کند.
-
-برای مشاهده سناریوی تماس پیاده سازی شده در دایل‌پلن بر روی تصویر کلیک کنید 
+Click on the image to view the implemented call scenario in the dial plan.
 
 <a href='https://dialplan.mysup.ir/live/plan/uypn9ij1gu5molptuffpoe9tbx776smhwcnxo19elb3sidznc8' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/uypn9ij1gu5molptuffpoe9tbx776smhwcnxo19elb3sidznc8/plan.png' /></a>
 
-:::tip نکته
+:::tip Tip
 
-در صورتی که به مرکز تماس دسترسی ندارید برای تست قابلیت‌های دایل‌پلن به **[اینجا](https://dialplan.mysup.ir/)** مراجعه کنید
+If you do not have access to the Call Center, visit **[here](https://dialplan.mysup.ir/)** to test the dial plan features.
 :::
 
-## اجزای دایل‌پلن
+## Dial Plan Components
 
 
 
-### صفحات `sheets`
+### `sheets`
 
-دایل پلن طوری طراحی شده است که در صورت نیاز بتوانید صفحات مختلف ایجاد کرده و سناریوی خود را به بخش‌های کوچکتر شکسته و در هر صفحه به پیاده‌سازی آن بخش بپردازید،این 
-قابلیت زمانی کاربرد دارد که سناریو تماس شما پیچیده می‌شود مثلا زمانی که از ماژول تماس انبوه استفاده می‌کنید بهتر است طراحی سناریو مربوط به تماس انبوه در یک صفحه اختصاصی 
-صورت گیرد و با استفاده از کامپوننت‌های اتصالگر `Jump In & Jump Out`  به سناریو در صفحه اصلی متصل شود.
+The dial plan is designed in a way that allows you to create different pages, breaking down your scenario into smaller sections, and implementing each section on a separate page. This feature is useful when your call scenario becomes complex. For example, when using the bulk call module, it's better to design the scenario for bulk calls on a dedicated page and then connect it to the main scenario using the `Jump In & Jump Out` connector components.
 
-بطور پیشفرض در دایل‌پلن دو صفحه وجود دارد که به بررسی کاربرد هرکدام می‌پردازیم
+By default, the dial plan includes two pages, and we will examine the purpose of each one.
 
-- **صفحه incoming**: تمامی تماس‌های ورودی سیستم (زمانی که داخلی فرد شروع به زنگ خوردن می‌کند) در این صفحه مدیریت می‌شوند و برای ایجاد محدودیت زمان‌ کاری،اتصال تماس به صف،افزودن صندوق صوتی،انجام نظرسنجی،
- دریافت فکس باید در این صفحه تغییرات ایجاد شود.
+- **sheet incoming**:All incoming calls to the system (when a user's extension starts ringing) are managed on this page. To set working hours restrictions, route calls to a queue, add voicemail, conduct surveys, or receive faxes, changes should be made on this page.
  
-- **صفحه outgoing**: تمامی تماس‌های خروجی سیستم (زمانی که فرد تلفن را برمی‌دارد و شروع به شماره گیری می‌کند) در این بخش مدیریت می‌شوند،برای اعمال محدودیت در تماس‌های خروجی ، 
-ایجاد اتاق کنفرانس، شنود مکالمات،رزور مکالمات،PickUp باید در این صفحه تغییرات ایجاد شود.
+- **sheet outgoing**: All outgoing calls from the system (when a user picks up the phone and starts dialing) are managed on this page. To apply restrictions on outgoing calls, create conference rooms, monitor calls, reserve calls, or use the PickUp feature, changes should be made on this page.
 
 
-### کامپوننت‌ها `components`
+###  `components`
 
-کامپوننت‌ها اجزائی هستند که در صفحه قرار گرفته و با استفاده از سیم کشی انجام شده و اتصال به‌یک‌دیگرسناریوی تماس را می‌سازند، هر کامپوننت کاربرد خاصی دارد 
-و یکی از قابلیت‌های مرکز تماس را پوشش می‌دهد،برای مثال تمامی تماس‌های ورودی از کامپوننت `Incoming Route` شروع شده و پس از آن در دایل‌پلن توزیع می‌شوند.
+Components are elements placed on the page that, through the wiring and connection between them, build the call scenario. Each component has a specific function and covers one of the features of the Call Center. For example, all incoming calls start with the `Incoming Route` component, and from there, they are distributed within the dial plan.
 
-
-برای مشخص کردن مسیر تماس در دایل‌پلن از سیم‌کشی استفاده می‌شود،با اتصال خروجی یک کامپوننت به ورودی کامپوننت دیگر مسیر تماس مشخص می‌شود،برای انجام این‌کار کافیست برروی 
-خروجی یک کامپوننت کلیک کرده،یک سیم بوجود می‌آید، انتهای سیم را به ورودی کامپوننت بعدی متصل کنید.
+Call routing in the dial plan is defined using wiring. By connecting the output of one component to the input of another, the call path is determined. To do this, simply click on the output of a component, a wire will appear, and then connect the end of the wire to the input of the next component.
 
 <a href='https://dialplan.mysup.ir/live/plan/r7fpc1ug4qwvn59lnfeel9dknp18wyutp1niwu54o2y193z6vy' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/r7fpc1ug4qwvn59lnfeel9dknp18wyutp1niwu54o2y193z6vy/plan.png' /></a>
 
 <br/>
 <br/>
 
-برای استفاده از کامپوننت‌ها در قسمت ‌بالا، سمت راست صفحه دایل‌پلن زبانه‌ای به نام **Components** وجود دارد که با کلیک بر‌روی
-آن لیست کامپوننت‌های موجود نمایش داده می‌شود،برای مشاهده تمامی کامپوننت‌ها باید از اسکرول موس استفاده کنید،در نهایت نیز 
-با Drag&Drop می‌توانید کامپوننت‌ها را بر روی‌ صفحه جایگذاری کنید.
+To use the components, there is a tab called **Components** at the top right of the dial plan page. By clicking on it, a list of available components will be displayed. To view all the components, you should use the mouse scroll. Finally, you can drag and drop the components onto the page to place them.
 
+### Features of Components 
 
-### ویژگی‌های کامپوننت‌ها 
+All components share common features that can be accessed by clicking on them:
 
-تمامی کامپوننت‌ها ویژگی مشترکی دارند که با کلیک می‌توان به این ویژگی‌ها دسترسی پیدا کرد
+- **Edit**: Each component has specific settings based on its function. When you click on a component, a gear icon appears at the top, which provides access to its settings.
 
-- **Edit**: هر کامپوننت باتوجه به کارایی خود تنضیمات خاصی دارد،با کلیک برروی کامپوننت شکل چرخ‌دنده‌ای در بالای آن ظاهر می‌شود که برای دسترسی به تنضیمات می‌باشد.
+- **Duplicate**: Often, you may need to use a component multiple times on the page. The Duplicate option allows you to create a copy of the existing component.
 
-- **Duplicate**: بسیاری مواقع نیاز می‌باشد که از یک کامپوننت چندین بار در صفحه استفاده کرد،با استفاده از گزینه Duplicate می‌توان کپی از کامپوننت موجود تهیه کرد.
-
-- **Remove**: این گزینه برای حذف کامپوننت از دایل‌پلن می‌باشد.
+- **Remove**: This option is used to remove a component from the dial plan.
 
 ![Component properties](/img/compontnetprop.png)
 
 
 
-## کامپوننت‌های پرکاربرد
+## Commonly Used Components
 
 ### Incoming Route
 
-این کامپوننت وظیفه  مدیریت تمامی تماس‌های ورودی به سیستم را‌ برعهده دارد. به عبارتی دیگر تمامی تماس‌های ورودی در دایل‌پلن از این کامپوننت شروع می‌شوند
- بنابراین در هر سناریوی تماس به جهت مدیریت تماس‌های وروی حتما یک کامپوننت Incoming Route وجود دارد،از جمله خواص مهم Incoming Route می‌توان به Context
- اشاره کرد که تعیین کننده سطح دسترسی است و باید با مقدار Context در ترانک‌های تعریف شده برابر باشد.در این کامپوننت براساس اولویت شماره مبداء و مقصد 
- امکان هدایت تماس به مسیر‌های متفاوت وجود دارد که در ادامه به بررسی آن می‌پردازیم.
+This component is responsible for managing all incoming calls to the system. In other words, all incoming calls in the dial plan start with this component. Therefore, every call scenario must include an Incoming Route component to manage incoming calls. One of the key features of the Incoming Route is the Context, which determines the access level and must match the Context in the defined trunks. In this component, based on the priority of the source and destination numbers, it is possible to route the call to different paths, which will be explained further.
 
-:::tip نکته
-در صورتی که در مقدار پیش‌فرض Context ترانک‌های تعریف‌شده تغییری ایجاد نشود این مقدار برابر با مقدار Context در Incoming Route می‌باشد.
+:::tip Tip
+If there is no change in the default Context value of the defined trunks, this value will be the same as the Context in the Incoming Route.
 :::
 
 
 ### Outgoinig Route
 
-وظیفه Outgoing Route مدیریت تماس‌های خروجی در مرکز تماس می‌باشد،هر تماسی که از مبداء مرکز تماس شروع شود در ابتدا وارد این کامپوننت شده و پس از آن‌ باتوجه 
-به سناریو چیده شده به مسیری که طراحی کرده‌ایم هدایت می‌شود،از این کامپوننت در صفحه Outgoing استفاده می‌شود و با توجه به اینکه مبداء تماس‌های خروجی سیستم این 
-کامپوننت می‌باشد حتما یک کامپوننت Outgoing Route در صفحه خروجی نیاز می‌باشد.
+The Outgoing Route component is responsible for managing outgoing calls in the Call Center. Any call originating from the Call Center enters this component first, and then, based on the designed scenario, it is routed to the specified path. This component is used on the Outgoing page, and since the Outgoing Route is the origin for outgoing calls, it is essential to have an Outgoing Route component in the outgoing page.
 
-در Outgoing Route می‌توان با استفاده از الگوی تطبیق ` Match Pattern` تماس‌ها را به مقاصد مختلف هدایت کرد،پیش‌نیاز استفاده حرفه‌ای از Outgoing Route آشنایی با نحوه 
-الگونویسی می‌باشد که در آینده به بررسی آن می‌پردازیم.
+In the Outgoing Route, you can use the ` Match Pattern` to route calls to different destinations. A professional use of the Outgoing Route requires an understanding of pattern matching, which will be covered in detail later.
 
-یکی از ویژگی‌های اصلی Outgoing Route مقدار Context می‌باشد که با استفاده از آن می‌توان سطح دسترسی(تماس داخلی‌داخلی،شهری،کشوری،بین‌المللی) داخلی‌ها را محدود کرد.
+One of the main features of the Outgoing Route is the Context value, which allows you to control the access level (internal-to-internal, local, national, international) for extensions. This helps in limiting the types of calls that internal users can make.
 
-
-:::tip نکته
-در صورتی که در مقدار پیش‌فرض Context داخلی‌های تعریف‌شده تغییری ایجاد نشود این مقدار برابر با مقدار Context در Outgoing Route می‌باشد.
+:::tip Tip
+If the default Context value for the defined extensions is not modified, this value will be the same as the Context in the Outgoing Route.
 :::
 
 ### Exten
-وظیفه این کامپوننت اتصال تماس به داخلی‌ها می‌باشد،هرجای دایل‌پلن که نیاز باشد تماس به داخلی‌ها متصل شود از Exten استفاده می‌شود، در استفاده از این کامپوننت دو حالت وجود دارد
 
-- زمانی که مشخص است تماس به کدام داخلی باید متصل شود و تماس مستقیما به سمت داخلی هدایت می‌شود.
+The purpose of this component is to connect calls to extensions. Wherever a call needs to be connected to an extension in the dial plan, the Exten component is used. There are two scenarios for using this component:
 
-- زمانی که دامنه‌ای از داخلی‌ها وجود دارند و خود تماس گیرنده قرار است شماره داخلی که با آن کار دارد را وارد کند برای مثال در پاسخگوی صوتی.
+- When it is clear which extension the call should be connected to, and the call is directly routed to that extension.
 
-در بخشEdit  کامپوننت، پارامتری به نام `Extention` وجود دارد،در صورتی که مستقیما شماره داخلی در آن انتخاب شود حالت اول پیاده سازی می‌شود و در صورتی نیز که شماره داخلی خاصی انتخاب 
-نشود و مقدار این پارامتر خالی بماند هر شماره‌ای که در پاسخگوی صوتی گرفته شده باشد به عنوان داخلی در نظر گرفته می‌شود و حالت دوم رخ می‌دهد.
+- When there is a range of extensions, and the caller is supposed to enter the specific extension number they want to reach, such as in an interactive voice response (IVR).
 
+In the Edit section of the component, there is a parameter called `Extension`. If a specific extension number is selected, the first scenario is implemented, and the call is directed to that extension. However, if no specific extension is selected and this parameter is left empty, any extension number entered by the caller in the IVR will be considered as the target extension, triggering the second scenario.
 
 ### Queue
-وظیفه این کامپوننت اتصال تماس به صف می‌باشد،برای استفاده از آن در بخش Edit کامپوننت مقدار پارامتر `Queue` را برابر با نام صف ساخته شده در
- بخش `PBX > Queues` قرار دهید،از آن به بعد تماس‌ها به سمت صف انتخاب شده هدایت می‌شوند.
- 
+
+ The purpose of this component is to route calls to a queue. To use it, in the Edit section of the component, set the `Queue` parameter to the name of the queue created under the `PBX > Queues` section. After that, calls will be directed to the selected queue.
  
  
 ### Announcement
  
-در صورتی که نیاز باشد فایل صوتی برای کاربر پخش شود از این کامپوننت استفاده می‌شود،برای انتخاب فایل صوتی در بخش 
-Edit کامپوننت مقدار پارامتر `Announcement` را برابر با نام فایل صوتی آپلود شده قرار دهید.
- 
-:::caution هشدار
+If an audio file needs to be played for the user, this component is used. To select the audio file, in the Edit section of the component, set the `Announcement` parameter to the name of the uploaded audio file.
+:::caution Warning
 
-حتما قبل از هر کامپومننت `Announcement` از کامپوننت `Answer` استفاده شود و خروجی `Answer` به `Announcement` متصل شود.
+Make sure to use the Answer component before any `Announcement` component, and connect the output of the `Answer` component to the `Announcement` component.
 :::
  
  
  
 ### IVR
 
-از این کامپوننت برای راه اندازی یک پاسخگوی صوتی استفاده می‌شود، برای بارگذاری فایل صوتی بر روی Edit کامپوننت کلیک کنید و مقدار پارامتر ` Announcement` را 
-برابر با نام فایل صوتی قرار دهید. 
- 
-در IVR برای هدایت تماس به مقاصد مختلف از ویژگی به نام `case` استفاده می‌شود،برای افزودن `case` جدید در IVR باید از گزینه ➕ در کامپوننت استفاده کنید.
+This component is used to set up an Interactive Voice Response (IVR). To upload an audio file, click on the **Edit** section of the component and set the **Announcement** parameter to the name of the uploaded audio file.
 
-- تعریف case:
-زمانی که یک پاسخگوی صوتی پخش می‌شود بسته به فایل صوتی بارگذاری شده یک‌سری انتخاب‌ها در اختیار تماس گیرنده قرار می‌دهد مثلا عدد یک را بزنید تا به بخش فروش متصل 
-شوید،از طرفی باید برای سیستم مشخص شود زمانی که تماس‌گیرنده عدد یک را وارد کرد چه اتفاقی باید بیفتاد و تماس چه مسیری را طی کند، به این کار تعریف Case در IVR 
-گوییم.
+In an IVR, the **case** feature is used to route calls to different destinations. To add a new **case** in the IVR, use the ➕ option in the component.
 
-- قبل از هر IVR حتما از یک کامپوننت Answer استفاده شود.
+- **Defining a case**:  
+When an audio message is played, based on the uploaded audio file, a set of options is provided to the caller, such as "Press 1 to connect to Sales." The system needs to know what action to take when the caller presses a specific number, and how the call should be routed afterward. This process is called defining a **Case** in the IVR.
+
+- **Important**: Always use an **Answer** component before any IVR component.
  
 ### Time Condition
 
-با استفاده از این کامپوننت می‌توان شرط زمانی را چک کرد.
+This component is used to check time-based conditions.
 
-**مثال)**: شخصی به مجموعه زنگ می‌زند
+**Example**: A person calls the company.
 
-اگر شرط ساعت کاری و روز‌های هفته برقرار باشند،تماس از مسیر️✔️  خارج می‌شود و به سمت پاسخگوی صوتی هدایت شود.
+- If the working hours and days of the week conditions are met, the call will proceed along the ✔️ path and be routed to the IVR (Interactive Voice Response).
+  
+- If the working hours or days of the week conditions are not met, the call will exit through the ❌ path and finally inform the caller that they are calling outside of business hours.
 
-اگر شرط ساعت‌کاری یا روزهای هفته برقرار نباشد،تماس از مسیر ❌ خارج می‌شود و در نهایت اعلام کند خارج از زمان‌کاری تماس گرفته‌اید. 
+To set time-based restrictions, click on **Edit** in the component. By clicking on the ➕ sign in the days of the week section, you can specify your working hours.
 
-برای تنظیم محدودیت زمانی بر روی Edit کامپوننت کلیک کنید با کلیک بر روی علامت ➕ در روزهای هفته می‌توان ساعات کاری خود را مشخص کنید
-
-
-**بررسی‌های دقیقتر دایل‌پلن در بخش [مربوطه](../pbx-menu/dialplan/intro) انجام می‌شود.**
+**Further details of the dial plan are covered in the [relevant section](../pbx-menu/dialplan/intro).**

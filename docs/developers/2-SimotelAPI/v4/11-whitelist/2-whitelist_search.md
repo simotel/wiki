@@ -1,22 +1,19 @@
 ---
-sidebar_label: "جستجو شماره در لیست سفید"
-title: "جستجو شماره در لیست سفید"
+
 ---
-
-
 # WhiteList Search
 
-از این سرویس برای جستجو شماره‌های موجود در لیست‌سفید استفاده می‌شود.
-## پارامتر‌ها
-<div class="custom-table">
-|      توضیحات      | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] |      پارامترها     |
-|:-----------------:|:------------------:|:--------------:|:----------------------:|:------------------:|
-| یافتن موارد مشابه |     true/false     |      true      |           **           |        alike       |
-|       شماره       |          -         |        -       |                        | conditions->number |
+This service is used to search for numbers in the whitelist.
 
+## Parameters
+<div class="custom-table">
+|      Description      | Defined Data  | Sample Data | Required[**]/Logical[*] | Parameters          |
+|:---------------------:|:-------------:|:-----------:|:----------------------:|:-------------------:|
+| Find Similar Entries  |   true/false  |     true    |           **           |        alike        |
+|      Number           |       -       |      -      |                        | conditions->number  |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -26,8 +23,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -44,7 +41,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -91,7 +88,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -133,7 +130,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

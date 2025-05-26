@@ -1,25 +1,17 @@
----
-sidebar_label: "سافت فون سیموتل"
-title: "سافت فون سیموتل"
----
-
-
 # Push Notification
 
-در این قسمت تنظیمات مربوط به سافت‌فون سیموتل اعمال می‌شوند.
+In this section, the settings related to the Simotel softphone are configured.
 
-یکی از قابلیت‌های این سافت‌فون امکان همگام‌سازی آن با سرور می‌باشد تا زمانی که تماسی به سمت مرکز تماس می‌آید حتی اگر سافت‌فون برروی موبایل شما بسته باشد مرکزتماس سیموتل با سیگنالی که به سمت سافت‌فون می‌فرستد آن را فعال کند و شما بتوانید تماس را پاسخ دهید، به این قابلیت سافت‌فون سیموتل **Push notification** می‌گویند.
+One of the features of this softphone is its ability to synchronize with the server. This means that when a call comes into the Call Center, even if the softphone is closed on your mobile device, the Simotel Call Center can activate it with a signal sent to the softphone, allowing you to answer the call. This feature is known as **Push Notification**.
 
-:::info اطلاعات
-این قابلیت بصورت پیش‌فرض فعال نمی‌باشد و نیاز به فعال‌سازی آن توسط همکاران ما می‌باشد.
+:::info
+**Information**: This feature is not enabled by default and requires activation by our team.
 :::
 
-پس از فعال‌سازی این قابلیت، باید از بخش `Update` برروی دکمه **Check for update** کلیک کنید،در صورتی که مراحل درست انجام شده باشند در بخش `Push Notification` وضعیت به حالت ready درمی‌آید و امکان فعال سازی این قابلیت با کلیک برروی دکمه **Apply SCM ID** فراهم می‌شود.
+After enabling this feature, you must click the **Check for Update** button in the `Update` section. If the steps are completed correctly, the status in the `Push Notification` section will change to "ready," and you can activate this feature by clicking the **Apply SCM ID** button.
 
 ![SPN](/img/simotel/SPN.JPG)
 
+## Parameters of Push Notification
 
-
-## پارامتر‌های Push Notification
-
-- **SCM Timeout**: حداکثر مدت زمانی را که سیموتل برای دریافت پاسخ از سافت‌فون منتظر می‌ماند، مشخص می‌کند(پس از آن درخواست TimeOut می‌شود).
+- **SCM Timeout**: Specifies the maximum duration that Simotel waits for a response from the softphone before the request times out.

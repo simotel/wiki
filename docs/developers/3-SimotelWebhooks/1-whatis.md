@@ -1,14 +1,12 @@
 ---
 sidebar_position: 1
-sidebar_label: "معرفی SimotelWebHooks"
-title: "معرفی SimotelWebHooks"
+title: "Simotel Webhooks"
 ---
+# What is
 
+**Simotel Webhooks** handles the task of sending requests from Simotel to your server. For example, if you want to send CDR (Call Detail Records) data to your server's address after every call ends, you can easily do this using Simotel Webhooks.
 
+Simotel Webhooks are divided into two different types:
 
-# Simotel Webhooks چیست 
-Simotel Webhooks کار ارسال درخواست از سمت سیموتل به شما را انجام می‌دهد. به عنوان مثال می‌خواهید بعد از تمام شدن هر تماس اطلاعات Cdr تماس به آدرس سرور شما ارسال شود. با استفاده از وب هوک های سیموتل به راحتی این کار را انجام می‌دهید.
-
-وب هوک های سیموتل به دو نوع متفاوت تقسیم می‌شوند:
-- وب هوک های رخداد (Event Webhooks)
-- وب هوک های نقشه تماس (ComponentApi Webhooks)
+- **Event Webhooks**
+- **ComponentApi Webhooks**

@@ -1,14 +1,10 @@
----
-sidebar_label: "مقدمه تماس بهمنی"
-title: "مقدمه تماس بهمنی"
----
+# Introduction
 
-# معرفی
-تماس بهمنی به مجموعه تماس‌‌های مشابهی گفته می‌‌شود که معمولاً به‌‌صورت مقطعی در دوره زمانی مشخصی وارد سیستم می‌‌شوند و معمولاً هدف مشابهی دارند، برای‌مثال،سازمان برق یک شهرستان را درنظر بگیرید. برق یک منطقه مشخص به مدت نیم‌‌ساعت به دلیل خرابی قطع شده است و اهالی آن منطقه با مرکز تلفن اتفاقات برق تماس می‌گیرند. این حجم تماس از یک منطقه مشخص را تماس بهمنی می‌‌گویند که با داشتن پیش‌شماره‌‌های آن منطقه، می‌‌توان رفتار از پیش‌تعیین‌‌شده‌ای را برای پاسخ‌‌گویی به تلفن‌‌های آن منطقه پیاده‌سازی کرد.
+A "storm call" refers to a set of similar calls that typically occur in a specific period of time and usually share a common purpose. For example, imagine a power outage in a particular area of a city due to a malfunction, which lasts for half an hour. Residents of that area will call the utility company's hotline to report the issue. This surge of calls from a specific area is called a "storm call." By recognizing the area code, pre-configured response behaviors can be implemented to handle calls from that region.
 
-:::info اطلاعات
-مدیریت تماس‌‌های بهمنی در سیموتل به دو روش انجام می‌‌شود، که در ادامه به بررسی آن‌ها می‌پردازیم.
+:::info Information
+Storm call management in Simotel is handled in two ways, which will be discussed below.
 
 :::
 
-برای کسب اطلاعات بیشتر درمورد کامپوننت تماس‌بهمنی به **[اینجا](/pbx/pbx-menu/dialplan/components/spit_detection)** مراجعه فرمایید.
+For more information on the storm call component, please refer to **[here](/pbx/pbx-menu/dialplan/components/spit_detection)**.

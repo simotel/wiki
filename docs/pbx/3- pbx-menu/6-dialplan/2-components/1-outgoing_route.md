@@ -1,28 +1,21 @@
----
-sidebar_label: "Outgoing Route"
-title: "Outgoing Route"
----
-
-
 # Outgoing Route
 
-## کاربرد
+## Purpose
 
-تماس‌‌هایی که در درون مرکز تماس یا از طریق اجزای داخلی مرکز تماس (مانند IP Phone) تولید می‌شوند، تماس خروجی محسوب و به کامپوننت Outgoing Route ارسال می‌شوند. البته تماس‌‌ها با توجه به مقدار کانتکست تماس‌‌گیرنده (برای‌مثال کانتکست داخلی‌‌ای که بر روی گوشی تنظیم شده است) به سمت یک کامپوننت مناسب می‌‌روند. به عبارت دیگر کانتکست تماس‌‌گیرنده باید در تنظیمات کامپوننت، وارد شده باشد.
+Calls originating within the Call Center or from its internal components (such as IP phones) are considered outgoing calls and are forwarded to the Outgoing Route component. Calls are routed based on the context of the caller (e.g., the internal context set on the phone). In other words, the caller's context should be specified in the component's settings.
 
-در OutgoingRoute، قواعد مسیردهی مناسب برای تماس‌‌های داخلی، تماس‌‌های شهری و ... پیاده‌‌سازی می‌شود.
+In the Outgoing Route, appropriate routing rules are implemented for internal calls, city calls, and others.
 
-## پارامترها کامپوننت
+## Component Parameters
 
-- **Context**: کانتکست تماس‌‌گیرنده.
+- **Context**: The context of the caller.
 
-- **Check FeatureCode**: امکان استفاده از کد‌‌های ویژه. درصورت فعال‌‌بودن، کد ویژه نسبت به همه الگوهای تعریف شده در کامپوننت اولویت دارد.
+- **Check FeatureCode**: Option to use special codes. When enabled, the special code takes precedence over all defined patterns in the component.
 
-- **Check SpeedDial**: امکان استفاده از شماره‌‌گیری سریع. درصورت فعال‌‌بودن، قواعد شماره‌‌گیری سریع نسبت به الگوهای تعریف‌شده در کامپوننت اولویت دارد. برای‌مثال اگر شماره‌‌ای گرفته شود که برای آن SpeedDial تعریف شده باشد، ابتدا آن شماره به شماره مرجع در SpeedDial تبدیل می‌شود و سپس الگوها برای شماره جدید بررسی می‌‌گردند.
+- **Check SpeedDial**: Option to use speed dialing. When enabled, speed dial rules take priority over the patterns defined in the component. For example, if a number is dialed that has a speed dial defined, the number will first be converted to its reference number in SpeedDial, and then the patterns for the new number will be checked.
 
+## Routing Parameters
 
-## پارامترهای مسیردهی
+- **Pattern**: The outgoing pattern.
 
-- **Pattern**: الگوی خروجی.
-
-**در OutgoingRoute استفاده از الگوها ضروری است، لذا چنانچه با نحوه الگونویسی آشنایی ندارید بخش **[آشنایی با الگوهای تطابق](/pbx/advance-settings/matchpattern)** را مطالعه فرمایید.**
+**Using patterns in OutgoingRoute is mandatory. If you are unfamiliar with pattern syntax, please refer to the section on **[Pattern Matching Basics](/pbx/advance-settings/matchpattern)**.**

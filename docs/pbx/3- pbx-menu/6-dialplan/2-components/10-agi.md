@@ -1,18 +1,9 @@
----
-sidebar_label: "AGI"
----
-
-
-
 # AGI
 
-## کاربرد
+## Purpose
+The **AGI (Asterisk Gateway Interface)** component is used to run custom scripts or applications that interact with the Asterisk PBX system. This component allows you to upload and use an AGI script that you have previously written. Once the call reaches this component, the system will call the specified AGI script to handle the interaction.
 
-برای استفاده از قابلیت AGI نویسی به‌کار می‌رود. در این كامپوننت فایل AGI را كه قبلاً نوشته‌اید بارگذاری کنید. سیموتل پس از رسیدن به این كامپوننت AGI را فراخوانی می‌كند.
+## Parameters
 
-
-## پارامترها کامپوننت
-
-- **Current File**: فایل آپلود شده كه قابل استفاده است.
-
-- **AGI File**: آپلود فایل AGI.
+- **Current File**: The file that has been uploaded and is available for use.
+- **AGI File**: The AGI script file to be uploaded and executed when the call reaches this component.

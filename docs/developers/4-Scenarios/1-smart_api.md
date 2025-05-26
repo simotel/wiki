@@ -1,29 +1,23 @@
 ---
-sidebar_label: "سناریو Smart API"
-title: "سناریو Smart API"
+
 ---
-
-
-
 # Smart API
 
-:::tip توصیه
-پیشنهاد می‌شود قبل از مطالعه این مطلب،ابتدا [اینجا](../SimotelWebhooks/DialplanApiComponents/smart_api)  را بررسی فرمایید.
+:::tip Recommendation
+It is recommended to review [this](../SimotelWebhooks/DialplanApiComponents/smart_api) before reading this section.
 :::
 
-سناريو: فرض كنيد كه قرار است عددی از كاربر دريافت نماييد. و قصد دارید درصورتی ‌‌كه عدد وارد شده ۱ باشد، تماس را به مسير A و درصورتی ‌‌كه ۲ باشد، 
-به مسير B هدايت كنيد.
+**Scenario:** Suppose you need to receive a number from the user. If the number entered is 1, the call should be routed to path A, and if it is 2, it should be routed to path B.
 
-برای پیاده‌‌سازی سناریوی بالا به دو کامپوننت SmartApi نیاز دارید. نام اولی را s1 و دومی را s2 بگذارید. در قسمت api address از هر دو كامپوننت، 
-آدرس وب‌سرویس را وارد نماييد. در کامپوننت اول یک مسیر ایجاد کنید و شناسه آن (case) را عبارت go-s2 تعریف و خروجی آن را به كامپوننت s2 متصل
-کنید. در كامپوننت s2 نيز دو مسير با شناسه‌‌های go-a و go-b بگذاريد و آن‌ها را به مسيرهای A(صف فروش) و B(صف پشتیبانی) كه در صورت سناريو ذكر شده‌اند متصل نماييد.
+To implement the above scenario, you will need two SmartApi components. Let's name the first one `s1` and the second one `s2`. In the `API address` field of both components, enter the address of the web service. 
 
-برای مشاهده سناریو برروی عکس کلیک کنید.
+In component `s1`, create a route with the identifier `go-s2` and connect its output to component `s2`. In component `s2`, create two routes with the identifiers `go-a` and `go-b`, and connect them to paths A (Sales Queue) and B (Support Queue) as per the scenario mentioned.
+
+To view the scenario, click on the image below:
 
 <a href='https://dialplan.mysup.ir/live/plan/fdckb8z6kula9q4o3jyug872z3otnhgmdco6w0gzawg7cte78a' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/fdckb8z6kula9q4o3jyug872z3otnhgmdco6w0gzawg7cte78a/plan.png' /></a>
 
-
-اكنون فرض كنيد تماسی وارد كامپوننت s1 شده است.وب‌سرویس با مقادير زير فراخوانی می‌شود
+Now, suppose a call enters component `s1`. The web service will be called with the following values:
 
 ```shell
 {
@@ -34,7 +28,7 @@ title: "سناریو Smart API"
 }
 ```
 
-وب‌سرویس در جواب خواستار اجرای توابع زیر و دریافت داده از کاربر‌ می‌شود.
+The web service will request the execution of the following functions and will require user input.
 
 ```shell
 {
@@ -43,11 +37,11 @@ title: "سناریو Smart API"
 }
 ```
 
-با اجرای دستورات فوق، نخست فايل صوتی خوش‌آمدگويی پخش می‌شود، سپس از كاربر خواسته می‌شود كه عددی را وارد كند و پس از آن تماس از مسير go-s2
-به سمت كامپوننت s2 منتقل می‌گردد.
+By executing the above instructions, first the welcome audio file will be played, then the user will be prompted to enter a number, and after that, the call will be transferred from the **go-s2** path to the **s2** component.
 
-در كامپوننت s2، درخواستی مشابه s2 به سمت سرور فرستاده می‌شود، اما با دو تفاوت اصلی: اول نام كامپوننت عوض می‌شود تا وب‌سرویس تفاوت منبع درخواست‌دهنده
-را متوجه شود و دوم، داده data حاوی همان مقداری است كه كاربر در مرحله قبل وارد كرده است.
+In the **s2** component, a request similar to the one in **s1** will be sent to the server, but with two main differences:  
+1. The component name changes so that the web service can distinguish the source of the request.  
+2. The `data` field will contain the value entered by the user in the previous step.
 
 ```shell
 {
@@ -58,8 +52,7 @@ title: "سناریو Smart API"
 }
 ```
 
-وب‌سرویس كه عدد واردشده كاربر را در جواب دریافت کرده، مسير مناسب برای خروج وی را مشخص مي‌كند.
-
+The web service, after receiving the number entered by the user in response, determines the appropriate path for their exit.
 
 ```shell
 {

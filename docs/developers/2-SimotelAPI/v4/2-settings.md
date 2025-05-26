@@ -1,73 +1,62 @@
 ---
 sidebar_position: 1
-sidebar_label: "معرفی SimotelApi"
-title: "معرفی SimotelApi"
+
 ---
+# Introduction and Settings
 
+## Simotel API
 
+SA is a collection of APIs that are initiated by sending a request from the web service to Simotel. This service is created using the standard RestAPI format. For example, by sending a two-way call request from the web service to Simotel, the contact center will begin establishing the two-way call once the request is received.
 
-# معرفی و تنظیمات
+## Simotel API Setup
 
+- **Create an account for the requester.**
+- **Define the IPs allowed to send requests.**
 
-## معرفی Simotel Api
+### Creating an Account
+Go to `Maintenance > API Accounts`. By clicking on ➕, you can create a new user. The parameters in this section are as follows:
 
-SA مجموعه از APIها هستند که با ارسال درخواست از سمت وب‌سرویس به سمت سیموتل شروع می‌شوند، این سرویس در قالب استاندارد RestAPI ایجاد گردیده است. برای مثال با ارسال درخواست تماس‌دوطرفه از سمت وب‌سرویس به سمت سیموتل،پس از دریافت درخواست مرکز تماس شروع به ایجاد تماس دوطرفه می‌کند.
+- **Authentication**: Simotel uses various methods for user authentication. The most secure method is to use BasicAuth (username and password) along with an API Key (Token).
+  
+- **Username**: The username for the created user.
 
-## تنظیمات راه‌اندازی Simotel Api 
+- **Password**: The password for the created user.
 
-- **ایجاد حساب برای درخواست دهنده.**
-- **تعیین ip‌های مجاز به ارسال درخواست.**
+- **Token**: A string generated for stronger authentication.
 
-### ایجاد حساب
-به بخش `Maintenance > API Accounts` مراجعه فرمایید.با کلیک بر روی ➕ امکان ساخت کاربر جدید فراهم می‌شود،پارامترها این بخش به شرح زیر می‌باشند
+- **Enabled**: Allows you to activate or deactivate the user.
 
-- **Authentication**: سیموتل از روش‌های مختلفی برای احراز هویت کاربر درخواست دهنده استفاده می‌کند،امن‌ترین روش استفاده
- از BasicAuth (نام‌کاربری و رمزعبور)  به همراه API Key (Token) می‌باشد.
+- **Request**: Specifies the level of access the user has to the APIs. For example, if a user needs to add a user via the API, the `/pbx/users/add` permission must be enabled.
 
-- **Username**: نام‌کاربری کاربر ساخته شده.
+### Granting Access for IPs
+Go to `Maintenance > Settings`. At the bottom of the page, in the Simotel API section, you will see two options:
 
-- **Password**: رمزعبور کاربر ساخته شده.
+- **Allow All IPs**: Enabling this option allows all IPs to send requests to Simotel.
 
-- **Token**: رشته‌ای که در جهت احرازهویت قوی‌تر تولید می‌شود.
+- **Allowed IPs**: If you want to allow specific IPs, enter them here and then press Enter.
 
-- **Enabled**: امکان فعال یا غیر‌فعال‌سازی کاربر را در اختیار شما قرار می‌دهد.
+## Authentication
 
-- **Request**: میزان سطح دسترسی کاربر به APIها را مشخص می‌کند،برای مثال در صورت نیاز به افزودن کاربر با استفاده
- از API حتما باید تیک /pbx/users/add بخورد.
- 
-### ایجاد دسترسی برای IP
-به بخش `Maintenance > Settings` مراجعه فرمایید. در پایین صفحه بخش Simotel API دو بخش مشاهده می‌شود
+**Authentication can be done using one of the following three methods:**
 
-- **Allow All IPs**: با زدن تیک این بخش دسترسی تمامی IPها برای ارسال درخواست به سمت سیموتل باز می‌شود.
+- **HTTP Basic Authentication**: The Basic Authentication standard is a common method for authentication in web services. Retrieving access information with this method is relatively easy due to its lower security, so it is recommended to use it at least over SSL. The username and password are placed in the request header in base64 format as shown below.
 
-- **Allowed IPs**: در صورتی که IP خاصی مد نظر می‌باشد در این بخش وارد کنید و در نهایت دکمه Enter را بزنید.
-
-## اعتبارسنجی
-
-**اعتبارسنجی به یکی از سه روش زیر انجام می‌گردد:**
-
-- **HTTP Basic authentication**: استاندارد  Basic  authentication روشی عمومی برای اعتبارسنجی در وب‌سرویس‌ها می‌باشد. بازیابی اطلاعات دسترسی در این روش،
- به دلیل امنیت پایین آن بسیار ساده می‌باشد و توصیه می‌گردد که حداقل بصورت SSL استفاده گردد. اطلاعات مربوط به یوزر و پسورد با فرمت base64 در هدر درخواست 
- به صورت زیر قرار میگیرد.
- 
 ```shell
 Authorization: Basic dGVzdDpBYTEyMzQ1Ng
 ```
 
-Basic Auth را می‌توان در آدرس به صورت زیر نیز ارسال کرد
-
+Basic Auth can also be sent in the URL as follows:
 ```shell
 https://username:password@www.example.com
 ```
 
-- **API Key**: در این روش که برای بهبود امنیت روش قبلی ایجاد‌شده و به صورت گسترده در API ها استفاده می‌گردد، کلیدی یکتا ایجاد می‌گردد و در هدر
- درخواست به صورت زیر اضافه می‌شود.
+- **API Key**: In this method, which is designed to enhance the security of the previous method and is widely used in APIs, a unique key is generated and added to the request header as follows:
  
 ```shell
 X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG
 ```
 
-- **HTTP Basic authentication & API Key**: در این روش از ترکیب دو روش بالا استفاده می‌گردد.
+- **HTTP Basic authentication & API Key**: This method uses a combination of the two methods above.
 
 ```shell
 Authorization: Basic dGVzdDpBYTEyMzQ1Ng
@@ -76,7 +65,7 @@ X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG
 ```
 
 
-## نمونه‌ Header
+## Sample Header
 
 ```shell
 Authorization: Basic dGVzdDpBYTEyMzQ1Ng==
@@ -84,36 +73,38 @@ X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG
 Content-Type: application/json
 ```
 
-- **Authorization**: اعتبار سنجی Basic Authentication.
-- **X-APIKEY**: اعتبار سنجی API-key.
-- **Content-Type**: فرمت بدنه پیام. در تمام درخواست‌ها به غیر از سرویس‌های دانلود و استریم، فرمت بدنه پیام application/json می‌باشد.
+- **Authorization**: Basic Authentication validation.  
+- **X-APIKEY**: API-key validation.  
+- **Content-Type**: The format of the message body. In all requests except download and streaming services, the message body format is `application/json`.  
 
-## پیام‌های رایج در پاسخ به درخواست
+## Common Response Messages  
 
-انواع پاسخ هایی که در سرویس‌های SA دریافت می‌شود به شرح زیر است.
-<div class="custom-table">
-|                                              توضیحات                                             | success |                                                                                        message                                                                                       |           header           |
-|:------------------------------------------------------------------------------------------------:|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
-|                      سرویس به درستی فراخوانی شد و عملیات به درستی انجام شد.                      |    1    |                                                                                           -                                                                                          |           Ok-200           |
-| سرویس به درستی فراخوانی‌شده اما در انجام عملیات خطایی رخ‌داده.خطای مربوطه در قسمت message ذکر شده. |    0    | "corresponding error" such as: This number already exists \Field 'field_name':value is missing \Requested operation failed \This trunk already exists \this queue already exists     |           Ok-200           |
-|                                  فرمت محتوی درخواستی صحیح نیست.                                  |    0    |                                                                                Unable to parse content                                                                               |       Bad Request-400      |
-|                               هیچ اطلاعات اعتبار‌سنجی وارد نشده‌ است.                               |    0    |                                                                            BasicAuth or ApiKey is missing                                                                            |      Unauthorized-401      |
-|                              اطلاعات اعتبارسنجی ناقص یا نامعتبر است.                               |    0    |                                                                            BasicAuth or ApiKey is invalid                                                                            |      Unauthorized-401      |
-|                             کلایت اجازه دسترسی به این سرویس را ندارد.                             |    0    |                                                                                 "....";Access denied                                                                                 |        Forbidden-403       |
-|                          IP کلاینت اجازه دسترسی به این وب‌سرویس را ندارد.                          |    0    |                                                                                  IP is not permitted                                                                                 |        Forbidden-403       |
-|                   آدرس‌دهی اشتباه وارد شده و خطا 404 از سمت آپاچی ارسال شده است.                  |    -    |                                                                                           -                                                                                          |        Not Found-404       |
-|                           فایل درخواستی وجود ندارد(در زمان دانلود فایل).                          |    -    |                                                                                           -                                                                                          |        Not Found-404       |
-|                     متد درخواستی برای این سرویس مجاز نیست. POST,PUT,DELETE,GET                    |    0    |                                                                                  Method not allowed                                                                                  |   Method Not Allowed-405   |
-|                             مقدار content-type موجود در هدر مجاز نیست.                            |    0    |                                                                                Unsupported Media Type                                                                                | Unsupported Media Type-415 |
-|                                  سرویس فراخوانی شده وجود ندارد.                                  |    0    |                                                                           Requested service dose not exist                                                                           |     Not Implemented-501    |
+The types of responses received in SA services are as follows:  
 
-</div>
+<div class="custom-table">  
+|                                              Description                                             | success |                                                                                        message                                                                                       |           header           |  
+|:------------------------------------------------------------------------------------------------:|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|  
+|                      The service was successfully invoked, and the operation was executed correctly.                      |    1    |                                                                                           -                                                                                          |           Ok-200           |  
+| The service was successfully invoked, but an error occurred during the operation. The corresponding error is mentioned in the message field. |    0    | "corresponding error" such as: This number already exists \Field 'field_name':value is missing \Requested operation failed \This trunk already exists \this queue already exists     |           Ok-200           |  
+|                                  The requested content format is invalid.                                  |    0    |                                                                                Unable to parse content                                                                               |       Bad Request-400      |  
+|                               No authentication information has been provided.                               |    0    |                                                                            BasicAuth or ApiKey is missing                                                                            |      Unauthorized-401      |  
+|                              Authentication information is incomplete or invalid.                               |    0    |                                                                            BasicAuth or ApiKey is invalid                                                                            |      Unauthorized-401      |  
+|                             The client is not authorized to access this service.                             |    0    |                                                                                 "....";Access denied                                                                                 |        Forbidden-403       |  
+|                          The client's IP is not authorized to access this web service.                          |    0    |                                                                                  IP is not permitted                                                                                 |        Forbidden-403       |  
+|                   Incorrect addressing, resulting in a 404 error from Apache.                  |    -    |                                                                                           -                                                                                          |        Not Found-404       |  
+|                           The requested file does not exist (during file download).                          |    -    |                                                                                           -                                                                                          |        Not Found-404       |  
+|                     The requested method is not allowed for this service. POST, PUT, DELETE, GET                    |    0    |                                                                                  Method not allowed                                                                                  |   Method Not Allowed-405   |  
+|                             The `Content-Type` value in the header is not allowed.                            |    0    |                                                                                Unsupported Media Type                                                                                | Unsupported Media Type-415 |  
+|                                  The invoked service does not exist.                                  |    0    |                                                                           Requested service does not exist                                                                           |     Not Implemented-501    |  
 
-## پارامترهای Pagination
+</div>  
 
-این پارمترها نحوه نمایش اطلاعات بازیابی شده از مرکزتماس را مشخص می‌کنند،از آنجایی که این پارمتر‌ها در اکثر APIهای مربوط به جستجو موجود می‌باشند در اینجا یکبار بصورت جزئی مورد بررسی قرار می‌گیرند.
+## Pagination Parameters  
 
-لیست‌ APIهایی که از این پارامتر‌ها پشتیبانی می‌کنند
+These parameters define how the retrieved information from the call center is displayed. Since these parameters are available in most search-related APIs, they are discussed here in detail once.  
+
+### List of APIs Supporting These Parameters  
+
 
 ۱. **pbx/faxes/**
 
@@ -139,25 +130,20 @@ Content-Type: application/json
 
 ۱۲. **autodialer/reports/**
 
-### start
-مشخص می‌کند از کدام یک(مقدار عددی) از داده‌های بازیابی شده توسط مرکز تماس شروع به ارسال اطلاعات به‌سمت وب‌سرویس بکند.
+### **start**  
+Specifies which record (numeric value) from the data retrieved by the call center should begin to be sent to the web service.  
 
-### count
+### **count**  
+Determines how many records from the data retrieved by the call center should be sent to the web service.  
 
-چه تعداد از داده‌های بازیابی شده توسط مرکزتماس به سمت وب‌سرویس ارسال شود.
+### **sorting**  
+Indicates how the data should be sorted based on a specific column and whether the sorting should be ascending or descending (1 for ascending and -1 for descending).  
 
-### sorting
-
-مرتب سازی داده‌ها براساس کدام ستون و به ترتیب صعودی یا نزولی باشد(مقدار ۱ برابر با صعودی و مقدار ۱- برابر با نزولی می‌باشد).
-
-
-- **مثال)** بازیابی اطلاعات بخش گروه‌ها به نوحی که
-
-	۱. از ۴امین رکورد،اطلاعات بازیابی شده توسط مرکزتماس به سمت وب‌سرویس ارسال شوند.
-	
-	۲. بطور کلی ۲ رکورد از داده‌های بازیابی شده بازگردانده شود.
-	
-	۳. گزارش بازگشتی براساس تاریخ و بصورت صعودی مرتب باشد.
+### **Example**  
+Retrieving group information such that:  
+1. Data sent to the web service starts from the 4th record retrieved by the call center.  
+2. Only 2 records from the retrieved data are returned.  
+3. The returned report is sorted by date in ascending order.
 
 
 import Tabs from '@theme/Tabs';
@@ -166,8 +152,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه داده ارسالی وب‌سرویس از متد autodialer/groups/', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code Sended from  autodialer/groups/', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <TabItem value="usageCode">
@@ -180,7 +166,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary> نمونه کد با  Curl</summary>
+            <summary> Show Full Source Code  Curl</summary>
             <br/>
 
 ```shell
@@ -237,10 +223,10 @@ import TabItem from '@theme/TabItem';
   </Tabs>
 
 
-## پارامترهای ضروری و منطقی
+## **Required and Logical Parameters**  
 
-درآینده در جداول با ستونی به نام `پارمترهای ضروری[**]/منطقی[*]` مواجه می‌شویم که مقادیر آن مشخص کننده
+In the future, you may encounter tables with a column named **Required[**] / Logical[*]**, where the values specify the following:  
 
-۱. **پارامترهای ضروری**: حتما باید این مقادیر در درخواست وب‌سرویس به سمت سیموتل ارسال شوند و درغیر اینصورت سیموتل در پاسخ خطا برمی‌گرداند.
+1. **Required Parameters**: These parameters **must** be included in the web service request sent to Simotel. If they are not provided, Simotel will return an error in the response.  
 
-۲. **پارامترهای منطقی**: مقادیری که عدم وجودشان در درخواست باعث ایجاد خطا در سیستم نمی‌شود اما منطقی است که باتوجه به درخواست این مقادیر به سمت سیموتل فرستاده شوند.
+2. **Logical Parameters**: These are parameters whose absence in the request does not cause a system error. However, it is logical to include them in the request based on its context and purpose.  

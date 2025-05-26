@@ -1,10 +1,7 @@
----
-sidebar_label: "خط فرمان PBX"
-title: "خط فرمان PBX"
----
-
 # PBX CLI
 
-در این قسمت شما به شل PBX دسترسی دارید و مستقیما می‌توانید دستورات خود را در آن وارد کنید.یکی از قابلیت‌های کلیدی این بخش `Autocomplete` می‌باشد که در نوشتن دستور بسیار کمک می‌کند.
+In this section, you have access to the PBX shell and can directly enter your commands. One of the key features of this section is `Autocomplete`, which greatly assists in writing commands.
 
-برای مثال دستور `sip show peers` را در شل وارد کنید و خروجی آن داخلی‌های موجود در سیستم می‌باشند.
+## Example Command
+
+For instance, enter the command `sip show peers` in the shell, and its output will display the extensions available in the system.

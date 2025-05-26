@@ -1,31 +1,33 @@
 ---
-sidebar_label: "گزارش ارسال ایمیل"
-title: "گزارش ارسال ایمیل"
 ---
+# VoiceMailEmail
 
 
-# VoiceMail Email
-
-در حالتی که گزینه ارسال ایمیل برای صندوق صوتی فعال باشد، پس از ارسال موفق یا ناموفق ایمیل، رویداد VoiceMailEmail ارسال می‌گردد.
+When the email sending option for voicemail is enabled, the **VoiceMailEmail** event is triggered after the email is sent successfully or unsuccessfully.
 
 
-## پارامترهای رویداد
+
+## Event Parameters
+
 <div class="custom-table">
-|                 توضیحات                | داده های تعریف شده |       داده های نمونه       |    پارامترها  |
-|:--------------------------------------:|:------------------:|:--------------------------:|:-------------:|
-|                نام رویداد              |          -         |       VoiceMailEmail       |   event_name  |
-|           شناسه یکتا تولید شده         |          -         |  5fedc34a1b05af9835bbcfdc  |       id      |
-|             شماره صندوق‌صوتی            |          -         |            5555            |     number    |
-|               وضعیت ارسال              |          -         |           FAILED           |     state     |
-|                    -                   |          -         |         Hangup call        |    message    |
-|             آدرس دریافت کنند           |          -         |      sample@gmail.com      |    receiver   |
-|                    -                   |          -         |            True            |     active    |
-|            پیوست فایل صوتی             |          -         |            False           | attached_file |
-|                    -                   |          -         |              "             |      data     |
-|   تاریخ بارگذاری فایل صوتی در مرکزتماس |          -         | 2020-12-31 12:25:46.418832 |      date     |
+
+|                 Description                | Defined Data   |       Sample Data         |    Parameters   |
+|:-----------------------------------------:|:--------------:|:--------------------------:|:---------------:|
+|                Event Name                 |         -       |       VoiceMailEmail       |   **event_name** |
+|           Unique ID Generated             |         -       |  5fedc34a1b05af9835bbcfdc  |      **id**      |
+|             Voicemail Number              |         -       |            5555            |    **number**    |
+|               Send Status                 |         -       |           FAILED           |    **state**     |
+|                    -                      |         -       |         Hangup call        |   **message**    |
+|             Receiver Address              |         -       |      sample@gmail.com      |   **receiver**   |
+|                    -                      |         -       |            True            |    **active**    |
+|            Audio File Attachment          |         -       |            False           | **attached_file** |
+|                    -                      |         -       |              "             |      **data**    |
+|   Date of Audio File Upload to Call Center|         -       | 2020-12-31 12:25:46.418832 |      **date**    |
+
 </div>
 
-## نمونه خروجی رویداد VoiceMail
+
+## Sample Output of VoiceMailEmail Event
 
 
 ```shell

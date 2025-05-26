@@ -1,22 +1,17 @@
 ---
 
-sidebar_label: "جزییات گزارشات تماس انبوه"
-title: "جزییات گزارشات تماس انبوه"
 ---
-
-
 # Report Info
 
-این سرویس در بازیابی جزئیات مربوط به گزارشات تماس‌انبوه کاربرد دارد.
-
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|                   توضیحات                  | داده های تعریف شده |       داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:------------------------------------------:|:------------------:|:-------------------------:|:----------------------:|:---------:|
-| شناسه یکتای cdr_id که از [جستجو](/developers/api/Autodialer_API/report/report_search) بدست می‌آید |     true/false     | 602e50ce305bdd377168a8c16 |           **           |    _id    |
+| Description                                                      | Defined Data         | Sample Data             | Required[**]/Optional[*] | Parameters |
+|------------------------------------------------------------------|----------------------|-------------------------|--------------------------|------------|
+| Unique identifier `cdr_id` obtained from [search](/developers/Autodialer_API/report/report_search) | true/false           | 602e50ce305bdd377168a8c16 | **                       | _id        |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
+
 <!--  -->
 
 
@@ -26,8 +21,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -44,7 +39,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -84,7 +79,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 ```js
 	<html>
@@ -120,7 +115,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

@@ -1,9 +1,6 @@
 ---
-sidebar_label: "دانلود فایل صوتی صندوق صوتی"
-title: "دانلود فایل صوتی صندوق صوتی"
+
 ---
-
-
 # Inbox Download
 
-برای دانلود فایل‌های صوتی مربوط به صندوق‌صوتی پس از بدست آوردن نام فایل صوتی [Inbox Search](/developers/api/SimotelAPI/v4/voicemail/inbox_search)، از سرویس [Audio Download](/developers/api/SimotelAPI/v4/report/audio_download) استفاده کنید.
+To download audio files related to voicemail boxes after obtaining the audio file name from [Inbox Search](/developers/SimotelAPI/v4/voicemail/inbox_search), use the [Audio Download](/developers/SimotelAPI/v4/report/audio_download) service.

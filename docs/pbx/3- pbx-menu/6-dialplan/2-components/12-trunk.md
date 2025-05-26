@@ -1,39 +1,29 @@
----
-sidebar_label: "Trunk"
----
-
-
 # Trunk
 
-## کاربرد
+## Purpose
 
-برای ایجاد تماس روی ترانک استفاده می‌‌گردد، به این نحو که شماره ورودی به کامپوننت ترانک را روی ترانک انتخاب شده در کامپوننت شماره‌‌گیری می‌‌کند.
+The **Trunk** component is used to route a call over a specific trunk. The incoming number is dialed through the selected trunk in the dialing component.
 
+## Parameters
 
+- **Trunk**: The trunk selected for routing the call through. This defines which external phone line or connection will be used.
+  
+- **Timeout (sec)**: The duration (in seconds) that the system waits for the call to establish before timing out.
 
+- **Skip**: Specifies the number of digits that should be removed from the beginning of the entered number. The modified number is then treated as the destination number.
 
-## پارامترها کامپوننت
+- **Prefix**: Specifies the number to be added at the beginning of the entered number before it is dialed.
 
-- **Trunk**: انتخاب ترانک برای انتقال تماس از طریق آن است.
+- **Call Limit (sec)**: The maximum duration (in seconds) allowed for the call.
 
-- **Timeout (sec)**: مدت زمانی است که تماس منتظر برقراری ارتباط می‌‌ماند (برحسب ثانیه).
+- **Permitted Queues**: Specifies which queues are allowed to use this trunk. If no queue is selected, all queues are permitted.
 
-- **Skip**: تعیین تعداد رقم‌‌هایی است که باید از ابتدای شماره واردشده حذف گردد. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
+- **Permitted Extensions**: Specifies which extensions are allowed to use this trunk. If no extension is selected, all extensions are allowed to use it.
 
-- **Prefix**: افزودن عدد درج‌شده در این گزینه قبل از شماره واردشده است. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌شود.
+- **Options**: Additional settings for configuring the call routing and behavior.
 
-- **Call Limit (sec)**: محدودیت زمانی مكالمه است.
+## Outputs
 
-- **Permitted Queues**: صف‌‌هایی که مجاز به استفاده از این ترانک هستند. اگر صفی انتخاب نگردد تمام صف‌‌ها مجاز به استفاده‌اند.
+- **S (Success)**: Indicates that the call was successfully routed and the call terminates successfully without further steps.
 
-- **Permitted Extensions**: داخلی‌‌هایی که مجاز به استفاده از این ترانک هستند. اگر داخلی انتخاب نگردد تمام داخلی‌‌ها مجاز به استفاده هستند.
-
-- **Options**: تنظیمات تماس است.
-
-
-
-## خروجی‌ها
-
-- **S (Success)**: درصورتی‌‌که تماس موفق باشد. تماس خاتمه می‌‌یابد و مرحله بعدی ندارد.
-
-- **F (Fail)**: درصورتی‌‌که تماس موفق نباشد، یعنی مقصد به هر دلیلی پاسخ نداده باشد.
+- **F (Fail)**: Indicates that the call attempt failed, such as when the destination does not answer for any reason.

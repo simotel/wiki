@@ -1,39 +1,31 @@
 ---
-sidebar_label: "به روز رسانی سیموتل"
-title: "به روز رسانی سیموتل"
+
 ---
 
-# آپدیت simotel
+# Simotel Update
 
-برای آپدیت می‌توان از مسیر `Settings > Maintenance > update` اقدام کرد. در تب update قسمت مختلفی وجود دارد که توضیحات آن در **[این قسمت](/pbx/pbx-menu/maintenance/settings/update)** داده شده است.
+To update, you can navigate to `Settings > Maintenance > update`. In the update tab, there are various sections explained in **[this section](/pbx/pbx-menu/maintenance/settings/update)**.
 
+## Important Considerations Before Updating
 
-**قبل از آپدیت کردن مواردی وجود دارد که حتما باید درنظر داشته باشید که شامل:**
+Before updating, please keep in mind the following:
 
-- حتما یک فایل پشتیبان pbx از مرکز تماس تهیه فرمایید و در مکانی امن ذخیره فرمایید. برای کسب اطلاعات بیشتر به **[این قسمت](/pbx/pbx-menu/control-panel/backup)** مراجعه فرمایید.
+- **Backup File**: Make sure to create a PBX backup file from the Call Center and store it in a safe place. For more information, refer to **[this section](/pbx/pbx-menu/control-panel/backup)**.
 
-- سرور دسترسی به اینترنت داشته باشد.
+- **Internet Access**: The server must have internet access.
 
-
-:::danger نکته مهم
-باتوجه به اینکه در نسخه ۶.۲ تغییراتی اساسی در دایل‌پلن ایجاد شده پس از آپدیت امکان بازگشت به ورژن قبلی با استفاده از Rollback وجود ندارد و نیاز به تغییر در ساختار پایگاه‌داده می‌باشد. قبل از آپدیت به ورژن ۶.۲ حتما فایل پشتیبان pbx از مرکزتماس تهیه کرده‌ باشید تا درصورت نیاز امکان بازگشت به نسخه قبلی وجود داشته باشد.
+:::danger Important Note
+Considering that significant changes have been made to the dial plan in version 6.2, after the update, it will not be possible to revert to the previous version using Rollback, and changes to the database structure will be required. Before updating to version 6.2, ensure you have created a PBX backup from the Call Center so that you can revert to the previous version if necessary.
 :::
- 
- 
-## گرفتن بکاپ
+
+## Creating a Backup
 
 ![create_backup](/img/simotel/update/create_backup.JPG)
 
-
-
-
-## دانلود بکاپ
+## Downloading a Backup
 
 ![download_backup](/img/simotel/update/download_backup.JPG)
 
-
-
-
-## آپدیت سیموتل
+## Updating Simotel
 
 ![simotel_update](/img/simotel/update/update.JPG)

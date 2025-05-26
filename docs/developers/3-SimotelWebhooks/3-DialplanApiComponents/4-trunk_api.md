@@ -1,37 +1,33 @@
 ---
 
-sidebar_label: "معرفی Trunk API"
-title: "معرفی Trunk API"
 ---
-
-
 # Trunk API
 
-از این کامپوننت برای ایجاد تماس بر روی ترانک استفاده‌ می‌شود. عملکرد آن مشابه Trunk است، با این تفاوت که ازطریق وب‌‌سرویس، نام ترانک و شماره داخلی مقصد را دریافت و
-فقط تماس را برای آن شماره ایجاد‌ می‌نماید.یکی از کاربردهای رایج این کامپوننت ایجاد محدودیت زمانی (call_limit) برروی وب‌سرویس تماس‌دوطرفه می‌باشد.
+This component is used to initiate a call on a trunk. Its functionality is similar to the **Trunk** component, with the difference that it receives the trunk name and the destination extension number via a web service and then initiates the call to that specific number. One common use case for this component is to create a time limit (call_limit) on a two-way call web service.
 
-## پارامترها کامپوننت
+## Component Parameters
 
-- **API Address**: آدرس وب‌‌سرویس.
-- **Timeout (sec)**: مدت زمانی‌که تماس برای پاسخگویی و برقراری ارتباط‌ منتظر می‌ماند. (برحسب ثانیه).
-- **Options**: تنظیمات تماس.
- 
-## خروجی‌های کامپوننت
+- **API Address**: The web service URL.
+- **Timeout (sec)**: The time the call waits for a response and connection to be established (in seconds).
+- **Options**: Call settings.
 
-- **S (Success)**: درصورتی‌‌که تماس موفق باشد. تماس از این قسمت خارج می‌شود(می‌توان در این مرحله نظرسنجی انجام داد).
+## Component Outputs
 
-- **F (Fail)**: درصورتی‌‌که تماس موفق نباشد، یعنی مقصد به هر دلیلی پاسخ ندهد تماس از این قسمت خارج می‌شود (می‌توان در این مرحله آوای مشترک در دسترس نمی‌باشد را پخش کرد).
+- **S (Success)**: If the call is successful. The call exits from this part (this is where surveys can be conducted).
+  
+- **F (Fail)**: If the call fails, meaning the destination does not respond for any reason. The call exits from this part (this is where a "user unavailable" message can be played).
 
-## قالب وب‌‌سرویس
-با‌توجه به مقادیر منوی تنظیمات مربوط به `API Method & API Version`، آدرس وب‌سرویس فراخوانی شده و داده‌های زیر همراه با آن ارسال می‌گردند.
+## Web Service Template
 
-- **src**: شماره تماس‌‌گیرنده (Caller یا CID).
-- **dst**: شماره واردشده (Callee یا DID یا Exten).
-- **data**: داده‌‌ای که تماس‌‌گیرنده در مسیر تماس وارد کرده است (مثلاً داده‌‌ای که در IVR وارد کرده است).
-- **unique_id**: شناسه یکتای تماس.
-- **app_name**: نام کامپوننت جاری.
+Based on the values in the `API Method & API Version` settings menu, the web service URL is called and the following data is sent along with it:
 
-و در جواب، خروجی زیر را به‌صورت json دریافت‌ می‌کند.
+- **src**: The caller's number (Caller or CID).
+- **dst**: The entered number (Callee or DID or Exten).
+- **data**: Data entered by the caller during the call process (e.g., data entered in the IVR).
+- **unique_id**: The unique call identifier.
+- **app_name**: The name of the current component.
+
+And in response, the following output is received in **JSON** format.
 
 ```shell
 {
@@ -43,4 +39,4 @@ title: "معرفی Trunk API"
 }
 ```
 
-**در نهایت تماس را برای مقصد (در اینجا 09151412541) با محدودیت زمانی مکالمه 300 ثانیه ایجاد‌ می‌کند.**
+Finally, it initiates the call to the destination (in this case, 09151412541) with a call time limit of 300 seconds.

@@ -1,33 +1,29 @@
 ---
 
-sidebar_label: "افزودن کمپین"
-title: "افزودن کمپین"
 ---
-
-
 # Campaign Add
 
-از این سرویس برای افزودن کمپین استفاده می‌شود.
+This service is used to add a campaign.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|                   توضیحات                  | داده های تعریف شده |                     داده های نمونه                    | پارامترهای ضروری[**]/منطقی[*] |     پارامترها     |
-|:------------------------------------------:|:------------------:|:-----------------------------------------------------:|:-----------------------------:|:-----------------:|
-|                  نام کمپین                 |          -         |                          test                         |               **              |        name       |
-|   شناسه‌یکتا ترانک که از جستجو بدست می‌آید   |          -         |                5f6c5b56c92de0068f32e592               |               **              |  trunk_manager_id |
-| مقدار context در کامپوننت autodialer route |          -         |                          auto                         |                               | interface_context |
-|   مقدار text در کامپوننت autodialer route  |          -         |                         text1                         |                               |   interface_text  |
-|                شماره مخاطبین               |          -         |                      09212396500                      |               *               |      numbers      |
-|    شناسه‌یکتا گروه که از جستجو بدست می‌آید   |          -         | "5e96c8c2c92de0468920657e" "5e96d40cc92de025690d0a61" |               *               |       groups      |
-|           فاصله زمانی بین هر تلاش          |          -         |                          600                          |               *               |    try_interval   |
-|                 تعداد تکرار                |          -         |                           1                           |               *               |        try        |
-|               زمان شروع کمپین              |          -         |                    2021-02-19 15:17                   |               *               |       start       |
-|              زمان پایان کمپین              |          -         |                    2021-02-23 15:17                   |               *               |        end        |
-|  شناسه‌یکتا فایل‌صوتی که از جستجو بدست می‌آید |          -         |                5e5b629ec92de075df7af457               |               *               |    announcement   |
-|                   توضیحات                  |          -         |                           -                           |                               |    description    |
+|                   Description                  | Defined Data   | Example Data                                          | Required[**]/Optional[*] | Parameters         |
+|:--------------------------------------------:|:--------------:|:-----------------------------------------------------:|:------------------------:|:------------------:|
+| Campaign Name                                | -              | test                                                  | **                       | name               |
+| Unique Trunk ID obtained from search        | -              | 5f6c5b56c92de0068f32e592                             | **                       | trunk_manager_id   |
+| Context value in autodialer component route | -              | auto                                                 |                          | interface_context  |
+| Text value in autodialer component route    | -              | text1                                                |                          | interface_text     |
+| Phone Numbers                                | -              | 09212396500                                          | *                        | numbers            |
+| Unique Group ID obtained from search        | -              | "5e96c8c2c92de0468920657e", "5e96d40cc92de025690d0a61" | *                        | groups             |
+| Time interval between each attempt          | -              | 600                                                   | *                        | try_interval       |
+| Number of retries                            | -              | 1                                                     | *                        | try                |
+| Campaign Start Time                          | -              | 2021-02-19 15:17                                      | *                        | start              |
+| Campaign End Time                            | -              | 2021-02-23 15:17                                      | *                        | end                |
+| Unique Audio File ID obtained from search   | -              | 5e5b629ec92de075df7af457                             | *                        | announcement       |
+| Description                                  | -              | -                                                     |                          | description        |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 <!--  -->
 
 
@@ -37,8 +33,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -55,7 +51,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 ```php
 	<?php
@@ -97,7 +93,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js	
@@ -152,7 +148,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

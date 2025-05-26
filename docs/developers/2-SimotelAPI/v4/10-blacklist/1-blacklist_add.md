@@ -1,24 +1,21 @@
 ---
-sidebar_label: "افزودن شماره به لیست سیاه"
-title: "افزودن شماره به لیست سیاه"
----
 
+---
 # BlackList Add
 
-از این سرویس برای افزودن شماره به لیست سیاه استفاده می‌شود.
+This service is used to add a number to the blacklist.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|   توضیحات   | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:-----------:|:------------------:|:--------------:|:----------------------:|:---------:|
-| شماره مدنظر |          -         |       557      |           **           |   number  |
-|   توضیحات   |          -         |        -       |                       |  comment  |
-
+|   Description   | Defined Data | Sample Data | Required[*]/Logical[*] | Parameters |
+|:--------------:|:------------:|:-----------:|:----------------------:|:----------:|
+| Target Number  |     -        |     557     |           **           |   number   |
+| Description    |     -        |     -       |                        |  comment   |
 </div>
 
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -29,8 +26,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -47,7 +44,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 		```php
@@ -93,7 +90,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
  ```js
@@ -135,7 +132,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

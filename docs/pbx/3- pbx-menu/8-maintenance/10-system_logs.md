@@ -1,26 +1,19 @@
----
-sidebar_label: "سابقه فعالیت سیستم"
-title: "سابقه فعالیت سیستم"
----
-
-
 # System Logs
 
-با استفاده از این بخش می‌توان تمامی لاگ‌های مربوط به سرویس‌های مرکزتماس را بصورت آنلاین مشاهده کرد و دیگر نیاز به اتصال به shell لینوکس نمی‌باشد،در این بخش امکان ذخیره لاگ‌ها و ارائه در قالب یک فایل نیز فراهم شده است.پس از مشخص کردن پارامتر‌ها با کلیک بر روی دکمه **Start** سیستم شروع به نمایش لاگ‌ها می‌کند.
+This section allows you to view all logs related to Call Center services online, eliminating the need to connect to the Linux shell. You can also save logs and provide them in a file format. After specifying the parameters, clicking the **Start** button will begin displaying the logs.
 
-## پارامترهای SimoTel Logs
+## Simotel Logs Parameters
 
-- **Channel**: در این بخش می‌تواند سرویس مورد نظر خود را انتخاب کنید.
+- **Channel**: Select the desired service in this section.
 
-- **Grep**: در صورتی که نیاز به انجام جستجو و پیدا کردن کلید واژه خاصی در لاگ‌ها دارید، کلیدواژه خود را در این قسمت قرار دهید.
+- **Grep**: If you need to search for a specific keyword in the logs, enter your keyword here.
 
-- **Level**: سطح نمایش گزارشات در این قسمت مشخص می‌شود، از ALL به سمت NOTSET مقدار لاگ‌های نمایش داده شد کم می‌شود.
+- **Level**: This parameter specifies the level of log reports displayed, ranging from ALL to NOTSET, reducing the amount of displayed logs.
 
-- **Start**: این دکمه وظیفه شروع لاگ‌گیری را برعهده دارد.
+- **Start**: This button initiates the log capturing process.
 
-- **Clear**: با استفاده از این دکمه می‌توان صفحه کنسول را پاک کرد و لاگ‌ها از ابتدا نمایش داده شوند.
+- **Clear**: This button clears the console screen and resets the log display from the beginning.
 
-- **Save**: برای ذخیره گزارشات لاگ از این بخش استفاد می‌شود.
+- **Save**: Use this option to save the log reports.
 
-- **Archive**: اطلاعات ذخیره شده لاگ‌ها به تفکیک سرویس‌ها در این قسمت نمایش داده می‌شوند.
-
+- **Archive**: Stored log information is displayed here, categorized by services.

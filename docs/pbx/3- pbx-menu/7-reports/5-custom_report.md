@@ -1,76 +1,56 @@
----
-sidebar_label: "گزارشات کاربری"
-title: "گزارشات کاربری"
----
+# User Reports
 
-# گزارشات کاربری
+Although advanced reporting allows for the generation of any type of report, some reports may require various filter settings or may be derived from a combination of several reports. Therefore, user reporting aims to create simpler, practical reports through various applications. Below are the types of these reports.
 
-با وجود آنکه در بخش گزارش پیشرفته امکان به‌‌دست آوردن هر نوع گزارشی وجود دارد، ممکن است برخی از گزارش‌‌ها نیاز به تنظیم فیلتر‌‌های مختلفی داشته باشند و یا از ترکیب چند گزارش به‌‌دست آمده باشند، لذا در گزارش‌‌گیری کاربری با ایجاد گزارش‌‌های کاربردی مختلف سعی شده است گزارش‌‌های کاربردی ساده‌تری ایجاد گردد. در ادامه با این گزارشات آشنا می‌‌شوید.
+## Types of Reports
 
+1. **Agents**: Report on the performance and activity of operators in the queue.
 
-## انواع گزارشات
+2. **Outgoing Calls**: Statistical report of outgoing internal calls.
 
-**۱. Agents (اپراتورها)**: گزارش عملکرد و فعالیت اپراتور‌‌ها در صف.
+3. **Incoming Calls**: Statistical report of incoming internal calls.
 
-**۲. Outgoing Calls (تماس‌‌های خروجی)**: گزارش آماری از خروجی داخلی‌‌ها.
+4. **Total Calls**: Statistical report of all incoming, outgoing, and internal calls.
 
-**۳. Incoming Calls (تماس‌‌های ورودی)**: گزارش آماری از ورودی داخلی‌‌ها.
+5. **Daily Poll**: Statistical report of survey scores segmented by days of the week.
 
-**۴. Total Calls (تعداد کل تماس‌ها)**: گزارش آماری از تمام تماس‌‌های ورودی، خروجی و داخلی.
+6. **Queue Effective Calls**: This report assesses the impact of calls entering the queue by categorizing them into three call durations: short, normal, and long. Calls are divided based on two times, MinTalk and MaxTalk, and the numbers falling within these ranges are displayed statistically and graphically.
 
-**۵. Daily Poll (امتیازدهی روزانه)**: گزارش آماری از امتیاز‌‌های نظرسنجی به تفکیک روزهای هفته.
+7. **Direct Effective Calls**: Similar to the "Queue Effective Calls" report, but it applies to system calls.
 
-**۶. Queue Effective Calls (تماس‌‌های ورودی مؤثر صف)**: این گزارش برای به‌‌دست آوردن تأثیر تماس‌‌های واردشده به صف با دسته‌‌بندی آنان به سه بازه تماس کوتاه، تماس نرمال و تماس بلندمدت است. تماس‌‌ها بر اساس دو زمان MinTalk و Max Talk به سه بازه تماس کوتاه، نرمال و بلندمدت تقسیم می‌شوند، سپس شماره‌‌هایی که در این محدوده‌‌ها قرار می‌‌گیرند به‌‌صورت آماری و نموداری نمایش داده می‌شوند.
+8. **Queue Daily Metrics**: This report provides a set of metrics related to queue measurement, allowing users to monitor these metrics live through the dashboard.
 
-**۷. Direct Effective Calls (تماس‌‌های ورودی مؤثر مستقیم)**: این گزارش همانند گزارش "تماس‌‌های ورودی مؤثر صف" است با این تفاوت که روی تماس‌‌های سیستمی اعمال می‌‌گردد.
+9. **Area Code Calls**: A statistical report segmented by area codes and incoming system calls.
 
-**۸. Queue Daily Metrics(شاخص‌های سنجش صف)**: در این گزارش‌ مجموعه‌ای از شاخص‌های مربوط به سنجش صف در اختیار کاربر قرار می‌گیرد،با استفاده از بخش داشبورد امکان بررسی این شاخص‌ها بصورت زنده می‌باشد.
+10. **Joint Calls in Two Periods**: This report shows common calls between two periods, allowing for a comparison between new and repeated calls. A new call occurs only in the second period, while a repeated call occurs in both periods. This report helps to extract numbers that have previously contacted your system and are now reaching out again for any reason (e.g., unmet needs).
 
+11. **Repetitive Calls (Who)**: Statistical report based on the frequency of incoming calls. This report displays a maximum of 100 numbers.
 
-**۹. Area Code Calls (پیش‌‌شماره تماس ها)**: گزارش آماری تفکیک‌شده بر اساس پیش‌‌شماره و تماس‌‌های ورودی سیستم است.
+12. **Repetitive Calls (Counts)**: Statistical report of call repetitions. The goal is to obtain a continuous distribution of call repetitions, such as how many calls occurred once, twice, three times, etc.
 
-**۱۰. Joint calls in two periods (تماس‌‌های مشترک بین دو بازه)**: این گزارش تماس‌‌های مشترک بین دو بازه را نشان می‌‌دهد. به عبارت دیگر از این گزارش برای مقایسه بین تماس‌‌های جدید و تکراری استفاده می‌‌گردد. تماس جدید تماسی است که تنها در بازه دوم اتفاق می‌افتد درحالیكه تماس تکراری به تماسی گفته می‌شود كه در هر دو بازه تكرار می‌شود. این گزارش این امکان را به شما می‌‌دهد تا بتوانید شماره‌‌هایی را که در گذشته یکبار با سیستم شما تماس گرفته‌‌اند و اكنون به هر دلیلی (مثلاً برآورده نشدن نیازشان) مجدداً با سیستم شما تماس گرفته‌‌اند را استخراج کنید.
+13. **Blacklist Calls**: Report of calls that have been placed on the blacklist.
 
-**۱۱. Repetitive Calls (Who) (تماس‌‌های تکراری (شماره))**: گزارش آماری بر اساس تکرار تماس‌‌های ورودی است. در این گزارش حداکثر 100 شماره نمایش داده می‌شوند.
+14. **SPIT Calls**: Report of calls that have been subjected to spam conditions.
 
-**۱۲. Repetitive Calls (Counts) (تماس‌‌های تکراری (تعداد))**: گزارش آماری از تکرار تماس‌‌هاست. هدف از این گزارش به‌‌دست آوردن توزیع پیوسته تکرار تماس‌‌هاست، برای‌مثال، چند تماس یک بار، چند تماس دو بار، چند تماس سه بار و غیره با سیستم تماس گرفته‌‌اند.
+15. **Entry Point Calls**: Statistical report of incoming calls segmented by entry points (trunks). This report allows for comparison of call volumes based on trunks.
 
-**۱۳. Blacklist Calls (تماس‌‌های لیست سیاه)**: گزارش تماس‌‌هایی است که در لیست سیاه قرار داشته‌‌اند.
+16. **Outgoing Point Calls**: Statistical report of outgoing calls segmented by exit points (trunks). This report allows for comparison of call volumes based on trunks.
 
-**۱۴. SPIT Calls (تماس‌‌های بهمنی)**: گزارش تماس‌‌هایی است که در شرایط تماس بهمنی قرار گرفته و تماس بهمنی شده‌‌اند.
+17. **Incoming Calls by DID**: Statistical report of incoming calls segmented by destination number.
 
-**۱۵. Entry Point Calls (تماس‌‌های درگاه ورودی)**: گزارش آماری از تماس‌‌های ورودی به تفکیک درگاه (ترانک)‌‌های ورودی است. در این گزارش امکان مقایسه حجم تماس‌‌ها و ... بر اساس ترانک‌‌ها وجود دارد.
+## Report Filters
 
-**۱۶. Outgoing Point Calls (تماس‌‌های درگاه خروجی)**: گزارش آماری از تماس‌‌های خروجی به تفکیک درگاه (ترانک)‌‌های خروجی است. در این گزارش امکان مقایسه حجم تماس‌‌ها و غیره به تفکیک ترانک‌‌ها وجود دارد.
+This section provides general filters (from date, to date, and report type). A set of specific filters for reports is also available. To view, click on **More Options**. These filters include:
 
-**۱۷.  Incoming Calls by DID (تماس‌های ورودی براساس DID)** : گزارشی آماری از تماس‌های ورودی به تفکیک شماره مقصد ارائه می‌دهد.
-
-
-## فیلتر‌های گزارشات 
-
-دراین بخش فیلترهایی عمومی(از تاریخ،تا تاریخ و نوع گزارش) ارائه شده‌اند. مجموعه‌ای از فیلتر‌های اختصاصی نیز برای گزارشات ارائه شده است.برای مشاهده برروی **More Options** کلیک نمایید، این فیلتر‌ها شامل: 
-
-۱. **Min Talk (sec)**: حداقل مدت مکالمه.
-
-۲. **Max Talk (sec)**:حداکثر مدت مکالکه.
-
-۳. **Min Wait (sec)**: حداقل مدت انتظار.
-
-۴. **Max Wait (sec)**:حداکثر مدت انتظار.
-
-۵. **Exten**: محدود کردن گزارش یه داخلی‌های.
-
-۶. **Group**:محدود کردن گزارش به گروه.
-
-۷. **Queue**:محدود کردن گزارش به صف.
-
-۸. **Label**: برجسب کامپوننت‌های نظرسنجی.
-
-۹. **Abandoned Threshold**: آستانه زمانی که تماس به عنوان رهاشده در نظر گرفته شود(گزارشات شاخص‌های سنجش صف).
-
-۱۰. **Answered within**:حداکثر محدوده زمان پاسخگویی مطلوب(گزارشات شاخص‌های سنجش صف).
-
-۱۱. **Pre-Number**: محدود کردن گزارش به پیش‌شماره‌ها(گزارشات پیش‌‌شماره تماس ها).
-
-۱۲. **Far From (Date)**: انتخاب بازه دوم(Far From) برای جستجوی موارد مشابه در بازه اولیه(From،To)،(گزارش تماس‌‌های مشترک بین دو بازه).
-
+1. **Min Talk (sec)**: Minimum conversation duration.
+2. **Max Talk (sec)**: Maximum conversation duration.
+3. **Min Wait (sec)**: Minimum wait duration.
+4. **Max Wait (sec)**: Maximum wait duration.
+5. **Exten**: Restrict report to specific extensions.
+6. **Group**: Restrict report to a group.
+7. **Queue**: Restrict report to a queue.
+8. **Label**: Tag for survey components.
+9. **Abandoned Threshold**: Time threshold at which a call is considered abandoned (queue metrics reports).
+10. **Answered within**: Maximum acceptable response time (queue metrics reports).
+11. **Pre-Number**: Restrict report to area codes (area code calls reports).
+12. **Far From (Date)**: Select the second range (Far From) for searching similar items in the initial range (From, To) (joint calls report).

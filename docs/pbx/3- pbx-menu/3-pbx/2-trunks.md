@@ -1,125 +1,113 @@
----
-sidebar_label: "ترانک ها"
-title: "ترانک ها"
----
+# Trunks
 
-# ترانک‌ها
+A trunk is a communication path between the city gateway lines, E1, SIP trunks, or another server through which calls enter and exit. In this section, you can view the existing trunks in the Call Center, as well as create, delete, or edit a trunk. Simotel supports three protocols for trunks: SIP, IAX2, and DAHDI.
 
-ترانک، مسیر ارتباطی میان گیت‌وی‌‌های خطوط شهری،E1،SipTrunk‌‌ها و یا سرور دیگری است که تماس‌ها از آن وارد و خارج می‌‌شوند. در این قسمت می‌‌توان علاوه بر مشاهده ترانک‌‌های موجود در مرکز تماس، ترانکی ایجاد،حذف و یا ویرایش کرد. سیموتل در ترانک‌ها، از سه پروتکل SIP، IAX2 و DAHDI پشتیبانی می‌کند.
+## SIP Trunk Parameters
 
-## پارامترهای ترانک SIP
+- **Name**: The display name of the trunk.
 
-- **Name**: نام نمایشی ترانک.
+- **Register String**: Used for registering specific trunks (e.g., if a sip-user from another center needs to connect to the server, this user must be registered with a specific algorithm so that both parties are aware of each other's status).
 
-- **Register String**: برای ریجسترکردن ترانک‌‌های خاص بکار می‌رود. (برای‌‌مثال، اگر یک sip-user از یک مرکز دیگر، نیاز به اتصال به سرور را داشته باشد، این کاربر با الگوریتم خاصی باید رجیستر شود تا هر دو طرف از وضعیت یکدیگر اطلاع داشته باشند).
+- **Active**: Activate or deactivate the trunk.
 
-- **Active**: فعال یا غیرفعال‌‌کردن ترانک.
+- **Deny**: Create an access restriction from an IP range.
 
-- **Deny**: ایجاد عدم‌دسترسی از یک محدوده IP.
+- **Permit**: Grant access only from a specific IP range.
 
-- **Permit**: ایجاد دسترسی فقط از یک محدوده IP.
+- **Dtmf Mode**: Type of DTMF sent.
 
-- **Dtmf Mode**: نوع Dtmf ارسالی.
+- **Can Re-Invite**: Enable direct communication from the internal origin to any destination without passing through the server (if set to "yes").
 
-- **Can Re-Invite**: ایجاد ارتباط مستقیم از مبدأ داخلی به هر مقصدی بدون عبور از سرور (درصورت yes بودن).
+- **Direct Media**: Exchange media (audio and video) without passing through the server (if set to "yes").
 
-- **Direct Media**: مبادله Media (صوت و تصویر) بدون عبور از سرور (درصورت yes بودن).
+- **Context**: The context of the trunk.
 
-- **Context**: کانتکست ترانک.
+- **Host**: By default, this menu is dynamic, but since the trunk should only register from a specific IP, you should enter the destination IP here.
 
-- **Host**: این منو به‌‌صورت پیش‌‌فرض dynamic است اما چون ترانک فقط باید از یک IP خاص ریجستر شود، این IP را اینجا وارد می‌‌کنیم(آدرس مقصد ترانک).
+- **Type**: Select the internal type based on output only (User), input only (Peer), or both input and output (Friend).
 
-- **Type**: انتخاب نوع داخلی فقط براساس خروجی (User)، فقط ورودی (Peer)، هم ورودی و هم خروجی (Friend).
+- **NAT**: (Refer to "VoIP with Asterisk Softswitch Guide").
 
-- **NAT**: (مراجعه شود به ”مرجع آموزش ویپ با سافت سوئیچ استریسک“).
+- **Port**: The communication port.
 
-- **Port**: پورت برقراری ارتباط.
+- **Qualify**: Check for connection status (qualify = yes|no). If "yes," the PBX sends a SIP OPTIONS command every 2 seconds to check if the device is still online. This feature can also be used to maintain a UDP session for a device behind a network address translation (NAT), and if nat=yes, the connection is checked behind NAT, and the connection is maintained.
 
-- **Qualify**: بررسی برقراری ارتباط (qualify = yes| no) اگر yes باشد. PBX هر۲ ثانیه یکبار به‌‌طور منظم دستور SIP OPTIONS را برای بررسی اینکه دستگاه هنوز آنلاین است یا نه، ارسال می‌‌کند. این ویژگی همچنین می‌‌تواند برای نگه‌‌داشتن یک جلسه UDP برای دستگاهی که در پشت یک مترجم آدرس شبکه (NAT) قرار دارد، استفاده شود و اگر nat=yes باشد این ارتباط در پشت nat هم چک می‌‌شود و ارتباط نیز حفظ می‌‌شود.
+- **Insecure**: No authentication required.
 
-- **Insecure**: عدم لزوم احراز هویت.
+    - **port**: Ignore the port number from which the request originated, allowing the peer to match the IP address without the need to match the port number.
 
-	- **port**: نادیده‌گرفتن شماره پورتی که درخواست از آن آمده است، در این حالت اجازه تطابق peer با ip address بدون تطبیق شماره پورت داده می‌‌شود.
+    - **invite**: No authentication required for incoming invite.
 
-	- **invite**: عدم نیاز به احراز هویت در invite ورودی.
+    - **port&invite**: Both of the above are applied simultaneously.
 
-	- **port&invite**: هردو مورد بالا هم زمان اعمال می‌‌شوند.
+- **Disallow**: The codecs entered here will be disabled, and if "all" is entered, all codecs will be disabled.
 
+- **Allow**: Allow codecs in order of priority (before allowing other codecs, use disallow = all).
 
-- **Disallow**: کدک‌‌هایی که در اینجا وارد می‌‌شود، غیرفعال می‌گردند و اگر all وارد شود تمام کدک‌‌ها غیرفعال می‌‌گردند.
+- **More Option**: If you want to use a parameter that is not listed above, enter it and its value here. If you need to add multiple parameters, each should be on a separate line.
 
-- **Allow**: اجازه دادن به کدک‌‌ها به ترتیب اولویت (قبل از اجازه دادن به کدک‌‌های دیگر ابتدا از disallow = all استفاده کنید).
+- **Description**: Description of the trunk.
 
-- **More Option**: اگر در تعریف ترانک بخواهید از پارامتری استفاده کنید که در لیست بالا به آن اشاره نشده باشد، آن پارامتر و مقدار آن را در این قسمت وارد کنید. اگر می‌خواهید چند پارامتر را در این بخش وارد کنید باید هر کدام در یک خط باشند.
+## IAX2 Trunk Parameters
 
-- **Description**: توضیحاتی درمورد ترانک.
-
-## پارامترهای ترانک IAX2
-
-:::info اطلاعات
-اکثر پارامترهای IAX2 مشابه SIP است.
-
+:::info Information
+Most IAX2 parameters are similar to SIP.
 :::
 
-- **Name**: نام نمایشی ترانک.
+- **Name**: The display name of the trunk.
 
-- **Register String**: برای ریجسترکردن ترانک‌‌های خاص بکار می‌رود (برای‌مثال، اگر یک IAX2-user از یک مرکز دیگر، نیاز به اتصال به سرور داشته باشد، با الگوریتم خاصی این کاربر باید رجیستر گردد تا هر دو طرف از وضعیت یکدیگر اطلاع داشته باشند).
+- **Register String**: Used for registering specific trunks (e.g., if an IAX2 user from another center needs to connect to the server, this user must be registered with a specific algorithm so that both parties are aware of each other's status).
 
-- **Active**: فعال یا غیرفعال‌‌کردن ترانک.
+- **Active**: Activate or deactivate the trunk.
 
-- **Deny**: ایجاد عدم‌دسترسی از یک محدوده IP.
+- **Deny**: Create an access restriction from an IP range.
 
-- **Permit**: ایجاد دسترسی فقط از یک محدوده IP.
+- **Permit**: Grant access only from a specific IP range.
 
-- **DTMF Mode**: نوع DTMF ارسالی.
+- **DTMF Mode**: Type of DTMF sent.
 
-- **Context**: کانتکست ترانک.
+- **Context**: The context of the trunk.
 
-- **Host**: این منو به‌‌صورت پیش‌‌فرض dynamic است اما درصورتی‌‌که داخلی فقط باید از یک IP خاص ریجستر شود، این IP را اینجا وارد می‌‌کنیم.
+- **Host**: By default, this menu is dynamic, but if the trunk should only register from a specific IP, you should enter the destination IP here.
 
-- **Type**: انتخاب نوع داخلی فقط براساس خروجی (User)، فقط ورودی (Peer)، هم ورودی و هم خروجی (Friend).
+- **Type**: Select the internal type based on output only (User), input only (Peer), or both input and output (Friend).
 
-- **Port**: پورت برقراری ارتباط.
+- **Port**: The communication port.
 
-- **Qualify**: بررسی برقراری ارتباط (qualify = yes| no) اگر yes باشد. PBX هر۲ ثانیه یکبار به‌‌طور منظم دستور SIP OPTIONS را برای بررسی اینکه دستگاه هنوز آنلاین است یا نه، ارسال می‌‌کند. این ویژگی همچنین می‌‌تواند برای نگه‌‌داشتن یک جلسه UDP برای دستگاهی که در پشت یک مترجم آدرس شبکه (NAT) قرار دارد، استفاده شود و اگر nat=yes باشد این ارتباط در پشت nat هم چک می‌‌شود و ارتباط نیز حفظ می‌‌شود.
+- **Qualify**: Check for connection status (qualify = yes|no). If "yes," the PBX sends a SIP OPTIONS command every 2 seconds to check if the device is still online. This feature can also be used to maintain a UDP session for a device behind a network address translation (NAT), and if nat=yes, the connection is checked behind NAT, and the connection is maintained.
 
-- **Disallow**: کدک‌‌هایی که در اینجا وارد شوند، غیرفعال می‌‌شوند و اگر all وارد شود تمام کدک‌‌ها غیرفعال می‌‌گردند.
+- **Disallow**: The codecs entered here will be disabled, and if "all" is entered, all codecs will be disabled.
 
-- **Allow**: اجازه دادن به کدک‌‌ها به ترتیب اولویت (قبل از اجازه دادن به کدک‌‌های دیگر ابتدا از disallow = all استفاده کنید).
+- **Allow**: Allow codecs in order of priority (before allowing other codecs, use disallow = all).
 
-- **Trunk**: این پارامتر دارای دو مقدار Yes و No است که برای صرفه‌‌جویی در استفاده از پهنای باند شبکه، مقدار آن را برابر Yes قرار می‌‌دهیم.
+- **Trunk**: This parameter has two values, Yes and No, and is set to Yes to save on network bandwidth.
 
-- **Transfer**: این پارامتر شبیه پارامترهای Can Re-Invite و Direct Media در تعریف کاربر از نوع پروتکل SIP است. با این پارامتر می‌‌توان مشخص کرد که جریان‌‌های ترافیکی مدیا مستقیماً بین دو کاربر منتقل شوند. این پارامتر می‌‌تواند مقادیر زیر را داشته باشد
+- **Transfer**: This parameter is similar to the Can Re-Invite and Direct Media parameters in the SIP user definition. It determines whether media traffic streams are transferred directly between two users. It can have the following values:
 
-	- **Yes**: در این حالت سرور تلاش می‌‌کند که جریان‌‌های سیگنالینگ و مدیا بین دو کاربر به‌طور مستقیم منتقل شوند. پرواضح است که اگر بین دوکاربر نیاز به transcoding وجود داشته باشد، این کار انجام نخواهد شد.
+    - **Yes**: In this case, the server tries to directly transfer both signaling and media streams between two users. However, if transcoding is required, this will not happen.
 
-	- **No**: در این حالت سرور جریان‌‌های سیگنالینگ و مدیا را بین دوکاربر از خود عبور می‌‌دهد.
+    - **No**: In this case, the server routes both signaling and media streams between the two users.
 
-	- **Mediaonly**: در این حالت سرور فقط جریان‌‌های سیگنالینگ را از خود عبور می‌‌دهد و جریان‌‌های مدیا بین دو کاربر مستقیماً منتقل می‌‌شوند.
+    - **Mediaonly**: In this case, the server only routes the signaling streams, and media streams are directly transferred between the two users.
 
-- **More Option**: اگر در تعریف کاربر بخواهید از پارامتری استفاده کنید که در لیست بالا به آن اشاره نشده باشد، آن پارامتر و مقدار آن را در این قسمت وارد کنید. اگر می‌خواهید چند پارامتر را در این بخش وارد کنید باید هر کدام در یک خط باشند.
+- **More Option**: If you want to use a parameter that is not listed above, enter it and its value here. If you need to add multiple parameters, each should be on a separate line.
 
-- **Description**: توضیحاتی درمورد ترانک.
+- **Description**: Description of the trunk.
 
-## پارامترهای ترانک DAHDI
+## DAHDI Trunk Parameters
 
-- **Name**: نام ترانک.
+- **Name**: The trunk name.
 
-- **Group**: این پارامتر برای گروه‌‌بندی کانال‌‌ها و ایجاد تماس خروجی استفاده می‌‌شود. هنگام گروه‌‌بندی کانال‌‌ها، می‌‌توان براساس الگوریتم‌‌هایی مشخص کرد که از چه کانال‌‌هایی استفاده شود تا توزیع تماس‌‌ها بین کانال‌‌ها یکسان بمانند،با این قوانین می‌‌توان بهترین الگو را انتخاب و از آن استفاده کرد. این قوانین برای کارت‌‌های PRI نیز برقرارند. ترتیب انتخاب کانال‌‌ها به‌‌صورت زیر است.
+- **Group**: This parameter is used for grouping channels and creating outbound calls. When grouping channels, you can specify algorithms to determine which channels should be used to keep call distribution between channels balanced. These rules also apply to PRI cards. Channel selection order is as follows:
 
-	- **g**: ترتیب انتخاب پورت‌‌ها از کمترین به بیشترین (1،2،3،4،5) است. برای‌‌مثال در اولین شماره، اولین پورت استفاده می‌‌شود. اگر اولین پورت مشغول باشد، دومین پورت انتخاب می‌‌شود. این نکته مهم است که انتخاب پورت دوم به اشغال‌‌بودن پورت اول بستگی دارد (در این حالت billing برای شماره پورت‌‌های پایین‌تر مقدار بیشتری خواهد بود).
+    - **g**: Channel selection order is from lowest to highest (1, 2, 3, 4, 5). For example, the first port is used for the first number. If the first port is busy, the second port is selected. The important thing is that selecting the second port depends on the first port being occupied (billing will be higher for lower-numbered ports).
 
-	- **G**: این ترتیب دقیقاً مثل g است با این تفاوت که انتخاب پورت‌‌ها از بیشترین به کمترین (5،4،3،2،1) است (در این حالت billing برای شماره پورت‌‌های بالاتر مقدار بیشتری خواهد بود).
+    - **G**: This is exactly like "g" except that channels are selected from highest to lowest (5, 4, 3, 2, 1) (billing will be higher for higher-numbered ports).
 
-	- **r**: ترتیب انتخاب از کمترین به بیشترین و به‌‌صورت چرخشی (Round-robin) است، یعنی تماس جدید با پورت جدید ایجاد می‌‌شود (در این حالت مقدار billing برای پورت‌‌ها یکسان است).
+    - **r**: Channel selection from lowest to highest, in a round-robin manner. New calls are made on a new port, and billing will be the same for all ports.
 
-	- **R**: ترتیب انتخاب از بیشترین به کمترین و به‌‌صورت چرخشی (Round-robin) است، یعنی تماس جدید با پورت جدید ایجاد می‌‌شود (در این حالت مقدار billing برای پورت‌‌ها یکسان است).
+    - **R**: Channel selection from highest to lowest, in a round-robin manner. New calls are made on a new port, and billing will be the same for all ports.
 
+- **Active**: Activate or deactivate the trunk.
 
-
-- **Active**: فعال یا غیرفعال‌‌کردن ترانک.
-
-- **Description**: توضیحاتی درمورد ترانک.
-
-
- 
+- **Description**: Description of the trunk.

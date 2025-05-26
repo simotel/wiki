@@ -1,19 +1,10 @@
----
-sidebar_label: "سابقه فعالیت"
-title: "سابقه فعالیت"
----
-
-
 # Activity Log
 
-گزارشات مربوط به فعالیت‌‌های کاربران پنل وب در این قسمت ثبت می‌گردد،از جمله این موارد می‌توان به(ورود به صفحه‌‌های مختلف، اعمال تغییر در اطلاعات، افزودن اطلاعات جدید و ....) اشاره کرد.
+User activity reports in the web panel are recorded in this section. This includes activities such as logging into different pages, making changes to information, adding new data, and more.
 
+## Activity Log Parameters
 
-## پارامترهای گزارشات Activity Log
-- **From (Date)**: نمایش گزارشات فعالیت از تاریخ.
-
-- **To (Date)**: نمایش گزارشات فعالیت تا تاریخ.
-
-- **Username**: جستجو در گزارشات براساس نام کاربری.
-
-- **Page**: تفکیک گزارشات بر اساس صفحات پنل‌وب.
+- **From (Date)**: Displays activity reports from a specified date.
+- **To (Date)**: Displays activity reports up to a specified date.
+- **Username**: Search reports based on the username.
+- **Page**: Categorizes reports based on the pages of the web panel.

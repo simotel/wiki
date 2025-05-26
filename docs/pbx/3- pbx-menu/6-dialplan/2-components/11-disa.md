@@ -1,18 +1,11 @@
----
-sidebar_label: "DISA"
----
-
-
 # DISA
 
+## Purpose
 
-## کاربرد
+The **DISA (Direct Inward System Access)** component provides the caller with an outside dial tone, allowing them to make outbound calls using the system. This is typically used for situations where a caller needs to place external calls, such as a user dialing in remotely to use the system's phone lines.
 
-با استفاده از این کامپوننت بوق آزاد در اختیار تماس‌گیرنده قرار می‌گیرد. بوق آزاد امکان شماره‌‌گیری را به کاربر می‌‌دهد.
+## Parameters
 
-
-## پارامترها کامپوننت
-
-- **Password**: درصورت تعیین کلمه عبور در زمان استفاده از DISA از کاربر خواسته می‌‌شود که کلمه عبور را وارد کند. درصورتی که نیازی به ورود کلمه عبور نباشد، باید مقدار پیش‌‌فرض آن no-password باشد.
-
-- **Context**: پس از ورود شماره، شماره واردشده همانند تماس‌‌های خروجی به کامپوننتی که کانتکست واردشده را مدیریت می‌‌کند ارسال می‌‌گردد. درغیراین‌‌صورت تماس با خطا تمام می‌‌شود.
+- **Password**: If a password is set, the caller will be prompted to enter it. If no password is required, the default value should be set to "no-password."
+  
+- **Context**: After entering the number, the dialed number is routed to the component that manages the provided context. If the context is not valid or set incorrectly, the call will end with an error.
