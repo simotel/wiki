@@ -1,23 +1,24 @@
 ---
-sidebar_label: "مدیریت ترانک ها"
-title: "مدیریت ترانک ها"
+sidebar_label: "Trunk Manager"
+title: "Trunk Manager"
 ---
 
-# مدیریت ترانک‌ها
+# Trunk Manager
 
-ترانک وظیفه اتصال مرکزتماس به شبکه مخابراتی را برعهده دارد، باتوجه به اینکه هدف ارسال تماس انبوه می‌باشد نیاز می‌باشد بر روی ترانک محدودیت‌هایی اعمال کرد. محدودیت‌های مثل حداکثر تعداد تماس خروجی همزمان و ساعات ارسال تماس را در این بخش تعریف کنیم.در نهایت پس از ساخت  Trunk Manager از آن در ساخت کمپین به‌جهت ارسال تماس انبوه استفاده می‌شود.
-## پارامترهای Trunk Manager
+The trunk connects the contact center to the telecommunications network. Since the goal is bulk calling, limitations need to be applied to the trunk. These include defining the maximum number of simultaneous outgoing calls and the timeframes for making calls. After creating the Trunk Manager, it will be used in campaigns for bulk calling.
 
-- **Name**: انتخاب نام برای Trunk Manager در این قسمت انجام می‌شود.
+## Trunk Manager Parameters
 
-- **Trunk**: نام ترانکی که خروجی تماس را برعهده دارد در این قسمت انتخاب می‌شود.
+- **Name**: Define a name for the Trunk Manager.
 
-- **Status**: وضعیت فعال یا غیرفعال بودن Trunk Manager را مشخص می‌کند.
+- **Trunk**: Select the trunk responsible for outgoing calls.
 
-- **Dial Times**: در این قسمت روزهای هفته و ساعاتی که می‌خواهید تماس انبوه داشته باشید را مشخص می‌کنید.
+- **Status**: Specify whether the Trunk Manager is active or inactive.
 
-- **Capacity**: این پارامتر حداکثر تعداد کانال اشغالی توسط ماژول تماس انبوه را مشخص می‌کند،برای مثال اگر شما خط E1 تهیه کرده باشید مخابرات 30 کانال در اختیار شما قرار می‌دهد،در اینجا مشخص می‌کنید ماژول تماس انبوه بطور همزمان حداکثر 20 کانال از خط را مشغول کند و 10 کانال دیگر آزاد باشند تا کارکنان مجموعه نیز بتوانند تماس ورودی و خروجی داشته باشند.
+- **Dial Times**: Define the days and hours of the week for bulk calling.
 
-- **Dial Interval**: در این قسمت مشخص می‌کنید به ازائ چه فاصله زمانی یک تماس بر روی ترانک ارسال شود،برای مثال در صورتی که این مقدار برابر با پنج باشد، هر پنج ثانیه یک تماس به سمت ترانک فرستاده می‌شود.مقدار این پارمتر برحسب ثانیه می‌باشد.
+- **Capacity**: Specify the maximum number of channels to be used simultaneously by the bulk calling module. For instance, if you have an E1 line with 30 channels, you can set the bulk calling module to use up to 20 channels simultaneously, leaving 10 channels free for staff to handle incoming and outgoing calls.
 
-- **Wait Cache Length**: این پارمتر تعداد داده‌های بازیابی شده از دیتا‌بیس را در هر فراخونی مشخص می‌کند،برای مثال در صورتی که برابر با ۱۰۰ باشد، در هر فراخوانی ۱۰۰ رکورد را از پایگاه‌داده بازیابی می‌کند.مقدار پیش‌فرض مناسب‌ترین مقدار می‌باشد.
+- **Dial Interval**: Define the interval between each call sent to the trunk. For example, if set to five, a call will be sent every five seconds. This parameter is measured in seconds.
+
+- **Wait Cache Length**: Specify the number of records retrieved from the database per query. For instance, if set to 100, 100 records will be fetched per query. The default value is the most suitable setting.

@@ -1,18 +1,11 @@
----
-sidebar_label: "BlackList"
----
-
-
-
 # BlackList
 
-## کاربرد
+## Usage
 
-از این کامپوننت برای بررسی لیست سیاه استفاده می‌‌شود. با ورود تماس به این کامپوننت، حضور آن در لیست سیاه بررسی می‌‌شود (مراجعه شود به منوی لیست سیاه).
+This component is used to check the blacklist. When a call enters this component, its presence in the blacklist is verified (refer to the blacklist menu).
 
+## Outputs
 
-## خروجی‌ها
+- **✓**: If the caller's number is in the blacklist.
 
-- **✓**: درصورتی که شماره تماس‌‌گیرنده در لیست سیاه باشد.
-
-- **✗**: درصورتی که شماره تماس‌‌گیرنده در لیست سیاه نباشد.
+- **✗**: If the caller's number is not in the blacklist.

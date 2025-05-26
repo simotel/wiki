@@ -1,48 +1,35 @@
 ---
-sidebar_label: "ایجاد حساب AMI"
-title: "ایجاد حساب AMI"
+
 ---
 
+# Creating an AMI Account
 
-
-# ایجاد حساب AMI
-
-برای ایجاد دسترسی AMI در مرکزتماس سیموتل نیاز به دسترسی shell لینوکس می‌باشد.در ابتدا فایل زیر را با ویرایشگر متن nano باز کنید
+To create AMI access in the Simotel Call Center, you need shell access to Linux. First, open the following file using the nano text editor:
 
 ```shell
-
 root@simotel:~# nano /etc/asterisk/manager.conf
-
 ```
 
-در انتهای فایل اطلاعات مربوط به حساب‌کاربری و رمزعبور خود را مطابق با الگوی پایین وارد کنید
+At the end of the file, enter your account username and password information according to the template below:
 
 ```shell
-
-[ami_user_test] نام حساب‌ کاربری
-secret = testpassword رمزعبور حساب ‌کاربری
-deny = 0.0.0.0/0.0.0.0
-permit = 127.0.0.1/255.255.255.255   مجاز به دسترسی ip 
-read = call,user,agent,cdr   دسترسی‌های خواندن حساب کاربری
-write = system,call,agent,originate   دسترسی‌های نوشتن حساب‌ کاربری
-
-
+[ami_user_test]         ; Account username
+secret = testpassword   ; Account password
+deny = 0.0.0.0/0.0.0.0  ; Deny access
+permit = 127.0.0.1/255.255.255.255  ; Allowed IP access
+read = call,user,agent,cdr   ; Read permissions for the account
+write = system,call,agent,originate   ; Write permissions for the account
 ```
 
-در نظر داشته باشید برای خواندن اطلاعات و یا ایجاد تغییر در سیستم با استفاده از AMI باید حساب‌کاربری سطح دسترسی مربوطه را داشته باشد.در پایین لیستی کامل از سطوح دسترسی‌ قرار داده شده است.
+Note that to read information or make changes to the system using AMI, the user account must have the appropriate access level. Below is a complete list of access levels:
 
 ```shell
-
 read = system,call,log,verbose,agent,user,config,dtmf,reporting,cdr,dialplan
 write = system,call,agent,user,config,command,reporting,originate,message
-
 ```
 
-
-در نهایت نیز با دستور زیر سرویس استریسک را ریست کرده و حساب‌کاربری فعال می‌شود،با ریست استریسک تماس‌های جاری مرکزتماس قطع می‌شوند.
+Finally, restart the Asterisk service with the following command to activate the user account. Note that restarting Asterisk will disconnect current calls in the Call Center.
 
 ```shell
-
 root@simotel:~# service asterisk restart
-
 ```

@@ -1,31 +1,27 @@
----
-sidebar_label: "افزودن فکس"
-title: "افزودن فکس"
----
-
 
 # Fax Add
 
-از این سرویس برای افزودن فکس ارسالی استفاده می‌شود.
+This service is used to add a sent fax.
 
-:::tip نکته
-برای ارسال فکس به صورت فایل فیلد "file" باید مقدار داشته باشد و فیلد "text" از JSON ورودی حذف شود. 
+:::tip Note
+To send a fax as a file, the "file" field must have a value, and the "text" field should be removed from the input JSON.
 :::
-## پارامتر‌ها
+
+## Parameters
 <div class="custom-table">
-|                          توضیحات                         | داده های تعریف شده |           داده های نمونه           | پارامترهای ضروری[**]/منطقی[*] |  پارامتر ها |
-|:--------------------------------------------------------:|:------------------:|:----------------------------------:|:----------------------:|:-----------:|
-|                  شناسه یکتای ارسال کننده                 |          -         |              username1              |            *           |  sender_id  |
-|                        شماره مقصد                        |          -         |               112233               |            *           |      to     |
-|                        داخلی مقصد                        |          -         |                 558                |            *           |     ext     |
-|                        ترانک خروجی                       |          -         |             trunk_name1            |            *           |  trunk_name |
-| نام فایل آپلود شده که در جواب [fax upload](/developers/api/SimotelAPI/v4/fax/fax_upload) برگردانده می‌شود(در صورتی که فیلد file مقدار دارد فیلد text حذف شود) |          -         | file-20200624051520-61681-fax-test |            *           |     file    |
-|                   برای ارسال فایل متنی                   |          -         |           this is sample           |                       |     text    |
-|                          توضیحات                         |          -         |            just for test           |                        | description |
+|                         Description                         | Defined Data |           Sample Data           | Required[**]/Logical[*] |  Parameters |
+|:----------------------------------------------------------:|:------------:|:--------------------------------:|:----------------------:|:-----------:|
+|                  Unique ID of the sender                    |       -      |             username1            |            *           |  sender_id  |
+|                        Destination number                    |       -      |               112233             |            *           |      to     |
+|                    Destination internal extension           |       -      |                 558              |            *           |     ext     |
+|                        Output trunk                         |       -      |             trunk_name1          |            *           |  trunk_name |
+| Name of the uploaded file returned in the [fax upload](/developers/SimotelAPI/v4/fax/fax_upload) response (if the "file" field has a value, the "text" field should be removed) |       -      | file-20200624051520-61681-fax-test |            *           |     file    |
+|                    For sending a text file                  |       -      |           this is sample         |                        |     text    |
+|                          Description                         |       -      |            just for test         |                        | description |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -36,8 +32,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+     {label: 'Example Code To Use', value: 'usageCode'},
+     {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -53,7 +49,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -97,7 +93,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

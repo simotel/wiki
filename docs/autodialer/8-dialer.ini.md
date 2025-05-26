@@ -1,20 +1,19 @@
 ---
-sidebar_label: "Dialer.ini تنظیمات"
-title: "Dialer.ini تنظیمات"
+title: "Dialer.ini"
+sidebar_label: "Dialer.ini"
 ---
 
 
-# تنظیمات dialer.ini
+# Dialer.ini Settings  
 
-dialer.ini فایلی می‌باشد که در آن تنظیمات مربوط به ماژول‌تماس‌انبوه تعریف شده‌اند، مسیر دسترسی به این فایل etc/simotel/dialer.ini/ می‌باشد.با استفاده از دستور زیر می‌توان این فایل را باز کرد و تغییرات را در آن اعمال کرد.
-
+The dialer.ini file contains the settings for the bulk calling module. The path to this file is `/etc/simotel/dialer.ini/`. You can open this file and make changes using the following command.
 ```shell
 
 nano /etc/simote/dialer.ini
 ```
 
-:::caution هشدار
-پس از اعمال تغییرات در فایل dialer.ini حتما سرویس simoteldialer ریست شود، در غیر اینصورت تغییرات اعمال نمی‌شوند.
+:::**Caution:**  
+Restart the simoteldialer service after modifying the dialer.ini file, otherwise the changes will not be applied.
 
 ```shell
 
@@ -28,7 +27,7 @@ start simoteldialer
 :::
 
 
-### تنظیمات پایگاه‌داده MongoDB 
+### MongoDB Database Settings
 ```shell
 
 [mongodb]
@@ -36,10 +35,10 @@ start simoteldialer
 mongodb_connection_string = mongodb://username:password@localhost:27017
 
 ```
-۱. **mongodb_connection_string**: آدرس اتصال به پایگاه‌داده که شامل نام کاربری، پسورد، آدرس اتصال، پورت اتصال به پایگاه‌داده می‌باشد.
+۱. **mongodb_connection_string**: The database connection address, which includes the username, password, connection address, and database connection port.
 
 
-### تنظیمات فایل‌های صوتی
+### Audio Files Settings
 ```shell
 
 [directories]
@@ -47,10 +46,9 @@ mongodb_connection_string = mongodb://username:password@localhost:27017
 announcement_directory = /var/www/html/files/	
 
 ```
-۱. **announcement_directory**: مسیر ذخیره فایل‌های صوتی ماژول تماس‌انبوه.
+1. **announcement_directory**: Path to store the audio files for the bulk calling module.
 
-
-### تنظیمات dialer logs
+### dialer logs Settings
 ```shell
 
 [logging]
@@ -65,22 +63,21 @@ log_directory = /var/log/simotel/
 log_file_name = simoteldialer.log	
 
 ```
-۱. **log_level**: سطح لاگ ماژول تماس‌انبوه.
+1. **log_level**: The logging level for the bulk calling module.  
 
-۲. **log_to_file**: درصورتی که این پارامتر برابر با True باشد، لاگ‌ها در فایل ذخیره می‌شوند.
+2. **log_to_file**: If this parameter is set to True, logs will be saved to a file.  
 
-۳. **log_to_console**: در صورتی که این پارامتر برابر با True باشد، لاگ‌ها در کنسول ترمینال نمایش داده می‌شوند.
+3. **log_to_console**: If this parameter is set to True, logs will be displayed in the terminal console.  
 
-۴. **log_directory**: مسیر ذخیره فایل‌های لاگ. باید فیلد log_to_file برابر با True باشد.
+4. **log_directory**: Path to store log files. The `log_to_file` field must be set to True.  
 
-۵. **log_file_name**: نام فایل simoteldialer.
+5. **log_file_name**: Name of the simoteldialer log file.  
 
 
 
-### تنظیمات AMI
+###  AMI Settings
 
-این تنظیمات مربوط به خود مر‌کزتماس می‌باشند و درصورت نیاز به دسترسی AMI باید به مسیر **/etc/asterisk/manager.conf** مراجعه فرمایید.
-
+These settings relate to the contact center itself. If AMI access is needed, refer to the **/etc/asterisk/manager.conf** path.
 ```shell
 
 [ami]
@@ -95,19 +92,18 @@ ami_password = 'test'
 
 ```
 
-۱. **localhost**: آدرس میزبان AMI.
+1. **localhost**: The AMI host address.  
 
-۲. **ami_port**: پورت سرویس AMI.
+2. **ami_port**: The AMI service port.  
 
-۳. **ami_username**: نام کاربری حساب.
+3. **ami_username**: The account username.  
 
-۴. **ami_password**: رمز‌عبور حساب.
+4. **ami_password**: The account password.  
 
-:::info اطلاعات
-برای کسب اطلاعات بیشتر در مورد نحوه ساخت حساب AMI به [این قسمت](/pbx/advance-settings/create_ami_user) مراجعه فرمایید.
+:::For more information on how to create an AMI account, please refer to [this section](/pbx/advance-settings/create_ami_user).
 :::
 
-### تنظیمات تماس
+###  call Settings
 
 ```shell
 
@@ -117,10 +113,9 @@ ami_originate_caller_id = AutoDialer
 
 ```
 
-۱. **ami_originate_caller_id**: مقدار caller_id که برروی ترانک ارسال می‌شود در این بخش تعریف می‌شود.
+1. **ami_originate_caller_id**: The value of the caller_id sent on the trunk is defined in this section.
 
 
-
-:::danger نکته مهم
-درمواردی ارائه دهنده سرویس (برای مثال مخابرات) caller_id با مقدار AutoDialer را تشخیص نمی‌دهد و تماس‌های ماژول Drop می‌شوند.برای رفع این مشکل مقدار caller_id را برابر با عدد قرار دهید.
+:::danger Important note  
+In some cases, the service provider (e.g., telecommunications) does not recognize the caller_id with the value AutoDialer, and the module calls are dropped. To resolve this issue, set the caller_id value to a number.
 :::

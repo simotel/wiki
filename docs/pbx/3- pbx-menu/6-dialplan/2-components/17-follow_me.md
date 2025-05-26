@@ -1,22 +1,15 @@
----
-sidebar_label: "Follow Me"
----
-
-
-
 # Follow Me
 
-## کاربرد
+## Purpose
 
-از این کامپوننت برای انتقال تماس به داخلی دیگر، موبایل یا هر شماره دیگری (خارج از مرکز تماس) استفاده می‌‌شود. بیشترین کاربرد این کامپوننت زمانی است که داخلی شخصی جوابگو نباشد، در این حالت تماس برای مقصد مورد نظر ارسال می‌‌گردد. این کامپوننت قابلیت ارسال تماس به چند مقصد به ترتیب فراخوانی را دارد.
+This component is used to forward calls to another extension, mobile phone, or any other number outside the contact center. The most common use of this component is when the intended extension is unavailable; in this case, the call is forwarded to the desired destination. This component also supports forwarding the call to multiple destinations in a specified order.
 
+## Parameters
 
-## پارامترها کامپوننت
+- **Followers**: The destination numbers for forwarding the call. To forward a call to a landline or mobile phone, you first need to select an outgoing trunk from the trunks section, then type the destination phone number and press Enter.
 
-- **Followers**: شماره‌‌های مقصد هستند. برای انتقال تماس به مقصد خطوط شهری یا تلفن همراه ابتدا باید ترانک خروجی را از قسمت ترانک‌‌ها انتخاب و سپس شماره تلفن مقصد را تایپ کنید و در نهایت کلید Enter را بزنید.
+- **Timeout (sec)**: This parameter sets the maximum time (in seconds) that the destinations will ring. If no answer is received within this time, the call will be forwarded to the next destination.
 
-- **Timeout (sec)**: این پارامتر حداکثر زمان زنگ‌خوردن مقصد‌‌ها (برحسب ثانیه) را تعیین می‌‌کند که درصورت جواب ندادن هر مقصد دراین مدت، تماس به مقصد بعدی انتقال می‌‌یابد.
+- **Call Limit (sec)**: The time limit for the call duration.
 
-- **Call Limit (sec)**: محدودیت زمانی مکالمه است.
-
-- **Options**: تنظیمات تماس است.
+- **Options**: Additional settings for the call.

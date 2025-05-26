@@ -1,31 +1,25 @@
----
-sidebar_label: "PickUp "
----
-
-
-
 # PickUp
 
-## کاربرد
+## Purpose
 
-از این کامپوننت برای شکار تماس کاربران دیگر استفاده می‌‌شود. در زمانی که تلفن اپراتوری در حال زنگ‌خوردن باشد، کاربرهای دیگر می‌‌توانند با استفاده از امکان Pickup، تماس وی را بگیرند و خود پاسخ دهند. به این عملیات شکار خط نیز می‌گویند.
+This component is used to "pick up" or intercept calls from other users. When an operator's phone is ringing, other users can use the PickUp feature to answer the call themselves. This operation is referred to as call hunting or "call pick-up."
 
-## پارامترها کامپوننت
+## Parameters
 
-- **Type**: نوع شکار خط
-	- **Pickup Group**: هر داخلی تنها می‌‌تواند داخلی‌‌های گروه خود را شکار کند (در زمان تعریف داخلی با مقدار‌‌دهی پارامترهای Pickup Group و Call Group، کاربران برای انجام این عملیات گروه‌‌بندی می‌شوند).
-	- **Without Caller ID**: در این روش تماس مستقیماً و بدون وقفه زمانی شکار می‌‌شود.
-	- **With Caller ID**: در این روش caller_id تماس‌گیرنده برای کاربر شکارکننده نمایش داده می‌‌شود (پس از شکار، تماس شکارکننده قطع می‌شود و پس از زمان Delay ، تماس به همراه caller_id تماس‌گیرنده به سمت شکارکننده منتقل می‌شود).	
-- **Extension**: درصورت تعیین داخلی، فقط تماس همان داخلی شکار می‌‌شود و درصورتی‌‌که این فیلد خالی باشد، شماره‌‌ای که واردشده است شکار می‌‌شود.
+- **Type**: The type of call pick-up.
+  - **Pickup Group**: Each extension can only pick up calls from the extensions within its group (users are grouped by setting the Pickup Group and Call Group parameters when defining extensions).
+  - **Without Caller ID**: In this mode, the call is immediately picked up without delay.
+  - **With Caller ID**: In this mode, the caller ID of the incoming call is displayed to the user picking up the call (after picking up, the user's call is disconnected, and after a delay, the call with the caller ID is transferred to the user).
 
-- **Delay (sec)**: وقفه‌‌ای است (برحسب ثانیه) که برای گرفتن تماس ایجاد می‌‌شود.
+- **Extension**: If an extension is specified, only the call to that extension will be picked up. If this field is empty, the entered number will be picked up.
 
-- **Skip**: برای تعیین تعداد رقم‌‌هایی است که باید از ابتدای شماره واردشده حذف گردند. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
+- **Delay (sec)**: The delay (in seconds) that is introduced before picking up the call.
 
-- **Prefix**: برای افزودن عدد درج‌شده در این گزینه قبل از شماره واردشده است. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
+- **Skip**: Specifies the number of digits that should be removed from the beginning of the entered number. The modified number is then treated as the destination number.
 
+- **Prefix**: Specifies the number to be added at the beginning of the entered number before it is dialed.
 
-:::tip نکته
+:::tip Note
 
- Pickup Group برای گرفتن تماس در گروه، بدون مشخص‌‌کردن کاربر هدف است. در روش‌‌های With Caller ID و Without Caller ID ، داخلی هدفی را که قصد داریم تماسش را شکار کنیم، باید در اختیار داشته باشیم.
+Pickup Group allows you to pick up calls within the group without specifying a target user. In both With Caller ID and Without Caller ID modes, the target extension whose call you wish to pick up must be available.
 :::

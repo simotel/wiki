@@ -1,27 +1,21 @@
 ---
 
-sidebar_label: "به روز رسانی مخاطب"
-title: "به روز رسانی مخاطب"
 ---
-
-
-
 # Contact Update
 
-از این سرویس برای ویرایش مخاطبین استفاده می‌شود.
+This service is used to edit contacts.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|              توضیحات             | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |  پارامترها  |
-|:--------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------:|
-| شناسه‌یکتا که از [جستجو](/developers/api/Autodialer_API/contact/contact_search) بدست می‌آید |          -         | 60461561095d840c2e477098 |           **           |     id_     |
-|             نام مخاطب            |          -         |     test_contact_new     |                        |     name    |
-|            شماره مخاطب           |          -         |           11223          |                        |    number   |
-|              توضیحات             |          -         |       Just for test      |                        | description |
-
+|             Description              | Defined Data   | Example Data              | Required[**]/Optional[*] | Parameters  |
+|:-----------------------------------:|:--------------:|:-------------------------:|:------------------------:|:-----------:|
+| Unique ID obtained from [Search](/developers/Autodialer_API/contact/contact_search) | -              | 60461561095d840c2e477098  | **                       | id_         |
+| Contact Name                        | -              | test_contact_new          |                          | name        |
+| Contact Number                      | -              | 11223                     |                          | number      |
+| Description                         | -              | Just for test             |                          | description |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 import Tabs from '@theme/Tabs';
@@ -30,8 +24,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -48,7 +42,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -91,7 +85,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -132,7 +126,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

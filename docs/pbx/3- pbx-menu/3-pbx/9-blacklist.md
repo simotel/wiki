@@ -1,18 +1,11 @@
----
-sidebar_label: "لیست سیاه"
-title: "لیست سیاه"
----
+# Black List
 
+The Black List allows you to impose restrictions on specific numbers. An example of this is managing telemarketers or unwanted callers. A special feature code is also defined for the Black List, which can be used to add a number to the list.
 
-# لیست سیاه
+## Black List Parameters
 
-لیست سیاه این امکان را فراهم می‌‌کند که برای شماره‌‌های خاص محدودیت‌‌هایی ایجاد کنید. نمونه‌‌ای از آن، ایجاد محدودیت مدیریت مزاحمان تلفنی است. برای لیست سیاه، کد ویژه‌‌ای نیز تعریف شده است که می‌‌توان به‌وسیله آن شماره را به لیست اضافه کرد. 
+- **Number:** The troublesome number.
 
+- **Import:** Allows bulk addition of numbers. The input is an Excel file containing all the blacklisted numbers.
 
-## پارامترهای Black List
-
-- **Number:** شماره مزاحم.
-
-- **Import**: امکان افزودن گروهی از شماره‌ها را فراهم می‌کند.ورودی آن فایل اکسلی شامل تمامی شماره‌های لیست سیاه می‌باشد.
-
-- **Comment:** توضیحات دلخواه.
+- **Comment:** Optional notes or descriptions.

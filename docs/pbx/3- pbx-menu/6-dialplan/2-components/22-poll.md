@@ -1,33 +1,25 @@
----
-sidebar_label: "Poll "
----
-
-
-
 # Poll
 
-## کاربرد
+## Usage
 
-از کامپوننت Poll برای نظرسنجی از مشتریان استفاده می‌‌شود. نظرسنجی برای سنجش کیفیت پاسخگویی اپراتور‌‌ها معمولاً بعد از کامپوننت Queue و Extension و در مورد خدمات خاص بعد از IVR قرار می‌گیرد.
+The Poll component is used for surveying customers. Surveys are typically conducted to assess the quality of operator responses, usually placed after the Queue and Extension components, and for specific services after the IVR.
 
-
-:::tip نکته
-در قسمت گزارشات، بخش گزارش پیشرفته و در سربرگ نظرسنجی می‌‌توان گزارشات مربوط به نظرسنجی را مشاهده کرد.
+:::tip Note
+In the reports section, the advanced report section and under the survey tab, you can view the reports related to the survey.
 :::
 
+## Component Parameters
 
-## پارامترها کامپوننت
+- **Label**: A label used for categorizing survey results in reporting.
 
-- **Label**: برچسبی است که برای دسته‌‌بندی نتایج نظرسنجی در گزارش‌‌گیری مورد استفاده قرار می‌گیرد .
+- **Announcement Before**: An audio file that is played before the survey.
 
-- **Announcement Before**: فایل صوتی‌ای است که قبل از نظرسنجی پخش می‌‌شود.
+- **Announcement After**: An audio file that is played after the survey.
 
-- **Announcement After**: فایل صوتی‌ای است که بعد از نظرسنجی پخش می‌‌شود.
+- **Timeout (sec)**: The maximum waiting time (in seconds) for the customer to enter a number.
 
-- **Timeout (sec)**: حداکثر زمان انتظار (برحسب ثانیه) برای وارد‌‌کردن عدد توسط مشتری است.
+- **Max Digits**: The maximum number of digits allowed in the survey.
 
-- **Max Digits**: حداکثر تعداد رقم مجاز درنظرسنجی است.
+- **Poll Min**: The minimum score allowed in the survey.
 
-- **Poll Min**: حداقل امتیاز مجاز در نظرسنجی است.
-
-- **Poll Max**: حداکثر امتیاز مجاز در نظرسنجی است.
+- **Poll Max**: The maximum score allowed in the survey.

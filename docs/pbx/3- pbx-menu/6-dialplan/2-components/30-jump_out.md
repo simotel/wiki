@@ -1,15 +1,9 @@
----
-sidebar_label: "Jump Out"
----
-
-
 # Jump Out
 
+## Usage
 
-## کاربرد
+As explained in the previous section, this component is used for jumping between pages. To do this, first place the JumpIn component at the beginning of the destination path and define a unique name for it in the Name section. Then, place the JumpOut component at the end of the source path and select the destination component's name from the JumpIn Name section (for more information, please check [here](/pbx/pbx-menu/dialplan/components/jump_in)).
 
-همانگونه که در قسمت قبل توضیح داده شد از این کامپوننت برای پرش بین صفحات استفاده می‌شود. به این منظور، ابتدا کامپوننت JumpIn را در ابتدای مسیر مقصد قرار دهید و نامی منحصربه‌فرد برای آن در قسمت Name تعریف کنید، سپس کامپوننت JumpOut را در انتهای مسیر مبدأ قرار دهید و نام کامپوننت مقصد را از قسمت JumpIn Name انتخاب کنید (برای کسب اطلاعت بیشتر، [اینجا](/pbx/pbx-menu/dialplan/components/jump_in) را بررسی بفرمایید).
+## Component Parameters
 
-## پارامترها کامپوننت
-
-- **JumpIn Name**: نام مقصد پرش است.
+- **JumpIn Name**: The name of the jump destination.

@@ -1,33 +1,27 @@
----
-sidebar_label: "تماس بهمنی خودکار"
-title: "تماس بهمنی خودکار"
----
+# Auto Spit Detect
 
+Another method for identifying storm calls is automatic detection. In this approach, an algorithm uses the data provided below to dynamically identify storm call area codes.
 
-# تماس‌بهمنی خودکار
+**Explanation with Example**:
 
-روش دیگر در تشخیص تماس بهمنی، تشخیص خودکار تماس‌‌های بهمنی است. در این روش با استفاده از داده‌‌هایی که در ادامه ذکر شده‌اند، الگوریتمی برای شناسایی پیش‌‌شماره‌‌های بهمنی استفاده می‌شود که به‌صورت پویا این عملیات را انجام می‌دهند.
+This method selects n digits from the left of incoming phone numbers, which equals the area code p. If within a time period of t minutes, the number of repetitions of phone numbers with this area code reaches c, that area code is considered a storm call. If the condition is not met, the call is considered a normal one (it is understood that the system reviews past calls for this method).
 
-**شرح روش به کمک مثال**:
+:::tip Note
+You may consider the area code length as 2 digits, in which case calls from mobile numbers starting with 09 could quickly be considered storm calls. To prevent this, you can exclude certain area codes from the calculations so they are not treated as storm calls.
+:::
 
-این روش به این صورت است که تعداد n عدد از سمت چپ شماره تماس‌‌های ورودی را انتخاب می‌‌کند که برابر است با پیش‌‌شماره p. اگر در بازه زمانی t دقیقه تعداد تکرار شماره‌‌‌های این پیش‌‌شماره به c تماس برسد، آن پیش‌‌شماره را به‌عنوان تماس بهمنی درنظر می‌‌گیرد. اگر شرط فوق بر‌قرار نباشد تماس عادی محسوب می‌شود (بدیهی است که سیستم برای استفاده از این روش، گذشته تماس‌‌ها را بررسی می‌‌نماید).
+## Auto Spit Detect Parameters
 
-:::tip نکته
-ممکن است طول پیش‌‌شماره را 2 درنظر بگیرید و در این حالت تماس شماره‌‌های موبایل که با 09 شروع می‌شوند، به سرعت تبدیل به تماس بهمنی شوند. برای جلوگیری از این اتفاق می‌‌توان پیش‌‌شماره‌‌هایی را به‌عنوان استثناء وارد کرد که مورد محاسبه قرار نگیرند.
-:::tip
+- **Pre-Code Length**: The length of the common area code in incoming calls.
 
-## پارامترهای تماس‌بهمنی خودکار
+- **Call Count**: The number of repeated calls with the same area code.
 
-- **Pre-Code Length**: طول پیش‌‌شماره مشترک در تماس‌‌های ورودی.
+- **Time Slice (min)**: The time period (in minutes) for counting the calls.
 
-- **Call Count**: تعداد تکرار تماس با پیش‌‌شماره مشترک.
+- **Excepted Pre-Codes**: Area codes that are excluded from this pattern. Numbers starting with these area codes will be treated as normal calls, and calculations will not be performed on them. If there are multiple area codes, they should be separated by a comma. Example: 09,021.
 
-- **Time Slice (min)**: بازه زمانی (برحسب دقیقه).
+- **Enabled**: Enable or disable automatic storm calls.
 
-- **Excepted Pre-Codes**: پیش‌‌شماره‌‌های مستثنی از این الگو. شماره‌‌هایی که با این پیش‌‌شماره‌‌ها شروع شوند به‌عنوان تماس غیربهمنی درنظر گرفته می‌شوند و محاسبات روی آنها انجام نمی‌شود. درصورتی‌‌که بیشتر از یک پیش‌‌شماره باشند با ویرگول جدا می‌شو‌‌‌‌ند. مثال: 09,021.
+- **Announcement**: The audio message for the storm call.
 
-- **Enabled**: فعال یا غیرفعال‌‌کردن تماس بهمنی خودکار.
-
-- **Announcement**: پیام صوتی.
-
-- **Comment**: توضیحات دلخواه.
+- **Comment**: Optional description.

@@ -1,23 +1,17 @@
----
-sidebar_label: "VoiceMail "
----
-
 # VoiceMail V2
- 
-## کاربرد
 
-از این کامپوننت برای استفاده از صندوق صوتی استفاده می‌شود.
+## Purpose
 
-## پارامترها کامپوننت
+This component is used to access voicemail.
 
+## Parameters
 
-- **Type**: نوع صندوق صوتی
-	- **Listen**: شنیدن پیام صوتی.
-	- **Record**: ذخیره پیام صوتی جدید.
-  
-  
-- **Voice Mail**: انتخاب شماره صندوق. درصورتی‌‌که هیچ صندوق صوتی‌‌ای انتخاب نگردد، تماس به سمت صندوق صوتی منطبق با شماره واردشده ارسال می‌‌گردد.
+- **Type**: The type of voicemail operation.
+  - **Listen**: To listen to a voicemail message.
+  - **Record**: To record a new voicemail message.
 
-- **Skip**: تعیین تعداد رقم‌‌هایی که باید از ابتدای شماره واردشده حذف گردد. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌شود.
+- **Voice Mail**: The voicemail box number. If no voicemail box is selected, the call is forwarded to the voicemail box that corresponds to the entered number.
 
-- **Prefix**: افزودن عدد درج‌شده در این گزینه قبل از شماره واردشده. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌شود.
+- **Skip**: Specifies the number of digits to remove from the beginning of the entered number. The modified number will then be treated as the destination number.
+
+- **Prefix**: Specifies the number to be added at the beginning of the entered number. The new number will then be treated as the destination number.

@@ -1,27 +1,23 @@
 ---
 
-sidebar_label: "به روز رسانی مدیریت ترانک ها"
-title: "به روز رسانی مدیریت ترانک ها"
 ---
-
-
 # Trunk Update
 
-از این سرویس برای ویرایش ترانک استفاده می‌شود.
+This service is used to edit a trunk manager.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|                            توضیحات                            | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] |     پارامترها     |
-|:-------------------------------------------------------------:|:------------------:|:------------------------:|:----------------------:|:-----------------:|
-|     شناسه یکتای مدیریت کننده ترانک که از [جستجو](/developers/api/Autodialer_API/trunk_manager/trunk_manager_search) بدست می‌آید     |          -         | 5ec65107ce4f6d12c43e250f |           **           |        _id        |
-|                     نام مدیریت‌کننده ترانک                     |          -         |        autodialer        |            *           |       title       |
-|                     وضعیت مدیرت‌کننده ترانک                    |   active/inactive  |          active          |            *           |       status      |
-| تعداد داده‌ای که با هر بار فراخوانی از پایگاه داده بازیابی شود |                    |            100           |            *           | wait_cache_length |
-|                 حداکثر ظرفیت مدیرت‌کننده ترانک                 |                    |            50            |            *           |      capacity     |
-|               بازه زمانی بین تماس‌ها(برحسب ثانیه)              |                    |             1            |            *           |   dial_interval   |
+| Description                                                       | Defined Data      | Example Data           | Required[**]/Optional[*] | Parameters           |
+|:-----------------------------------------------------------------:|:-----------------:|:----------------------:|:------------------------:|:---------------------:|
+| Unique Trunk Manager ID obtained from [search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) | -                 | 5ec65107ce4f6d12c43e250f | **                       | _id                   |
+| Trunk Manager Name                                                | -                 | autodialer             | *                        | title                 |
+| Trunk Manager Status                                              | active/inactive   | active                 | *                        | status                |
+| Number of records to fetch from the database per call            | -                 | 100                    | *                        | wait_cache_length     |
+| Maximum capacity of the Trunk Manager                             | -                 | 50                     | *                        | capacity              |
+| Time interval between calls (in seconds)                          | -                 | 1                      | *                        | dial_interval         |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -32,8 +28,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -50,7 +46,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -95,7 +91,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -137,7 +133,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

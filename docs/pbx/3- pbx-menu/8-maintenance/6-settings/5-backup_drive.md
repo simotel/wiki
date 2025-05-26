@@ -1,30 +1,21 @@
----
-sidebar_label: "فضای پشتیبان"
-title: "فضای پشتیبان"
----
+# Backup Drive
 
+One of the key features of the Simotel Call Center is the ability to transfer daily and weekly backup files to an FTP server or cloud storage. This is to prevent data loss during times when the system encounters issues and recovery of information is not possible (disaster recovery plan).
 
-# BackUp Drive
+Please note that after applying the necessary settings in Simotel, backups will be performed automatically and systematically, requiring no further action. This feature is available in version 6.1.9 and later.
 
-یکی از قابلیت‌های کلیدی مرکز تماس Simotel امکان انتقال فایل‌های پشتیبان(Backup) روزانه و هفتگی به سرور FTP و یا فضای ابری می‌باشد، این کار به جهت جلو‌گیری از دست رفتن اطلاعات در زمان‌های است که سیستم به مشکل بر می‌خورد و امکان بازیابی اطلاعات وجود ندارد(disaster recovery plan).
-
-
-در نظر داشته باشید پس از اعمال تنظیمات مورد نیاز در Simotel بکاپ‌گیری بصورت خودکار و سیستمی صورت می‌گیرید و نیاز به انجام کاری دیگر نمی‌باشد، این قابلیت در نسخه 6.1.9 و نسخه‌های بعدی ارائه شده است.
-
-
-:::tip نکته
- بکاپ‌های خودکار مرکز تماس شامل فایل صوتی مکالمات ضبط شده(Call Record) نمی‌شود و در صورت نیاز به بکاپ از فایل‌های صوتی مربوط به مکالمات این کار باید بصورت دستی انجام شود(دلیل: حجم بالا فایل پشتیبان در صورت وجود فایل‌های صوتی ضبط مکالمات).
+:::tip
+**Note**: Automatic backups of the Call Center do not include recorded call audio files. If you need a backup of the audio files related to calls, this must be done manually (reason: large backup size if recorded call audio files are included).
 :::
 
-## روش‌های بکاپ گیری
+## Backup Methods
 
-۱.	با استفاده از سرورFTP و بصورت لوکال.
+1. Using FTP server locally.
+2. Using Dropbox for cloud storage.
 
-۲.	با استفاده از  DropBoxو بر‌روی فضای ابری.
+### Setting Up FTP Server and Connecting Simotel Call Center
 
-### راه اندازی سرور FTP و اتصال مرکز تماس Simotel به آن
-
-در مرحله اول نیاز به راه اندازی سرور FTP می‌باشد، به همین جهت نرم‌افزار vsftpd را بر روی سیستم عامل debian 9 نصب می‌کنیم،مراحل نصب و ایجاد کاربر به شرح زیر می‌باشد:
+First, you need to set up the FTP server. To do this, install the `vsftpd` software on your Debian 9 operating system. The installation and user creation steps are as follows:
 
 ```shell
 apt-get update
@@ -33,118 +24,93 @@ sudo apt install vsftpd
 systemctl start vsftpd
 systemctl enable vsftpd
 vsftpd -versions
-
 ```
-دستور نهایی به جهت بررسی وضعیت نصب نرم‌افزار است که خروجی آن باید نسخه FTP نصب شده را نمایش دهد.
 
+The final command is to check the installation status of the software, which should display the installed FTP version.
 
 ```shell
 cp /etc/vsftpd.conf /etc/vsftpd.conf.orig
-
 ```
-ایجاد فایل بکاپ از تنظیمات پیش‌فرض نرم‌افزارvsftpd.
 
+Create a backup file of the default `vsftpd` configuration settings.
 
 ```shell
 nano /etc/vsftpd.conf
-
 ```
 
-در نهایت نیاز می‌باشد که تنظیمات در فایل vsftpd.conf مشابه شکل پایین باشند.
+Finally, ensure that the settings in the `vsftpd.conf` file match the image below.
 
 ![1](/img/simotel/backup_ftp_dropbox/1.png)
 
-
 ```shell
 service vsftpd restart
-
 ```
-سرویس راه اندازی شد!
 
+The service has been started!
 
-#### ایجاد کاربر در سرور FTP
+#### Creating a User on the FTP Server
 
 ```shell
-ساخت کاربر 
+# Create user
 sudo adduser vahid
 
-افزودن دسترسی 
+# Add access
 cho "vahid" | sudo tee -a /etc/vsftpd.userlist
 
-با ریست سرویس کاربر افزوده می‌شود
+# Restart service to add user
 service vsftpd restart
-
 ```
 
-#### اتصال مرکز تماس Simotel به سرور FTP راه‌اندازی شده
+#### Connecting Simotel Call Center to the Established FTP Server
 
-تنظیمات مطابق شکل زیر انجام شود
+Configure the settings as shown below:
 
 ![2](/img/simotel/backup_ftp_dropbox/2.png)
 
-در صورتی که تنظیمات به درستی انجام شود پس از کلیک بر روی گزینه Test&Save باید خروجی Backup Drive Is OK برگردانده شود.
+If the settings are correctly configured, after clicking the **Test&Save** option, the output should return "Backup Drive Is OK".
 
+### Connecting Simotel Call Center to Dropbox
 
-### اتصال مرکزتماس Simotel به DropBox
+To do this, you first need to create a Dropbox account, which offers a free basic version. After creating the account, you need to perform the necessary settings to create a token, which will be discussed below.
 
-برای انجام این کار در ابتدا نیاز به ایجاد حساب DropBox می‌باشد که نسخه ابتدایی آن بصورت رایگان در اختیار کاربر قرار گرفته است،پس از ایجاد حساب نیاز به انجام تنظیمات مربوط برای ایجاد Token می‌باشد که در پایین به بررسی آن می‌پردازیم
+#### Creating a Token
 
-#### ایجادToken
+The Dropbox software allows users to store and retrieve data in their allocated cloud space through its API without direct access to the software. Simotel uses this Dropbox capability to store daily and weekly backups.
 
-نرم‌افزار DropBox با استفاده از API خود به کاربران اجازه می‌دهد که بدون نیاز به دسترسی مستقیم به نرم‌افزار و از طریق API ارائه شده امکان ذخیره و بازیابی اطلاعات در فضای ابری اختصاص داده شده به مشترک را داشته باشند، نرم‌افزار Simotel از این قابلیت DropBox برای ذخیره بکاپ‌های روزانه و هفتگی استفاده می‌کند.
+After creating a Dropbox account, you need to create a new application in the App Center that allows access to your account. Then, you need to define that access to this application is through a token, and using the **Generated access token**, create a token with Write File access to provide to Simotel.
 
-برای استفاده از این قابلیت پس از ساخت اکانت DropBox نیاز می‌باشد از بخش APP Center یک اپلیکیشن جدید ساخته شود که اجازه دسترسی به حساب ما را دارد،پس از آن نیاز می‌باشد تعریف کنیم که دسترسی به این اپلیکیشن از طریق توکن می‌باشد و با استفاده از قابلیت **Generated access token** یک توکن با دسترسیWrite File ساخته شود و به Simotel داده شود.
+The steps are as follows:
 
-توضیحات آن به شرح زیر در تصاویر ارائه شده است:
+1. After logging into your account, go to the App Center as shown in the image (for better quality, close the sidebar).
 
-۱. پس از باز کردن حساب خود مشابه تصویر وارد بخش App Center شوید(برای مشاهده با کیفیت بهتر Sidebar را ببندید).
+   ![3](/img/simotel/backup_ftp_dropbox/3.png)
 
-![3](/img/simotel/backup_ftp_dropbox/3.png)
+2. In the App Center, select the **Build an app** option in the left corner.
 
+   ![4](/img/simotel/backup_ftp_dropbox/4.png)
 
+3. On the next page, select **Create apps**.
 
+   ![5](/img/simotel/backup_ftp_dropbox/5.png)
 
-۲. در بخش App Center باید گزینه Build an app در گوشه سمت چپ انتخاب شود.
+4. Here, specify the access levels. Since the goal is to set up Dropbox for backup, grant full access to your account, then give your app a name and click the **Create app** button.
 
-![4](/img/simotel/backup_ftp_dropbox/4.png)
+   ![6](/img/simotel/backup_ftp_dropbox/6.png)
 
+5. After creating the app, you can specify access levels (read, write) in the permissions section. Since the backup will be uploaded to your account, check the box for `files.content.write`.
 
+   ![7](/img/simotel/backup_ftp_dropbox/7.png)
 
+6. Finally, in the settings section, configure the token settings. By clicking the **Generate** option, a unique token will be created that allows access to your account (via API). Simotel will use this generated token to access your account and upload the backup file. The Access expiration should be set to No expiration, as this is not intended for temporary access.
 
-۳. در صفحه بعدی نیز باید گزینه Create apps انتخاب شود.
+   ![8](/img/simotel/backup_ftp_dropbox/8.png)
 
-![5](/img/simotel/backup_ftp_dropbox/5.png)
+7. If Simotel has internet access, after entering the token and clicking the **Test&Save** button, you should see the output "Backup Drive is OK".
 
+   ![9](/img/simotel/backup_ftp_dropbox/9.png)
 
+8. Finally, if the settings are configured correctly, you should see a file named `simotel.test.txt` in your Inbox, which Simotel uploads during its initial test to check connectivity with Dropbox. From now on, backups will be uploaded to your Drive daily and weekly at the end of the day.
 
-۴. در این قسمت سطح دسترسی‌ها مشخص می‌شوندکه با توجه به اینکه هدف از راه‌اندازی DropBox بکاپ گیری از سیستم بوده است سطح دسترسی کامل به حساب خود را به app می‌دهیم،در نهایت نیز نامی برای app خود انتخاب کرده و دکمه create app را می‌زنیم.
+   ![10](/img/simotel/backup_ftp_dropbox/10.png)
 
-![6](/img/simotel/backup_ftp_dropbox/6.png)
-
-
-
-۵. پس از ساخت app در بخش permission می‌توان سطح دسترسی ها(read,write)  به بخش‌های مختلف مشخص کرد که با توجه به اینکه قرار است بکاپ بر روی حساب ما بارگذاری شود باید تیک files.content.write زده شود.
-
-![7](/img/simotel/backup_ftp_dropbox/7.png)
-
-
-
-۶. در نهایت نیز در بخش settings باید تنظیمات مربوط به توکن انجام شود،با کلیک بر روی گزینه Generate یک توکن یکتا بوجود می‌آید که با استفاده از آن می‌توان به حساب خود دسترسی پیدا کرد(از طریق API)،Simotel با استفاده از این توکن تولید شده به حساب دسترسی پیدا می‌کند و فایل بکاپ را بارگذاری می‌کند. بخش Access expiration باید برابر با No expiration باشد،کاربرد این بخش زمانی است که هدف ایجاد دسترسی کوتاه مدت است و پس از آن دسترسی app با استفاده از توکن باید بسته شود که هدف ما این نیست.
-
-![8](/img/simotel/backup_ftp_dropbox/8.png)
-
-
-۷. در صورتی که Simotel به اینترنت دسترسی داشته باشد پس از قرار دادن توکن و کلیک بر روی دکمه Test&Save باید خروجی Backup Drive is OK را مشاهده فرمایید. 
-
-![9](/img/simotel/backup_ftp_dropbox/9.png)
-
-
-
-
-۸. در نهایت در صورتی که تنظیمات بصورت درست انجام شده باشند باید در Inbox خود فایلی به نام simotel.test.txt را مشاهده فرمایید که Simotel در تست اولیه خود برای بررسی وضعیت ارتباطی با DropBox بارگذاری می‌کند، از این به بعد بکاپ‌ها بصورت روزانه و هفتگی پایان روز در Drive شما بارگذاری می‌شوند.
-
-![10](/img/simotel/backup_ftp_dropbox/10.png)
-
-
-
-در صورت نیاز به بررسی بیشتر قابلیت API نرم‌افزار DropBox به لینک **[اینجا](https://www.youtube.com/watch?v=FMOXbmoAG8I)** مراجعه فرمایید.
+For further investigation of the Dropbox API capabilities, you can refer to the link **[here](https://www.youtube.com/watch?v=FMOXbmoAG8I)**.

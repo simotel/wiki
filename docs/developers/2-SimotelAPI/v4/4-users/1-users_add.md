@@ -1,52 +1,50 @@
 ---
 sidebar_position: 1
-sidebar_label: "افزودن کاربر"
-title: "افزودن کاربر"
 ---
-
 # User Add
 
-از این سرویس برای اضافه کردن داخلی استفاده می‌شود.
+This service is used to add internal users.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|       توضیحات       |       داده های تعریف شده       |  داده های نمونه | پارامترهای ضروری[**]/منطقی[*] |          پارامتر ها         |
-|:-------------------:|:------------------------------:|:---------------:|:----------------------:|:---------------------------:|
-|      نوع کاربر      |            SIP/IAX2            |       SIP       |            *           |          user_type          |
-|     وضعیت کاربر     |             yes/no             |       yes       |            *           |            active           |
-|      نام کاربر      |                -               |      User2      |            **           |             name            |
-|     شماره داخلی     |                -               |       999       |            **           |            number           |
-|      cid کاربر      |                -               |       999       |            *           |          cid_number         |
-|       رمزعبور       |                -               |       999       |            **           |            secret           |
-|   ضبط مکالمات صوتی  |             yes/no             |        no       |            *           |         call_record         |
-|          -          |             yes/no             |        no       |            *           |      push_notification      |
-| لیست IPهای غیر مجاز |                -               | 0.0.0.0/0.0.0.0 |            *           |             deny            |
-|   لیست IPهای مجاز   |                -               | 0.0.0.0/0.0.0.0 |            *           |            permit           |
-|    استاندارد dtmf   |                -               |     rfc2833     |            *           |           dtmfmode          |
-|          -          |             yes/no             |        no       |            *           |         canreinvite         |
-| - |             yes/no             |        no       |            *           |         directmedia         |
-|    کانتکست کاربر    |                -               |   main_routing  |            *           |           context           |
-|          -          |                -               |     dynamic     |            *           |             host            |
-|          -          |                -               |       user      |            *           |             type            |
-|          -          | yes/no/Force Report & Co-Media |        no       |            *           |             nat             |
-|          -          |                -               |       5060      |            *           |             port            |
-|          -          |             yes/no             |        no       |            *           |           qualify           |
-|          -          |                -               |        1        |            *           |          callgroup          |
-|          -          |                -               |        1        |            *           |         pickupgroup         |
-|          -          |             yes/no             |        no       |            *           |         callcounter         |
-|          -          |             yes/no             |        no       |            *           |          faxdetect          |
-|  تعداد تماس پشت خط  |                -               |        -        |            *           |          call_limit         |
-|          -          |             yes/no             |        no       |            *           |            trunk            |
-|          -          |             yes/no             |        no       |            *           |           transfer          |
-|          -          |                -               |        -        |                        |            email            |
-|          -          |                -               |       571       |                        |     forward_policy->Busy    |
-|          -          |                -               |   09158315762   |                        |  forward_policy->No Answer  |
-|          -          |                -               |       570       |                        | forward_policy->UnAvailable |
-|          -          |                -               |       2121      |                        |     forward_policy->All     |
+|       Description       |       Defined Data       |  Sample Data  | Required[**]/Optional[*] |          Parameters         |
+|:-----------------------:|:-----------------------:|:-------------:|:----------------------:|:---------------------------:|
+|      User Type          |            SIP/IAX2     |       SIP     |            *           |          user_type          |
+|     User Status         |             yes/no      |       yes     |            *           |            active           |
+|      User Name          |                -        |      User2    |            **          |             name            |
+|     Extension Number     |                -        |       999     |            **          |            number           |
+|      User CID           |                -        |       999     |            *           |          cid_number         |
+|       Password          |                -        |       999     |            **          |            secret           |
+|   Call Recording        |             yes/no      |        no     |            *           |         call_record         |
+|          -              |             yes/no      |        no     |            *           |      push_notification      |
+|   Deny IP List          |                -        | 0.0.0.0/0.0.0.0 |            *           |             deny            |
+|   Permit IP List        |                -        | 0.0.0.0/0.0.0.0 |            *           |            permit           |
+|   DTMF Standard         |                -        |     rfc2833   |            *           |           dtmfmode          |
+|          -              |             yes/no      |        no     |            *           |         canreinvite         |
+|          -              |             yes/no      |        no     |            *           |         directmedia         |
+|   User Context          |                -        |   main_routing|            *           |           context           |
+|          -              |                -        |     dynamic   |            *           |             host            |
+|          -              |                -        |       user    |            *           |             type            |
+|          -              | yes/no/Force Report & Co-Media |        no     |            *           |             nat             |
+|          -              |                -        |       5060    |            *           |             port            |
+|          -              |             yes/no      |        no     |            *           |           qualify           |
+|          -              |                -        |        1      |            *           |          callgroup          |
+|          -              |                -        |        1      |            *           |         pickupgroup         |
+|          -              |             yes/no      |        no     |            *           |         callcounter         |
+|          -              |             yes/no      |        no     |            *           |          faxdetect          |
+|   Call Waiting Limit     |                -        |        -      |            *           |          call_limit         |
+|          -              |             yes/no      |        no     |            *           |            trunk            |
+|          -              |             yes/no      |        no     |            *           |           transfer          |
+|          -              |                -        |        -      |                        |            email            |
+|          -              |                -        |       571     |                        |     forward_policy->Busy    |
+|          -              |                -        |   09158315762 |                        |  forward_policy->No Answer  |
+|          -              |                -        |       570     |                        | forward_policy->UnAvailable |
+|          -              |                -        |       2121    |                        |     forward_policy->All     |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -54,8 +52,8 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="usageCode"
   values={[
-    {label: 'نمونه کد استفاده', value: 'usageCode'},
-    {label: 'نمونه خروجی', value: 'outputCode'},
+    {label: 'Example To Use', value: 'usageCode'},
+    {label: 'Example Output', value: 'outputCode'},
   ]}>
 
   <!-- تب نمونه کد استفاده -->
@@ -72,7 +70,7 @@ import TabItem from '@theme/TabItem';
       <TabItem value="PHP">
 	  
         <details>
-          <summary>نمایش کامل کد PHP</summary>
+          <summary>Show Full Source Code PHP</summary>
           <br/>
 
           ```php
@@ -144,7 +142,7 @@ import TabItem from '@theme/TabItem';
       <!-- کد JS -->
       <TabItem value="JS">
         <details>
-          <summary>نمایش کامل کد JS</summary>
+          <summary>Show Full Source Code JS</summary>
           <br/>
 
           ```js
@@ -218,7 +216,7 @@ import TabItem from '@theme/TabItem';
       <!-- کد Curl -->
       <TabItem value="Curl">
         <details>
-          <summary>نمایش کامل کد Curl</summary>
+          <summary>Show Full Source Code Curl</summary>
           <br/>
 
           ```bash

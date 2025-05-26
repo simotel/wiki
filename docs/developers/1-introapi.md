@@ -1,22 +1,19 @@
 ---
-slug: /
-sidebar_label: "توسعه دهندگان"
-title: "توسعه دهندگان"
+slug: /developers
 ---
 
-# توسعه دهندگان
+# Developers
 
-### مقدمه  
+### Introduction
 
+Simotel Contact Center offers exceptional features for integration with other software (such as CRMs, accounting software, e-commerce systems, etc.) through the `Simotel API` and `Simotel Webhooks`.
 
-مرکز تماس سیموتل امکانات بی نظیری را برای یکپارچه سازی با سایر نرم افزار ها (مثل انواع سی آر ام، نرم افزار های حسابداری، فروشگاهی و ... ) از طریق `Simotel Api` و `Simotel Webhooks` به شما ارائه میکند.
-
-مجموعه ابزار یکپارچه سازی سیموتل امکان ارتباط دو سویه شما با سیموتل را فراهم می‌کند. با استفاده از `Simotel Api` می‌توانید یک درخواست را به سیموتل بفرستید تا پردازش و اجرا شود (مثل درخواست ایجاد کاربر جدید یا شروع تماس دوطرفه) و به وسیله `Simotel Webhooks` می‌توانید آدرس سرور خود را به سیموتل بدهید تا در هنگام برخی رخداد ها اطلاعات رخداد را از طریق درخواست ای پی آی برای شما ارسال کند. (مثل رخداد تماس ورودی).
+The Simotel integration tools enable bidirectional communication with Simotel. Using the `Simotel API`, you can send requests to Simotel for processing and execution (such as creating a new user or starting a two-way call). With `Simotel Webhooks`, you can provide your server address to Simotel so that it sends event information via an API request when certain events occur (such as an incoming call event).
 
 ![exten-api](/img/api/simotel-integrations.png)
 
-### Simotel Api
-به وسیله `Simotel Api` میتوانید از طریق نرم افزار خود و با ارسال درخواست `Api` به مرکز تماس سیموتل بسیاری از عملیات قابل اجرا روی سیموتل را از راه دور انجام دهید و کنترل کنید. به عنوان مثال شما میتوانید یک اکستن جدید ایجاد کنید، گزارش گیری کنید و یا یک تماس دو طرفه را شروع کنید. `Simotel Api` این قدرت را به شما می‌دهد تا از طریق هر زبان برنامه نویسی دستورات مورد نظر خود را روی مرکز تماس سیموتل اجرا کنید.
+### Simotel API
+With the `Simotel API`, you can perform and control many operations remotely on the Simotel Contact Center by sending API requests from your software. For example, you can create a new extension, generate reports, or start a two-way call. The `Simotel API` gives you the power to execute commands on the Simotel contact center using any programming language.
 
 
 
@@ -27,8 +24,9 @@ title: "توسعه دهندگان"
 ```
 
 ### Simotel Webhooks
-وب هوک های سیموتل مجموعه ای از درخواست ها هستند که از سیموتل به آدرس هایی که شما مشخص میکنید صادر می شود. این درخواست ها در هنگام صدور برخی رخداد ها و یا به وسیله برخی کامپوننت ها در نقشه تماس سیموتل صادر می شوند.
-وب هوک های سیموتل به دو دسته ایونت ها (رخ داد ها) و کامپوننت های نقشه تماس تقسیم می شوند.
+
+Simotel Webhooks are a set of requests sent from Simotel to the addresses you specify. These requests are triggered by specific events or through certain components in the Simotel contact flow.
+Simotel Webhooks are divided into two categories: **Events** (or occurrences) and **Contact Flow Components**.
 
 
 ```php
@@ -38,17 +36,15 @@ title: "توسعه دهندگان"
     }
 ```
 
-در واقع در هنگام استفاده از وب هوک های سیموتل، درخواست http از سمت سیموتل به برنامه مورد نظر شما ارسال می شود و داده های مورد نظر را به شما تحویل می دهد.
+In fact, when using Simotel Webhooks, an HTTP request is sent from Simotel to your specified application, delivering the required data to you.
 
+### Useful Links
 
+- The PHP package for connecting to Simotel, along with an example, can be downloaded from **[here](https://github.com/simotel/simotel-php-connect)**.
 
-### لینک‌های مفید
+- The Laravel package for Simotel, providing further insights into the calling methods, can be downloaded from **[here](https://github.com/simotel/simotel-laravel-connect)**.
 
-- پکیج PHP اتصال به سیموتل به همراه مثال از **[اینجا](https://github.com/simotel/simotel-php-connect)** قابل دانلود می‌باشد.
-
-- پکیج Laravel سیموتل به جهت آشنایی بیشتر با شیوه‌ فراخوانی‌ها از **[اینجا](https://github.com/simotel/simotel-laravel-connect)** قابل دانلود می‌باشد.
-
-- فایل Postman به جهت آشنایی بیشتر با شیوه‌ عملکرد API از **[اینجا](https://dl.mysup.ir/postmansample/Simotel_V3.edition_14.postman_collection.json)** قابل دانلود می‌باشد(v3_e14).
+- The Postman file for better understanding of the API functionality can be downloaded from **[here](https://dl.mysup.ir/postmansample/Simotel_V3.edition_14.postman_collection.json)** (v3_e14).
 
 
 

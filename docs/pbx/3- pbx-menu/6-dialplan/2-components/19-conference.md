@@ -1,15 +1,9 @@
----
-sidebar_label: "Conference "
----
-
-
 # Conference
 
-## کاربرد
+## Purpose
 
-از این کامپوننت برای استفاده از کنفرانس صوتی استفاده می‌‌شود. برای تشکیل هر کنفرانس باید یک اتاق کنفرانس ایجاد گردد و سپس کاربران وارد اتاق کنفرانس شوند. برای شکل گرفتن اتاق کنفرانس باید شماره‌‌ای نیز به آن اختصاص یابد تا کاربران بتوانند به‌وسیله آن وارد اتاق کنفرانس گردند.
+This component is used for audio conferencing. To set up a conference, a conference room must first be created, and then users can enter the conference room. Each conference room is assigned a number so that users can join the conference using that number.
 
+## Parameters
 
-## پارامترها کامپوننت
-
-- **Conference**: شماره اتاق کنفرانس است. اگر شماره‌‌ای وارد نشود، شماره گرفته‌شده توسط کاربر به‌‌عنوان اتاق کنفرانس درنظر گرفته می‌‌شود.
+- **Conference**: The conference room number. If no number is entered, the number dialed by the user will be treated as the conference room number.

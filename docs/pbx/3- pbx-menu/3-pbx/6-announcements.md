@@ -1,29 +1,22 @@
----
-sidebar_label: "آواها"
-title: "آواها"
----
+# Announcements
 
+The system messages used in the phone environment are defined in this section. It is also possible to modify or delete these messages.
 
-# آوا‌ها
-
-
-پیام‌‌های سیستم تلفنی که در محیط ویرایشگر مورد استفاده قرار می‌‌گیرند در این قسمت تعریف می‌‌شوند. امکان تغییر و حذف پیام‌‌ها نیز فراهم گردیده است.
-
-:::info اطلاعات
-سیموتل برخلاف مرکز تلفن‌‌های دیگر، محدوده وسیعی از انواع فایل‌‌های صوتی را پشتیبانی می‌‌کند. از جمله فرمت فایل‌‌های صوتی که در سیموتل می‌‌توانند بارگذاری شوند: wav، mp3، ogg، m4a، mp4 و ...
+:::info Information
+Unlike other PBX systems, Simotel supports a wide range of audio file formats. Some of the supported audio file formats include: wav, mp3, ogg, m4a, mp4, and more.
 :::
 
-## پارامتراهای Announcements
+## Announcements Parameters
 
-- **Name**: نام آوا.
+- **Name**: The name of the announcement.
 
-- **File**: مسیر فایل صوتی.
+- **File**: The path to the audio file.
 
-- **Comments**: توضیحات درمورد آوا.
+- **Comments**: Description of the announcement.
 
-- **Search**: با استفاده از این فیلد می‌توان بر اساس تمامی اطلاعات موجود در جدول جستجو انجام داد.
+- **Search**: Use this field to search based on all available information in the table.
 
-- **Details**
-	- **Remove**: حدف رکورد موجود.
-	- **Edit**: ویرایش رکورد موجود.
-	- **Play**: پخش فایل صوتی‌.
+- **Details**:
+	- **Remove**: Delete the existing record.
+	- **Edit**: Edit the existing record.
+	- **Play**: Play the audio file.

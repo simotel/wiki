@@ -1,22 +1,15 @@
----
-sidebar_label: "سابقه فعالیت HA"
-title: "سابقه فعالیت HA"
----
-
-
 # HA Logs
 
-در صورتی که سرویس HA راه‌اندازی شده باشد در این بخش گزارشات و لاگ‌های مربوط به وضعیت سرورها و تغییرات ایجاد شده در آن‌ها نشان داده می‌شود.
+If the HA service is activated, this section displays reports and logs related to the status of servers and the changes made to them.
 
+## HA Logs Reporting Parameters
 
-## پارامترهای گزارش‌گیری HA Logs
+- **From (Date)**: Retrieve logs starting from this date.
 
-- **From (Date)**: بازیابی گزارشات از تاریخ.
+- **To (Date)**: Retrieve logs up to this date.
 
-- **To (Date)**: بازیابی گزارشات تا تاریخ.
+- **Description**: Filter logs based on the description parameter.
 
-- **Description**: فیلتر گزارشات براساس پارامتر توضیحات.
+- **Type**: Display logs based on the type of service.
 
-- **Type**: نمایش گزارشات براساس نوع سرویس.
-
-- **Find Alike**: یافتن موارد مشابه.
+- **Find Alike**: Find similar entries.

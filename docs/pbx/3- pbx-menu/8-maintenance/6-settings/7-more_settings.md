@@ -1,15 +1,9 @@
----
-sidebar_label: "تنظیمات بیشتر"
-title: "تنظیمات بیشتر"
----
-
-
 # More Settings
 
-در این بخش، تنظیمات بیشتر مرکز تماس وجود دارند.
+In this section, additional settings for the Call Center are available.
 
-## پارامترهای More Settings
+## More Settings Parameters
 
-۱. **Reset PBX**: با استفاده از این گزینه می‌توان مرکز تماس را ریست کرد.
+1. **Reset PBX**: This option allows you to reset the Call Center.
 
-۲. **Apply Server Settings**: در برخی موارد خاص نیاز می‌باشد پس از انجام تغییرات  بر روی این گزینه نیز برای تایید نهایی کلیک شود، برای مثال پس از تغییر پورت در PBX.
+2. **Apply Server Settings**: In certain cases, after making changes, you may need to click this option for final confirmation, such as after changing the port in the PBX.

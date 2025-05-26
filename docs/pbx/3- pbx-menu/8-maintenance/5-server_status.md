@@ -1,38 +1,28 @@
----
-sidebar_label: "وضعیت سرور"
-title: "وضعیت سرور"
----
-
-
 # Server Status
 
-ازآن‌جا که مرکز تماس یک سیستم ارتباطی و مهم در هر سازمان محسوب می‌شود، امکان نظارت و خطایابی از آن اهمیت دارد. برای حصول اطمینان از اجرای صحیح اجزای مختلف مركز تماس، سیموتل وضعیت سرویس‌‌های داخلی را در این قسمت نمایش می‌دهد. در این بخش همچنین امكاناتی برای ریبوت کردن سرور و تغییر ساعت سرور درنظر گرفته شده است.
+Since the Call Center is a crucial communication system in any organization, monitoring and troubleshooting it is essential. To ensure the proper functioning of various components of the Call Center, Simutel displays the status of internal services in this section. This section also includes options for rebooting the server and adjusting the server time.
 
-## پارامترهای Server Status
-- **Reset Server**: با کلیک برروی این گزینه می‌توان سرور را ریست کرد.
- 
-- **Remove Server**:این قابلیت زمانی استفاده می‌شود که چندین Server Status در این بخش نمایش داده شود و برای حذف می‌باشد.
- 
-- **Adjust Server Time**: از این قسمت برای تغییر ساعت سرور استفاده می‌شود.
+## Server Status Parameters
+- **Reset Server**: Clicking this option allows you to reset the server.
+  
+- **Remove Server**: This feature is used when multiple Server Status entries are displayed in this section for deletion.
+  
+- **Adjust Server Time**: This section is used to change the server time.
 
 ## Server Status HA
 
-در صورتی که سرویس HA بر روی سرور راه‌اندازی شده باشد به جای مقدار `Current server is not in HA mode.` وضعیت سرورهای HA شده نمایش داده می‌شود، در‌این بخش می‌توانید وضعیت سرور‌های HA را مانیتور کنید. اطلاعاتی که دراین بخش نمایش داده می‌شوند شامل
- 
-۱. **Uptime**: زمان فعال بودن هر سرور را نشان می‌دهد.
+If the HA service is running on the server, the status of HA servers will be displayed instead of the message `Current server is not in HA mode.` In this section, you can monitor the status of HA servers. The information displayed includes:
 
-۲. **State**: وضعیت سرورها که شامل: **PRIMARY**(سرور زیربار)، **SECONDARY**(سرور جایگزین)، **ARBITER**(سرور رای‌دهنده) می‌باشد.
+1. **Uptime**: Indicates the active time of each server.
 
-۳. **Syncing**: وضعیت همگام‌سازی پایگاه داده‌های سرورها را مشخص می‌کند. در صورتی که در این قسمت **connection refused** مشاهده شود یعنی پایگاه‌داده سرور فعال نمی‌باشد و سرویس HA به مشکل برمی‌خورد.
+2. **State**: The status of the servers, which includes: **PRIMARY** (active server), **SECONDARY** (backup server), **ARBITER** (voting server).
 
-۴. **Priority**: الویت هریک از سرورها را مشخص می‌کند.
+3. **Syncing**: Indicates the synchronization status of the servers' databases. If **connection refused** is seen here, it means the active server's database is not operational, causing issues with the HA service.
 
-۵. **Votes**: میزان رای هر سرور در تصمیم گیری مربوط به صحت‌داده‌ها را مشخص می‌کند.
+4. **Priority**: Specifies the priority of each server.
 
+5. **Votes**: Indicates the voting power of each server in data integrity decisions.
 
+## Channels Status Section
 
-
-## بخش Channels Status
-
-در این قسمت کانال‌های تماس درگیر در سرور و وضعیت آنها نمایش داده می‌شود. با کلیک بر روری ❌ کانال برقرار شده بسته می‌شود.
-
+This section displays the call channels engaged on the server and their status. Clicking on ❌ will close the established channel.

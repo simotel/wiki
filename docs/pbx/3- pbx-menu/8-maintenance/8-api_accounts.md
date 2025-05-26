@@ -1,30 +1,21 @@
----
-sidebar_label: "حساب کاربری Api"
-title: "حساب کاربری Api"
----
-
-
 # API Accounts
 
-این قسمت مربوط به ساخت حساب‌کاربری برای کاربران SA می‌باشد،با کلیک بر روی ➕ امکان ساخت کاربر جدید فراهم می‌شود.
+This section is for creating user accounts for SA users. Clicking on ➕ allows you to create a new user.
 
+## API Accounts Parameters
 
-## پارامترهای API Accounts
+- **Authentication**: Simutel uses various methods for authenticating the requesting user, with the most secure method being BasicAuth (username and password) along with an API Key (Token).
 
-- **Authentication**: سیموتل از روش‌های مختلفی برای احراز هویت کاربر درخواست دهنده استفاده می‌کند،امن‌ترین روش استفاده
- از BasicAuth (نام‌کاربری و رمزعبور)  به همراه API Key (Token) می‌باشد.
+- **Username**: The user's username.
 
-- **Username**: نام‌کاربری کاربر.
+- **Password**: The user's password.
 
-- **Password**: رمزعبور کاربر.
+- **Token**: A string generated for stronger authentication.
 
-- **Token**: رشته‌ای که در جهت احرازهویت قوی‌تر تولید می‌شود.
+- **Enabled**: Allows you to enable or disable the user.
 
-- **Enabled**: امکان فعال یا غیر‌فعال‌سازی کاربر را در اختیار شما قرار می‌دهد.
+- **Request**: Specifies the user's access level to the APIs. For example, if you need to add a user via the API, the checkbox for /pbx/users/add must be checked.
 
-- **Request**: میزان سطح دسترسی کاربر به APIها را مشخص می‌کند،برای مثال در صورت نیاز به افزودن کاربر با استفاده
- از API حتما باید تیک /pbx/users/add بخورد.
- 
 - **Details**:
-	- **Remove**: برای حذف حساب‌کاربری می‌باشد.
-	- **Edit**: در ویرایش حساب‌کاربری، کاربرد دارد.
+    - **Remove**: Used to delete the user account.
+    - **Edit**: Used for editing the user account.

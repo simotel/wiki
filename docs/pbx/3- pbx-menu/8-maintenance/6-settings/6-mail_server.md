@@ -1,54 +1,39 @@
----
-sidebar_label: "ارسال پست الکترونیک"
-title: "ارسال پست الکترونیک"
----
-
-
-
 # Mail Server
 
-برای راه‌اندازی قابلیت ارسال ایمیل در مرکز تماس سیموتل جهت ارسال ویس میل‌ها نیاز است اطلاعات با استفاده از پروتکل SMTP به سمت سرور ایمیل ارسال شوند(smtp پروتکلی که سرور‌های ایمیل با استفاده از آن با یکدیگر ارتباط برقرار می‌کنند)،سیموتل بصورت پیشفرض از این پروتکل پشتیبانی می‌کند.
+To enable email sending capabilities in the Simotel Call Center for sending voicemails, information needs to be sent to the email server using the SMTP protocol (the protocol that email servers use to communicate with each other). Simotel supports this protocol by default.
 
-:::info اطلاعات
-در این آموزش از سرویس ایمیل شرکت گوگل استفاده شده است و آموزش بر اساس تنظیمات مورد نیاز در سرویس Gmail می‌باشد.
+:::info
+**Information**: This guide uses Google’s email service and is based on the settings required for Gmail.
 :::
 
-## تنظیمات میل‌سرور در سیموتل
+## Mail Server Settings in Simotel
 
-۱. ابتدا وارد بخش `maintenance > setting > mail server` می‌شویم.
+1. First, navigate to `maintenance > setting > mail server`.
 
-۲. پس از آن مشخصات باید مشابه عکس پایین پر شود تا سرور ایمیل مد نظر و حسابی که درخواست ارسال از آن را داریم مشخص شود(برای مشاهده با کیفیت بهتر Sidebar را ببندید).
+2. Then, fill in the details as shown in the image below to specify the desired email server and the account from which the requests to send emails will be made (for better visibility, close the sidebar).
 
+   ![1](/img/simotel/mail_server/1.jpg)
 
-![1](/img/simotel/mail_server/1.jpg)
+## Gmail Settings in Your Google Account
 
-
-
-## تنظیمات مربوط به Gmail در حساب گوگل
-
-در ابتدا وارد حساب گوگل خود شوید پس از آن در بخش امنیت نیاز می‌باشد که ``احرازهویت دو مرحله‌ای`` غیر فعال و قابلیت ``دسترسی به برنامه‌هایی با امنیت کمتر`` فعال باشد.
+First, log into your Google account. In the security section, you need to disable **two-step verification** and enable **access for less secure apps**.
 
 ![2](/img/simotel/mail_server/2.jpg)
 
+## Voicemail Settings in Simotel
 
-## تنظیمات مربوط Voicemail در سیموتل
-
-در نهایت با افزودن Voicemail به مرکز تماس سیموتل و افزودن آدرس ایمیل و فعال‌کردن آن ، فایل صوتی صندوق صوتی به همراه اطلاعات تماس گیرنده به ایمیل مد نظر ما از طریق سرور ایمیل که در بخش اول تعیین شده ارسال می‌شود.
+Finally, by adding Voicemail to the Simotel Call Center and entering the email address while activating it, the audio file of the voicemail along with the caller's information will be sent to the specified email via the email server defined in the first section.
 
 ![3](/img/simotel/mail_server/3.jpg)
 
-در این مثال ارسال کننده و دریافت کننده ایمیل vahidsadrnia می‌باشد.
+In this example, both the sender and receiver of the email are `vahidsadrnia`.
 
-**نمونه از پیام دریافتی در Inbox**
+**Example of a received message in Inbox:**
+
 ![4](/img/simotel/mail_server/4.jpg)
 
-
-
-
-برای بررسی وضعیت ارسال ایمیل نیاز است گزارشات simotel.log مورد بررسی قرار گیرد.
+To check the status of email sending, you need to review the `simotel.log` reports.
 
 ![5](/img/simotel/mail_server/5.jpg)
 
-
-برای کسب اطلاعات بیشتر در مورد سرویس گوگل به **[اینجا](https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server
-)** مراجعه فرمایید.
+For more information about Google’s service, refer to **[here](https://www.hostinger.com/tutorials/how-to-use-free-google-smtp-server)**.

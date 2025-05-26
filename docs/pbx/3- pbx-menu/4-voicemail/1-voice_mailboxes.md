@@ -1,41 +1,35 @@
----
-sidebar_label: "صندوق‌های صوتی"
-title: "صندوق‌های صوتی"
----
+# Voicemail Boxes
 
+In Simotel, each user can have their own dedicated voicemail box. After defining the user, a voicemail box must be created for them in the Voicemail menu. It is not necessary for the voicemail box number to match the user’s number in the system, but for better management of the voicemail boxes in the editor, it is recommended to name them identically.
 
-# صندوق‌های صوتی
+## Voicemail Box Parameters
 
-در سیموتل این قابلیت وجود دارد که هر کاربر، یک صندوق صوتی اختصاصی داشته باشد. برای این منظور باید پس از تعریف کاربر، در منوی صندوق صوتی برای وی یک صندوق صوتی ایجاد نمود. ضرورتی ندارد شماره صندوق با شماره کاربر در سیستم یکسان باشد ولی برای مدیریت بهتر صندوق‌‌ها در ویرایشگر، بهتر است آن‌‌ها را هم‌نام انتخاب کنید.
+- **Name**: The name of the voicemail box.
 
-## پارامترهای Voice MailBoxes
+- **Number**: The voicemail box number (used in internal communication and the editor, similar to an extension).
 
-- **Name**: نام صندوق صوتی.
+- **Password**: The password for the voicemail box.
 
-- **Number**: شماره صندوق صوتی (که در ارتباط داخلی و ویرایشگر آن استفاده می‌‌گردد، همانند یک داخلی).
+- **Email**: The email address for notifications and sending voicemail files.
 
-- **Password**: وارد‌‌کردن پسورد برای صندوق صوتی.
+- **Requires Password**: Requests a password (this option is typically enabled when someone wants to listen to the voicemail files).
 
-- **Email**: آدرس ایمیل برای اطلاع رسانی و ارسال فایل‌های صندوق صوتی.
+- **Allow Change Password**: Allows the voicemail password to be changed via phone.
 
-- **Requires Password**: درخواست رمز عبور(این گزینه معمولا زمانی فعال می‌شود که کسی بخواهد به فایل‌های صندوق صوتی گوش دهد).
+- **Send Email**: Should an email be sent to the address provided above?
 
-- **Allow Change Password**: اجازه تغییر پسورد صندوق صوتی از طريق تلفن.
+- **Attach File Email**: Should the voicemail audio file be attached to the email?
 
-- **Send Email**: ایمیل برای آدرس تعیین شده در بالا ارسال شود؟
+- **Play Busy**: Should the "busy" voicemail message be played initially?
 
-- **Attach File Email**: فایل صوتی مربوط به صندوق صوتی را ضمیمه ایمیل قرار دهد؟
+- **Play Unavailable**: Should the "unavailable" voicemail message be played initially?
 
-- **Play Busy**: در ابتدا فایل صوتی مشترک مشغول می‌باشد پخش شود.
+- **Play Welcome**: Should the "welcome" voicemail message be played initially?
 
-- **Play Unavailable**: در ابتدا فایل صوتی مشترک دردسترس نمی‌باشد پخش شود.
+- **Play CID**: Should the caller ID be read before the voicemail message is played?
 
-- **Play Welcome**: در ابتدا فایل صوتی خوش‌آمدگویی پخش شود.
+- **Play Envelope**: Should the date and time be announced before the voicemail message is played?
 
-- **Play CID**: خواندن شماره تماس‌‌گیرنده قبل از پخش فایل صوتی.
+- **Delete Voicemail**: Allows voicemail files to be deleted via phone.
 
-- **Play Envelope**: اعلام تاریخ/ زمان قبل از پخش پیام صوتی.
-
-- **Delete Voicemail**: امکان حذف فایل‌‌های صوتی از طريق تلفن.
-
-- **More Options**: افزودن امکانات بیشتر با استفاده از کدهای خاص.
+- **More Options**: Add additional features using special codes.

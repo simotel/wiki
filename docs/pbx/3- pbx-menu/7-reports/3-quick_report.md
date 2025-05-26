@@ -1,10 +1,3 @@
----
-sidebar_label: "گزارشات سریع"
-title: "گزارشات سریع"
----
+# Quick Reports
 
-
-
-# گزارشات سریع
-
-گزارش‌‌گیری سریع، مشابه گزارش‌‌گیری پیشرفته است. در این عملیات برای سهولت در گزارش‌‌گیری، اکثر فیلتر‌‌ها حذف می‌شوند تا محیط ساده‌تری برای گزارش‌گیری حاصل شود.
+Quick reporting is similar to advanced reporting. In this operation, most filters are removed to create a simpler environment for reporting. This allows users to generate reports more easily and efficiently without the complexity of multiple filtering options.

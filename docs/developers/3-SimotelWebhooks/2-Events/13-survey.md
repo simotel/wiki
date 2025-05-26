@@ -1,29 +1,30 @@
 ---
-sidebar_label: "مشارکت در نظرسنجی"
-title: "مشارکت در نظرسنجی"
 ---
-
-
 # Survey
 
-هنگامی که در کامپونت poll  مشترک نظر خود را وارد می‌کنند،رویداد Survey ایجاد می‌گردد.
+
+When a participant submits their feedback in the poll component, the **Survey** event is triggered.
 
 
-## پارامترهای رویداد
+## Event Parameters
+
 <div class="custom-table">
-|      توضیحات      | داده های تعریف شده |       داده های نمونه       |  پارامترها |
-|:-----------------:|:------------------:|:--------------------------:|:----------:|
-|     نام رویداد    |          -         |           Survey           |    **event**   |
-|  شناسه یکتای تماس |          -         |       1610178448.217       |  **cuid** |
-|     شماره مبداء   |          -         |             991            |     **src**    |
-|     شماره مقصد    |          -         |             993            |     **dst**    |
-|      شماره صف     |          -         |             902            |    **queue**   |
-|    تاریخ نظرسنجی  |          -         | 2021-01-09 07:47:45.483185 |    **date**    |
-|   امتیاز داده شده |          -         |              5             |    **point**   |
-|    برچسب نظرسنجی  |          -         |          MySurvey          |    **label**   |
+
+|      Description      | Defined Data   |       Sample Data         |  Parameters  |
+|:---------------------:|:--------------:|:--------------------------:|:-----------:|
+|     Event Name        |         -       |           Survey           |    **event**   |
+|  Unique Call ID       |         -       |       1610178448.217       |   **cuid**    |
+|     Source Number     |         -       |             991            |    **src**    |
+|     Destination Number|         -       |             993            |    **dst**    |
+|      Queue Number     |         -       |             902            |   **queue**   |
+|    Survey Date        |         -       | 2021-01-09 07:47:45.483185 |    **date**    |
+|   Rating Given        |         -       |              5             |    **point**   |
+|    Survey Label       |         -       |          MySurvey          |    **label**   |
+
 </div>
 
-## نمونه خروجی رویداد VoiceMail
+
+## Sample Output of Survey Event
 
 
 ```shell

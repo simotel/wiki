@@ -1,22 +1,17 @@
----
-sidebar_label: "WhiteList"
----
-
 # WhiteList
 
-## کاربرد
+## Usage
 
-از این کامپوننت برای بررسی لیست سفید استفاده می‌شود. با ورود تماس به این کامپوننت، حضور آن در لیست سفید بررسی می‌شود (مراجعه شود به منوی لیست سفید). به دو صورت شماره‌‌ها بررسی می‌شوند: یا با استفاده از برچسب‌‌ها در شماره‌‌های ثبت‌شده در منوی لیست سفید و یا با شماره‌هایی که مستقیماً در پارامتر Numbers واردشده‌اند چک می‌شود.
+This component is used to check the whitelist. When a call enters this component, its presence in the whitelist is verified (refer to the whitelist menu). Numbers are checked in two ways: either by using tags in the numbers registered in the whitelist menu or by directly checking numbers entered in the Numbers parameter.
 
+## Component Parameters
 
-## پارامترها کامپوننت
+- **Labels**: Tags present in the whitelist.
 
-- **Labels**: برچسب موجود در لیست سفید.
+- **Number**: Numbers that are considered directly as part of the whitelist.
 
-- **Number**: شماره‌هایی که مستقیما به‌‌عنوان لیست سفید درنظر گرفته می‌شوند.
+## Outputs
 
-## خروجی‌ها
+- **✓**: If the caller's number is in the whitelist.
 
-- **✓**: درصورتی که شماره تماس‌‌گیرنده در لیست سفید باشد.
-
-- **✗**: درصورتی که شماره تماس‌‌گیرنده در لیست سفید نباشد.
+- **✗**: If the caller's number is not in the whitelist.

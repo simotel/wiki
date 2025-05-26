@@ -1,24 +1,15 @@
----
-sidebar_label: "موزیک انتطار"
-title: "موزیک انتطار"
----
+# Music On Hold
 
+This section is responsible for managing the hold music in queues. In addition to viewing the existing hold music, you can also add, edit, or delete them.
 
-
-# موزيک انتظار
-
-
-این قسمت وظیفه مدیریت آهنگ‌‌های انتظار در صف را برعهده دارد. علاوه بر مشاهده آهنگ‌‌های انتظار موجود، قابلیت افزودن، ویرایش و حذف آن‌‌ها نیز وجود دارد.
-
-:::tip نکته
- برای افزودن موزیک انتظار به صف، در تنظیمات صف، پارامتر Music را برابر با نام کلاس ایجاد شده در اینجا قرار دهید.
+:::tip Note
+To add hold music to a queue, set the Music parameter in the queue settings to the name of the class created here.
 :::
 
-برای بارگذاری موزیک انتظار در ابتدا نیاز می‌باشد یک کلاس ساخته شود،پس از ایجاد کلاس امکان بارگذاری موزیک‌های انتظار در آن فراهم می‌شود.
+To load hold music, a class must first be created. After creating the class, it becomes possible to load hold music into it.
 
+## Music On Hold Parameters
 
-## پارامترهای Music On Hold
+- **Class Name**: The name of the class where a group of music tracks are loaded.
 
-- **Class Name**: نام کلاسی که گروهی از موزیک‌ها در آن بارگذاری می‌شوند.
-
-- **File**: مسیر موزیک انتظار.
+- **File**: The path to the hold music file.

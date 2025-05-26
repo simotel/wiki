@@ -1,40 +1,30 @@
----
-sidebar_label: "Queue"
----
-
-
-
 # Queue
 
-## کاربرد
+## Purpose
+The **Queue** component is used to route calls to a queue. This allows incoming calls to be placed in a queue for agents to respond to.
 
-برای ارسال تماس به سمت صف استفاده می‌شود.
+## Parameters
 
+- **Queue**: The specific queue to which the call will be routed. If no queue is selected, the call is directed to the queue that matches the entered number.
 
-## پارامترها کامپوننت
+- **Agent Introduction**: Announces the operator's number to the caller before the call is answered.
 
-- **Queue**: انتخاب صف جهت انتقال تماس می‌باشد. درصورتی‌‌که هیچ صفی انتخاب نشود تماس به سمت صف منطبق با شماره واردشده ارسال می‌‌گردد.
+- **Timeout (sec)**: The maximum time (in seconds) the caller will wait in the queue before being transferred.
 
-- **Agent Introduction**: اعلام شماره اپراتور به تماس‌‌گیرنده (قبل از برقراری تماس) است.
+- **Skip**: Defines the number of digits to be removed from the beginning of the entered number. The remaining number is then used as the destination number.
 
-- **Timeout (sec)**:حداکثر مدت زمانی که کاربر در صف منتظر پاسخگویی بماند.
+- **Prefix**: Adds the number entered in this field before the destination number, effectively modifying the number.
 
-- **Skip**: تعیین تعداد رقم‌‌هایی است که باید از ابتدای شماره واردشده حذف گردد. سپس شماره جدید به‌عنوان شماره مقصد درنظر گرفته می‌شود.
+- **Call Limit (sec)**: The maximum time allocated for each call answered by an agent in the queue.
 
-- **Prefix**: افزودن عدد درج‌شده در این گزینه قبل از شماره واردشده است. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌شود.
+- **Macro**: The file path for the macro to be executed.
 
-- **Call Limit (sec)**: محدودیت زمانی مكالمه اپراتور‌‌ها برای هر تماس در صف است.
+- **Options**: Various settings related to the queue configuration.
 
-- **Macro**: مسیر فایل ماكرو است.
+- **Call Options**: Settings for managing the call flow within the queue.
 
-- **Options**: تنظیمات صف است.
+## Outputs
 
-- **Call Options**: تنظیمات تماس است.
+- **S (Success)**: The call is successful if an active agent in the queue answers the call.
 
-
-
-## خروجی‌ها
-
-- **S (Success)**: درصورتی‌‌که تماس موفق باشد، یعنی یكی از داخلی‌های فعال در صف به تماس پاسخ دهد.
-
-- **F (Fail)**: درصورتی‌‌که تماس ناموفق باشد، یعنی به هر دلیلی موفق نبوده باشد.
+- **F (Fail)**: The call is unsuccessful if, for any reason, it was not answered successfully.

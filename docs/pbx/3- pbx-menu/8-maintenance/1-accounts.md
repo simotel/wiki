@@ -1,49 +1,35 @@
----
-sidebar_label: "حساب کاربری"
-title: "حساب کاربری"
----
-
 # Accounts
 
-این منو لیست کاربران پنل‌ وب را نمایش می‌‌دهد. از این قسمت می‌‌توان کاربر جدید اضافه کرد و دیگر کاربران را ویرایش یا حذف کرد. 
+This menu displays the list of users in the web panel. From this section, you can add new users and edit or delete existing ones.
 
-## پارامترهای بخش کاربران
+## User Parameters
 
-- **Name**: نام کاربر.
-
-- **Username**: حساب کاربری یکتا.
-
-- **Password**: کلمه عبور.
-
-- **Account Type**: نوع حساب کاربری که مشخص کننده سطح دسترسی به پنل می‌باشد را تعیین می‌‌کند،سطح دسترسی‌ها در بخش `Account Type` مشخص می‌شوند.
-
-- **Enabled**: وضعیت فعال بودن یا غیرفعال بودن حساب‌کاربری را مشخص می‌کند.
-
+- **Name**: User's name.
+- **Username**: Unique user account.
+- **Password**: User's password.
+- **Account Type**: Determines the access level to the panel; access levels are specified in the `Account Type` section.
+- **Enabled**: Indicates whether the user account is active or inactive.
 - **Details**:
-	- **Remove**: برای حذف حساب می‌باشد.
-	- **Edit**: ویرایش حساب کاربری.
-	- **Cut Current Access**: قطع کردن دسترسی‌های لاگین‌شده(زمانی کاربرد دارد که پسورد را تغییر می‌دهید و می‌خواهید از آن لحظه به بعد تمام دسترسی‌های موجود قطع شده و تمامی افراد با رمزعبور جدید وارد شوند).
-	
-	
-## فرایند‌های امنیتی ورود به پنل کاربری
+  - **Remove**: Used to delete the account.
+  - **Edit**: Edit the user account.
+  - **Cut Current Access**: Disconnects logged-in access (useful when changing the password and wanting to cut off all current access immediately so that everyone must log in with the new password).
 
-در‌جهت بالا‌بردن امنیت سیستم در مرحله ورود به پنل‌وب فرایندهای زیر به‌ترتیب بررسی می‌شوند
+## Security Processes for User Panel Login
 
-۱- **کدکپچا**: درصورتی که قابلیت [کپچا](/pbx/pbx-menu/maintenance/settings/general_settings) فعال شده باشد بسیاری از حملات رایج صورت‌گرفته به پنل‌وب بدون نتیجه می‌مانند.
+To enhance system security during the login phase, the following processes are checked in order:
 
-۲- **وضعیت حساب کاربری(فعال،غیرفعال)**: وضعیت حساب کاربری توسط سیستم بررسی می‌شود.
+1. **Captcha**: If the [captcha](/pbx/pbx-menu/maintenance/settings/general_settings) feature is enabled, many common attacks on the web panel will fail.
+  
+2. **Account Status (Active, Inactive)**: The system checks the status of the user account.
 
-۳- **زمان آخرین تلاش ناموفق**: درصورتی که نام‌کاربری یا رمز‌عبور اشتباه وارد شود، زمان تلاش مجدد برای لاگین حداقل باید ۵ ثانیه باشد و در غیر اینصورت سیستم اجازه ورود نمی‌دهد (جلوگیری از نوع حمله brute-force).
+3. **Last Failed Attempt Time**: If the username or password is entered incorrectly, the time for the next login attempt must be at least 5 seconds; otherwise, the system will not allow access (prevents brute-force attacks).
 
-۴- **تعداد تلاش‌های ناموفق**: درصورتی که بیش از سه بار درخواست ورود اشتباه وارد شود قابلیت کپچا سیستم بصورت خودکار فعال می‌شود، نهایتا نیز درصورتی که ده‌ بار درخواست اشتباه پشت‌سر هم وارد شود حساب کاربری بصورت خودکار غیرفعال می‌شود.
+4. **Number of Failed Attempts**: If more than three incorrect login attempts are made, the captcha feature is automatically activated. Ultimately, if ten consecutive incorrect attempts occur, the user account is automatically disabled.
 
-۵- **رمز عبور**: در نهایت نیز رمزعبور وارد شده توسط سیستم بررسی می‌شود و درصورت صحت اطلاعات کاربر وارد پنل‌وب می‌شود.
+5. **Password**: Finally, the entered password is checked by the system, and if the information is correct, the user is granted access to the web panel.
 
+- **Note**: After a user logs into the web panel, information such as the user's IP, the account's active or inactive status, and the account expiration date are checked in real-time. If there are changes in any of these areas, the assigned session token becomes inactive, requiring the user to log in again.
 
-- **نکته**: پس از ورود کاربر به پنل‌وب اطلاعاتی مثل ip کاربر، وضعیت فعال یا غیرفعال بودن حساب و تاریخ انقضای حساب‌کاربری بصورت بلادرنگ بررسی می‌شوند و در صورت تغییر در هر کدارم از موارد توکن اختصاص داده شده به نشست غیرفعال می‌شود و نیاز می‌باشد کاربر دوباره لاگین کند.
-
-
-:::info اطلاعات
-زمانی که برروی سیستمی چندین لاگین ناموفق وجود داشته باشد،پس از اولین لاگین موفق گزارشی از لاگین‌های ناموفق به کاربر نمایش داده می‌شود.
-
-::: 
+:::info
+**Information**: When there are multiple unsuccessful login attempts on a system, a report of the failed logins will be shown to the user after the first successful login.
+:::

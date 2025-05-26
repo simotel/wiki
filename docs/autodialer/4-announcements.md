@@ -1,17 +1,17 @@
 ---
-sidebar_label: "آواها"
-title: "آواها"
+title: "Announcements"
+sidebar_label: "Announcements"
 ---
 
-# آواها
+# Announcements
 
-فایل صوتی مربوط به کمپین(تماس انبوه) خود را با کلیک بر روی دکمه ➕ اضاف کنید.در زمان ساخت کمپین این فایل‌صوتی را برای تماس‌انبوه خود انتخاب کنید.
+Add the audio file for your campaign (bulk contact) by clicking the ➕ button. When creating a campaign, select this audio file for your bulk contact.
 
-## پارامترهای Announcements
+## Announcements Parameters
 
-- **Name**: نام فایل‌صوتی.
+- **Name**: The name of the audio file.
 
-- **File**: فایل‌صوتی خود را اینجا انتخاب کنید.
+- **File**: Select your audio file here.
 
-- **Description**: توضیحات مربوط به فایل‌صوتی خود را در اینجا وارد کنید.
- 
+- **Description**: Enter a description for your audio file here.
+```

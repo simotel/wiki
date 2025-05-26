@@ -1,28 +1,18 @@
 ---
-sidebar_label: "مثال کاربردی"
-title: "مثال کاربردی"
+sidebar_position: 1
 ---
+# Practical Example
 
+**Example: Create a campaign that:**
 
+1. Plays the "Hello_World" audio file for the recipients.
+2. Sends calls via the "autodialer" trunk.
+3. Starts sending bulk calls from 2021/07/10 to 2021/07/15.
+4. Dials the numbers 05131041570 and 0219109000.
+5. If the recipient doesn't answer, calls them again, with a 10-minute interval between calls.
 
-# مثال‌کاربردی
-
-**مثال: کمپبنی ایجاد کنید که **
-
-
-۱- فایل صوتی Hello_World برای مخاطبان پخش شود.
-
-۲- ارسال تماس‌ها برروی ترانک autodialer صورت گیرد.
-
-۳- از تاریخ ۱۴۰۰/۰۴/۱۹ تا تاریخ ۱۴۰۰/۰۴/۲۳ شروع به‌ارسال تماس‌انبوه بکند.
-
-۴- با شماره‌های ۰۵۱۳۱۰۴۱۵۷۰ و ۰۲۱۹۱۰۹۰۰۰ تماس گرفته شود.
-
-۵- درصورت پاسخ ندادن مخاطب دوباره با او تماس گرفته شود، فاصله بین دو تماس ۱۰ دقیقه باشد.
-
-
-**۱:**
-برای بدست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/developers/api/Autodialer_API/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
+**1:**
+To get the unique ID of the audio file, use the [announcement search](/developers/Autodialer_API/announcement/announcement_search) service. The sample HTTP request is as follows:
 
 <!--  -->
 import Tabs from '@theme/Tabs';
@@ -31,8 +21,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -45,7 +35,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```shell
@@ -95,7 +85,8 @@ Content-Length: 66
 
 
 <!--  -->
-۲: برای یافتن شناسه‌یکتای ترانک از سرویس [trunk manager search](/developers/api/Autodialer_API/trunk_manager/trunk_manager_search) استفاده می‌کنیم،نمونه درخواست HTTP آن به شرح زیر می‌باشد
+**2:** To find the unique Trunk Manager ID, we use the [trunk manager search](/developers/Autodialer_API/trunk_manager/trunk_manager_search) service. The sample HTTP request is as follows:
+
 
 <!--  -->
 
@@ -103,8 +94,8 @@ Content-Length: 66
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -117,7 +108,7 @@ Content-Length: 66
         ]}>
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```shell
@@ -248,15 +239,14 @@ Content-Length: 66
 
 
 
-۳،۴،۵: درنهایت نیز باساخت کمپینی با شرایط ذکر شده ارسال تماس انبوه در زمان مشخص شده انجام می‌شود ([campaign add](/developers/api/Autodialer_API/campaign/campaign_add))، نمونه درخواست HTTP به‌شرح زیر می‌باشد
-
+**3, 4, 5:** Finally, a campaign is created with the specified conditions to send bulk calls at the defined time ([campaign add](/developers/Autodialer_API/campaign/campaign_add)). The sample HTTP request is as follows:
 
 <!--  -->
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -271,7 +261,7 @@ Content-Length: 66
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```shell

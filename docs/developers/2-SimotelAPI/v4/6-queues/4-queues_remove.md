@@ -1,21 +1,19 @@
 ---
-sidebar_label: "حذف صف"
-title: "حذف صف"
+
 ---
-
-
 # Queue Remove
 
-از این سرویس برای حذف صف استفاده می‌شود.
 
-## پارامتر‌ها
+This service is used to delete a queue.
+
+## Parameters
 <div class="custom-table">
-|                توضیحات                | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:-------------------------------------:|:------------------:|:------------------------:|:----------------------:|:---------:|
-| شناسه یکتای صف که از [جستجو](/developers/api/SimotelAPI/v4/queues/queues_search) بدست می‌آید |          -         | 603c8d9ffc909f2e766d40d3 |            **           |    id_    |
+|                Description                |    Defined Data    |      Sample Data      | Required Parameters[**]/Logical[*] | Parameters |
+|:-----------------------------------------:|:------------------:|:--------------------:|:----------------------:|:---------:|
+| Unique ID of the queue obtained from [search](/developers/SimotelAPI/v4/queues/queues_search) |          -         | 603c8d9ffc909f2e766d40d3 |            **           |    id_    |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -25,8 +23,8 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="usageCode"
   values={[
-    {label: 'نمونه کد استفاده', value: 'usageCode'},
-    {label: 'نمونه خروجی', value: 'outputCode'},
+    {label: 'Example Code To Use', value: 'usageCode'},
+    {label: 'Example Output', value: 'outputCode'},
   ]}>
 
   <!-- تب نمونه کد استفاده -->
@@ -43,7 +41,7 @@ import TabItem from '@theme/TabItem';
       <TabItem value="PHP">
 	  
         <details>
-          <summary>نمایش کامل کد PHP</summary>
+          <summary>Show Full Source Code PHP</summary>
           <br/>
 
 			```php
@@ -85,7 +83,7 @@ import TabItem from '@theme/TabItem';
       <!-- کد JS -->
       <TabItem value="JS">
         <details>
-          <summary>نمایش کامل کد JS</summary>
+          <summary>Show Full Source Code JS</summary>
           <br/>
 
 			```js
@@ -125,7 +123,7 @@ import TabItem from '@theme/TabItem';
 
       <TabItem value="Curl">
         <details>
-          <summary>نمایش کامل کد Curl</summary>
+          <summary>Show Full Source Code Curl</summary>
           <br/>
 
 		```bash

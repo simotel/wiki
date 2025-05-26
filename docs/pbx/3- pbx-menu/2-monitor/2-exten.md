@@ -1,28 +1,20 @@
----
-sidebar_label: "داخلی ها"
-title: "داخلی ها"
----
+# Extensions
 
-
-# داخلی‌ها
-
-:::caution هشدار
-
-این منو منسوخ شده و در نسخه های آینده غیر فعال می گردد.لطفا از منوی داشبورد استفاده کنید.
+:::caution Warning
+This menu is deprecated and will be disabled in future versions. Please use the Dashboard menu instead.
 :::
 ![exten](/img/simotel/monitor/exten.png)
 
-منوی داخلی‌‌ها، وضعیت تمام داخلی‌‌ها را به‌‌صورت آنلاین نمایش می‌‌دهد.
+The **Extensions** menu displays the real-time status of all extensions.
 
-### سربرگ‌‌های بخش  داخلی‌ها
+### Tabs in the Extensions Section
 
-- **Column View(نمایش ستونی)**: داخلی‌‌ها بر اساس وضعیتشان در یکی از ستون‌‌های آماده، درحال زنگ، درحال مکالمه و ... قرار می‌‌گیرند. 
-با تغییر وضعیت، اپراتور در ستون جدید نمایش داده می‌شود.
+- **Column View**: Extensions are displayed in predefined columns based on their status, such as "Ringing", "On Call", etc. When their status changes, the extension is moved to a new column.
 
-- **List view(نمایش لیستی)**: داخلی‌‌ها به‌صورت سطری (مرتب) و بدون توجه به وضعیتشان نمایش داده می‌شوند. در این قسمت نسبت به برگه ستونی اطلاعات بیشتری نمایش داده می‌شود.
+- **List View**: Extensions are displayed in rows (sorted) regardless of their status. This view provides more detailed information compared to the column view.
 
-- **Grid view(نمایش کاشی)**: داخلی‌‌ها به‌صورت چیدمان کاشی (و مرتب) کنار هم نمایش داده می‌شوند.
+- **Grid View**: Extensions are displayed side-by-side in a tiled (and organized) layout.
 
-- **Charts(نمودار)**: اطلاعات آماری مربوط به صف، در قالب چند نمودار نمایش داده می‌شوند.
+- **Charts**: Statistical information about the queues is displayed in several chart formats.
 
-- **Filters(تنظیمات)**: از برگه تنظیمات برای سفارشی‌کردن برگه‌‌های قبلی استفاده می‌شود. اینجا می‌‌توان نمایش اپراتور‌‌ها را به وضعیت‌‌های مشخصی محدود کرد.
+- **Filters**: The **Filters** tab allows customization of the previous views. You can filter the display to show extensions with specific statuses.

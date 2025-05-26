@@ -1,35 +1,32 @@
 ---
 sidebar_position: 2
-sidebar_label: "تماس دو طرفه"
-title: "تماس دو طرفه"
 ---
+# Originate call
+This service creates a Originate call (Number Masking). The caller can be either internal or a telecommunications number. If the caller is a telecommunications number, the trunk name must also be provided. The time_out value is optional, and if not assigned, it is set to 30 seconds by default.
 
-
-
-# تماس دوطرفه
-
-با استفاده از این سرویس تماس دوطرفه (Number Masking) ایجاد می‌شود. تماس گیرنده می‌تواند هم داخلی باشد و هم شماره مخابراتی.چنانکه تماس گیرنده شماره مخابراتی 
-باشد، نام ترانک نیز باید وارد شود. مقدار time_out اختیاری است و در صورت عدم تخصیص بصورت پیش‌فرض 30 ثانیه در نظر گرفته می‌شود.
-
-:::danger نکته مهم
-در تماس دوطرفه در صورتی که نفر اول پاسخ ندهد و تماس را قطع کند اطلاعات مربوط به تماس(CDR) به سمت وب‌سرویس شما ارسال نمی‌شود.اگر این موضوع برای شما اهمیت بالایی دارد می‌توانید از APIهای مربوط به ساخت کمپین به همراه کامپوننت `autodialer route` برای ایجاد تماس دوطرفه استفاده کنید.برای توضیحات بیشتر به **[این قسمت](/developers/api/Autodialer_API/call_originate)** مراجعه فرمایید.
+:::danger Important note  
+In a Originate call, if the first person does not answer and disconnects the call, the call data (CDR) will not be sent to your web service. If this is important for you, you can use the campaign creation APIs along with the `autodialer route` component to create a Originate call. For more details, please refer to **[this section](/developers/Autodialer_API/call_originate)**.
 :::
 
 
 
-### پارامترها
+### Parameters 
+
+
 <div class="custom-table">
-|                              توضیحات                              | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*]  |  پارامترها |
+|                              Description                              | Defined Data | Sample Data | Required Parameters[**]/Logical[*] | Parameters |
 |:-----------------------------------------------------------------:|:------------------:|:--------------:|:-----------------------:|:----------:|
-|                    (نفر اول در تماس)تماس گیرنده                   |          -         |       557      |            **           |   caller   |
-|                    (نفر دوم در تماس)شماره مخاطب                   |          -         |       552      |            **           |   callee   |
-| مسیر تماس نفر اول را مشخص می‌کند(به همراه کامپوننت Outgoing_Route) |          -         |  main_routing  |            **           |   context  |
+|                    (First person in the call) Caller                   |          -         |       557      |            **           |   caller   |
+|                    (Second person in the call) Contact Number         |          -         |       552      |            **           |   callee   |
+| Specifies the first person's call route (along with the Outgoing_Route component) |          -         |  main_routing  |            **           |   context  |
 |                                557                                |          -         |       557      |            **           |  caller_id |
-|                  مسیر تماس نفر دوم را مشخص می‌کند                  |          -         |                |            *            | trunk_name |
-|                   مدت زمان انتظار برای پاسخگویی                   |          -         |       30       |                         |   timeout  |
+|                  Specifies the second person's call route             |          -         |                |            *            | trunk_name |
+|                   Waiting time for answering                        |          -         |       30       |                         |   timeout  |
+|                   Call duration time                               |          -         |       30       |                         |   call_limit  |
 </div>
 
-## نمونه فراخوانی
+
+### Sample Invocation
 
 <!--  -->
 
@@ -39,8 +36,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -57,7 +54,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -73,14 +70,15 @@ import TabItem from '@theme/TabItem';
 	  CURLOPT_TIMEOUT => 0,
 	  CURLOPT_FOLLOWLOCATION => true,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	  CURLOPT_CUSTOMREQUEST => 'PUT',
+	  CURLOPT_CUSTOMREQUEST => 'POST',
 	  CURLOPT_POSTFIELDS =>'{
 		"caller":"557",
 		"callee":"552",
 		"context":"main_routing",
 		"caller_id":"557",
 		"trunk_name":"cisco",
-		"timeout":"30"
+		"timeout":"30",
+		"call_limit":"30"
 	}',
 	  CURLOPT_HTTPHEADER => array(
 		'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG',
@@ -107,7 +105,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js	
@@ -119,7 +117,7 @@ import TabItem from '@theme/TabItem';
 			<script>
 				var settings = {
 				  "url": "http://192.168.51.20/api/v4/call/originate/act",
-				  "method": "PUT",
+				  "method": "POST",
 				  "timeout": 0,
 				  "headers": {
 					"X-APIKEY": "vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG",
@@ -132,7 +130,8 @@ import TabItem from '@theme/TabItem';
 					  "context": "main_routing",
 					  "caller_id": "557",
 					  "trunk_name": "cisco",
-					  "timeout": "30"
+					  "timeout": "30",
+					  "call_limit":"30"
 					}),
 				};
 
@@ -151,11 +150,11 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 ```bash
 
-	curl --location --request PUT 'http://192.168.51.20/api/v4/call/originate/act' \
+	curl --location --request POST 'http://192.168.51.20/api/v4/call/originate/act' \
 	--header 'X-APIKEY: vZKtIKWsld0egNlkzHo8i5LVBqLNBSWARCQsPOSgDjFmAHM3tG' \
 	--header 'Authorization: Basic dGVzdDpBYTEyMzQ1Ng==' \
 	--header 'Content-Type: application/json' \
@@ -165,7 +164,8 @@ import TabItem from '@theme/TabItem';
 		"context":"main_routing",
 		"caller_id":"557",
 		"trunk_name":"",
-		"timeout":"30"
+		"timeout":"30",
+		"call_limit":"30"
 	}'
 ```
 
@@ -191,5 +191,4 @@ import TabItem from '@theme/TabItem';
   </Tabs>
 
 
- به جهت آشنایی بیشتر، در بخش مثال‌های کاربردی چند نمونه از [کاربردهای](/developers/api/Scenarios/call_originate) این سرویس مورد بررسی قرار گرفته‌ است.
-
+For further familiarity, several examples of [use cases](/developers/Scenarios/call_originate) for this service are discussed in the practical examples section.

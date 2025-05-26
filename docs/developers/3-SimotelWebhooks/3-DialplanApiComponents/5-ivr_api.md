@@ -1,48 +1,43 @@
 ---
 
-sidebar_label: "معرفی Ivr API"
-title: "معرفی Ivr API"
 ---
-
-
 # IVR API
 
-این کامپوننت همانند کامپوننت IVR است، با این تفاوت که عدد واردشده توسط تماس‌‌گیرنده را به وب‌سرویس ارسال می‌کند و وب‌سرویس نیز در جواب، نام خروجی‌‌ای که تماس 
-باید خارج شود را بر‌ می‌گرداند.
+This component is similar to the IVR component, with the difference that it sends the number entered by the caller to the web service, and the web service then returns the name of the output where the call should exit.
 
-## پارامترها کامپوننت
+## Component Parameters
 
-- **API Address**: آدرس وب‌‌سرویس برای اطلاع از شماره داخلی مقصد.
+- **API Address**: The web service URL to determine the destination extension number.
+  
+- **Announcement**: The audio file played when entering the IVR.
 
-- **Announcement**: فایل صوتی که در ورود به IVR پخش می‌گردد.
+- **Timeout Announcement**: The message played when a timeout occurs.
 
-- **Timeout Announcement**: پیامی که هنگام Timeout شدن پخش‌ می‌شود.
+- **Invalid Announcement**: The message played when the caller enters an invalid number.
 
-- **Invalid Announcement**: پیامی که هنگام واردکردن شماره اشتباه از سوی تماس‌‌گیرنده پخش‌ می‌شود.
+- **Enable Direct Dial**: If enabled, the caller can dial an internal number of a defined user in the system.
 
-- **Enable Direct Dial**: درصورت فعال‌‌بودن، تماس‌‌گیرنده‌ می‌تواند شماره داخلی یکی از کاربران تعریف‌شده در سیستم را بگیرد.
+- **Repeat Loop**: The number of times the IVR will repeat if the caller does not enter a number.
 
-- **Repeat Loop**: تعداد تکرار IVR‌ است (درصورت واردنشدن عدد از طرف تماس‌‌گیرنده).
+- **Timeout (Sec)**: The time given for the caller to enter the second digit after entering the first one (in seconds). Setting it to zero disables the timeout feature.
 
-- **Timeout (Sec)**: مدت زمانی که فرصت داده‌ می‌شود تا پس از واردشدن عدد اول، عدد دوم (برحسب ثانیه) وارد گردد. مقدار صفر قابليت timeout را غيرفعال مي‌كند.
+- **Max Digits**: The maximum number of digits the caller can enter.
 
-- **Max Digits**: حداکثر رقم‌‌هایی که تماس‌‌گیرنده‌ می‌تواند وارد کند.
+- **Case**: The number that, if entered by the user, triggers the corresponding output.
 
-- **Case**: عددی است که اگر کاربر وارد کند خروجی مربوطه اجرا‌ می‌گردد.
+- **Text**: A label used for display purposes in the component for easy identification.
 
-- **Text**: نامی است که تنها برای نمایش در ظاهر کامپوننت استفاده‌ می‌شود و‌ می‌توان برای سهولت در دسترسی از آن استفاده کرد.
- 
+## Web Service Format
 
-## قالب وب‌‌سرویس
-با‌توجه به مقادیر منوی تنظیمات مربوط به `API Method & API Version`، آدرس وب‌سرویس فراخوانی شده و داده‌های زیر همراه با آن ارسال می‌گردند.
+Based on the settings in the `API Method & API Version` menu, the component calls the web service and sends the following data:
 
-- **src**: شماره تماس‌‌گیرنده (Caller یا CID).
-- **dst**: شماره واردشده (Callee یا DID یا Exten).
-- **data**: داده‌‌ای که تماس‌‌گیرنده در مسیر تماس وارد کرده است (مثلاً داده‌‌ای که در IVR وارد کرده است).
-- **unique_id**: شناسه یکتای تماس.
-- **app_name**: نام کامپوننت جاری.
+- **src**: The caller’s number (Caller or CID).
+- **dst**: The entered number (Callee or DID or Exten).
+- **data**: The data entered by the caller during the call (e.g., data entered in the IVR).
+- **unique_id**: The unique ID of the call.
+- **app_name**: The name of the current component.
 
-و در جواب، خروجی زیر را به‌صورت json دریافت‌ می‌کند.
+In response, the component receives the following output in JSON format.
 
 ```shell
 {
@@ -51,4 +46,4 @@ title: "معرفی Ivr API"
 }
 ```
 
-**در نهایت تماس از خروجی مورد نظر (در اینجا 3) خارج‌ می‌شود.**
+**Finally, the call exits from the desired output (in this case, 3).**

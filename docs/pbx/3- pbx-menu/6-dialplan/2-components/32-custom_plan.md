@@ -1,16 +1,9 @@
----
-sidebar_label: "Custom Plan"
----
-
-
-
 # Custom Plan
 
+## Usage
 
-## کاربرد
+If you are an advanced user of Asterisk and the editor environment does not meet your needs, you can use this component to write code in Asterisk. Your code is written in the appropriate location without modification and is executed by Asterisk.
 
-اگر جزو کاربران حرفه‌‌ای استریسک هستید و محیط ویرایشگر نیازهای شما را تامین نکرده است، با این کامپوننت می‌‌توانید در استریسک کدنویسی انجام دهید. کد شما بدون تغییر در مکان مناسب نوشته و اجرای آن به استریسک داده می‌‌شود.
-
-:::caution هشدار
-در نظر داشته باشید برای استفاده از این کامپوننت باید با تکنیک برنامه‌نویسی در استریسک آشنایی کافی داشته باشید.
+:::caution Warning
+Please note that to use this component, you should have sufficient knowledge of programming techniques in Asterisk.
 :::

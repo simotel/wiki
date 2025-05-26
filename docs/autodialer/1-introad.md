@@ -1,38 +1,37 @@
 ---
-sidebar_label: "مقدمه"
-title: "مقدمه"
+
+slug: '/autodialer'  
+title: AutoDialer  
+
 ---
 
+# Introduction  
 
-# مقدمه
+Using the mass calling module, you can automatically contact thousands of people with just a few clicks and play a specific audio file (notifications, telemarketing, etc.). You can configure your calling scenario in such a way that after the audio file ends, the recipients can connect to your agents. For more information about the mass calling module component, visit [here](/pbx/pbx-menu/dialplan/components/autodialer_route).  
 
-با استفاده از ماژول تماس انبوه تنها با چند کلیک می‌توان بصورت خودکار با چندین‌هزار نفر تماس گرفت و فایل صوتی خاصی را پخش کرد
-(اطلاع رسانی،تبلیغات تلفنی و ...)،می‌توانید سناریو تماس خود را به نحوی بچینید که پس از پایان فایل صوتی امکان برقراری ارتباط
-با کارشناسان شما نیز فراهم شود.برای کسب اطلاعات بیشتر درمورد کامپوننت ماژول تماس‌انبوه به [اینجا](/pbx/pbx-menu/dialplan/components/autodialer_route) مراجعه فرمایید.
+**To use the mass calling module, the following steps must be completed in order:**  
 
-** برای استفاده از ماژول تماس انبوه باید مراحل زیر به ترتیب طی شوند**
+1. Add the numbers of the contacts for the mass call (Contacts).  
 
-۱. افزودن شماره مخاطبین موجود در تماس‌انبوه (Contacts)
+2. Upload an Excel file of the numbers for the mass call (Groups).  
 
-۲. بارگذاری فایل اکسل شماره‌های موجود در تماس‌انبوه (Groups)
+3. Upload the audio file for the mass call (Announcements).  
 
-۳. بارگذاری فایل صوتی مربوط به تماس انبوه (Announcements)
+4. Create a trunk to send the calls (Trunk Manager).  
 
-۴. ایجاد ترانک برای ارسال تماس (Trunk Manager)
+5. Create a **campaign** and send the mass calls (Campaigns).  
 
-۵. ایجاد **کمپین** و ارسال تماس‌انبوه (Campaigns)
+6. Review the reports related to the campaign (Reports).  
 
-۶. بررسی گزارشات مربوط به کمپین (Reports)
+**What is the difference between step one and step two?**  
+In some cases, the goal of the mass call is specific individuals. In this case, the details such as the name and number of the individuals are entered in the `Contacts` section. However, in other cases, the target is not specific individuals but rather a group of numbers (e.g., the phone numbers of users in district 4 of Tehran). In such cases, the Excel file containing the numbers is uploaded in the `Groups` section.  
 
+Keep in mind that in steps one to four, you are only entering the basic information related to the mass call (campaign). In step five, by creating the campaign, all the previously entered information is consolidated, and the Call Center starts sending the calls.  
 
-تفاوت مرحله اول و دوم؟ در مواردی هدف از ارسال تماس انبوه افراد خاصی می‌باشد در اینصورت اطلاعات مربوط به نام و شماره‌ی افراد در بخش `Contacts`
-وارد می‌شود، اما مواردی وجود دارد که هدف از تماس انبوه افراد خاصی نیست و صرفا گروهی از شماره‌ها موجود می‌باشد(برای مثال شماره کاربران منطقه ۴ تهران)،در اینصورت فایل اکسل
-مربوط به شماره‌ها را در قسمت `Groups` اضاف می‌شود.
+:::tip Note  
+Using the API package provided for the mass calling module, you can manage the above steps automatically. For more information, visit [here](../developers/Autodialer_API/introautodialer).  
+:::  
 
-درنظر داشته باشید که در مراحل یک تا چهار صرفا در حال وارد کردن اطلاعات پایه مربوط به تماس‌انبوه (کمپین) می‌باشیم و در مرحله پنجم با ایجاد کمپین تمام
-اطلاعات وارد شده در مراحل قبل تجمیع شده و مرکزتماس شروع به ارسال تماس می‌کند.
+---  
 
-:::tip نکته
-با استفاده از پکیج API ارائه شده برای ماژول تماس انبوه امکان مدیریت موارد بالا بصورت خودکار فراهم‌ شده است.برای کسب اطلاعات بیشتر به [اینجا](../developers/api/Autodialer_API/introautodialer) مراجعه فرمایید.
-:::
-
+For accurate and professional translations, try **[HIX Translate](https://hix.ai/translate)**, powered by ChatGPT 3.5/4.

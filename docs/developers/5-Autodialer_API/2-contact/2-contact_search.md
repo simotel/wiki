@@ -1,31 +1,24 @@
 ---
 
-sidebar_label: "جستجوی مخاطب"
-title: "جستجوی مخاطب"
 ---
-
-
-
-
 # Contact Search
 
-از این سرویس برای جستجو مخاطبین استفاده می‌شود.
+This service is used to search contacts.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|      توضیحات      | داده های تعریف شده | داده های نمونه | پارامترهای ضروری[**]/منطقی[*] |        پارامترها        |
-|:-----------------:|:------------------:|:--------------:|:----------------------:|:-----------------------:|
-| یافتن موارد مشابه |       yes/no       |      true      |           **           |          alike          |
-|     نام مخاطب     |          -         |        -       |                        |     conditions->name    |
-|      توضیحات      |          -         |        -       |                        | conditions->description |
-|         -         |          -         |        -       |                        |    conditions->status   |
-|         -         |          -         |       20       |                        |    pagination->start    |
-|         -         |          -         |        0       |                        |    pagination->count    |
-|         -         |          -         |       {}       |                        |   pagination->sorting   |
-
+|      Description       | Defined Data   | Example Data  | Required[**]/Optional[*] |        Parameters        |
+|:----------------------:|:--------------:|:-------------:|:------------------------:|:------------------------:|
+| Find Similar Items     | yes/no         | true          | **                       | alike                    |
+| Contact Name           | -              | -             |                          | conditions->name         |
+| Description            | -              | -             |                          | conditions->description  |
+| Status                 | -              | -             |                          | conditions->status       |
+| Pagination Start       | -              | 20            |                          | pagination->start        |
+| Pagination Count       | -              | 0             |                          | pagination->count        |
+| Pagination Sorting     | -              | {}            |                          | pagination->sorting      |
 </div>
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->	
 
@@ -35,8 +28,8 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
-      {label: 'نمونه خروجی', value: 'outputCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
+      {label: 'Example Output', value: 'outputCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -53,7 +46,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -96,7 +89,7 @@ import TabItem from '@theme/TabItem';
         <!-- کد JS -->
         <TabItem value="JS">
           <details>
-            <summary>نمایش کامل کد JS</summary>
+            <summary>Show Full Source Code JS</summary>
             <br/>
 
 ```js
@@ -144,7 +137,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 ```bash

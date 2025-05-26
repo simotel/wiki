@@ -1,15 +1,9 @@
----
-sidebar_label: "Announcements"
----
-
-
 # Announcements
 
-## کاربرد
+## Purpose
 
-برای پخش پیام صوتی استفاده می‌شود. معمولاً قبل از این کامپوننت، تماس باید Answer شده باشد.
+It is used to play a voice message. Usually, the call should be answered before this component.
 
+## Parameters
 
-## پارامترها کامپوننت
-
-- **Announcement**: نام فایل صوتی است.
+- **Announcement**: The name of the audio file.

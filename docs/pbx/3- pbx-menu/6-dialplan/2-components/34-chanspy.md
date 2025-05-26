@@ -1,26 +1,17 @@
----
-sidebar_label: "ChanSpy"
----
-
-
-
 # ChanSpy
 
+This component is used for monitoring ongoing calls in Simotel. With the ChanSpy component, you can listen to calls either overtly or covertly. The method of monitoring is determined in the options section.
 
-از این کامپوننت برای شنود تماس‌‌های جاری در سیموتل استفاده می‌شود. به‌‌وسیله کامپوننت ChanSpy می‌‌توان به‌‌صورت محسوس و یا نامحسوس تماس را شنود کرد. روش شنود هم در قسمت option تعیین می‌شود.
+## Component Parameters
 
+- **Extension**: Select the extension to apply the monitoring policy.
 
-## پارامترها کامپوننت
+- **Skip**: Determines the number of digits to be removed from the beginning of the entered number; the new number is then considered as the destination number.
 
-- **Extension**: انتخاب داخلی برای اعمال سیاست شنود است.
+- **Prefix**: Adds the specified number before the entered number; the new number is then considered as the destination number.
 
-- **Skip**: برای تعیین تعداد رقم‌‌هایی است که باید از ابتدای شماره واردشده حذف گردد، سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
+- **Options**: Provides settings related to monitoring policies.
 
-- **Prefix**: برای افزودن عدد درج‌شده در این گزینه قبل از شماره واردشده است، سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
-
-- **Options**: تنظیمات مرتبط با سیاست‌‌های شنود را در اختیار قرار می‌دهد.
-
-:::info اطلاعات
-در بخش option با فعال‌سازی گزینه d با فشردن عدد ۴ فقط شنیدن، عدد ۵ نجوا با اپراتور و عدد ۶ حالت کنفرانس فعال می‌شود.
-
+:::info Information
+In the options section, by activating option 'd', pressing the number 4 allows for listening only, number 5 enables whispering to the operator, and number 6 activates conference mode.
 :::

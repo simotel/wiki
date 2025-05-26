@@ -1,22 +1,19 @@
 ---
-sidebar_label: "دانلود فکس"
-title: "دانلود فکس"
+
 ---
-
-
 # Fax Download
 
-از این سرویس برای دانلود فکس دریافتی استفاده می شود.
+This service is used to download a received fax.
 
-## پارامتر‌ها
+## Parameters
 <div class="custom-table">
-|                توضیحات               | داده های تعریف شده |      داده های نمونه      | پارامترهای ضروری[**]/منطقی[*] | پارامترها |
-|:------------------------------------:|:------------------:|:------------------------:|:-------------:|:---------:|
-| شناسه یکتا فکس که از [جستجو](/developers/api/SimotelAPI/v4/fax/fax_search) بدست آمده |          -         | 5fe7b083b6e91a5ef2bbf7bb |       **       |    id_    |
+|                Description               | Defined Data |      Sample Data      | Required[**]/Logical[*] | Parameters |
+|:--------------------------------------:|:------------:|:----------------------:|:----------------------:|:----------:|
+| Unique identifier for the fax obtained from [fax search](/developers/SimotelAPI/v4/fax/fax_search) | - | 5fe7b083b6e91a5ef2bbf7bb | ** | id_ |
 </div>
 
 
-## نمونه فراخوانی
+## Sample Invocation
 
 <!--  -->
 
@@ -27,7 +24,7 @@ import TabItem from '@theme/TabItem';
   <Tabs
     defaultValue="usageCode"
     values={[
-      {label: 'نمونه کد استفاده', value: 'usageCode'},
+      {label: 'Example Code To Use', value: 'usageCode'},
     ]}>
 
     <!-- تب نمونه کد استفاده -->
@@ -43,7 +40,7 @@ import TabItem from '@theme/TabItem';
         <TabItem value="PHP">
       
           <details>
-            <summary>نمایش کامل کد PHP</summary>
+            <summary>Show Full Source Code PHP</summary>
             <br/>
 
 ```php
@@ -88,7 +85,7 @@ import TabItem from '@theme/TabItem';
 
         <TabItem value="Curl">
           <details>
-            <summary>نمایش کامل کد Curl</summary>
+            <summary>Show Full Source Code Curl</summary>
             <br/>
 
 		```bash

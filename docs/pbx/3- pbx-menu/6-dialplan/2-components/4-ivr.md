@@ -1,40 +1,32 @@
----
-sidebar_label: "IVR"
-title: "IVR"
----
+# IVR (Interactive Voice Response)
 
-# IVR
+## Purpose
 
-## کاربرد
+The IVR (Interactive Voice Response) system enables the caller to choose between different paths or options. This allows the caller to interact with the system through a menu of predefined choices.
 
-با استفاده از منشی‌دیجیتال این امکان فراهم می‌شود که تماس‌‌گیرنده بین مسیر‌‌های مختلف حق انتخاب داشته باشد.
+## Component Parameters
 
+- **Announcement**: The audio file that is played when entering the IVR.
 
-## پارامترها کامپوننت
+- **Timeout Announcement**: The message that is played when the timeout occurs.
 
-- **Announcement**: فایل صوتی‌ای است که در ورود به IVR پخش می‌گردد.
+- **Invalid Announcement**: The message that is played when the caller enters an invalid number.
 
-- **Timeout Announcement**: پیامی است که هنگام Timeout شدن پخش می‌شود.
+- **Enable Direct Dial**: When enabled, the caller can dial the extension of a defined user directly.
 
-- **Invalid Announcement**: پیامی است که هنگام وارد‌‌کردن شماره اشتباه از سوی تماس‌‌گیرنده پخش می‌شود.
+- **Repeat Loop**: The number of times the IVR will repeat (if the caller doesn’t enter a number).
 
-- **Enable Direct Dial**: درصورت فعال‌‌بودن، تماس‌‌گیرنده می‌‌تواند شماره داخلی یکی از کاربران تعریف شده در سیستم را بگیرد.
+- **Timeout (Sec)**: The duration in seconds for which the caller is given to enter the second digit after entering the first one. A value of 0 disables the timeout.
 
-- **Repeat Loop**: تعداد تکرار IVR است (درصورت عدم ورود عدد از سوی تماس‌‌گیرنده).
+- **Max Digits**: The maximum number of digits that the caller can enter.
 
-- **Timeout (Sec)**: مدت زمانی است برحسب ثانیه که فرصت داده می‌شود پس از واردکردن عدد اول، عدد دوم وارد گردد. مقدار صفر قابليت timeout را غيرفعال می‌كند.
+## Routing Parameters
 
-- **Max Digits**: حداکثر رقم‌‌هایی است که تماس‌‌گیرنده می‌‌تواند وارد کند.
+- **Case**: The number assigned to an output. If the number entered by the caller matches the **Case** value, the call will exit through that output.
 
+- **Text**: A label for display purposes in the component, which helps for easier management.
 
+## Output Parameters for t and i
 
-## پارامترها مسیر‌‌دهی
+- The default outputs defined in the IVR are **t** for timeout events and **i** for invalid data input by the caller. To use these outputs, a new route needs to be added to the IVR, and the "case" value should be set to **t** or **i**.
 
-- **Case**: عددی است که به خروجی انتساب‌ داده می‌شود. اگر عدد واردشده توسط تماس‌‌گیرنده با مقدار case برابر باشد، تماس از آن خروجی خارج می‌‌گردد.
-
-- **Text**: نامی است که تنها برای نمایش در ظاهر کامپوننت استفاده می‌شود و می‌‌توان از آن برای سهولت در دسترسی بهره برد.
-
-
-## پارامترهای خروجی t و i
-
-خروجی‌‌های پیش‌فرض تعریف شده در IVR هستند. t برای مسیردهی به رویداد timeout و i برای مسیردهی در زمانی استفاده می‌شود که تماس‌‌گیرنده، داده اشتباه (invalid) وارد کرده است. برای استفاده از آن‌‌ها باید مسیر جدیدی به IVR اضافه کنید و مقدار "case" را t و یا i قرار دهید.

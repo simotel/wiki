@@ -1,26 +1,19 @@
----
-sidebar_label: "Time Condition"
----
-
-
 # Time Condition
 
-## کاربرد
+## Usage
 
-برای ایجاد محدودیت (شرط زمانی) در بازه‌‌های زمانی و به دلایل مشخصی استفاده می‌‌شود. رایج‌ترین استفاده آن، تفکیک ساعت کاری و غیرکاری سازمان‌‌هاست. فرض کنید ساعت کاری اپراتور‌‌های سازمان شما از ۸ تا ۱۵:۳۰ باشد، لذا در ساعت‌‌های غیر از آن اپراتوری برای پاسخگویی به تماس‌گیرنده‌‌ها وجود ندارد. بنابراین، بهتر است در این ساعات، پیام مناسبی را برای تماس‌گیرنده پخش کنید تا موجبات نارضایتی وی فراهم نگردد.
+It is used to create restrictions (time conditions) during specific time periods for certain reasons. The most common use is to differentiate between working and non-working hours in organizations. For example, if the working hours of your organization's operators are from 8:00 AM to 3:30 PM, there will be no operators available to answer callers outside of those hours. Therefore, it is better to play an appropriate message for callers during those times to avoid dissatisfaction.
 
+## Component Parameters
 
-## پارامترها کامپوننت
+- **Days of Week**: In the weekly settings, there are parameters for all seven days of the week that are empty by default. Click the plus button to select a time range. Enter the start and end of the allowed range (multiple time ranges can be selected for a single day). Repeat this for other days and add the allowed ranges.
 
-- **days of week**: در تنظیمات هفته، برای هفت روز هفته پارامترهایی وجود دارد که به‌صورت پیش‌‌فرض خالی هستند. برای انتخاب بازه زمانی روی کلید مثبت کلیک کنید. شروع و پایان محدوده مجاز را وارد کنید (برای یک روز می‌‌توان چندین بازه زمانی انتخاب کرد). این کار را برای روز‌‌های دیگر نیز انجام دهید و بازه‌‌های مجاز را اضافه کنید.
+- **Month Exception**: Select non-working months. The time condition will not apply in the selected months (the selected months take precedence over the ranges selected for the days).
 
-- **Month Exception**: ماه‌‌های غیرکاری را انتخاب کنید. در ماه‌‌های انتخاب‌شده شرط زمانی برقرار نمی‌شود (ماه‌‌های انتخاب‌شده بر محدوده‌‌های انتخاب‌شده برای روزها اولویت دارد).
+- **Date Exception**: Select non-working days. The time condition will not apply on the selected days (the selected days take precedence over the ranges selected for the days).
 
-- **Date Exception**: روز‌‌های غیرکاری را انتخاب کنید. در روز‌‌های انتخاب‌شده شرط زمانی برقرار نمی‌شود (روزهای انتخاب‌شده بر محدوده‌‌های انتخاب‌شده برای روز‌‌ها اولویت دارد).
+## Outputs
 
+- **✓**: The time condition is met.
 
-## خروجی‌ها
-
-- **✓**: شرط زمانی برقرار است.
-
-- **✗**: شرط زمانی برقرار نیست.
+- **✗**: The time condition is not met.

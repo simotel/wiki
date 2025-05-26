@@ -1,20 +1,15 @@
----
-sidebar_label: "پیام ها"
-title: "پیام ها"
----
+# Messages
 
+This section is used to manage and access messages related to voicemail boxes. It also allows for searching within voicemail boxes.
 
-# پیام‌ها
-برای مدیریت و دسترسی به پیام‌‌ها مربوط به صندوق صوتی از این بخش استفاده می‌‌شود. در این قسمت امکان جستجو در صندوق‌های صوتی نیز وجود دارد.
+## Inbox Search Parameters
 
-## پارامترهای جستجو Inbox
+- **From (Date)**: Display information from a specific date.
 
-- **From (Date)**: نمایش اطلاعات از تاریخ.
+- **To (Date)**: Display information until a specific date.
 
-- **To (Date)**: نمایش اطلاعات تا تاریخ.
+- **Mailbox**: Filter information by the voicemail box name.
 
-- **Mailbox**: فیلتر اطلاعات براساس نام صندوق صوتی.
+- **Caller**: Filter information by the caller's number in the voicemail box.
 
-- **Caller**: فیلتر اطلاعات براساس شماره تماس گیرنده مبداء در صندوق‌صوتی.
-
-- **Find Alike**: یافتن موارد مشابه.
+- **Find Alike**: Find similar items.

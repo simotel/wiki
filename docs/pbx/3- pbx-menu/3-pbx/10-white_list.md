@@ -1,18 +1,13 @@
----
-sidebar_label: "لیست سفید"
-title: "لیست سفید"
----
+# White List
 
-# لیست سفید
+The White List is a feature used to categorize incoming numbers for specific purposes. Unlike the Black List, numbers in the White List can be categorized and utilized in different call paths according to needs.
 
-لیست سفید امکانی است برای دسته‌‌بندی شماره‌‌های ورودی با اهداف مشخص. در لیست سفید برخلاف لیست سیاه، می‌‌توان با استفاده از دسته، شماره‌‌ها را دسته‌‌بندی و از آن‌ها مطابق نیاز در مسیر‌‌های مختلف تماس‌‌ها استفاده کرد.
+## White List Parameters
 
-## پارامترهای White List
+- **Number:** The number added to the white list.
 
-- **Number:** شماره‌‌ای که به لیست سفید اضافه می‌‌شود.
+- **Label:** The category or label under which the number is grouped.
 
-- **Label:** نام دسته‌‌ای که شماره در آن قرار می‌‌گیرد.
+- **Import:** Allows bulk addition of numbers. The input is an Excel file containing all the white-listed numbers.
 
-- **Import**: امکان افزودن گروهی از شماره‌ها را فراهم می‌کند.ورودی آن فایل اکسلی شامل تمامی شماره‌های لیست سفید می‌باشد.
-	
-- **Comment:** توضیحات دلخواه.
+- **Comment:** Optional notes or descriptions.

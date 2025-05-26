@@ -1,54 +1,47 @@
----
-sidebar_label: "فکس ها"
-title: "فکس ها"
----
+# Faxes
 
+The Contact Center also supports sending and receiving faxes, and fax management in Simotel is handled in this section. In addition to sending faxes, received faxes are also displayed here.
 
-# فکس‌ها
+## Faxes Parameters
 
-مرکز‌تماس قابلیت ارسال و دریافت فکس را نیز دارد و مدیریت فکس‌ها در سیموتل در این بخش صورت می‌گیرد، علاوه بر ارسال فکس، فکس‌های دریافتی نیز در این بخش نمایش داده می‌شوند.
+- **To**: The destination number that will receive the fax.
 
-## پارامترهای Faxes
+- **Exten**: If a specific internal extension needs to be dialed at the destination, it is defined here.
 
-- **To**: شماره مقصدی که قرار است فکس را دریافت کند.
+- **Trunk**: The trunk from which the fax will be sent.
 
-- **Exten**: درصورتی که نیاز باشد در مقصد داخلی خاصی شماره‌گیری شود در این بخش تعریف می‌شود.
+- **From plain text**: Select this option if the goal is to send plain text.
 
-- **Trunk**: ترانکی که فکس باید از روی آن ارسال شود.
+- **File**: In this field, the fax file path is selected (formats TIFF, PDF).
 
-- **From plain text**: در صورتی که هدف ارسال متن می‌باشد این گزینه انتخاب شود.
+- **Description**: Additional notes or details about the sent fax.
 
-- **File**: در این قسمت مسیر فایل فکس انتخاب می‌شود(فرمت TIFF،PDF).
-
-- **Description**: توضیحاتی درمورد فکس ارسالی.
-
-:::info اطلاعات
-درنظر داشته باشید که فکس‌های دریافتی نیز در این بخش نمایش داده می‌شوند.در پایین پارامترهای لازم برای اعمال فیلتر در گزارشات معرفی می‌شوند.
+:::info Information
+Please note that received faxes are also displayed in this section. Below are the parameters for applying filters in reports.
 :::
 
-- **From (Date)**: نمایش گزارشات فکس از تاریخ.
+- **From (Date)**: Display faxes starting from a specific date.
 
-- **To (Date)**: نمایش اطلاعات فکس تا تاریخ.
+- **To (Date)**: Display faxes until a specific date.
 
-- **Sender**: فیلتر گزارشات بر‌اساس شماره ارسال کننده فکس.
+- **Sender**: Filter reports based on the sender's number.
 
-- **Receiver**: فیلتر گزارشات بر‌اساس شماره دریافت کننده فکس.
+- **Receiver**: Filter reports based on the receiver's number.
 
-- **Status**:  فیلتر گزارشات بر‌اساس وضعیت فکس که شامل
-	- **All**: نمایش تمامی فکس‌ها.
-	- **Successful**: دسته‌ای که ارسال یا دریافت‌ موفقیت آمیز داشته‌اند.
-	- **Failed**: دسته‌ای که در ارسال یا دریافت با مشکل مواجه شده‌اند.
-	
-- **Type**:فیلتر گزارشات بر‌اساس نوع فکس که شامل
-	- **All**: نمایش تمامی فکس‌ها.
-	- **Inbox**: نمایش فکس‌های ورودی.
-	- **Outbox**: نمایش فکس‌های خروجی.
-	
-- **Find Alike**: یافتن موارد مشابه.
+- **Status**: Filter reports based on fax status, including:
+  - **All**: Display all faxes.
+  - **Successful**: Faxes that were successfully sent or received.
+  - **Failed**: Faxes that encountered problems during sending or receiving.
 
+- **Type**: Filter reports based on fax type, including:
+  - **All**: Display all faxes.
+  - **Inbox**: Display received faxes.
+  - **Outbox**: Display sent faxes.
 
-- **Details**: پارامترهای موجود در هر‌ردیف که شامل
-	- **Save**: ذخیره فایل فکس دریافتی یا ارسالی.
-	- **Detail**: نمایش اطلاعاتی در مورد فکس(این گزینه در شرایط خاص ظاهر می‌شود).
-	- **Resend**: در صورتی که ارسال فکس با مشکل مواجه شود از این گزینه استفاده می‌شود.
-	- **Remove**: حذف فکس ارسالی یا دریافتی.
+- **Find Alike**: Find similar records.
+
+- **Details**: Parameters available for each row, including:
+  - **Save**: Save the received or sent fax file.
+  - **Detail**: View detailed information about the fax (this option appears in specific conditions).
+  - **Resend**: Use this option if there was an issue with sending the fax.
+  - **Remove**: Delete the sent or received fax.

@@ -1,163 +1,107 @@
----
-sidebar_label: "کامپوننت های صف"
-title: "کامپوننت های صف"
----
+# Queue Components
 
-# کامپوننت‌های صف
+In this section, we will examine the components related to queues. Before introducing the components, it's important to familiarize ourselves with a few basic concepts.
 
-در این بخش به بررسی کامپوننت‌های مربوط به صف می‌پردازیم.قبل از اینکه کامپوننت‌ها معرفی شوند نیاز می‌باشد با یک سری مفاهیم اولیه آشنایی پیدا کنیم.
+## Call Status in Queue
+Each call that enters the queue will have one of the following four statuses:
 
+1. **Answered**: The call in the queue is answered by an operator.
+2. **Missed**: The call enters the queue, and the operator's phone rings, but the operator does not answer the call.
+3. **Abandoned**: The call enters the queue, but before the operator's phone rings, the caller hangs up. This happens when the caller is waiting in the queue but decides to end the call due to long waiting times.
+4. **Pickup**: The operator's phone starts ringing, but since there is no operator available at the desk, another colleague answers the call using a feature code.
 
-## وضعیت تماس‌ها در صف
-هر تماسی که وارد صف می‌شود یکی از چهار وضعیت زیر را پیدا می‌کند
+## Queue Metrics
 
-۱. **Answered (پاسخ‌داده‌شده)**: تماس وارد شده در صف توسط اپراتور پاسخ داده می‌شود.
-
-۲. **Missed (از‌دست‌رفته)**: تماس وارد صف می‌شود و تلفن اپراتور نیز زنگ می‌خورد اما اپراتور به تماس پاسخ نمی‌دهد.
-
-۳. **Abandoned (رها‌شده)**: تماس وارد صف می‌شود اما قبل از اینکه تلفن اپراتوری زنگ بخورد تماس توسط تماس گیرنده قطع می‌شود.این شرایط زمانی اتفاق می‌افتد که تماس‌گیرنده در صف منتظر اتصال به اپراتور هستند اما به خاطر ازدحام بالا تماس را قطع می‌کنند.
-
-۴. **Pickup**: تلفن اپراتور شروع به زنگ‌خوردن می‌کند اما به دلیل نبود اپراتور پشت میز، همکاری دیگر با کد‌دستوری به تلفن او جواب می‌دهد.
-
-## شاخص‌های صف
-
-هرکدام از کامپوننت‌های معرفی شده در این قسمت نشان‌دهنده شاخصی خاص می‌باشند،بنابراین در ابتدا نیاز می‌باشد به نحوه محاسبه این شاخص‌ها و فرمول‌بندی انجام شده نگاهی بیندازیم.
+Each of the components introduced in this section represents a specific metric. To understand these metrics, let's first look at how they are calculated and the formulas used.
 
 ```shell
+Abandoned Call Rate (ACR)
 
-نرخ تماس‌های رها شده در صف (Abandoned Call Rate)
+1 ACR = (Number of Abandoned Calls / Total Answered Calls) * 100
+--------------------------------------------------------------
 
-۱ ACR = (تعداد تماس‌های Abandoned / کل تماس‌های پاسخ داده‌شده) * 100 
--------------------------------------------------------------------------
+Missed Call Rate (MCR)
 
-نرخ تماس‌های ازدست رفته در صف (Missed Call Rate)
+2 MCR = (Number of Missed Calls / Total Answered Calls) * 100
+--------------------------------------------------------------
 
-۲ MCR = (تعداد تماس‌های Missed / کل تماس‌های پاسخ‌داده شده) * 100
--------------------------------------------------------------------------
+Pickup Call Rate (PCR)
 
-نرخ تماس‌های پیکاپ شده (Pickup Call Rate)
+3 PCR = (Number of Pickup Calls / Total Answered Calls) * 100
+--------------------------------------------------------------
 
-۳ PCR = (تعداد تماس‌های Pickup / کل تماس‌های پاسخ‌داده شده) * 100
--------------------------------------------------------------------------
-درصد تماس‌های پاسخ داده شده (Call Answer Rate)
+Call Answer Rate (CAR)
 
-۱،۲،۳ => ۴  CAR = 100 - ACR - MCR - PCR
+1,2,3 => 4 CAR = 100 - ACR - MCR - PCR
+--------------------------------------------------------------
 
--------------------------------------------------------------------------
-میانگین زمان مکامه در صف (Average Handling Time)
+Average Handling Time (AHT)
 
-۵ AHT = تعداد‌ تماس‌های پاسخ داده شده در صف / مجموع زمان‌های مکالمه در صف 
+5 AHT = Total Answered Calls in Queue / Total Handling Time of Calls in Queue
+--------------------------------------------------------------
 
--------------------------------------------------------------------------
-میانگین زمان پاسخگویی به تماس در صف (Average Speed Answer)
+Average Speed Answer (ASA)
 
-۶ ASA = تعداد‌ تماس‌های پاسخ داده شده در صف / مجموع زمان انتظار تماس گیرنده در صف(تماس‌هایی که پاسخ داده شده اند)
+6 ASA = Total Answered Calls in Queue / Total Wait Time of Answered Calls in Queue
+--------------------------------------------------------------
 
--------------------------------------------------------------------------
-سطح خدمت (Service Level)
+Service Level (SL)
 
-۷ SL =  کل تماس‌های پاسخ داده شده / تعداد تماس‌های که در بازه‌زمانی مشخصی پاسخ داده شده‌اند
-
-
-
+7 SL = Total Answered Calls / Total Calls Answered within a Defined Time Interval
 ```
 
-
-
-## کامپوننت‌ها
+## Components
 
 ### Avg. Handling Time
 
-**با استفاده از این کامپوننت میانیگین زمان مکالمه در صف مشخص می‌شود. پارامترهای کامپوننت شامل**
+**This component shows the average handling time of calls in the queue. Its parameters include:**
 
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را که عددی می‌باشد نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-
-- **Period**: بازه‌ای زمانی که در آن اطلاعات مورد بررسی قرار می‌گیرند را مشخص می‌کند.
-
-- **Queues**: صف‌هایی که باید مورد بررسی قرار گیرند در اینجا مشخص می‌شوند.
-
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed numerically.
+- **Items**: The items in the component.
+- **Period**: Specifies the time period during which the data will be analyzed.
+- **Queues**: Specifies the queues to be analyzed.
 
 ### Avg. Speed Answer
 
-** با استفاده از این کامپوننت میانگین زمان پاسخگویی به تلفن در صف مشخص می‌شود. پارمترهای کامپوننت شامل**
+**This component shows the average time it takes to answer calls in the queue. Its parameters include:**
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را که عددی می‌باشد نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-
-- **Period**: بازه‌ای زمانی که در آن اطلاعات مورد بررسی قرار می‌گیرند را مشخص می‌کند.
-
-- **Queues**: صف‌هایی که باید مورد بررسی قرار گیرند در اینجا مشخص می‌شوند.
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed numerically.
+- **Items**: The items in the component.
+- **Period**: Specifies the time period during which the data will be analyzed.
+- **Queues**: Specifies the queues to be analyzed.
 
 ### Service Level
 
-** سطح خدمت یکی از کلیدی‌ترین شاخص‌های سنجش عملکرد صف می‌باشد، در این شاخص با تعریف حداکثر زمان مطلوب برای پاسخگویی مشخص می‌کنیم چند درصد از تماس‌ها در این بازه تعریف‌شده پاسخ داده شده‌اند.پارمترهای این شاخص شامل**
+**Service Level is one of the key metrics used to assess queue performance. This metric defines the maximum acceptable response time, and the percentage of calls answered within that defined time. The parameters for this metric include:**
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را که عددی می‌باشد نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-
-- **Period**: بازه‌ای زمانی که در آن اطلاعات مورد بررسی قرار می‌گیرند را مشخص می‌کند.
-
-- **Queues**: صف‌هایی که باید مورد بررسی قرار گیرند در اینجا مشخص می‌شوند.
-
-- **Answered Within**: حداکثر زمان مطلوب پاسخگویی به تماس.
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed numerically.
+- **Items**: The items in the component.
+- **Period**: Specifies the time period during which the data will be analyzed.
+- **Queues**: Specifies the queues to be analyzed.
+- **Answered Within**: Specifies the maximum acceptable response time for answering the call.
 
 ### Queue Call Rates
 
-** این کامپوننت شامل مجموعه از شاخص‌های صف شامل ACR،CAR،MCR می‌باشد.پارمترهای کامپوننت شامل**
+**This component includes a collection of queue metrics, including ACR, CAR, and MCR. The parameters for this component include:**
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را که عددی می‌باشد نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-
-- **Period**: بازه‌ای زمانی که در آن اطلاعات مورد بررسی قرار می‌گیرند را مشخص می‌کند.
-
-- **Queues**: صف‌هایی که باید مورد بررسی قرار گیرند در اینجا مشخص می‌شوند.
-
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed numerically.
+- **Items**: The items in the component.
+- **Period**: Specifies the time period during which the data will be analyzed.
+- **Queues**: Specifies the queues to be analyzed.
 
 ### Queue Statistics
 
-** این کامپوننت وظیفه ارائه گزارشی از تعداد تماس‌های(پاسخ‌داده‌شده،ازدست‌رفته،رهاشده) در صف را برعهده دارد.پارمترهای کامپوننت شامل**
+**This component provides a report of the number of calls (Answered, Missed, Abandoned) in the queue. The parameters for this component include:**
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را که عددی می‌باشد نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-	- **Answered**: تماس‌های پاسخ‌داده شده.
-	- **Abandoned**: تماس‌های رهاشده.
-	- **Missed**: تماس‌های از دست رفته.
-
-- **Period**: بازه‌ای زمانی که در آن اطلاعات مورد بررسی قرار می‌گیرند را مشخص می‌کند.
-
-- **Queues**: صف‌هایی که باید مورد بررسی قرار گیرند در اینجا مشخص می‌شوند.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed numerically.
+- **Items**: The items in the component, including:
+    - **Answered**: Answered calls.
+    - **Abandoned**: Abandoned calls.
+    - **Missed**: Missed calls.
+- **Period**: Specifies the time period during which the data will be analyzed.
+- **Queues**: Specifies the queues to be analyzed.

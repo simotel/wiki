@@ -1,26 +1,21 @@
 ---
 sidebar_position: 2
-sidebar_label: "افزوده شدن کاربر"
-title: "افزوده شدن کاربر"
 ---
+# ExtenAdded
 
+When a new user is defined in Simutel, the ExtenAdded event is created.
 
-# Exten Added
+## Event Parameters
 
-هنگامی‌ كه کاربر جدیدی در سیموتل تعریف ‌شود، رويداد ExtenAdded ايجاد می‌گردد.
-
-
-## پارامترهای رویداد
 <div class="custom-table">
-|                         توضیحات                         | داده‌های تعریف‌شده | داده‌های نمونه |  پارامتر‌ها |
-|:-------------------------------------------------------:|:----------------:|:-------------:|:----------:|
-|                        نام رویداد                       |         -        |   ExtenAdded  | **event_name** |
-| شماره داخلی(کاربری است که رویداد برای وی تولید شده است) |         -        |      559      |    **exten**   |
-|                       وضعیت داخلی                       |         -        |  Unavailable  |    **state**   |
-
+|                         Description                         | Defined Data | Sample Data   |    Parameter    |
+|:----------------------------------------------------------:|:------------:|:-------------:|:---------------:|
+|                       Event Name                           |      -       |   ExtenAdded  | **event_name**  |
+|                     Extension Number (user for whom the event was generated) |      -       |      559      |   **exten**     |
+|                       Extension State                      |      -       |  Unavailable  |    **state**    |
 </div>
 
-## نمونه خروجی رویداد Exten Added
+## Sample Output of ExtenAdded Event
 
 ```shell
 {

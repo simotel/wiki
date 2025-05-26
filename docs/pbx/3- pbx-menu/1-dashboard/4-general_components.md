@@ -1,198 +1,125 @@
----
-sidebar_label: "کامپوننت های عمومی"
-title: "کامپوننت های عمومی"
----
+# General Components
 
-
-# کامپوننت‌های عمومی
-
-این بخش به بررسی کامپوننت‌های عمومی اختصاص یافته.
-
+This section is dedicated to the exploration of general components.
 
 ## Customer Satisfaction
-در این کامپوننت گزارشی از میانگین رضایت مشتری در نظرسنجی‌های صورت گرفته(برحسب نمره) ارائه می‌شود.پارامترا‌ها شامل
+This component provides a report on the average customer satisfaction score from conducted surveys (based on ratings). The parameters include:
 
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را که عددی می‌باشد نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-
-- **Period**: بازه‌ای زمانی که در آن اطلاعات مورد بررسی قرار می‌گیرند را مشخص می‌کند.
-
-- **Queues**: صف‌هایی که باید مورد بررسی قرار گیرند در اینجا مشخص می‌شوند.
-
-- **Extensions**: مشخص کردن داخلی‌های مدنظر در گزارش.
-
-- **Groups**: درصورتی که گروهی از کاربران در بخش مرکزتماس تعریف شده باشد در اینجا انتخاب می‌شود.
-
-- **Surveys**: برجسب‌های انتساب‌ داده‌شده به کامپوننت poll در دایل‌پلن اینجا انتخاب می‌شوند.
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed numerically.
+- **Items**: The items in the component.
+- **Period**: Specifies the time period during which the data will be analyzed.
+- **Queues**: Specifies which queues should be analyzed.
+- **Extensions**: Allows the specification of relevant extensions for the report.
+- **Groups**: If a group of users is defined in the contact center, it can be selected here.
+- **Surveys**: Tags assigned to the poll component in the dial plan can be selected here.
 
 ## Surveys
+This component functions similarly to the **Customer Satisfaction** component, presenting survey data for performance measurement.
 
-این کامپوننت عملکردی مشابه با کامپوننت Customer Satisfaction دارد.
+## Net Promoter Score (NPS)
+The task of this component is to report on the Net Promoter Score. To better understand this metric, consider the following example:
 
+**Example**: Let's say you plan to survey customers about your product's satisfaction, and the survey asks:
+"Please rate on a scale of 1 to 10 how satisfied you are with our product and whether you would recommend it to others."
 
+Based on the responses, individuals are categorized into three groups:
+1. **Detractors**: Individuals dissatisfied with the product and unwilling to recommend it.
+2. **Passives**: Individuals who are neutral and neither dissatisfied nor highly satisfied with the product.
+3. **Promoters**: Individuals satisfied with the product and willing to recommend it.
 
+The goal of this metric is to determine the level of customer loyalty and their willingness to recommend the product to others. The Net Promoter Score (NPS) is calculated by subtracting the percentage of detractors from the percentage of promoters.
 
-## Net Promoter Score
-
-وظیفه این کامپوننت ارائه گزارشی از شاخص خالص ترویج کنندگان است.برای درک بهتر این شاخص به مثال زیر توجه کنید
-
-
-
-**مثال)** فرض کنید قرار است از خریدارهای محصول خود نظرسنجی انجام داده و رضایتمندی مشتری را نسبت به محصول بسنجید، فایل صوتی نظرسنجی نیز به این نحو باشد
-
-” لطفا با عددی بین یک تا ده مشخص کنید که آیا از محصول ما راضی بوده‌اید و محصول ما را به دیگران پیشنهاد می‌کنید یا تجربه‌ی کاربری بدی از این محصول داشته‌اید.“
-
-در اینجا افردا رأی دهنده با توجه به امتیاز داده شده به سه دسته تقسیم می‌شوند
-
-۱. **Detractors**: افرادی که از محصول رضایت ندارند و تمایلی به محصول و معرفی آن ندارند.
-
-۲. **Passives**: افرادی که نسب به محصول نارضایتی یا رضایتمندی خاصی ندارد و در رده میانی قرار می‌گیرند.
-
-۳. **Promoters**: افرادی که از محصول رضایت دارند و نسبت به معرفی محصول تمایل نشان می‌دهند.
-
-:::info اطلاعات
-هدف از این شاخص مشخص کردن میزان وفاداری مشتری نسبت به محصول و میزان تمایل وی به معرفی محصول به دیگران می‌باشد.
-:::  
-درنهایت با تفریق درصد افراد ناراضی از محصول، از  افراد راضی نسبت به محصول مقدار Net Promoter Score بدست می‌آید.
-
-![dashboard](/img/simotel/NPS.png)
-
-
-پارامترهای این کامپوننت شامل
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را که عددی می‌باشد نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-	- **Detractors**:افراد ناراضی.
-	- **Passives**: افراد خنثی.
-	- **promoters**: افراد راضی.
-	- **NPS**: شاخص خالص ترویج کنندگان.
-
-- **Period**: بازه‌ای زمانی که در آن اطلاعات مورد بررسی قرار می‌گیرند را مشخص می‌کند.
-
-- **Queues**: صف‌هایی که باید مورد بررسی قرار گیرند در اینجا مشخص می‌شوند.
-
-- **Extensions**: مشخص کردن داخلی‌های مدنظر در گزارش.
-
-- **Surveys**: برجسب‌های انتساب‌ داده‌شده به کامپوننت poll در اینجا انتخاب می‌شوند.
-
-- **Detractors**: چه امتیازهایی به عنوان افراد ناراضی در نظر گرفته شوند.
-
-- **Passives**: چه امتیازهایی به عنوان افراد خنثی در نظر گرفته شوند.
-
-- **promoters**: چه امتیازهایی به عنوان افراد راضی در نظر گرفته شوند.
-
+### Parameters of this component include:
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed numerically.
+- **Items**: The items in the component:
+    - **Detractors**: Individuals dissatisfied with the product.
+    - **Passives**: Neutral individuals.
+    - **Promoters**: Individuals satisfied with the product.
+    - **NPS**: The Net Promoter Score.
+- **Period**: Specifies the time period during which the data will be analyzed.
+- **Queues**: Specifies which queues should be analyzed.
+- **Extensions**: Specifies the relevant extensions for the report.
+- **Surveys**: Tags assigned to the poll component in the dial plan.
+- **Detractors**: Defines the ratings that categorize someone as a detractor.
+- **Passives**: Defines the ratings that categorize someone as passive.
+- **Promoters**: Defines the ratings that categorize someone as a promoter.
 
 ## HDD (Audio)
+This component reports on the storage consumed by audio files. The parameters include:
 
-گزارشی از حافظه مصرف‌شده توسط فایل‌های صوتی را ارائه می‌دهد.پارامترا‌ها شامل
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-	- **Audio**: فایل‌های صوتی سالم.
-	- **Trash**: فایل‌های صوتی که در فرایند convert به مشکل برخورده‌اند.
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed.
+- **Items**: The items in the component:
+    - **Audio**: Healthy audio files.
+    - **Trash**: Audio files that encountered issues during the conversion process.
 
 ## HDD (All)
+This component provides a report on the overall server memory usage. The parameters include:
 
-گزارشی از وضعیت حافظه مصرفی سرور را ارائه می‌دهد.پارامترا‌ها شامل
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-	- **Used**: حافظه مصرف شده.
-	- **Database**: حافظه اختصاص یافته به پایگاه‌داده.
-	- **Backup**: حافظه اختصاص یافته به فایل‌های پشتیبان.
-	- **Audio**: حافظه اختصاص یافته به فایل‌های صوتی.
-	- **Trash**: فایل‌های که باید پاک شوند(فایل‌های صوتی ناقص و ...).
-	- **Free**: فضای باقی مانده هارد.
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed.
+- **Items**: The items in the component:
+    - **Used**: Memory consumed.
+    - **Database**: Memory allocated for the database.
+    - **Backup**: Memory allocated for backup files.
+    - **Audio**: Memory allocated for audio files.
+    - **Trash**: Files that should be deleted (e.g., incomplete audio files).
+    - **Free**: Remaining free memory.
 
 ## Call Duration
+This component provides an overall report on the duration of calls and waiting times (in seconds). The parameters include:
 
-ارائه گزارشی کلی از مدت زمان مکالمه و انتظار(برحسب ثانیه).پارامترا‌ها شامل
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را نشان می‌دهد.
-
-- **Items**: آیتم‌های کامپوننت.
-	- **Talk Time**: مدت زمان مکالمه.
-	- **Wait Time**: مدت زمان انتظار.
-
-- **Trunks**: نام ترانک‌هایی که تماس‌های ورودی و خروجی آنها درنظر گرفته شود.
-
-- **Call Types**: نوع تماس‌های دخیل در گزارش ارائه شده که شامل
-	- **outgoing**: تماس‌های خروجی.
-	- **incoming**: تماس‌های ورودی.
-	- **local**: تماس‌های محلی.
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed.
+- **Items**: The items in the component:
+    - **Talk Time**: The duration of conversations.
+    - **Wait Time**: The waiting time before the call is answered.
+- **Trunks**: Specifies the trunks for which the incoming and outgoing calls should be considered.
+- **Call Types**: Specifies the types of calls involved in the report, including:
+    - **Outgoing**: Outgoing calls.
+    - **Incoming**: Incoming calls.
+    - **Local**: Local calls.
 
 ## Call Status
+This component provides an overall report on the status of calls (answered, unanswered, busy, barred). The parameters include:
 
-ارائه گزارشی کلی از وضعیت تماس‌ها(پاسخ‌داده‌شده، پاسخ‌داده‌نشده،مشغول،مسدودشده).پارامترا‌ها شامل
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-	- **Answered**: تماس پاسخ‌داده شده.
-	- **No-Answer**: تماس پاسخ‌داده نشده.
-	- **Busy**: تماس‌های مشغولی.
-	- **Barred**: تماس‌های مسدود شده.
-	- **Total**: مجموع کل تماس‌ها.
-	- **SPIT call**: تماس‌های بهمنی.
-	- **Blacklist**: تماس‌هایی که در لیست سیاه قرار دارند.
-	- **Failed**: تماس‌هایی که به مشکل برخورده‌اند.
-
-- **Trunks**: نام ترانک‌هایی که تماس‌های آنها درنظر گرفته شود.
-
-- **Call Types**: نوع تماس‌های دخیل در گزارش ارائه شده که شامل
-	- **outgoing**: تماس‌های خروجی.
-	- **incoming**: تماس‌های ورودی.
-	- **local**: تماس‌های محلی.
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed.
+- **Items**: The items in the component:
+    - **Answered**: Answered calls.
+    - **No-Answer**: Unanswered calls.
+    - **Busy**: Busy calls.
+    - **Barred**: Barred calls.
+    - **Total**: The total number of calls.
+    - **SPIT Call**: Calls that are identified as spam.
+    - **Blacklist**: Calls from numbers on the blacklist.
+    - **Failed**: Calls that encountered errors.
+- **Trunks**: Specifies the trunks for which the calls should be considered.
+- **Call Types**: Specifies the types of calls involved in the report, including:
+    - **Outgoing**: Outgoing calls.
+    - **Incoming**: Incoming calls.
+    - **Local**: Local calls.
 
 ## Call Direction
+This component provides a report on the types of calls (incoming, outgoing) in the contact center. The parameters include:
 
-ارائه گزاشی از نوع تماس‌ها(ورودی،خروجی) در مرکزتماس.پارامترا‌ها شامل
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را نشان می‌دهد.
-
-- ** Items**: آیتم‌های کامپوننت.
-	- **Incoming**: تماس‌های ورودی.
-	- **Outgoing**: تماس‌های خروجی.
-	- **local**: تماس‌های محلی.
-	- **Total**: مجموع تمامی تماس‌ها.
-
-- **Trunks**: نام ترانک‌هایی که تماس‌های آنها درنظر گرفته شود.
-
-- **Call Types**: نوع تماس‌های دخیل در گزارش ارائه شده که شامل
-	- **outgoing**: تماس‌های خروجی.
-	- **incoming**: تماس‌های ورودی.
-	- **local**: تماس‌های محلی.
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed.
+- **Items**: The items in the component:
+    - **Incoming**: Incoming calls.
+    - **Outgoing**: Outgoing calls.
+    - **Local**: Local calls.
+    - **Total**: The total number of calls.
+- **Trunks**: Specifies the trunks for which the calls should be considered.
+- **Call Types**: Specifies the types of calls involved in the report, including:
+    - **Outgoing**: Outgoing calls.
+    - **Incoming**: Incoming calls.
+    - **Local**: Local calls.
 
 ## SPIT
+This component displays a report on spam calls (SPIT) in the contact center. The parameters include:
 
-این کامپوننت وظیفه نمایش تماس‌های بهمنی در مرکزتماس را برعهده دارد.پارامترا‌ها شامل
-
-- **Title**: نام نمایشی کامپوننت در صفحه را مشخص می‌کند.
-
-- **View as**: نحوه نمایش اطلاعات را نشان می‌دهد.
-
-
-
+- **Title**: Specifies the display name of the component on the page.
+- **View as**: Specifies how the information will be displayed.

@@ -1,34 +1,24 @@
----
-sidebar_label: "اپراتورها"
-title: "اپراتورها"
----
+# Operators
 
-
-# اپراتورها
-
-:::caution هشدار
-
-این منو منسوخ شده و در نسخه های آینده غیر فعال می گردد.لطفا از منوی داشبورد استفاده کنید.
+:::caution Warning
+This menu is deprecated and will be disabled in future versions. Please use the Dashboard menu instead.
 :::
 ![operator](/img/simotel/monitor/operator.png)
 
-منوی اپراتور‌‌ها وضعیت کاربران در صف‌‌ها را به‌‌صورت آنلاین نمایش می‌‌دهد. علاوه بر وضعیت کاربران، تعداد تماس‌‌های پاسخ داده‌شده، 
-بدون پاسخ، زمان مکالمه، زمان انتظار و زمان استراحت نیز نمایش داده می‌شود. برای تغییر صف، باید از قسمت صف (گوشه بالا سمت راست)، صف جدید را انتخاب کرد.
+The **Operators** menu displays the real-time status of users in queues. In addition to user status, the number of answered calls, missed calls, talk time, wait time, and rest time are also shown. To change the queue, select a new queue from the **Queue** section (top-right corner).
 
-:::tip نکته
-داده‌‌های آماری‌ که در این نمودار نمایش داده می‌شوند، محدود به روز جاری هستند و با تغییر شبانه‌روز، صفر می‌شوند.
+:::tip Note
+The statistical data shown in this chart is limited to the current day and resets at the end of each day.
 :::
 
-### سربرگ‌‌های بخش  پراتورها
+### Tabs in the Operators Section
 
-- **Column View(نمایش ستونی)**: اپراتور‌‌ها بر اساس وضعیتشان در یکی از ستون‌‌های آماده، درحال زنگ، درحال مکالمه و ... قرار می‌‌گیرند. 
-با تغییر وضعیت، اپراتور در ستون جدید نمایش داده می‌شود.
+- **Column View**: Operators are displayed in columns based on their current status, such as "Ringing", "On Call", and so on. When their status changes, the operator is moved to a new column.
+  
+- **List View**: Operators are displayed in rows (sorted) regardless of their status. This view provides more detailed information compared to the column view.
 
-- **List view(نمایش لیستی)**: اپراتور‌‌ها به‌صورت سطری (مرتب) و بدون توجه به وضعیتشان نمایش داده می‌شوند. در این قسمت نسبت به برگه ستونی اطلاعات بیشتری نمایش داده می‌شود.
+- **Grid View**: Operators are displayed side-by-side in a tiled (and organized) layout.
 
-- **Grid view(نمایش کاشی)**: اپراتور‌‌ها به‌صورت چیدمان کاشی (و مرتب) کنار هم نمایش داده می‌شوند.
+- **Charts**: Statistical information about the queues is displayed in several chart formats.
 
-- **Charts(نمودار)**: اطلاعات آماری مربوط به صف، در قالب چند نمودار نمایش داده می‌شوند.
-
-- **Filters(تنظیمات)**: از برگه تنظیمات برای سفارشی‌کردن برگه‌‌های قبلی استفاده می‌شود. اینجا می‌‌توان نمایش اپراتور‌‌ها را به وضعیت‌‌های مشخصی محدود کرد.
-
+- **Filters**: The **Filters** tab allows customization of the previous views. You can filter the display to show operators with specific statuses.

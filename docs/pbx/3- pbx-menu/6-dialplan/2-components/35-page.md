@@ -1,23 +1,15 @@
----
-sidebar_label: "Page"
----
-
-
-
 # Page
 
-کامپوننت page عبارت است از برقراری تماس همزمان با یک یا چند مقصد، بدون نیاز به تایید مقصد. پس از برقراری تماس، در مقصد بلندگو باز می‌شود و صدای تماس‌گیرنده را پخش می‌کند. از جمله موارد استفاده آن، ایجاد کنفرانس و اطلاع‌‌رسانی عمومی است. با قطع تماس توسط تماس‌گیرنده، تماس تمامی افراد قطع می‌شود.
+The Page component establishes simultaneous calls to one or more destinations without the need for destination confirmation. Once the call is established, the loudspeaker at the destination is activated, playing the caller's voice. Common use cases include creating conferences and public announcements. When the caller disconnects, the calls for all participants are terminated.
 
+## Component Parameters
 
-## پارامترها کامپوننت
+- **Extension**: Select the extension for paging. If no extension is selected, the call is directed to the extension corresponding to the entered number.
 
-- **Extension**: انتخاب داخلی برای اعمال paging است. درصورتی‌‌که هیچ داخلی‌ای انتخاب نشود، تماس به سمت داخلی منطبق با شماره واردشده ارسال می‌‌گردد.
+- **Timeout (sec)**: The ringing duration for the extension (in seconds).
 
-- **Timeout (sec)**: مدت زمان زنگ خوردن داخلی (برحسب ثانیه) است.
+- **Skip**: Determines the number of digits to be removed from the beginning of the entered number; the new number is then considered as the destination number.
 
-- **Skip**: برای تعیین تعداد رقم‌‌هایی است که باید از ابتدای شماره واردشده حذف گردد. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
+- **Prefix**: Adds the specified number before the entered number; the new number is then considered as the destination number.
 
-- **Prefix**: برای افزودن عدد درج‌شده در این گزینه قبل از شماره واردشده است. سپس شماره جدید به‌‌عنوان شماره مقصد درنظر گرفته می‌‌شود.
-
-- **Options**: شامل تنظیمات است.
-
+- **Options**: Contains various settings.
