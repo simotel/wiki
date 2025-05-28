@@ -21,18 +21,18 @@ title: "به روز رسانی سیموتل"
  
 ## گرفتن بکاپ
 
-![create_backup](/img/simotel/update/create_backup.JPG/)
+![create_backup](/img/simotel/update/create_backup.JPG)
 
 
 
 
 ## دانلود بکاپ
 
-![download_backup](/img/simotel/update/download_backup.JPG/)
+![download_backup](/img/simotel/update/download_backup.JPG)
 
 
 
 
 ## آپدیت سیموتل
 
-![simotel_update](/img/simotel/update/update.JPG/)
+![simotel_update](/img/simotel/update/update.JPG)

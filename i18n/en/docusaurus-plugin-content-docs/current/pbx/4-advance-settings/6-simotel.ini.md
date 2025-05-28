@@ -324,7 +324,7 @@ announcement_directory = '/var/www/html/files/'
 
 ```ini
 [music_on_hold]
-pbx_music_on_hold_path = '/var/www/html/files/music_on_hold/'  
+pbx_music_on_hold_path = '/var/www/html/files/music_on_holdس'  
 ```
 1. **pbx_music_on_hold_path**: Specifies the path for storing music on hold.
 

@@ -6,7 +6,7 @@ sidebar_label: "Dialer.ini"
 
 # Dialer.ini Settings  
 
-The dialer.ini file contains the settings for the bulk calling module. The path to this file is `/etc/simotel/dialer.ini/`. You can open this file and make changes using the following command.
+The dialer.ini file contains the settings for the bulk calling module. The path to this file is `/etc/simotel/dialer.ini`. You can open this file and make changes using the following command.
 ```shell
 
 nano /etc/simote/dialer.ini

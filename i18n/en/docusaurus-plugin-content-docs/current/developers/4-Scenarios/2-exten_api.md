@@ -4,7 +4,7 @@
 # Exten API
 
 :::tip Recommendation  
-It is recommended to review [this link](../SimotelWebhooks/DialplanApiComponents/exten_api) before studying this content.  
+It is recommended to review [this link](../SimotelWebhooks/DialplanApiComponents/exten_api/) before studying this content.  
 :::
 
 
@@ -34,7 +34,7 @@ In this example, the source number 09155441 has contacted the company. Now, usin
 }
 ```
 
-At this stage, the call is connected to extension 200, and the phone of extension 200 starts ringing. For more information about the `New State` event, please refer to [here](../SimotelWebhooks/Events/new_state).
+At this stage, the call is connected to extension 200, and the phone of extension 200 starts ringing. For more information about the `New State` event, please refer to [here](../SimotelWebhooks/Events/new_state/).
 
 **Implemented Scenario in Dialplan**
 

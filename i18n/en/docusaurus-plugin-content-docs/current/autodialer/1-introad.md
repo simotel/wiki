@@ -29,7 +29,7 @@ In some cases, the goal of the mass call is specific individuals. In this case, 
 Keep in mind that in steps one to four, you are only entering the basic information related to the mass call (campaign). In step five, by creating the campaign, all the previously entered information is consolidated, and the Call Center starts sending the calls.  
 
 :::tip Note  
-Using the API package provided for the mass calling module, you can manage the above steps automatically. For more information, visit [here](../developers/Autodialer_API/introautodialer).  
+Using the API package provided for the mass calling module, you can manage the above steps automatically. For more information, visit [here](../developers/Autodialer_API/introautodialer/).  
 :::  
 
 ---  

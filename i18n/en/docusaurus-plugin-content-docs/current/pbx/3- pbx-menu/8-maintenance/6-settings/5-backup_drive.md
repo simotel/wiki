@@ -40,7 +40,7 @@ nano /etc/vsftpd.conf
 
 Finally, ensure that the settings in the `vsftpd.conf` file match the image below.
 
-![1](/img/simotel/backup_ftp_dropbox/1.png/)
+![1](/img/simotel/backup_ftp_dropbox/1.png)
 
 ```shell
 service vsftpd restart
@@ -65,7 +65,7 @@ service vsftpd restart
 
 Configure the settings as shown below:
 
-![2](/img/simotel/backup_ftp_dropbox/2.png/)
+![2](/img/simotel/backup_ftp_dropbox/2.png)
 
 If the settings are correctly configured, after clicking the **Test&Save** option, the output should return "Backup Drive Is OK".
 
@@ -83,34 +83,34 @@ The steps are as follows:
 
 1. After logging into your account, go to the App Center as shown in the image (for better quality, close the sidebar).
 
-   ![3](/img/simotel/backup_ftp_dropbox/3.png/)
+   ![3](/img/simotel/backup_ftp_dropbox/3.png)
 
 2. In the App Center, select the **Build an app** option in the left corner.
 
-   ![4](/img/simotel/backup_ftp_dropbox/4.png/)
+   ![4](/img/simotel/backup_ftp_dropbox/4.png)
 
 3. On the next page, select **Create apps**.
 
-   ![5](/img/simotel/backup_ftp_dropbox/5.png/)
+   ![5](/img/simotel/backup_ftp_dropbox/5.png)
 
 4. Here, specify the access levels. Since the goal is to set up Dropbox for backup, grant full access to your account, then give your app a name and click the **Create app** button.
 
-   ![6](/img/simotel/backup_ftp_dropbox/6.png/)
+   ![6](/img/simotel/backup_ftp_dropbox/6.png)
 
 5. After creating the app, you can specify access levels (read, write) in the permissions section. Since the backup will be uploaded to your account, check the box for `files.content.write`.
 
-   ![7](/img/simotel/backup_ftp_dropbox/7.png/)
+   ![7](/img/simotel/backup_ftp_dropbox/7.png)
 
 6. Finally, in the settings section, configure the token settings. By clicking the **Generate** option, a unique token will be created that allows access to your account (via API). Simotel will use this generated token to access your account and upload the backup file. The Access expiration should be set to No expiration, as this is not intended for temporary access.
 
-   ![8](/img/simotel/backup_ftp_dropbox/8.png/)
+   ![8](/img/simotel/backup_ftp_dropbox/8.png)
 
 7. If Simotel has internet access, after entering the token and clicking the **Test&Save** button, you should see the output "Backup Drive is OK".
 
-   ![9](/img/simotel/backup_ftp_dropbox/9.png/)
+   ![9](/img/simotel/backup_ftp_dropbox/9.png)
 
 8. Finally, if the settings are configured correctly, you should see a file named `simotel.test.txt` in your Inbox, which Simotel uploads during its initial test to check connectivity with Dropbox. From now on, backups will be uploaded to your Drive daily and weekly at the end of the day.
 
-   ![10](/img/simotel/backup_ftp_dropbox/10.png/)
+   ![10](/img/simotel/backup_ftp_dropbox/10.png)
 
 For further investigation of the Dropbox API capabilities, you can refer to the link **[here](https://www.youtube.com/watch?v=FMOXbmoAG8I)**.

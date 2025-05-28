@@ -21,7 +21,7 @@ Click on the image to view the implemented call scenario in the dial plan.
 
 :::tip Tip
 
-If you do not have access to the Call Center, visit **[here](https://dialplan.mysup.ir/)** to test the dial plan features.
+If you do not have access to the Call Center, visit **[here](https://dialplan.mysup.ir)** to test the dial plan features.
 :::
 
 ## Dial Plan Components
@@ -62,7 +62,7 @@ All components share common features that can be accessed by clicking on them:
 
 - **Remove**: This option is used to remove a component from the dial plan.
 
-![Component properties](/img/compontnetprop.png/)
+![Component properties](/img/compontnetprop.png)
 
 
 
@@ -137,4 +137,4 @@ This component is used to check time-based conditions.
 
 To set time-based restrictions, click on **Edit** in the component. By clicking on the ➕ sign in the days of the week section, you can specify your working hours.
 
-**Further details of the dial plan are covered in the [relevant section](../pbx-menu/dialplan/intro).**
+**Further details of the dial plan are covered in the [relevant section](../pbx-menu/dialplan/intro/).**

@@ -3,7 +3,7 @@
 :::caution Warning
 This menu is deprecated and will be disabled in future versions. Please use the Dashboard menu instead.
 :::
-![exten](/img/simotel/monitor/exten.png/)
+![exten](/img/simotel/monitor/exten.png)
 
 The **Extensions** menu displays the real-time status of all extensions.
 

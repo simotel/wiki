@@ -33,8 +33,8 @@ from concurrent.futures import ThreadPoolExecutor
 from _version import __version__, __edition__
 import time
 
-src = '/var/spool/asterisk/monitor_converted/'
-dst = '/mnt/Zabt/asterisk_monitor/'
+src = '/var/spool/asterisk/monitor_converted'
+dst = '/mnt/Zabt/asterisk_monitor'
 
 def move_files():
     try:
@@ -84,7 +84,7 @@ if __name__ == '__main__':
 
 Please note that the value of the variable `dst` in the script above specifies the storage path, and it should be set according to the mount path of the storage.
 
-Finally, create the `monitor_files_mover.py` (the above Python script) in the `/usr/src/simotel-file-mover/` directory and run the script using the following command:
+Finally, create the `monitor_files_mover.py` (the above Python script) in the `/usr/src/simotel-file-mover` directory and run the script using the following command:
 
 ```shell
 python3.4 /usr/src/simotel-file-mover/monitor_files_mover.py &
@@ -104,9 +104,9 @@ Edit the `global.php` file located at `/var/www/html/global.php` to change the v
 
 ```php
 "pbx"=> array(
-                "call_record_directory"=> "/mnt/Zabt/asterisk_monitor/",  // This value should be changed to the new path
-                "voicemail_directory"=> "/var/spool/asterisk/voicemail/simotel-voicemail/",
-                "voicemailv2_directory"=> "/var/spool/asterisk/voicemailv2/"
+                "call_record_directory"=> "/mnt/Zabt/asterisk_monitor",  // This value should be changed to the new path
+                "voicemail_directory"=> "/var/spool/asterisk/voicemail/simotel-voicemail",
+                "voicemailv2_directory"=> "/var/spool/asterisk/voicemailv2"
 ```
 
 :::caution Warning

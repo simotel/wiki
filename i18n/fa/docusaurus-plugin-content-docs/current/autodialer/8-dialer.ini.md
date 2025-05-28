@@ -44,7 +44,7 @@ mongodb_connection_string = mongodb://username:password@localhost:27017
 
 [directories]
 
-announcement_directory = /var/www/html/files/	
+announcement_directory = /var/www/html/files
 
 ```
 ۱. **announcement_directory**: مسیر ذخیره فایل‌های صوتی ماژول تماس‌انبوه.
@@ -60,7 +60,7 @@ log_to_file = True
 
 log_to_console = False		
 
-log_directory = /var/log/simotel/
+log_directory = /var/log/simotel
 
 log_file_name = simoteldialer.log	
 

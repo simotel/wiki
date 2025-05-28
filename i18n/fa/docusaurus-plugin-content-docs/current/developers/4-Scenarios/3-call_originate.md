@@ -651,7 +651,7 @@ import TabItem from '@theme/TabItem';
 برای اعمال محدودیت زمانی در مکالمه نیاز می‌باشد از API دیگری  به نام `Trunk API` کمک گرفت که در واقع یک کامپوننت در Dialplan می‌باشد
 که وظیفه ارسال اطلاعات تماس به سمت وب‌سرویس و در پاسخ دریافت شماره نفر دوم تماس و مقدار محدودیت  زمانی `call_limit` از وب‌ سرویس را برعهده دارد.
  
-برای کسب اطلاعات بیشتر در مورد `Trunk API` به [اینجا](../SimotelWebhooks/DialplanApiComponents/trunk_api) مراجعه کنید.
+برای کسب اطلاعات بیشتر در مورد `Trunk API` به [اینجا](../SimotelWebhooks/DialplanApiComponents/trunk_api/) مراجعه کنید.
 
 **به طور کلی پیاده‌سازی سناریو به چهار  بخش تقسیم می‌شود**
 
@@ -665,7 +665,7 @@ import TabItem from '@theme/TabItem';
 
 **۴-**  پس از پایان رسیدن تماس، اطلاعات کامل تماس با استفاده از رویداد `CDR` مرکزتماس به سمت وب‌ سرویس ارسال می‌شود و با استفاده از `unique id` ارسالی در مرحله دوم می‌توانید گزارشات تماس‌ها را از یک‌دیگر تفکیک کنید.
 
-برای کسب اطلاعات بیشتر در مورد `CDR` به [اینجا](../SimotelWebhooks/Events/cdr) مراجعه کنید.
+برای کسب اطلاعات بیشتر در مورد `CDR` به [اینجا](../SimotelWebhooks/Events/cdr/) مراجعه کنید.
 
 
 در پایین سناریوی پیاده سازی شده در دایل‌پلن که به جای کامپوننت Trunk از کامپوننت **Trunk API** استفاده شده نشان داده شده‌است.
@@ -675,7 +675,7 @@ import TabItem from '@theme/TabItem';
 
 ### ۶: ضبط مکالمات تماس دوطرفه
 برای فعال‌سازی ضبط مکالمات، کافیست از کامپوننت `Mix Monitor` در دایل‌پلن استفاده کنید. پس از پایان مکالمه نام فایل‌صوتی به عنوان پارامتر رویداد 
-`CDR` به سمت وب‌ سرویس ارسال می‌شود. برای دانلود فایل از API `reports/quick/cdr` استفاده می‌شود. برای کسب اطلاع بیشتر به [اینجا](../SimotelAPI/v4/report/audio_download) مراجعه فرمایید.
+`CDR` به سمت وب‌ سرویس ارسال می‌شود. برای دانلود فایل از API `reports/quick/cdr` استفاده می‌شود. برای کسب اطلاع بیشتر به [اینجا](../SimotelAPI/v4/report/audio_download/) مراجعه فرمایید.
 
 <a href='https://dialplan.mysup.ir/live/plan/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu/plan.png' /></a>
 

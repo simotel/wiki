@@ -57,7 +57,7 @@ title: "کامپوننت های عمومی"
 
 درنهایت با تفریق درصد افراد ناراضی از محصول، از  افراد راضی نسبت به محصول مقدار Net Promoter Score به دست می‌آید.
 
-![dashboard](/img/simotel/NPS.png/)
+![dashboard](/img/simotel/NPS.png)
 
 
 پارامترهای این کامپوننت شامل

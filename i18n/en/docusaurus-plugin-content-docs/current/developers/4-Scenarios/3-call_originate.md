@@ -4,7 +4,7 @@
 # Originate Call
 
 :::tip Recommendation
-It is recommended to review [this](../SimotelAPI/v4/call-originate) before studying this section.
+It is recommended to review [this](../SimotelAPI/v4/call-originate/) before studying this section.
 :::
 
 ### 1: **Call Originate** Between Extensions 570 and 553
@@ -637,7 +637,7 @@ In this example, the value of `context` is set to **main_routing**, and in the `
 
 To apply a time limit on the call, another API called `Trunk API` is required, which is a component in the Dialplan. Its role is to send call information to the web service and receive the second party's number and the `call_limit` from the web service in response.
 
-For more information about the `Trunk API`, visit [here](../SimotelWebhooks/DialplanApiComponents/trunk_api).
+For more information about the `Trunk API`, visit [here](../SimotelWebhooks/DialplanApiComponents/trunk_api/).
 
 **The implementation of the scenario is divided into four main steps:**
 
@@ -649,7 +649,7 @@ For more information about the `Trunk API`, visit [here](../SimotelWebhooks/Dial
 
 **4-** After the call ends, the full call details are sent to the web service using the `CDR` event. With the `unique id` sent in the second step, you can differentiate the call reports.
 
-For more information about `CDR`, visit [here](../SimotelWebhooks/Events/cdr).
+For more information about `CDR`, visit [here](../SimotelWebhooks/Events/cdr/).
 
 
 The implementation scenario in the Dialplan, where the **Trunk API** component is used instead of the Trunk component, is shown below. 
@@ -660,7 +660,7 @@ Please make sure to set your web service address in the **Trunk API** settings.
 
 ### 6: Record Originate call conversations
 
-To enable call recording, simply use the `Mix Monitor` component in the Dialplan. After the call ends, the audio file name is sent as a parameter in the `CDR` event to the web service. To download the file, the `reports/quick/cdr` API is used. For more information, visit [here](../SimotelAPI/v4/report/audio_download).
+To enable call recording, simply use the `Mix Monitor` component in the Dialplan. After the call ends, the audio file name is sent as a parameter in the `CDR` event to the web service. To download the file, the `reports/quick/cdr` API is used. For more information, visit [here](../SimotelAPI/v4/report/audio_download/).
 
 <a href='https://dialplan.mysup.ir/live/plan/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu' target='_blank'><img src='https://dialplan.mysup.ir/live/thumb/0z0jkz6prd7i5oi0vd0daninji4zm19cg237q76e1zbaed4ibu/plan.png' /></a>
 

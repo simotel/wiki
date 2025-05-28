@@ -16,7 +16,7 @@ title: "سافت فون سیموتل"
 
 پس از فعال‌سازی این قابلیت، باید از بخش `Update` بر روی دکمه **Check for update** کلیک کنید. در صورتی که مراحل درست انجام شده باشند، در بخش `Push Notification` وضعیت به حالت ready درمی‌آید و امکان فعال‌سازی این قابلیت با کلیک بر روی دکمه **Apply SCM ID** فراهم می‌شود.
 
-![SPN](/img/simotel/SPN.JPG/)
+![SPN](/img/simotel/SPN.JPG)
 
 ## پارامتر‌های Push Notification
 

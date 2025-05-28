@@ -20,12 +20,12 @@ Considering that significant changes have been made to the dial plan in version 
 
 ## Creating a Backup
 
-![create_backup](/img/simotel/update/create_backup.JPG/)
+![create_backup](/img/simotel/update/create_backup.JPG)
 
 ## Downloading a Backup
 
-![download_backup](/img/simotel/update/download_backup.JPG/)
+![download_backup](/img/simotel/update/download_backup.JPG)
 
 ## Updating Simotel
 
-![simotel_update](/img/simotel/update/update.JPG/)
+![simotel_update](/img/simotel/update/update.JPG)

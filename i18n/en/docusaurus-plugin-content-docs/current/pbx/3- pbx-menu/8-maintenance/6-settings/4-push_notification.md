@@ -10,7 +10,7 @@ One of the features of this softphone is its ability to synchronize with the ser
 
 After enabling this feature, you must click the **Check for Update** button in the `Update` section. If the steps are completed correctly, the status in the `Push Notification` section will change to "ready," and you can activate this feature by clicking the **Apply SCM ID** button.
 
-![SPN](/img/simotel/SPN.JPG/)
+![SPN](/img/simotel/SPN.JPG)
 
 ## Parameters of Push Notification
 

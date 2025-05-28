@@ -57,7 +57,7 @@ log_to_console = False
 
 log_to_redis = True
 
-log_directory = /var/log/simotel/
+log_directory = /var/log/simotel
 
 log_file_rotate_when = 'D'
 
@@ -117,7 +117,7 @@ log_monitor_channel = False
 
 [general]
 
-agi_directory = /var/www/html/files/agi/
+agi_directory = /var/www/html/files/agi
 
 ```
 ۱. **agi_directory**: مسیر فایل‌های کامپوننت AGI.
@@ -129,7 +129,7 @@ agi_directory = /var/www/html/files/agi/
 
 [reports]
 
-report_file_path = /var/www/html/files/report_files/
+report_file_path = /var/www/html/files/report_files
 
 ```
 ۱. **report_file_path**: مسیرذخیره فایل‌های گزارشات تماس‌ها.
@@ -175,11 +175,11 @@ client_api_use_local_timezone = False
 
 [record]
 
-call_record_source_directory = '/var/spool/asterisk/monitor/'
+call_record_source_directory = '/var/spool/asterisk/monitor'
 
-call_record_directory = /var/spool/asterisk/monitor_converted/
+call_record_directory = /var/spool/asterisk/monitor_converted
 
-call_record_removed_directory = '/var/spool/asterisk/monitor_removed/'
+call_record_removed_directory = '/var/spool/asterisk/monitor_removed'
 
 ```
 
@@ -196,7 +196,7 @@ call_record_removed_directory = '/var/spool/asterisk/monitor_removed/'
 
 [backup]
 
-backup_directory = /var/spool/simotel/backup/
+backup_directory = /var/spool/simotel/backup
 
 ```
 
@@ -211,9 +211,9 @@ backup_directory = /var/spool/simotel/backup/
 
 [voicemail]
 
-voicemail_directory = /var/spool/asterisk/voicemail/
+voicemail_directory = /var/spool/asterisk/voicemail
 
-voicemailv2_directory = /var/spool/asterisk/voicemailv2/
+voicemailv2_directory = /var/spool/asterisk/voicemailv2
 
 ```
 ۱. **voicemail_directory**:  مسیر ذخیره فایل‌های صوتی در  VoiceMail V1 (منسوخ شده از ورژن 6.2.7 ).
@@ -339,7 +339,7 @@ client_api_caller_timeout = 5
 
 [fax]
 
-fax_directory = /var/www/html/files/fax/
+fax_directory = /var/www/html/files/fax
 
 fax_sender_caller_id = 000
 

@@ -10,7 +10,7 @@ Simotel Contact Center offers exceptional features for integration with other so
 
 The Simotel integration tools enable bidirectional communication with Simotel. Using the `Simotel API`, you can send requests to Simotel for processing and execution (such as creating a new user or starting a two-way call). With `Simotel Webhooks`, you can provide your server address to Simotel so that it sends event information via an API request when certain events occur (such as an incoming call event).
 
-![exten-api](/img/api/simotel-integrations.png/)
+![exten-api](/img/api/simotel-integrations.png)
 
 ### Simotel API
 With the `Simotel API`, you can perform and control many operations remotely on the Simotel Contact Center by sending API requests from your software. For example, you can create a new extension, generate reports, or start a two-way call. The `Simotel API` gives you the power to execute commands on the Simotel contact center using any programming language.
