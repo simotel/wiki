@@ -39,7 +39,7 @@ module.exports = {
   onDuplicateRoutes: 'warn',
   favicon: 'img/newSimotelFavIcon.svg',
   titleDelimiter:"|",
-  trailingSlash: true,
+  trailingSlash: false,
   noIndex: false,
   
 i18n: {
