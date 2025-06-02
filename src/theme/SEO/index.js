@@ -4,44 +4,49 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function SEO() {
   const {
-    i18n: { locales, defaultLocale },
+    i18n: { locales, defaultLocale, localeConfigs },
     siteConfig: { url },
   } = useDocusaurusContext();
 
-  const path = typeof window !== 'undefined' ? window.location.pathname : '/';
+  const path =
+    typeof window !== 'undefined' ? window.location.pathname : '/';
 
   const hreflangs = locales.map((locale) => {
+    const langCode = localeConfigs[locale]?.htmlLang || locale;
+
     let hrefLangPath = path;
+
     if (locale !== defaultLocale) {
       hrefLangPath = `/${locale}${path}`;
     } else {
-      // حذف کد زبان برای زبان پیش‌فرض
+      // حذف کد زبان در مسیر برای زبان پیش‌فرض
       if (path.startsWith('/fa/') || path.startsWith('/en/')) {
         hrefLangPath = path.replace(/^\/(fa|en)/, '');
       }
     }
 
-    // حذف / انتهایی اگر در config گفتی نباشه
-    if (!hrefLangPath.endsWith('/') && hrefLangPath !== '/') {
-      hrefLangPath = hrefLangPath.replace(/\/$/, '');
+    // حذف اسلش انتهایی در صورت نیاز
+    if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
+      hrefLangPath = hrefLangPath.slice(0, -1);
     }
 
     return (
       <link
-        key={locale}
+        key={langCode}
         rel="alternate"
         href={`${url}${hrefLangPath}`}
-        hreflang={locale}
+        hreflang={langCode}
       />
     );
   });
 
-  // hreflang x-default
+  // اضافه کردن x-default فقط یک بار برای زبان پیش‌فرض
+  const defaultHref = path.replace(/^\/(fa|en)/, '') || '/';
   hreflangs.push(
     <link
       key="x-default"
       rel="alternate"
-      href={`${url}${path}`}
+      href={`${url}${defaultHref}`}
       hreflang="x-default"
     />
   );
