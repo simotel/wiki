@@ -3,48 +3,70 @@ import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function SEO() {
-  const {
-    i18n: { locales, defaultLocale },
-    siteConfig: { url },
-  } = useDocusaurusContext();
 
-  const path = typeof window !== 'undefined' ? window.location.pathname : '/';
+  // const {
+  //   i18n: { locales, defaultLocale, localeConfigs },
+  //   siteConfig: { url },
+  // } = useDocusaurusContext();
 
-  const hreflangs = locales.map((locale) => {
-    let hrefLangPath = path;
-    if (locale !== defaultLocale) {
-      hrefLangPath = `/${locale}${path}`;
-    } else {
-      // حذف کد زبان برای زبان پیش‌فرض
-      if (path.startsWith('/fa/') || path.startsWith('/en/')) {
-        hrefLangPath = path.replace(/^\/(fa|en)/, '');
-      }
-    }
+  // const path =
+  //   typeof window !== 'undefined' ? window.location.pathname : '/';
 
-    // حذف / انتهایی اگر در config گفتی نباشه
-    if (!hrefLangPath.endsWith('/') && hrefLangPath !== '/') {
-      hrefLangPath = hrefLangPath.replace(/\/$/, '');
-    }
+  // // Set to collect unique hreflang URLs
+  // const hreflangSet = new Set();
+  // const hreflangs = [];
 
-    return (
-      <link
-        key={locale}
-        rel="alternate"
-        href={`${url}${hrefLangPath}`}
-        hreflang={locale}
-      />
-    );
-  });
+  // locales.forEach((locale) => {
+  //   const langCode = localeConfigs[locale]?.htmlLang || locale;
 
-  // hreflang x-default
-  hreflangs.push(
-    <link
-      key="x-default"
-      rel="alternate"
-      href={`${url}${path}`}
-      hreflang="x-default"
-    />
-  );
+  //   let hrefLangPath = path;
+  //   if (locale !== defaultLocale) {
+  //     hrefLangPath = `/${locale}${path}`;
+  //   } else {
+  //     if (path.startsWith('/fa/') || path.startsWith('/en/')) {
+  //       hrefLangPath = path.replace(/^\/(fa|en)/, '');
+  //     }
+  //   }
+    // حذف اسلش انتهایی در صورت نیاز
+    // if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
+    //   hrefLangPath = hrefLangPath.slice
+    // }
 
-  return <Head>{hreflangs}</Head>;
+
+  //   if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
+  //     hrefLangPath = hrefLangPath.slice(0, -1);
+  //   }
+
+  //   const fullUrl = `${url}${hrefLangPath}`;
+
+  //   if (!hreflangSet.has(fullUrl)) {
+  //     hreflangSet.add(fullUrl);
+  //     hreflangs.push(
+  //       <link
+  //         key={langCode}
+  //         rel="alternate"
+  //         href={fullUrl}
+  //         hreflang={langCode}
+  //       />
+  //     );
+  //   }
+  // });
+
+  // // x-default (به شرط اینکه آدرسش تکراری نباشه)
+  // const defaultHref = path.replace(/^\/(fa|en)/, '') || '/';
+  // const defaultFullUrl = `${url}${defaultHref}`;
+
+  // if (!hreflangSet.has(defaultFullUrl)) {
+  //   hreflangs.push(
+  //     <link
+  //       key="x-default"
+  //       rel="alternate"
+  //       href={defaultFullUrl}
+  //       hreflang="x-default"
+  //     />
+  //   );
+  // }
+
+  // return <Head>{hreflangs}</Head>;
+
 }
