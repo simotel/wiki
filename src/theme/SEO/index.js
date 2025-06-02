@@ -19,8 +19,6 @@ export default function SEO() {
   //   const langCode = localeConfigs[locale]?.htmlLang || locale;
 
   //   let hrefLangPath = path;
-
-<<<<<<< HEAD
   //   if (locale !== defaultLocale) {
   //     hrefLangPath = `/${locale}${path}`;
   //   } else {
@@ -28,12 +26,11 @@ export default function SEO() {
   //       hrefLangPath = path.replace(/^\/(fa|en)/, '');
   //     }
   //   }
-=======
     // حذف اسلش انتهایی در صورت نیاز
-    if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
-      hrefLangPath = hrefLangPath.slice
-    }
->>>>>>> 5bb182ed39754ce627479ce05ba8f85e78903a14
+    // if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
+    //   hrefLangPath = hrefLangPath.slice
+    // }
+
 
   //   if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
   //     hrefLangPath = hrefLangPath.slice(0, -1);
