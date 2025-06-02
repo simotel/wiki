@@ -27,7 +27,7 @@ export default function SEO() {
 
     // حذف اسلش انتهایی در صورت نیاز
     if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
-      hrefLangPath = hrefLangPath.slice(0, -1);
+      hrefLangPath = hrefLangPath.slice
     }
 
     return (
