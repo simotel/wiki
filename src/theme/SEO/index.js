@@ -2,11 +2,7 @@ import React from 'react';
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-export default function SEO() {
-  const {
-    i18n: { locales, defaultLocale, localeConfigs },
-    siteConfig: { url },
-  } = useDocusaurusContext();
+e
 
   const path =
     typeof window !== 'undefined' ? window.location.pathname : '/';
