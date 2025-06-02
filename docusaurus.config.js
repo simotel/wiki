@@ -50,14 +50,14 @@ i18n: {
       en: {
         label: 'English',
         direction: 'ltr',
-        htmlLang: 'en',
+        htmlLang: 'en-US',
         calendar: 'gregory',
         path: 'en',
       },
       fa: {
         label: 'فارسی',
         direction: 'rtl',
-        htmlLang: 'fa',
+        htmlLang: 'fa-IR',
         calendar: 'persian',
         path: 'fa',
       },
