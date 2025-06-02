@@ -3,6 +3,7 @@ import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function SEO() {
+
   // const {
   //   i18n: { locales, defaultLocale, localeConfigs },
   //   siteConfig: { url },
@@ -67,4 +68,5 @@ export default function SEO() {
   // }
 
   // return <Head>{hreflangs}</Head>;
+
 }
