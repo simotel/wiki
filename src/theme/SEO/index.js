@@ -3,53 +3,64 @@ import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function SEO() {
-  const {
-    i18n: { locales, defaultLocale, localeConfigs },
-    siteConfig: { url },
-  } = useDocusaurusContext();
+  // const {
+  //   i18n: { locales, defaultLocale, localeConfigs },
+  //   siteConfig: { url },
+  // } = useDocusaurusContext();
 
-  const path =
-    typeof window !== 'undefined' ? window.location.pathname : '/';
+  // const path =
+  //   typeof window !== 'undefined' ? window.location.pathname : '/';
 
-  const hreflangs = locales.map((locale) => {
-    const langCode = localeConfigs[locale]?.htmlLang || locale;
+  // // Set to collect unique hreflang URLs
+  // const hreflangSet = new Set();
+  // const hreflangs = [];
 
-    let hrefLangPath = path;
+  // locales.forEach((locale) => {
+  //   const langCode = localeConfigs[locale]?.htmlLang || locale;
 
-    if (locale !== defaultLocale) {
-      hrefLangPath = `/${locale}${path}`;
-    } else {
-      // حذف کد زبان در مسیر برای زبان پیش‌فرض
-      if (path.startsWith('/fa/') || path.startsWith('/en/')) {
-        hrefLangPath = path.replace(/^\/(fa|en)/, '');
-      }
-    }
+  //   let hrefLangPath = path;
 
-    // حذف اسلش انتهایی در صورت نیاز
-    if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
-      hrefLangPath = hrefLangPath.slice(0, -1);
-    }
+  //   if (locale !== defaultLocale) {
+  //     hrefLangPath = `/${locale}${path}`;
+  //   } else {
+  //     if (path.startsWith('/fa/') || path.startsWith('/en/')) {
+  //       hrefLangPath = path.replace(/^\/(fa|en)/, '');
+  //     }
+  //   }
 
-    return (
-      <link
-        key={langCode}
-        rel="alternate"
-        href={`${url}${hrefLangPath}`}
-        hreflang={langCode}
-      />
-    );
-  });
+  //   if (hrefLangPath !== '/' && hrefLangPath.endsWith('/')) {
+  //     hrefLangPath = hrefLangPath.slice(0, -1);
+  //   }
 
-  // اضافه کردن x-default فقط یک بار برای زبان پیش‌فرض
-  const defaultHref = path.replace(/^\/(fa|en)/, '') || '/';
-  hreflangs.push(
-    <link
-      key="x-default"
-      rel="alternate"
-      href={`${url}${defaultHref}`}
-      hreflang="x-default"
-    />
-  );
+  //   const fullUrl = `${url}${hrefLangPath}`;
 
-  return <Head>{hreflangs}</Head>;
+  //   if (!hreflangSet.has(fullUrl)) {
+  //     hreflangSet.add(fullUrl);
+  //     hreflangs.push(
+  //       <link
+  //         key={langCode}
+  //         rel="alternate"
+  //         href={fullUrl}
+  //         hreflang={langCode}
+  //       />
+  //     );
+  //   }
+  // });
+
+  // // x-default (به شرط اینکه آدرسش تکراری نباشه)
+  // const defaultHref = path.replace(/^\/(fa|en)/, '') || '/';
+  // const defaultFullUrl = `${url}${defaultHref}`;
+
+  // if (!hreflangSet.has(defaultFullUrl)) {
+  //   hreflangs.push(
+  //     <link
+  //       key="x-default"
+  //       rel="alternate"
+  //       href={defaultFullUrl}
+  //       hreflang="x-default"
+  //     />
+  //   );
+  // }
+
+  // return <Head>{hreflangs}</Head>;
 }
