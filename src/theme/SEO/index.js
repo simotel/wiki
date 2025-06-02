@@ -13,7 +13,7 @@ export default function SEO() {
   const hreflangs = locales.map((locale) => {
     let hrefLangPath = path;
     if (locale !== defaultLocale) {
-      hrefLangPath = /${locale}${path};
+    hrefLangPath = `/${locale}${path}`;
     } else {
       // حذف کد زبان برای زبان پیش‌فرض
       if (path.startsWith('/fa/') || path.startsWith('/en/')) {
