@@ -8,43 +8,35 @@ export default function SEO() {
     siteConfig: { url },
   } = useDocusaurusContext();
 
-  const path = typeof window !== 'undefined' ? window.location.pathname : '/';
+  // مسیر جاری بدون کد زبان، مثلا /developers یا /fa/developers -> /developers
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
+  // حذف کد زبان اگر هست
+  const basePath = currentPath.replace(/^\/(fa|en)/, '') || '/';
 
-  const hreflangs = locales.flatMap((locale) => {
-    let hrefLangPath = path;
+  const hreflangs = locales.map((locale) => {
+    // گرفتن کد htmlLang مثل en-US یا fa-IR
+    const langCode = localeConfigs[locale]?.htmlLang || locale;
 
-    // اگر زبان جاری زبان پیش‌فرض نیست، /fa یا ... به مسیر اضافه شود
-    if (locale !== defaultLocale) {
-      hrefLangPath = `/${locale}${path}`;
-    } else {
-      // اگر زبان پیش‌فرض هست، /fa یا /en را حذف کن
-      hrefLangPath = path.replace(/^\/(fa|en)/, '');
-    }
+    // اگر زبان پیش فرض است آدرس بدون کد زبان، در غیر اینصورت با کد زبان
+    const hrefPath = locale === defaultLocale ? basePath : `/${locale}${basePath}`;
 
-    // حذف اسلش انتهایی
-    hrefLangPath = hrefLangPath.replace(/\/$/, '') || '/';
+    // اطمینان از اینکه مسیر با / شروع شود
+    const normalizedPath = hrefPath.startsWith('/') ? hrefPath : '/' + hrefPath;
 
-    const fullUrl = `${url}${hrefLangPath}`;
-
-    const tags = [
-      <link key={locale} rel="alternate" href={fullUrl} hreflang={locale} />,
-    ];
-
-    // اگر locale مثل en-US هست، نسخه‌ی کلی‌ترش (en) رو هم اضافه کن
-    if (locale.includes('-')) {
-      const genericLocale = locale.split('-')[0];
-      tags.push(
-        <link key={genericLocale} rel="alternate" href={fullUrl} hreflang={genericLocale} />
-      );
-    }
-
-    return tags;
+    return (
+      <link
+        key={langCode}
+        rel="alternate"
+        href={`${url}${normalizedPath}`}
+        hreflang={langCode}
+      />
+    );
   });
 
-  // اضافه کردن x-default
-  const defaultHref = `${url}${path.replace(/\/$/, '') || '/'}`;
+  // اضافه کردن فقط یک x-default به صفحه انگلیسی (defaultLocale)
+  const xDefaultHref = `${url}${basePath}`;
   hreflangs.push(
-    <link key="x-default" rel="alternate" href={defaultHref} hreflang="x-default" />
+    <link key="x-default" rel="alternate" href={xDefaultHref} hreflang="x-default" />
   );
 
   return <Head>{hreflangs}</Head>;
