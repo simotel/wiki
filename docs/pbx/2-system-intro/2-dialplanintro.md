@@ -137,4 +137,4 @@ This component is used to check time-based conditions.
 
 To set time-based restrictions, click on **Edit** in the component. By clicking on the ➕ sign in the days of the week section, you can specify your working hours.
 
-**Further details of the dial plan are covered in the [relevant section](../pbx-menu/dialplan/intro).**
+**Further details of the dial plan are covered in the [relevant section](/pbx-menu/dialplan/intro).**

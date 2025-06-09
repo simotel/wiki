@@ -4,7 +4,7 @@
 # Smart API
 
 :::tip Recommendation
-It is recommended to review [this](../SimotelWebhooks/DialplanApiComponents/smart_api) before reading this section.
+It is recommended to review [this](/developers/SimotelWebhooks/DialplanApiComponents/smart_api) before reading this section.
 :::
 
 **Scenario:** Suppose you need to receive a number from the user. If the number entered is 1, the call should be routed to path A, and if it is 2, it should be routed to path B.

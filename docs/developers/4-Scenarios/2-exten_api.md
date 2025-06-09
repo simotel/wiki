@@ -4,7 +4,7 @@
 # Exten API
 
 :::tip Recommendation  
-It is recommended to review [this link](../SimotelWebhooks/DialplanApiComponents/exten_api) before studying this content.  
+It is recommended to review [this link](/SimotelWebhooks/DialplanApiComponents/exten_api) before studying this content.  
 :::
 
 

@@ -72,5 +72,6 @@ Most IAX2 parameters are similar to SIP parameters.
 - **Description**: A description for the extension.
 
 ### Question: What do the Mapped Column and Queue columns in the extension list display?
-For example, when user 210 logs into phone 1001, in the table, 1001 will be displayed in the extension column and 210 will be shown in the Mapped Column. The queue column will show the queue number entered (For more information, refer to the [User Presence Pattern in the Queue and Extension Mapping in the Queue section](/pbx/pbx-menu/pbx/queues#Pattern-of-User-Presence-in-Queue-and-the-Ability-to-Map-Extensions)).
+For example, when user 210 logs into phone 1001, in the table, 1001 will be displayed in the extension column and 210 will be shown in the Mapped Column. The queue column will show the queue number entered (For more information, refer to the [User Presence Pattern in the Queue and Extension Mapping in the Queue section](/pbx/pbx-menu/pbx/queues#user-presence-pattern-in-the-queue-and-extension-mapping-capability)).
 
+ 

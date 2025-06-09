@@ -22,7 +22,7 @@ title: "مثال کاربردی"
 
 
 **۱:**
-برای به دست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/fa/developers/Autodialer_API/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
+برای به دست آوردن شناسه‌یکتای فایل صوتی از سرویس [announcement search](/developers/Autodialer_API/announcement/announcement_search) استفاده می‌کنیم، نمونه درخواست  HTTP به شرح زیر می‌باشد
 
 <!--  -->
 import Tabs from '@theme/Tabs';

@@ -26,7 +26,7 @@ This section is responsible for restoring backups created from the Call Center.
 
 One of Simutel's features is the ability to create backups automatically. The Call Center generates daily and weekly backups of the relevant information, allowing for recovery in case the system encounters any issues.
 
-The Call Center provides you with the option to store these automatic backups in a secure location. For more information, please refer to **[here](../maintenance/settings/backup_drive/)**.
+The Call Center provides you with the option to store these automatic backups in a secure location. For more information, please refer to **[here](/pbx/pbx-menu/maintenance/settings/backup_drive)**.
 
 ## Regular Backup Archive
 
