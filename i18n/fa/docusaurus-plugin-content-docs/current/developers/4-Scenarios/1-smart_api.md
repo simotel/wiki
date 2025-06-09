@@ -8,7 +8,7 @@ title: "سناریو Smart API"
 # Smart API
 
 :::tip توصیه
-پیشنهاد می‌شود قبل از مطالعه این مطلب، ابتدا [اینجا](../SimotelWebhooks/DialplanApiComponents/smart_api)  را بررسی فرمایید.
+پیشنهاد می‌شود قبل از مطالعه این مطلب، ابتدا [اینجا](/developers/SimotelWebhooks/DialplanApiComponents/smart_api)  را بررسی فرمایید.
 :::
 
 سناريو: فرض كنيد كه قرار است عددی از كاربر دريافت نماييد. و قصد دارید درصورتی ‌‌كه عدد وارد شده ۱ باشد، تماس را به مسير A و درصورتی ‌‌كه ۲ باشد، 

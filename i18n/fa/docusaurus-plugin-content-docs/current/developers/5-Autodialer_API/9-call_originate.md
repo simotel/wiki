@@ -21,14 +21,14 @@ title: "تماس دو طرفه با کمپین"
 برای ارسال تماس باید از سرویس افزودن کمپین استفاده شود (۱)؛ و وضعیت نهایی شماره‌ها در کمپین از طریق وب‌ سرویس جستجوی گزارشات کمپین (۲) به دست می‌آید. در ایجاد کمپین مطابق با توضیحات وب‌ سرویس افزودن کمپین (۱) با استفاده از مقدار **interface_context** و **inteface_text** می‌توان تماس را به سمت دایل‌پلن هدایت کرد. در دایل‌پلن چنانکه نیاز هست ارتباط مقصد مدیریت شود از کامپوننت های **ExtensionAPI** و یا **TrunkApi** استفاده شود (طبق ۳ و ۴). برای دریافت cdr قسمت دوم تماس می‌توان از سرویس دریافت گزارشات (۵) و یا وب‌ سرویس (۶) که مربوط به CDR می‌باشد استفاده کرد. در نهایت در پایان مکالمه وضعیت مکالمه اعلام می‌گردد.
 
 
- **۱:** [وب‌ سرویس افزودن کمپین](/i18n/fa/docusaurus-plugin-content-docs/current/developers/5-Autodialer_API/4-campaign/1-campaign_add.md)
+ **۱:** [وب‌ سرویس افزودن کمپین](/developers/Autodialer_API/campaign/campaign_add)
 
-**۲:** [وب‌ سرویس دریافت گزارشات کمپین](/i18n/fa/docusaurus-plugin-content-docs/current/developers/5-Autodialer_API/7-report/1-report_search.md)
+**۲:** [وب‌ سرویس دریافت گزارشات کمپین](/developers/Autodialer_API/report/report_search)
 
-**۳:** [وب‌ سرویس کامپوننت Exten API](/i18n/fa/docusaurus-plugin-content-docs/current/developers/3-SimotelWebhooks/3-DialplanApiComponents/3-exten_api.md)
+**۳:** [وب‌ سرویس کامپوننت Exten API](/developers/SimotelWebhooks/DialplanApiComponents/exten_api)
 
-**۴:** [وب‌ سرویس کامپوننت Trunk API](/i18n/fa/docusaurus-plugin-content-docs/current/developers/3-SimotelWebhooks/3-DialplanApiComponents/4-trunk_api.md)
+**۴:** [وب‌ سرویس کامپوننت Trunk API](/developers/SimotelWebhooks/DialplanApiComponents/trunk_api)
 
-**۵:** [وب‌ سرویس دریافت گزارشات](/i18n/fa/docusaurus-plugin-content-docs/current/developers/2-SimotelAPI/v4/13-report/4-report_cdr_search.md)
+**۵:** [وب‌ سرویس دریافت گزارشات](/developers/SimotelAPI/v4/report/report_cdr_search)
 
-**۶:** [وب‌ سرویس رویداد CDR](/i18n/fa/docusaurus-plugin-content-docs/current/developers/3-SimotelWebhooks/2-Events/14-cdr.md) 
+**۶:** [وب‌ سرویس رویداد CDR](/developers/SimotelWebhooks/Events/cdr) 
