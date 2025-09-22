@@ -179,6 +179,7 @@ module.exports = {
 						'developers/SimotelWebhooks/Events/TrunkRemoved',
 						'developers/SimotelWebhooks/Events/AutoDialerReport',
 						'developers/SimotelWebhooks/Events/new_state',
+
 					],
 					'Component Api': [
 						'developers/SimotelWebhooks/DialplanApiComponents/whatis',
