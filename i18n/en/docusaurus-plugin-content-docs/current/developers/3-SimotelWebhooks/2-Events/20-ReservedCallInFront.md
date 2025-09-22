@@ -1,26 +1,25 @@
 ---
-title: "رزرو تماس صف"
+title: "Queue Call Reservation"
 ---
 
 # ReservedCallInFront
 
-ایونت ReservedCallInFront پس از ایجاد تماس با صف مورد نظر که قابلیت رزرو تماس از روی کامپوننت صف فعال شده باشد این رویداد ایجاد و به سمت وب سرویس شما ارسال میگردد.
+The `ReservedCallInFront` event is triggered after a call is created in the specified queue where the call reservation feature is enabled from the queue component. This event will be generated and sent to your web service.
 
-## پارامترهای رویداد
+## Event Parameters
 <div class="custom-table">
 
-|                          توضیحات                           | داده‌های تعریف‌شده |          داده‌های نمونه          |     پارامتر‌ها     |
-|:----------------------------------------------------------:|:-----------------:|:--------------------------------:|:------------------:|
-|                       نام رویداد                           |         -         |       ReservedCallInFront        |   **event_name**   |
-|                   نوع رویداد (همان نام)                    |         -         |       ReservedCallInFront        |      **event**     |
-|                  نام صفی که تماس در آن قرار دارد            |         -         |               1010               |   **queue_name**   |
-|                  شماره تماس‌گیرنده (Caller ID)             |         -         |           09123456789            |   **caller_id**    |
-| تاریخ و زمان قرار گرفتن تماس در صف (به میلادی - YYYY-MM-DD HH:MM:SS.mmmmmm) |         -         | 2025-03-11 13:10:12.712188       |      **date**      |
+|                         Description                         | Defined Data |          Sample Data           |     Parameters     |
+|:-----------------------------------------------------------:|:------------:|:------------------------------:|:-----------------:|
+|                       Event Name                            |      -       |       ReservedCallInFront      |   **event_name**  |
+|                  Event Type (same as name)                  |      -       |       ReservedCallInFront      |      **event**    |
+|            Name of the queue where the call is placed        |      -       |              1010              |   **queue_name**  |
+|                  Caller’s phone number (Caller ID)          |      -       |          09123456789           |   **caller_id**   |
+| Date and time the call entered the queue (Gregorian - YYYY-MM-DD HH:MM:SS.mmmmmm) |      -       | 2025-03-11 13:10:12.712188    |      **date**     |
 </div>
 
 
-## نمونه خروجی رویداد CDR
-
+## Sample CDR Event Output
 
 ```shell
 {
@@ -30,4 +29,3 @@ title: "رزرو تماس صف"
     "caller_id": "09123456789",
     "date": "2025-03-11 13:10:12.712188"
 }
-```
